@@ -717,7 +717,7 @@ class IT_Exchange_paypal_standard_secure_Add_On {
 		<div class="it-exchange-addon-settings it-exchange-paypal-addon-settings">
             <p>
 				<?php _e( 'Although this PayPal version for iThemes Exchange takes more effort and time, it is well worth it for the security options for your store. To get PayPal set up for use with Exchange, you\'ll need to add the following information from your PayPal account.', 'it-l10n-ithemes-exchange' ); ?><br /><br />
-				<?php _e( 'Video:', 'it-l10n-ithemes-exchange' ); ?>&nsbp;<a href="http://ithemes.com/tutorials/setting-up-paypal-standard-secure/" target="_blank"><?php _e( 'Setting Up PayPal Standard Secure', 'it-l10n-ithemes-exchange' ); ?></a>
+				<?php _e( 'Video:', 'it-l10n-ithemes-exchange' ); ?>&nbsp;<a href="http://ithemes.com/tutorials/setting-up-paypal-standard-secure/" target="_blank"><?php _e( 'Setting Up PayPal Standard Secure', 'it-l10n-ithemes-exchange' ); ?></a>
 			</p>
 			<p><?php _e( 'Don\'t have a PayPal account yet?', 'it-l10n-ithemes-exchange' ); ?> <a href="http://paypal.com" target="_blank"><?php _e( 'Go set one up here', 'it-l10n-ithemes-exchange' ); ?></a>.</p>
             <h4><?php _e( 'Step 1. Fill out your PayPal email address', 'it-l10n-ithemes-exchange' ); ?></h4>

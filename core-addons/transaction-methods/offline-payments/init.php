@@ -388,7 +388,7 @@ class IT_Exchange_Offline_Payments_Add_On {
             <h3><?php _e( 'Offline Payments', 'it-l10n-ithemes-exchange' ); ?></h3>
         <?php endif; ?>
         <p><?php _e( 'Offline payments allow customers to purchase products from your site using check or cash. Transactions can be set as pending until you receive payment.', 'it-l10n-ithemes-exchange' ); ?></p>
-		<p><?php printf( __( '%sVideo: Getting Offline Payments Setup with Exchange%s', 'it-l10n-ithemes-exchange' ), '<a href="http://ithemes.com/tutorials/using-offline-payments-in-exchange">', '</a>' ); ?></p>
+        <p><?php _e( 'Video:', 'it-l10n-ithemes-exchange' ); ?>&nbsp;<a href="http://ithemes.com/tutorials/using-offline-payments-in-exchange/" target="_blank"><?php _e( 'Setting Up Offline Payments in Exchange', 'it-l10n-ithemes-exchange' ); ?></a></p>
         <p><?php _e( 'To process payments offline, complete the settings below.', 'it-l10n-ithemes-exchange' ); ?></p>
 		<table class="form-table">
 			<?php do_action( 'it_exchange_offline_payments_settings_table_top' ); ?>
