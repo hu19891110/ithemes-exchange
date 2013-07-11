@@ -209,6 +209,7 @@ class IT_Exchange_Email_Notifications {
 			'payment_method' => 'it_exchange_replace_payment_method_tag',
 			'sitename'       => 'it_exchange_replace_sitename_tag',
 			'receipt_link'   => 'it_exchange_replace_receipt_link_tag',
+			'login_link'     => 'it_exchange_replace_login_link_tag',
 		);
 		
 		return apply_filters( 'it_exchange_email_notification_shortcode_functions', $shortcode_functions );
@@ -273,7 +274,7 @@ class IT_Exchange_Email_Notifications {
 							 * If no files exist for the transaction, then there is no need to print this message even if status is pending
 							 * Clear as mud.
 							*/
-							$status_notice = '<p>' . __( 'The status for this transaction does not grant access to downlodable files. Once the transaction is updated to an appoved status, you will receive a follup email with your download links.', 'it-l10n-ithemes-exchange' ) . '</p>';
+							$status_notice = '<p>' . __( 'The status for this transaction does not grant access to downloadable files. Once the transaction is updated to an approved status, you will receive a follow-up email with your download links.', 'it-l10n-ithemes-exchange' ) . '</p>';
 							echo $status_notice;
 							$status_notice = '<h3>' . __( 'Available Downloads', 'it-l10n-ithemes-exchange' ) . '</h3>' . $status_notice;
 							?>
@@ -506,6 +507,18 @@ class IT_Exchange_Email_Notifications {
 	*/
 	function it_exchange_replace_receipt_link_tag( $args, $options = NULL ) {
 		return it_exchange_get_transaction_confirmation_url( $this->transaction_id );
+	}
+	
+	/**
+	 * Replacement Tag
+	 *
+	 * @since 1.0.2
+	 *
+	 * @param object $args of IT_Exchange_Email_Notifications
+	 * @return string Replaced value
+	*/
+	function it_exchange_replace_login_link_tag( $args, $options = NULL ) {
+		return it_exchange_get_page_url( 'login' );
 	}
 
 	/**

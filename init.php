@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: iThemes Exchange
- * Version: 1.0.1
+ * Version: 1.0.2
  * Description: Easily sell your digital goods with iThemes Exchange, simple ecommerce for WordPress
  * Plugin URI: http://ithemes.com/exchange/
  * Author: iThemes
@@ -23,7 +23,7 @@
 */
 class IT_Exchange {
 
-	var $_version         = '1.0.1';
+	var $_version         = '1.0.2';
 	var $_wp_minimum      = '3.5';
 	var $_slug            = 'it-exchange';
 	var $_name            = 'iThemes Exchange';
@@ -53,6 +53,22 @@ class IT_Exchange {
 		require( $this->_plugin_path . 'lib/load.php' );
 		require( $this->_plugin_path . 'api/load.php' );
 		require( $this->_plugin_path . 'core-addons/load.php' );
+
+		// Set version
+		$GLOBALS['it_exchange']['version'] = $this->_version;
+		if ( is_admin() ) {
+			$versions         = get_option( 'it-exchange-versions', false );
+			$current_version  = empty( $versions['current'] ) ? false: $versions['current'];
+			$previous_version = empty( $versions['previous'] ) ? false: $versions['previous'];
+			if ( $this->_version !== $current_version ) {
+				$versions = array(
+					'current'  => $this->_version,
+					'previous' => $current_version,
+				);
+				update_option( 'it-exchange-versions', $versions );
+				do_action( 'it_exchange_version_updated', $versions );
+			}
+		}
 
 		do_action( 'it_exchange_loaded' );
 		add_action( 'it_libraries_loaded', array( $this, 'addons_init' ) );

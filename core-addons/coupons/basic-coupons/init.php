@@ -31,11 +31,13 @@ add_action( 'it_exchange_enabled_addons_loaded', 'it_exchange_basic_coupons_regi
 function it_exchange_basic_coupons_add_meta_data_to_coupon_object( $data, $object ) {
 	// Set post meta keys used in basic coupons
 	$post_meta_keys = array(
-		'code'          => '_it-basic-code',
-		'amount_number' => '_it-basic-amount-number',
-		'amount_type'   => '_it-basic-amount-type',
-		'start_date'    => '_it-basic-start-date',
-		'end_date'      => '_it-basic-end-date',
+		'code'           => '_it-basic-code',
+		'amount_number'  => '_it-basic-amount-number',
+		'amount_type'    => '_it-basic-amount-type',
+		'start_date'     => '_it-basic-start-date',
+		'end_date'       => '_it-basic-end-date',
+		'limit_quantity' => '_it-basic-limit-quantity',
+		'quantity'       => '_it-basic-quantity',
 	);
 
 	// Loop through and add them to the data that will be added as properties to coupon object
@@ -163,6 +165,12 @@ function it_exchange_basic_coupons_apply_to_cart( $result, $options=array() ) {
 
 	$coupon = reset( $coupons );
 
+	// Abort if coupon limit has been reached
+	if ( ! empty( $coupon->limit_quantity ) && empty( $coupon->quantity ) ) {
+		it_exchange_add_message( 'error', __( 'Invalid coupon', 'it-l10n-ithemes-exchange' ) );
+		return false;
+	}
+
 	// Abort if not within start and end dates
 	$start_okay = empty( $coupon->start_date ) || strtotime( $coupon->start_date ) <= strtotime( date( 'Y-m-d' ) );
 	$end_okay   = empty( $coupon->end_date ) || strtotime( $coupon->end_date ) >= strtotime( date( 'Y-m-d' ) );
@@ -273,6 +281,42 @@ function it_exchange_basic_coupons_get_total_discount_for_cart( $discount, $opti
 add_filter( 'it_exchange_get_total_discount_for_cart', 'it_exchange_basic_coupons_get_total_discount_for_cart', 10, 2 );
 
 /**
+ * Reduces coupon quanity by 1 if coupon was applied to transaction and coupon is tracking usage
+ *
+ * @since 1.0.2
+ *
+ * @param integer $transaction_id
+ * @return void
+*/
+function it_exchange_basic_coupons_modify_coupon_quantity_on_transaction( $transaction_id ) {
+	if ( ! $transaction = it_exchange_get_transaction( $transaction_id ) )
+		return false;
+
+	if ( ! $coupons = it_exchange_get_transaction_coupons( $transaction ) )
+		return;
+
+	// Do we have a cart coupon?
+	if ( isset( $coupons['cart'] ) && ! empty( $coupons['cart'] ) ) {
+		$coupon = reset( $coupons['cart'] );
+
+		// Does this coupon have unlimited quantity
+		if ( ! $limited = get_post_meta( $coupon['id'], '_it-basic-limit-quantity', true ) )
+			return;
+
+		// Does this coupon have a quantity?
+		if ( ! $quantity = get_post_meta( $coupon['id'], '_it-basic-quantity', true ) )
+			return;
+
+		// Decrease quantity by one
+		$quantity = absint( $quantity );
+		$quantity--;
+
+		update_post_meta( $coupon['id'], '_it-basic-quantity', $quantity );
+	}
+}
+add_action( 'it_exchange_add_transaction_success', 'it_exchange_basic_coupons_modify_coupon_quantity_on_transaction' );
+
+/**
  * Returns the coupon discount label
  *
  * @since 0.4.0
@@ -354,13 +398,13 @@ add_filter( 'it_exchange_remove_coupon_for_cart', 'it_exchange_basic_coupons_rem
 function it_exchange_basic_coupons_transaction_summary( $summary, $transaction_coupon ) {
 	$transaction_coupon = reset( $transaction_coupon );
 
-	$id     = empty( $transaction_coupon['id'] )            ? false : $transaction_coupon['id'];
-	$title  = empty( $transaction_coupon['title'] )         ? false : $transaction_coupon['title'];
-	$code   = empty( $transaction_coupon['code'] )          ? false : $transaction_coupon['code'];
-	$number = empty( $transaction_coupon['amount_number'] ) ? false : $transaction_coupon['amount_number'];
-	$type   = empty( $transaction_coupon['amount_type'] )   ? false : $transaction_coupon['amount_type'];
-	$start  = empty( $transaction_coupon['start_date'] )    ? false : $transaction_coupon['start_date'];
-	$end    = empty( $transaction_coupon['end_date'] )      ? false : $transaction_coupon['end_date'];
+	$id       = empty( $transaction_coupon['id'] )            ? false : $transaction_coupon['id'];
+	$title    = empty( $transaction_coupon['title'] )         ? false : $transaction_coupon['title'];
+	$code     = empty( $transaction_coupon['code'] )          ? false : $transaction_coupon['code'];
+	$number   = empty( $transaction_coupon['amount_number'] ) ? false : $transaction_coupon['amount_number'];
+	$type     = empty( $transaction_coupon['amount_type'] )   ? false : $transaction_coupon['amount_type'];
+	$start    = empty( $transaction_coupon['start_date'] )    ? false : $transaction_coupon['start_date'];
+	$end      = empty( $transaction_coupon['end_date'] )      ? false : $transaction_coupon['end_date'];
 
 	$url = trailingslashit( get_admin_url() ) . 'admin.php';
 	$url = add_query_arg( array( 'page' => 'it-exchange-edit-basic-coupon', 'post' => $id ), $url );

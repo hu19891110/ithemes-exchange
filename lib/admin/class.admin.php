@@ -162,9 +162,9 @@ class IT_Exchange_Admin {
 	*/
 	function it_exchange_plugin_row_meta( $meta, $plugin_file, $plugin_data, $status ) {
 		if ( 'ithemes-exchange/init.php' == $plugin_file ) {
-			$meta[] = '<a href="http://ithemes.com/codex/page/Exchange">' . __( 'Documentation', 'it-l10n-ithemes-exchange' ) . '</a>';
-			$meta[] = '<a href="http://ithemes.com/exchange/support">' . __( 'Support', 'it-l10n-ithemes-exchange' ) . '</a>';
-			$meta[] = '<a href="http://ithemes.com/exchange/add-ons">' . __( 'Add-ons', 'it-l10n-ithemes-exchange' ) . '</a>';
+			$meta[] = '<a href="http://ithemes.com/codex/page/Exchange" target="_blank">' . __( 'Documentation', 'it-l10n-ithemes-exchange' ) . '</a>';
+			$meta[] = '<a href="http://ithemes.com/exchange/support" target="_blank">' . __( 'Support', 'it-l10n-ithemes-exchange' ) . '</a>';
+			$meta[] = '<a href="http://ithemes.com/exchange/add-ons" target="_blank">' . __( 'Add-ons', 'it-l10n-ithemes-exchange' ) . '</a>';
 		}
 		return $meta;
 	}
@@ -1072,7 +1072,7 @@ Order: %s
 
 		$settings_saved = __( 'Settings Saved. Congrats!', 'it-l10n-ithemes-exchange' );
 		$add_product_link = sprintf( __( '%sAdd a Product%s', 'it-l10n-ithemes-exchange' ), '<a href="' . get_admin_url() . 'post-new.php?post_type=it_exchange_prod&it-exchange-product-type=digital-downloads-product-type">', '</a>' ); 
-		$view_addons_link = sprintf( __( '%sEnable Add-ons%s', 'Lion' ), '<a href="' . get_admin_url() . 'admin.php?page=it-exchange-addons">', '</a>' );
+		$view_addons_link = sprintf( __( '%sEnable Add-ons%s', 'it-l10n-ithemes-exchange' ), '<a href="' . get_admin_url() . 'admin.php?page=it-exchange-addons">', '</a>' );
 
 		$view_sample_link = empty( $sample_product->ID ) ? '' : ' | ' . sprintf( __( '%sView Sample Product%s', 'it-l10n-ithemes-exchange' ), '<a href="' . get_admin_url() . 'post.php?post=' . $sample_product->ID . '&action=edit">', '</a>' );
 
