@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/ithemes-exchange\n"
-"POT-Creation-Date: 2013-07-11 12:19-0500\n"
+"POT-Creation-Date: 2013-07-17 11:20-0500\n"
 "PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chris Jean <support@ithemes.com>\n"
 "Language: \n"
@@ -723,6 +723,7 @@ msgid "Last Name"
 msgstr ""
 
 #: api/theme/customer.php:209 api/theme/registration.php:221
+#: core-addons/load.php:207
 msgid "Email"
 msgstr ""
 
@@ -768,7 +769,7 @@ msgstr ""
 msgid "Remember Me"
 msgstr ""
 
-#: api/theme/login.php:211 lib/functions/functions.php:382
+#: api/theme/login.php:211 lib/functions/functions.php:391
 msgid "Log In"
 msgstr ""
 
@@ -1236,11 +1237,15 @@ msgstr ""
 msgid "Add-ons that create new taxonomies specifically for Exchange products."
 msgstr ""
 
-#: core-addons/load.php:207
+#: core-addons/load.php:208
+msgid "Add-ons that help store owners manage their email."
+msgstr ""
+
+#: core-addons/load.php:212
 msgid "Other"
 msgstr ""
 
-#: core-addons/load.php:208
+#: core-addons/load.php:213
 msgid "Add-ons that don't fit in any other add-on category."
 msgstr ""
 
@@ -2501,7 +2506,7 @@ msgstr ""
 msgid "Customer Registration Settings"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:95 lib/functions/functions.php:316
+#: lib/admin/views/admin-settings.php:95 lib/functions/functions.php:325
 msgid "Customer Registration"
 msgstr ""
 
@@ -2551,8 +2556,8 @@ msgstr ""
 msgid "Update Customer Info"
 msgstr ""
 
-#: lib/admin/views/admin-user-products.php:11 lib/functions/functions.php:300
-#: lib/functions/functions.php:303 lib/templates/content-downloads.php:34
+#: lib/admin/views/admin-user-products.php:11 lib/functions/functions.php:309
+#: lib/functions/functions.php:312 lib/templates/content-downloads.php:34
 msgid "Transaction"
 msgstr ""
 
@@ -2562,7 +2567,7 @@ msgid ""
 "\"details-toggle hide-if-no-js\">&#61;</span>"
 msgstr ""
 
-#: lib/admin/views/admin-user-products.php:71 lib/functions/functions.php:355
+#: lib/admin/views/admin-user-products.php:71 lib/functions/functions.php:364
 msgid "Downloads"
 msgstr ""
 
@@ -2920,7 +2925,7 @@ msgid "Important Information"
 msgstr ""
 
 #: lib/email-notifications/class.email-notifications.php:388
-#: lib/functions/functions.php:273
+#: lib/functions/functions.php:282
 #: lib/products/class.products-post-type.php:114
 msgid "Product"
 msgstr ""
@@ -2950,94 +2955,94 @@ msgstr ""
 msgid "Checking this box will rest ALL settings and DELETE ALL DATA."
 msgstr ""
 
-#: lib/functions/functions.php:256
+#: lib/functions/functions.php:265
 msgid "Exchange has been reset. All data has been deleted."
 msgstr ""
 
-#: lib/functions/functions.php:276
+#: lib/functions/functions.php:285
 msgid "Product Base"
 msgstr ""
 
-#: lib/functions/functions.php:286
+#: lib/functions/functions.php:295
 msgid "Store"
 msgstr ""
 
-#: lib/functions/functions.php:289
+#: lib/functions/functions.php:298
 msgid "Store Page"
 msgstr ""
 
-#: lib/functions/functions.php:290
+#: lib/functions/functions.php:299
 msgid "Where all your products are shown in one place"
 msgstr ""
 
-#: lib/functions/functions.php:313
+#: lib/functions/functions.php:322
 msgid "Registration"
 msgstr ""
 
-#: lib/functions/functions.php:317
+#: lib/functions/functions.php:326
 msgid ""
 "Where customers register to login, download, etc.  You can turn off "
 "registration and allow guest checkouts in Exchange / Add-ons / Digital "
 "Downloads Settings."
 msgstr ""
 
-#: lib/functions/functions.php:327
+#: lib/functions/functions.php:336
 msgid "Account"
 msgstr ""
 
-#: lib/functions/functions.php:330
+#: lib/functions/functions.php:339
 msgid "Account Page"
 msgstr ""
 
-#: lib/functions/functions.php:331
+#: lib/functions/functions.php:340
 msgid ""
 "Customers get an account when they buy something, so they can login and "
 "download their purchases. This is the main landing page for customers after "
 "they log in."
 msgstr ""
 
-#: lib/functions/functions.php:341
+#: lib/functions/functions.php:350
 msgid "Profile"
 msgstr ""
 
-#: lib/functions/functions.php:344
+#: lib/functions/functions.php:353
 msgid "Profile Page"
 msgstr ""
 
-#: lib/functions/functions.php:345
+#: lib/functions/functions.php:354
 msgid "Private details about your customers that they can change."
 msgstr ""
 
-#: lib/functions/functions.php:358
+#: lib/functions/functions.php:367
 msgid "Customer Downloads"
 msgstr ""
 
-#: lib/functions/functions.php:359
+#: lib/functions/functions.php:368
 msgid "Page where the customer can find all of their available downloads."
 msgstr ""
 
-#: lib/functions/functions.php:369 lib/functions/functions.php:372
+#: lib/functions/functions.php:378 lib/functions/functions.php:381
 #: lib/products/class.products-post-type.php:570
 msgid "Purchases"
 msgstr ""
 
-#: lib/functions/functions.php:385
+#: lib/functions/functions.php:394
 msgid "Customer Log In"
 msgstr ""
 
-#: lib/functions/functions.php:395
+#: lib/functions/functions.php:404
 msgid "Log Out"
 msgstr ""
 
-#: lib/functions/functions.php:398
+#: lib/functions/functions.php:407
 msgid "Customer Log Out"
 msgstr ""
 
-#: lib/functions/functions.php:408
+#: lib/functions/functions.php:417
 msgid "Thank you"
 msgstr ""
 
-#: lib/functions/functions.php:411
+#: lib/functions/functions.php:420
 msgid "Purchase Confirmation"
 msgstr ""
 
@@ -3623,11 +3628,15 @@ msgstr ""
 msgid "Sample Image Three"
 msgstr ""
 
-#: lib/super-widget/ajax.php:95
+#: lib/super-widget/ajax.php:88
 msgid "Logged in as "
 msgstr ""
 
-#: lib/super-widget/ajax.php:118
+#: lib/super-widget/ajax.php:92
+msgid "Error. Please try again."
+msgstr ""
+
+#: lib/super-widget/ajax.php:109
 msgid "Registered and logged in as "
 msgstr ""
 
