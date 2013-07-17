@@ -203,6 +203,11 @@ function it_exchange_register_core_addon_categories() {
 			'description' => __( 'Add-ons that create new taxonomies specifically for Exchange products.', 'it-l10n-ithemes-exchange' ),
 			'options'     => array(),
 		),
+		'email' => array(
+			'name'        => __( 'Email', 'it-l10n-ithemes-exchange' ),
+			'description' => __( 'Add-ons that help store owners manage their email.', 'it-l10n-ithemes-exchange' ),
+			'options'     => array(),
+		),
 		'other' => array(
 			'name'        => __( 'Other', 'it-l10n-ithemes-exchange' ),
 			'description' => __( 'Add-ons that don\'t fit in any other add-on category.', 'it-l10n-ithemes-exchange' ),
