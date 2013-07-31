@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/ithemes-exchange\n"
-"POT-Creation-Date: 2013-07-17 11:20-0500\n"
+"POT-Creation-Date: 2013-07-31 10:47-0500\n"
 "PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chris Jean <support@ithemes.com>\n"
 "Language: \n"
@@ -692,7 +692,9 @@ msgstr ""
 msgid "Checkout"
 msgstr ""
 
-#: api/theme/cart.php:234 lib/templates/super-widget-checkout.php:66
+#: api/theme/cart.php:234
+#: lib/deprecated/templates/super-widget-checkout.php:66
+#: lib/templates/super-widget-checkout/elements/multi-item-cancel.php:19
 msgid "View Cart"
 msgstr ""
 
@@ -703,13 +705,14 @@ msgstr ""
 #: api/theme/checkout.php:93 api/theme/login.php:322
 #: api/theme/registration.php:367
 #: core-addons/coupons/basic-coupons/admin.php:302
+#: lib/deprecated/templates/super-widget-cart.php:76
 #: lib/products/class.products-post-type.php:319
 #: lib/products/class.products-post-type.php:348
-#: lib/templates/super-widget-cart.php:76
+#: lib/templates/super-widget-cart/elements/single-item-cart-cancel.php:22
 msgid "Cancel"
 msgstr ""
 
-#: api/theme/coupons.php:179 core-addons/coupons/basic-coupons/admin.php:342
+#: api/theme/coupons.php:181 core-addons/coupons/basic-coupons/admin.php:342
 #: core-addons/coupons/basic-coupons/init.php:108
 msgid "Coupon Code"
 msgstr ""
@@ -723,7 +726,7 @@ msgid "Last Name"
 msgstr ""
 
 #: api/theme/customer.php:209 api/theme/registration.php:221
-#: core-addons/load.php:207
+#: core-addons/load.php:218
 msgid "Email"
 msgstr ""
 
@@ -844,16 +847,16 @@ msgstr ""
 msgid "Unlimited Downloads"
 msgstr ""
 
-#: api/transactions.php:129
+#: api/transactions.php:132
 msgid "You cannot checkout without any items in your cart."
 msgstr ""
 
-#: api/transactions.php:137
+#: api/transactions.php:140
 msgid ""
 "The cart total must be greater than 0 for you to checkout. Please try again."
 msgstr ""
 
-#: api/transactions.php:625 api/transactions.php:653 api/transactions.php:689
+#: api/transactions.php:628 api/transactions.php:656 api/transactions.php:692
 #: core-addons/transaction-methods/offline-payments/init.php:286
 #: core-addons/transaction-methods/paypal-standard/init.php:536
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:582
@@ -861,7 +864,7 @@ msgstr ""
 msgid "Unknown"
 msgstr ""
 
-#: api/transactions.php:731
+#: api/transactions.php:734
 msgid "#"
 msgstr ""
 
@@ -944,7 +947,8 @@ msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:152
 #: lib/coupons/class.coupons-post-type.php:30
-#: lib/templates/super-widget-checkout.php:74
+#: lib/deprecated/templates/super-widget-checkout.php:74
+#: lib/templates/super-widget-checkout/elements/single-item-update-coupons.php:20
 #: lib/transactions/class.transactions-post-type.php:520
 msgid "Coupons"
 msgstr ""
@@ -1165,87 +1169,95 @@ msgstr ""
 msgid "Product Tag"
 msgstr ""
 
-#: core-addons/load.php:161 lib/products/class.products-post-type.php:573
+#: core-addons/load.php:142 core-addons/taxes/taxes-simple/init.php:42
+msgid "Simple Taxes"
+msgstr ""
+
+#: core-addons/load.php:143
+msgid "This gives the admin ability to apply a default tax rate to all sales."
+msgstr ""
+
+#: core-addons/load.php:172 lib/products/class.products-post-type.php:573
 msgid "Product Type"
 msgstr ""
 
-#: core-addons/load.php:162
+#: core-addons/load.php:173
 msgid ""
 "Add-ons responsible for the differing types of products available in iThemes "
 "Exchange."
 msgstr ""
 
-#: core-addons/load.php:167
+#: core-addons/load.php:178
 msgid "Transaction Methods"
 msgstr ""
 
-#: core-addons/load.php:168
+#: core-addons/load.php:179
 msgid "Add-ons that create transactions. eg: Stripe, PayPal."
 msgstr ""
 
-#: core-addons/load.php:180
+#: core-addons/load.php:191
 #: core-addons/transaction-methods/offline-payments/init.php:25
 msgctxt "Transaction Status"
 msgid "Pending"
 msgstr ""
 
-#: core-addons/load.php:181
+#: core-addons/load.php:192
 msgctxt "Transaction Status"
 msgid "Authorized"
 msgstr ""
 
-#: core-addons/load.php:182
+#: core-addons/load.php:193
 #: core-addons/transaction-methods/offline-payments/init.php:26
 msgctxt "Transaction Status"
 msgid "Paid"
 msgstr ""
 
-#: core-addons/load.php:183
+#: core-addons/load.php:194
 #: core-addons/transaction-methods/offline-payments/init.php:27
 msgctxt "Transaction Status"
 msgid "Refunded"
 msgstr ""
 
-#: core-addons/load.php:184
+#: core-addons/load.php:195
 #: core-addons/transaction-methods/offline-payments/init.php:28
 msgctxt "Transaction Status"
 msgid "Voided"
 msgstr ""
 
-#: core-addons/load.php:192
+#: core-addons/load.php:203
 msgid "Admin Add-ons"
 msgstr ""
 
-#: core-addons/load.php:193
+#: core-addons/load.php:204
 msgid ""
 "Add-ons that create general purpose admin functionality. eg: Reports, Export."
 msgstr ""
 
-#: core-addons/load.php:197
+#: core-addons/load.php:208
 msgid "Coupon Add-ons"
 msgstr ""
 
-#: core-addons/load.php:198
+#: core-addons/load.php:209
 msgid "Add-ons that create coupons for your customers."
 msgstr ""
 
-#: core-addons/load.php:202
+#: core-addons/load.php:213
 msgid "Taxonomy Add-ons"
 msgstr ""
 
-#: core-addons/load.php:203
+#: core-addons/load.php:214
 msgid "Add-ons that create new taxonomies specifically for Exchange products."
 msgstr ""
 
-#: core-addons/load.php:208
+#: core-addons/load.php:219
 msgid "Add-ons that help store owners manage their email."
 msgstr ""
 
-#: core-addons/load.php:212
+#: core-addons/load.php:223
 msgid "Other"
 msgstr ""
 
-#: core-addons/load.php:213
+#: core-addons/load.php:224
 msgid "Add-ons that don't fit in any other add-on category."
 msgstr ""
 
@@ -1362,6 +1374,7 @@ msgid ""
 msgstr ""
 
 #: core-addons/product-types/digital-downloads/init.php:125
+#: core-addons/taxes/taxes-simple/init.php:51
 #: core-addons/transaction-methods/offline-payments/view-add-on-settings.php:21
 #: core-addons/transaction-methods/paypal-standard/init.php:644
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:690
@@ -1372,6 +1385,7 @@ msgid "Save Changes"
 msgstr ""
 
 #: core-addons/product-types/digital-downloads/init.php:146
+#: core-addons/taxes/taxes-simple/init.php:75
 #: core-addons/transaction-methods/offline-payments/init.php:430
 #: core-addons/transaction-methods/paypal-standard/init.php:702
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:794
@@ -1392,6 +1406,31 @@ msgstr ""
 #: core-addons/transaction-methods/paypal-standard/init.php:713
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:805
 msgid "Settings not saved."
+msgstr ""
+
+#: core-addons/taxes/taxes-simple/init.php:46
+msgid "Default Tax Rate"
+msgstr ""
+
+#: core-addons/taxes/taxes-simple/init.php:49
+msgid "Calculate taxes after discounts are applied?"
+msgstr ""
+
+#: core-addons/taxes/taxes-simple/init.php:81
+msgid "Default tax rate must be numeric"
+msgstr ""
+
+#: core-addons/taxes/taxes-simple/init.php:84
+msgid "Settings Saved"
+msgstr ""
+
+#: core-addons/taxes/taxes-simple/templates/content-cart/elements/totals-taxes-simple.php:22
+#: core-addons/taxes/taxes-simple/templates/content-checkout/elements/totals-taxes-simple.php:22
+msgid "Tax"
+msgstr ""
+
+#: core-addons/taxes/taxes-simple/templates/super-widget-checkout/loops/taxes-simple.php:19
+msgid "Tax:"
 msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/init.php:103
@@ -1500,7 +1539,6 @@ msgid "Offline Payments Settings"
 msgstr ""
 
 #: core-addons/transaction-methods/paypal-standard/init.php:101
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:124
 msgid "Error: Amount charged is not the same as the cart total!"
 msgstr ""
 
@@ -1617,6 +1655,11 @@ msgstr ""
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:121
 #, php-format
 msgid "Error: Transaction IDs do not match! %s, %s"
+msgstr ""
+
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:124
+#, php-format
+msgid "Error: Amount charged is not the same as the cart total! %s | %s"
 msgstr ""
 
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:321
@@ -2556,8 +2599,10 @@ msgstr ""
 msgid "Update Customer Info"
 msgstr ""
 
-#: lib/admin/views/admin-user-products.php:11 lib/functions/functions.php:309
-#: lib/functions/functions.php:312 lib/templates/content-downloads.php:34
+#: lib/admin/views/admin-user-products.php:11
+#: lib/deprecated/templates/content-downloads.php:34
+#: lib/functions/functions.php:309 lib/functions/functions.php:312
+#: lib/templates/content-downloads/elements/confirmation-url.php:20
 msgid "Transaction"
 msgstr ""
 
@@ -2600,8 +2645,11 @@ msgid "Description"
 msgstr ""
 
 #: lib/admin/views/admin-user-transactions.php:18
+#: lib/deprecated/templates/content-cart.php:89
+#: lib/deprecated/templates/content-checkout.php:88
 #: lib/email-notifications/class.email-notifications.php:415
-#: lib/templates/content-cart.php:89 lib/templates/content-checkout.php:88
+#: lib/templates/content-cart/elements/totals-total.php:22
+#: lib/templates/content-checkout/elements/totals-total.php:22
 #: lib/transactions/class.transactions-post-type.php:262
 #: lib/transactions/class.transactions-post-type.php:558
 msgid "Total"
@@ -2879,6 +2927,165 @@ msgstr ""
 msgid "An iThemes Exchange Post Type for storing all Coupons in the system"
 msgstr ""
 
+#: lib/deprecated/templates/content-cart.php:85
+#: lib/deprecated/templates/content-checkout.php:84
+#: lib/templates/content-cart/elements/totals-subtotal.php:22
+#: lib/templates/content-checkout/elements/totals-subtotal.php:22
+#: lib/transactions/class.transactions-post-type.php:511
+msgid "Subtotal"
+msgstr ""
+
+#: lib/deprecated/templates/content-cart.php:87
+#: lib/deprecated/templates/content-checkout.php:86
+#: lib/templates/content-cart/elements/totals-savings.php:23
+#: lib/templates/content-checkout/elements/totals-savings.php:23
+msgid "Savings"
+msgstr ""
+
+#: lib/deprecated/templates/content-cart.php:104
+#: lib/templates/content-cart/elements/apply-coupon.php:23
+msgid "Apply Coupon"
+msgstr ""
+
+#: lib/deprecated/templates/content-cart.php:116
+#: lib/deprecated/templates/content-checkout.php:113
+#: lib/templates/content-cart.php:41 lib/templates/content-checkout.php:35
+msgid "There are no items in your cart"
+msgstr ""
+
+#: lib/deprecated/templates/content-checkout.php:102
+#: lib/templates/content-checkout/elements/transaction-methods.php:21
+msgid "No Payment add-ons enabled."
+msgstr ""
+
+#: lib/deprecated/templates/content-confirmation.php:36
+#: lib/templates/content-confirmation/elements/product.php:23
+msgid ""
+"The status for this transaction does not grant access to downloadable files. "
+"Once the transaction is updated to an appoved status, you will receive a "
+"followup email with your download links."
+msgstr ""
+
+#: lib/deprecated/templates/content-confirmation.php:52
+#: lib/deprecated/templates/content-downloads.php:51
+#: lib/templates/content-confirmation/elements/product.php:39
+#: lib/templates/content-downloads/elements/download-expiration-date.php:21
+msgid "Expires on"
+msgstr ""
+
+#: lib/deprecated/templates/content-confirmation.php:56
+#: lib/deprecated/templates/content-downloads.php:55
+#: lib/templates/content-confirmation/elements/product.php:43
+#: lib/templates/content-downloads/elements/download-expiration-date.php:27
+msgid "No expiration date"
+msgstr ""
+
+#: lib/deprecated/templates/content-confirmation.php:61
+#: lib/deprecated/templates/content-downloads.php:60
+#: lib/templates/content-confirmation/elements/product.php:48
+#: lib/templates/content-downloads/elements/download-limit.php:21
+msgid "download(s) remaining"
+msgstr ""
+
+#: lib/deprecated/templates/content-confirmation.php:65
+#: lib/deprecated/templates/content-downloads.php:64
+#: lib/templates/content-confirmation/elements/product.php:52
+#: lib/templates/content-downloads/elements/download-limit.php:23
+#: lib/transactions/class.transactions-post-type.php:480
+msgid "Unlimited downloads"
+msgstr ""
+
+#: lib/deprecated/templates/content-confirmation.php:71
+#: lib/deprecated/templates/content-downloads.php:70
+#: lib/templates/content-confirmation/elements/product.php:58
+#: lib/templates/content-downloads/elements/download-url.php:22
+msgid "Download Now"
+msgstr ""
+
+#: lib/deprecated/templates/content-confirmation.php:89
+#: lib/templates/content-confirmation/elements/not-found.php:19
+msgid "No transactions found."
+msgstr ""
+
+#: lib/deprecated/templates/content-downloads.php:41
+#: lib/email-notifications/class.email-notifications.php:277
+#: lib/templates/content-downloads/loops/download-data.php:19
+msgid ""
+"The status for this transaction does not grant access to downloadable files. "
+"Once the transaction is updated to an approved status, you will receive a "
+"follow-up email with your download links."
+msgstr ""
+
+#: lib/deprecated/templates/content-registration.php:22
+#: lib/templates/content-registration/elements/user-logged-in.php:19
+#, php-format
+msgid ""
+"You already have an active account and are logged in. Visit your %sProfile%s"
+msgstr ""
+
+#: lib/deprecated/templates/content-registration.php:49
+#: lib/deprecated/templates/super-widget-registration.php:44
+#: lib/templates/content-registration/elements/login.php:20
+#: lib/templates/super-widget-registration/elements/cancel.php:20
+msgid "Log in"
+msgstr ""
+
+#: lib/deprecated/templates/content-store.php:28
+#: lib/templates/content-store/elements/no-products-found.php:20
+msgid "No Products Found"
+msgstr ""
+
+#: lib/deprecated/templates/store-product.php:28
+#: lib/templates/content-store/elements/permalink.php:19
+msgid "View Details"
+msgstr ""
+
+#: lib/deprecated/templates/super-widget-cart.php:49
+#: lib/deprecated/templates/super-widget-checkout.php:44
+#: lib/templates/super-widget-cart/loops/discounts.php:20
+#: lib/templates/super-widget-checkout/loops/discounts.php:20
+msgid "OFF"
+msgstr ""
+
+#: lib/deprecated/templates/super-widget-cart.php:70
+#: lib/templates/super-widget-cart/elements/apply-coupon.php:21
+msgid "Apply"
+msgstr ""
+
+#: lib/deprecated/templates/super-widget-cart.php:85
+#: lib/templates/super-widget-cart/elements/update-quantity.php:22
+msgid "Update Quantity"
+msgstr ""
+
+#: lib/deprecated/templates/super-widget-cart.php:106
+#: lib/templates/super-widget-cart/elements/summary.php:22
+#, php-format
+msgid "You have 1 item in your <a href=\"%s\">%s</a>"
+msgstr ""
+
+#: lib/deprecated/templates/super-widget-cart.php:108
+#: lib/templates/super-widget-cart/elements/summary.php:24
+#, php-format
+msgid "You have %s items in your <a href=\"%s\">%s</a>"
+msgstr ""
+
+#: lib/deprecated/templates/super-widget-cart.php:117
+#: lib/deprecated/templates/super-widget-checkout.php:87
+#: lib/templates/super-widget-cart/elements/empty-cart-notice.php:20
+msgid "Your cart is empty"
+msgstr ""
+
+#: lib/deprecated/templates/super-widget-checkout.php:53
+#: lib/templates/super-widget-checkout/loops/transaction-methods.php:19
+msgid "No payment add-ons enabled."
+msgstr ""
+
+#: lib/deprecated/templates/super-widget-checkout.php:80
+#: lib/email-notifications/class.email-notifications.php:389
+#: lib/templates/super-widget-checkout/elements/single-item-update-quantity.php:20
+msgid "Quantity"
+msgstr ""
+
 #: lib/email-notifications/class.email-notifications.php:53
 msgid "Invalid transaction. Confirmation email not sent."
 msgstr ""
@@ -2898,14 +3105,6 @@ msgstr ""
 #: lib/email-notifications/class.email-notifications.php:262
 #: lib/email-notifications/class.email-notifications.php:279
 msgid "Available Downloads"
-msgstr ""
-
-#: lib/email-notifications/class.email-notifications.php:277
-#: lib/templates/content-downloads.php:41
-msgid ""
-"The status for this transaction does not grant access to downloadable files. "
-"Once the transaction is updated to an approved status, you will receive a "
-"follow-up email with your download links."
 msgstr ""
 
 #: lib/email-notifications/class.email-notifications.php:286
@@ -2928,11 +3127,6 @@ msgstr ""
 #: lib/functions/functions.php:282
 #: lib/products/class.products-post-type.php:114
 msgid "Product"
-msgstr ""
-
-#: lib/email-notifications/class.email-notifications.php:389
-#: lib/templates/super-widget-checkout.php:80
-msgid "Quantity"
 msgstr ""
 
 #: lib/email-notifications/class.email-notifications.php:390
@@ -3654,113 +3848,27 @@ msgstr ""
 msgid "There are no options for this widget."
 msgstr ""
 
-#: lib/templates/content-cart.php:85 lib/templates/content-checkout.php:84
-#: lib/transactions/class.transactions-post-type.php:511
-msgid "Subtotal"
+#: lib/templates/content-downloads/loops/transaction.php:27
+#: lib/templates/content-downloads/loops/transaction.php:30
+msgid "No downloads found."
 msgstr ""
 
-#: lib/templates/content-cart.php:87 lib/templates/content-checkout.php:86
-msgid "Savings"
+#: lib/templates/content-purchases/elements/no-purchases-found.php:18
+msgid "No purchases found."
 msgstr ""
 
-#: lib/templates/content-cart.php:104
-msgid "Apply Coupon"
+#: lib/templates/content-purchases/elements/no-transaction-products-found.php:18
+msgid "No products found for this transaction"
 msgstr ""
 
-#: lib/templates/content-cart.php:116 lib/templates/content-checkout.php:113
-msgid "There are no items in your cart"
+#: lib/templates/super-widget-cart/elements/cart-total.php:20
+#: lib/templates/super-widget-checkout/loops/cart-total.php:20
+msgid "Total:"
 msgstr ""
 
-#: lib/templates/content-checkout.php:102
-msgid "No Payment add-ons enabled."
-msgstr ""
-
-#: lib/templates/content-confirmation.php:36
-msgid ""
-"The status for this transaction does not grant access to downloadable files. "
-"Once the transaction is updated to an appoved status, you will receive a "
-"followup email with your download links."
-msgstr ""
-
-#: lib/templates/content-confirmation.php:52
-#: lib/templates/content-downloads.php:51
-msgid "Expires on"
-msgstr ""
-
-#: lib/templates/content-confirmation.php:56
-#: lib/templates/content-downloads.php:55
-msgid "No expiration date"
-msgstr ""
-
-#: lib/templates/content-confirmation.php:61
-#: lib/templates/content-downloads.php:60
-msgid "download(s) remaining"
-msgstr ""
-
-#: lib/templates/content-confirmation.php:65
-#: lib/templates/content-downloads.php:64
-#: lib/transactions/class.transactions-post-type.php:480
-msgid "Unlimited downloads"
-msgstr ""
-
-#: lib/templates/content-confirmation.php:71
-#: lib/templates/content-downloads.php:70
-msgid "Download Now"
-msgstr ""
-
-#: lib/templates/content-confirmation.php:89
-msgid "No transactions found."
-msgstr ""
-
-#: lib/templates/content-registration.php:22
-#, php-format
-msgid ""
-"You already have an active account and are logged in. Visit your %sProfile%s"
-msgstr ""
-
-#: lib/templates/content-registration.php:49
-#: lib/templates/super-widget-registration.php:44
-msgid "Log in"
-msgstr ""
-
-#: lib/templates/content-store.php:28
-msgid "No Products Found"
-msgstr ""
-
-#: lib/templates/store-product.php:28
-msgid "View Details"
-msgstr ""
-
-#: lib/templates/super-widget-cart.php:49
-#: lib/templates/super-widget-checkout.php:44
-msgid "OFF"
-msgstr ""
-
-#: lib/templates/super-widget-cart.php:70
-msgid "Apply"
-msgstr ""
-
-#: lib/templates/super-widget-cart.php:85
-msgid "Update Quantity"
-msgstr ""
-
-#: lib/templates/super-widget-cart.php:106
-#, php-format
-msgid "You have 1 item in your <a href=\"%s\">%s</a>"
-msgstr ""
-
-#: lib/templates/super-widget-cart.php:108
-#, php-format
-msgid "You have %s items in your <a href=\"%s\">%s</a>"
-msgstr ""
-
-#: lib/templates/super-widget-cart.php:117
-#: lib/templates/super-widget-checkout.php:87
-msgid "Your cart is empty"
-msgstr ""
-
-#: lib/templates/super-widget-checkout.php:53
-msgid "No payment add-ons enabled."
+#: lib/templates/super-widget-cart/loops/discounts.php:20
+#: lib/templates/super-widget-checkout/loops/discounts.php:20
+msgid "Discount:"
 msgstr ""
 
 #: lib/transactions/class.transaction.php:83

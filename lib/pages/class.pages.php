@@ -125,6 +125,10 @@ class IT_Exchange_Pages {
 			}
 		}
 
+		// Hack. We need a better solution here.
+		if ( 'account' == $this->_current_view )
+			$this->_current_view = 'profile';
+
 		// Add hook for things that need to be done when on an exchange page
 		if ( $this->_current_view )
 			do_action( 'it_exchange_template_redirect', $this->_current_view );
@@ -497,6 +501,17 @@ class IT_Exchange_Pages {
 			foreach( $rewrites as $rewrite ) {
 				$existing = array_merge( $rewrite, $existing );
 			}
+		}
+
+		// This is an exception for the confirmation page.
+		if ( 'wordpress' == it_exchange_get_page_type( 'confirmation', true ) ) {
+			$wpid = it_exchange_get_page_wpid( 'confirmation' );
+			$confirmation_exchange_slug = it_exchange_get_page_slug( 'confirmation', true );
+			if ( $wp_page = get_page( $wpid ) ) 
+				$confirmation_wp_slug = $wp_page->post_name;
+
+			$rewrite = array( $confirmation_wp_slug . '/([^/]+)/?$' => 'index.php?pagename=' . $confirmation_wp_slug . '&' . $confirmation_wp_slug . '=$matches[1]' );
+			$existing = array_merge( $rewrite, $existing );
 		}
 
 		return $existing;

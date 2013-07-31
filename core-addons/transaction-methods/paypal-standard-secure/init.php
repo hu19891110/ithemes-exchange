@@ -121,7 +121,7 @@ function it_exchange_process_paypal_standard_secure_addon_transaction( $status, 
 						throw new Exception( __( 'Error: Transaction IDs do not match! %s, %s', 'it-l10n-ithemes-exchange' ) );
 
 					if ( number_format( $AMT, '2', '', '' ) != number_format( $transaction_object->total, '2', '', '' ) )
-						throw new Exception( __( 'Error: Amount charged is not the same as the cart total!', 'it-l10n-ithemes-exchange' ) );
+						throw new Exception( sprintf( __( 'Error: Amount charged is not the same as the cart total! %s | %s', 'it-l10n-ithemes-exchange' ), $AMT, $transaction_object->total ) );
 
 				} else {
 
@@ -827,9 +827,9 @@ class IT_Exchange_paypal_standard_secure_Add_On {
 			'paypal-standard-secure-sandbox-api-signature',
 			'paypal-standard-secure-purchase-button-label',
 		);
-		$default_wizard_stripe_settings = apply_filters( 'default_wizard_paypal-standard-secure_settings', $fields );
+		$default_wizard_paypal_standard_secure_settings = apply_filters( 'default_wizard_paypal-standard-secure_settings', $fields );
 
-		foreach( $default_wizard_paypal_standard_secure_settings as $var ) {
+		foreach( (array) $default_wizard_paypal_standard_secure_settings as $var ) {
 
 			if ( isset( $_REQUEST['it_exchange_settings-' . $var] ) ) {
 				$paypal_standard_secure_settings[$var] = $_REQUEST['it_exchange_settings-' . $var];
