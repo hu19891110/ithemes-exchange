@@ -9,6 +9,7 @@
  * Retrieves a template part
  *
  * @since 0.3.8
+ * @todo action get_template_part_$slug should probably be deprecated for it_exchange_get_template_part_$slug
  * @param string $slug
  * @param string $name Optional. Default null
  * @return mixed template
@@ -16,6 +17,8 @@
 function it_exchange_get_template_part( $slug, $name=null, $load=true ) {
     // Execute code for this part
     do_action( 'get_template_part_' . $slug, $slug, $name );
+    do_action( 'it_exchange_get_template_part', $slug, $name );
+    do_action( 'it_exchange_get_template_part_' . $slug, $slug, $name );
 
     // Setup possible parts
     $templates = array();
@@ -166,29 +169,9 @@ function it_exchange_unset_template_part_args( $template_name ) {
  *
  * @since 1.0.2
 */
-function it_exchange_get_default_template_versions() {
-	$templates = array(
-		'content-cart'              => '1.0.0',
-		'content-checkout'          => '1.0.0',
-		'content-confirmation'      => '1.0.0',
-		'content-downloads'         => '1.0.2',
-		'content-login'             => '1.0.0',
-		'content-product'           => '1.0.0',
-		'content-profile'           => '1.0.0',
-		'content-purchases'         => '1.0.2',
-		'content-registration'      => '1.0.2',
-		'content-store'             => '1.0.2',
-		'messages'                  => '1.0.0',
-		'super-widget-cart'         => '1.0.2',
-		'super-widget-checkout'     => '1.0.2',
-		'super-widget-login'        => '1.0.0',
-		'super-widget-product'      => '1.0.0',
-		'super-widget-registration' => '1.0.2',
-		'store-product'             => '1.0.2',
-	);
-
+function it_exchange_default_template_parts_last_updated() {
 	// This is not filterable
-	return $templates;
+	return '1.1.0';
 }
 
 /**
@@ -200,7 +183,7 @@ function it_exchange_get_default_template_versions() {
  * @return void
 */
 function activate_updated_template_nag( $versions ) {
-	$templates     = it_exchange_get_default_template_versions();
+	$last_updated  = it_exchange_default_template_parts_last_updated();
 	$updated       = false;
 
 	// Don't update for first time installations
@@ -209,11 +192,9 @@ function activate_updated_template_nag( $versions ) {
 		return;
 	}
 
-	// Compare each template version to current version. Trigger upgrade if changed since pervious version
-	foreach( (array) $templates as $template => $version ) {
-		if ( $version > $versions['previous'] )
+	// Compare version number for last time templates were updated
+	if ( $last_updated > $versions['previous'] )
 			$updated = true;
-	}
 
 	if ( empty( $updated ) )
 		update_option( 'it-exchange-hide-template-update-nag', $versions['current'] );
