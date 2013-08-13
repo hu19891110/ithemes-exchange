@@ -64,6 +64,9 @@ if ( ! class_exists( 'ITDialog' ) ) {
 				$current_user = wp_get_current_user();
 			
 			
+			remove_action( 'admin_enqueue_scripts', 'wp_auth_check_load' );
+			
+			
 			$default_options = array(
 				'styles'                => array( 'global', 'wp-admin', 'colors', 'media', 'ie' ),
 				'hook_suffix'           => 'it-dialog',

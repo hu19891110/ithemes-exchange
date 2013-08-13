@@ -323,10 +323,15 @@
 		it-image-utility.php
 		it-thickbox.php
 		it-zip.php
-2.3.3
+2.3.3 - 2013-06-28 - Chris Jean
 	Fixed issue with ITUtility::get_url_from_file for Multisite upload paths on Windows.
 	Fixed warning in ITZip.
 	
 	Updated:
 		it-utility.php
 		it-zip.php
+2.3.4 - 2013-08-05 - Chris Jean
+	Fixed "Trying to get property of non-object in wp-includes/functions.php on line 3939" warning when in an ITDialog box.
+	
+	Updated:
+		it-dialog.php

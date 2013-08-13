@@ -275,8 +275,7 @@ function it_exchange_serve_product_download( $hash_data ) {
 	do_action( 'it_exchange_serve_download_file', $download_info );
 
 	// Attempt to grab file
-	$filename = basename( $url );
-	if ( $response = wp_remote_get( $url ) ) {
+	if ( $response = wp_remote_head( str_replace( ' ', '%20', $url ) ) ) {
 		if ( ! is_wp_error( $response ) ) {
 			$valid_response_codes = array(
 				200,
@@ -304,12 +303,21 @@ function it_exchange_serve_product_download( $hash_data ) {
 						header( esc_attr( $header ) . ': ' . esc_attr( $headers[$header] ) );
 				}
 
-				// Force download
-				header( 'Content-disposition: attachment; filename="' . $filename . '"' );
+				// Set headers to force download
+				header( 'Content-Description: File Transfer' );
+				header( 'Content-Disposition: attachment; filename=' . basename( $url ) );
+				header( 'Content-Transfer-Encoding: binary' );
+				header( 'Expires: 0' );
+				header( 'Cache-Control: must-revalidate' );
+				header( 'Pragma: public' );
 
-				// Deliver file
-				echo wp_remote_retrieve_body( $response );
+				// Clear buffer
+				flush();
+
+				// Deliver the file
+				readfile(str_replace( ' ', '%20', $url )  );
 				die();
+	
 			}
 			die( __( 'Download Error: Invalid response', 'it-l10n-ithemes-exchange' ) );
 		} else {
