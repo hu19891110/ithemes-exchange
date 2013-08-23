@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/ithemes-exchange\n"
-"POT-Creation-Date: 2013-08-13 08:12-0500\n"
+"POT-Creation-Date: 2013-08-23 09:11-0500\n"
 "PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chris Jean <support@ithemes.com>\n"
 "Language: \n"
@@ -44,6 +44,2302 @@ msgstr ""
 msgid "Successfully saved profile!"
 msgstr ""
 
+#: api/data-sets/countries.php:25
+msgid "Andorra"
+msgstr ""
+
+#: api/data-sets/countries.php:26
+msgid "United Arab Emirates"
+msgstr ""
+
+#: api/data-sets/countries.php:27
+msgid "Afghanistan"
+msgstr ""
+
+#: api/data-sets/countries.php:28
+msgid "Antigua and Barbuda"
+msgstr ""
+
+#: api/data-sets/countries.php:29
+msgid "Anguilla"
+msgstr ""
+
+#: api/data-sets/countries.php:30
+msgid "Albania"
+msgstr ""
+
+#: api/data-sets/countries.php:31
+msgid "Armenia"
+msgstr ""
+
+#: api/data-sets/countries.php:32
+msgid "Netherlands Antilles"
+msgstr ""
+
+#: api/data-sets/countries.php:33
+msgid "Angola"
+msgstr ""
+
+#: api/data-sets/countries.php:34
+msgid "Asia/Pacific Region"
+msgstr ""
+
+#: api/data-sets/countries.php:35
+msgid "Antarctica"
+msgstr ""
+
+#: api/data-sets/countries.php:36
+msgid "Argentina"
+msgstr ""
+
+#: api/data-sets/countries.php:37 api/data-sets/states.php:358
+msgid "American Samoa"
+msgstr ""
+
+#: api/data-sets/countries.php:38
+msgid "Austria"
+msgstr ""
+
+#: api/data-sets/countries.php:39
+msgid "Australia"
+msgstr ""
+
+#: api/data-sets/countries.php:40
+msgid "Aruba"
+msgstr ""
+
+#: api/data-sets/countries.php:41
+msgid "Aland Islands"
+msgstr ""
+
+#: api/data-sets/countries.php:42
+msgid "Azerbaijan"
+msgstr ""
+
+#: api/data-sets/countries.php:43
+msgid "Bosnia and Herzegovina"
+msgstr ""
+
+#: api/data-sets/countries.php:44
+msgid "Barbados"
+msgstr ""
+
+#: api/data-sets/countries.php:45
+msgid "Bangladesh"
+msgstr ""
+
+#: api/data-sets/countries.php:46
+msgid "Belgium"
+msgstr ""
+
+#: api/data-sets/countries.php:47
+msgid "Burkina Faso"
+msgstr ""
+
+#: api/data-sets/countries.php:48
+msgid "Bulgaria"
+msgstr ""
+
+#: api/data-sets/countries.php:49
+msgid "Bahrain"
+msgstr ""
+
+#: api/data-sets/countries.php:50
+msgid "Burundi"
+msgstr ""
+
+#: api/data-sets/countries.php:51
+msgid "Benin"
+msgstr ""
+
+#: api/data-sets/countries.php:52
+msgid "Bermuda"
+msgstr ""
+
+#: api/data-sets/countries.php:53
+msgid "Brunei Darussalam"
+msgstr ""
+
+#: api/data-sets/countries.php:54
+msgid "Bolivia"
+msgstr ""
+
+#: api/data-sets/countries.php:55
+msgid "Brazil"
+msgstr ""
+
+#: api/data-sets/countries.php:56
+msgid "Bahamas"
+msgstr ""
+
+#: api/data-sets/countries.php:57
+msgid "Bhutan"
+msgstr ""
+
+#: api/data-sets/countries.php:58
+msgid "Bouvet Island"
+msgstr ""
+
+#: api/data-sets/countries.php:59
+msgid "Botswana"
+msgstr ""
+
+#: api/data-sets/countries.php:60
+msgid "Belarus"
+msgstr ""
+
+#: api/data-sets/countries.php:61
+msgid "Belize"
+msgstr ""
+
+#: api/data-sets/countries.php:62
+msgid "Canada"
+msgstr ""
+
+#: api/data-sets/countries.php:63
+msgid "Congo, The Democratic Republic of the"
+msgstr ""
+
+#: api/data-sets/countries.php:64
+msgid "Central African Republic"
+msgstr ""
+
+#: api/data-sets/countries.php:65
+msgid "Congo"
+msgstr ""
+
+#: api/data-sets/countries.php:66
+msgid "Switzerland"
+msgstr ""
+
+#: api/data-sets/countries.php:67
+msgid "Cote D'Ivoire"
+msgstr ""
+
+#: api/data-sets/countries.php:68
+msgid "Cook Islands"
+msgstr ""
+
+#: api/data-sets/countries.php:69
+msgid "Chile"
+msgstr ""
+
+#: api/data-sets/countries.php:70
+msgid "Cameroon"
+msgstr ""
+
+#: api/data-sets/countries.php:71
+msgid "China"
+msgstr ""
+
+#: api/data-sets/countries.php:72
+msgid "Colombia"
+msgstr ""
+
+#: api/data-sets/countries.php:73
+msgid "Costa Rica"
+msgstr ""
+
+#: api/data-sets/countries.php:74
+msgid "Cuba"
+msgstr ""
+
+#: api/data-sets/countries.php:75
+msgid "Cape Verde"
+msgstr ""
+
+#: api/data-sets/countries.php:76
+msgid "Cyprus"
+msgstr ""
+
+#: api/data-sets/countries.php:77
+msgid "Czech Republic"
+msgstr ""
+
+#: api/data-sets/countries.php:78
+msgid "Germany"
+msgstr ""
+
+#: api/data-sets/countries.php:79
+msgid "Djibouti"
+msgstr ""
+
+#: api/data-sets/countries.php:80
+msgid "Denmark"
+msgstr ""
+
+#: api/data-sets/countries.php:81
+msgid "Dominica"
+msgstr ""
+
+#: api/data-sets/countries.php:82
+msgid "Dominican Republic"
+msgstr ""
+
+#: api/data-sets/countries.php:83
+msgid "Algeria"
+msgstr ""
+
+#: api/data-sets/countries.php:84
+msgid "Ecuador"
+msgstr ""
+
+#: api/data-sets/countries.php:85
+msgid "Estonia"
+msgstr ""
+
+#: api/data-sets/countries.php:86
+msgid "Egypt"
+msgstr ""
+
+#: api/data-sets/countries.php:87
+msgid "Eritrea"
+msgstr ""
+
+#: api/data-sets/countries.php:88
+msgid "Spain"
+msgstr ""
+
+#: api/data-sets/countries.php:89
+msgid "Ethiopia"
+msgstr ""
+
+#: api/data-sets/countries.php:90
+msgid "Europe"
+msgstr ""
+
+#: api/data-sets/countries.php:91
+msgid "Finland"
+msgstr ""
+
+#: api/data-sets/countries.php:92
+msgid "Fiji"
+msgstr ""
+
+#: api/data-sets/countries.php:93
+msgid "Falkland Islands (Malvinas)"
+msgstr ""
+
+#: api/data-sets/countries.php:94
+msgid "Micronesia, Federated States of"
+msgstr ""
+
+#: api/data-sets/countries.php:95
+msgid "Faroe Islands"
+msgstr ""
+
+#: api/data-sets/countries.php:96
+msgid "France"
+msgstr ""
+
+#: api/data-sets/countries.php:97
+msgid "Gabon"
+msgstr ""
+
+#: api/data-sets/countries.php:98
+msgid "United Kingdom"
+msgstr ""
+
+#: api/data-sets/countries.php:99
+msgid "Grenada"
+msgstr ""
+
+#: api/data-sets/countries.php:100 api/data-sets/states.php:312
+msgid "Georgia"
+msgstr ""
+
+#: api/data-sets/countries.php:101
+msgid "French Guiana"
+msgstr ""
+
+#: api/data-sets/countries.php:102
+msgid "Guernsey"
+msgstr ""
+
+#: api/data-sets/countries.php:103
+msgid "Ghana"
+msgstr ""
+
+#: api/data-sets/countries.php:104
+msgid "Gibraltar"
+msgstr ""
+
+#: api/data-sets/countries.php:105
+msgid "Greenland"
+msgstr ""
+
+#: api/data-sets/countries.php:106
+msgid "Gambia"
+msgstr ""
+
+#: api/data-sets/countries.php:107
+msgid "Guinea"
+msgstr ""
+
+#: api/data-sets/countries.php:108
+msgid "Guadeloupe"
+msgstr ""
+
+#: api/data-sets/countries.php:109
+msgid "Equatorial Guinea"
+msgstr ""
+
+#: api/data-sets/countries.php:110
+msgid "Greece"
+msgstr ""
+
+#: api/data-sets/countries.php:111
+msgid "Guatemala"
+msgstr ""
+
+#: api/data-sets/countries.php:112 api/data-sets/states.php:360
+msgid "Guam"
+msgstr ""
+
+#: api/data-sets/countries.php:113
+msgid "Guinea-Bissau"
+msgstr ""
+
+#: api/data-sets/countries.php:114
+msgid "Guyana"
+msgstr ""
+
+#: api/data-sets/countries.php:115
+msgid "Hong Kong"
+msgstr ""
+
+#: api/data-sets/countries.php:116
+msgid "Honduras"
+msgstr ""
+
+#: api/data-sets/countries.php:117
+msgid "Croatia"
+msgstr ""
+
+#: api/data-sets/countries.php:118
+msgid "Haiti"
+msgstr ""
+
+#: api/data-sets/countries.php:119
+msgid "Hungary"
+msgstr ""
+
+#: api/data-sets/countries.php:120
+msgid "Indonesia"
+msgstr ""
+
+#: api/data-sets/countries.php:121
+msgid "Ireland"
+msgstr ""
+
+#: api/data-sets/countries.php:122
+msgid "Israel"
+msgstr ""
+
+#: api/data-sets/countries.php:123
+msgid "Isle of Man"
+msgstr ""
+
+#: api/data-sets/countries.php:124
+msgid "India"
+msgstr ""
+
+#: api/data-sets/countries.php:125
+msgid "British Indian Ocean Territory"
+msgstr ""
+
+#: api/data-sets/countries.php:126
+msgid "Iraq"
+msgstr ""
+
+#: api/data-sets/countries.php:127
+msgid "Iran, Islamic Republic of"
+msgstr ""
+
+#: api/data-sets/countries.php:128
+msgid "Iceland"
+msgstr ""
+
+#: api/data-sets/countries.php:129
+msgid "Italy"
+msgstr ""
+
+#: api/data-sets/countries.php:130
+msgid "Jersey"
+msgstr ""
+
+#: api/data-sets/countries.php:131
+msgid "Jamaica"
+msgstr ""
+
+#: api/data-sets/countries.php:132
+msgid "Jordan"
+msgstr ""
+
+#: api/data-sets/countries.php:133
+msgid "Japan"
+msgstr ""
+
+#: api/data-sets/countries.php:134
+msgid "Kenya"
+msgstr ""
+
+#: api/data-sets/countries.php:135
+msgid "Kyrgyzstan"
+msgstr ""
+
+#: api/data-sets/countries.php:136
+msgid "Cambodia"
+msgstr ""
+
+#: api/data-sets/countries.php:137
+msgid "Kiribati"
+msgstr ""
+
+#: api/data-sets/countries.php:138
+msgid "Comoros"
+msgstr ""
+
+#: api/data-sets/countries.php:139
+msgid "Saint Kitts and Nevis"
+msgstr ""
+
+#: api/data-sets/countries.php:140
+msgid "Korea, Democratic People's Republic of"
+msgstr ""
+
+#: api/data-sets/countries.php:141
+msgid "Korea, Republic of"
+msgstr ""
+
+#: api/data-sets/countries.php:142
+msgid "Kuwait"
+msgstr ""
+
+#: api/data-sets/countries.php:143
+msgid "Cayman Islands"
+msgstr ""
+
+#: api/data-sets/countries.php:144
+msgid "Kazakstan"
+msgstr ""
+
+#: api/data-sets/countries.php:145
+msgid "Lao People's Democratic Republic"
+msgstr ""
+
+#: api/data-sets/countries.php:146
+msgid "Lebanon"
+msgstr ""
+
+#: api/data-sets/countries.php:147
+msgid "Saint Lucia"
+msgstr ""
+
+#: api/data-sets/countries.php:148
+msgid "Liechtenstein"
+msgstr ""
+
+#: api/data-sets/countries.php:149
+msgid "Sri Lanka"
+msgstr ""
+
+#: api/data-sets/countries.php:150
+msgid "Liberia"
+msgstr ""
+
+#: api/data-sets/countries.php:151
+msgid "Lesotho"
+msgstr ""
+
+#: api/data-sets/countries.php:152
+msgid "Lithuania"
+msgstr ""
+
+#: api/data-sets/countries.php:153
+msgid "Luxembourg"
+msgstr ""
+
+#: api/data-sets/countries.php:154
+msgid "Latvia"
+msgstr ""
+
+#: api/data-sets/countries.php:155
+msgid "Libyan Arab Jamahiriya"
+msgstr ""
+
+#: api/data-sets/countries.php:156
+msgid "Morocco"
+msgstr ""
+
+#: api/data-sets/countries.php:157
+msgid "Monaco"
+msgstr ""
+
+#: api/data-sets/countries.php:158
+msgid "Moldova, Republic of"
+msgstr ""
+
+#: api/data-sets/countries.php:159
+msgid "Montenegro"
+msgstr ""
+
+#: api/data-sets/countries.php:160
+msgid "Madagascar"
+msgstr ""
+
+#: api/data-sets/countries.php:161 api/data-sets/states.php:361
+msgid "Marshall Islands"
+msgstr ""
+
+#: api/data-sets/countries.php:162
+msgid "Macedonia"
+msgstr ""
+
+#: api/data-sets/countries.php:163
+msgid "Mali"
+msgstr ""
+
+#: api/data-sets/countries.php:164
+msgid "Myanmar"
+msgstr ""
+
+#: api/data-sets/countries.php:165
+msgid "Mongolia"
+msgstr ""
+
+#: api/data-sets/countries.php:166
+msgid "Macau"
+msgstr ""
+
+#: api/data-sets/countries.php:167 api/data-sets/states.php:362
+msgid "Northern Mariana Islands"
+msgstr ""
+
+#: api/data-sets/countries.php:168
+msgid "Martinique"
+msgstr ""
+
+#: api/data-sets/countries.php:169
+msgid "Mauritania"
+msgstr ""
+
+#: api/data-sets/countries.php:170
+msgid "Montserrat"
+msgstr ""
+
+#: api/data-sets/countries.php:171
+msgid "Malta"
+msgstr ""
+
+#: api/data-sets/countries.php:172
+msgid "Mauritius"
+msgstr ""
+
+#: api/data-sets/countries.php:173
+msgid "Maldives"
+msgstr ""
+
+#: api/data-sets/countries.php:174
+msgid "Malawi"
+msgstr ""
+
+#: api/data-sets/countries.php:175
+msgid "Mexico"
+msgstr ""
+
+#: api/data-sets/countries.php:176
+msgid "Malaysia"
+msgstr ""
+
+#: api/data-sets/countries.php:177
+msgid "Mozambique"
+msgstr ""
+
+#: api/data-sets/countries.php:178
+msgid "Namibia"
+msgstr ""
+
+#: api/data-sets/countries.php:179
+msgid "New Caledonia"
+msgstr ""
+
+#: api/data-sets/countries.php:180
+msgid "Niger"
+msgstr ""
+
+#: api/data-sets/countries.php:181
+msgid "Norfolk Island"
+msgstr ""
+
+#: api/data-sets/countries.php:182
+msgid "Nigeria"
+msgstr ""
+
+#: api/data-sets/countries.php:183
+msgid "Nicaragua"
+msgstr ""
+
+#: api/data-sets/countries.php:184
+msgid "Netherlands"
+msgstr ""
+
+#: api/data-sets/countries.php:185
+msgid "Norway"
+msgstr ""
+
+#: api/data-sets/countries.php:186
+msgid "Nepal"
+msgstr ""
+
+#: api/data-sets/countries.php:187
+msgid "Nauru"
+msgstr ""
+
+#: api/data-sets/countries.php:188
+msgid "Niue"
+msgstr ""
+
+#: api/data-sets/countries.php:189
+msgid "New Zealand"
+msgstr ""
+
+#: api/data-sets/countries.php:190
+msgid "Oman"
+msgstr ""
+
+#: api/data-sets/countries.php:191
+msgid "Panama"
+msgstr ""
+
+#: api/data-sets/countries.php:192
+msgid "Peru"
+msgstr ""
+
+#: api/data-sets/countries.php:193
+msgid "French Polynesia"
+msgstr ""
+
+#: api/data-sets/countries.php:194
+msgid "Papua New Guinea"
+msgstr ""
+
+#: api/data-sets/countries.php:195
+msgid "Philippines"
+msgstr ""
+
+#: api/data-sets/countries.php:196
+msgid "Pakistan"
+msgstr ""
+
+#: api/data-sets/countries.php:197
+msgid "Poland"
+msgstr ""
+
+#: api/data-sets/countries.php:198
+msgid "Saint Pierre and Miquelon"
+msgstr ""
+
+#: api/data-sets/countries.php:199 api/data-sets/states.php:363
+msgid "Puerto Rico"
+msgstr ""
+
+#: api/data-sets/countries.php:200
+msgid "Palestinian Territory, Occupied"
+msgstr ""
+
+#: api/data-sets/countries.php:201
+msgid "Portugal"
+msgstr ""
+
+#: api/data-sets/countries.php:202 api/data-sets/states.php:364
+msgid "Palau"
+msgstr ""
+
+#: api/data-sets/countries.php:203
+msgid "Paraguay"
+msgstr ""
+
+#: api/data-sets/countries.php:204
+msgid "Qatar"
+msgstr ""
+
+#: api/data-sets/countries.php:205
+msgid "Reunion"
+msgstr ""
+
+#: api/data-sets/countries.php:206
+msgid "Romania"
+msgstr ""
+
+#: api/data-sets/countries.php:207
+msgid "Serbia"
+msgstr ""
+
+#: api/data-sets/countries.php:208
+msgid "Russian Federation"
+msgstr ""
+
+#: api/data-sets/countries.php:209
+msgid "Rwanda"
+msgstr ""
+
+#: api/data-sets/countries.php:210
+msgid "Saudi Arabia"
+msgstr ""
+
+#: api/data-sets/countries.php:211
+msgid "Solomon Islands"
+msgstr ""
+
+#: api/data-sets/countries.php:212
+msgid "Seychelles"
+msgstr ""
+
+#: api/data-sets/countries.php:213
+msgid "Sudan"
+msgstr ""
+
+#: api/data-sets/countries.php:214
+msgid "Sweden"
+msgstr ""
+
+#: api/data-sets/countries.php:215
+msgid "Singapore"
+msgstr ""
+
+#: api/data-sets/countries.php:216
+msgid "Slovenia"
+msgstr ""
+
+#: api/data-sets/countries.php:217
+msgid "Slovakia"
+msgstr ""
+
+#: api/data-sets/countries.php:218
+msgid "Sierra Leone"
+msgstr ""
+
+#: api/data-sets/countries.php:219
+msgid "San Marino"
+msgstr ""
+
+#: api/data-sets/countries.php:220
+msgid "Senegal"
+msgstr ""
+
+#: api/data-sets/countries.php:221
+msgid "Somalia"
+msgstr ""
+
+#: api/data-sets/countries.php:222
+msgid "Suriname"
+msgstr ""
+
+#: api/data-sets/countries.php:223
+msgid "Sao Tome and Principe"
+msgstr ""
+
+#: api/data-sets/countries.php:224
+msgid "El Salvador"
+msgstr ""
+
+#: api/data-sets/countries.php:225
+msgid "Syrian Arab Republic"
+msgstr ""
+
+#: api/data-sets/countries.php:226
+msgid "Swaziland"
+msgstr ""
+
+#: api/data-sets/countries.php:227
+msgid "Turks and Caicos Islands"
+msgstr ""
+
+#: api/data-sets/countries.php:228
+msgid "Chad"
+msgstr ""
+
+#: api/data-sets/countries.php:229
+msgid "Togo"
+msgstr ""
+
+#: api/data-sets/countries.php:230
+msgid "Thailand"
+msgstr ""
+
+#: api/data-sets/countries.php:231
+msgid "Tajikistan"
+msgstr ""
+
+#: api/data-sets/countries.php:232
+msgid "Tokelau"
+msgstr ""
+
+#: api/data-sets/countries.php:233
+msgid "Turkmenistan"
+msgstr ""
+
+#: api/data-sets/countries.php:234
+msgid "Tunisia"
+msgstr ""
+
+#: api/data-sets/countries.php:235
+msgid "Tonga"
+msgstr ""
+
+#: api/data-sets/countries.php:236
+msgid "Turkey"
+msgstr ""
+
+#: api/data-sets/countries.php:237
+msgid "Trinidad and Tobago"
+msgstr ""
+
+#: api/data-sets/countries.php:238
+msgid "Tuvalu"
+msgstr ""
+
+#: api/data-sets/countries.php:239
+msgid "Taiwan"
+msgstr ""
+
+#: api/data-sets/countries.php:240
+msgid "Tanzania, United Republic of"
+msgstr ""
+
+#: api/data-sets/countries.php:241
+msgid "Ukraine"
+msgstr ""
+
+#: api/data-sets/countries.php:242
+msgid "Uganda"
+msgstr ""
+
+#: api/data-sets/countries.php:243
+msgid "United States Minor Outlying Islands"
+msgstr ""
+
+#: api/data-sets/countries.php:244
+msgid "United States"
+msgstr ""
+
+#: api/data-sets/countries.php:245
+msgid "Uruguay"
+msgstr ""
+
+#: api/data-sets/countries.php:246
+msgid "Uzbekistan"
+msgstr ""
+
+#: api/data-sets/countries.php:247
+msgid "Holy See (Vatican City State)"
+msgstr ""
+
+#: api/data-sets/countries.php:248
+msgid "Saint Vincent and the Grenadines"
+msgstr ""
+
+#: api/data-sets/countries.php:249
+msgid "Venezuela"
+msgstr ""
+
+#: api/data-sets/countries.php:250
+msgid "Virgin Islands, British"
+msgstr ""
+
+#: api/data-sets/countries.php:251
+msgid "Virgin Islands, U.S."
+msgstr ""
+
+#: api/data-sets/countries.php:252
+msgid "Vietnam"
+msgstr ""
+
+#: api/data-sets/countries.php:253
+msgid "Vanuatu"
+msgstr ""
+
+#: api/data-sets/countries.php:254
+msgid "Wallis and Futuna"
+msgstr ""
+
+#: api/data-sets/countries.php:255
+msgid "Samoa"
+msgstr ""
+
+#: api/data-sets/countries.php:256
+msgid "Yemen"
+msgstr ""
+
+#: api/data-sets/countries.php:257
+msgid "Mayotte"
+msgstr ""
+
+#: api/data-sets/countries.php:258
+msgid "South Africa"
+msgstr ""
+
+#: api/data-sets/countries.php:259
+msgid "Zambia"
+msgstr ""
+
+#: api/data-sets/countries.php:260
+msgid "Zimbabwe"
+msgstr ""
+
+#: api/data-sets/currencies.php:19
+msgid "UAE dirham"
+msgstr ""
+
+#: api/data-sets/currencies.php:20
+msgid "Afghan afghani"
+msgstr ""
+
+#: api/data-sets/currencies.php:21
+msgid "Albanian lek"
+msgstr ""
+
+#: api/data-sets/currencies.php:22
+msgid "Armenian dram"
+msgstr ""
+
+#: api/data-sets/currencies.php:23
+msgid "Netherlands Antillean gulden"
+msgstr ""
+
+#: api/data-sets/currencies.php:24
+msgid "Angolan kwanza"
+msgstr ""
+
+#: api/data-sets/currencies.php:25
+msgid "Argentine peso"
+msgstr ""
+
+#: api/data-sets/currencies.php:26
+msgid "Australian dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:27
+msgid "Aruban florin"
+msgstr ""
+
+#: api/data-sets/currencies.php:28
+msgid "Azerbaijani manat"
+msgstr ""
+
+#: api/data-sets/currencies.php:29
+msgid "Bosnia and Herzegovina konvertibilna marka"
+msgstr ""
+
+#: api/data-sets/currencies.php:30
+msgid "Barbadian dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:31
+msgid "Bangladeshi taka"
+msgstr ""
+
+#: api/data-sets/currencies.php:32
+msgid "Bulgarian lev"
+msgstr ""
+
+#: api/data-sets/currencies.php:33
+msgid "Bahraini dinar"
+msgstr ""
+
+#: api/data-sets/currencies.php:34
+msgid "Burundi franc"
+msgstr ""
+
+#: api/data-sets/currencies.php:35
+msgid "Bermudian dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:36
+msgid "Brunei dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:37
+msgid "Bolivian boliviano"
+msgstr ""
+
+#: api/data-sets/currencies.php:38
+msgid "Brazilian real"
+msgstr ""
+
+#: api/data-sets/currencies.php:39
+msgid "Bahamian dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:40
+msgid "Bhutanese ngultrum"
+msgstr ""
+
+#: api/data-sets/currencies.php:41
+msgid "Botswana pula"
+msgstr ""
+
+#: api/data-sets/currencies.php:42
+msgid "Belarusian ruble"
+msgstr ""
+
+#: api/data-sets/currencies.php:43
+msgid "Belize dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:44
+msgid "Canadian dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:45
+msgid "Congolese franc"
+msgstr ""
+
+#: api/data-sets/currencies.php:46
+msgid "Swiss franc"
+msgstr ""
+
+#: api/data-sets/currencies.php:47
+msgid "Chilean peso"
+msgstr ""
+
+#: api/data-sets/currencies.php:48
+msgid "Chinese/Yuan renminbi"
+msgstr ""
+
+#: api/data-sets/currencies.php:49
+msgid "Colombian peso"
+msgstr ""
+
+#: api/data-sets/currencies.php:50
+msgid "Costa Rican colon"
+msgstr ""
+
+#: api/data-sets/currencies.php:51
+msgid "Cuban peso"
+msgstr ""
+
+#: api/data-sets/currencies.php:52
+msgid "Cape Verdean escudo"
+msgstr ""
+
+#: api/data-sets/currencies.php:53
+msgid "Czech koruna"
+msgstr ""
+
+#: api/data-sets/currencies.php:54
+msgid "Djiboutian franc"
+msgstr ""
+
+#: api/data-sets/currencies.php:55
+msgid "Danish krone"
+msgstr ""
+
+#: api/data-sets/currencies.php:56
+msgid "Dominican peso"
+msgstr ""
+
+#: api/data-sets/currencies.php:57
+msgid "Algerian dinar"
+msgstr ""
+
+#: api/data-sets/currencies.php:58
+msgid "Estonian kroon"
+msgstr ""
+
+#: api/data-sets/currencies.php:59
+msgid "Egyptian pound"
+msgstr ""
+
+#: api/data-sets/currencies.php:60
+msgid "Eritrean nakfa"
+msgstr ""
+
+#: api/data-sets/currencies.php:61
+msgid "Ethiopian birr"
+msgstr ""
+
+#: api/data-sets/currencies.php:62
+msgid "European Euro"
+msgstr ""
+
+#: api/data-sets/currencies.php:63
+msgid "Fijian dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:64
+msgid "Falkland Islands pound"
+msgstr ""
+
+#: api/data-sets/currencies.php:65
+msgid "British pound"
+msgstr ""
+
+#: api/data-sets/currencies.php:66
+msgid "Georgian lari"
+msgstr ""
+
+#: api/data-sets/currencies.php:67
+msgid "Ghanaian cedi"
+msgstr ""
+
+#: api/data-sets/currencies.php:68
+msgid "Gibraltar pound"
+msgstr ""
+
+#: api/data-sets/currencies.php:69
+msgid "Gambian dalasi"
+msgstr ""
+
+#: api/data-sets/currencies.php:70
+msgid "Guinean franc"
+msgstr ""
+
+#: api/data-sets/currencies.php:71 api/data-sets/currencies.php:166
+msgid "Central African CFA franc"
+msgstr ""
+
+#: api/data-sets/currencies.php:72
+msgid "Guatemalan quetzal"
+msgstr ""
+
+#: api/data-sets/currencies.php:73
+msgid "Guyanese dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:74
+msgid "Hong Kong dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:75
+msgid "Honduran lempira"
+msgstr ""
+
+#: api/data-sets/currencies.php:76
+msgid "Croatian kuna"
+msgstr ""
+
+#: api/data-sets/currencies.php:77
+msgid "Haitian gourde"
+msgstr ""
+
+#: api/data-sets/currencies.php:78
+msgid "Hungarian forint"
+msgstr ""
+
+#: api/data-sets/currencies.php:79
+msgid "Indonesian rupiah"
+msgstr ""
+
+#: api/data-sets/currencies.php:80
+msgid "Israeli new sheqel"
+msgstr ""
+
+#: api/data-sets/currencies.php:81
+msgid "Indian rupee"
+msgstr ""
+
+#: api/data-sets/currencies.php:82
+msgid "Iraqi dinar"
+msgstr ""
+
+#: api/data-sets/currencies.php:83
+msgid "Iranian rial"
+msgstr ""
+
+#: api/data-sets/currencies.php:84
+msgid "Icelandic kr\\u00f3na"
+msgstr ""
+
+#: api/data-sets/currencies.php:85
+msgid "Jamaican dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:86
+msgid "Jordanian dinar"
+msgstr ""
+
+#: api/data-sets/currencies.php:87
+msgid "Japanese yen"
+msgstr ""
+
+#: api/data-sets/currencies.php:88
+msgid "Kenyan shilling"
+msgstr ""
+
+#: api/data-sets/currencies.php:89
+msgid "Kyrgyzstani som"
+msgstr ""
+
+#: api/data-sets/currencies.php:90
+msgid "Cambodian riel"
+msgstr ""
+
+#: api/data-sets/currencies.php:91
+msgid "Comorian franc"
+msgstr ""
+
+#: api/data-sets/currencies.php:92
+msgid "North Korean won"
+msgstr ""
+
+#: api/data-sets/currencies.php:93
+msgid "South Korean won"
+msgstr ""
+
+#: api/data-sets/currencies.php:94
+msgid "Kuwaiti dinar"
+msgstr ""
+
+#: api/data-sets/currencies.php:95
+msgid "Cayman Islands dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:96
+msgid "Kazakhstani tenge"
+msgstr ""
+
+#: api/data-sets/currencies.php:97
+msgid "Lao kip"
+msgstr ""
+
+#: api/data-sets/currencies.php:98
+msgid "Lebanese lira"
+msgstr ""
+
+#: api/data-sets/currencies.php:99
+msgid "Sri Lankan rupee"
+msgstr ""
+
+#: api/data-sets/currencies.php:100
+msgid "Liberian dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:101
+msgid "Lesotho loti"
+msgstr ""
+
+#: api/data-sets/currencies.php:102
+msgid "Lithuanian litas"
+msgstr ""
+
+#: api/data-sets/currencies.php:103
+msgid "Latvian lats"
+msgstr ""
+
+#: api/data-sets/currencies.php:104
+msgid "Libyan dinar"
+msgstr ""
+
+#: api/data-sets/currencies.php:105
+msgid "Moroccan dirham"
+msgstr ""
+
+#: api/data-sets/currencies.php:106
+msgid "Moldovan leu"
+msgstr ""
+
+#: api/data-sets/currencies.php:107
+msgid "Malagasy ariary"
+msgstr ""
+
+#: api/data-sets/currencies.php:108
+msgid "Macedonian denar"
+msgstr ""
+
+#: api/data-sets/currencies.php:109
+msgid "Myanma kyat"
+msgstr ""
+
+#: api/data-sets/currencies.php:110
+msgid "Mongolian tugrik"
+msgstr ""
+
+#: api/data-sets/currencies.php:111
+msgid "Macanese pataca"
+msgstr ""
+
+#: api/data-sets/currencies.php:112
+msgid "Mauritanian ouguiya"
+msgstr ""
+
+#: api/data-sets/currencies.php:113
+msgid "Mauritian rupee"
+msgstr ""
+
+#: api/data-sets/currencies.php:114
+msgid "Maldivian rufiyaa"
+msgstr ""
+
+#: api/data-sets/currencies.php:115
+msgid "Malawian kwacha"
+msgstr ""
+
+#: api/data-sets/currencies.php:116
+msgid "Mexican peso"
+msgstr ""
+
+#: api/data-sets/currencies.php:117
+msgid "Malaysian ringgit"
+msgstr ""
+
+#: api/data-sets/currencies.php:118
+msgid "Mozambican metical"
+msgstr ""
+
+#: api/data-sets/currencies.php:119
+msgid "Namibian dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:120
+msgid "Nigerian naira"
+msgstr ""
+
+#: api/data-sets/currencies.php:121
+msgid "Nicaraguan c\\u00f3rdoba"
+msgstr ""
+
+#: api/data-sets/currencies.php:122
+msgid "Norwegian krone"
+msgstr ""
+
+#: api/data-sets/currencies.php:123
+msgid "Nepalese rupee"
+msgstr ""
+
+#: api/data-sets/currencies.php:124
+msgid "New Zealand dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:125
+msgid "Omani rial"
+msgstr ""
+
+#: api/data-sets/currencies.php:126
+msgid "Panamanian balboa"
+msgstr ""
+
+#: api/data-sets/currencies.php:127
+msgid "Peruvian nuevo sol"
+msgstr ""
+
+#: api/data-sets/currencies.php:128
+msgid "Papua New Guinean kina"
+msgstr ""
+
+#: api/data-sets/currencies.php:129
+msgid "Philippine peso"
+msgstr ""
+
+#: api/data-sets/currencies.php:130
+msgid "Pakistani rupee"
+msgstr ""
+
+#: api/data-sets/currencies.php:131
+msgid "Polish zloty"
+msgstr ""
+
+#: api/data-sets/currencies.php:132
+msgid "Paraguayan guarani"
+msgstr ""
+
+#: api/data-sets/currencies.php:133
+msgid "Qatari riyal"
+msgstr ""
+
+#: api/data-sets/currencies.php:134
+msgid "Romanian leu"
+msgstr ""
+
+#: api/data-sets/currencies.php:135
+msgid "Serbian dinar"
+msgstr ""
+
+#: api/data-sets/currencies.php:136
+msgid "Russian ruble"
+msgstr ""
+
+#: api/data-sets/currencies.php:137
+msgid "Saudi riyal"
+msgstr ""
+
+#: api/data-sets/currencies.php:138
+msgid "Solomon Islands dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:139
+msgid "Seychellois rupee"
+msgstr ""
+
+#: api/data-sets/currencies.php:140
+msgid "Sudanese pound"
+msgstr ""
+
+#: api/data-sets/currencies.php:141
+msgid "Swedish krona"
+msgstr ""
+
+#: api/data-sets/currencies.php:142
+msgid "Singapore dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:143
+msgid "Saint Helena pound"
+msgstr ""
+
+#: api/data-sets/currencies.php:144
+msgid "Sierra Leonean leone"
+msgstr ""
+
+#: api/data-sets/currencies.php:145
+msgid "Somali shilling"
+msgstr ""
+
+#: api/data-sets/currencies.php:146
+msgid "Surinamese dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:147
+msgid "Syrian pound"
+msgstr ""
+
+#: api/data-sets/currencies.php:148
+msgid "Swazi lilangeni"
+msgstr ""
+
+#: api/data-sets/currencies.php:149
+msgid "Thai baht"
+msgstr ""
+
+#: api/data-sets/currencies.php:150
+msgid "Tajikistani somoni"
+msgstr ""
+
+#: api/data-sets/currencies.php:151
+msgid "Turkmen manat"
+msgstr ""
+
+#: api/data-sets/currencies.php:152
+msgid "Tunisian dinar"
+msgstr ""
+
+#: api/data-sets/currencies.php:153
+msgid "Turkish new lira"
+msgstr ""
+
+#: api/data-sets/currencies.php:154
+msgid "Trinidad and Tobago dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:155
+msgid "New Taiwan dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:156
+msgid "Tanzanian shilling"
+msgstr ""
+
+#: api/data-sets/currencies.php:157
+msgid "Ukrainian hryvnia"
+msgstr ""
+
+#: api/data-sets/currencies.php:158
+msgid "Ugandan shilling"
+msgstr ""
+
+#: api/data-sets/currencies.php:159
+msgid "United States dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:160
+msgid "Uruguayan peso"
+msgstr ""
+
+#: api/data-sets/currencies.php:161
+msgid "Uzbekistani som"
+msgstr ""
+
+#: api/data-sets/currencies.php:162
+msgid "Venezuelan bolivar"
+msgstr ""
+
+#: api/data-sets/currencies.php:163
+msgid "Vietnamese dong"
+msgstr ""
+
+#: api/data-sets/currencies.php:164
+msgid "Vanuatu vatu"
+msgstr ""
+
+#: api/data-sets/currencies.php:165
+msgid "Samoan tala"
+msgstr ""
+
+#: api/data-sets/currencies.php:167
+msgid "East Caribbean dollar"
+msgstr ""
+
+#: api/data-sets/currencies.php:168
+msgid "Special Drawing Rights"
+msgstr ""
+
+#: api/data-sets/currencies.php:169
+msgid "West African CFA franc"
+msgstr ""
+
+#: api/data-sets/currencies.php:170
+msgid "CFP franc"
+msgstr ""
+
+#: api/data-sets/currencies.php:171
+msgid "Yemeni rial"
+msgstr ""
+
+#: api/data-sets/currencies.php:172
+msgid "South African rand"
+msgstr ""
+
+#: api/data-sets/currencies.php:173
+msgid "Zambian kwacha"
+msgstr ""
+
+#: api/data-sets/currencies.php:174
+msgid "Zimbabwean dollar"
+msgstr ""
+
+#: api/data-sets/states.php:60
+msgid "New South Wales"
+msgstr ""
+
+#: api/data-sets/states.php:61
+msgid "Queensland"
+msgstr ""
+
+#: api/data-sets/states.php:62
+msgid "South Australia"
+msgstr ""
+
+#: api/data-sets/states.php:63
+msgid "Tasmania"
+msgstr ""
+
+#: api/data-sets/states.php:64
+msgid "Victoria"
+msgstr ""
+
+#: api/data-sets/states.php:65
+msgid "Western Australia"
+msgstr ""
+
+#: api/data-sets/states.php:71
+msgid "Australian Capital Territory"
+msgstr ""
+
+#: api/data-sets/states.php:72
+msgid "Jervis Bay Territory"
+msgstr ""
+
+#: api/data-sets/states.php:73
+msgid "Northern Territory"
+msgstr ""
+
+#: api/data-sets/states.php:100
+msgid "Alberta"
+msgstr ""
+
+#: api/data-sets/states.php:101
+msgid "British Columbia"
+msgstr ""
+
+#: api/data-sets/states.php:102
+msgid "Manitoba"
+msgstr ""
+
+#: api/data-sets/states.php:103
+msgid "New Brunswick"
+msgstr ""
+
+#: api/data-sets/states.php:104
+msgid "Newfoundland"
+msgstr ""
+
+#: api/data-sets/states.php:105
+msgid "Northwest Territories"
+msgstr ""
+
+#: api/data-sets/states.php:106
+msgid "Nova Scotia"
+msgstr ""
+
+#: api/data-sets/states.php:107
+msgid "Nunavut"
+msgstr ""
+
+#: api/data-sets/states.php:108
+msgid "Ontario"
+msgstr ""
+
+#: api/data-sets/states.php:109
+msgid "Prince Edward Island"
+msgstr ""
+
+#: api/data-sets/states.php:110
+msgid "Quebec"
+msgstr ""
+
+#: api/data-sets/states.php:111
+msgid "Saskatchewan"
+msgstr ""
+
+#: api/data-sets/states.php:112
+msgid "Yukon Territory"
+msgstr ""
+
+#: api/data-sets/states.php:129
+msgid "Baden-Württemberg"
+msgstr ""
+
+#: api/data-sets/states.php:130
+msgid "Bayern"
+msgstr ""
+
+#: api/data-sets/states.php:131
+msgid "Berlin"
+msgstr ""
+
+#: api/data-sets/states.php:132
+msgid "Brandenburg"
+msgstr ""
+
+#: api/data-sets/states.php:133
+msgid "Bremen"
+msgstr ""
+
+#: api/data-sets/states.php:134
+msgid "Hamburg"
+msgstr ""
+
+#: api/data-sets/states.php:135
+msgid "Hessen"
+msgstr ""
+
+#: api/data-sets/states.php:136
+msgid "Mecklenburg-Vorpommern"
+msgstr ""
+
+#: api/data-sets/states.php:137
+msgid "Niedersachsen"
+msgstr ""
+
+#: api/data-sets/states.php:138
+msgid "Nordrhein-Westfalen"
+msgstr ""
+
+#: api/data-sets/states.php:139
+msgid "Rheinland-Pfalz"
+msgstr ""
+
+#: api/data-sets/states.php:140
+msgid "Saarland"
+msgstr ""
+
+#: api/data-sets/states.php:141
+msgid "Sachsen"
+msgstr ""
+
+#: api/data-sets/states.php:142
+msgid "Sachsen-Anhalt"
+msgstr ""
+
+#: api/data-sets/states.php:143
+msgid "Schleswig-Holstein"
+msgstr ""
+
+#: api/data-sets/states.php:144
+msgid "Thüringen"
+msgstr ""
+
+#: api/data-sets/states.php:161
+msgid "Alsace"
+msgstr ""
+
+#: api/data-sets/states.php:162
+msgid "Aquitaine"
+msgstr ""
+
+#: api/data-sets/states.php:163
+msgid "Auvergne"
+msgstr ""
+
+#: api/data-sets/states.php:164
+msgid "Basse-Normandie"
+msgstr ""
+
+#: api/data-sets/states.php:165
+msgid "Bourgogne"
+msgstr ""
+
+#: api/data-sets/states.php:166
+msgid "Bretagne"
+msgstr ""
+
+#: api/data-sets/states.php:167
+msgid "Centre"
+msgstr ""
+
+#: api/data-sets/states.php:168
+msgid "Champagne-Ardenne"
+msgstr ""
+
+#: api/data-sets/states.php:169
+msgid "Corse"
+msgstr ""
+
+#: api/data-sets/states.php:170
+msgid "Franche-Comté"
+msgstr ""
+
+#: api/data-sets/states.php:171
+msgid "Haute-Normandie"
+msgstr ""
+
+#: api/data-sets/states.php:172
+msgid "Île-de-France"
+msgstr ""
+
+#: api/data-sets/states.php:173
+msgid "Languedoc-Roussillon"
+msgstr ""
+
+#: api/data-sets/states.php:174
+msgid "Limousin"
+msgstr ""
+
+#: api/data-sets/states.php:175
+msgid "Lorraine"
+msgstr ""
+
+#: api/data-sets/states.php:176
+msgid "Midi-Pyrénées"
+msgstr ""
+
+#: api/data-sets/states.php:177
+msgid "Nord-Pas-de-Calais"
+msgstr ""
+
+#: api/data-sets/states.php:178
+msgid "Pays de la Loire"
+msgstr ""
+
+#: api/data-sets/states.php:179
+msgid "Picardie"
+msgstr ""
+
+#: api/data-sets/states.php:180
+msgid "Poitou-Charentes"
+msgstr ""
+
+#: api/data-sets/states.php:181
+msgid "Provence-Alpes-Côte d'Azur"
+msgstr ""
+
+#: api/data-sets/states.php:182
+msgid "Rhône-Alpes"
+msgstr ""
+
+#: api/data-sets/states.php:200
+msgid "Drenthe"
+msgstr ""
+
+#: api/data-sets/states.php:201
+msgid "Flevoland"
+msgstr ""
+
+#: api/data-sets/states.php:202
+msgid "Fryslân"
+msgstr ""
+
+#: api/data-sets/states.php:203
+msgid "Gelderland"
+msgstr ""
+
+#: api/data-sets/states.php:204
+msgid "Groningen"
+msgstr ""
+
+#: api/data-sets/states.php:205
+msgid "Limburg"
+msgstr ""
+
+#: api/data-sets/states.php:206
+msgid "Noord-Brabant"
+msgstr ""
+
+#: api/data-sets/states.php:207
+msgid "Noord-Holland"
+msgstr ""
+
+#: api/data-sets/states.php:208
+msgid "Overijssel"
+msgstr ""
+
+#: api/data-sets/states.php:209
+msgid "Utrecht"
+msgstr ""
+
+#: api/data-sets/states.php:210
+msgid "Zeeland"
+msgstr ""
+
+#: api/data-sets/states.php:211
+msgid "Zuid-Holland"
+msgstr ""
+
+#: api/data-sets/states.php:228
+msgid "A Coruña"
+msgstr ""
+
+#: api/data-sets/states.php:229
+msgid "Álava / Araba"
+msgstr ""
+
+#: api/data-sets/states.php:230
+msgid "Albacete"
+msgstr ""
+
+#: api/data-sets/states.php:231
+msgid "Alicante / Alacant"
+msgstr ""
+
+#: api/data-sets/states.php:232
+msgid "Almería"
+msgstr ""
+
+#: api/data-sets/states.php:233
+msgid "Asturias"
+msgstr ""
+
+#: api/data-sets/states.php:234
+msgid "Ávila"
+msgstr ""
+
+#: api/data-sets/states.php:235
+msgid "Badajoz"
+msgstr ""
+
+#: api/data-sets/states.php:236
+msgid "Balears"
+msgstr ""
+
+#: api/data-sets/states.php:237
+msgid "Barcelona"
+msgstr ""
+
+#: api/data-sets/states.php:238
+msgid "Burgos"
+msgstr ""
+
+#: api/data-sets/states.php:239
+msgid "Cáceres"
+msgstr ""
+
+#: api/data-sets/states.php:240
+msgid "Cádiz"
+msgstr ""
+
+#: api/data-sets/states.php:241
+msgid "Cantabria"
+msgstr ""
+
+#: api/data-sets/states.php:242
+msgid "Castelló"
+msgstr ""
+
+#: api/data-sets/states.php:243
+msgid "Ciudad Real"
+msgstr ""
+
+#: api/data-sets/states.php:244
+msgid "Córdoba"
+msgstr ""
+
+#: api/data-sets/states.php:245
+msgid "Cuenca"
+msgstr ""
+
+#: api/data-sets/states.php:246
+msgid "Girona"
+msgstr ""
+
+#: api/data-sets/states.php:247
+msgid "Granada"
+msgstr ""
+
+#: api/data-sets/states.php:248
+msgid "Guadalajara"
+msgstr ""
+
+#: api/data-sets/states.php:249
+msgid "Guipúzcoa / Gipuzkoa"
+msgstr ""
+
+#: api/data-sets/states.php:250
+msgid "Huelva"
+msgstr ""
+
+#: api/data-sets/states.php:251
+msgid "Huesca"
+msgstr ""
+
+#: api/data-sets/states.php:252
+msgid "Jaén"
+msgstr ""
+
+#: api/data-sets/states.php:253
+msgid "La Rioja"
+msgstr ""
+
+#: api/data-sets/states.php:254
+msgid "Las Palmas"
+msgstr ""
+
+#: api/data-sets/states.php:255
+msgid "León"
+msgstr ""
+
+#: api/data-sets/states.php:256
+msgid "Lleida"
+msgstr ""
+
+#: api/data-sets/states.php:257
+msgid "Lugo"
+msgstr ""
+
+#: api/data-sets/states.php:258
+msgid "Madrid"
+msgstr ""
+
+#: api/data-sets/states.php:259
+msgid "Málaga"
+msgstr ""
+
+#: api/data-sets/states.php:260
+msgid "Murcia"
+msgstr ""
+
+#: api/data-sets/states.php:261
+msgid "Navarra / Nafarroa"
+msgstr ""
+
+#: api/data-sets/states.php:262
+msgid "Ourense"
+msgstr ""
+
+#: api/data-sets/states.php:263
+msgid "Palencia"
+msgstr ""
+
+#: api/data-sets/states.php:264
+msgid "Pontevedra"
+msgstr ""
+
+#: api/data-sets/states.php:265
+msgid "Salamanca"
+msgstr ""
+
+#: api/data-sets/states.php:266
+msgid "Santa Cruz de Tenerife"
+msgstr ""
+
+#: api/data-sets/states.php:267
+msgid "Segovia"
+msgstr ""
+
+#: api/data-sets/states.php:268
+msgid "Sevilla"
+msgstr ""
+
+#: api/data-sets/states.php:269
+msgid "Soria"
+msgstr ""
+
+#: api/data-sets/states.php:270
+msgid "Tarragona"
+msgstr ""
+
+#: api/data-sets/states.php:271
+msgid "Teruel"
+msgstr ""
+
+#: api/data-sets/states.php:272
+msgid "Toledo"
+msgstr ""
+
+#: api/data-sets/states.php:273
+msgid "Valencia / València"
+msgstr ""
+
+#: api/data-sets/states.php:274
+msgid "Valladolid"
+msgstr ""
+
+#: api/data-sets/states.php:275
+msgid "Vizcaya / Bizkaia"
+msgstr ""
+
+#: api/data-sets/states.php:276
+msgid "Zamora"
+msgstr ""
+
+#: api/data-sets/states.php:277
+msgid "Zaragoza"
+msgstr ""
+
+#: api/data-sets/states.php:302
+msgid "Alabama"
+msgstr ""
+
+#: api/data-sets/states.php:303
+msgid "Alaska"
+msgstr ""
+
+#: api/data-sets/states.php:304
+msgid "Arizona"
+msgstr ""
+
+#: api/data-sets/states.php:305
+msgid "Arkansas"
+msgstr ""
+
+#: api/data-sets/states.php:306
+msgid "California"
+msgstr ""
+
+#: api/data-sets/states.php:307
+msgid "Colorado"
+msgstr ""
+
+#: api/data-sets/states.php:308
+msgid "Connecticut"
+msgstr ""
+
+#: api/data-sets/states.php:309
+msgid "Delaware"
+msgstr ""
+
+#: api/data-sets/states.php:310
+msgid "District Of Columbia"
+msgstr ""
+
+#: api/data-sets/states.php:311
+msgid "Florida"
+msgstr ""
+
+#: api/data-sets/states.php:313
+msgid "Hawaii"
+msgstr ""
+
+#: api/data-sets/states.php:314
+msgid "Idaho"
+msgstr ""
+
+#: api/data-sets/states.php:315
+msgid "Illinois"
+msgstr ""
+
+#: api/data-sets/states.php:316
+msgid "Indiana"
+msgstr ""
+
+#: api/data-sets/states.php:317
+msgid "Iowa"
+msgstr ""
+
+#: api/data-sets/states.php:318
+msgid "Kansas"
+msgstr ""
+
+#: api/data-sets/states.php:319
+msgid "Kentucky"
+msgstr ""
+
+#: api/data-sets/states.php:320
+msgid "Louisiana"
+msgstr ""
+
+#: api/data-sets/states.php:321
+msgid "Maine"
+msgstr ""
+
+#: api/data-sets/states.php:322
+msgid "Maryland"
+msgstr ""
+
+#: api/data-sets/states.php:323
+msgid "Massachusetts"
+msgstr ""
+
+#: api/data-sets/states.php:324
+msgid "Michigan"
+msgstr ""
+
+#: api/data-sets/states.php:325
+msgid "Minnesota"
+msgstr ""
+
+#: api/data-sets/states.php:326
+msgid "Mississippi"
+msgstr ""
+
+#: api/data-sets/states.php:327
+msgid "Missouri"
+msgstr ""
+
+#: api/data-sets/states.php:328
+msgid "Montana"
+msgstr ""
+
+#: api/data-sets/states.php:329
+msgid "Nebraska"
+msgstr ""
+
+#: api/data-sets/states.php:330
+msgid "Nevada"
+msgstr ""
+
+#: api/data-sets/states.php:331
+msgid "New Hampshire"
+msgstr ""
+
+#: api/data-sets/states.php:332
+msgid "New Jersey"
+msgstr ""
+
+#: api/data-sets/states.php:333
+msgid "New Mexico"
+msgstr ""
+
+#: api/data-sets/states.php:334
+msgid "New York"
+msgstr ""
+
+#: api/data-sets/states.php:335
+msgid "North Carolina"
+msgstr ""
+
+#: api/data-sets/states.php:336
+msgid "North Dakota"
+msgstr ""
+
+#: api/data-sets/states.php:337
+msgid "Ohio"
+msgstr ""
+
+#: api/data-sets/states.php:338
+msgid "Oklahoma"
+msgstr ""
+
+#: api/data-sets/states.php:339
+msgid "Oregon"
+msgstr ""
+
+#: api/data-sets/states.php:340
+msgid "Pennsylvania"
+msgstr ""
+
+#: api/data-sets/states.php:341
+msgid "Rhode Island"
+msgstr ""
+
+#: api/data-sets/states.php:342
+msgid "South Carolina"
+msgstr ""
+
+#: api/data-sets/states.php:343
+msgid "South Dakota"
+msgstr ""
+
+#: api/data-sets/states.php:344
+msgid "Tennessee"
+msgstr ""
+
+#: api/data-sets/states.php:345
+msgid "Texas"
+msgstr ""
+
+#: api/data-sets/states.php:346
+msgid "Utah"
+msgstr ""
+
+#: api/data-sets/states.php:347
+msgid "Vermont"
+msgstr ""
+
+#: api/data-sets/states.php:348
+msgid "Virginia"
+msgstr ""
+
+#: api/data-sets/states.php:349
+msgid "Washington"
+msgstr ""
+
+#: api/data-sets/states.php:350
+msgid "West Virginia"
+msgstr ""
+
+#: api/data-sets/states.php:351
+msgid "Wisconsin"
+msgstr ""
+
+#: api/data-sets/states.php:352
+msgid "Wyoming"
+msgstr ""
+
+#: api/data-sets/states.php:359
+msgid "Federated States of Micronesia"
+msgstr ""
+
+#: api/data-sets/states.php:365
+msgid "Virgin Islands"
+msgstr ""
+
+#: api/data-sets/states.php:391
+msgid "Eastern Cape"
+msgstr ""
+
+#: api/data-sets/states.php:392
+msgid "Free State"
+msgstr ""
+
+#: api/data-sets/states.php:393
+msgid "Gauteng"
+msgstr ""
+
+#: api/data-sets/states.php:394
+msgid "KwaZulu-Natal"
+msgstr ""
+
+#: api/data-sets/states.php:395
+msgid "Limpopo"
+msgstr ""
+
+#: api/data-sets/states.php:396
+msgid "Mpumalanga"
+msgstr ""
+
+#: api/data-sets/states.php:397
+msgid "Northern Cape"
+msgstr ""
+
+#: api/data-sets/states.php:398
+msgid "North West"
+msgstr ""
+
+#: api/data-sets/states.php:399
+msgid "Western Cape"
+msgstr ""
+
 #: api/downloads.php:249
 msgid "Download doesn't expire"
 msgstr ""
@@ -56,631 +2352,15 @@ msgstr ""
 msgid "Download Error:"
 msgstr ""
 
-#: api/misc.php:258
-msgid "UAE dirham"
-msgstr ""
-
-#: api/misc.php:259
-msgid "Afghan afghani"
-msgstr ""
-
-#: api/misc.php:260
-msgid "Albanian lek"
-msgstr ""
-
-#: api/misc.php:261
-msgid "Armenian dram"
-msgstr ""
-
-#: api/misc.php:262
-msgid "Netherlands Antillean gulden"
-msgstr ""
-
-#: api/misc.php:263
-msgid "Angolan kwanza"
-msgstr ""
-
-#: api/misc.php:264
-msgid "Argentine peso"
-msgstr ""
-
-#: api/misc.php:265
-msgid "Australian dollar"
-msgstr ""
-
-#: api/misc.php:266
-msgid "Aruban florin"
-msgstr ""
-
-#: api/misc.php:267
-msgid "Azerbaijani manat"
-msgstr ""
-
-#: api/misc.php:268
-msgid "Bosnia and Herzegovina konvertibilna marka"
-msgstr ""
-
-#: api/misc.php:269
-msgid "Barbadian dollar"
-msgstr ""
-
-#: api/misc.php:270
-msgid "Bangladeshi taka"
-msgstr ""
-
-#: api/misc.php:271
-msgid "Bulgarian lev"
-msgstr ""
-
-#: api/misc.php:272
-msgid "Bahraini dinar"
-msgstr ""
-
-#: api/misc.php:273
-msgid "Burundi franc"
-msgstr ""
-
-#: api/misc.php:274
-msgid "Bermudian dollar"
-msgstr ""
-
-#: api/misc.php:275
-msgid "Brunei dollar"
-msgstr ""
-
-#: api/misc.php:276
-msgid "Bolivian boliviano"
-msgstr ""
-
-#: api/misc.php:277
-msgid "Brazilian real"
-msgstr ""
-
-#: api/misc.php:278
-msgid "Bahamian dollar"
-msgstr ""
-
-#: api/misc.php:279
-msgid "Bhutanese ngultrum"
-msgstr ""
-
-#: api/misc.php:280
-msgid "Botswana pula"
-msgstr ""
-
-#: api/misc.php:281
-msgid "Belarusian ruble"
-msgstr ""
-
-#: api/misc.php:282
-msgid "Belize dollar"
-msgstr ""
-
-#: api/misc.php:283
-msgid "Canadian dollar"
-msgstr ""
-
-#: api/misc.php:284
-msgid "Congolese franc"
-msgstr ""
-
-#: api/misc.php:285
-msgid "Swiss franc"
-msgstr ""
-
-#: api/misc.php:286
-msgid "Chilean peso"
-msgstr ""
-
-#: api/misc.php:287
-msgid "Chinese/Yuan renminbi"
-msgstr ""
-
-#: api/misc.php:288
-msgid "Colombian peso"
-msgstr ""
-
-#: api/misc.php:289
-msgid "Costa Rican colon"
-msgstr ""
-
-#: api/misc.php:290
-msgid "Cuban peso"
-msgstr ""
-
-#: api/misc.php:291
-msgid "Cape Verdean escudo"
-msgstr ""
-
-#: api/misc.php:292
-msgid "Czech koruna"
-msgstr ""
-
-#: api/misc.php:293
-msgid "Djiboutian franc"
-msgstr ""
-
-#: api/misc.php:294
-msgid "Danish krone"
-msgstr ""
-
-#: api/misc.php:295
-msgid "Dominican peso"
-msgstr ""
-
-#: api/misc.php:296
-msgid "Algerian dinar"
-msgstr ""
-
-#: api/misc.php:297
-msgid "Estonian kroon"
-msgstr ""
-
-#: api/misc.php:298
-msgid "Egyptian pound"
-msgstr ""
-
-#: api/misc.php:299
-msgid "Eritrean nakfa"
-msgstr ""
-
-#: api/misc.php:300
-msgid "Ethiopian birr"
-msgstr ""
-
-#: api/misc.php:301
-msgid "European Euro"
-msgstr ""
-
-#: api/misc.php:302
-msgid "Fijian dollar"
-msgstr ""
-
-#: api/misc.php:303
-msgid "Falkland Islands pound"
-msgstr ""
-
-#: api/misc.php:304
-msgid "British pound"
-msgstr ""
-
-#: api/misc.php:305
-msgid "Georgian lari"
-msgstr ""
-
-#: api/misc.php:306
-msgid "Ghanaian cedi"
-msgstr ""
-
-#: api/misc.php:307
-msgid "Gibraltar pound"
-msgstr ""
-
-#: api/misc.php:308
-msgid "Gambian dalasi"
-msgstr ""
-
-#: api/misc.php:309
-msgid "Guinean franc"
-msgstr ""
-
-#: api/misc.php:310 api/misc.php:405
-msgid "Central African CFA franc"
-msgstr ""
-
-#: api/misc.php:311
-msgid "Guatemalan quetzal"
-msgstr ""
-
-#: api/misc.php:312
-msgid "Guyanese dollar"
-msgstr ""
-
-#: api/misc.php:313
-msgid "Hong Kong dollar"
-msgstr ""
-
-#: api/misc.php:314
-msgid "Honduran lempira"
-msgstr ""
-
-#: api/misc.php:315
-msgid "Croatian kuna"
-msgstr ""
-
-#: api/misc.php:316
-msgid "Haitian gourde"
-msgstr ""
-
 #: api/misc.php:317
-msgid "Hungarian forint"
-msgstr ""
-
-#: api/misc.php:318
-msgid "Indonesian rupiah"
-msgstr ""
-
-#: api/misc.php:319
-msgid "Israeli new sheqel"
-msgstr ""
-
-#: api/misc.php:320
-msgid "Indian rupee"
-msgstr ""
-
-#: api/misc.php:321
-msgid "Iraqi dinar"
-msgstr ""
-
-#: api/misc.php:322
-msgid "Iranian rial"
-msgstr ""
-
-#: api/misc.php:323
-msgid "Icelandic kr\\u00f3na"
-msgstr ""
-
-#: api/misc.php:324
-msgid "Jamaican dollar"
-msgstr ""
-
-#: api/misc.php:325
-msgid "Jordanian dinar"
-msgstr ""
-
-#: api/misc.php:326
-msgid "Japanese yen"
-msgstr ""
-
-#: api/misc.php:327
-msgid "Kenyan shilling"
-msgstr ""
-
-#: api/misc.php:328
-msgid "Kyrgyzstani som"
-msgstr ""
-
-#: api/misc.php:329
-msgid "Cambodian riel"
-msgstr ""
-
-#: api/misc.php:330
-msgid "Comorian franc"
-msgstr ""
-
-#: api/misc.php:331
-msgid "North Korean won"
-msgstr ""
-
-#: api/misc.php:332
-msgid "South Korean won"
-msgstr ""
-
-#: api/misc.php:333
-msgid "Kuwaiti dinar"
-msgstr ""
-
-#: api/misc.php:334
-msgid "Cayman Islands dollar"
-msgstr ""
-
-#: api/misc.php:335
-msgid "Kazakhstani tenge"
-msgstr ""
-
-#: api/misc.php:336
-msgid "Lao kip"
-msgstr ""
-
-#: api/misc.php:337
-msgid "Lebanese lira"
-msgstr ""
-
-#: api/misc.php:338
-msgid "Sri Lankan rupee"
-msgstr ""
-
-#: api/misc.php:339
-msgid "Liberian dollar"
-msgstr ""
-
-#: api/misc.php:340
-msgid "Lesotho loti"
-msgstr ""
-
-#: api/misc.php:341
-msgid "Lithuanian litas"
-msgstr ""
-
-#: api/misc.php:342
-msgid "Latvian lats"
-msgstr ""
-
-#: api/misc.php:343
-msgid "Libyan dinar"
-msgstr ""
-
-#: api/misc.php:344
-msgid "Moroccan dirham"
-msgstr ""
-
-#: api/misc.php:345
-msgid "Moldovan leu"
-msgstr ""
-
-#: api/misc.php:346
-msgid "Malagasy ariary"
-msgstr ""
-
-#: api/misc.php:347
-msgid "Macedonian denar"
-msgstr ""
-
-#: api/misc.php:348
-msgid "Myanma kyat"
-msgstr ""
-
-#: api/misc.php:349
-msgid "Mongolian tugrik"
-msgstr ""
-
-#: api/misc.php:350
-msgid "Macanese pataca"
-msgstr ""
-
-#: api/misc.php:351
-msgid "Mauritanian ouguiya"
-msgstr ""
-
-#: api/misc.php:352
-msgid "Mauritian rupee"
-msgstr ""
-
-#: api/misc.php:353
-msgid "Maldivian rufiyaa"
-msgstr ""
-
-#: api/misc.php:354
-msgid "Malawian kwacha"
-msgstr ""
-
-#: api/misc.php:355
-msgid "Mexican peso"
-msgstr ""
-
-#: api/misc.php:356
-msgid "Malaysian ringgit"
-msgstr ""
-
-#: api/misc.php:357
-msgid "Mozambican metical"
-msgstr ""
-
-#: api/misc.php:358
-msgid "Namibian dollar"
-msgstr ""
-
-#: api/misc.php:359
-msgid "Nigerian naira"
-msgstr ""
-
-#: api/misc.php:360
-msgid "Nicaraguan c\\u00f3rdoba"
-msgstr ""
-
-#: api/misc.php:361
-msgid "Norwegian krone"
-msgstr ""
-
-#: api/misc.php:362
-msgid "Nepalese rupee"
-msgstr ""
-
-#: api/misc.php:363
-msgid "New Zealand dollar"
-msgstr ""
-
-#: api/misc.php:364
-msgid "Omani rial"
-msgstr ""
-
-#: api/misc.php:365
-msgid "Panamanian balboa"
-msgstr ""
-
-#: api/misc.php:366
-msgid "Peruvian nuevo sol"
-msgstr ""
-
-#: api/misc.php:367
-msgid "Papua New Guinean kina"
-msgstr ""
-
-#: api/misc.php:368
-msgid "Philippine peso"
-msgstr ""
-
-#: api/misc.php:369
-msgid "Pakistani rupee"
-msgstr ""
-
-#: api/misc.php:370
-msgid "Polish zloty"
-msgstr ""
-
-#: api/misc.php:371
-msgid "Paraguayan guarani"
-msgstr ""
-
-#: api/misc.php:372
-msgid "Qatari riyal"
-msgstr ""
-
-#: api/misc.php:373
-msgid "Romanian leu"
-msgstr ""
-
-#: api/misc.php:374
-msgid "Serbian dinar"
-msgstr ""
-
-#: api/misc.php:375
-msgid "Russian ruble"
-msgstr ""
-
-#: api/misc.php:376
-msgid "Saudi riyal"
-msgstr ""
-
-#: api/misc.php:377
-msgid "Solomon Islands dollar"
-msgstr ""
-
-#: api/misc.php:378
-msgid "Seychellois rupee"
-msgstr ""
-
-#: api/misc.php:379
-msgid "Sudanese pound"
-msgstr ""
-
-#: api/misc.php:380
-msgid "Swedish krona"
-msgstr ""
-
-#: api/misc.php:381
-msgid "Singapore dollar"
-msgstr ""
-
-#: api/misc.php:382
-msgid "Saint Helena pound"
-msgstr ""
-
-#: api/misc.php:383
-msgid "Sierra Leonean leone"
-msgstr ""
-
-#: api/misc.php:384
-msgid "Somali shilling"
-msgstr ""
-
-#: api/misc.php:385
-msgid "Surinamese dollar"
-msgstr ""
-
-#: api/misc.php:386
-msgid "Syrian pound"
-msgstr ""
-
-#: api/misc.php:387
-msgid "Swazi lilangeni"
-msgstr ""
-
-#: api/misc.php:388
-msgid "Thai baht"
-msgstr ""
-
-#: api/misc.php:389
-msgid "Tajikistani somoni"
-msgstr ""
-
-#: api/misc.php:390
-msgid "Turkmen manat"
-msgstr ""
-
-#: api/misc.php:391
-msgid "Tunisian dinar"
-msgstr ""
-
-#: api/misc.php:392
-msgid "Turkish new lira"
-msgstr ""
-
-#: api/misc.php:393
-msgid "Trinidad and Tobago dollar"
-msgstr ""
-
-#: api/misc.php:394
-msgid "New Taiwan dollar"
-msgstr ""
-
-#: api/misc.php:395
-msgid "Tanzanian shilling"
-msgstr ""
-
-#: api/misc.php:396
-msgid "Ukrainian hryvnia"
-msgstr ""
-
-#: api/misc.php:397
-msgid "Ugandan shilling"
-msgstr ""
-
-#: api/misc.php:398
-msgid "United States dollar"
-msgstr ""
-
-#: api/misc.php:399
-msgid "Uruguayan peso"
-msgstr ""
-
-#: api/misc.php:400
-msgid "Uzbekistani som"
-msgstr ""
-
-#: api/misc.php:401
-msgid "Venezuelan bolivar"
-msgstr ""
-
-#: api/misc.php:402
-msgid "Vietnamese dong"
-msgstr ""
-
-#: api/misc.php:403
-msgid "Vanuatu vatu"
-msgstr ""
-
-#: api/misc.php:404
-msgid "Samoan tala"
-msgstr ""
-
-#: api/misc.php:406
-msgid "East Caribbean dollar"
-msgstr ""
-
-#: api/misc.php:407
-msgid "Special Drawing Rights"
-msgstr ""
-
-#: api/misc.php:408
-msgid "West African CFA franc"
-msgstr ""
-
-#: api/misc.php:409
-msgid "CFP franc"
-msgstr ""
-
-#: api/misc.php:410
-msgid "Yemeni rial"
-msgstr ""
-
-#: api/misc.php:411
-msgid "South African rand"
-msgstr ""
-
-#: api/misc.php:412
-msgid "Zambian kwacha"
-msgstr ""
-
-#: api/misc.php:413
-msgid "Zimbabwean dollar"
+msgid "Please complete all purchase requirements before checkout out."
 msgstr ""
 
 #: api/theme/cart-item.php:77 core-addons/coupons/basic-coupons/init.php:226
 msgid "&times;"
 msgstr ""
 
-#: api/theme/cart-item.php:278 api/theme/product.php:565
+#: api/theme/cart-item.php:278 api/theme/product.php:566
 msgid "Unregisterd image size."
 msgstr ""
 
@@ -702,12 +2382,14 @@ msgstr ""
 msgid "Empty Cart"
 msgstr ""
 
-#: api/theme/checkout.php:93 api/theme/login.php:322
+#: api/theme/checkout.php:93 api/theme/login.php:326
 #: api/theme/registration.php:367
 #: core-addons/coupons/basic-coupons/admin.php:302
 #: lib/deprecated/templates/super-widget-cart.php:76
 #: lib/products/class.products-post-type.php:325
 #: lib/products/class.products-post-type.php:354
+#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/login/cancel.php:20
+#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/registration/cancel.php:20
 #: lib/templates/super-widget-cart/elements/single-item-cart-cancel.php:22
 msgid "Cancel"
 msgstr ""
@@ -717,33 +2399,37 @@ msgstr ""
 msgid "Coupon Code"
 msgstr ""
 
-#: api/theme/customer.php:127 api/theme/registration.php:147
+#: api/theme/customer.php:128 api/theme/registration.php:147
 msgid "First Name"
 msgstr ""
 
-#: api/theme/customer.php:168 api/theme/registration.php:184
+#: api/theme/customer.php:169 api/theme/registration.php:184
 msgid "Last Name"
 msgstr ""
 
-#: api/theme/customer.php:209 api/theme/registration.php:221
-#: core-addons/load.php:230
+#: api/theme/customer.php:210
+msgid "Display Name"
+msgstr ""
+
+#: api/theme/customer.php:253 api/theme/registration.php:221
+#: core-addons/load.php:231
 msgid "Email"
 msgstr ""
 
-#: api/theme/customer.php:250
+#: api/theme/customer.php:294
 msgid "Website"
 msgstr ""
 
-#: api/theme/customer.php:291 api/theme/login.php:137
+#: api/theme/customer.php:335 api/theme/login.php:141
 #: api/theme/registration.php:258
 msgid "Password"
 msgstr ""
 
-#: api/theme/customer.php:328 api/theme/registration.php:295
+#: api/theme/customer.php:372 api/theme/registration.php:295
 msgid "Confirm Password"
 msgstr ""
 
-#: api/theme/customer.php:365
+#: api/theme/customer.php:409
 msgid "Save Profile"
 msgstr ""
 
@@ -764,23 +2450,24 @@ msgstr ""
 msgid "%d %s after purchase"
 msgstr ""
 
-#: api/theme/login.php:100 api/theme/registration.php:110
+#: api/theme/login.php:104 api/theme/registration.php:110
 msgid "Username"
 msgstr ""
 
-#: api/theme/login.php:174
+#: api/theme/login.php:178
 msgid "Remember Me"
 msgstr ""
 
-#: api/theme/login.php:211 lib/functions/functions.php:391
+#: api/theme/login.php:215 lib/functions/functions.php:416
 msgid "Log In"
 msgstr ""
 
-#: api/theme/login.php:247
+#: api/theme/login.php:251
 msgid "Lost your password?"
 msgstr ""
 
-#: api/theme/login.php:287 api/theme/registration.php:332
+#: api/theme/login.php:291 api/theme/registration.php:332
+#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/login/register.php:20
 msgid "Register"
 msgstr ""
 
@@ -808,34 +2495,34 @@ msgid ""
 "Exchange theme API class"
 msgstr ""
 
-#: api/theme/product.php:756 api/theme/product.php:880
+#: api/theme/product.php:757 api/theme/product.php:881
 #: lib/admin/views/admin-get-more-addons.php:66
 msgid "Buy Now"
 msgstr ""
 
-#: api/theme/product.php:763 api/theme/product.php:941
+#: api/theme/product.php:764 api/theme/product.php:942
 msgid "Add to Cart"
-msgstr ""
-
-#: api/theme/product.php:767 api/theme/product.php:883
-#: api/theme/product.php:944
-msgid "Out of stock."
 msgstr ""
 
 #: api/theme/product.php:768 api/theme/product.php:884
 #: api/theme/product.php:945
+msgid "Out of stock."
+msgstr ""
+
+#: api/theme/product.php:769 api/theme/product.php:885
+#: api/theme/product.php:946
 msgid "Product not available right now."
 msgstr ""
 
-#: api/theme/product.php:787
+#: api/theme/product.php:788
 msgid "Product is currently out of stock."
 msgstr ""
 
-#: api/theme/product.php:790
+#: api/theme/product.php:791
 msgid "Product is currently not available."
 msgstr ""
 
-#: api/theme/product.php:947
+#: api/theme/product.php:948
 msgid "Max Quantity Reached"
 msgstr ""
 
@@ -843,7 +2530,7 @@ msgstr ""
 msgid "Registration Disabled"
 msgstr ""
 
-#: api/theme/transaction.php:348 lib/admin/views/admin-user-products.php:88
+#: api/theme/transaction.php:387 lib/admin/views/admin-user-products.php:88
 msgid "Unlimited Downloads"
 msgstr ""
 
@@ -889,11 +2576,11 @@ msgid "Recent Sales"
 msgstr ""
 
 #: core-addons/admin/basic-reporting/dashboard-widget.php:26
-#: core-addons/admin/basic-reporting/dashboard-widget.php:40
+#: core-addons/admin/basic-reporting/dashboard-widget.php:44
 msgid "View all"
 msgstr ""
 
-#: core-addons/admin/basic-reporting/dashboard-widget.php:42
+#: core-addons/admin/basic-reporting/dashboard-widget.php:46
 msgid "No Recent Sales"
 msgstr ""
 
@@ -1189,87 +2876,87 @@ msgstr ""
 msgid "Duplicate"
 msgstr ""
 
-#: core-addons/load.php:184 lib/products/class.products-post-type.php:579
+#: core-addons/load.php:185 lib/products/class.products-post-type.php:579
 msgid "Product Type"
 msgstr ""
 
-#: core-addons/load.php:185
+#: core-addons/load.php:186
 msgid ""
 "Add-ons responsible for the differing types of products available in iThemes "
 "Exchange."
 msgstr ""
 
-#: core-addons/load.php:190
+#: core-addons/load.php:191
 msgid "Transaction Methods"
 msgstr ""
 
-#: core-addons/load.php:191
+#: core-addons/load.php:192
 msgid "Add-ons that create transactions. eg: Stripe, PayPal."
 msgstr ""
 
-#: core-addons/load.php:203
+#: core-addons/load.php:204
 #: core-addons/transaction-methods/offline-payments/init.php:25
 msgctxt "Transaction Status"
 msgid "Pending"
 msgstr ""
 
-#: core-addons/load.php:204
+#: core-addons/load.php:205
 msgctxt "Transaction Status"
 msgid "Authorized"
 msgstr ""
 
-#: core-addons/load.php:205
+#: core-addons/load.php:206
 #: core-addons/transaction-methods/offline-payments/init.php:26
 msgctxt "Transaction Status"
 msgid "Paid"
 msgstr ""
 
-#: core-addons/load.php:206
+#: core-addons/load.php:207
 #: core-addons/transaction-methods/offline-payments/init.php:27
 msgctxt "Transaction Status"
 msgid "Refunded"
 msgstr ""
 
-#: core-addons/load.php:207
+#: core-addons/load.php:208
 #: core-addons/transaction-methods/offline-payments/init.php:28
 msgctxt "Transaction Status"
 msgid "Voided"
 msgstr ""
 
-#: core-addons/load.php:215
+#: core-addons/load.php:216
 msgid "Admin Add-ons"
 msgstr ""
 
-#: core-addons/load.php:216
+#: core-addons/load.php:217
 msgid ""
 "Add-ons that create general purpose admin functionality. eg: Reports, Export."
 msgstr ""
 
-#: core-addons/load.php:220
+#: core-addons/load.php:221
 msgid "Coupon Add-ons"
 msgstr ""
 
-#: core-addons/load.php:221
+#: core-addons/load.php:222
 msgid "Add-ons that create coupons for your customers."
 msgstr ""
 
-#: core-addons/load.php:225
+#: core-addons/load.php:226
 msgid "Taxonomy Add-ons"
 msgstr ""
 
-#: core-addons/load.php:226
+#: core-addons/load.php:227
 msgid "Add-ons that create new taxonomies specifically for Exchange products."
 msgstr ""
 
-#: core-addons/load.php:231
+#: core-addons/load.php:232
 msgid "Add-ons that help store owners manage their email."
 msgstr ""
 
-#: core-addons/load.php:235
+#: core-addons/load.php:236
 msgid "Other"
 msgstr ""
 
-#: core-addons/load.php:236
+#: core-addons/load.php:237
 msgid "Add-ons that don't fit in any other add-on category."
 msgstr ""
 
@@ -1390,7 +3077,7 @@ msgstr ""
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:690
 #: lib/admin/views/admin-email-settings.php:158
 #: lib/admin/views/admin-page-settings.php:128
-#: lib/admin/views/admin-settings.php:125
+#: lib/admin/views/admin-settings.php:146
 msgid "Save Changes"
 msgstr ""
 
@@ -1399,8 +3086,8 @@ msgstr ""
 #: core-addons/transaction-methods/offline-payments/init.php:430
 #: core-addons/transaction-methods/paypal-standard/init.php:702
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:794
-#: lib/admin/class.admin.php:979 lib/admin/class.admin.php:1140
-#: lib/admin/class.admin.php:1230
+#: lib/admin/class.admin.php:1015 lib/admin/class.admin.php:1176
+#: lib/admin/class.admin.php:1266
 msgid "Error. Please try again"
 msgstr ""
 
@@ -1517,8 +3204,8 @@ msgstr ""
 #: core-addons/transaction-methods/offline-payments/init.php:469
 #: core-addons/transaction-methods/paypal-standard/init.php:748
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:848
-#: lib/admin/class.admin.php:988 lib/admin/class.admin.php:1151
-#: lib/admin/class.admin.php:1247
+#: lib/admin/class.admin.php:1024 lib/admin/class.admin.php:1187
+#: lib/admin/class.admin.php:1283
 msgid "Settings Saved."
 msgstr ""
 
@@ -1837,95 +3524,95 @@ msgstr ""
 msgid "Please include your PayPal Sandbox API signature"
 msgstr ""
 
-#: lib/admin/class.admin.php:146
+#: lib/admin/class.admin.php:147
 msgid "Quick Setup"
 msgstr ""
 
-#: lib/admin/class.admin.php:165
+#: lib/admin/class.admin.php:166
 msgid "Documentation"
 msgstr ""
 
-#: lib/admin/class.admin.php:166 lib/admin/views/admin-help.php:38
+#: lib/admin/class.admin.php:167 lib/admin/views/admin-help.php:38
 msgid "Support"
 msgstr ""
 
-#: lib/admin/class.admin.php:167
+#: lib/admin/class.admin.php:168
 msgid "Add-ons"
 msgstr ""
 
-#: lib/admin/class.admin.php:182
+#: lib/admin/class.admin.php:183
 msgid "Back to Add-ons"
 msgstr ""
 
-#: lib/admin/class.admin.php:194
+#: lib/admin/class.admin.php:195
 msgid "Customer Data"
 msgstr ""
 
-#: lib/admin/class.admin.php:272 lib/admin/views/admin-user-products.php:10
+#: lib/admin/class.admin.php:273 lib/admin/views/admin-user-products.php:10
 #: lib/products/class.products-post-type.php:113
 #: lib/transactions/class.transactions-post-type.php:420
 msgid "Products"
 msgstr ""
 
-#: lib/admin/class.admin.php:283
+#: lib/admin/class.admin.php:284
 msgid "Transactions"
 msgstr ""
 
-#: lib/admin/class.admin.php:294
+#: lib/admin/class.admin.php:295
 msgid "Info"
 msgstr ""
 
-#: lib/admin/class.admin.php:345
+#: lib/admin/class.admin.php:346
 #: lib/transactions/class.transactions-post-type.php:43
 msgid "Payments"
 msgstr ""
 
-#: lib/admin/class.admin.php:378
+#: lib/admin/class.admin.php:379
 msgid "Help"
 msgstr ""
 
-#: lib/admin/class.admin.php:426
+#: lib/admin/class.admin.php:427
 msgid "Email Settings"
 msgstr ""
 
-#: lib/admin/class.admin.php:449
+#: lib/admin/class.admin.php:450
 msgid "Pages"
 msgstr ""
 
-#: lib/admin/class.admin.php:462 lib/admin/views/admin-wizard.php:78
+#: lib/admin/class.admin.php:463 lib/admin/views/admin-wizard.php:78
 msgid "General"
 msgstr ""
 
-#: lib/admin/class.admin.php:478
+#: lib/admin/class.admin.php:479
 msgid "All"
 msgstr ""
 
-#: lib/admin/class.admin.php:492
+#: lib/admin/class.admin.php:493
 msgid "Enabled"
 msgstr ""
 
-#: lib/admin/class.admin.php:503 lib/admin/views/admin-page-settings.php:79
+#: lib/admin/class.admin.php:504 lib/admin/views/admin-page-settings.php:79
 msgid "Disabled"
 msgstr ""
 
-#: lib/admin/class.admin.php:527
+#: lib/admin/class.admin.php:528
 msgid "Add-on installed."
 msgstr ""
 
-#: lib/admin/class.admin.php:531
+#: lib/admin/class.admin.php:532
 msgid "Error: Add-on not installed."
 msgstr ""
 
-#: lib/admin/class.admin.php:544
+#: lib/admin/class.admin.php:545
 msgid "Get More"
 msgstr ""
 
-#: lib/admin/class.admin.php:620
+#: lib/admin/class.admin.php:623
 #, php-format
 msgid "You made a sale! Yabba Dabba Doo! %s"
 msgstr ""
 
-#: lib/admin/class.admin.php:621
+#: lib/admin/class.admin.php:624
 #, php-format
 msgid ""
 "Your friend %s just bought all this awesomeness from your store!\n"
@@ -1935,12 +3622,12 @@ msgid ""
 "%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:628
+#: lib/admin/class.admin.php:631
 #, php-format
 msgid "Receipt for Purchase: %s"
 msgstr ""
 
-#: lib/admin/class.admin.php:629
+#: lib/admin/class.admin.php:632
 #, php-format
 msgid ""
 "Hello %s,\n"
@@ -1953,131 +3640,137 @@ msgid ""
 "%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:748
+#: lib/admin/class.admin.php:751
 msgid "Add-on enabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:750
+#: lib/admin/class.admin.php:753
 msgid "Add-on disabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:759
+#: lib/admin/class.admin.php:762
 msgid "Error: Add-on not enabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:761
+#: lib/admin/class.admin.php:764
 msgid "Error: Add-on not disabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:1008
+#: lib/admin/class.admin.php:991 lib/admin/views/admin-settings.php:71
+#, php-format
+msgid ""
+"Please use the 2-3 character %sISO abbreviation%s for country subdivisions"
+msgstr ""
+
+#: lib/admin/class.admin.php:1044
 msgid "You must select at least one Payment Method."
 msgstr ""
 
-#: lib/admin/class.admin.php:1073
+#: lib/admin/class.admin.php:1109
 msgid "Settings Saved. Congrats!"
 msgstr ""
 
-#: lib/admin/class.admin.php:1074
+#: lib/admin/class.admin.php:1110
 #, php-format
 msgid "%sAdd a Product%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:1075
+#: lib/admin/class.admin.php:1111
 #, php-format
 msgid "%sEnable Add-ons%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:1077
+#: lib/admin/class.admin.php:1113
 #, php-format
 msgid "%sView Sample Product%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:1113 lib/admin/class.admin.php:1166
+#: lib/admin/class.admin.php:1149 lib/admin/class.admin.php:1202
 msgid "Please provide a valid email address."
 msgstr ""
 
-#: lib/admin/class.admin.php:1115
+#: lib/admin/class.admin.php:1151
 msgid "Thousands Separator cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1117
+#: lib/admin/class.admin.php:1153
 msgid "Decimals Separator cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1168
+#: lib/admin/class.admin.php:1204
 msgid "Email Name cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1170
+#: lib/admin/class.admin.php:1206
 msgid "Email Subject cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1172
+#: lib/admin/class.admin.php:1208
 msgid "Email Template cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1181
+#: lib/admin/class.admin.php:1217
 msgid "Invalid email address in Sales Notification Email Address"
 msgstr ""
 
-#: lib/admin/class.admin.php:1320
+#: lib/admin/class.admin.php:1356
 msgid "Please make sure all your page slugs are unique."
 msgstr ""
 
-#: lib/admin/class.admin.php:1326
+#: lib/admin/class.admin.php:1362
 msgid "Page settings cannot be left blank."
 msgstr ""
 
-#: lib/admin/class.admin.php:1390
+#: lib/admin/class.admin.php:1426
 msgid "Select Images"
 msgstr ""
 
-#: lib/admin/class.admin.php:1391
+#: lib/admin/class.admin.php:1427
 msgid "You must upload an image larger than 150x150."
 msgstr ""
 
-#: lib/admin/class.admin.php:1392
+#: lib/admin/class.admin.php:1428
 msgid "Edit Image"
 msgstr ""
 
-#: lib/admin/class.admin.php:1393
+#: lib/admin/class.admin.php:1429
 msgid "Upload Source"
 msgstr ""
 
-#: lib/admin/class.admin.php:1394
+#: lib/admin/class.admin.php:1430
 msgid "Insert"
 msgstr ""
 
-#: lib/admin/class.admin.php:1395
+#: lib/admin/class.admin.php:1431
 msgid "Advanced"
 msgstr ""
 
-#: lib/admin/class.admin.php:1396
+#: lib/admin/class.admin.php:1432
 msgid ""
 "We want to keep things simple for you, so we put the kitchen sink here. "
 "Click this button to add more info about your product."
 msgstr ""
 
-#: lib/admin/class.admin.php:1410
+#: lib/admin/class.admin.php:1446
 msgid ""
 "You have checked the option to \"Reset ALL data\". Are you should you want "
 "to delete all Exchange products, transactions, and settings?"
 msgstr ""
 
-#: lib/admin/class.admin.php:1417
+#: lib/admin/class.admin.php:1453
 msgid ""
 "Please make sure all WordPress page types have a WordPress page selected."
 msgstr ""
 
-#: lib/admin/class.admin.php:1636
+#: lib/admin/class.admin.php:1672
 msgid "Main Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1641
+#: lib/admin/class.admin.php:1677
 msgid "Side Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1711
+#: lib/admin/class.admin.php:1747
 msgid "Featured Image"
 msgstr ""
 
@@ -2511,82 +4204,98 @@ msgstr ""
 msgid "Company Address"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:57
+#: lib/admin/views/admin-settings.php:56
+msgid "Base Country"
+msgstr ""
+
+#: lib/admin/views/admin-settings.php:56
+msgid "This is the country where your business is located"
+msgstr ""
+
+#: lib/admin/views/admin-settings.php:62
+msgid "Base State / Province"
+msgstr ""
+
+#: lib/admin/views/admin-settings.php:62
+msgid "This is the state / province where your business is located"
+msgstr ""
+
+#: lib/admin/views/admin-settings.php:78
 msgid "Currency Settings"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:61
+#: lib/admin/views/admin-settings.php:82
 msgid "Default Currency"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:67
+#: lib/admin/views/admin-settings.php:88
 msgid "Symbol Position"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:70
+#: lib/admin/views/admin-settings.php:91
 msgid "Before: $10.00"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:70
+#: lib/admin/views/admin-settings.php:91
 msgid "After: 10.00$"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:72
+#: lib/admin/views/admin-settings.php:93
 msgid "Where should the currency symbol be placed in relation to the price?"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:76
+#: lib/admin/views/admin-settings.php:97
 msgid "Thousands Separator"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:79
+#: lib/admin/views/admin-settings.php:100
 msgid ""
 "What character would you like to use to separate thousands when displaying "
 "prices?"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:83
+#: lib/admin/views/admin-settings.php:104
 msgid "Decimals Separator"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:86
+#: lib/admin/views/admin-settings.php:107
 msgid ""
 "What character would you like to use to separate decimals when displaying "
 "prices?"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:91
+#: lib/admin/views/admin-settings.php:112
 msgid "Customer Registration Settings"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:95 lib/functions/functions.php:325
+#: lib/admin/views/admin-settings.php:116 lib/functions/functions.php:350
 msgid "Customer Registration"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:98
+#: lib/admin/views/admin-settings.php:119
 msgid "Use Exchange Registration Only"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:101
+#: lib/admin/views/admin-settings.php:122
 msgid "Use WordPress Registration Setting"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:101
+#: lib/admin/views/admin-settings.php:122
 msgid ""
 "In order to use this setting, you will first need to check the \"Anyone can "
 "register\" checkbox from the WordPress General Settings page to allow site "
 "membership."
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:106
+#: lib/admin/views/admin-settings.php:127
 msgid "Stylesheet Settings"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:110
+#: lib/admin/views/admin-settings.php:131
 msgid "Custom Styles"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:112
+#: lib/admin/views/admin-settings.php:133
 msgid ""
 "If they exist, the following files will be loaded in order after core "
 "Exchange stylesheets:"
@@ -2611,7 +4320,7 @@ msgstr ""
 
 #: lib/admin/views/admin-user-products.php:11
 #: lib/deprecated/templates/content-downloads.php:34
-#: lib/functions/functions.php:309 lib/functions/functions.php:312
+#: lib/functions/functions.php:334 lib/functions/functions.php:337
 #: lib/templates/content-downloads/elements/confirmation-url.php:20
 msgid "Transaction"
 msgstr ""
@@ -2622,7 +4331,7 @@ msgid ""
 "\"details-toggle hide-if-no-js\">&#61;</span>"
 msgstr ""
 
-#: lib/admin/views/admin-user-products.php:71 lib/functions/functions.php:364
+#: lib/admin/views/admin-user-products.php:71 lib/functions/functions.php:389
 msgid "Downloads"
 msgstr ""
 
@@ -2959,7 +4668,7 @@ msgstr ""
 
 #: lib/deprecated/templates/content-cart.php:116
 #: lib/deprecated/templates/content-checkout.php:113
-#: lib/templates/content-cart.php:41 lib/templates/content-checkout.php:35
+#: lib/templates/content-cart.php:41 lib/templates/content-checkout.php:39
 msgid "There are no items in your cart"
 msgstr ""
 
@@ -3027,6 +4736,7 @@ msgid ""
 msgstr ""
 
 #: lib/deprecated/templates/content-registration.php:22
+#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/registration/user-logged-in.php:20
 #: lib/templates/content-registration/elements/user-logged-in.php:19
 #, php-format
 msgid ""
@@ -3035,6 +4745,7 @@ msgstr ""
 
 #: lib/deprecated/templates/content-registration.php:49
 #: lib/deprecated/templates/super-widget-registration.php:44
+#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/registration/login.php:20
 #: lib/templates/content-registration/elements/login.php:20
 #: lib/templates/super-widget-registration/elements/cancel.php:20
 msgid "Log in"
@@ -3134,7 +4845,7 @@ msgid "Important Information"
 msgstr ""
 
 #: lib/email-notifications/class.email-notifications.php:388
-#: lib/functions/functions.php:282
+#: lib/functions/functions.php:307
 #: lib/products/class.products-post-type.php:114
 msgid "Product"
 msgstr ""
@@ -3143,111 +4854,115 @@ msgstr ""
 msgid "Total Price"
 msgstr ""
 
-#: lib/functions/functions.php:161
+#: lib/functions/functions.php:186
 msgid "Dangerous Settings"
 msgstr ""
 
-#: lib/functions/functions.php:165
+#: lib/functions/functions.php:190
 msgid "Reset Exchange"
 msgstr ""
 
-#: lib/functions/functions.php:168
+#: lib/functions/functions.php:193
 msgid "Reset ALL data"
 msgstr ""
 
-#: lib/functions/functions.php:169
+#: lib/functions/functions.php:194
 msgid "Checking this box will rest ALL settings and DELETE ALL DATA."
 msgstr ""
 
-#: lib/functions/functions.php:265
+#: lib/functions/functions.php:290
 msgid "Exchange has been reset. All data has been deleted."
 msgstr ""
 
-#: lib/functions/functions.php:285
+#: lib/functions/functions.php:310
 msgid "Product Base"
 msgstr ""
 
-#: lib/functions/functions.php:295
+#: lib/functions/functions.php:320
 msgid "Store"
 msgstr ""
 
-#: lib/functions/functions.php:298
+#: lib/functions/functions.php:323
 msgid "Store Page"
 msgstr ""
 
-#: lib/functions/functions.php:299
+#: lib/functions/functions.php:324
 msgid "Where all your products are shown in one place"
 msgstr ""
 
-#: lib/functions/functions.php:322
+#: lib/functions/functions.php:347
 msgid "Registration"
 msgstr ""
 
-#: lib/functions/functions.php:326
+#: lib/functions/functions.php:351
 msgid ""
 "Where customers register to login, download, etc.  You can turn off "
 "registration and allow guest checkouts in Exchange / Add-ons / Digital "
 "Downloads Settings."
 msgstr ""
 
-#: lib/functions/functions.php:336
+#: lib/functions/functions.php:361
 msgid "Account"
 msgstr ""
 
-#: lib/functions/functions.php:339
+#: lib/functions/functions.php:364
 msgid "Account Page"
 msgstr ""
 
-#: lib/functions/functions.php:340
+#: lib/functions/functions.php:365
 msgid ""
 "Customers get an account when they buy something, so they can login and "
 "download their purchases. This is the main landing page for customers after "
 "they log in."
 msgstr ""
 
-#: lib/functions/functions.php:350
+#: lib/functions/functions.php:375
 msgid "Profile"
 msgstr ""
 
-#: lib/functions/functions.php:353
+#: lib/functions/functions.php:378
 msgid "Profile Page"
 msgstr ""
 
-#: lib/functions/functions.php:354
+#: lib/functions/functions.php:379
 msgid "Private details about your customers that they can change."
 msgstr ""
 
-#: lib/functions/functions.php:367
+#: lib/functions/functions.php:392
 msgid "Customer Downloads"
 msgstr ""
 
-#: lib/functions/functions.php:368
+#: lib/functions/functions.php:393
 msgid "Page where the customer can find all of their available downloads."
 msgstr ""
 
-#: lib/functions/functions.php:378 lib/functions/functions.php:381
+#: lib/functions/functions.php:403 lib/functions/functions.php:406
 #: lib/products/class.products-post-type.php:576
 msgid "Purchases"
 msgstr ""
 
-#: lib/functions/functions.php:394
+#: lib/functions/functions.php:419
 msgid "Customer Log In"
 msgstr ""
 
-#: lib/functions/functions.php:404
+#: lib/functions/functions.php:429
 msgid "Log Out"
 msgstr ""
 
-#: lib/functions/functions.php:407
+#: lib/functions/functions.php:432
 msgid "Customer Log Out"
 msgstr ""
 
-#: lib/functions/functions.php:417
+#: lib/functions/functions.php:442
 msgid "Thank you"
 msgstr ""
 
-#: lib/functions/functions.php:420
+#: lib/functions/functions.php:445
 msgid "Purchase Confirmation"
+msgstr ""
+
+#: lib/functions/functions.php:748
+msgid "You must be logged in to complete your purchase."
 msgstr ""
 
 #: lib/pages/class.nav-menus.php:81
@@ -3867,8 +5582,21 @@ msgid ""
 "Confirmation views depending on the situation"
 msgstr ""
 
-#: lib/super-widget/class.super-widget.php:153
+#: lib/super-widget/class.super-widget.php:159
 msgid "There are no options for this widget."
+msgstr ""
+
+#: lib/templates/content-checkout/elements/purchase-requirements/logged-in.php:21
+msgid "Register or Log in"
+msgstr ""
+
+#: lib/templates/content-checkout/elements/purchase-requirements/logged-in.php:61
+#, php-format
+msgid "Logged in as: %s"
+msgstr ""
+
+#: lib/templates/content-checkout/loops/items.php:18
+msgid "Order Details"
 msgstr ""
 
 #: lib/templates/content-downloads/loops/transaction.php:27

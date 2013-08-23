@@ -245,7 +245,7 @@ class IT_Exchange_Pages {
 
 		// Set pages that we want to protect in one way or another
 		$pages_to_protect = array(
-			'checkout', 'account', 'profile', 'downloads', 'purchases', 'confirmation',
+			'account', 'profile', 'downloads', 'purchases', 'confirmation',
 		);
 		$pages_to_protect = apply_filters( 'it_exchange_pages_to_protect', $pages_to_protect );
 
@@ -410,7 +410,7 @@ class IT_Exchange_Pages {
 		if ( $this->_current_view ) {
 			if ( 'product' != $this->_current_view && 'exchange' == it_exchange_get_page_type( $this->_current_view ) ) {
 				require( dirname( __FILE__ ) . '/class.casper.php' );
-				new IT_Exchange_Casper( $this->_current_view, $this );
+				new IT_Exchange_Casper( $this->_current_view );
 			}
 		}
 		return $template;

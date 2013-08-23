@@ -2,7 +2,7 @@
 
 /*
 Written by Chris Jean for iThemes.com
-Version 2.4.1
+Version 2.4.2
 
 Version History
 	2.0.0 - 2011-02-22
@@ -27,6 +27,8 @@ Version History
 			that call the new functions found in ITUtility
 	2.4.1 - 2013-05-21 - Chris Jean
 		Added "public static" in front of function declarations to satisfy strict requirements.
+	2.4.2 - 2013-08-19 - Chris Jean
+		Loading wp-admin/includes/image.php in the add_to_media_library in order to gain access to the wp_read_image_metadata function.
 */
 
 
@@ -102,6 +104,8 @@ if ( !class_exists( 'ITFileUtility' ) ) {
 			if ( is_null( $args['content'] ) )
 				$args['content'] = '';
 			
+			
+			require_once( ABSPATH . '/wp-admin/includes/image.php' );
 			
 			if ( false !== ( $image_meta = @wp_read_image_metadata( $file ) ) ) {
 				if ( '' !== trim( $image_meta['title'] ) )

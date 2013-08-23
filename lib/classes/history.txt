@@ -335,3 +335,9 @@
 	
 	Updated:
 		it-dialog.php
+2.3.5 - 2013-08-19 - Chris Jean
+	Fixed the following bug: Fatal Error: Call to undefined function wp_read_image_metadata() in lib/classes/it-file-utility.php on line 106.
+	This bug seems to have only occurred after the WordPress 3.6 release.
+	
+	Updated:
+		it-file-utility.php

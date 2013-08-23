@@ -98,6 +98,10 @@ function it_exchange_load_public_scripts( $current_view ) {
 	if ( is_singular( 'it_exchange_prod' ) ) {
 		wp_enqueue_script( 'it-exchange-product-public-js', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/exchange-product.js' ), array( 'jquery-zoom' ), false, true );
 	}
+
+	// Load Registration purchase requirement JS if not logged in and on checkout page.
+	if ( it_exchange_is_page( 'checkout' ) && ! is_user_logged_in() )
+		wp_enqueue_script( 'it-exchange-logged-in-purchase-requirement', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/logged-in-purchase-requirement.js' ), array( 'jquery' ), false, true );
 	
 	// Frontend Style 
 	if ( ! apply_filters( 'it_exchange_disable_frontend_stylesheet', false ) )
@@ -114,6 +118,27 @@ function it_exchange_load_public_scripts( $current_view ) {
 		wp_enqueue_style( 'it-exchange-child-theme-css', ITUtility::get_url_from_file( $child_theme_css ) );
 }
 add_action( 'wp_enqueue_scripts', 'it_exchange_load_public_scripts' );
+
+/**
+ * Loads functions.php in theme if it exists
+ *
+ * @since 1.2.0
+ *
+ * @return void
+*/
+function it_exchange_load_theme_functions_for_exchange() {
+	$parent_theme_functions = get_template_directory() . '/exchange/functions.php';
+	$child_theme_functions = get_stylesheet_directory() . '/exchange/functions.php';
+
+	// Parent theme
+	if ( is_file( $parent_theme_functions ) )
+		include_once( $parent_theme_functions );
+
+	// Child theme or primary theme if not parent
+	if ( is_file( $child_theme_functions ) )
+		include_once( $child_theme_functions );
+}
+add_action( 'it_exchange_enabled_addons_loaded', 'it_exchange_load_theme_functions_for_exchange' );
 
 /**
  * Hook for processing webhooks from services like PayPal IPN, Stripe, etc.
@@ -281,10 +306,10 @@ function it_exchange_register_core_pages() {
 		'slug'          => 'product',
 		'name'          => __( 'Product', 'it-l10n-ithemes-exchange' ),
 		'rewrite-rules' => false, //array( 10, 'it_exchange_get_core_page_rewrites' ),
-		'url'           => 'it_exchange_get_core_page_urls', 
+		'url'           => 'it_exchange_get_core_page_urls',
 		'settings-name' => __( 'Product Base', 'it-l10n-ithemes-exchange' ),
-		'type'			=> 'exchange',
-		'menu'			=> false,
+		'type'          => 'exchange',
+		'menu'          => false,
 		'optional'      => false,
 	);
 	it_exchange_register_page( 'product', $options );
@@ -294,11 +319,11 @@ function it_exchange_register_core_pages() {
 		'slug'          => 'store',
 		'name'          => __( 'Store', 'it-l10n-ithemes-exchange' ),
 		'rewrite-rules' => array( 230, 'it_exchange_get_core_page_rewrites' ),
-		'url'           => 'it_exchange_get_core_page_urls', 
+		'url'           => 'it_exchange_get_core_page_urls',
 		'settings-name' => __( 'Store Page', 'it-l10n-ithemes-exchange' ),
 		'tip'           => __( 'Where all your products are shown in one place', 'it-l10n-ithemes-exchange' ),
-		'type'			=> 'exchange',
-		'menu'			=> true,
+		'type'          => 'exchange',
+		'menu'          => true,
 		'optional'      => true,
 	);
 	it_exchange_register_page( 'store', $options );
@@ -308,10 +333,10 @@ function it_exchange_register_core_pages() {
 		'slug'          => 'transaction',
 		'name'          => __( 'Transaction', 'it-l10n-ithemes-exchange' ),
 		'rewrite-rules' => array( 210, 'it_exchange_get_core_page_rewrites' ),
-		'url'           => 'it_exchange_get_core_page_urls', 
+		'url'           => 'it_exchange_get_core_page_urls',
 		'settings-name' => __( 'Transaction', 'it-l10n-ithemes-exchange' ),
-		'type'			=> 'exchange',
-		'menu'			=> false,
+		'type'          => 'exchange',
+		'menu'          => false,
 		'optional'      => false,
 	);
 	it_exchange_register_page( 'transaction', $options );
@@ -321,11 +346,11 @@ function it_exchange_register_core_pages() {
 		'slug'          => 'registration',
 		'name'          => __( 'Registration', 'it-l10n-ithemes-exchange' ),
 		'rewrite-rules' => array( 105, 'it_exchange_get_core_page_rewrites' ),
-		'url'           => 'it_exchange_get_core_page_urls', 
+		'url'           => 'it_exchange_get_core_page_urls',
 		'settings-name' => __( 'Customer Registration', 'it-l10n-ithemes-exchange' ),
 		'tip'           => __( 'Where customers register to login, download, etc.  You can turn off registration and allow guest checkouts in Exchange / Add-ons / Digital Downloads Settings.', 'it-l10n-ithemes-exchange' ),
-		'type'			=> 'exchange',
-		'menu'			=> true,
+		'type'          => 'exchange',
+		'menu'          => true,
 		'optional'      => true,
 	);
 	it_exchange_register_page( 'registration', $options );
@@ -335,11 +360,11 @@ function it_exchange_register_core_pages() {
 		'slug'          => 'account',
 		'name'          => __( 'Account', 'it-l10n-ithemes-exchange' ),
 		'rewrite-rules' => array( 135, 'it_exchange_get_core_page_rewrites' ),
-		'url'           => 'it_exchange_get_core_page_urls', 
+		'url'           => 'it_exchange_get_core_page_urls',
 		'settings-name' => __( 'Account Page', 'it-l10n-ithemes-exchange' ),
 		'tip'           => __( 'Customers get an account when they buy something, so they can login and download their purchases. This is the main landing page for customers after they log in.', 'it-l10n-ithemes-exchange' ),
-		'type'			=> 'exchange',
-		'menu'			=> true,
+		'type'          => 'exchange',
+		'menu'          => true,
 		'optional'      => false,
 	);
 	it_exchange_register_page( 'account', $options );
@@ -349,11 +374,11 @@ function it_exchange_register_core_pages() {
 		'slug'          => 'profile',
 		'name'          => __( 'Profile', 'it-l10n-ithemes-exchange' ),
 		'rewrite-rules' => array( 130, 'it_exchange_get_core_page_rewrites' ),
-		'url'           => 'it_exchange_get_core_page_urls', 
+		'url'           => 'it_exchange_get_core_page_urls',
 		'settings-name' => __( 'Profile Page', 'it-l10n-ithemes-exchange' ),
 		'tip'           => __( 'Private details about your customers that they can change.', 'it-l10n-ithemes-exchange' ),
-		'type'			=> 'exchange',
-		'menu'			=> true,
+		'type'          => 'exchange',
+		'menu'          => true,
 		'optional'      => true,
 	);
 	it_exchange_register_page( 'profile', $options );
@@ -363,11 +388,11 @@ function it_exchange_register_core_pages() {
 		'slug'          => 'downloads',
 		'name'          => __( 'Downloads', 'it-l10n-ithemes-exchange' ),
 		'rewrite-rules' => array( 125, 'it_exchange_get_core_page_rewrites' ),
-		'url'           => 'it_exchange_get_core_page_urls', 
+		'url'           => 'it_exchange_get_core_page_urls',
 		'settings-name' => __( 'Customer Downloads', 'it-l10n-ithemes-exchange' ),
 		'tip'           => __( 'Page where the customer can find all of their available downloads.', 'it-l10n-ithemes-exchange' ),
-		'type'			=> 'exchange',
-		'menu'			=> true,
+		'type'          => 'exchange',
+		'menu'          => true,
 		'optional'      => true,
 	);
 	it_exchange_register_page( 'downloads', $options );
@@ -377,10 +402,10 @@ function it_exchange_register_core_pages() {
 		'slug'          => 'purchases',
 		'name'          => __( 'Purchases', 'it-l10n-ithemes-exchange' ),
 		'rewrite-rules' => array( 120, 'it_exchange_get_core_page_rewrites' ),
-		'url'           => 'it_exchange_get_core_page_urls', 
+		'url'           => 'it_exchange_get_core_page_urls',
 		'settings-name' => __( 'Purchases', 'it-l10n-ithemes-exchange' ),
-		'type'			=> 'exchange',
-		'menu'			=> true,
+		'type'          => 'exchange',
+		'menu'          => true,
 		'optional'      => true,
 	);
 	it_exchange_register_page( 'purchases', $options );
@@ -390,10 +415,10 @@ function it_exchange_register_core_pages() {
 		'slug'          => 'log-in',
 		'name'          => __( 'Log In', 'it-l10n-ithemes-exchange' ),
 		'rewrite-rules' => array( 110, 'it_exchange_get_core_page_rewrites' ),
-		'url'           => 'it_exchange_get_core_page_urls', 
+		'url'           => 'it_exchange_get_core_page_urls',
 		'settings-name' => __( 'Customer Log In', 'it-l10n-ithemes-exchange' ),
-		'type'			=> 'exchange',
-		'menu'			=> true,
+		'type'          => 'exchange',
+		'menu'          => true,
 		'optional'      => true,
 	);
 	it_exchange_register_page( 'login', $options );
@@ -403,23 +428,23 @@ function it_exchange_register_core_pages() {
 		'slug'          => 'log-out',
 		'name'          => __( 'Log Out', 'it-l10n-ithemes-exchange' ),
 		'rewrite-rules' => array( 115, 'it_exchange_get_core_page_rewrites' ),
-		'url'           => 'it_exchange_get_core_page_urls', 
+		'url'           => 'it_exchange_get_core_page_urls',
 		'settings-name' => __( 'Customer Log Out', 'it-l10n-ithemes-exchange' ),
-		'type'			=> 'exchange',
-		'menu'			=> true,
+		'type'          => 'exchange',
+		'menu'          => true,
 		'optional'      => true,
 	);
 	it_exchange_register_page( 'logout', $options );
 
-	// Confirmation 
+	// Confirmation
 	$options = array(
 		'slug'          => 'confirmation',
 		'name'          => __( 'Thank you', 'it-l10n-ithemes-exchange' ),
 		'rewrite-rules' => array( 205, 'it_exchange_get_core_page_rewrites' ),
-		'url'           => 'it_exchange_get_core_page_urls', 
+		'url'           => 'it_exchange_get_core_page_urls',
 		'settings-name' => __( 'Purchase Confirmation', 'it-l10n-ithemes-exchange' ),
-		'type'			=> 'exchange',
-		'menu'			=> false,
+		'type'          => 'exchange',
+		'menu'          => false,
 		'optional'      => false,
 	);
 	it_exchange_register_page( 'confirmation', $options );
@@ -546,7 +571,7 @@ function it_exchange_get_core_page_rewrites( $page ) {
 			return $rewrites;
 			break;
 		case 'confirmation' :
-			$rewrites = array( 
+			$rewrites = array(
 				$slug . '/([^/]+)/?$' => 'index.php?' . $slug . '=$matches[1]',
 			);
 			return $rewrites;
@@ -575,7 +600,7 @@ function it_exchange_get_core_page_urls( $page ) {
     $base       = trailingslashit( get_home_url() );
 
 	// Proccess superwidget links
-	if ( it_exchange_in_superwidget() && $slug != 'transaction' ) { 
+	if ( it_exchange_in_superwidget() && $slug != 'transaction' ) {
 		// Get current URL without exchange query args
 		$url = it_exchange_clean_query_args();
 		return add_query_arg( 'ite-sw-state', $slug, $url );
@@ -633,7 +658,7 @@ function it_exchange_get_core_page_urls( $page ) {
 					return add_query_arg( array( $slug => 1 ), $base );
 			}
 			break;
-    } 
+    }
 }
 
 /**
@@ -687,7 +712,7 @@ function it_exchange_filter_where_clause_for_all_queries( $where='' ) {
 	
 	if ( $end_date )
 		$where .= $GLOBALS['wpdb']->prepare( ' AND post_date <= %s', $end_date );
-	
+
 	return $where;
 }
 
@@ -707,15 +732,95 @@ function it_exchange_clear_sessions_when_multi_item_cart_is_enabled( $addon_slug
 }
 add_action( 'it_exchange_add_on_enabled', 'it_exchange_clear_sessions_when_multi_item_cart_is_enabled' );
 
+/**
+ * Registers our default purchase requirements
+ *
+ * @since 1.2.0
+*/
+function it_exchange_register_default_purchase_requirements() {
+
+	// User must be logged-in to checkout
+	$properties = array(
+		'priority'               => 1,
+		'requirement-met'        => 'is_user_logged_in',
+		'sw-template-part'       => apply_filters( 'it_exchange_sw_template_part_for_logged_in_purchase_requirement', 'registration' ),
+		'checkout-template-part' => 'logged-in',
+		'notification'           => __( 'You must be logged in to complete your purchase.', 'it-l10n-ithemes-exchange' ),
+	);
+	it_exchange_register_purchase_requirement( 'logged-in', $properties );
+}
+add_action( 'it_exchange_enabled_addons_loaded', 'it_exchange_register_default_purchase_requirements' );
+
+/**
+ * Registers any purchase requirements Super Widget template parts as valid
+ *
+ * @since 1.2.0
+ *
+ * @param array $existing The existing valid template parts
+ * @reutrn array
+*/
+function it_exchange_register_valid_sw_states_for_purchase_reqs( $existing ) {
+	foreach( (array) it_exchange_get_purchase_requirements() as $slug => $properties ) {
+		$sw_template = empty( $properties['sw-template-part'] ) ? false : $properties['sw-template-part'];
+		if ( empty( $existing[$sw_template] ) )
+			$existing[] = $sw_template;
+	}
+	return $existing;
+}
+add_filter( 'it_exchange_super_widget_valid_states', 'it_exchange_register_valid_sw_states_for_purchase_reqs' );
+
+/**
+ * Add purchase requiremnt notification to chekcout page if needed.
+ *
+ * @since 1.2.0
+ *
+ * @return void
+*/
+function it_exchange_add_purchase_requirement_notification() {
+	if ( false === ( $notification = it_exchange_get_next_purchase_requirement_property( 'notification' ) ) )
+		return;
+
+    do_action( 'it_exchange_content_checkout_before_purchase_requirements_notification_element' );
+	?>
+    <div class="it-exchange-checkout-purchase-requirements-notification">
+        <?php esc_html_e( $notification ); ?>
+    </div>
+    <?php
+	do_action( 'it_exchange_content_checkout_actions_after_purchase_requirements_notification_element' );
+}
+add_action( 'it_exchange_content_checkout_after_purchase_requirements', 'it_exchange_add_purchase_requirement_notification' );
+
+/**
+ * Rmove purchase options if purchase requirements haven't been met
+ *
+ * @since 1.2.0
+ *
+ * @reutnr void
+*/
+function it_exchange_disable_purchase_options_on_checkout_page( $elements ) {
+	if ( false === ( $message = it_exchange_get_next_purchase_requirement_property( 'notification' ) ) )
+		return $elements;
+
+	// Locate the transaction-methods key in elements array (if it exists)
+	$index = array_search( 'transaction-methods', $elements );
+	if ( false === $index )
+		return $elements;
+
+	// Remove transaction-methods
+	unset( $elements[$index] );
+	return $elements;
+}
+add_filter( 'it_exchange_get_content_checkout_actions_elements', 'it_exchange_disable_purchase_options_on_checkout_page' );
+
 /************************************
- * THE FOLLOWING API METHODS AREN'T READY 
+ * THE FOLLOWING API METHODS AREN'T READY
  * FOR PRIMETIME YET SO THEY LIVE HERE FOR NOW.
  * USE WITH CAUTION
  *************************************/
-function it_exchange_add_product( $args=array() ) { 
+function it_exchange_add_product( $args=array() ) {
 	$defaults = array(
 		'status' => 'publish',
-	);  
+	);
 	$defaults = apply_filters( 'it_exchange_add_product_defaults', $defaults );
 
 	$args = ITUtility::merge_defaults( $args, $defaults );
@@ -725,33 +830,33 @@ function it_exchange_add_product( $args=array() ) {
 	$post_args['post_status']  = $args['status'];
 	$post_args['post_type']    = 'it_exchange_prod';
 	$post_args['post_title']   = empty( $args['title'] ) ? '' : $args['title'];
-	$post_args['post_content'] = ( it_exchange_product_type_supports_feature( $args['type'], 'extended-description' ) && ! empty( $args['extended-description'] ) ) ? $args['extended-description'] : ''; 
+	$post_args['post_content'] = ( it_exchange_product_type_supports_feature( $args['type'], 'extended-description' ) && ! empty( $args['extended-description'] ) ) ? $args['extended-description'] : '';
 
 	// Insert Post and get ID
-	if ( $product_id = wp_insert_post( $post_args ) ) { 
+	if ( $product_id = wp_insert_post( $post_args ) ) {
 		update_post_meta( $product_id, '_it_exchange_product_type', $args['type'] );
 		update_post_meta( $product_id, '_it-exchange-visibility', empty( $args['show_in_store'] ) ? 'hidden' : 'visible' );
 
 		$type = $args['type'];
 
 		// Product Images from URLs
-		if ( ! empty( $args['images-from-urls'] ) && is_array( $args['images-from-urls'] ) ) { 
-			foreach( $args['images-from-urls'] as $url => $description ) { 
+		if ( ! empty( $args['images-from-urls'] ) && is_array( $args['images-from-urls'] ) ) {
+			foreach( $args['images-from-urls'] as $url => $description ) {
 				it_exchange_add_remote_image_to_product_images( $url, $product_id, $description );
-			}   
+			}
 			unset( $args['images-from-url'] );
-		}   
+		}
 
 		unset( $args['status'] );
 		unset( $args['extended-description'] );
 		unset( $args['type'] );
 
-		foreach( $args as $key => $value ) { 
-			if ( it_exchange_product_type_supports_feature( $type, $key ) ) 
+		foreach( $args as $key => $value ) {
+			if ( it_exchange_product_type_supports_feature( $type, $key ) )
 				it_exchange_update_product_feature( $product_id, $key, $value );
-		}   
+		}
 		return $product_id;
-	}   
+	}
 	return false;
 }
 
@@ -765,22 +870,22 @@ function it_exchange_add_remote_image_to_product_images( $url, $product_id, $des
 	$file_array['tmp_name'] = $tmp;
 
 	// If error storing temporarily, unlink
-	if ( is_wp_error( $tmp ) ) { 
+	if ( is_wp_error( $tmp ) ) {
 		@unlink($file_array['tmp_name']);
-		$file_array['tmp_name'] = ''; 
-	}   
+		$file_array['tmp_name'] = '';
+	}
 
 	// do the validation and storage stuff
 	$id = media_handle_sideload( $file_array, $product_id, $desc );
 
 	// If error storing permanently, unlink
-	if ( is_wp_error($id) ) { 
+	if ( is_wp_error($id) ) {
 		@unlink($file_array['tmp_name']);
 		return $id;
-	}   
+	}
 
 	$product_images = it_exchange_get_product_feature( $product_id, 'product-images' );
-	if ( empty( $product_images ) || ! is_array( $product_images ) ) 
+	if ( empty( $product_images ) || ! is_array( $product_images ) )
 		$product_images = array( $id );
 	else
 		$product_images[] = $id;
@@ -789,7 +894,7 @@ function it_exchange_add_remote_image_to_product_images( $url, $product_id, $des
 	return $id;
 }
 /************************************
- * THE PREVIOUS API METHODS AREN'T READY 
+ * THE PREVIOUS API METHODS AREN'T READY
  * FOR PRIMETIME YET SO THEY LIVE HERE FOR NOW.
  * USE WITH CAUTION
  *************************************/

@@ -3,7 +3,7 @@
  * Default template part for the checkout page.
  * 
  * @since 0.4.0
- * @version 1.0.0
+ * @version 1.2.0
  * @link http://ithemes.com/codex/page/Exchange_Template_Updates* @updated 1.0.0
  * @package IT_Exchange
  * 
@@ -21,14 +21,18 @@
 	<?php it_exchange_get_template_part( 'messages' ); ?>
 	
 	<?php if ( it_exchange( 'cart', 'has-cart-items' ) ) :  ?>
-    
-		<?php
-		// Loops we want to include, in the order we want them.
-		$loops = array( 'items', 'coupons', 'totals', 'actions' );
-		foreach( it_exchange_get_template_part_loops( 'content-cart', 'has-cart-item', $loops ) as $loop ) : 
-			it_exchange_get_template_part( 'content-checkout/loops/' . $loop );
-		endforeach;
-		?> 
+		
+		<?php it_exchange_get_template_part( 'content-checkout/loops/purchase-requirements' ); ?>
+		
+		<div class="it-exchange-order-details<?php echo ( false !== ( $notification = it_exchange_get_next_purchase_requirement() ) ) ? ' it-exchange-requirements-active' : ''; ?>">
+			<?php
+				// Loops we want to include, in the order we want them.
+				$loops = array( 'items', 'coupons', 'totals', 'actions' );
+				foreach ( it_exchange_get_template_part_loops( 'content-cart', 'has-cart-item', $loops ) as $loop ) : 
+					it_exchange_get_template_part( 'content-checkout/loops/' . $loop );
+				endforeach;
+			?> 
+		</div>
 		
 	<?php else : ?>
 		<?php do_action( 'it_exchange_content_cart_start_empty_cart' ); ?>
