@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/ithemes-exchange\n"
-"POT-Creation-Date: 2013-08-23 09:11-0500\n"
+"POT-Creation-Date: 2013-08-29 15:47-0500\n"
 "PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chris Jean <support@ithemes.com>\n"
 "Language: \n"
@@ -1608,6 +1608,14 @@ msgstr ""
 msgid "Zimbabwean dollar"
 msgstr ""
 
+#: api/data-sets/data-formats.php:40
+msgid "Standard"
+msgstr ""
+
+#: api/data-sets/data-formats.php:41
+msgid "Metric"
+msgstr ""
+
 #: api/data-sets/states.php:60
 msgid "New South Wales"
 msgstr ""
@@ -1857,7 +1865,7 @@ msgid "Flevoland"
 msgstr ""
 
 #: api/data-sets/states.php:202
-msgid "Fryslân"
+msgid "Friesland"
 msgstr ""
 
 #: api/data-sets/states.php:203
@@ -2344,11 +2352,11 @@ msgstr ""
 msgid "Download doesn't expire"
 msgstr ""
 
-#: api/downloads.php:322
+#: api/downloads.php:333
 msgid "Download Error: Invalid response"
 msgstr ""
 
-#: api/downloads.php:324
+#: api/downloads.php:335
 msgid "Download Error:"
 msgstr ""
 
@@ -2412,7 +2420,7 @@ msgid "Display Name"
 msgstr ""
 
 #: api/theme/customer.php:253 api/theme/registration.php:221
-#: core-addons/load.php:231
+#: core-addons/load.php:244
 msgid "Email"
 msgstr ""
 
@@ -2530,7 +2538,7 @@ msgstr ""
 msgid "Registration Disabled"
 msgstr ""
 
-#: api/theme/transaction.php:387 lib/admin/views/admin-user-products.php:88
+#: api/theme/transaction.php:388 lib/admin/views/admin-user-products.php:88
 msgid "Unlimited Downloads"
 msgstr ""
 
@@ -2799,34 +2807,46 @@ msgid "Digital Download"
 msgstr ""
 
 #: core-addons/load.php:80
-msgid "Multi-item Cart"
+msgid "Simple Products"
 msgstr ""
 
 #: core-addons/load.php:81
+msgid "This is a basic product type for selling simple items."
+msgstr ""
+
+#: core-addons/load.php:88
+msgid "Simple Product"
+msgstr ""
+
+#: core-addons/load.php:93
+msgid "Multi-item Cart"
+msgstr ""
+
+#: core-addons/load.php:94
 msgid ""
 "Enabling this add-on allows your customers to purchase multiple products "
 "with one transaction. There are no settings for this add-on."
 msgstr ""
 
-#: core-addons/load.php:92
+#: core-addons/load.php:105
 msgid "Basic Reporting Dashboard Widget"
 msgstr ""
 
-#: core-addons/load.php:93
+#: core-addons/load.php:106
 msgid "Adds a widget to the Admin dashboard to give basic sales statistics."
 msgstr ""
 
-#: core-addons/load.php:104
+#: core-addons/load.php:117
 msgid "Basic Coupons"
 msgstr ""
 
-#: core-addons/load.php:105
+#: core-addons/load.php:118
 msgid ""
 "This add-on allows you to generate basic coupons that apply to all products "
 "in your store."
 msgstr ""
 
-#: core-addons/load.php:116
+#: core-addons/load.php:129
 #: core-addons/product-features/categories/class.category-widget.php:18
 #: core-addons/product-features/categories/class.category-widget.php:24
 #: core-addons/product-features/categories/init.php:20
@@ -2834,129 +2854,129 @@ msgstr ""
 msgid "Product Categories"
 msgstr ""
 
-#: core-addons/load.php:117
+#: core-addons/load.php:130
 msgid "This adds a category taxonomy for all products in iThemes Exchange."
 msgstr ""
 
-#: core-addons/load.php:124
+#: core-addons/load.php:137
 #: core-addons/product-features/categories/init.php:21
 msgid "Product Category"
 msgstr ""
 
-#: core-addons/load.php:129 core-addons/product-features/tags/init.php:20
+#: core-addons/load.php:142 core-addons/product-features/tags/init.php:20
 #: core-addons/product-features/tags/init.php:60
 msgid "Product Tags"
 msgstr ""
 
-#: core-addons/load.php:130
+#: core-addons/load.php:143
 msgid "This adds a tag taxonomy for all products in iThemes Exchange."
 msgstr ""
 
-#: core-addons/load.php:137 core-addons/product-features/tags/init.php:21
+#: core-addons/load.php:150 core-addons/product-features/tags/init.php:21
 msgid "Product Tag"
 msgstr ""
 
-#: core-addons/load.php:142 core-addons/taxes/taxes-simple/init.php:42
+#: core-addons/load.php:155 core-addons/taxes/taxes-simple/init.php:42
 msgid "Simple Taxes"
 msgstr ""
 
-#: core-addons/load.php:143
+#: core-addons/load.php:156
 msgid "This gives the admin ability to apply a default tax rate to all sales."
 msgstr ""
 
-#: core-addons/load.php:152
+#: core-addons/load.php:165
 msgid "Duplicate Products"
 msgstr ""
 
-#: core-addons/load.php:153
+#: core-addons/load.php:166
 msgid "This gives the admin the ability to duplicate an existing product."
 msgstr ""
 
-#: core-addons/load.php:160
+#: core-addons/load.php:173
 msgid "Duplicate"
 msgstr ""
 
-#: core-addons/load.php:185 lib/products/class.products-post-type.php:579
+#: core-addons/load.php:198 lib/products/class.products-post-type.php:579
 msgid "Product Type"
 msgstr ""
 
-#: core-addons/load.php:186
+#: core-addons/load.php:199
 msgid ""
 "Add-ons responsible for the differing types of products available in iThemes "
 "Exchange."
 msgstr ""
 
-#: core-addons/load.php:191
+#: core-addons/load.php:204
 msgid "Transaction Methods"
 msgstr ""
 
-#: core-addons/load.php:192
+#: core-addons/load.php:205
 msgid "Add-ons that create transactions. eg: Stripe, PayPal."
 msgstr ""
 
-#: core-addons/load.php:204
+#: core-addons/load.php:217
 #: core-addons/transaction-methods/offline-payments/init.php:25
 msgctxt "Transaction Status"
 msgid "Pending"
 msgstr ""
 
-#: core-addons/load.php:205
+#: core-addons/load.php:218
 msgctxt "Transaction Status"
 msgid "Authorized"
 msgstr ""
 
-#: core-addons/load.php:206
+#: core-addons/load.php:219
 #: core-addons/transaction-methods/offline-payments/init.php:26
 msgctxt "Transaction Status"
 msgid "Paid"
 msgstr ""
 
-#: core-addons/load.php:207
+#: core-addons/load.php:220
 #: core-addons/transaction-methods/offline-payments/init.php:27
 msgctxt "Transaction Status"
 msgid "Refunded"
 msgstr ""
 
-#: core-addons/load.php:208
+#: core-addons/load.php:221
 #: core-addons/transaction-methods/offline-payments/init.php:28
 msgctxt "Transaction Status"
 msgid "Voided"
 msgstr ""
 
-#: core-addons/load.php:216
+#: core-addons/load.php:229
 msgid "Admin Add-ons"
 msgstr ""
 
-#: core-addons/load.php:217
+#: core-addons/load.php:230
 msgid ""
 "Add-ons that create general purpose admin functionality. eg: Reports, Export."
 msgstr ""
 
-#: core-addons/load.php:221
+#: core-addons/load.php:234
 msgid "Coupon Add-ons"
 msgstr ""
 
-#: core-addons/load.php:222
+#: core-addons/load.php:235
 msgid "Add-ons that create coupons for your customers."
 msgstr ""
 
-#: core-addons/load.php:226
+#: core-addons/load.php:239
 msgid "Taxonomy Add-ons"
 msgstr ""
 
-#: core-addons/load.php:227
+#: core-addons/load.php:240
 msgid "Add-ons that create new taxonomies specifically for Exchange products."
 msgstr ""
 
-#: core-addons/load.php:232
+#: core-addons/load.php:245
 msgid "Add-ons that help store owners manage their email."
 msgstr ""
 
-#: core-addons/load.php:236
+#: core-addons/load.php:249
 msgid "Other"
 msgstr ""
 
-#: core-addons/load.php:237
+#: core-addons/load.php:250
 msgid "Add-ons that don't fit in any other add-on category."
 msgstr ""
 
@@ -3071,7 +3091,7 @@ msgid ""
 msgstr ""
 
 #: core-addons/product-types/digital-downloads/init.php:159
-#: core-addons/taxes/taxes-simple/init.php:51
+#: core-addons/taxes/taxes-simple/init.php:56
 #: core-addons/transaction-methods/offline-payments/view-add-on-settings.php:21
 #: core-addons/transaction-methods/paypal-standard/init.php:644
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:690
@@ -3082,7 +3102,7 @@ msgid "Save Changes"
 msgstr ""
 
 #: core-addons/product-types/digital-downloads/init.php:180
-#: core-addons/taxes/taxes-simple/init.php:75
+#: core-addons/taxes/taxes-simple/init.php:95
 #: core-addons/transaction-methods/offline-payments/init.php:430
 #: core-addons/transaction-methods/paypal-standard/init.php:702
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:794
@@ -3113,21 +3133,41 @@ msgstr ""
 msgid "Calculate taxes after discounts are applied?"
 msgstr ""
 
-#: core-addons/taxes/taxes-simple/init.php:81
-msgid "Default tax rate must be numeric"
+#: core-addons/taxes/taxes-simple/init.php:50
+msgid "Labels"
 msgstr ""
 
-#: core-addons/taxes/taxes-simple/init.php:84
-msgid "Settings Saved"
+#: core-addons/taxes/taxes-simple/init.php:51
+msgid "Tax:"
 msgstr ""
 
-#: core-addons/taxes/taxes-simple/templates/content-cart/elements/totals-taxes-simple.php:22
-#: core-addons/taxes/taxes-simple/templates/content-checkout/elements/totals-taxes-simple.php:22
+#: core-addons/taxes/taxes-simple/init.php:53
+msgid "Taxes:"
+msgstr ""
+
+#: core-addons/taxes/taxes-simple/init.php:72
 msgid "Tax"
 msgstr ""
 
+#: core-addons/taxes/taxes-simple/init.php:73
+msgid "Taxes"
+msgstr ""
+
+#: core-addons/taxes/taxes-simple/init.php:101
+msgid "Default tax rate must be numeric"
+msgstr ""
+
+#: core-addons/taxes/taxes-simple/init.php:103
+msgid "Tax labels cannot be left empty"
+msgstr ""
+
+#: core-addons/taxes/taxes-simple/init.php:106
+msgid "Settings Saved"
+msgstr ""
+
 #: core-addons/taxes/taxes-simple/templates/super-widget-checkout/loops/taxes-simple.php:19
-msgid "Tax:"
+msgctxt "Used in superwidget for taxes. eg Tax: "
+msgid ":"
 msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/init.php:103
@@ -3579,7 +3619,7 @@ msgstr ""
 msgid "Pages"
 msgstr ""
 
-#: lib/admin/class.admin.php:463 lib/admin/views/admin-wizard.php:78
+#: lib/admin/class.admin.php:463 lib/admin/views/admin-wizard.php:77
 msgid "General"
 msgstr ""
 
@@ -4422,73 +4462,73 @@ msgid ""
 "select more than one option but it's not recommended."
 msgstr ""
 
-#: lib/admin/views/admin-wizard.php:46 lib/admin/views/admin-wizard.php:56
+#: lib/admin/views/admin-wizard.php:46 lib/admin/views/admin-wizard.php:55
 msgid "Stripe"
 msgstr ""
 
-#: lib/admin/views/admin-wizard.php:57
-msgid "To use Stripe, you need to install the Stripe premium add-on."
+#: lib/admin/views/admin-wizard.php:56
+msgid "To use Stripe, you need to install the Stripe add-on."
 msgstr ""
 
-#: lib/admin/views/admin-wizard.php:60
+#: lib/admin/views/admin-wizard.php:59
 msgid "I have the Stripe add-on and just need to install and/or activate it."
 msgstr ""
 
-#: lib/admin/views/admin-wizard.php:61
+#: lib/admin/views/admin-wizard.php:60
 msgid "Go to the plugins page"
 msgstr ""
 
-#: lib/admin/views/admin-wizard.php:65
+#: lib/admin/views/admin-wizard.php:64
 msgid "I don't have the Stripe add-on yet, but I want to use Stripe."
 msgstr ""
 
-#: lib/admin/views/admin-wizard.php:66
-msgid "Buy the Stripe Add-on"
+#: lib/admin/views/admin-wizard.php:65
+msgid "Get the free Stripe Add-on"
 msgstr ""
 
-#: lib/admin/views/admin-wizard.php:79
+#: lib/admin/views/admin-wizard.php:78
 msgid "E-mail Notifications"
 msgstr ""
 
-#: lib/admin/views/admin-wizard.php:79
+#: lib/admin/views/admin-wizard.php:78
 msgid "At what email address would you like to receive store notifications?"
 msgstr ""
 
-#: lib/admin/views/admin-wizard.php:83
+#: lib/admin/views/admin-wizard.php:82
 msgid "Get e-mail updates from us about iThemes Exchange"
 msgstr ""
 
-#: lib/admin/views/admin-wizard.php:83
+#: lib/admin/views/admin-wizard.php:82
 msgid ""
 "Subscribe to get iThemes Exchange news, updates, discounts and swag &hellip; "
 "oh, and our endless love."
 msgstr ""
 
-#: lib/admin/views/admin-wizard.php:86
+#: lib/admin/views/admin-wizard.php:85
 msgid "Currency"
 msgstr ""
 
-#: lib/admin/views/admin-wizard.php:86
+#: lib/admin/views/admin-wizard.php:85
 msgid "Select the currency you plan to use in your store."
 msgstr ""
 
-#: lib/admin/views/admin-wizard.php:95
+#: lib/admin/views/admin-wizard.php:94
 msgid ""
 "You're almost ready to start selling digital products using PayPal and "
 "iThemes Exchange."
 msgstr ""
 
-#: lib/admin/views/admin-wizard.php:96
+#: lib/admin/views/admin-wizard.php:95
 msgid ""
 "Remember, if you want to do more with Exchange, check out our Add-ons "
 "Library."
 msgstr ""
 
-#: lib/admin/views/admin-wizard.php:97
+#: lib/admin/views/admin-wizard.php:96
 msgid "Get Add-ons"
 msgstr ""
 
-#: lib/admin/views/admin-wizard.php:102
+#: lib/admin/views/admin-wizard.php:101
 msgid "Save Settings"
 msgstr ""
 
@@ -4745,6 +4785,7 @@ msgstr ""
 
 #: lib/deprecated/templates/content-registration.php:49
 #: lib/deprecated/templates/super-widget-registration.php:44
+#: lib/functions/functions.php:743
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/registration/login.php:20
 #: lib/templates/content-registration/elements/login.php:20
 #: lib/templates/super-widget-registration/elements/cancel.php:20
@@ -4961,8 +5002,17 @@ msgstr ""
 msgid "Purchase Confirmation"
 msgstr ""
 
-#: lib/functions/functions.php:748
-msgid "You must be logged in to complete your purchase."
+#: lib/functions/functions.php:744
+msgid "register"
+msgstr ""
+
+#: lib/functions/functions.php:745
+msgid "edit your cart"
+msgstr ""
+
+#: lib/functions/functions.php:757
+#, php-format
+msgid "You must be logged in to complete your purchase. %s"
 msgstr ""
 
 #: lib/pages/class.nav-menus.php:81
@@ -5584,6 +5634,10 @@ msgstr ""
 
 #: lib/super-widget/class.super-widget.php:159
 msgid "There are no options for this widget."
+msgstr ""
+
+#: lib/templates/content-checkout/elements/cancel.php:20
+msgid "Edit Cart"
 msgstr ""
 
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in.php:21
