@@ -107,6 +107,8 @@ function it_exchange_get_transactions( $args=array() ) {
 		);
 		$args['meta_query'][] = $meta_query;
 	}
+	
+	$args = apply_filters( 'it_exchange_get_transactions_get_posts_args', $args );
 
 	if ( $transactions = get_posts( $args ) ) {
 		foreach( $transactions as $key => $transaction ) {
@@ -151,6 +153,7 @@ function it_exchange_generate_transaction_object() {
 		$products[$key]['product_base_price'] = it_exchange_get_cart_product_base_price( $product, false );
 		$products[$key]['product_subtotal'] = it_exchange_get_cart_product_subtotal( $product, false );
 		$products[$key]['product_name']     = it_exchange_get_cart_product_title( $product );
+		$products = apply_filters( 'it_exchange_generate_transaction_object_products', $products, $key, $product );
 	}
 
 	// Package it up and send it to the transaction method add-on
@@ -161,7 +164,11 @@ function it_exchange_generate_transaction_object() {
 	$transaction_object->products               = $products;
 	$transaction_object->coupons                = it_exchange_get_applied_coupons();
 	$transaction_object->coupons_total_discount = it_exchange_get_total_coupons_discount( 'cart', array( 'format_price' => false ));
+
+	// Tack on Billing address
+	$transaction_object->billing_address        = apply_filters( 'it_exchange_billing_address_purchase_requirement_enabled', false ) ? it_exchange_get_cart_billing_address() : false;
 	
+	$transaction_object = apply_filters( 'it_exchange_generate_transaction_object', $transaction_object );
 	return $transaction_object;
 	
 }
@@ -208,8 +215,12 @@ function it_exchange_delete_transient_transaction( $method, $temp_id ) {
  * Adds a transaction post_type to WP
  *
  * @since 0.3.3
- * @param array $args same args passed to wp_insert_post plus any additional needed
+ * @param string $method Transaction method (e.g. paypal, stripe, etc)
+ * @param string $method_id ID from transaction method
+ * @param string $status Transaction status
+ * @param int $customer_id Customer ID
  * @param object $cart_object passed cart object
+ * @param array $args same args passed to wp_insert_post plus any additional needed
  * @return mixed post id or false
 */
 function it_exchange_add_transaction( $method, $method_id, $status = 'pending', $customer_id = false, $cart_object, $args = array() ) {
@@ -239,8 +250,50 @@ function it_exchange_add_transaction( $method, $method_id, $status = 'pending', 
 		do_action( 'it_exchange_add_transaction_success', $transaction_id );
 		return apply_filters( 'it_exchange_add_transaction', $transaction_id, $method, $method_id, $status, $customer_id, $cart_object, $args );
 	}
-	do_action( 'it_exchange_add_transaction_failed', $args, $transaction_object );
-	return apply_filters( 'it_exchange_add_transaction', false, $method, $method_id, $status, $customer_id, $cart_object, $args );
+	do_action( 'it_exchange_add_transaction_failed', $method, $method_id, $status, $customer_id, $cart_object, $args );
+	return apply_filters( 'it_exchange_add_transaction', false, $method, $method_id, $status, $customer_id, $cart_object, $args);
+}
+
+/**
+ * Adds a transaction post_type to WP
+ * Slimmed down "child" of a parent transaction
+ *
+ * @since 1.3.0
+ * @param string $method Transaction method (e.g. paypal, stripe, etc)
+ * @param string $method_id ID from transaction method
+ * @param string $status Transaction status
+ * @param int $customer_id Customer ID
+ * @param int $parent_tx_id Parent Transaction ID
+ * @param object $cart_object really just a dummy array to store the price information
+ * @param array $args same args passed to wp_insert_post plus any additional needed
+ * @return mixed post id or false
+*/
+function it_exchange_add_child_transaction( $method, $method_id, $status = 'pending', $customer_id, $parent_tx_id, $cart_object, $args = array() ) {
+	$defaults = array(
+		'post_type'          => 'it_exchange_tran',
+		'post_status'        => 'publish',
+	);
+	$args = wp_parse_args( $args, $defaults );
+
+	// If we don't have a title, create one
+	if ( empty( $args['post_title'] ) )
+		$args['post_title'] = $method . '-' . $method_id . '-' . date_i18n( 'Y-m-d-H:i:s' );
+		
+	$args['post_parent'] = $parent_tx_id;
+
+	if ( $transaction_id = wp_insert_post( $args ) ) {
+		update_post_meta( $transaction_id, '_it_exchange_transaction_method',    $method );
+		update_post_meta( $transaction_id, '_it_exchange_transaction_method_id', $method_id );
+		update_post_meta( $transaction_id, '_it_exchange_transaction_status',    $status );
+		update_post_meta( $transaction_id, '_it_exchange_customer_id',           $customer_id );
+		update_post_meta( $transaction_id, '_it_exchange_parent_tx_id',          $parent_tx_id );
+		update_post_meta( $transaction_id, '_it_exchange_cart_object',           $cart_object );
+		
+		do_action( 'it_exchange_add_child_transaction_success', $transaction_id );
+		return apply_filters( 'it_exchange_add_child_transaction', $transaction_id, $method, $method_id, $status, $customer_id, $parent_tx_id, $cart_object, $args );
+	}
+	do_action( 'it_exchange_add_child_transaction_failed', $method, $method_id, $status, $customer_id, $parent_tx_id, $cart_object, $args );
+	return apply_filters( 'it_exchange_add_child_transaction', false, $method, $method_id, $status, $customer_id, $parent_tx_id, $cart_object, $args );
 }
 
 /**
@@ -737,6 +790,23 @@ function it_exchange_get_transaction_order_number( $transaction, $prefix='#' ) {
 	$order_number = empty( $prefix ) ? $order_number : $prefix . $order_number;
 
 	return apply_filters( 'it_exchange_get_transaction_order_number', $order_number, $transaction );
+}
+
+/**
+ * Returns the billing addresss saveed with the transaction
+ *
+ * @since 1.3.0
+ *
+ * @param array transaction billing address
+ *
+*/
+function it_exchange_get_transaction_billing_address( $transaction ) {
+	if ( ! $transaction = it_exchange_get_transaction( $transaction ) )
+		return false;
+
+	$billing_address = empty( $transaction->cart_details->billing_address ) ? false: $transaction->cart_details->billing_address;
+
+	return apply_filters( 'it_exchange_get_transaction_billing_address', $billing_address, $transaction );
 }
 
 /**

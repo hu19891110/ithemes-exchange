@@ -34,7 +34,7 @@ function it_exchange_register_core_addons() {
 		),
 		// PayPal Standard Transaction Method
 		'paypal-standard' => array(
-			'name'              => __( 'PayPal Standard - Basic (Fastest Setup) ', 'it-l10n-ithemes-exchange' ),
+			'name'              => __( 'PayPal Standard - Basic', 'it-l10n-ithemes-exchange' ),
 			'description'       => __( 'This is the simple and fast version to get PayPal setup for your store. You might use this version just to get your store going, but we highly suggest you switch to the PayPal Standard Secure option.', 'it-l10n-ithemes-exchange' ),
 			'author'            => 'iThemes',
 			'author_url'        => 'http://ithemes.com',
@@ -47,7 +47,7 @@ function it_exchange_register_core_addons() {
 		),
 		// PayPal Standard Transaction Method
 		'paypal-standard-secure' => array(
-			'name'              => __( 'PayPal Standard - Secure (Highly Recommended)', 'it-l10n-ithemes-exchange' ),
+			'name'              => __( 'PayPal Standard - Secure', 'it-l10n-ithemes-exchange' ),
 			'description'       => __( 'Although this PayPal version for iThemes Exchange takes more effort and time, it is well worth it for the security options for your store.', 'it-l10n-ithemes-exchange' ),
 			'author'            => 'iThemes',
 			'author_url'        => 'http://ithemes.com',
@@ -88,6 +88,16 @@ function it_exchange_register_core_addons() {
 				'singular_name' => __( 'Simple Product', 'it-l10n-ithemes-exchange' ),
 			),
 		),
+		// Product Type admin Metabox
+		'switch-product-type-metabox' => array(
+			'name'        => __( 'Switch Product Types', 'it-l10n-ithemes-exchange' ),
+			'description' => __( 'Gives Store Owners the ability to change a Product Type after creation of the Product via the Advanced options', 'it-l10n-ithemes-exchange' ),
+			'author'      => 'iThemes',
+			'author_url'  => 'http://ithemes.com',
+			'file'        => dirname( __FILE__ ) . '/admin/product-type-metabox/init.php',
+			'tag'         => 'core',
+			'options'     => array( 'category' => 'admin' ),
+		), 
 		// Multi item cart
 		'multi-item-cart-option' => array(
 			'name'        => __( 'Multi-item Cart', 'it-l10n-ithemes-exchange' ),
@@ -99,6 +109,16 @@ function it_exchange_register_core_addons() {
 			'tag'         => 'core',
 			'supports'    => apply_filters( 'it_exchange_register_multi_item_cart_default_features', array(
 			) ),
+		),
+		// Billing Address Purchase Requirement
+		'billing-address-purchase-requirement' => array(
+			'name'        => __( 'Billing Address', 'it-l10n-ithemes-exchange' ),
+			'description' => __( 'Enabling this add-on allows you to collect a billing address at checkout. There are no settings for this add-on.', 'it-l10n-ithemes-exchange' ),
+			'author'      => 'iThemes',
+			'author_url'  => 'http://ithemes.com',
+			'file'        => dirname( __FILE__ ) . '/admin/billing-address/init.php',
+			'category'    => 'admin',
+			'tag'         => 'core',
 		),
 		// Basic Reporting Dashboard Widget
 		'basic-reporting' => array(

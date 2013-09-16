@@ -38,6 +38,8 @@ class IT_Exchange_Transaction_Post_Type {
 	}
 
 	function init() {
+		add_filter( 'it_exchange_transactions_post_type_hierarchical', array( $this, 'it_exchange_transactions_post_type_hierarchical' ) );
+		
 		$this->post_type = 'it_exchange_tran';
 		$labels    = array(
 			'name'          => __( 'Payments', 'it-l10n-ithemes-exchange' ),
@@ -52,7 +54,7 @@ class IT_Exchange_Transaction_Post_Type {
 			'show_in_nav_menus'    => false,
 			'show_in_menu'         => false, // We will be adding it manually with various labels based on available product-type add-ons
 			'show_in_admin_bar'    => false,
-			'hierarchical'         => false,
+			'hierarchical'         => apply_filters( 'it_exchange_transactions_post_type_hierarchical', false ),
 			'register_meta_box_cb' => array( $this, 'meta_box_callback' ),
 			'supports'             => array( // Support everything but page-attributes for add-on flexibility
 				'title',
@@ -77,6 +79,25 @@ class IT_Exchange_Transaction_Post_Type {
 		);
 
 		add_action( 'init', array( $this, 'register_the_post_type' ) );
+	}
+	
+	
+	/**
+	 * We want to set transactions to hierarchical on the edit screen only
+	 * This is used for adding payments to a transaction that has a parent transaction
+	 *
+	 * @since 1.3.0
+	 *
+	 * @param bool $hierarchical
+	 * @return bool
+	*/
+	function it_exchange_transactions_post_type_hierarchical( $hierarchical ) {
+		global $pagenow;
+		
+		if ( 'edit.php' === $pagenow && !empty( $_REQUEST['post_type'] ) && 'it_exchange_tran' === $_REQUEST['post_type'] )
+			return true;	
+		else
+			return $hierarchical;
 	}
 	
 	/**
@@ -415,6 +436,21 @@ class IT_Exchange_Transaction_Post_Type {
 			</div>
 		</div>
 
+		<?php if ( $billing_address = it_exchange_get_transaction_billing_address( $post->ID ) ) : ?>  
+			<div class="billing-shipping-wrapper columns-wrapper">
+				<div class="billing-address column c-50">
+					<div class="column-inner">
+						<div class="billing-address-label address-label"><?php _e( 'Billing Address', 'it-l10n-ithemes-exchange' ); ?></div>
+						<p><?php echo it_exchange_get_formatted_billing_address( $billing_address ); ?></p>
+					</div>
+				</div>
+				<!-- <div class="shipping-address column c-50">
+					<div class="shipping-address-label address-label"><?php _e( 'Shipping Address', 'it-l10n-ithemes-exchange' ); ?></div>
+					<p><?php echo it_exchange_get_formatted_billing_address( $billing_address ); ?></p>
+				</div> -->
+			</div>
+		<?php endif; ?>
+
 		<div class="products">
 			<div class="products-header spacing-wrapper">
 				<span><?php _e( 'Products', 'it-l10n-ithemes-exchange' ); ?></span>
@@ -423,11 +459,11 @@ class IT_Exchange_Transaction_Post_Type {
 			<?php
 				// Grab products attached to transaction
 				$transaction_products = it_exchange_get_transaction_products( $post );
-			
+
 				// Grab all hashes attached to transaction
 				$hashes   = it_exchange_get_transaction_download_hash_index( $post );
 			?>
-			
+
 			<?php foreach ( $transaction_products as $transaction_product ) : ?>
 				<?php
 					$product_id = $transaction_product['product_id'];
@@ -450,50 +486,6 @@ class IT_Exchange_Transaction_Post_Type {
 									<h4 class="product-download-title">
 										<?php esc_attr_e( get_the_title( $download_id ) ); ?>
 									</h4>
-									<!--
-									NOTE Removing this as it was not in the mock up. However, I'd hate to delete the work I've don in case we want to change this later. - Koop
-									<ul class="download-hashes hidden">
-										<?php $hashes_for_product_transaction = it_exchange_get_download_hashes_for_transaction_product( $post->ID, $transaction_product, $download_id ); ?>
-										<?php foreach( (array) $hashes_for_product_transaction as $hash ) : ?>
-											<?php
-												$hash_data = it_exchange_get_download_data_from_hash( $hash );
-												$download_limit = ( 'unlimited' == $hash_data['download_limit'] ) ? __( 'Unlimited', 'it-l10n-ithemes-exchange' ) : $hash_data['download_limit'];
-												$downloads      = empty( $hash_data['downloads'] ) ? (int) 0 : absint( $hash_data['downloads'] );
-											?>
-											<li class="product-download-hash">
-												<span class="hash">
-													<?php esc_attr_e( $hash ); ?>
-												</span>
-												<span class="expires">
-													<?php
-														if ( $expires = it_exchange_get_download_expiration_date( $hash_data ) )
-															printf( __( 'Expires on %s', 'it-l10n-ithemes-exchange' ), $expires );
-														else
-															_e( "Doesn't expire", 'it-l10n-ithemes-exchange' );
-													?>
-												</span>
-												<span class="limit">
-													<?php
-														if ( $download_limit )
-															printf( __( 'Limited to %d total download(s)', 'it-l10n-ithemes-exchange' ), $download_limit );
-														else
-															_e( 'Unlimited downloads', 'it-l10n-ithemes-exchange' );
-													?>
-												</span>
-												
-												<?php if ( $download_limit ) : ?>
-													<p class="remaining">
-														<?php echo ( $download_limit - $downloads ) . ' '. __( 'Downloads Remaining', 'it-l10n-ithemes-exchange' ); ?>
-													</p>
-												<?php endif; ?>
-												<p class="count">
-													<?php printf( __( 'Downloaded %d Time(s)', 'it-l10n-ithemes-exchange' ), $downloads ); ?>
-												</p>
-											</li>
-										<?php endforeach; ?>
-									</ul>
-									ENDNOTE
-									-->
 								</div>
 							<?php endforeach; ?>
 						<?php else : ?>
@@ -530,7 +522,7 @@ class IT_Exchange_Transaction_Post_Type {
 					<?php endforeach; ?>
 				<?php endforeach; ?>
 			<?php endif; ?>
-			
+
 			<?php if ( $refunds = it_exchange_get_transaction_refunds( $post ) ) : ?>
 				<div class="transaction-costs-refunds right">
 					<div class="transaction-costs-refund-total">
@@ -597,6 +589,7 @@ class IT_Exchange_Transaction_Post_Type {
 			</div>
 			<?php
 		endif;
+		do_action( 'it_exchange_after_payment_details' );
 	}
 
 	/**

@@ -108,6 +108,12 @@ class IT_Exchange_Customer {
 		$data->first_name   = get_user_meta( $this->id, 'first_name', true );
 		$data->last_name    = get_user_meta( $this->id, 'last_name', true );
 
+		// Shipping data if it exists
+		$data->shipping_address = get_user_meta( $this->id, 'it-exchange-shipping-address', true );
+
+		// Billing data if it exists
+		$data->billing_address = get_user_meta( $this->id, 'it-exchange-billing-address', true );
+
 		$data = apply_filters( 'it_exchange_set_customer_data', $data, $this->id );
 		$this->data = $data;
 	}
@@ -135,6 +141,30 @@ class IT_Exchange_Customer {
 	function has_transaction( $transaction_id ) {
 		$transaction_ids = get_user_meta( $this->id, '_it_exchange_transaction_id' );
 		return ( in_array( $transaction_id, $transaction_ids ) );
+	}
+
+	/**
+	 * Gets a customer meta property.
+	 *
+	 * If the custom value is already set, it uses that.
+	 * If the custom value is not set and we're on post-add.php, check for a URL param
+	 *
+	 * @since 1.3.0
+	*/
+	function get_customer_meta( $key, $single = true ) {
+		return get_user_meta( $this->id, '_it_exchange_customer_' . $key, $single );
+	}
+
+	/**
+	 * Updates a customer meta property.
+	 *
+	 * If the custom value is already set, it uses that.
+	 * If the custom value is not set and we're on post-add.php, check for a URL param
+	 *
+	 * @since 1.3.0
+	*/
+	function update_customer_meta( $key, $value ) {
+		update_user_meta( $this->id, '_it_exchange_customer_' . $key, $value );
 	}
 
 	/**
