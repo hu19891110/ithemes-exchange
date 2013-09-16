@@ -91,18 +91,44 @@ function it_exchange_format_price( $price, $show_symbol = true ) {
 */
 function it_exchange_load_public_scripts( $current_view ) {
 
+	$purchase_requirements = (array) it_exchange_get_purchase_requirements();
+	$purchase_requirements = array_keys( $purchase_requirements );
+
 	// jQuery Zoom
 	wp_register_script( 'jquery-zoom', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/jquery.zoom.min.js' ), array( 'jquery' ), false, true );
 	
+	// Detect CC Type
+	wp_register_script( 'detect-credit-card-type', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/detect-credit-card-type.js' ), array( 'jquery' ), false, true );
+
 	// Frontend Product JS
 	if ( is_singular( 'it_exchange_prod' ) ) {
 		wp_enqueue_script( 'it-exchange-product-public-js', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/exchange-product.js' ), array( 'jquery-zoom' ), false, true );
 	}
 
-	// Load Registration purchase requirement JS if not logged in and on checkout page.
-	if ( it_exchange_is_page( 'checkout' ) && ! is_user_logged_in() )
-		wp_enqueue_script( 'it-exchange-logged-in-purchase-requirement', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/logged-in-purchase-requirement.js' ), array( 'jquery' ), false, true );
-	
+	// ****** CHECKOUT SPECIFIC SCRIPTS ******* 
+	if ( it_exchange_is_page( 'checkout' )  ) {
+
+		// General Checkout
+		$script = ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/checkout-page.js' );
+		wp_enqueue_script( 'it-exchange-checkout-page', $script, array( 'jquery' ), false, true );
+		
+		// Load Logged In purchase requirement JS if not logged in and on checkout page.
+		if ( in_array( 'logged-in', $purchase_requirements ) && ! is_user_logged_in() ) {
+			$script = ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/logged-in-purchase-requirement.js' );
+			wp_enqueue_script( 'it-exchange-logged-in-purchase-requirement', $script, array( 'jquery' ), false, true );
+		}
+
+		// Load Shipping Address purchase requirement JS if not logged in and on checkout page.
+		if ( in_array( 'billing-address', $purchase_requirements ) ) {
+			$script = ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/billing-address-purchase-requirement.js' );
+			wp_enqueue_script( 'it-exchange-billing-address-purchase-requirement', $script, array( 'jquery', 'it-exchange-country-states-sync' ), false, true );
+		}
+
+		// Load country / state field sync if on checkout page
+		wp_enqueue_script( 'it-exchange-country-states-sync', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/country-states-sync.js' ), array( 'jquery' ), false, true );
+
+	} // ****** END CHECKOUT SPECIFIC SCRIPTS *******
+
 	// Frontend Style 
 	if ( ! apply_filters( 'it_exchange_disable_frontend_stylesheet', false ) )
 		wp_enqueue_style( 'it-exchange-public-css', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/styles/exchange.css' ) );
@@ -600,7 +626,7 @@ function it_exchange_get_core_page_urls( $page ) {
     $base       = trailingslashit( get_home_url() );
 
 	// Proccess superwidget links
-	if ( it_exchange_in_superwidget() && $slug != 'transaction' ) {
+	if ( it_exchange_in_superwidget() && $slug != 'transaction' && $page != 'confirmation' ) {
 		// Get current URL without exchange query args
 		$url = it_exchange_clean_query_args();
 		return add_query_arg( 'ite-sw-state', $slug, $url );
@@ -757,6 +783,18 @@ function it_exchange_register_default_purchase_requirements() {
 		'notification'           => sprintf( __( 'You must be logged in to complete your purchase. %s' . $login . '%s, %s' . $register . '%s or %s' . $cart . '%s', 'it-l10n-ithemes-exchange' ), $login_link, $close_link, $reg_link, $close_link, $cart_link, $close_link ),
 	);
 	it_exchange_register_purchase_requirement( 'logged-in', $properties );
+
+	// Billing Address Purchase Requirement
+	$properties = array(
+		'priority'               => 2,
+		'requirement-met'        => 'it_exchange_get_customer_billing_address',
+		'sw-template-part'       => apply_filters( 'it_exchange_sw_template_part_for_logged_in_purchase_requirement', 'billing-address' ),
+		'checkout-template-part' => 'billing-address',
+		'notification'           => __( 'We need a billing address before you can checkout', 'it-l10n-ithemes-exchange' ),
+	);
+	// Only init the billing address if an add-on asks for it
+	if ( apply_filters( 'it_exchange_billing_address_purchase_requirement_enabled', false ) )
+		it_exchange_register_purchase_requirement( 'billing-address', $properties );
 }
 add_action( 'init', 'it_exchange_register_default_purchase_requirements' );
 
@@ -820,6 +858,77 @@ function it_exchange_disable_purchase_options_on_checkout_page( $elements ) {
 	return $elements;
 }
 add_filter( 'it_exchange_get_content_checkout_actions_elements', 'it_exchange_disable_purchase_options_on_checkout_page' );
+
+/**
+ * Add Billing Address to the super-widget-checkout totals loop
+ *
+ * @since 1.3.0
+ *
+ * @param array $loops list of existing elements
+ * @return array
+*/
+function it_exchange_add_billing_address_to_sw_template_totals_loops( $loops ) { 
+	
+	// Abandon if not doing billing
+	if ( ! apply_filters( 'it_exchange_billing_address_purchase_requirement_enabled', false ) )
+		return $loops;
+
+	// Set index to -1. May change once we introduce shipping
+	$index = -1;
+
+	array_splice( $loops, $index, 0, 'billing-address' );
+	return $loops;
+}
+add_filter( 'it_exchange_get_super-widget-checkout_after-cart-items_loops', 'it_exchange_add_billing_address_to_sw_template_totals_loops' );
+
+/**
+ * Clear Billing Address when the cart is emptied or a user logs out.
+ *
+ * @since 1.3.0
+ *
+ * @return void
+*/
+function it_exchange_clear_billing_on_cart_empty() {
+    it_exchange_remove_cart_data( 'billing-address' );
+}
+add_action( 'it_exchange_empty_shopping_cart', 'it_exchange_clear_billing_on_cart_empty' );
+add_action( 'wp_logout', 'it_exchange_clear_billing_on_cart_empty' );
+
+/**  
+ * AJAX callback for Country / State drop downs
+ *
+ * @since 1.3.0
+ *
+ * @return void
+*/
+function print_country_states_ajax() {
+	if ( empty( $_POST['ite_action_ajax'] ) || 'ite-country-states-update' != $_POST['ite_action_ajax'] )
+		return;
+
+	define( 'DOING_AJAX', true );
+	
+	$base_country  = empty( $_POST['ite_base_country_ajax'] ) ? 'US' : $_POST['ite_base_country_ajax'];
+	$base_state    = empty( $_POST['ite_base_state_ajax'] ) ? '' : $_POST['ite_base_state_ajax'];
+	$template_part = empty( $_POST['ite_template_part_ajax'] ) ? '' : $_POST['ite_template_part_ajax'];
+	
+	it_exchange_get_template_part( $template_part );
+	die();
+}
+add_action( 'init', 'print_country_states_ajax' );
+
+/**
+ * Prints a homeURL var in JS
+ *
+ * @since 1.3.0
+*/
+function it_exchange_print_home_url_in_js() {
+	?>
+	<script type="text/javascript">
+		var itExchangeAjaxCountryStatesAjaxURL = '<?php echo esc_js( trailingslashit( get_site_url() ) ); ?>';
+	</script>
+	<?php
+}
+add_action( 'wp_head', 'it_exchange_print_home_url_in_js' );
 
 /************************************
  * THE FOLLOWING API METHODS AREN'T READY

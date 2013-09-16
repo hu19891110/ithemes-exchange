@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/ithemes-exchange\n"
-"POT-Creation-Date: 2013-08-29 15:47-0500\n"
+"POT-Creation-Date: 2013-09-16 14:23-0500\n"
 "PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chris Jean <support@ithemes.com>\n"
 "Language: \n"
@@ -2364,6 +2364,70 @@ msgstr ""
 msgid "Please complete all purchase requirements before checkout out."
 msgstr ""
 
+#: api/theme/billing.php:75 api/theme/customer.php:128
+#: api/theme/registration.php:147
+msgid "First Name"
+msgstr ""
+
+#: api/theme/billing.php:95 api/theme/customer.php:169
+#: api/theme/registration.php:184
+msgid "Last Name"
+msgstr ""
+
+#: api/theme/billing.php:115 lib/admin/views/admin-settings.php:24
+msgid "Company Name"
+msgstr ""
+
+#: api/theme/billing.php:135
+msgid "Address 1"
+msgstr ""
+
+#: api/theme/billing.php:155
+msgid "Address 2"
+msgstr ""
+
+#: api/theme/billing.php:175
+msgid "City"
+msgstr ""
+
+#: api/theme/billing.php:195
+msgid "Zip Code"
+msgstr ""
+
+#: api/theme/billing.php:215
+msgid "Country"
+msgstr ""
+
+#: api/theme/billing.php:274
+msgid "State"
+msgstr ""
+
+#: api/theme/billing.php:338 api/theme/customer.php:253
+#: api/theme/registration.php:221 core-addons/load.php:264
+msgid "Email"
+msgstr ""
+
+#: api/theme/billing.php:358
+msgid "Phone"
+msgstr ""
+
+#: api/theme/billing.php:378
+msgid "Submit"
+msgstr ""
+
+#: api/theme/billing.php:397 api/theme/checkout.php:93 api/theme/login.php:326
+#: api/theme/registration.php:367
+#: core-addons/coupons/basic-coupons/admin.php:302
+#: lib/deprecated/templates/super-widget-cart.php:76
+#: lib/products/class.products-post-type.php:336
+#: lib/products/class.products-post-type.php:365
+#: lib/purchase-dialog/purchase-dialog.php:82
+#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/login/cancel.php:20
+#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/registration/cancel.php:20
+#: lib/templates/super-widget-cart/elements/single-item-cart-cancel.php:22
+msgid "Cancel"
+msgstr ""
+
 #: api/theme/cart-item.php:77 core-addons/coupons/basic-coupons/init.php:226
 msgid "&times;"
 msgstr ""
@@ -2390,38 +2454,13 @@ msgstr ""
 msgid "Empty Cart"
 msgstr ""
 
-#: api/theme/checkout.php:93 api/theme/login.php:326
-#: api/theme/registration.php:367
-#: core-addons/coupons/basic-coupons/admin.php:302
-#: lib/deprecated/templates/super-widget-cart.php:76
-#: lib/products/class.products-post-type.php:325
-#: lib/products/class.products-post-type.php:354
-#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/login/cancel.php:20
-#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/registration/cancel.php:20
-#: lib/templates/super-widget-cart/elements/single-item-cart-cancel.php:22
-msgid "Cancel"
-msgstr ""
-
 #: api/theme/coupons.php:181 core-addons/coupons/basic-coupons/admin.php:342
 #: core-addons/coupons/basic-coupons/init.php:108
 msgid "Coupon Code"
 msgstr ""
 
-#: api/theme/customer.php:128 api/theme/registration.php:147
-msgid "First Name"
-msgstr ""
-
-#: api/theme/customer.php:169 api/theme/registration.php:184
-msgid "Last Name"
-msgstr ""
-
 #: api/theme/customer.php:210
 msgid "Display Name"
-msgstr ""
-
-#: api/theme/customer.php:253 api/theme/registration.php:221
-#: core-addons/load.php:244
-msgid "Email"
 msgstr ""
 
 #: api/theme/customer.php:294
@@ -2443,9 +2482,8 @@ msgstr ""
 
 #: api/theme/download.php:127 api/theme/product.php:333
 #: core-addons/coupons/basic-coupons/admin.php:396
-#: lib/email-notifications/class.email-notifications.php:296
+#: lib/email-notifications/class.email-notifications.php:328
 #: lib/product-features/class.downloads.php:317
-#: lib/transactions/class.transactions-post-type.php:460
 msgid "Unlimited"
 msgstr ""
 
@@ -2466,7 +2504,7 @@ msgstr ""
 msgid "Remember Me"
 msgstr ""
 
-#: api/theme/login.php:215 lib/functions/functions.php:416
+#: api/theme/login.php:215 lib/functions/functions.php:442
 msgid "Log In"
 msgstr ""
 
@@ -2479,24 +2517,24 @@ msgstr ""
 msgid "Register"
 msgstr ""
 
-#: api/theme.php:55
+#: api/theme.php:57
 #, php-format
 msgid "Coding Error: Incorrect number of args passed to %s"
 msgstr ""
 
-#: api/theme.php:128
+#: api/theme.php:132
 #, php-format
 msgid "Coding Error: <em>%s</em> is not a valid Exchange theme API context"
 msgstr ""
 
-#: api/theme.php:138
+#: api/theme.php:142
 #, php-format
 msgid ""
 "Coding Error: <em>%s</em> in not a mapped method inside the <em>%s</em> "
 "Exchange theme API class"
 msgstr ""
 
-#: api/theme.php:146
+#: api/theme.php:150
 #, php-format
 msgid ""
 "Coding Error: <em>%s</em> in not a callable method inside the <em>%s</em> "
@@ -2534,6 +2572,39 @@ msgstr ""
 msgid "Max Quantity Reached"
 msgstr ""
 
+#: api/theme/purchase-dialog.php:80
+msgid "Name on Card"
+msgstr ""
+
+#: api/theme/purchase-dialog.php:101
+msgid "Last Name on card"
+msgstr ""
+
+#: api/theme/purchase-dialog.php:122
+#: lib/templates/content-purchase-dialog.php:17
+msgid "Card Number"
+msgstr ""
+
+#: api/theme/purchase-dialog.php:143
+msgid "Expiration Date"
+msgstr ""
+
+#: api/theme/purchase-dialog.php:164
+msgid "Expiration Month"
+msgstr ""
+
+#: api/theme/purchase-dialog.php:185
+msgid "Expiration Year"
+msgstr ""
+
+#: api/theme/purchase-dialog.php:206
+msgid "CVC Code"
+msgstr ""
+
+#: api/theme/purchase-dialog.php:227
+msgid "Fields"
+msgstr ""
+
 #: api/theme/registration.php:411
 msgid "Registration Disabled"
 msgstr ""
@@ -2542,24 +2613,24 @@ msgstr ""
 msgid "Unlimited Downloads"
 msgstr ""
 
-#: api/transactions.php:132
+#: api/transactions.php:134
 msgid "You cannot checkout without any items in your cart."
 msgstr ""
 
-#: api/transactions.php:140
+#: api/transactions.php:142
 msgid ""
 "The cart total must be greater than 0 for you to checkout. Please try again."
 msgstr ""
 
-#: api/transactions.php:628 api/transactions.php:656 api/transactions.php:692
+#: api/transactions.php:681 api/transactions.php:709 api/transactions.php:745
 #: core-addons/transaction-methods/offline-payments/init.php:286
-#: core-addons/transaction-methods/paypal-standard/init.php:536
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:582
-#: lib/transactions/class.transactions-post-type.php:325
+#: core-addons/transaction-methods/paypal-standard/init.php:740
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:784
+#: lib/transactions/class.transactions-post-type.php:346
 msgid "Unknown"
 msgstr ""
 
-#: api/transactions.php:734
+#: api/transactions.php:787
 msgid "#"
 msgstr ""
 
@@ -2609,6 +2680,24 @@ msgstr ""
 msgid "Customer Checkout"
 msgstr ""
 
+#: core-addons/admin/product-type-metabox/init.php:33 core-addons/load.php:218
+#: lib/products/class.products-post-type.php:590
+msgid "Product Type"
+msgstr ""
+
+#: core-addons/admin/product-type-metabox/init.php:48
+msgid ""
+"You must save the product after changing this to access new product options."
+msgstr ""
+
+#: core-addons/admin/product-type-metabox/init.php:50
+msgid "You currently have not Product Type add-ons enabled."
+msgstr ""
+
+#: core-addons/admin/product-type-metabox/init.php:55
+msgid "You must have more than 1 product type enabled to make changes here."
+msgstr ""
+
 #: core-addons/coupons/basic-coupons/admin.php:121
 msgid "Coupon Name cannot be left empty"
 msgstr ""
@@ -2644,7 +2733,7 @@ msgstr ""
 #: lib/coupons/class.coupons-post-type.php:30
 #: lib/deprecated/templates/super-widget-checkout.php:74
 #: lib/templates/super-widget-checkout/elements/single-item-update-coupons.php:20
-#: lib/transactions/class.transactions-post-type.php:520
+#: lib/transactions/class.transactions-post-type.php:512
 msgid "Coupons"
 msgstr ""
 
@@ -2678,7 +2767,7 @@ msgid ""
 msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:267
-#: lib/transactions/class.transactions-post-type.php:421
+#: lib/transactions/class.transactions-post-type.php:457
 msgid "Amount"
 msgstr ""
 
@@ -2715,14 +2804,14 @@ msgid "How many times can this coupon be used before it is disabled?"
 msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:303
-#: lib/products/class.products-post-type.php:217
+#: lib/products/class.products-post-type.php:228
 msgid "Save"
 msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:341
 #: core-addons/transaction-methods/offline-payments/init.php:396
 #: lib/product-features/class.title.php:96
-#: lib/products/class.products-post-type.php:572
+#: lib/products/class.products-post-type.php:583
 msgid "Title"
 msgstr ""
 
@@ -2771,7 +2860,7 @@ msgid "Used for processing 0 sum checkout (free)."
 msgstr ""
 
 #: core-addons/load.php:37
-msgid "PayPal Standard - Basic (Fastest Setup) "
+msgid "PayPal Standard - Basic"
 msgstr ""
 
 #: core-addons/load.php:38
@@ -2782,8 +2871,7 @@ msgid ""
 msgstr ""
 
 #: core-addons/load.php:50
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:709
-msgid "PayPal Standard - Secure (Highly Recommended)"
+msgid "PayPal Standard - Secure"
 msgstr ""
 
 #: core-addons/load.php:51
@@ -2819,34 +2907,57 @@ msgid "Simple Product"
 msgstr ""
 
 #: core-addons/load.php:93
-msgid "Multi-item Cart"
+msgid "Switch Product Types"
 msgstr ""
 
 #: core-addons/load.php:94
+msgid ""
+"Gives Store Owners the ability to change a Product Type after creation of "
+"the Product via the Advanced options"
+msgstr ""
+
+#: core-addons/load.php:103
+msgid "Multi-item Cart"
+msgstr ""
+
+#: core-addons/load.php:104
 msgid ""
 "Enabling this add-on allows your customers to purchase multiple products "
 "with one transaction. There are no settings for this add-on."
 msgstr ""
 
-#: core-addons/load.php:105
+#: core-addons/load.php:115
+#: lib/templates/content-checkout/elements/purchase-requirements/billing-address.php:24
+#: lib/templates/super-widget-billing-address.php:20
+#: lib/transactions/class.transactions-post-type.php:443
+msgid "Billing Address"
+msgstr ""
+
+#: core-addons/load.php:116
+msgid ""
+"Enabling this add-on allows you to collect a billing address at checkout. "
+"There are no settings for this add-on."
+msgstr ""
+
+#: core-addons/load.php:125
 msgid "Basic Reporting Dashboard Widget"
 msgstr ""
 
-#: core-addons/load.php:106
+#: core-addons/load.php:126
 msgid "Adds a widget to the Admin dashboard to give basic sales statistics."
 msgstr ""
 
-#: core-addons/load.php:117
+#: core-addons/load.php:137
 msgid "Basic Coupons"
 msgstr ""
 
-#: core-addons/load.php:118
+#: core-addons/load.php:138
 msgid ""
 "This add-on allows you to generate basic coupons that apply to all products "
 "in your store."
 msgstr ""
 
-#: core-addons/load.php:129
+#: core-addons/load.php:149
 #: core-addons/product-features/categories/class.category-widget.php:18
 #: core-addons/product-features/categories/class.category-widget.php:24
 #: core-addons/product-features/categories/init.php:20
@@ -2854,129 +2965,125 @@ msgstr ""
 msgid "Product Categories"
 msgstr ""
 
-#: core-addons/load.php:130
+#: core-addons/load.php:150
 msgid "This adds a category taxonomy for all products in iThemes Exchange."
 msgstr ""
 
-#: core-addons/load.php:137
+#: core-addons/load.php:157
 #: core-addons/product-features/categories/init.php:21
 msgid "Product Category"
 msgstr ""
 
-#: core-addons/load.php:142 core-addons/product-features/tags/init.php:20
+#: core-addons/load.php:162 core-addons/product-features/tags/init.php:20
 #: core-addons/product-features/tags/init.php:60
 msgid "Product Tags"
 msgstr ""
 
-#: core-addons/load.php:143
+#: core-addons/load.php:163
 msgid "This adds a tag taxonomy for all products in iThemes Exchange."
 msgstr ""
 
-#: core-addons/load.php:150 core-addons/product-features/tags/init.php:21
+#: core-addons/load.php:170 core-addons/product-features/tags/init.php:21
 msgid "Product Tag"
 msgstr ""
 
-#: core-addons/load.php:155 core-addons/taxes/taxes-simple/init.php:42
+#: core-addons/load.php:175 core-addons/taxes/taxes-simple/init.php:42
 msgid "Simple Taxes"
 msgstr ""
 
-#: core-addons/load.php:156
+#: core-addons/load.php:176
 msgid "This gives the admin ability to apply a default tax rate to all sales."
 msgstr ""
 
-#: core-addons/load.php:165
+#: core-addons/load.php:185
 msgid "Duplicate Products"
 msgstr ""
 
-#: core-addons/load.php:166
+#: core-addons/load.php:186
 msgid "This gives the admin the ability to duplicate an existing product."
 msgstr ""
 
-#: core-addons/load.php:173
+#: core-addons/load.php:193
 msgid "Duplicate"
 msgstr ""
 
-#: core-addons/load.php:198 lib/products/class.products-post-type.php:579
-msgid "Product Type"
-msgstr ""
-
-#: core-addons/load.php:199
+#: core-addons/load.php:219
 msgid ""
 "Add-ons responsible for the differing types of products available in iThemes "
 "Exchange."
 msgstr ""
 
-#: core-addons/load.php:204
+#: core-addons/load.php:224
 msgid "Transaction Methods"
 msgstr ""
 
-#: core-addons/load.php:205
+#: core-addons/load.php:225
 msgid "Add-ons that create transactions. eg: Stripe, PayPal."
 msgstr ""
 
-#: core-addons/load.php:217
+#: core-addons/load.php:237
 #: core-addons/transaction-methods/offline-payments/init.php:25
 msgctxt "Transaction Status"
 msgid "Pending"
 msgstr ""
 
-#: core-addons/load.php:218
+#: core-addons/load.php:238
 msgctxt "Transaction Status"
 msgid "Authorized"
 msgstr ""
 
-#: core-addons/load.php:219
+#: core-addons/load.php:239
 #: core-addons/transaction-methods/offline-payments/init.php:26
 msgctxt "Transaction Status"
 msgid "Paid"
 msgstr ""
 
-#: core-addons/load.php:220
+#: core-addons/load.php:240
 #: core-addons/transaction-methods/offline-payments/init.php:27
 msgctxt "Transaction Status"
 msgid "Refunded"
 msgstr ""
 
-#: core-addons/load.php:221
+#: core-addons/load.php:241
 #: core-addons/transaction-methods/offline-payments/init.php:28
 msgctxt "Transaction Status"
 msgid "Voided"
 msgstr ""
 
-#: core-addons/load.php:229
+#: core-addons/load.php:249
 msgid "Admin Add-ons"
 msgstr ""
 
-#: core-addons/load.php:230
+#: core-addons/load.php:250
 msgid ""
 "Add-ons that create general purpose admin functionality. eg: Reports, Export."
 msgstr ""
 
-#: core-addons/load.php:234
+#: core-addons/load.php:254
 msgid "Coupon Add-ons"
 msgstr ""
 
-#: core-addons/load.php:235
+#: core-addons/load.php:255
 msgid "Add-ons that create coupons for your customers."
 msgstr ""
 
-#: core-addons/load.php:239
+#: core-addons/load.php:259
 msgid "Taxonomy Add-ons"
 msgstr ""
 
-#: core-addons/load.php:240
+#: core-addons/load.php:260
 msgid "Add-ons that create new taxonomies specifically for Exchange products."
 msgstr ""
 
-#: core-addons/load.php:245
+#: core-addons/load.php:265
 msgid "Add-ons that help store owners manage their email."
 msgstr ""
 
-#: core-addons/load.php:249
+#: core-addons/load.php:269
 msgid "Other"
 msgstr ""
 
-#: core-addons/load.php:250
+#: core-addons/load.php:270
 msgid "Add-ons that don't fit in any other add-on category."
 msgstr ""
 
@@ -3093,8 +3200,8 @@ msgstr ""
 #: core-addons/product-types/digital-downloads/init.php:159
 #: core-addons/taxes/taxes-simple/init.php:56
 #: core-addons/transaction-methods/offline-payments/view-add-on-settings.php:21
-#: core-addons/transaction-methods/paypal-standard/init.php:644
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:690
+#: core-addons/transaction-methods/paypal-standard/init.php:861
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:905
 #: lib/admin/views/admin-email-settings.php:158
 #: lib/admin/views/admin-page-settings.php:128
 #: lib/admin/views/admin-settings.php:146
@@ -3104,8 +3211,8 @@ msgstr ""
 #: core-addons/product-types/digital-downloads/init.php:180
 #: core-addons/taxes/taxes-simple/init.php:95
 #: core-addons/transaction-methods/offline-payments/init.php:430
-#: core-addons/transaction-methods/paypal-standard/init.php:702
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:794
+#: core-addons/transaction-methods/paypal-standard/init.php:914
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1004
 #: lib/admin/class.admin.php:1015 lib/admin/class.admin.php:1176
 #: lib/admin/class.admin.php:1266
 msgid "Error. Please try again"
@@ -3113,15 +3220,15 @@ msgstr ""
 
 #: core-addons/product-types/digital-downloads/init.php:186
 #: core-addons/transaction-methods/offline-payments/init.php:436
-#: core-addons/transaction-methods/paypal-standard/init.php:708
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:800
+#: core-addons/transaction-methods/paypal-standard/init.php:920
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1010
 msgid "Settings saved."
 msgstr ""
 
 #: core-addons/product-types/digital-downloads/init.php:191
 #: core-addons/transaction-methods/offline-payments/init.php:441
-#: core-addons/transaction-methods/paypal-standard/init.php:713
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:805
+#: core-addons/transaction-methods/paypal-standard/init.php:925
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1015
 msgid "Settings not saved."
 msgstr ""
 
@@ -3172,12 +3279,13 @@ msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/init.php:103
 #: core-addons/transaction-methods/zero-sum-checkout/init.php:25
+#: lib/purchase-dialog/purchase-dialog.php:301
 msgid "Transaction Failed, unable to verify security token."
 msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/init.php:274
-#: core-addons/transaction-methods/paypal-standard/init.php:508
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:554
+#: core-addons/transaction-methods/paypal-standard/init.php:712
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:756
 msgid "Paid"
 msgstr ""
 
@@ -3186,14 +3294,14 @@ msgid "Refunded"
 msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/init.php:280
-#: core-addons/transaction-methods/paypal-standard/init.php:530
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:576
+#: core-addons/transaction-methods/paypal-standard/init.php:734
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:778
 msgid "Pending"
 msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/init.php:283
-#: core-addons/transaction-methods/paypal-standard/init.php:533
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:579
+#: core-addons/transaction-methods/paypal-standard/init.php:737
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:781
 msgid "Voided"
 msgstr ""
 
@@ -3204,8 +3312,8 @@ msgid ""
 msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/init.php:391
-#: core-addons/transaction-methods/paypal-standard/init.php:674
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:720
+#: core-addons/transaction-methods/paypal-standard/init.php:886
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:930
 msgid "Video:"
 msgstr ""
 
@@ -3242,8 +3350,8 @@ msgid ""
 msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/init.php:469
-#: core-addons/transaction-methods/paypal-standard/init.php:748
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:848
+#: core-addons/transaction-methods/paypal-standard/init.php:960
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1058
 #: lib/admin/class.admin.php:1024 lib/admin/class.admin.php:1187
 #: lib/admin/class.admin.php:1283
 msgid "Settings Saved."
@@ -3280,12 +3388,12 @@ msgid "Error: Amount charged is not the same as the cart total!"
 msgstr ""
 
 #: core-addons/transaction-methods/paypal-standard/init.php:122
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:144
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:150
 msgid "Unknown error while processing with PayPal. Please try again later."
 msgstr ""
 
 #: core-addons/transaction-methods/paypal-standard/init.php:234
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:264
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:270
 msgid "Pay with PayPal"
 msgstr ""
 
@@ -3293,49 +3401,49 @@ msgstr ""
 msgid "Error processing PayPal form. Missing valid PayPal account."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:357
+#: core-addons/transaction-methods/paypal-standard/init.php:406
 msgid "ERROR: Invalid PayPal Setup"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:512
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:558
+#: core-addons/transaction-methods/paypal-standard/init.php:716
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:760
 msgid "Refund"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:515
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:561
+#: core-addons/transaction-methods/paypal-standard/init.php:719
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:763
 msgid "Reversed"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:518
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:564
+#: core-addons/transaction-methods/paypal-standard/init.php:722
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:766
 msgid "Buyer Complaint"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:521
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:567
+#: core-addons/transaction-methods/paypal-standard/init.php:725
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:769
 msgid "Denied"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:524
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:570
+#: core-addons/transaction-methods/paypal-standard/init.php:728
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:772
 msgid "Expired"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:527
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:573
+#: core-addons/transaction-methods/paypal-standard/init.php:731
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:775
 msgid "Failed"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:634
+#: core-addons/transaction-methods/paypal-standard/init.php:851
 msgid "PayPal Standard Settings - Basic"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:663
+#: core-addons/transaction-methods/paypal-standard/init.php:875
 msgid "PayPal Standard - Basic (Fastest Setup)"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:673
+#: core-addons/transaction-methods/paypal-standard/init.php:885
 msgid ""
 "This is the simple and fast version to get PayPal setup for your store. You "
 "might use this version just to get your store going, but we highly suggest "
@@ -3344,70 +3452,74 @@ msgid ""
 "PayPal account."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:674
+#: core-addons/transaction-methods/paypal-standard/init.php:886
 msgid "Setting Up PayPal Standard Basic"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:676
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:722
+#: core-addons/transaction-methods/paypal-standard/init.php:888
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:932
 msgid "Don't have a PayPal account yet?"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:676
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:722
+#: core-addons/transaction-methods/paypal-standard/init.php:888
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:932
 msgid "Go set one up here"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:677
+#: core-addons/transaction-methods/paypal-standard/init.php:889
 msgid "What is your PayPal email address?"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:679
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:725
+#: core-addons/transaction-methods/paypal-standard/init.php:891
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:935
 msgid "PayPal Email Address"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:679
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:725
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:763
+#: core-addons/transaction-methods/paypal-standard/init.php:891
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:935
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:973
 msgid "We need this to tie payments to your account."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:683
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:753
+#: core-addons/transaction-methods/paypal-standard/init.php:895
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:963
 msgid "Purchase Button Label"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:683
+#: core-addons/transaction-methods/paypal-standard/init.php:895
 msgid ""
 "This is the text inside the button your customers will press to purchase "
 "with PayPal Standard"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:767
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:867
+#: core-addons/transaction-methods/paypal-standard/init.php:979
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1077
 msgid "Please include your PayPal Email Address"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:121
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:127
 #, php-format
 msgid "Error: Transaction IDs do not match! %s, %s"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:124
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:130
 #, php-format
 msgid "Error: Amount charged is not the same as the cart total! %s | %s"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:321
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:327
 msgid "Error processing PayPal form. Missing valid PayPal information."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:680
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:895
 msgid "PayPal Standard Settings - Secure"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:719
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:919
+msgid "PayPal Standard - Secure (Highly Recommended)"
+msgstr ""
+
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:929
 msgid ""
 "Although this PayPal version for iThemes Exchange takes more effort and "
 "time, it is well worth it for the security options for your store. To get "
@@ -3415,152 +3527,152 @@ msgid ""
 "information from your PayPal account."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:720
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:930
 msgid "Setting Up PayPal Standard Secure"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:723
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:933
 msgid "Step 1. Fill out your PayPal email address"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:728
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:938
 msgid "Step 2. Fill out your PayPal API credentials"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:730
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:940
 msgid "PayPal API Username"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:730
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:734
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:738
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:940
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:944
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:948
 msgid ""
 "At PayPal, see: Profile &rarr; My Selling Tools &rarr; API Access &rarr; "
 "Update &rarr; View API Signature (or Request API Credentials)."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:734
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:944
 msgid "PayPal API Password"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:738
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:948
 msgid "PayPal API Signature"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:741
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:951
 msgid "Step 3. Setup PayPal Instant Payment Notifications (IPN)"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:742
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:952
 msgid ""
 "PayPal IPN must be configured in Account Profile -› Instant Payment "
 "Notification Preferences in your PayPal Account"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:743
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:953
 msgid ""
 "Please log into your account and add this URL to your IPN Settings so "
 "iThemes Exchange is notified of things like refunds, payments, etc."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:745
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:955
 msgid "Step 4. Setup PayPal Auto Return"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:746
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:956
 msgid ""
 "PayPal Auto Return must be configured in Account Profile -› Website Payment "
 "Preferences in your PayPal Account"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:747
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:957
 msgid ""
 "Please log into your account, set Auto Return to ON and add this URL to your "
 "Return URL Settings so your customers are redirected to your site to "
 "complete the transactions."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:749
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:959
 msgid "Step 5. Setup PayPal Payment Data Transfer (PDT)"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:750
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:960
 msgid ""
 "PayPal PDT must be turned <strong>ON</strong> in Account Profile -› Website "
 "Payment Preferences in your PayPal Account"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:751
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:961
 msgid "Optional: Edit Paypal Button Label"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:753
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:963
 msgid ""
 "This is the text inside the button your customers will press to purchase "
 "with PayPal Standard (secure)"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:756
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:966
 msgid "Optional: Enable Paypal Testing Mode"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:759
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:969
 msgid "Enable PayPal Sandbox Mode?"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:759
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:969
 msgid ""
 "Use this mode for testing your store. This mode will need to be disabled "
 "when the store is ready to process customer payments."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:763
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:973
 msgid "PayPal Sandbox Email Address"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:767
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:977
 msgid "PayPal Sandbox API Username"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:767
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:771
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:775
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:977
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:981
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:985
 msgid "View tutorial: "
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:771
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:981
 msgid "PayPal Sandbox API Password"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:775
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:985
 msgid "PayPal Sandbox API Signature"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:869
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1079
 msgid "Please include your PayPal API Username"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:871
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1081
 msgid "Please include your PayPal API password"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:873
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1083
 msgid "Please include your PayPal API signature"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:877
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1087
 msgid "Please include your PayPal Sandbox Email Address"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:879
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1089
 msgid "Please include your PayPal Sandbox API Username"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:881
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1091
 msgid "Please include your PayPal Sandbox API password"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:883
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1093
 msgid "Please include your PayPal Sandbox API signature"
 msgstr ""
 
@@ -3590,7 +3702,7 @@ msgstr ""
 
 #: lib/admin/class.admin.php:273 lib/admin/views/admin-user-products.php:10
 #: lib/products/class.products-post-type.php:113
-#: lib/transactions/class.transactions-post-type.php:420
+#: lib/transactions/class.transactions-post-type.php:456
 msgid "Products"
 msgstr ""
 
@@ -3603,7 +3715,7 @@ msgid "Info"
 msgstr ""
 
 #: lib/admin/class.admin.php:346
-#: lib/transactions/class.transactions-post-type.php:43
+#: lib/transactions/class.transactions-post-type.php:45
 msgid "Payments"
 msgstr ""
 
@@ -3761,56 +3873,56 @@ msgstr ""
 msgid "Page settings cannot be left blank."
 msgstr ""
 
-#: lib/admin/class.admin.php:1426
+#: lib/admin/class.admin.php:1428
 msgid "Select Images"
 msgstr ""
 
-#: lib/admin/class.admin.php:1427
+#: lib/admin/class.admin.php:1429
 msgid "You must upload an image larger than 150x150."
 msgstr ""
 
-#: lib/admin/class.admin.php:1428
+#: lib/admin/class.admin.php:1430
 msgid "Edit Image"
 msgstr ""
 
-#: lib/admin/class.admin.php:1429
+#: lib/admin/class.admin.php:1431
 msgid "Upload Source"
 msgstr ""
 
-#: lib/admin/class.admin.php:1430
+#: lib/admin/class.admin.php:1432
 msgid "Insert"
 msgstr ""
 
-#: lib/admin/class.admin.php:1431
+#: lib/admin/class.admin.php:1433
 msgid "Advanced"
 msgstr ""
 
-#: lib/admin/class.admin.php:1432
+#: lib/admin/class.admin.php:1434
 msgid ""
 "We want to keep things simple for you, so we put the kitchen sink here. "
 "Click this button to add more info about your product."
 msgstr ""
 
-#: lib/admin/class.admin.php:1446
+#: lib/admin/class.admin.php:1448
 msgid ""
 "You have checked the option to \"Reset ALL data\". Are you should you want "
 "to delete all Exchange products, transactions, and settings?"
 msgstr ""
 
-#: lib/admin/class.admin.php:1453
+#: lib/admin/class.admin.php:1455
 msgid ""
 "Please make sure all WordPress page types have a WordPress page selected."
 msgstr ""
 
-#: lib/admin/class.admin.php:1672
+#: lib/admin/class.admin.php:1678
 msgid "Main Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1677
+#: lib/admin/class.admin.php:1683
 msgid "Side Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1747
+#: lib/admin/class.admin.php:1753
 msgid "Featured Image"
 msgstr ""
 
@@ -4204,10 +4316,6 @@ msgstr ""
 msgid "Company Details"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:24
-msgid "Company Name"
-msgstr ""
-
 #: lib/admin/views/admin-settings.php:27
 msgid "The name used in customer receipts."
 msgstr ""
@@ -4308,7 +4416,7 @@ msgstr ""
 msgid "Customer Registration Settings"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:116 lib/functions/functions.php:350
+#: lib/admin/views/admin-settings.php:116 lib/functions/functions.php:376
 msgid "Customer Registration"
 msgstr ""
 
@@ -4360,7 +4468,7 @@ msgstr ""
 
 #: lib/admin/views/admin-user-products.php:11
 #: lib/deprecated/templates/content-downloads.php:34
-#: lib/functions/functions.php:334 lib/functions/functions.php:337
+#: lib/functions/functions.php:360 lib/functions/functions.php:363
 #: lib/templates/content-downloads/elements/confirmation-url.php:20
 msgid "Transaction"
 msgstr ""
@@ -4371,7 +4479,7 @@ msgid ""
 "\"details-toggle hide-if-no-js\">&#61;</span>"
 msgstr ""
 
-#: lib/admin/views/admin-user-products.php:71 lib/functions/functions.php:389
+#: lib/admin/views/admin-user-products.php:71 lib/functions/functions.php:415
 msgid "Downloads"
 msgstr ""
 
@@ -4394,7 +4502,7 @@ msgid "This user is an Exchange customer."
 msgstr ""
 
 #: lib/admin/views/admin-user-profile.php:24
-#: lib/transactions/class.transactions-post-type.php:412
+#: lib/transactions/class.transactions-post-type.php:433
 msgid "View Customer Data"
 msgstr ""
 
@@ -4406,16 +4514,16 @@ msgstr ""
 #: lib/admin/views/admin-user-transactions.php:18
 #: lib/deprecated/templates/content-cart.php:89
 #: lib/deprecated/templates/content-checkout.php:88
-#: lib/email-notifications/class.email-notifications.php:415
+#: lib/email-notifications/class.email-notifications.php:448
 #: lib/templates/content-cart/elements/totals-total.php:22
 #: lib/templates/content-checkout/elements/totals-total.php:22
-#: lib/transactions/class.transactions-post-type.php:262
-#: lib/transactions/class.transactions-post-type.php:558
+#: lib/transactions/class.transactions-post-type.php:283
+#: lib/transactions/class.transactions-post-type.php:550
 msgid "Total"
 msgstr ""
 
 #: lib/admin/views/admin-user-transactions.php:19
-#: lib/transactions/class.transactions-post-type.php:261
+#: lib/transactions/class.transactions-post-type.php:282
 msgid "Order Number"
 msgstr ""
 
@@ -4532,47 +4640,59 @@ msgstr ""
 msgid "Save Settings"
 msgstr ""
 
-#: lib/cart/class.cart.php:102
+#: lib/cart/class.cart.php:108
 msgid "Product not added to cart"
 msgstr ""
 
-#: lib/cart/class.cart.php:137 lib/cart/class.cart.php:372
+#: lib/cart/class.cart.php:143 lib/cart/class.cart.php:424
 msgid "Product added to cart"
 msgstr ""
 
-#: lib/cart/class.cart.php:353
+#: lib/cart/class.cart.php:285
+msgid "Error adding Billing Address. Please try again."
+msgstr ""
+
+#: lib/cart/class.cart.php:294
+msgid "Please fill out all required fields"
+msgstr ""
+
+#: lib/cart/class.cart.php:319
+msgid "Billing Address Saved"
+msgstr ""
+
+#: lib/cart/class.cart.php:406
 msgid "Unknown error. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:364
+#: lib/cart/class.cart.php:416
 msgid "Please select a payment method"
 msgstr ""
 
-#: lib/cart/class.cart.php:365
+#: lib/cart/class.cart.php:417
 msgid "There was an error processing your transaction. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:366
+#: lib/cart/class.cart.php:418
 msgid "Product not removed from cart. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:367
+#: lib/cart/class.cart.php:419
 msgid "There was an error emptying your cart. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:368
+#: lib/cart/class.cart.php:420
 msgid "There was an error updating your cart. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:369
+#: lib/cart/class.cart.php:421
 msgid "Cart Updated."
 msgstr ""
 
-#: lib/cart/class.cart.php:370
+#: lib/cart/class.cart.php:422
 msgid "Cart Emptied"
 msgstr ""
 
-#: lib/cart/class.cart.php:371
+#: lib/cart/class.cart.php:423
 msgid "Product removed from cart."
 msgstr ""
 
@@ -4690,7 +4810,7 @@ msgstr ""
 #: lib/deprecated/templates/content-checkout.php:84
 #: lib/templates/content-cart/elements/totals-subtotal.php:22
 #: lib/templates/content-checkout/elements/totals-subtotal.php:22
-#: lib/transactions/class.transactions-post-type.php:511
+#: lib/transactions/class.transactions-post-type.php:503
 msgid "Subtotal"
 msgstr ""
 
@@ -4750,7 +4870,6 @@ msgstr ""
 #: lib/deprecated/templates/content-downloads.php:64
 #: lib/templates/content-confirmation/elements/product.php:52
 #: lib/templates/content-downloads/elements/download-limit.php:23
-#: lib/transactions/class.transactions-post-type.php:480
 msgid "Unlimited downloads"
 msgstr ""
 
@@ -4767,7 +4886,7 @@ msgid "No transactions found."
 msgstr ""
 
 #: lib/deprecated/templates/content-downloads.php:41
-#: lib/email-notifications/class.email-notifications.php:277
+#: lib/email-notifications/class.email-notifications.php:309
 #: lib/templates/content-downloads/loops/download-data.php:19
 msgid ""
 "The status for this transaction does not grant access to downloadable files. "
@@ -4785,7 +4904,7 @@ msgstr ""
 
 #: lib/deprecated/templates/content-registration.php:49
 #: lib/deprecated/templates/super-widget-registration.php:44
-#: lib/functions/functions.php:743
+#: lib/functions/functions.php:769
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/registration/login.php:20
 #: lib/templates/content-registration/elements/login.php:20
 #: lib/templates/super-widget-registration/elements/cancel.php:20
@@ -4843,33 +4962,33 @@ msgid "No payment add-ons enabled."
 msgstr ""
 
 #: lib/deprecated/templates/super-widget-checkout.php:80
-#: lib/email-notifications/class.email-notifications.php:389
+#: lib/email-notifications/class.email-notifications.php:422
 #: lib/templates/super-widget-checkout/elements/single-item-update-quantity.php:20
 msgid "Quantity"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:53
+#: lib/email-notifications/class.email-notifications.php:86
 msgid "Invalid transaction. Confirmation email not sent."
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:62
+#: lib/email-notifications/class.email-notifications.php:95
 msgid "Confirmation Email not sent. Please try again."
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:70
+#: lib/email-notifications/class.email-notifications.php:103
 msgid "You do not have permission to resend confirmation emails."
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:78
+#: lib/email-notifications/class.email-notifications.php:111
 msgid "Confirmation email resent"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:262
-#: lib/email-notifications/class.email-notifications.php:279
+#: lib/email-notifications/class.email-notifications.php:294
+#: lib/email-notifications/class.email-notifications.php:311
 msgid "Available Downloads"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:286
+#: lib/email-notifications/class.email-notifications.php:318
 #, php-format
 msgid ""
 "You have purchased %d unique download link(s) for each file available with "
@@ -4877,142 +4996,146 @@ msgid ""
 "details on you %sdownloads%s page."
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:300
+#: lib/email-notifications/class.email-notifications.php:332
 msgid "Download link"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:376
+#: lib/email-notifications/class.email-notifications.php:409
 msgid "Important Information"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:388
-#: lib/functions/functions.php:307
+#: lib/email-notifications/class.email-notifications.php:421
+#: lib/functions/functions.php:333
 #: lib/products/class.products-post-type.php:114
 msgid "Product"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:390
+#: lib/email-notifications/class.email-notifications.php:423
 msgid "Total Price"
 msgstr ""
 
-#: lib/functions/functions.php:186
+#: lib/functions/functions.php:212
 msgid "Dangerous Settings"
 msgstr ""
 
-#: lib/functions/functions.php:190
+#: lib/functions/functions.php:216
 msgid "Reset Exchange"
 msgstr ""
 
-#: lib/functions/functions.php:193
+#: lib/functions/functions.php:219
 msgid "Reset ALL data"
 msgstr ""
 
-#: lib/functions/functions.php:194
+#: lib/functions/functions.php:220
 msgid "Checking this box will rest ALL settings and DELETE ALL DATA."
 msgstr ""
 
-#: lib/functions/functions.php:290
+#: lib/functions/functions.php:316
 msgid "Exchange has been reset. All data has been deleted."
 msgstr ""
 
-#: lib/functions/functions.php:310
+#: lib/functions/functions.php:336
 msgid "Product Base"
 msgstr ""
 
-#: lib/functions/functions.php:320
+#: lib/functions/functions.php:346
 msgid "Store"
 msgstr ""
 
-#: lib/functions/functions.php:323
+#: lib/functions/functions.php:349
 msgid "Store Page"
 msgstr ""
 
-#: lib/functions/functions.php:324
+#: lib/functions/functions.php:350
 msgid "Where all your products are shown in one place"
 msgstr ""
 
-#: lib/functions/functions.php:347
+#: lib/functions/functions.php:373
 msgid "Registration"
 msgstr ""
 
-#: lib/functions/functions.php:351
+#: lib/functions/functions.php:377
 msgid ""
 "Where customers register to login, download, etc.  You can turn off "
 "registration and allow guest checkouts in Exchange / Add-ons / Digital "
 "Downloads Settings."
 msgstr ""
 
-#: lib/functions/functions.php:361
+#: lib/functions/functions.php:387
 msgid "Account"
 msgstr ""
 
-#: lib/functions/functions.php:364
+#: lib/functions/functions.php:390
 msgid "Account Page"
 msgstr ""
 
-#: lib/functions/functions.php:365
+#: lib/functions/functions.php:391
 msgid ""
 "Customers get an account when they buy something, so they can login and "
 "download their purchases. This is the main landing page for customers after "
 "they log in."
 msgstr ""
 
-#: lib/functions/functions.php:375
+#: lib/functions/functions.php:401
 msgid "Profile"
 msgstr ""
 
-#: lib/functions/functions.php:378
+#: lib/functions/functions.php:404
 msgid "Profile Page"
 msgstr ""
 
-#: lib/functions/functions.php:379
+#: lib/functions/functions.php:405
 msgid "Private details about your customers that they can change."
 msgstr ""
 
-#: lib/functions/functions.php:392
+#: lib/functions/functions.php:418
 msgid "Customer Downloads"
 msgstr ""
 
-#: lib/functions/functions.php:393
+#: lib/functions/functions.php:419
 msgid "Page where the customer can find all of their available downloads."
 msgstr ""
 
-#: lib/functions/functions.php:403 lib/functions/functions.php:406
-#: lib/products/class.products-post-type.php:576
+#: lib/functions/functions.php:429 lib/functions/functions.php:432
+#: lib/products/class.products-post-type.php:587
 msgid "Purchases"
 msgstr ""
 
-#: lib/functions/functions.php:419
+#: lib/functions/functions.php:445
 msgid "Customer Log In"
 msgstr ""
 
-#: lib/functions/functions.php:429
+#: lib/functions/functions.php:455
 msgid "Log Out"
 msgstr ""
 
-#: lib/functions/functions.php:432
+#: lib/functions/functions.php:458
 msgid "Customer Log Out"
 msgstr ""
 
-#: lib/functions/functions.php:442
+#: lib/functions/functions.php:468
 msgid "Thank you"
 msgstr ""
 
-#: lib/functions/functions.php:445
+#: lib/functions/functions.php:471
 msgid "Purchase Confirmation"
 msgstr ""
 
-#: lib/functions/functions.php:744
+#: lib/functions/functions.php:770
 msgid "register"
 msgstr ""
 
-#: lib/functions/functions.php:745
+#: lib/functions/functions.php:771
 msgid "edit your cart"
 msgstr ""
 
-#: lib/functions/functions.php:757
+#: lib/functions/functions.php:783
 #, php-format
 msgid "You must be logged in to complete your purchase. %s"
+msgstr ""
+
+#: lib/functions/functions.php:793
+msgid "We need a billing address before you can checkout"
 msgstr ""
 
 #: lib/pages/class.nav-menus.php:81
@@ -5036,7 +5159,7 @@ msgid "Base Price"
 msgstr ""
 
 #: lib/product-features/class.base-price.php:116
-#: lib/products/class.products-post-type.php:573
+#: lib/products/class.products-post-type.php:584
 msgid "Price"
 msgstr ""
 
@@ -5346,7 +5469,7 @@ msgid "Edit Product"
 msgstr ""
 
 #: lib/products/class.products-post-type.php:116
-#: lib/products/class.products-post-type.php:233
+#: lib/products/class.products-post-type.php:244
 msgid "View Product"
 msgstr ""
 
@@ -5354,179 +5477,180 @@ msgstr ""
 msgid "An iThemes Exchange Post Type for storing all Products in the system"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:192
-#: lib/products/class.products-post-type.php:193
-#: lib/products/class.products-post-type.php:254
-#: lib/products/class.products-post-type.php:255
+#: lib/products/class.products-post-type.php:203
+#: lib/products/class.products-post-type.php:204
+#: lib/products/class.products-post-type.php:265
+#: lib/products/class.products-post-type.php:266
 msgid "Publish"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:222
+#: lib/products/class.products-post-type.php:233
 msgid "Save Draft"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:224
+#: lib/products/class.products-post-type.php:235
 msgid "Save as Pending"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:238
+#: lib/products/class.products-post-type.php:249
 msgid "Preview Product"
-msgstr ""
-
-#: lib/products/class.products-post-type.php:251
-#: lib/products/class.products-post-type.php:252
-msgid "Schedule"
-msgstr ""
-
-#: lib/products/class.products-post-type.php:258
-#: lib/products/class.products-post-type.php:259
-msgid "Submit for Review"
 msgstr ""
 
 #: lib/products/class.products-post-type.php:262
 #: lib/products/class.products-post-type.php:263
+msgid "Schedule"
+msgstr ""
+
+#: lib/products/class.products-post-type.php:269
+#: lib/products/class.products-post-type.php:270
+msgid "Submit for Review"
+msgstr ""
+
+#: lib/products/class.products-post-type.php:273
+#: lib/products/class.products-post-type.php:274
 msgid "Update"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:269
+#: lib/products/class.products-post-type.php:280
 msgid "Show Advanced"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:269
+#: lib/products/class.products-post-type.php:280
 msgid "Hide Advanced"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:275
+#: lib/products/class.products-post-type.php:286
 msgid "Delete Permanently"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:277
+#: lib/products/class.products-post-type.php:288
 msgid "Move to Trash"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:286
+#: lib/products/class.products-post-type.php:297
 msgid "Status:"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:291
+#: lib/products/class.products-post-type.php:302
 msgid "Privately Published"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:294
-#: lib/products/class.products-post-type.php:315
+#: lib/products/class.products-post-type.php:305
+#: lib/products/class.products-post-type.php:326
 msgid "Published"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:297
+#: lib/products/class.products-post-type.php:308
 msgid "Scheduled"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:300
-#: lib/products/class.products-post-type.php:317
+#: lib/products/class.products-post-type.php:311
+#: lib/products/class.products-post-type.php:328
 msgid "Pending Review"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:304
-#: lib/products/class.products-post-type.php:319
-#: lib/products/class.products-post-type.php:321
+#: lib/products/class.products-post-type.php:315
+#: lib/products/class.products-post-type.php:330
+#: lib/products/class.products-post-type.php:332
 msgid "Draft"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:310
-#: lib/products/class.products-post-type.php:346
+#: lib/products/class.products-post-type.php:321
+#: lib/products/class.products-post-type.php:357
+#: lib/templates/super-widget-checkout/loops/billing-address.php:19
 msgid "Edit"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:324
-#: lib/products/class.products-post-type.php:353
+#: lib/products/class.products-post-type.php:335
+#: lib/products/class.products-post-type.php:364
 msgid "OK"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:331
+#: lib/products/class.products-post-type.php:342
 msgid "Visibility:"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:336
-#: lib/products/class.products-post-type.php:351
+#: lib/products/class.products-post-type.php:347
+#: lib/products/class.products-post-type.php:362
 msgid "Hide from Store"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:340
-#: lib/products/class.products-post-type.php:350
-#: lib/products/class.products-post-type.php:574
+#: lib/products/class.products-post-type.php:351
+#: lib/products/class.products-post-type.php:361
+#: lib/products/class.products-post-type.php:585
 msgid "Show in Store"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:363
+#: lib/products/class.products-post-type.php:374
 msgid "Private"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:366
+#: lib/products/class.products-post-type.php:377
 msgid "Password protected"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:369
+#: lib/products/class.products-post-type.php:380
 msgid "Public, Sticky"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:372
+#: lib/products/class.products-post-type.php:383
 msgid "Public"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:393
+#: lib/products/class.products-post-type.php:404
 msgid "Add New Product"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:413
+#: lib/products/class.products-post-type.php:424
 msgid "Add New "
 msgstr ""
 
-#: lib/products/class.products-post-type.php:455
+#: lib/products/class.products-post-type.php:466
 msgid "Edit "
 msgstr ""
 
-#: lib/products/class.products-post-type.php:575
+#: lib/products/class.products-post-type.php:586
 msgid "Inventory"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:696
+#: lib/products/class.products-post-type.php:707
 #, php-format
 msgid "Product updated. <a href=\"%s\">View product</a>"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:697
+#: lib/products/class.products-post-type.php:708
 msgid "Custom field updated."
 msgstr ""
 
-#: lib/products/class.products-post-type.php:698
+#: lib/products/class.products-post-type.php:709
 msgid "Custom field deleted."
 msgstr ""
 
-#: lib/products/class.products-post-type.php:699
+#: lib/products/class.products-post-type.php:710
 msgid "Product updated."
 msgstr ""
 
 #. translators: %s: date and time of the revision
-#: lib/products/class.products-post-type.php:701
+#: lib/products/class.products-post-type.php:712
 #, php-format
 msgid "Product restored to revision from %s"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:702
+#: lib/products/class.products-post-type.php:713
 #, php-format
 msgid "Product published. <a href=\"%s\">View product</a>"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:703
+#: lib/products/class.products-post-type.php:714
 msgid "Product saved."
 msgstr ""
 
-#: lib/products/class.products-post-type.php:704
+#: lib/products/class.products-post-type.php:715
 #, php-format
 msgid "Product submitted. <a target=\"_blank\" href=\"%s\">Preview product</a>"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:705
+#: lib/products/class.products-post-type.php:716
 #, php-format
 msgid ""
 "Product scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
@@ -5534,32 +5658,32 @@ msgid ""
 msgstr ""
 
 #. translators: Publish box date format, see http://php.net/date
-#: lib/products/class.products-post-type.php:707
+#: lib/products/class.products-post-type.php:718
 msgid "M j, Y @ G:i"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:708
+#: lib/products/class.products-post-type.php:719
 #, php-format
 msgid ""
 "Product draft updated. <a target=\"_blank\" href=\"%s\">Preview product</a>"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:721
-#: lib/products/class.products-post-type.php:733
+#: lib/products/class.products-post-type.php:732
+#: lib/products/class.products-post-type.php:744
 msgid "Product Slug"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:733
+#: lib/products/class.products-post-type.php:744
 msgid ""
 "This is the final part of the product's URL. WordPress will auto-create it "
 "for you."
 msgstr ""
 
-#: lib/products/class.products-post-type.php:753
+#: lib/products/class.products-post-type.php:764
 msgid "My Sample Product"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:755
+#: lib/products/class.products-post-type.php:766
 msgid ""
 "A great product description includes the primary benefits, not just features "
 "or technical specs to your target market and core audience. It's probably "
@@ -5569,7 +5693,7 @@ msgid ""
 "products out there?"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:756
+#: lib/products/class.products-post-type.php:767
 msgid ""
 "\n"
 "\t\t\tThis is your extended description. Use this area for a variety of "
@@ -5598,27 +5722,43 @@ msgid ""
 "\t\t\tJPGs are typically best for photos. PNGs for other types of artwork."
 msgstr ""
 
-#: lib/products/class.products-post-type.php:785
+#: lib/products/class.products-post-type.php:796
 msgid "Sample Image One"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:786
+#: lib/products/class.products-post-type.php:797
 msgid "Sample Image Two"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:787
+#: lib/products/class.products-post-type.php:798
 msgid "Sample Image Three"
 msgstr ""
 
-#: lib/super-widget/ajax.php:88
+#: lib/purchase-dialog/purchase-dialog.php:80
+msgid "Purchase"
+msgstr ""
+
+#: lib/purchase-dialog/purchase-dialog.php:81
+msgid "Complete Purchase"
+msgstr ""
+
+#: lib/purchase-dialog/purchase-dialog.php:312
+msgid "Please make sure all required fields have a value."
+msgstr ""
+
+#: lib/purchase-dialog/purchase-dialog.php:316
+msgid "Please make sure all fields are formatted properly."
+msgstr ""
+
+#: lib/super-widget/ajax.php:91
 msgid "Logged in as "
 msgstr ""
 
-#: lib/super-widget/ajax.php:92
+#: lib/super-widget/ajax.php:95
 msgid "Error. Please try again."
 msgstr ""
 
-#: lib/super-widget/ajax.php:109
+#: lib/super-widget/ajax.php:112
 msgid "Registered and logged in as "
 msgstr ""
 
@@ -5632,7 +5772,11 @@ msgid ""
 "Confirmation views depending on the situation"
 msgstr ""
 
-#: lib/super-widget/class.super-widget.php:159
+#: lib/super-widget/class.super-widget.php:134
+msgid "Processing"
+msgstr ""
+
+#: lib/super-widget/class.super-widget.php:174
 msgid "There are no options for this widget."
 msgstr ""
 
@@ -5658,6 +5802,26 @@ msgstr ""
 msgid "No downloads found."
 msgstr ""
 
+#: lib/templates/content-purchase-dialog.php:6
+msgid "First name"
+msgstr ""
+
+#: lib/templates/content-purchase-dialog.php:11
+msgid "Last name"
+msgstr ""
+
+#: lib/templates/content-purchase-dialog.php:23
+msgid "MM"
+msgstr ""
+
+#: lib/templates/content-purchase-dialog.php:24
+msgid "YY"
+msgstr ""
+
+#: lib/templates/content-purchase-dialog.php:29
+msgid "CVC"
+msgstr ""
+
 #: lib/templates/content-purchases/elements/no-purchases-found.php:18
 msgid "No purchases found."
 msgstr ""
@@ -5676,117 +5840,102 @@ msgstr ""
 msgid "Discount:"
 msgstr ""
 
+#: lib/templates/super-widget-checkout/loops/billing-address.php:19
+msgid "Billing Address:"
+msgstr ""
+
 #: lib/transactions/class.transaction.php:83
 msgid ""
 "The IT_Exchange_Transaction class must have a WP post object or ID passed to "
 "its constructor"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:44
+#: lib/transactions/class.transactions-post-type.php:46
 msgid "Payment"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:45
+#: lib/transactions/class.transactions-post-type.php:47
 msgid "Payment Details"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:49
+#: lib/transactions/class.transactions-post-type.php:51
 msgid "An iThemes Exchange Post Type for storing all Payments in the system"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:94
+#: lib/transactions/class.transactions-post-type.php:115
 msgid "View the transaction details"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:94
+#: lib/transactions/class.transactions-post-type.php:115
 msgid "Details"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:263
+#: lib/transactions/class.transactions-post-type.php:284
 msgid "Status"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:264
+#: lib/transactions/class.transactions-post-type.php:285
 msgid "Customer"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:265
+#: lib/transactions/class.transactions-post-type.php:286
 msgid "Method"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:266
+#: lib/transactions/class.transactions-post-type.php:287
 msgid "Date"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:367
+#: lib/transactions/class.transactions-post-type.php:388
 msgid "Transaction Details"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:470
-#, php-format
-msgid "Expires on %s"
+#: lib/transactions/class.transactions-post-type.php:448
+msgid "Shipping Address"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:472
-msgid "Doesn't expire"
-msgstr ""
-
-#: lib/transactions/class.transactions-post-type.php:478
-#, php-format
-msgid "Limited to %d total download(s)"
-msgstr ""
-
-#: lib/transactions/class.transactions-post-type.php:486
-msgid "Downloads Remaining"
-msgstr ""
-
-#: lib/transactions/class.transactions-post-type.php:490
-#, php-format
-msgid "Downloaded %d Time(s)"
-msgstr ""
-
-#: lib/transactions/class.transactions-post-type.php:501
+#: lib/transactions/class.transactions-post-type.php:493
 msgid "This product does not contain any downloads"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:517
+#: lib/transactions/class.transactions-post-type.php:509
 msgid "Total Discount"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:537
+#: lib/transactions/class.transactions-post-type.php:529
 msgid "Total Refund"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:542
+#: lib/transactions/class.transactions-post-type.php:534
 msgid "Refunds"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:545
+#: lib/transactions/class.transactions-post-type.php:537
 msgid "on"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:554
+#: lib/transactions/class.transactions-post-type.php:546
 msgid "Payment Method"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:562
+#: lib/transactions/class.transactions-post-type.php:554
 msgid "Total before refunds"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:572
+#: lib/transactions/class.transactions-post-type.php:564
 msgid "Change Status"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:573
+#: lib/transactions/class.transactions-post-type.php:565
 msgid ""
 "The customer will receive an email When this is changed from a status that "
 "is not cleared for delivery to a status that is cleared for delivery"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:594
+#: lib/transactions/class.transactions-post-type.php:586
 msgid "Not Saved."
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:595
+#: lib/transactions/class.transactions-post-type.php:587
 msgid "Saved!"
 msgstr ""

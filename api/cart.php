@@ -176,13 +176,13 @@ function it_exchange_add_product_to_shopping_cart( $product_id, $quantity=1 ) {
 
 	// Doe we have anything in the cart already?
 	$session_products = it_exchange_get_cart_products();
-
+	
 	/**
 	 * If multi-item carts are allowed, don't do antying here.
 	 * If multi-item carts are NOT allowed and this is a different item, empty the cart before proceeding.
 	 * If item being added to cart is already in cart, preserve that item so that quanity will be bumpped.
 	*/
-	if ( ! it_exchange_is_multi_item_cart_allowed() ) {
+	if ( ! it_exchange_is_multi_item_cart_allowed() || ! it_exchange_is_multi_item_product_allowed( $product_id ) ) {
 		if ( ! empty( $session_products ) ) {
 			// Preserve the current item being added if its already in the cart
 			if ( ! empty( $session_products[$product_id . '-' . $itemized_hash] ) )
@@ -301,6 +301,18 @@ function it_exchange_empty_shopping_cart() {
 */
 function it_exchange_is_multi_item_cart_allowed() {
 	return apply_filters( 'it_exchange_multi_item_cart_allowed', false );
+}
+
+/**
+ * Is this product allowed to be added to a multi-item cart?
+ *
+ * Default is true.
+ *
+ * @since 1.3.0
+ * @return boolean
+*/
+function it_exchange_is_multi_item_product_allowed( $product_id ) {
+	return apply_filters( 'it_exchange_multi_item_product_allowed', true, $product_id );	
 }
 
 /**
@@ -492,4 +504,54 @@ function it_exchange_get_cart_nonce_field() {
 	$session_id = empty( $_COOKIE[IT_EXCHANGE_SESSION_COOKIE] ) ? false : $_COOKIE[IT_EXCHANGE_SESSION_COOKIE];
 	$var = apply_filters( 'it_exchange_cart_action_nonce_var', '_wpnonce' );
 	return wp_nonce_field( 'it-exchange-cart-action-' . $session_id, $var, true, false );
+}
+
+/**
+ * Returns the billing address values for the cart
+ *
+ * @since 1.3.0
+ *
+ * @return array
+*/
+function it_exchange_get_cart_billing_address() {
+
+	// If user is logged in, grab their data
+	$customer = it_exchange_get_current_customer();
+	$customer_data = empty( $customer->data ) ? new stdClass() : $customer->data;
+
+	// Default values for first time use.
+	$defaults = array(
+		'first-name'   => empty( $customer_data->first_name ) ? '' : $customer_data->first_name,
+		'last-name'    => empty( $customer_data->last_name ) ? '' : $customer_data->last_name,
+		'company-name' => '',
+		'address1'     => '',
+		'address2'     => '',
+		'city'         => '',
+		'state'        => '',
+		'zip'          => '',
+		'country'      => '',
+		'email'        => empty( $customer_data->user_email ) ? '' : $customer_data->user_email,
+		'phone'        => '',
+	);
+
+	// See if the customer has a billing address saved. If so, overwrite defaults with saved billing address
+	if ( ! empty( $customer_data->billing_address ) )
+		$defaults = ITUtility::merge_defaults( $customer_data->billing_address, $defaults );
+
+	// If data exists in the session, use that as the most recent
+	$session_data = it_exchange_get_cart_data( 'billing-address' );
+
+	$cart_billing = ITUtility::merge_defaults( $session_data, $defaults );
+
+	// If billing error and form was submitted, use POST values as most recent
+	if ( ! empty( $_REQUEST['it-exchange-update-billing-address'] ) && ! empty( $GLOBALS['it_exchange']['billing-address-error'] ) ) {
+		$keys = array_keys( $defaults );
+		$post_billing = array();
+		foreach( $keys as $key ) {
+			$post_billing[$key] = empty( $_REQUEST['it-exchange-billing-address-' . $key] ) ? '' : $_REQUEST['it-exchange-billing-address-' . $key];
+		}
+		$cart_billing = ITUtility::merge_defaults( $post_billing, $cart_billing );
+	}
+
+	return apply_filters( 'it_exchange_get_cart_billing_address', $cart_billing );
 }
