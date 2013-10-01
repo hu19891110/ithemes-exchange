@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/ithemes-exchange\n"
-"POT-Creation-Date: 2013-09-20 08:30-0500\n"
+"POT-Creation-Date: 2013-10-01 10:10-0500\n"
 "PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chris Jean <support@ithemes.com>\n"
 "Language: \n"
@@ -2432,7 +2432,7 @@ msgstr ""
 msgid "&times;"
 msgstr ""
 
-#: api/theme/cart-item.php:278 api/theme/product.php:566
+#: api/theme/cart-item.php:278 api/theme/product.php:568
 msgid "Unregisterd image size."
 msgstr ""
 
@@ -2541,34 +2541,38 @@ msgid ""
 "Exchange theme API class"
 msgstr ""
 
-#: api/theme/product.php:757 api/theme/product.php:881
+#: api/theme/product.php:571
+msgid "Please add an image id to the array."
+msgstr ""
+
+#: api/theme/product.php:763 api/theme/product.php:887
 #: lib/admin/views/admin-get-more-addons.php:66
 msgid "Buy Now"
 msgstr ""
 
-#: api/theme/product.php:764 api/theme/product.php:942
+#: api/theme/product.php:770 api/theme/product.php:948
 msgid "Add to Cart"
 msgstr ""
 
-#: api/theme/product.php:768 api/theme/product.php:884
-#: api/theme/product.php:945
+#: api/theme/product.php:774 api/theme/product.php:890
+#: api/theme/product.php:951
 msgid "Out of stock."
 msgstr ""
 
-#: api/theme/product.php:769 api/theme/product.php:885
-#: api/theme/product.php:946
+#: api/theme/product.php:775 api/theme/product.php:891
+#: api/theme/product.php:952
 msgid "Product not available right now."
 msgstr ""
 
-#: api/theme/product.php:788
+#: api/theme/product.php:794
 msgid "Product is currently out of stock."
 msgstr ""
 
-#: api/theme/product.php:791
+#: api/theme/product.php:797
 msgid "Product is currently not available."
 msgstr ""
 
-#: api/theme/product.php:948
+#: api/theme/product.php:954
 msgid "Max Quantity Reached"
 msgstr ""
 
@@ -5485,31 +5489,31 @@ msgstr ""
 msgid "Last edited on %1$s at %2$s"
 msgstr ""
 
-#: lib/product-features/class.wp-post-supports.php:212
+#: lib/product-features/class.wp-post-supports.php:218
 msgid "Adds support for WP Author field to a specific product"
 msgstr ""
 
-#: lib/product-features/class.wp-post-supports.php:246
+#: lib/product-features/class.wp-post-supports.php:252
 msgid "Adds support for WP Custom Fields as a product Feature"
 msgstr ""
 
-#: lib/product-features/class.wp-post-supports.php:261
+#: lib/product-features/class.wp-post-supports.php:267
 msgid "Adds support for the WP Comments field to a specific product type"
 msgstr ""
 
-#: lib/product-features/class.wp-post-supports.php:276
+#: lib/product-features/class.wp-post-supports.php:282
 msgid "Adds support for the WP Trackbacks metabox."
 msgstr ""
 
-#: lib/product-features/class.wp-post-supports.php:289
+#: lib/product-features/class.wp-post-supports.php:295
 msgid "Adds support for the WP excerpt of the product"
 msgstr ""
 
-#: lib/product-features/class.wp-post-supports.php:331
+#: lib/product-features/class.wp-post-supports.php:337
 msgid "Adds support for WP Post Formats to products"
 msgstr ""
 
-#: lib/product-features/class.wp-post-supports.php:344
+#: lib/product-features/class.wp-post-supports.php:350
 msgid "Adds support for WP Revisions to Product Types"
 msgstr ""
 
