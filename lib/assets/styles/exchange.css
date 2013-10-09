@@ -1,16 +1,23 @@
 /**
- * Structural styles for of iThemes Exchange elements.
+ * Structural styles for iThemes Exchange elements.
 */
 /** -----------------------------------------------------:[ global ]:---------- */
 .it-exchange-wrap{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 .it-exchange-wrap *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 .it-exchange-clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.it-exchange-left {float:left;}
+.it-exchange-right {float:right;}
+.it-exchange-clear-left {clear:left;overflow:hidden;}
+.it-exchange-clear-right {clear:right;overflow:hidden;}
 
 /** -----------------------------------------------------:[ table ]:---------- */
 .it-exchange-table{display:table;table-layout:fixed;width:100%;border:1px solid #DDD;border-bottom:none;border-collapse:collapse;}
 .it-exchange-table-row{display:table-row;overflow:hidden;width:100%;border-bottom:1px solid #DDD;margin:10px;}
 .it-exchange-table-column{display:table-cell;vertical-align:middle;}
 .it-exchange-table-column-inner{padding:10px;}
+
+/** -----------------------------------------------------:[ inputs ]:---------- */
+.it-exchange-wrap select{max-width:100%;}
 
 /** -----------------------------------------------------:[ columns ]:---------- */
 .it-exchange-columns-wrapper{overflow:hidden;}
@@ -116,17 +123,35 @@
 
 /** ---:[ purchase requirements ]:--- */
 #it-exchange-checkout-purchase-requirements label{display:block;margin-top:1em;}
-#it-exchange-checkout-purchase-requirements input[type="checkbox"]{margin:2em .5em 2em 0;}
+#it-exchange-checkout-purchase-requirements input[type="checkbox"]{margin-right:.5em;}
 #it-exchange-checkout-purchase-requirements input[type="checkbox"] + label{display:inline;}
 #it-exchange-checkout-purchase-requirements #wp-submit{margin-bottom:2em;}
 #it-exchange-checkout-purchase-requirements .it-exchange-profile-save{margin:1.5em 0;}
 .it-exchange-checkout-purchase-requirements-notification{margin:1em 0;padding:.75em 1em;border-radius:3px;background:#EEE;text-align:center;}
-
+#it-exchange-checkout-purchase-requirements .it-exchange-address1 input,
+#it-exchange-checkout-purchase-requirements .it-exchange-address2 input{width:95%;}
 #it-exchange-checkout-purchase-requirements.it-exchange-requirements-active{margin-bottom:5em;}
 .it-exchange-checkout .it-exchange-order-details.it-exchange-requirements-active{opacity:.5;}
 
+/** ---:[ logged-in ]:--- */
+.it-exchange-checkout-logged-in-purchase-requirement {margin:2em 0;}
+
+/** ---:[ shipping-address ]:--- */
+.it-exchange-checkout .it-exchange-shipping-address-form .it-exchange-left{width:45%;margin-right:5%;}
+.it-exchange-checkout .it-exchange-shipping-address-form .it-exchange-left input{width:100%;}
+.it-exchange-checkout .it-exchange-shipping-address-form .it-exchange-submit{padding:1em 0;}
+.it-exchange-checkout-shipping-address-purchase-requirement {float:left; width:50%; }
+
 /** ---:[ billing ]:--- */
+.it-exchange-checkout .it-exchange-billing-address-form .it-exchange-left{width:45%;margin-right:5%;}
+.it-exchange-checkout .it-exchange-billing-address-form .it-exchange-left input{width:100%;}
 .it-exchange-checkout .it-exchange-billing-address-form .it-exchange-submit{margin:1em 0;}
+.it-exchange-checkout-billing-address-purchase-requirement{float:left;width:50%;}
+
+/** ---:[ shipping-method ]:--- */
+.it-exchange-checkout-shipping-method-purchase-requirement{margin:3em 0 4em;}
+.it-exchange-checkout .it-exchange-itemized-checkout-methods{overflow:hidden;margin-top:1em;border:1px solid #DDD;border-bottom:none;}
+.it-exchange-checkout .it-exchange-itemized-checkout-method{padding:1em;border-bottom:1px solid #DDD;}
 
 /** ---:[ visual cc ]:--- */
 .it-exchange-checkout .it-exchange-visual-cc-wrap{margin-top:1em;}
@@ -144,14 +169,40 @@
 
 /** -----------------------------------------------------:[ confirmation ]:---------- */
 #it-exchange-confirmation .it-exchange-transaction-meta p{margin-bottom:0;}
-#it-exchange-confirmation span{margin-left:1em;}
+
+#it-exchange-confirmation .it-exchange-customer-menu{list-style:none;}
+#it-exchange-confirmation .it-exchange-customer-menu li{margin-left:0;}
+#it-exchange-confirmation .it-exchange-transaction-status .paid{color:#6BC43F;}
+#it-exchange-confirmation .it-exchange-transaction-instructions{margin-top:1em;}
+#it-exchange-confirmation .it-exchange-confirmation-billing-address-purchase-requirement,
+#it-exchange-confirmation .it-exchange-confirmation-shipping-address-purchase-requirement{width:50%;}
+
+#it-exchange-confirmation .it-exchange-column-inner{padding:20px;}
+#it-exchange-confirmation .it-exchange-transaction-products{border:1px solid #DDD;border-bottom:0;}
+#it-exchange-confirmation .it-exchange-transaction-product{border-bottom:1px solid #DDD;}
+#it-exchange-confirmation .it-exchange-transaction-product-details{width:80%;}
+#it-exchange-confirmation .it-exchange-transaction-product-details .it-exchange-column-inner{border-right:1px solid #DDD;}
+#it-exchange-confirmation .it-exchange-transaction-product-details .it-exchange-featured-image{max-width:75px;margin-right:20px;float:left;}
+#it-exchange-confirmation .it-exchange-transaction-product-details h3{clear:none;float:left;margin:23px 0;}
+#it-exchange-confirmation .it-exchange-transaction-product-details .it-exchange-transaction-product-no-featured-image h3{margin:0 0 20px;}
+#it-exchange-confirmation .it-exchange-transaction-product-downloads h4{margin-bottom:5px;}
+#it-exchange-confirmation .it-exchange-transaction-product-downloads-list{list-style:none;margin:0;}
+#it-exchange-confirmation .it-exchange-transaction-product-downloads-list li{margin:0 0 5px 10px;}
+#it-exchange-confirmation .it-exchange-transaction-product-cart-object{width:20%;}
+#it-exchange-confirmation .it-exchange-downloads-data li{margin-left:0;}
+#it-exchange-confirmation .it-exchange-transaction-summary-loop{overflow:hidden;width:220px;float:right;border-top:none;border-bottom:none;}
+#it-exchange-confirmation .it-exchange-transaction-summary-loop .it-exchange-table-row{border-bottom:0;}
+#it-exchange-confirmation .it-exchange-transaction-summary-loop .it-exchange-table-column-inner{padding:10px 10px 0;border-right:1px solid #DDD;}
+#it-exchange-confirmation .it-exchange-transaction-summary-loop .it-exchange-confirmation-totals-title{text-align:right;}
+#it-exchange-confirmation .it-exchange-transaction-summary-loop .it-exchange-cart-totals-total .it-exchange-table-column-inner{padding:10px;border-bottom:1px solid #DDD;}
 
 /** -----------------------------------------------------:[ store ]:---------- */
 #it-exchange-store .it-exchange-products {margin: 0;padding: 0;}
 #it-exchange-store .it-exchange-products li {list-style: none;display: block;float:left;width: 45%;margin: 0 0 5em 0;vertical-align: top;}
 #it-exchange-store .it-exchange-products li:nth-child(2n+1) {margin-right: 5%;clear:both;}
 #it-exchange-store .it-exchange-product-details {padding: 1em;overflow:hidden;}
-#it-exchange-store .entry-title {font-size: 1.5em;margin: .5em 0;padding: 0;}
+#it-exchange-store .it-exchange-product-title {font-size: 1.5em;margin: .5em 0;padding: 0;}
+#it-exchange-store .it-exchange-product-title a {text-decoration: none;}
 #it-exchange-store .it-exchange-base-price {font-size: 1.25em;float:left;}
 #it-exchange-store .it-exchange-product-permalink {float:right;line-height: 2;}
 #it-exchange-store .featured-image-wrapper img {max-width: 100%; height: auto;}
@@ -165,7 +216,7 @@
 
 /** -------:[ Misc ]:--------------- */
 .it-exchange-hidden{display:none;}
-.it-exchange-required-star{color:#DC4446;margin-left:3px;}
+.it-exchange-required-star{color:#F35555;margin-left:3px;}
 
 /** -----------------------------------------------------:[ visual credit card ]:---------- */
 .it-exchange-visual-cc-wrap{margin-bottom:1em;}

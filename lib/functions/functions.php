@@ -108,6 +108,17 @@ function it_exchange_load_public_scripts( $current_view ) {
 	// ****** CHECKOUT SPECIFIC SCRIPTS ******* 
 	if ( it_exchange_is_page( 'checkout' )  ) {
 
+		// Enqueue purchase dialog JS on checkout screen
+		$file = dirname( dirname( __FILE__ ) ) . '/purchase-dialog/js/exchange-purchase-dialog.js';
+		wp_enqueue_script( 'exchange-purchase-dialog', ITUtility::get_url_from_file( $file ), array( 'jquery', 'detect-credit-card-type' ), false, true );
+
+		// Register select to autocomplte
+		$script = ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/jquery.select-to-autocomplete.min.js' );
+		$style = ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/styles/autocomplete.css' );
+		wp_register_script( 'jquery-select-to-autocomplete', $script, array( 'jquery', 'jquery-ui-autocomplete' ) );
+		wp_register_style( 'it-exchange-autocomplete-style', $style );
+		wp_enqueue_style( 'it-exchange-autocomplete-style' );
+
 		// General Checkout
 		$script = ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/checkout-page.js' );
 		wp_enqueue_script( 'it-exchange-checkout-page', $script, array( 'jquery' ), false, true );
@@ -118,14 +129,14 @@ function it_exchange_load_public_scripts( $current_view ) {
 			wp_enqueue_script( 'it-exchange-logged-in-purchase-requirement', $script, array( 'jquery' ), false, true );
 		}
 
-		// Load Shipping Address purchase requirement JS if not logged in and on checkout page.
+		// Load Billing Address purchase requirement JS if not logged in and on checkout page.
 		if ( in_array( 'billing-address', $purchase_requirements ) ) {
 			$script = ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/billing-address-purchase-requirement.js' );
 			wp_enqueue_script( 'it-exchange-billing-address-purchase-requirement', $script, array( 'jquery', 'it-exchange-country-states-sync' ), false, true );
 		}
 
 		// Load country / state field sync if on checkout page
-		wp_enqueue_script( 'it-exchange-country-states-sync', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/country-states-sync.js' ), array( 'jquery' ), false, true );
+		wp_enqueue_script( 'it-exchange-country-states-sync', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/country-states-sync.js' ), array( 'jquery', 'jquery-ui-autocomplete', 'jquery-select-to-autocomplete' ), false, true );
 
 	} // ****** END CHECKOUT SPECIFIC SCRIPTS *******
 
@@ -490,7 +501,7 @@ function it_exchange_get_core_page_rewrites( $page ) {
 	switch( $page ) {
 		case 'store' :
 			$rewrites = array(
-				$slug => 'index.php?' . $slug . '=1',
+				$slug . '$' => 'index.php?' . $slug . '=1',
 			);
 			return $rewrites;
 			break;
@@ -504,8 +515,8 @@ function it_exchange_get_core_page_rewrites( $page ) {
 			}
 
 			$rewrites = array(
-				$slug . '/([^/]+)/?$' => 'index.php?' . $slug . '=$matches[1]&' . $profile_slug . '=1',
-				$slug => 'index.php?' . $slug . '=1&' . $profile_slug . '=1',
+				$slug . '/([^/]+)/?$' => 'index.php?' . $slug . '=$matches[1]',//&' . $profile_slug . '=1',
+				$slug . '$' => 'index.php?' . $slug . '=1',//&' . $profile_slug . '=1',
 			);
 			return $rewrites;
 			break;
@@ -520,7 +531,7 @@ function it_exchange_get_core_page_rewrites( $page ) {
 
 			$rewrites = array(
 				$account_slug  . '/([^/]+)/' . $slug  => 'index.php?' . $account_slug . '=$matches[1]&' . $slug . '=1',
-				$account_slug . '/' . $slug => 'index.php?' . $account_slug . '=1&' . $slug . '=1',
+				$account_slug . '/' . $slug . '$' => 'index.php?' . $account_slug . '=1&' . $slug . '=1',
 			);
 			return $rewrites;
 			break;
@@ -534,7 +545,7 @@ function it_exchange_get_core_page_rewrites( $page ) {
 			}
 
 			$rewrites = array(
-				$account_slug  . '/' . $slug => 'index.php?' . $account_slug . '=1&' . $slug . '=1',
+				$account_slug  . '/' . $slug . '$' => 'index.php?' . $account_slug . '=1&' . $slug . '=1',
 			);
 			return $rewrites;
 			break;
@@ -548,7 +559,7 @@ function it_exchange_get_core_page_rewrites( $page ) {
 			}
 
 			$rewrites = array(
-				$account_slug . '/' . $slug => 'index.php?' . $account_slug . '=1&' . $slug . '=1',
+				$account_slug . '/' . $slug . '$' => 'index.php?' . $account_slug . '=1&' . $slug . '=1',
 			);
 			return $rewrites;
 			break;
@@ -562,7 +573,7 @@ function it_exchange_get_core_page_rewrites( $page ) {
 			}
 
 			$rewrites = array(
-				$account_slug . '/' . $slug => 'index.php?' . $account_slug . '=1&' . $slug . '=1',
+				$account_slug . '/' . $slug . '$' => 'index.php?' . $account_slug . '=1&' . $slug . '=1',
 			);
 			return $rewrites;
 			break;
@@ -576,8 +587,8 @@ function it_exchange_get_core_page_rewrites( $page ) {
 			}
 
 			$rewrites = array(
-				$account_slug  . '/([^/]+)/' . $slug => 'index.php?' . $account_slug . '=$matches[1]&' . $slug . '=1',
-				$account_slug . '/' . $slug => 'index.php?' . $account_slug . '=1&' . $slug . '=1',
+				$account_slug  . '/([^/]+)/' . $slug . '$' => 'index.php?' . $account_slug . '=$matches[1]&' . $slug . '=1',
+				$account_slug . '/' . $slug . '$' => 'index.php?' . $account_slug . '=1&' . $slug . '=1',
 			);
 			return $rewrites;
 			break;
@@ -591,8 +602,8 @@ function it_exchange_get_core_page_rewrites( $page ) {
 			}
 
 			$rewrites = array(
-				$account_slug  . '/([^/]+)/' . $slug => 'index.php?' . $account_slug . '=$matches[1]&' . $slug . '=1',
-				$account_slug . '/' . $slug => 'index.php?' . $account_slug . '=1&' . $slug . '=1',
+				$account_slug  . '/([^/]+)/' . $slug . '$' => 'index.php?' . $account_slug . '=$matches[1]&' . $slug . '=1',
+				$account_slug . '/' . $slug . '$' => 'index.php?' . $account_slug . '=1&' . $slug . '=1',
 			);
 			return $rewrites;
 			break;
@@ -701,8 +712,9 @@ function it_exchange_add_page_shortcode( $atts ) {
 	);
 	$atts = shortcode_atts( $defaults, $atts );
 
-	if ( 'account' == $atts['page'] )
-		$atts['page'] = 'profile';
+	// Don't return anything if page type is not WordPress
+	if ( 'wordpress' != it_exchange_get_page_type( $atts['page'] ) )
+		return '';
 
 	if ( empty( $atts['page'] ) )
 		return false;
@@ -712,6 +724,50 @@ function it_exchange_add_page_shortcode( $atts ) {
 	return ob_get_clean();
 }
 add_shortcode( 'it-exchange-page', 'it_exchange_add_page_shortcode' );
+
+/**
+ * Creates a shortcode that returns customer information
+ *
+ * @since 1.4.0
+ *
+ * @param array $atts attributes passed in via shortcode arguments
+ * @return string the template part
+*/
+function it_exchange_add_customer_shortcode( $atts ) {
+	$defaults = array(
+		'show' => false,
+		'avatar_size' => 128,
+	);
+	$atts = shortcode_atts( $defaults, $atts );
+
+	$whitelist = array(
+		'first-name', 'last-name', 'username', 'email', 'avatar', 'site-name', 
+	);
+	$whitelist = apply_filters( 'it_exchange_customer_shortcode_tag_list', $whitelist );
+
+	if ( empty( $atts['show'] ) || ! in_array( $atts['show'], (array) $whitelist ) )
+		return '';
+
+	$options = array(
+		'format' => 'field-value',
+	);
+	if ( 'avatar' == $atts['show'] )
+		$options['size'] = $atts['avatar_size'];
+		
+	$output = it_exchange( 'customer', 'get-' . $atts['show'], $options );
+	
+	if ( empty( $output ) ) {
+		//fallbacks if we have empty $output
+		switch( $atts['show'] ) {
+			case 'first-name':
+					$output = it_exchange( 'customer', 'get-username', array( 'format' => 'field-value' ) );
+				break;
+		}
+	}
+	
+	return $output;
+}
+add_shortcode( 'it_exchange_customer', 'it_exchange_add_customer_shortcode' );
 
 /**
  * Adds date retraints to query posts.
@@ -786,7 +842,7 @@ function it_exchange_register_default_purchase_requirements() {
 
 	// Billing Address Purchase Requirement
 	$properties = array(
-		'priority'               => 2,
+		'priority'               => 5.11,
 		'requirement-met'        => 'it_exchange_get_customer_billing_address',
 		'sw-template-part'       => apply_filters( 'it_exchange_sw_template_part_for_logged_in_purchase_requirement', 'billing-address' ),
 		'checkout-template-part' => 'billing-address',
@@ -873,8 +929,10 @@ function it_exchange_add_billing_address_to_sw_template_totals_loops( $loops ) {
 	if ( ! apply_filters( 'it_exchange_billing_address_purchase_requirement_enabled', false ) )
 		return $loops;
 
-	// Set index to -1. May change once we introduce shipping
-	$index = -1;
+	// Set index to end of array.
+	$index = array_search( 'discounts', $loops );
+	$index = ( false === $index ) ? array_search( 'totals-taxes-simple', $loops ) : $index;
+	$index = ( false === $index ) ? count($loops) -1 : $index;
 
 	array_splice( $loops, $index, 0, 'billing-address' );
 	return $loops;
@@ -935,6 +993,19 @@ function it_exchange_print_home_url_in_js() {
 	<?php
 }
 add_action( 'wp_head', 'it_exchange_print_home_url_in_js' );
+
+/**
+ * Force rewrite rule update on upgrade
+ *
+ * @since 1.4.0
+ *
+ * @param array $versions old and new versions. not used here
+ * @return void
+*/
+function it_exchange_force_rewrite_flush_on_upgrade() {
+	add_option('_it-exchange-flush-rewrites', true );	
+}
+add_action( 'it_exchange_version_updated', 'it_exchange_force_rewrite_flush_on_upgrade' );
 
 /************************************
  * THE FOLLOWING API METHODS AREN'T READY
