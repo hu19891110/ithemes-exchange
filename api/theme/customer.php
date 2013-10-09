@@ -27,19 +27,23 @@ class IT_Theme_API_Customer implements IT_Theme_API {
 	 * @since 0.4.0
 	*/
 	public $_tag_map = array(
-		'formopen'    => 'form_open',
-		'username'    => 'username',
-		'avatar'      => 'avatar',
-		'firstname'   => 'first_name',
-		'lastname'    => 'last_name',
-		'displayname' => 'display_name',
-		'email'       => 'email',
-		'website'     => 'website',
-		'password1'   => 'password1',
-		'password2'   => 'password2',
-		'save'        => 'save',
-		'formclose'   => 'form_close',
-		'menu'        => 'menu',
+		'formopen'        => 'form_open',
+		'username'        => 'username',
+		'avatar'          => 'avatar',
+		'firstname'       => 'first_name',
+		'lastname'        => 'last_name',
+		'displayname'     => 'display_name',
+		'email'           => 'email',
+		'website'         => 'website',
+		'password1'       => 'password1',
+		'password2'       => 'password2',
+		'save'            => 'save',
+		'formclose'       => 'form_close',
+		'menu'            => 'menu',
+		'welcome'         => 'welcome',
+		'sitename'        => 'sitename',
+		'accountlink'     => 'account_link',
+		'thankyoumessage' => 'thank_you_message',
 	);
 
 	/**
@@ -97,6 +101,9 @@ class IT_Theme_API_Customer implements IT_Theme_API {
 			case 'label':
 				$output = $label;
 				break;
+			case 'field-value' :
+				$output = $field_value;
+				break;
 			case 'html':
 			default:
 				$output = $label;
@@ -113,7 +120,12 @@ class IT_Theme_API_Customer implements IT_Theme_API {
 	 * @return string
 	*/
 	function avatar( $options=array() ) {
-		return get_avatar( $this->_customer->data->ID, apply_filters( 'it_exchange_avatar_size', '128' ), apply_filters( 'it_exchange_default_avatar', 'blank' ) );
+		$defaults = array(
+			'size' => 128,
+		);
+		$options = ITUtility::merge_defaults( $options, $defaults );
+
+		return get_avatar( $this->_customer->data->ID, apply_filters( 'it_exchange_avatar_size', (int) $options['size'] ), apply_filters( 'it_exchange_default_avatar', 'blank' ) );
 	}
 
 	/**
@@ -454,7 +466,7 @@ class IT_Theme_API_Customer implements IT_Theme_API {
 		
 		$defaults = array(
 			'format' => 'html',
-			'pages'  => 'profile,purchases,downloads',
+			'pages'  => 'account,profile,purchases,downloads',
 		);
 		$options = ITUtility::merge_defaults( $options, $defaults );
 		
@@ -480,5 +492,99 @@ class IT_Theme_API_Customer implements IT_Theme_API {
 		
 		return $nav;
 		
+	}
+
+	/**
+	 * Prints the welcome message for the customer. Used on the account page template by core
+	 *
+	 * @since 1.4.0
+	 *
+	 * @return string
+	*/
+	function welcome( $options=array() ) {
+		$options = it_exchange_get_option( 'settings_general' );
+		$message = wpautop( $options['customer-account-page'] );
+		$message = do_shortcode( $message );
+		return $message;
+	}
+
+	/**
+	 * Returns the site name
+	 *
+	 * @since 1.4.0
+	 *
+	 * @param array $options
+	 * @return string
+	*/
+	function sitename( $options=array() ) {
+		return get_option( 'blogname' );
+	}
+
+	/**
+	 * Outputs the customer account link
+	 *
+	 * @since 1.4.0
+	 * @return string
+	*/
+	function account_link( $options=array() ) {
+		$defaults = array(
+			'format' => 'html',
+			'before' => '',
+			'after'  => '',
+			'label' => __( 'View your Account', 'it-l10n-ithemes-exchange' ),
+		);
+		$options = ITUtility::merge_defaults( $options, $defaults );
+		
+		$url = it_exchange_get_page_url( 'account' );
+
+		switch( $options['format'] ) {
+			
+			case 'url':
+				$output = $url;
+				break;
+			case 'label':
+				$output = $options['label'];
+				break;
+			case 'html':
+			default:
+				$output = '<a href="' . $url . '">' . $options['label'] . '</a>';	
+				break;
+
+		}
+		
+		return $output;	
+	}
+
+	/**
+	 * Outputs the customer thank you message
+	 *
+	 * @since 1.4.0
+	 * @return string
+	*/
+	function thank_you_message( $options=array() ) {
+		$defaults = array(
+			'format' => 'html',
+			'before' => '',
+			'after'  => '',
+			'label' => __( 'Thank you for your order. An email confirmation has been sent to %s.', 'it-l10n-ithemes-exchange' ),
+		);
+		$options = ITUtility::merge_defaults( $options, $defaults );
+		
+		$url = it_exchange_get_page_url( 'account' );
+
+		switch( $options['format'] ) {
+			
+			case 'label':
+				$output = $options['label'];
+				break;
+			case 'html':
+			default:
+				$user_info = get_userdata( $this->_customer->id );
+				$output = sprintf( $options['label'], $user_info->user_email );	
+				break;
+
+		}
+		
+		return $output;	
 	}
 }
