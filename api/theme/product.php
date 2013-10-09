@@ -188,13 +188,19 @@ class IT_Theme_API_Product implements IT_Theme_API {
 				'before' => '<span class="it-exchange-base-price">',
 				'after'  => '</span>',
 				'format' => 'html',
+				'free-label' => __( 'Free', 'it-l10n-ithemes-exchange' ),
 			);
 			$options = ITUtility::merge_defaults( $options, $defaults );
+
+			// Replace with Free label if needed
+			$db_price = it_exchange_convert_to_database_number( $base_price );
+			$price    = empty( $db_price ) ? '<span class="free-label">' . $options['free-label'] . '</span>' : it_exchange_format_price( $base_price );
+			$price    = ( empty( $options['free-label'] ) && empty( $db_price ) ) ? it_exchange_format_price( $base_price ) : $price;
 
 			if ( 'html' == $options['format'] )
 				$result .= $options['before'];
 
-			$result .= it_exchange_format_price( $base_price );
+			$result .= $price;
 
 			if ( 'html' == $options['format'] )
 				$result .= $options['after'];
@@ -256,6 +262,9 @@ class IT_Theme_API_Product implements IT_Theme_API {
 		if ( 'html' == $options['format'] )
 			$result .= $options['before'];
 
+		$extended_desc = wpautop( $extended_desc );
+		$extended_desc = shortcode_unautop( $extended_desc );
+		$extended_desc = do_shortcode( $extended_desc );
 		$result .= $extended_desc;
 
 		if ( 'html' == $options['format'] )

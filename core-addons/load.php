@@ -11,7 +11,7 @@ function it_exchange_register_core_addons() {
 
 	// An array of add-ons provided by iThemes Exchange
 	$add_ons = array(
-		// Offline
+		// Offline Payments
 		'offline-payments' => array(
 			'name'              => __( 'Offline Payments', 'it-l10n-ithemes-exchange' ),
 			'description'       => __( 'Process transactions offline via check or cash.', 'it-l10n-ithemes-exchange' ),
@@ -60,18 +60,19 @@ function it_exchange_register_core_addons() {
 		),
 		// Digital Download Product Types
 		'digital-downloads-product-type' => array(
-			'name'        => __( 'Digital Downloads', 'it-l10n-ithemes-exchange' ),
-			'description' => __( 'This adds a product type for distributing digital downloads through iThemes Exchange.', 'it-l10n-ithemes-exchange' ),
-			'author'      => 'iThemes',
-			'author_url'  => 'http://ithemes.com',
-			'file'        => dirname( __FILE__ ) . '/product-types/digital-downloads/init.php',
-			'category'    => 'product-type',
-			'tag'         => 'core',
-			'labels'      => array(
+			'name'              => __( 'Digital Downloads', 'it-l10n-ithemes-exchange' ),
+			'description'       => __( 'This adds a product type for distributing digital downloads through iThemes Exchange.', 'it-l10n-ithemes-exchange' ),
+			'author'            => 'iThemes',
+			'author_url'        => 'http://ithemes.com',
+			'wizard-icon'       => ITUtility::get_url_from_file( dirname( __FILE__ ) . '/product-types/digital-downloads/images/wizard-downloads.png' ),
+			'file'              => dirname( __FILE__ ) . '/product-types/digital-downloads/init.php',
+			'category'          => 'product-type',
+			'tag'               => 'core',
+			'labels'            => array(
 				'singular_name' => __( 'Digital Download', 'it-l10n-ithemes-exchange' ),
 			),
-			'supports'    => apply_filters( 'it_exchange_register_digital_downloads_default_features', array(
-				'inventory'     => false,
+			'supports'          => apply_filters( 'it_exchange_register_digital_downloads_default_features', array(
+				'inventory' => false,
 			) ),
 			'settings-callback' => 'it_exchange_digital_downloads_settings_callback',
 		),
@@ -86,6 +87,20 @@ function it_exchange_register_core_addons() {
 			'tag'         => 'core',
 			'labels'      => array(
 				'singular_name' => __( 'Simple Product', 'it-l10n-ithemes-exchange' ),
+			),
+		),
+		// Physical Product Type
+		'physical-product-type' => array(
+			'name'        => __( 'Physical Products', 'it-l10n-ithemes-exchange' ),
+			'description' => __( 'Products you can put your hands on. Things you might want to ship.', 'it-l10n-ithemes-exchange' ),
+			'author'      => 'iThemes',
+			'author_url'  => 'http://ithemes.com',
+			'wizard-icon' => ITUtility::get_url_from_file( dirname( __FILE__ ) . '/product-types/physical-products/images/wizard-physical.png' ),
+			'file'        => dirname( __FILE__ ) . '/product-types/physical-products/init.php',
+			'category'    => 'product-type',
+			'tag'         => 'core',
+			'labels'      => array(
+				'singular_name' => __( 'Physical Product', 'it-l10n-ithemes-exchange' ),
 			),
 		),
 		// Product Type admin Metabox
@@ -169,29 +184,39 @@ function it_exchange_register_core_addons() {
 			'labels'      => array(
 				'singular_name' => __( 'Product Tag', 'it-l10n-ithemes-exchange' ),
 			),
-        ),
-        // Simple Taxes
-        'taxes-simple' => array(
-            'name'              => __( 'Simple Taxes', 'it-l10n-ithemes-exchange' ),
-            'description'       => __( 'This gives the admin ability to apply a default tax rate to all sales.', 'it-l10n-ithemes-exchange' ),
-            'author'            => 'iThemes',
-            'author_url'        => 'http://ithemes.com',
-            'file'              => dirname( __FILE__ ) . '/taxes/taxes-simple/init.php',
-            'category'          => 'taxes',
-            'tag'               => 'core',
-            'settings-callback' => 'it_exchange_taxes_simple_settings_callback',
 		),
+		// Simple Taxes
+		'taxes-simple' => array(
+			'name'              => __( 'Simple Taxes', 'it-l10n-ithemes-exchange' ),
+			'description'       => __( 'This gives the admin ability to apply a default tax rate to all sales.', 'it-l10n-ithemes-exchange' ),
+			'author'            => 'iThemes',
+			'author_url'        => 'http://ithemes.com',
+			'file'              => dirname( __FILE__ ) . '/taxes/taxes-simple/init.php',
+			'category'          => 'taxes',
+			'tag'               => 'core',
+			'settings-callback' => 'it_exchange_taxes_simple_settings_callback',
+		),
+		// Duplicate Products
 		'duplicate-products' => array(
 			'name'              => __( 'Duplicate Products', 'it-l10n-ithemes-exchange' ),
 			'description'       => __( 'This gives the admin the ability to duplicate an existing product.', 'it-l10n-ithemes-exchange' ),
 			'author'            => 'iThemes',
 			'author_url'        => 'http://ithemes.com',
-            'file'              => dirname( __FILE__ ) . '/product-features/duplicate-products/init.php',
+			'file'              => dirname( __FILE__ ) . '/product-features/duplicate-products/init.php',
 			'category'          => 'other',
-            'tag'               => 'core',
+			'tag'               => 'core',
 			'labels'      => array(
 				'singular_name' => __( 'Duplicate', 'it-l10n-ithemes-exchange' ),
 			),
+		),
+		'simple-shipping'        => array(
+			'name'              => __( 'Simple Shipping', 'it-l10n-ithemes-exchange' ),
+			'description'       => __( 'Flat rate and free shipping for your physcial products', 'it-l10n-ithemes-exchange' ),
+			'author'            => 'iThemes',
+			'author_url'        => 'http://ithemes.com',
+			'file'              => dirname( __FILE__ ) . '/shipping/simple-shipping/init.php',
+			'category'          => 'shipping',
+			'settings-callback' => 'it_exchange_simple_shipping_settings_callback',
 		),
 	);
 	$add_ons = apply_filters( 'it_exchange_core_addons', $add_ons );
@@ -199,7 +224,6 @@ function it_exchange_register_core_addons() {
 	// Loop through add-ons and register each one individually
 	foreach( (array) $add_ons as $slug => $params )
 		it_exchange_register_addon( $slug, $params );
-	
 }
 add_action( 'it_exchange_register_addons', 'it_exchange_register_core_addons' );
 

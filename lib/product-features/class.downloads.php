@@ -185,7 +185,7 @@ class IT_Exchange_Product_Feature_Downloads {
 			<div class="downloads-label-add">
 				<label><?php _e( 'Product Files', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'If you are selling digital products (like music or ebooks), upload those here.', 'it-l10n-ithemes-exchange' ); ?>">i</span></label>
 				<div class="download-add-new right">
-					<a href class="button"><?php _e( 'Add New', 'it-l10n-ithemes-exchange' ); ?></a>
+					<a href class="button"><?php _e( 'Add New Download', 'it-l10n-ithemes-exchange' ); ?></a>
 				</div>
 			</div>
 			<div class="downloads-list-wrapper">

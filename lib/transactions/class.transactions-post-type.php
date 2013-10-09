@@ -31,6 +31,7 @@ class IT_Exchange_Transaction_Post_Type {
 			add_filter( 'manage_it_exchange_tran_posts_custom_column', array( $this, 'add_transaction_method_info_to_view_all_table_rows' ) );
 			add_filter( 'it_exchange_transaction_metabox_callback', array( $this, 'register_transaction_details_admin_metabox' ) );
 			add_filter( 'post_row_actions', array( $this, 'rename_edit_to_details' ), 10, 2 );
+			add_filter( 'page_row_actions', array( $this, 'rename_edit_to_details' ), 10, 2 );
 			add_filter( 'screen_layout_columns', array( $this, 'modify_details_page_layout' ) );
 			add_filter( 'get_user_option_screen_layout_it_exchange_tran', array( $this, 'update_user_column_options' ) );
 			add_action( 'wp_ajax_it-exchange-update-transaction-status', array( $this, 'ajax_update_status' ) );
@@ -273,6 +274,11 @@ class IT_Exchange_Transaction_Post_Type {
 		if ( isset( $existing['date'] ) )
 			unset( $existing['date'] );
 
+		// Remove Builder 
+		if ( isset( $existing['builder_layout'] ) )
+			unset( $existing['builder_layout'] );
+
+
 		// All Core should be removed at this point. Build ours back (including date from core)
 		$exchange_columns = array(
 			'cb'                                      => $check,
@@ -331,7 +337,8 @@ class IT_Exchange_Transaction_Post_Type {
 		$transaction = it_exchange_get_transaction( $post );
 		switch( $column ) {
 			case 'it_exchange_transaction_method_column' :
-				esc_attr_e( it_exchange_get_transaction_method_name( $transaction ) );
+				$method_name = esc_attr( it_exchange_get_transaction_method_name( $transaction ) );
+				echo empty( $method_name ) ? $transaction->transaction_method : $method_name;
 				break;
 			case 'it_exchange_transaction_status_column' :
 				esc_attr_e( it_exchange_get_transaction_status_label( $post ) );
@@ -434,18 +441,27 @@ class IT_Exchange_Transaction_Post_Type {
 			</div>
 		</div>
 
-		<?php if ( $billing_address = it_exchange_get_transaction_billing_address( $post->ID ) ) : ?>
+		<?php
+		$shipping_address = it_exchange_get_transaction_shipping_address( $post->ID );
+		$billing_address  = it_exchange_get_transaction_billing_address( $post->ID );
+		if ( $shipping_address || $billing_address ) : ?>
 			<div class="billing-shipping-wrapper columns-wrapper">
-				<div class="billing-address column c-50">
-					<div class="column-inner">
-						<div class="billing-address-label address-label"><?php _e( 'Billing Address', 'it-l10n-ithemes-exchange' ); ?></div>
-						<p><?php echo it_exchange_get_formatted_billing_address( $billing_address ); ?></p>
+				<?php if ( $shipping_address ) : ?>
+					<div class="shipping-address column c-30">
+						<div class="column-inner">
+							<div class="shipping-address-label address-label"><?php _e( 'Shipping Address', 'it-l10n-ithemes-exchange' ); ?></div>
+							<p><?php echo it_exchange_get_formatted_shipping_address( $shipping_address ); ?></p>
+						</div>
 					</div>
-				</div>
-				<!-- <div class="shipping-address column c-50">
-					<div class="shipping-address-label address-label"><?php _e( 'Shipping Address', 'it-l10n-ithemes-exchange' ); ?></div>
-					<p><?php echo it_exchange_get_formatted_billing_address( $billing_address ); ?></p>
-				</div> -->
+				<?php endif; ?>
+				<?php if ( $billing_address ) : ?>
+					<div class="billing-address column c-30">
+						<div class="column-inner">
+							<div class="billing-address-label address-label"><?php _e( 'Billing Address', 'it-l10n-ithemes-exchange' ); ?></div>
+							<p><?php echo it_exchange_get_formatted_billing_address( $billing_address ); ?></p>
+						</div>
+					</div>
+				<?php endif; ?>
 			</div>
 		<?php endif; ?>
 
@@ -482,20 +498,23 @@ class IT_Exchange_Transaction_Post_Type {
 						</div>
 					</div>
 					<div class="product-details">
+
+						<?php if ( it_exchange_transaction_includes_shipping( $post ) && it_exchange_product_has_feature( $transaction_product['product_id'], 'shipping' ) ) : ?>
+							<div class="product-shipping-method">
+								<?php printf( __( 'Ship this product with %s.', 'it-l10n-ithemes-exchange' ), it_exchange_get_transaction_shipping_method_for_product( $post, $transaction_product['product_cart_id'] ) ); ?>
+							</div>
+						<?php endif; ?>
+
 						<?php if ( $product_downloads = it_exchange_get_product_feature( $transaction_product['product_id'], 'downloads' ) ) : ?>
 							<?php foreach( $product_downloads as $download_id => $download_data ) : ?>
 								<div class="product-download product-download-<?php esc_attr_e( $download_id ); ?>">
 									<h4 class="product-download-title">
 										<?php do_action( 'it_exchange_transaction_print_metabox_before_product_feature_download_title', $post, $download_id, $download_data ); ?>
-										<?php esc_attr_e( get_the_title( $download_id ) ); ?>
+										<?php echo __( 'Download:', 'it-l10n-ithemes-exchange' ) . ' ' . get_the_title( $download_id ); ?>
 										<?php do_action( 'it_exchange_transaction_print_metabox_after_product_feature_download_title', $post, $download_id, $download_data ); ?>
 									</h4>
 								</div>
 							<?php endforeach; ?>
-						<?php else : ?>
-							<div class="no-product-downloads">
-								<?php _e( 'This product does not contain any downloads', 'it-l10n-ithemes-exchange' ); ?>
-							</div>
 						<?php endif; ?>
 					</div>
 				</div>
@@ -556,6 +575,28 @@ class IT_Exchange_Transaction_Post_Type {
 				</div>
 			<?php endif; ?>
 		</div>
+
+		<?php if ( it_exchange_transaction_includes_shipping( $post ) ) : ?>
+			<div class="transaction-shipping-summary clearfix spacing-wrapper">
+				<div class="payment-shipping left">
+					<div class="payment-shipping-label"><?php _e( 'Shipping Method', 'it-l10n-ithemes-exchange' ); ?></div>
+					<div class="payment-shipping-name">
+						<?php do_action( 'it_exchange_transaction_print_metabox_before_transaction_shipping_name', $post ); ?>
+						<?php esc_attr_e( empty( it_exchange_get_transaction_shipping_method( $post )->label ) ? __( 'Unknown Shipping Method', 'it-l10n-ithemes-exchange' ) : it_exchange_get_transaction_shipping_method( $post )->label ); ?>
+						<?php do_action( 'it_exchange_transaction_print_metabox_after_transaction_shipping_name', $post ); ?>
+					</div>
+				</div>
+
+				<div class="payment-shipping-total right clearfix">
+					<div class="payment-shipping-total-label left"><?php _e( 'Shipping', 'it-l10n-ithemes-exchange' ); ?></div>
+					<div class="payment-shipping-total-amount">
+						<?php do_action( 'it_exchange_transaction_print_metabox_before_shipping_total', $post ); ?>
+						<?php echo it_exchange_format_price( it_exchange_get_transaction_shipping_total( $post ) ); ?>
+						<?php do_action( 'it_exchange_transaction_print_metabox_after_shipping_total', $post ); ?>
+					</div>
+				</div>
+			</div>
+		<?php endif; ?>
 
 		<div class="transaction-summary clearfix spacing-wrapper">
 			<div class="payment-method left">
