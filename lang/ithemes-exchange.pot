@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/ithemes-exchange\n"
-"POT-Creation-Date: 2013-10-09 16:43-0500\n"
+"POT-Creation-Date: 2013-10-14 12:05-0500\n"
 "PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chris Jean <support@ithemes.com>\n"
 "Language: \n"
@@ -40,7 +40,7 @@ msgstr ""
 msgid "Coupon Data not found:"
 msgstr ""
 
-#: api/customers.php:172
+#: api/customers.php:174
 msgid "Successfully saved profile!"
 msgstr ""
 
@@ -2673,12 +2673,16 @@ msgid ""
 "The cart total must be greater than 0 for you to checkout. Please try again."
 msgstr ""
 
-#: api/transactions.php:687 api/transactions.php:715 api/transactions.php:751
+#: api/transactions.php:687 api/transactions.php:751
 #: core-addons/transaction-methods/offline-payments/init.php:286
 #: core-addons/transaction-methods/paypal-standard/init.php:744
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:789
 #: lib/transactions/class.transactions-post-type.php:350
 msgid "Unknown"
+msgstr ""
+
+#: api/transactions.php:715
+msgid "Deleted Customer"
 msgstr ""
 
 #: api/transactions.php:793
@@ -4121,22 +4125,22 @@ msgstr ""
 msgid "Featured Image"
 msgstr ""
 
-#: lib/admin/class-settings-form.php:314
+#: lib/admin/class-settings-form.php:321
 msgid "Coding Error!"
 msgstr ""
 
-#: lib/admin/class-settings-form.php:315
+#: lib/admin/class-settings-form.php:322
 #, php-format
 msgid ""
 "The setting for %s has an incorrect type argument. No such method exists in "
 "the ITForm class"
 msgstr ""
 
-#: lib/admin/class-settings-form.php:334
+#: lib/admin/class-settings-form.php:341
 msgid "Invalid security token. Please try again"
 msgstr ""
 
-#: lib/admin/class-settings-form.php:344
+#: lib/admin/class-settings-form.php:351
 msgid "Settings updated"
 msgstr ""
 
@@ -6337,15 +6341,15 @@ msgstr ""
 msgid "cm"
 msgstr ""
 
-#: lib/super-widget/ajax.php:93
+#: lib/super-widget/ajax.php:95
 msgid "Logged in as "
 msgstr ""
 
-#: lib/super-widget/ajax.php:97
+#: lib/super-widget/ajax.php:99
 msgid "Error. Please try again."
 msgstr ""
 
-#: lib/super-widget/ajax.php:114
+#: lib/super-widget/ajax.php:116
 msgid "Registered and logged in as "
 msgstr ""
 
