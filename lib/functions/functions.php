@@ -93,18 +93,32 @@ function it_exchange_load_public_scripts( $current_view ) {
 
 	$purchase_requirements = (array) it_exchange_get_purchase_requirements();
 	$purchase_requirements = array_keys( $purchase_requirements );
-
+	
+	$settings = it_exchange_get_option( 'settings_general' );
+	
 	// jQuery Zoom
 	wp_register_script( 'jquery-zoom', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/jquery.zoom.min.js' ), array( 'jquery' ), false, true );
 	
+	// jQuery Colorbox
+	wp_register_script( 'jquery-colorbox', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/jquery.colorbox.min.js' ), array( 'jquery' ), false, true );
+	
 	// Detect CC Type
 	wp_register_script( 'detect-credit-card-type', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/detect-credit-card-type.js' ), array( 'jquery' ), false, true );
-
+	
 	// Frontend Product JS
 	if ( is_singular( 'it_exchange_prod' ) ) {
-		wp_enqueue_script( 'it-exchange-product-public-js', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/exchange-product.js' ), array( 'jquery-zoom' ), false, true );
+		$script_deps = array();
+		
+		if ( ( 1 == $settings['enable-gallery-zoom'] ) )
+			array_push( $script_deps, 'jquery-zoom' );
+		
+		if ( ( 1 == $settings['enable-gallery-popup'] ) )
+			array_push( $script_deps, 'jquery-colorbox' );
+		
+		wp_enqueue_script( 'it-exchange-product-public-js', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/exchange-product.js' ), $script_deps, false, true );
+		wp_enqueue_style( 'it-exchange-icon-fonts', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/styles/exchange-fonts.css' ) );
 	}
-
+	
 	// ****** CHECKOUT SPECIFIC SCRIPTS ******* 
 	if ( it_exchange_is_page( 'checkout' )  ) {
 
@@ -143,15 +157,15 @@ function it_exchange_load_public_scripts( $current_view ) {
 	// Frontend Style 
 	if ( ! apply_filters( 'it_exchange_disable_frontend_stylesheet', false ) )
 		wp_enqueue_style( 'it-exchange-public-css', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/styles/exchange.css' ) );
-
+	
 	// Parent theme /exchange/style.css if it exists
 	$parent_theme_css = get_template_directory() . '/exchange/style.css';
-    if ( is_file( $parent_theme_css ) )
+	if ( is_file( $parent_theme_css ) )
 		wp_enqueue_style( 'it-exchange-parent-theme-css', ITUtility::get_url_from_file( $parent_theme_css ) );
-
+	
 	// Child theme /exchange/style.css if it exists
 	$child_theme_css = get_stylesheet_directory() . '/exchange/style.css';
-    if ( is_file( $child_theme_css ) && ( $parent_theme_css != $child_theme_css || ! is_file( $parent_theme_css ) ) )
+	if ( is_file( $child_theme_css ) && ( $parent_theme_css != $child_theme_css || ! is_file( $parent_theme_css ) ) )
 		wp_enqueue_style( 'it-exchange-child-theme-css', ITUtility::get_url_from_file( $child_theme_css ) );
 }
 add_action( 'wp_enqueue_scripts', 'it_exchange_load_public_scripts' );
@@ -834,8 +848,8 @@ function it_exchange_register_default_purchase_requirements() {
 	$properties = array(
 		'priority'               => 1,
 		'requirement-met'        => 'is_user_logged_in',
-		'sw-template-part'       => apply_filters( 'it_exchange_sw_template_part_for_logged_in_purchase_requirement', 'registration' ),
-		'checkout-template-part' => 'logged-in',
+		'sw-template-part'       => it_exchange_get_default_sw_checkout_mode(), //apply_filters( 'it_exchange_sw_template_part_for_logged_in_purchase_requirement', 'registration' ),
+		'checkout-template-part' => 'logged-in', //apply_filters( 'it_exchange_checkout_template_part_for_logged_in_purchase_requirement', 'logged-in' ),
 		'notification'           => sprintf( __( 'You must be logged in to complete your purchase. %s' . $login . '%s, %s' . $register . '%s or %s' . $cart . '%s', 'it-l10n-ithemes-exchange' ), $login_link, $close_link, $reg_link, $close_link, $cart_link, $close_link ),
 	);
 	it_exchange_register_purchase_requirement( 'logged-in', $properties );
@@ -853,6 +867,37 @@ function it_exchange_register_default_purchase_requirements() {
 		it_exchange_register_purchase_requirement( 'billing-address', $properties );
 }
 add_action( 'init', 'it_exchange_register_default_purchase_requirements' );
+
+/**
+ * The default checkout mode for the superwidget
+ *
+ * @since CHANGME
+ *
+ * @return string
+*/
+function it_exchange_get_default_sw_checkout_mode() {
+	$settings = it_exchange_get_option( 'settings_general' );
+	$default_mode = empty( $settings['checkout-reg-form'] ) ? 'registration' : $settings['checkout-reg-form'];
+	$default_mode = apply_filters( 'it_exchange_get_default_sw_checkout_mode', $default_mode );
+	add_filter( 'it_exchange_is_sw_' . $default_mode . '_checkout_mode', '__return_true' );
+	return $default_mode;
+}
+
+/**
+ * The default checkout mode for the page
+ *
+ * @since CHANGME
+ *
+ * @return string
+*/
+function it_exchange_get_default_content_checkout_mode() {
+	$settings = it_exchange_get_option( 'settings_general' );
+	$default_mode = empty( $settings['checkout-reg-form'] ) ? 'registration' : $settings['checkout-reg-form'];
+	$default_mode = apply_filters( 'it_exchange_get_default_content_checkout_mode', $default_mode );
+	add_filter( 'it_exchange_is_content_' . $default_mode . '_checkout_mode', '__return_true' );
+	return $default_mode;
+}
+add_action( 'template_redirect', 'it_exchange_get_default_content_checkout_mode' );
 
 /**
  * Registers any purchase requirements Super Widget template parts as valid
@@ -1006,6 +1051,56 @@ function it_exchange_force_rewrite_flush_on_upgrade() {
 	add_option('_it-exchange-flush-rewrites', true );	
 }
 add_action( 'it_exchange_version_updated', 'it_exchange_force_rewrite_flush_on_upgrade' );
+
+/**
+ * Add custom image sizs to use in themes and admin.
+ *
+ * @since CHANGEME
+ *
+ * @return void
+*/
+function it_exchange_add_image_sizes() {
+	$image_sizes = array(
+		'large' => array(
+			'width'  => 1000,
+			'height' => 1000,
+			'crop'   => false
+		),
+		'thumb' => array(
+			'width'  => 150,
+			'height' => 150,
+			'crop'   => true
+		),
+	);
+	
+	foreach ( $image_sizes as $name => $data ) {
+		add_image_size( 'it-exchange-' . $name, $data['width'], $data['height'], $data['crop'] );
+	}
+}
+/*
+NOTE Tableing this for now until we write a way to regenerate images for users.
+add_action( 'init', 'it_exchange_add_image_sizes' );
+*/
+
+/**
+ * Change the content_width global if we are viewing 
+ * an Exchange product page.
+ * 
+ * NOTE The function is temporary until we add the image
+ * sizes function above.
+ * 
+ * @since 1.5
+ *
+ * @return void
+ * @var $content_width
+*/
+function it_exchange_set_content_width_on_product_pages() {
+	if ( it_exchange_is_page( 'product' ) ) {
+		global $content_width;
+		$content_width = 1024;
+	}
+}
+add_action( 'template_redirect', 'it_exchange_set_content_width_on_product_pages', 100 );
 
 /************************************
  * THE FOLLOWING API METHODS AREN'T READY

@@ -122,6 +122,18 @@
                 	<label for="site-registration-wp"><?php _e( 'Use WordPress Registration Setting', 'it-l10n-ithemes-exchange' ) ?></label><span class="tip" title="<?php esc_attr_e( __( 'In order to use this setting, you will first need to check the "Anyone can register" checkbox from the WordPress General Settings page to allow site membership.', 'it-l10n-ithemes-exchange' ) ); ?>">i</span>
 				</td>
 			</tr>
+			<tr valign="top">
+				<th scope="row"><label for="checkout-reg-form"><?php _e( 'Default Checkout Form', 'it-l10n-ithemes-exchange' ) ?></label></th>
+				<td>
+					<?php
+					$options = array( 
+						'registration' => __( 'Registration', 'it-l10n-ithemes-exchange' ),
+						'login'        => __( 'Log in', 'it-l10n-ithemes-exchange' ),
+					);
+					?>
+					<?php $form->add_drop_down( 'checkout-reg-form', $options ); ?>
+				</td>
+			</tr>
             <?php do_action( 'it_exchange_general_settings_before_settings_styles', $form ); ?>
 			<tr valign="top">
 				<th scope="row"><strong><?php _e( 'Stylesheet Settings', 'it-l10n-ithemes-exchange' ); ?></strong></th>
@@ -140,6 +152,32 @@
 						echo implode( $custom_style_locations, '<br />' );
 						?>
 					</span>
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row"><strong><?php _e( 'Product Gallery', 'it-l10n-ithemes-exchange' ); ?></strong></th>
+				<td></td>
+			</tr>
+			<tr valign="top">
+				<th scope="row"><label for="enable-gallery-popup"><?php _e( 'Enable Popup', 'it-l10n-ithemes-exchange' ) ?></label></th>
+				<td>
+					<?php $form->add_yes_no_drop_down( 'enable-gallery-popup' ); ?>
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row"><label for="product-gallery-zoom"><?php _e( 'Enable Zoom', 'it-l10n-ithemes-exchange' ) ?><span class="tip" title="<?php _e( 'Zoom will only work properly when uploading large images.', 'it-l10n-ithemes-exchange' ); ?>">i</span></label></th>
+				<td>
+					<?php $form->add_yes_no_drop_down( 'enable-gallery-zoom' ); ?>
+					<div class="product-gallery-zoom-actions <?php echo ( $form->_options['enable-gallery-zoom'] != 1 ) ? 'hidden' : ''; ?>">
+						<?php $form->add_radio( 'product-gallery-zoom-action', array( 'value' => 'click' ) ); ?>
+						<label for="product-gallery-zoom-action-click"><?php _e( 'Click', 'it-l10n-ithemes-exchange' ) ?></label>
+						<br />
+						<?php $form->add_radio( 'product-gallery-zoom-action', array( 'value' => 'hover' ) ); ?>
+						<label for="product-gallery-zoom-action-hover"><?php _e( 'Hover', 'it-l10n-ithemes-exchange' ) ?></label>
+						<span class="description popup-enabled <?php echo ( $form->_options['enable-gallery-popup'] != 1 ) ? 'hidden' : ''; ?>">
+							<p><?php _e( 'Zoom will occur in the popup when popup is enabled.', 'it-l10n-ithemes-exchange' ); ?></p>
+						</span>
+					</div>
 				</td>
 			</tr>
 			<tr valign="top">

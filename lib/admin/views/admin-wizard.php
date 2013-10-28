@@ -16,9 +16,14 @@ $form->set_option( 'simple-shipping-flat-rate-cost', $flat_rate_cost );
 	
 	<?php $form->start_form( $form_options, 'exchange-general-settings' ); ?>
 		<div class="it-exchange-wizard">
+			<div class="welcome">
+				<div class="welcome-title"><?php printf( __( 'Welcome to %s', 'it-l10n-ithemes-exchange' ), '<span class="it-exchange-green">iThemes Exchange</span>' ); ?></div>
+				<p>
+					<?php printf( __( 'You can customize your store features by filling out some information below. (Don\'t worry, you can always change these settings on the Add-ons page and the %s Settings page later. And you can get back to this setup screen from the link on the help page.) If you have add-ons, please go to the %splugins page%s and install them now before starting the setup.' ), 'Exchange', '<a href="' . admin_url( 'plugins.php' ) . '">', '</a>' ); ?>
+			</div>
 			<div class="fields">
 				<div class="field product-types">
-					<p class="section-lable"><?php _e( 'Click to select the types of products you plan to sell in your store.', 'it-l10n-ithemes-exchange' ); ?><span class="tip" title="<?php _e( "You can always add or remove these later on the Add-ons page.", 'it-l10n-ithemes-exchange' ); ?>">i</span></p>
+					<p class="section-lable"><?php _e( 'What are you going to sell?', 'it-l10n-ithemes-exchange' ); ?><span class="tip" title="<?php _e( "You can always add or remove these later on the Add-ons page.", 'it-l10n-ithemes-exchange' ); ?>">i</span></p>
 					<ul class="clearfix">
 						<?php
 							$addons = it_exchange_get_addons( array( 'category' => 'product-type', 'show_required' => false ) );
@@ -162,7 +167,7 @@ $form->set_option( 'simple-shipping-flat-rate-cost', $flat_rate_cost );
 				?>
 
 				<div class="field payments">
-					<p class="section-lable"><?php _e( 'How will you be accepting payments? Choose one.', 'it-l10n-ithemes-exchange' ); ?><span class="tip" title="<?php _e( "Choose your preferred payment gateway for processing transactions. You can select more than one option but it's not recommended.", 'it-l10n-ithemes-exchange' ); ?>">i</span></p>
+					<p class="section-lable"><?php _e( 'How will you accept payments?', 'it-l10n-ithemes-exchange' ); ?><span class="tip" title="<?php _e( "Choose your preferred payment gateway for processing transactions. You can select more than one option but it's not recommended.", 'it-l10n-ithemes-exchange' ); ?>">i</span></p>
 					<ul class="clearfix">
 						<?php
 							$addons = it_exchange_get_addons( array( 'category' => 'transaction-methods', 'show_required' => false ) );
