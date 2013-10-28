@@ -292,8 +292,8 @@ class IT_Exchange_Admin_Settings_Form {
 	*/
 	function print_setting_row( $setting, $form_method ) {
 		?>
-		<tr valign="top">
-			<th scope="row"><label for="<?php esc_attr_e( $setting['slug'] ); ?>"><?php echo $setting['label']; ?>
+		<tr valign="top" id="<?php esc_attr_e( $setting['slug'] ); ?>-table-row">
+			<th scope="row" id="<?php esc_attr_e( $setting['slug'] ); ?>-table-row-head><label for="<?php esc_attr_e( $setting['slug'] ); ?>"><?php echo $setting['label']; ?>
 				<?php
 				if ( ! empty( $setting['tooltip'] ) ) {
 					echo '<span class="tip" title="' . esc_attr( $setting['tooltip'] ) . '">i</span>';
@@ -302,7 +302,9 @@ class IT_Exchange_Admin_Settings_Form {
 				</label>
 			</th>
 			<td id="<?php esc_attr_e( $setting['slug'] ); ?>-wrapper">
+				<?php echo empty( $setting['before'] ) ? '' : $setting['before']; ?>
 				<?php $this->form->$form_method( $setting['slug'], $setting['options'] ); ?>
+				<?php echo empty( $setting['after'] ) ? '' : $setting['after']; ?>
 			</td>
 		</tr>
 		<?php

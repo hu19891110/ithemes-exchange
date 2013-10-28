@@ -605,6 +605,9 @@ class IT_Exchange_Product_Feature_Downloads {
 		
 		// Get addon product type addon settings @todo move this setting to product-feature for downloads
 		$settings = it_exchange_get_option( 'addon_digital_downloads' );
+		$require_user_login = ! empty( $settings['require-user-login'] );
+		$require_user_login = apply_filters( 'it_exchange_require_user_login_for_download', $require_user_login, $hash_data );
+
 		// In the event that the admin never visited the settings page to register defaults
 		if ( empty( $settings ) ) {
 			add_filter( 'it_storage_get_defaults_exchange_addon_digital_downloads', array( 'IT_Exchange_Digital_Downloads_Add_On', 'set_default_settings' ) );
@@ -612,7 +615,7 @@ class IT_Exchange_Product_Feature_Downloads {
 		}
 
 		// If user isn't logged in, redirect them to login and bring them back when complete
-		if ( ! empty( $settings['require-user-login'] ) && ! is_user_logged_in() ) {
+		if ( ! empty( $require_user_login ) && ! is_user_logged_in() ) {
 			$redirect_url = site_url() . '?it-exchange-download=' . $hash_data['hash'];
 			it_exchange_add_session_data( 'login_redirect', $redirect_url );
 			wp_redirect( it_exchange_get_page_url( 'login' ) );
@@ -627,7 +630,7 @@ class IT_Exchange_Product_Feature_Downloads {
 			die();
 		}
 
-		if ( $settings['require-user-login'] ) {
+		if ( $require_user_login ) {
 			// If user doesn't belong to the download, and isn't an admin, send them to their downloads page.
 			$customer = it_exchange_get_current_customer();
 			if ( empty( $customer->id ) || ( $customer->id != $hash_data['customer_id'] && ! current_user_can( 'administrator' ) ) ) {

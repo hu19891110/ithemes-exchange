@@ -180,57 +180,57 @@ function it_exchange_add_new_builder_views( $views ) {
 	$exchange_views = array(
 		'it_exchange_is_product_builder_view' => array(
 			'name'        => _x( 'Exchange - Product', 'view', 'it-l10n-ithemes-exchange' ),
-			'priority'    => '20',
+			'priority'    => '40',
 			'description' => __( 'Any Exchange product.', 'it-l10n-ithemes-exchange' ),
 		),
 		'it_exchange_is_store_builder_view' => array(
 			'name'        => _x( 'Exchange - Store', 'view', 'it-l10n-ithemes-exchange' ),
-			'priority'    => '10',
+			'priority'    => '30',
 			'description' => __( 'The Exchange store page.', 'it-l10n-ithemes-exchange' ),
 		),
 		'it_exchange_is_transaction_builder_view' => array(
 			'name'        => _x( 'Exchange - Transaction', 'view', 'it-l10n-ithemes-exchange' ),
-			'priority'    => '20',
+			'priority'    => '30',
 			'description' => __( 'The Exchange transactions page.', 'it-l10n-ithemes-exchange' ),
 		),
 		'it_exchange_is_registration_builder_view' => array(
 			'name'        => _x( 'Exchange - Registration', 'view', 'it-l10n-ithemes-exchange' ),
-			'priority'    => '20',
+			'priority'    => '30',
 			'description' => __( 'The Exchange registration page.', 'it-l10n-ithemes-exchange' ),
 		),
 		'it_exchange_is_account_builder_view' => array(
 			'name'        => _x( 'Exchange - Account', 'view', 'it-l10n-ithemes-exchange' ),
-			'priority'    => '10',
-			'description' => __( 'Any Exchange customer\'s account pages (e.g. profile, purchases, login, et cetera).', 'it-l10n-ithemes-exchange' ),
+			'priority'    => '30',
+			'description' => __( 'The Exchange customer\'s account page.', 'it-l10n-ithemes-exchange' ),
 		),
 		'it_exchange_is_profile_builder_view' => array(
 			'name'        => _x( 'Exchange - Profile', 'view', 'it-l10n-ithemes-exchange' ),
-			'priority'    => '20',
-			'description' => __( 'The Exchange customer\'s profile or account page.', 'it-l10n-ithemes-exchange' ),
+			'priority'    => '30',
+			'description' => __( 'The Exchange customer\'s profile page.', 'it-l10n-ithemes-exchange' ),
 		),
 		'it_exchange_is_downloads_builder_view' => array(
 			'name'        => _x( 'Exchange - Downloads', 'view', 'it-l10n-ithemes-exchange' ),
-			'priority'    => '20',
+			'priority'    => '30',
 			'description' => __( 'The Exchange customer\'s downloads page.', 'it-l10n-ithemes-exchange' ),
 		),
 		'it_exchange_is_purchases_builder_view' => array(
 			'name'        => _x( 'Exchange - Purchases', 'view', 'it-l10n-ithemes-exchange' ),
-			'priority'    => '20',
+			'priority'    => '30',
 			'description' => __( 'The Exchange customer\'s purchases page.', 'it-l10n-ithemes-exchange' ),
 		),
 		'it_exchange_is_login_builder_view' => array(
 			'name'        => _x( 'Exchange - Login', 'view', 'it-l10n-ithemes-exchange' ),
-			'priority'    => '20',
+			'priority'    => '30',
 			'description' => __( 'The Exchange login page.', 'it-l10n-ithemes-exchange' ),
 		),
 		'it_exchange_is_logout_builder_view' => array(
 			'name'        => _x( 'Exchange - Logout', 'view', 'it-l10n-ithemes-exchange' ),
-			'priority'    => '20',
+			'priority'    => '30',
 			'description' => __( 'The Exchange logout page.', 'it-l10n-ithemes-exchange' ),
 		),
 		'it_exchange_is_confirmation_builder_view' => array(
 			'name'        => _x( 'Exchange - Confirmation', 'view', 'it-l10n-ithemes-exchange' ),
-			'priority'    => '20',
+			'priority'    => '30',
 			'description' => __( 'The Exchange purchase confirmation page.', 'it-l10n-ithemes-exchange' ),
 		),
 	);
@@ -238,12 +238,12 @@ function it_exchange_add_new_builder_views( $views ) {
 	$multi_item_views = array(
 		'it_exchange_is_cart_builder_view' => array(
 			'name'        => _x( 'Exchange - Cart', 'view', 'it-l10n-ithemes-exchange' ),
-			'priority'    => '20',
+			'priority'    => '30',
 			'description' => __( 'The Exchange cart page.', 'it-l10n-ithemes-exchange' ),
 		),
 		'it_exchange_is_checkout_builder_view' => array(
 			'name'        => _x( 'Exchange - Checkout', 'view', 'it-l10n-ithemes-exchange' ),
-			'priority'    => '20',
+			'priority'    => '30',
 			'description' => __( 'The Exchange checkout page.', 'it-l10n-ithemes-exchange' ),
 		),
 	);
