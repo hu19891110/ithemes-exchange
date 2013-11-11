@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/ithemes-exchange\n"
-"POT-Creation-Date: 2013-10-28 11:51-0500\n"
+"POT-Creation-Date: 2013-11-11 09:11-0600\n"
 "PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chris Jean <support@ithemes.com>\n"
 "Language: \n"
@@ -40,7 +40,7 @@ msgstr ""
 msgid "Coupon Data not found:"
 msgstr ""
 
-#: api/customers.php:174
+#: api/customers.php:175
 msgid "Successfully saved profile!"
 msgstr ""
 
@@ -2415,7 +2415,7 @@ msgstr ""
 
 #: api/theme/billing.php:415 api/theme/customer.php:265
 #: api/theme/registration.php:221 api/theme/shipping.php:360
-#: core-addons/load.php:288
+#: core-addons/load.php:302
 msgid "Email"
 msgstr ""
 
@@ -2429,7 +2429,9 @@ msgstr ""
 
 #: api/theme/billing.php:476 api/theme/checkout.php:93 api/theme/login.php:326
 #: api/theme/registration.php:367 api/theme/shipping-method.php:160
-#: api/theme/shipping.php:419 core-addons/coupons/basic-coupons/admin.php:302
+#: api/theme/shipping.php:419
+#: core-addons/admin/guest-checkout/lib/template-functions.php:210
+#: core-addons/coupons/basic-coupons/admin.php:302
 #: lib/deprecated/templates/super-widget-cart.php:76
 #: lib/products/class.products-post-type.php:336
 #: lib/products/class.products-post-type.php:365
@@ -2727,6 +2729,108 @@ msgstr ""
 msgid "iThemes Exchange"
 msgstr ""
 
+#: core-addons/admin/guest-checkout/lib/filters.php:44
+#: core-addons/admin/guest-checkout/lib/filters.php:505
+#: core-addons/admin/guest-checkout/lib/filters.php:511
+msgid "Please use a properly formatted email address."
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/filters.php:401
+msgid "Guest Customer"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:18
+#: core-addons/admin/guest-checkout/lib/template-functions.php:52
+#: core-addons/admin/guest-checkout/lib/templates/super-widget-registration/elements/guest.php:21
+#: core-addons/load.php:130
+msgid "Guest Checkout"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:26
+msgid "Make Guest Checkout the default method?"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:28
+msgid "This will overwrite the value for Default Form in General Settings."
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:33
+msgid "Show log in link?"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:35
+msgid ""
+"Selecting 'No' will remove the Log in link from Registration and Guest "
+"Checkout forms."
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:40
+msgid "Show registration link?"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:42
+msgid ""
+"Selecting 'No' will remove the Registration link from Log in and Guest "
+"Checkout forms."
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:50
+msgid "Cart Expiration"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:52
+msgid ""
+"Cart will expire and be cleared after a guest customer is inactive for set "
+"number of minutes."
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:53
+msgid "minutes"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/template-functions.php:157
+msgid "Continue as guest"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/template-functions.php:184
+msgid "Email address"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/template-functions.php:197
+msgid "Continue"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/not-logged-in/guest-checkout.php:22
+msgid "Check out as guest"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/not-logged-in/links/guest-checkout.php:21
+#: core-addons/admin/guest-checkout/lib/templates/super-widget-login/elements/guest-checkout-link.php:19
+msgid "Check out as a guest"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/templates/super-widget-guest-checkout/elements/login.php:20
+#: lib/admin/views/admin-settings.php:131
+#: lib/deprecated/templates/content-registration.php:49
+#: lib/deprecated/templates/super-widget-registration.php:44
+#: lib/functions/functions.php:839
+#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/not-logged-in/links/login.php:21
+#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/registration/login.php:20
+#: lib/templates/content-registration/elements/login.php:20
+#: lib/templates/super-widget-registration/elements/login.php:20
+msgid "Log in"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/templates/super-widget-guest-checkout/elements/register.php:20
+#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/not-logged-in/links/register.php:21
+#: lib/templates/super-widget-login/elements/register.php:20
+msgid "Create an account"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/templates/super-widget-registration/elements/guest-checkout-link.php:19
+msgid "Checkout as a guest"
+msgstr ""
+
 #: core-addons/admin/multi-item-cart/init.php:14
 msgid "Shopping Cart"
 msgstr ""
@@ -2739,7 +2843,7 @@ msgstr ""
 msgid "Customer Checkout"
 msgstr ""
 
-#: core-addons/admin/product-type-metabox/init.php:33 core-addons/load.php:242
+#: core-addons/admin/product-type-metabox/init.php:33 core-addons/load.php:256
 #: lib/products/class.products-post-type.php:590
 msgid "Product Type"
 msgstr ""
@@ -2792,7 +2896,7 @@ msgstr ""
 #: lib/coupons/class.coupons-post-type.php:30
 #: lib/deprecated/templates/super-widget-checkout.php:74
 #: lib/templates/super-widget-checkout/elements/single-item-update-coupons.php:20
-#: lib/transactions/class.transactions-post-type.php:543
+#: lib/transactions/class.transactions-post-type.php:550
 msgid "Coupons"
 msgstr ""
 
@@ -2826,7 +2930,7 @@ msgid ""
 msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:267
-#: lib/transactions/class.transactions-post-type.php:471
+#: lib/transactions/class.transactions-post-type.php:478
 msgid "Amount"
 msgstr ""
 
@@ -2997,39 +3101,45 @@ msgid ""
 "with one transaction. There are no settings for this add-on."
 msgstr ""
 
-#: core-addons/load.php:130
+#: core-addons/load.php:131
+msgid ""
+"Enabling this add-on gives customers the ability to checkout as a guest, "
+"without registering"
+msgstr ""
+
+#: core-addons/load.php:143
 #: lib/templates/content-checkout/elements/purchase-requirements/billing-address.php:24
 #: lib/templates/content-confirmation/elements/billing-address.php:21
 #: lib/templates/super-widget-billing-address.php:20
-#: lib/transactions/class.transactions-post-type.php:460
+#: lib/transactions/class.transactions-post-type.php:467
 msgid "Billing Address"
 msgstr ""
 
-#: core-addons/load.php:131
+#: core-addons/load.php:144
 msgid ""
 "Enabling this add-on allows you to collect a billing address at checkout. "
 "There are no settings for this add-on."
 msgstr ""
 
-#: core-addons/load.php:140
+#: core-addons/load.php:153
 msgid "Basic Reporting Dashboard Widget"
 msgstr ""
 
-#: core-addons/load.php:141
+#: core-addons/load.php:154
 msgid "Adds a widget to the Admin dashboard to give basic sales statistics."
 msgstr ""
 
-#: core-addons/load.php:152
+#: core-addons/load.php:165
 msgid "Basic Coupons"
 msgstr ""
 
-#: core-addons/load.php:153
+#: core-addons/load.php:166
 msgid ""
 "This add-on allows you to generate basic coupons that apply to all products "
 "in your store."
 msgstr ""
 
-#: core-addons/load.php:164
+#: core-addons/load.php:177
 #: core-addons/product-features/categories/class.category-widget.php:18
 #: core-addons/product-features/categories/class.category-widget.php:24
 #: core-addons/product-features/categories/init.php:20
@@ -3037,134 +3147,134 @@ msgstr ""
 msgid "Product Categories"
 msgstr ""
 
-#: core-addons/load.php:165
+#: core-addons/load.php:178
 msgid "This adds a category taxonomy for all products in iThemes Exchange."
 msgstr ""
 
-#: core-addons/load.php:172
+#: core-addons/load.php:185
 #: core-addons/product-features/categories/init.php:21
 msgid "Product Category"
 msgstr ""
 
-#: core-addons/load.php:177 core-addons/product-features/tags/init.php:20
+#: core-addons/load.php:190 core-addons/product-features/tags/init.php:20
 #: core-addons/product-features/tags/init.php:60
 msgid "Product Tags"
 msgstr ""
 
-#: core-addons/load.php:178
+#: core-addons/load.php:191
 msgid "This adds a tag taxonomy for all products in iThemes Exchange."
 msgstr ""
 
-#: core-addons/load.php:185 core-addons/product-features/tags/init.php:21
+#: core-addons/load.php:198 core-addons/product-features/tags/init.php:21
 msgid "Product Tag"
 msgstr ""
 
-#: core-addons/load.php:190 core-addons/taxes/taxes-simple/init.php:42
+#: core-addons/load.php:203 core-addons/taxes/taxes-simple/init.php:42
 msgid "Simple Taxes"
 msgstr ""
 
-#: core-addons/load.php:191
+#: core-addons/load.php:204
 msgid "This gives the admin ability to apply a default tax rate to all sales."
 msgstr ""
 
-#: core-addons/load.php:201
+#: core-addons/load.php:214
 msgid "Duplicate Products"
 msgstr ""
 
-#: core-addons/load.php:202
+#: core-addons/load.php:215
 msgid "This gives the admin the ability to duplicate an existing product."
 msgstr ""
 
-#: core-addons/load.php:209
+#: core-addons/load.php:222
 msgid "Duplicate"
 msgstr ""
 
-#: core-addons/load.php:213
+#: core-addons/load.php:226
 #: core-addons/shipping/simple-shipping/lib/provider.php:11
 msgid "Simple Shipping"
 msgstr ""
 
-#: core-addons/load.php:214
+#: core-addons/load.php:227
 msgid "Flat rate and free shipping for your physcial products"
 msgstr ""
 
-#: core-addons/load.php:243
+#: core-addons/load.php:257
 msgid ""
 "Add-ons responsible for the differing types of products available in iThemes "
 "Exchange."
 msgstr ""
 
-#: core-addons/load.php:248
+#: core-addons/load.php:262
 msgid "Transaction Methods"
 msgstr ""
 
-#: core-addons/load.php:249
+#: core-addons/load.php:263
 msgid "Add-ons that create transactions. eg: Stripe, PayPal."
 msgstr ""
 
-#: core-addons/load.php:261
+#: core-addons/load.php:275
 #: core-addons/transaction-methods/offline-payments/init.php:25
 msgctxt "Transaction Status"
 msgid "Pending"
 msgstr ""
 
-#: core-addons/load.php:262
+#: core-addons/load.php:276
 msgctxt "Transaction Status"
 msgid "Authorized"
 msgstr ""
 
-#: core-addons/load.php:263
+#: core-addons/load.php:277
 #: core-addons/transaction-methods/offline-payments/init.php:26
 msgctxt "Transaction Status"
 msgid "Paid"
 msgstr ""
 
-#: core-addons/load.php:264
+#: core-addons/load.php:278
 #: core-addons/transaction-methods/offline-payments/init.php:27
 msgctxt "Transaction Status"
 msgid "Refunded"
 msgstr ""
 
-#: core-addons/load.php:265
+#: core-addons/load.php:279
 #: core-addons/transaction-methods/offline-payments/init.php:28
 msgctxt "Transaction Status"
 msgid "Voided"
 msgstr ""
 
-#: core-addons/load.php:273
+#: core-addons/load.php:287
 msgid "Admin Add-ons"
 msgstr ""
 
-#: core-addons/load.php:274
+#: core-addons/load.php:288
 msgid ""
 "Add-ons that create general purpose admin functionality. eg: Reports, Export."
 msgstr ""
 
-#: core-addons/load.php:278
+#: core-addons/load.php:292
 msgid "Coupon Add-ons"
 msgstr ""
 
-#: core-addons/load.php:279
+#: core-addons/load.php:293
 msgid "Add-ons that create coupons for your customers."
 msgstr ""
 
-#: core-addons/load.php:283
+#: core-addons/load.php:297
 msgid "Taxonomy Add-ons"
 msgstr ""
 
-#: core-addons/load.php:284
+#: core-addons/load.php:298
 msgid "Add-ons that create new taxonomies specifically for Exchange products."
 msgstr ""
 
-#: core-addons/load.php:289
+#: core-addons/load.php:303
 msgid "Add-ons that help store owners manage their email."
 msgstr ""
 
-#: core-addons/load.php:293
+#: core-addons/load.php:307
 msgid "Other"
 msgstr ""
 
-#: core-addons/load.php:294
+#: core-addons/load.php:308
 msgid "Add-ons that don't fit in any other add-on category."
 msgstr ""
 
@@ -3387,7 +3497,7 @@ msgstr ""
 #: lib/templates/content-cart/elements/totals-shipping.php:22
 #: lib/templates/content-checkout/elements/totals-shipping.php:22
 #: lib/templates/content-confirmation/elements/totals-shipping.php:23
-#: lib/transactions/class.transactions-post-type.php:591
+#: lib/transactions/class.transactions-post-type.php:598
 msgid "Shipping"
 msgstr ""
 
@@ -3896,7 +4006,7 @@ msgstr ""
 
 #: lib/admin/class.admin.php:273 lib/admin/views/admin-user-products.php:10
 #: lib/products/class.products-post-type.php:113
-#: lib/transactions/class.transactions-post-type.php:470
+#: lib/transactions/class.transactions-post-type.php:477
 msgid "Products"
 msgstr ""
 
@@ -4664,16 +4774,6 @@ msgstr ""
 msgid "Registration"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:131
-#: lib/deprecated/templates/content-registration.php:49
-#: lib/deprecated/templates/super-widget-registration.php:44
-#: lib/functions/functions.php:839
-#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/registration/login.php:20
-#: lib/templates/content-registration/elements/login.php:20
-#: lib/templates/super-widget-registration/elements/cancel.php:20
-msgid "Log in"
-msgstr ""
-
 #: lib/admin/views/admin-settings.php:139
 msgid "Stylesheet Settings"
 msgstr ""
@@ -4806,7 +4906,7 @@ msgid "This user is an Exchange customer."
 msgstr ""
 
 #: lib/admin/views/admin-user-profile.php:24
-#: lib/transactions/class.transactions-post-type.php:438
+#: lib/transactions/class.transactions-post-type.php:440
 msgid "View Customer Data"
 msgstr ""
 
@@ -4823,7 +4923,7 @@ msgstr ""
 #: lib/templates/content-checkout/elements/totals-total.php:22
 #: lib/templates/content-confirmation/elements/totals-total.php:22
 #: lib/transactions/class.transactions-post-type.php:286
-#: lib/transactions/class.transactions-post-type.php:611
+#: lib/transactions/class.transactions-post-type.php:618
 msgid "Total"
 msgstr ""
 
@@ -5192,7 +5292,7 @@ msgstr ""
 #: lib/templates/content-cart/elements/totals-subtotal.php:22
 #: lib/templates/content-checkout/elements/totals-subtotal.php:22
 #: lib/templates/content-confirmation/elements/totals-subtotal.php:22
-#: lib/transactions/class.transactions-post-type.php:526
+#: lib/transactions/class.transactions-post-type.php:533
 msgid "Subtotal"
 msgstr ""
 
@@ -5362,7 +5462,7 @@ msgstr ""
 msgid ""
 "You have purchased %d unique download link(s) for each file available with "
 "this product.%s%sEach link has its own download limits and you can view the "
-"details on you %sdownloads%s page."
+"details on your %sdownloads%s page."
 msgstr ""
 
 #: lib/email-notifications/class.email-notifications.php:337
@@ -6389,15 +6489,15 @@ msgstr ""
 msgid "cm"
 msgstr ""
 
-#: lib/super-widget/ajax.php:95
+#: lib/super-widget/ajax.php:97
 msgid "Logged in as "
 msgstr ""
 
-#: lib/super-widget/ajax.php:99
+#: lib/super-widget/ajax.php:101
 msgid "Error. Please try again."
 msgstr ""
 
-#: lib/super-widget/ajax.php:116
+#: lib/super-widget/ajax.php:123
 msgid "Registered and logged in as "
 msgstr ""
 
@@ -6411,11 +6511,11 @@ msgid ""
 "Confirmation views depending on the situation"
 msgstr ""
 
-#: lib/super-widget/class.super-widget.php:149
+#: lib/super-widget/class.super-widget.php:152
 msgid "Processing"
 msgstr ""
 
-#: lib/super-widget/class.super-widget.php:197
+#: lib/super-widget/class.super-widget.php:200
 msgid "There are no options for this widget."
 msgstr ""
 
@@ -6425,23 +6525,23 @@ msgstr ""
 
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/logged-in/logged-in-as.php:22
 #, php-format
-msgid "Logged in as: %s"
+msgid "Checking out as: %s"
 msgstr ""
 
-#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/not-logged-in/heading.php:20
-msgid "Register or Log in"
+#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/not-logged-in/options.php:21
+msgid "Select an option to continue"
 msgstr ""
 
 #: lib/templates/content-checkout/elements/purchase-requirements/shipping-address.php:25
 #: lib/templates/content-confirmation/elements/shipping-address.php:21
 #: lib/templates/super-widget-shipping-address.php:20
-#: lib/transactions/class.transactions-post-type.php:452
+#: lib/transactions/class.transactions-post-type.php:459
 msgid "Shipping Address"
 msgstr ""
 
 #: lib/templates/content-checkout/elements/purchase-requirements/shipping-method.php:26
 #: lib/templates/super-widget-shipping-method.php:25
-#: lib/transactions/class.transactions-post-type.php:582
+#: lib/transactions/class.transactions-post-type.php:589
 msgid "Shipping Method"
 msgstr ""
 
@@ -6556,57 +6656,57 @@ msgstr ""
 msgid "Transaction Details"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:504
+#: lib/transactions/class.transactions-post-type.php:511
 #, php-format
 msgid "Ship this product with %s."
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:513
+#: lib/transactions/class.transactions-post-type.php:520
 msgid "Download:"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:536
+#: lib/transactions/class.transactions-post-type.php:543
 msgid "Total Discount"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:560
+#: lib/transactions/class.transactions-post-type.php:567
 msgid "Total Refund"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:569
+#: lib/transactions/class.transactions-post-type.php:576
 msgid "Refunds"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:572
+#: lib/transactions/class.transactions-post-type.php:579
 msgid "on"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:585
+#: lib/transactions/class.transactions-post-type.php:592
 msgid "Unknown Shipping Method"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:603
+#: lib/transactions/class.transactions-post-type.php:610
 msgid "Payment Method"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:619
+#: lib/transactions/class.transactions-post-type.php:626
 msgid "Total before refunds"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:633
+#: lib/transactions/class.transactions-post-type.php:640
 msgid "Change Status"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:634
+#: lib/transactions/class.transactions-post-type.php:641
 msgid ""
 "The customer will receive an email When this is changed from a status that "
 "is not cleared for delivery to a status that is cleared for delivery"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:655
+#: lib/transactions/class.transactions-post-type.php:662
 msgid "Not Saved."
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:656
+#: lib/transactions/class.transactions-post-type.php:663
 msgid "Saved!"
 msgstr ""

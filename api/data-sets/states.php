@@ -71,7 +71,7 @@ function it_exchange_get_country_states_for_au( $options=array() ) {
 		'ACT' => __( 'Australian Capital Territory', 'it-l10n-ithemes-exchange' ),
 		'JBT' => __( 'Jervis Bay Territory', 'it-l10n-ithemes-exchange' ),
 		'NT'  => __( 'Northern Territory', 'it-l10n-ithemes-exchange' ),
-		
+
 	);
 	$territories = apply_filters( 'it_exchange_au_territories', $territories );
 

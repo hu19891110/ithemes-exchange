@@ -31,7 +31,8 @@ function it_exchange_get_customer( $customer_id ) {
     // Grab the WP User
 	$customer = new IT_Exchange_Customer( $customer_id );
 	if ( empty( $customer->wp_user->ID ) )
-		return false;
+		$customer = false;
+
 	return apply_filters( 'it_exchange_get_customer', $customer, $customer_id );
 }
 
@@ -43,7 +44,7 @@ function it_exchange_get_customer( $customer_id ) {
 */
 function it_exchange_get_current_customer() {
 	if ( ! is_user_logged_in() )
-		return false;
+		return apply_filters( 'it_exchange_get_current_customer', false );
 
 	$customer = it_exchange_get_customer( get_current_user_id() );
 	return apply_filters( 'it_exchange_get_current_customer', $customer );
@@ -114,7 +115,7 @@ function it_exchange_customer_has_transaction( $transaction_id, $customer_id = N
 
 	// Get transactions args
 	$args = array(
-		'numberposts' => -1, 
+		'numberposts' => -1,
 		'customer_id' => $customer->id,
 	);
 	return apply_filters( 'it_exchange_customer_has_transaction', $customer->has_transaction( $transaction_id ), $transaction_id, $customer_id );
@@ -167,17 +168,17 @@ function handle_it_exchange_save_profile_action() {
 		require_once(ABSPATH . 'wp-admin/includes/user.php');
 		$customer = it_exchange_get_current_customer();
 		$result = edit_user( $customer->id );
-		
+
 		if ( is_wp_error( $result ) ) {
 			it_exchange_add_message( 'error', $result->get_error_message() );
 		} else {
 			it_exchange_add_message( 'notice', __( 'Successfully saved profile!', 'it-l10n-ithemes-exchange' ) );
 		}
-	
+
 		do_action( 'handle_it_exchange_save_profile_action' );
-		
+
 	}
-	
+
 }
 add_action( 'template_redirect', 'handle_it_exchange_save_profile_action', 5 );
 
@@ -197,7 +198,7 @@ function it_exchange_register_user( $user_data=array() ) {
 	foreach( $user_data as $key => $value ) {
 		$_POST[$key] = $value;
 	}
-	
+
 	do_action( 'it_exchange_register_user' );
 
 	// Register user via WP function
@@ -275,7 +276,7 @@ function it_exchange_save_customer_billing_address( $address, $customer_id=false
 
 	if ( false !== $billing ) {
 		update_user_meta( it_exchange_get_current_customer_id(), 'it-exchange-billing-address', $billing );
-		do_action( 'it_exchange_customer_billing_address_updated', $billing, $custoemr_id );
+		do_action( 'it_exchange_customer_billing_address_updated', $billing, $customer_id );
 		return true;
 	}
 	return false;
