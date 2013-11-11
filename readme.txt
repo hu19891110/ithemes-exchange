@@ -34,7 +34,7 @@ We've been building and supporting WordPress tools for 5 years. With our full ra
 
 We hope you'll try Exchange and love it. But we also want to hear what we can do to make it work best for your business.
 
-Send us your ideas and feedback here: http://ithemes.com/contact
+Send us your ideas and feedback: http://ithemes.com/contact
 
 == FEATURES ==
 For more information, visit: http://ithemes.com/exchange
