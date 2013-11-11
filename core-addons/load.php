@@ -112,7 +112,7 @@ function it_exchange_register_core_addons() {
 			'file'        => dirname( __FILE__ ) . '/admin/product-type-metabox/init.php',
 			'tag'         => 'core',
 			'options'     => array( 'category' => 'admin' ),
-		), 
+		),
 		// Multi item cart
 		'multi-item-cart-option' => array(
 			'name'        => __( 'Multi-item Cart', 'it-l10n-ithemes-exchange' ),
@@ -123,6 +123,19 @@ function it_exchange_register_core_addons() {
 			'category'    => 'admin',
 			'tag'         => 'core',
 			'supports'    => apply_filters( 'it_exchange_register_multi_item_cart_default_features', array(
+			) ),
+		),
+		// Guest Checkout
+		'guest-checkout' => array(
+			'name'              => __( 'Guest Checkout', 'it-l10n-ithemes-exchange' ),
+			'description'       => __( 'Enabling this add-on gives customers the ability to checkout as a guest, without registering', 'it-l10n-ithemes-exchange' ),
+			'author'            => 'iThemes',
+			'author_url'        => 'http://ithemes.com',
+			'file'              => dirname( __FILE__ ) . '/admin/guest-checkout/init.php',
+			'category'          => 'admin',
+			'tag'               => 'core',
+			'settings-callback' => 'it_exchange_guest_checkout_settings_callback',
+			'supports'          => apply_filters( 'it_exchange_register_guest_checkout_default_features', array(
 			) ),
 		),
 		// Billing Address Purchase Requirement
@@ -216,6 +229,7 @@ function it_exchange_register_core_addons() {
 			'author_url'        => 'http://ithemes.com',
 			'file'              => dirname( __FILE__ ) . '/shipping/simple-shipping/init.php',
 			'category'          => 'shipping',
+			'tag'               => 'core',
 			'settings-callback' => 'it_exchange_simple_shipping_settings_callback',
 		),
 	);
