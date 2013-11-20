@@ -32,6 +32,13 @@ function it_exchange_print_paypal_standard_secure_wizard_settings( $form ) {
 	$IT_Exchange_paypal_standard_secure_Add_On = new IT_Exchange_paypal_standard_secure_Add_On();
 	$settings = it_exchange_get_option( 'addon_paypal_standard_secure', true );
 	$form_values = ITUtility::merge_defaults( ITForm::get_post_data(), $settings );
+
+	// Alter setting keys for wizard
+	foreach( $form_values as $key => $value ) {
+		$form_values['paypal-standard-secure-' . $key] = $value;
+		unset( $form_values[$key] );
+	}
+
 	$hide_if_js =  it_exchange_is_addon_enabled( 'paypal-standard-secure' ) ? '' : 'hide-if-js';
 	?>
 	<div class="field paypal-standard-secure-wizard <?php echo $hide_if_js; ?>">
@@ -58,6 +65,7 @@ function it_exchange_refund_url_for_paypal_standard_secure( $url ) {
 
 }
 add_filter( 'it_exchange_refund_url_for_paypal-standard-secure', 'it_exchange_refund_url_for_paypal_standard_secure' );
+
 /**
  * This proccesses a paypal transaction.
  *
@@ -103,10 +111,10 @@ function it_exchange_process_paypal_standard_secure_addon_transaction( $status, 
 
 				$it_exchange_customer = it_exchange_get_current_customer();
 
-				$paypal_api_url       = ( $paypal_settings['paypal-standard-secure-sandbox-mode'] ) ? PAYPAL_NVP_API_SANDBOX_URL : PAYPAL_NVP_API_LIVE_URL;
-				$paypal_api_username  = ( $paypal_settings['paypal-standard-secure-sandbox-mode'] ) ? $paypal_settings['paypal-standard-secure-sandbox-api-username'] : $paypal_settings['paypal-standard-secure-live-api-username'];
-				$paypal_api_password  = ( $paypal_settings['paypal-standard-secure-sandbox-mode'] ) ? $paypal_settings['paypal-standard-secure-sandbox-api-password'] : $paypal_settings['paypal-standard-secure-live-api-password'];
-				$paypal_api_signature = ( $paypal_settings['paypal-standard-secure-sandbox-mode'] ) ? $paypal_settings['paypal-standard-secure-sandbox-api-signature'] : $paypal_settings['paypal-standard-secure-live-api-signature'];
+				$paypal_api_url       = ( $paypal_settings['sandbox-mode'] ) ? PAYPAL_NVP_API_SANDBOX_URL : PAYPAL_NVP_API_LIVE_URL;
+				$paypal_api_username  = ( $paypal_settings['sandbox-mode'] ) ? $paypal_settings['sandbox-api-username'] : $paypal_settings['live-api-username'];
+				$paypal_api_password  = ( $paypal_settings['sandbox-mode'] ) ? $paypal_settings['sandbox-api-password'] : $paypal_settings['live-api-password'];
+				$paypal_api_signature = ( $paypal_settings['sandbox-mode'] ) ? $paypal_settings['sandbox-api-signature'] : $paypal_settings['live-api-signature'];
 
 				$request = array(
 					'USER'          => trim( $paypal_api_username ),
@@ -263,22 +271,21 @@ add_action( 'it_exchange_save_paypal-standard-secure_wizard_settings', 'it_excha
 */
 function it_exchange_paypal_standard_secure_addon_default_settings( $values ) {
 	$defaults = array(
-		'paypal-standard-secure-live-email-address'    => '',
-		'paypal-standard-secure-live-api-username'     => '',
-		'paypal-standard-secure-live-api-password'     => '',
-		'paypal-standard-secure-live-api-signature'    => '',
-		'paypal-standard-secure-sandbox-email-address' => '',
-		'paypal-standard-secure-sandbox-api-username'  => '',
-		'paypal-standard-secure-sandbox-api-password'  => '',
-		'paypal-standard-secure-sandbox-api-signature' => '',
-		'paypal-standard-secure-sandbox-mode'          => false,
-		'paypal-standard-secure-purchase-button-label' => __( 'Pay with PayPal', 'it-l10n-ithemes-exchange' ),
+		'live-email-address'    => '',
+		'live-api-username'     => '',
+		'live-api-password'     => '',
+		'live-api-signature'    => '',
+		'sandbox-email-address' => '',
+		'sandbox-api-username'  => '',
+		'sandbox-api-password'  => '',
+		'sandbox-api-signature' => '',
+		'sandbox-mode'          => false,
+		'purchase-button-label' => __( 'Pay with PayPal', 'it-l10n-ithemes-exchange' ),
 	);
 	$values = ITUtility::merge_defaults( $values, $defaults );
 	return $values;
 }
 add_filter( 'it_storage_get_defaults_exchange_addon_paypal_standard_secure', 'it_exchange_paypal_standard_secure_addon_default_settings' );
-
 
 /**
  * Returns the button for making the PayPal faux payment button
@@ -301,7 +308,7 @@ function it_exchange_paypal_standard_secure_addon_make_payment_button( $options 
 	$it_exchange_customer = it_exchange_get_current_customer();
 
 	$payment_form .= '<form action="' . get_site_url() . '/?paypal-standard-secure-form=1" method="post">';
-	$payment_form .= '<input type="submit" class="it-exchange-paypal-standard-button" name="paypal_standard_secure_purchase" value="' . $paypal_settings['paypal-standard-secure-purchase-button-label'] .'" />';
+	$payment_form .= '<input type="submit" class="it-exchange-paypal-standard-button" name="paypal_standard_secure_purchase" value="' . esc_attr( $paypal_settings['purchase-button-label'] ) .'" />';
 	$payment_form .= '</form>';
 
 	return $payment_form;
@@ -324,14 +331,13 @@ function it_exchange_process_paypal_standard_secure_form() {
 	if ( ! empty( $_REQUEST['paypal_standard_secure_purchase'] ) ) {
 
 		if ( $url = it_exchange_paypal_standard_secure_addon_get_payment_url() ) {
-
 			wp_redirect( $url );
-
+			die();
 		} else {
-
 			it_exchange_add_message( 'error', __( 'Error processing PayPal form. Missing valid PayPal information.', 'it-l10n-ithemes-exchange' ) );
-			wp_redirect( it_exchange_get_page_url( 'checkout' ) );
-
+			$url = ! wp_get_referer() ? it_exchange_get_page_url( 'checkout' ) : wp_get_referer();
+			wp_redirect( $url );
+			die();
 		}
 
 	}
@@ -356,12 +362,12 @@ function it_exchange_paypal_standard_secure_addon_get_payment_url() {
 
 	$payment_form = '';
 
-	$paypal_api_url       = ( $paypal_settings['paypal-standard-secure-sandbox-mode'] ) ? PAYPAL_NVP_API_SANDBOX_URL : PAYPAL_NVP_API_LIVE_URL;
-	$paypal_payment_url   = ( $paypal_settings['paypal-standard-secure-sandbox-mode'] ) ? 'https://www.sandbox.paypal.com/cgi-bin/webscr' : 'https://www.paypal.com/cgi-bin/webscr';
-	$paypal_email         = ( $paypal_settings['paypal-standard-secure-sandbox-mode'] ) ? $paypal_settings['paypal-standard-secure-sandbox-email-address'] : $paypal_settings['paypal-standard-secure-live-email-address'];
-	$paypal_api_username  = ( $paypal_settings['paypal-standard-secure-sandbox-mode'] ) ? $paypal_settings['paypal-standard-secure-sandbox-api-username'] : $paypal_settings['paypal-standard-secure-live-api-username'];
-	$paypal_api_password  = ( $paypal_settings['paypal-standard-secure-sandbox-mode'] ) ? $paypal_settings['paypal-standard-secure-sandbox-api-password'] : $paypal_settings['paypal-standard-secure-live-api-password'];
-	$paypal_api_signature = ( $paypal_settings['paypal-standard-secure-sandbox-mode'] ) ? $paypal_settings['paypal-standard-secure-sandbox-api-signature'] : $paypal_settings['paypal-standard-secure-live-api-signature'];
+	$paypal_api_url       = ( $paypal_settings['sandbox-mode'] ) ? PAYPAL_NVP_API_SANDBOX_URL : PAYPAL_NVP_API_LIVE_URL;
+	$paypal_payment_url   = ( $paypal_settings['sandbox-mode'] ) ? 'https://www.sandbox.paypal.com/cgi-bin/webscr' : 'https://www.paypal.com/cgi-bin/webscr';
+	$paypal_email         = ( $paypal_settings['sandbox-mode'] ) ? $paypal_settings['sandbox-email-address'] : $paypal_settings['live-email-address'];
+	$paypal_api_username  = ( $paypal_settings['sandbox-mode'] ) ? $paypal_settings['sandbox-api-username'] : $paypal_settings['live-api-username'];
+	$paypal_api_password  = ( $paypal_settings['sandbox-mode'] ) ? $paypal_settings['sandbox-api-password'] : $paypal_settings['live-api-password'];
+	$paypal_api_signature = ( $paypal_settings['sandbox-mode'] ) ? $paypal_settings['sandbox-api-signature'] : $paypal_settings['live-api-signature'];
 
 	if ( ! empty( $paypal_email )
 		&& ! empty( $paypal_api_username )
@@ -823,8 +829,8 @@ add_filter( 'it_exchange_paypal-standard-secure_transaction_is_cleared_for_deliv
 */
 function it_exchange_paypal_standard_secure_unsubscribe_action( $output, $options ) {
 	$paypal_settings      = it_exchange_get_option( 'addon_paypal_standard_secure' );
-	$paypal_url           = ( $paypal_settings['paypal-standard-secure-sandbox-mode'] ) ? PAYPAL_PAYMENT_SANDBOX_URL : PAYPAL_PAYMENT_LIVE_URL;
-	$paypal_email         = ( $paypal_settings['paypal-standard-secure-sandbox-mode'] ) ? $paypal_settings['paypal-standard-secure-sandbox-email-address'] : $paypal_settings['paypal-standard-secure-live-email-address'];
+	$paypal_url           = ( $paypal_settings['sandbox-mode'] ) ? PAYPAL_PAYMENT_SANDBOX_URL : PAYPAL_PAYMENT_LIVE_URL;
+	$paypal_email         = ( $paypal_settings['sandbox-mode'] ) ? $paypal_settings['sandbox-email-address'] : $paypal_settings['live-email-address'];
 
 	$output  = '<a class="button" href="' . $paypal_url . '?cmd=_subscr-find&alias=' . urlencode( $paypal_email ) . '">';
 	$output .= $options['label'];
@@ -844,7 +850,7 @@ add_filter( 'it_exchange_paypal-standard-secure_unsubscribe_action', 'it_exchang
 */
 function it_exchange_paypal_standard_secure_after_payment_details_cancel_url( $transaction ) {
 	$paypal_settings      = it_exchange_get_option( 'addon_paypal_standard_secure' );
-	$paypal_url           = ( $paypal_settings['paypal-standard-secure-sandbox-mode'] ) ? PAYPAL_SANDBOX_URL : PAYPAL_LIVE_URL;
+	$paypal_url           = ( $paypal_settings['sandbox-mode'] ) ? PAYPAL_SANDBOX_URL : PAYPAL_LIVE_URL;
 	$cart_object = get_post_meta( $transaction->ID, '_it_exchange_cart_object', true );
 	foreach ( $cart_object->products as $product ) {
 		$autorenews = $transaction->get_transaction_meta( 'subscription_autorenew_' . $product['product_id'], true );
@@ -882,6 +888,33 @@ function it_exchange_paypal_standard_secure_after_payment_details_cancel_url( $t
 	}
 }
 add_action( 'it_exchange_after_payment_details_cancel_url_for_paypal-standard-secure', 'it_exchange_paypal_standard_secure_after_payment_details_cancel_url' );
+
+/**
+ * Convert old option keys to new option keys
+ *
+ * Our original option keys for this plugin were generating form field names 80+ chars in length
+ *
+ * @since 1.6.2
+ *
+ * @param  array   $options         options as pulled from the DB
+ * @param  string  $key             the key for the options
+ * @param  boolean $break_cache     was the flag to break cache passed?
+ * @param  boolean $merge_defaults  was the flag to merge defaults passed?
+ * @return array
+*/
+function it_exchange_paypal_standard_secure_convert_option_keys( $options, $key, $break_cache, $merge_defaults ) {
+	if ( 'addon_paypal_standard_secure' != $key )
+		return $options;
+
+	foreach( $options as $key => $value ) {
+		if ( 'paypal-standard-secure-' == substr( $key, 0, 23 ) && empty( $opitons[substr( $key, 23 )] ) ) {
+			$options[substr( $key, 23 )] = $value;
+			unset( $options[$key] );
+		}
+	}
+	return $options;
+}
+add_filter( 'it_exchange_get_option', 'it_exchange_paypal_standard_secure_convert_option_keys', 10, 4 );
 
 /**
  * Class for Stripe
@@ -995,21 +1028,41 @@ class IT_Exchange_paypal_standard_secure_Add_On {
 			<p><?php _e( 'Don\'t have a PayPal account yet?', 'it-l10n-ithemes-exchange' ); ?> <a href="http://paypal.com" target="_blank"><?php _e( 'Go set one up here', 'it-l10n-ithemes-exchange' ); ?></a>.</p>
 			<h4><?php _e( 'Step 1. Fill out your PayPal email address', 'it-l10n-ithemes-exchange' ); ?></h4>
 			<p>
-				<label for="paypal-standard-secure-live-email-address"><?php _e( 'PayPal Email Address', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'We need this to tie payments to your account.', 'it-l10n-ithemes-exchange' ); ?>">i</span></label>
-				<?php $form->add_text_box( 'paypal-standard-secure-live-email-address' ); ?>
+				<label for="live-email-address"><?php _e( 'PayPal Email Address', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'We need this to tie payments to your account.', 'it-l10n-ithemes-exchange' ); ?>">i</span></label>
+				<?php
+				if ( ! empty( $_GET['page'] ) && 'it-exchange-setup' == $_GET['page'] )
+					$form->add_text_box( 'paypal-standard-secure-live-email-address' );
+				else
+					$form->add_text_box( 'live-email-address' );
+				?>
 			</p>
 			<h4><?php _e( 'Step 2. Fill out your PayPal API credentials', 'it-l10n-ithemes-exchange' ); ?></h4>
 			<p>
-				<label for="paypal-standard-secure-live-api-username"><?php _e( 'PayPal API Username', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'At PayPal, see: Profile &rarr; My Selling Tools &rarr; API Access &rarr; Update &rarr; View API Signature (or Request API Credentials).', 'it-l10n-ithemes-exchange' ); ?>">i</span></label>
-				<?php $form->add_text_box( 'paypal-standard-secure-live-api-username' ); ?>
+				<label for="live-api-username"><?php _e( 'PayPal API Username', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'At PayPal, see: Profile &rarr; My Selling Tools &rarr; API Access &rarr; Update &rarr; View API Signature (or Request API Credentials).', 'it-l10n-ithemes-exchange' ); ?>">i</span></label>
+				<?php
+				if ( ! empty( $_GET['page'] ) && 'it-exchange-setup' == $_GET['page'] )
+					$form->add_text_box( 'paypal-standard-secure-live-api-username' );
+				else
+					$form->add_text_box( 'live-api-username' );
+				?>
 			</p>
 			<p>
-				<label for="paypal-standard-secure-live-api-password"><?php _e( 'PayPal API Password', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'At PayPal, see: Profile &rarr; My Selling Tools &rarr; API Access &rarr; Update &rarr; View API Signature (or Request API Credentials).', 'it-l10n-ithemes-exchange' ); ?>">i</span></label>
-				<?php $form->add_text_box( 'paypal-standard-secure-live-api-password' ); ?>
+				<label for="live-api-password"><?php _e( 'PayPal API Password', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'At PayPal, see: Profile &rarr; My Selling Tools &rarr; API Access &rarr; Update &rarr; View API Signature (or Request API Credentials).', 'it-l10n-ithemes-exchange' ); ?>">i</span></label>
+				<?php
+				if ( ! empty( $_GET['page'] ) && 'it-exchange-setup' == $_GET['page'] )
+					$form->add_text_box( 'paypal-standard-secure-live-api-password' );
+				else
+					$form->add_text_box( 'live-api-password' );
+				?>
 			</p>
 			<p>
-				<label for="paypal-standard-secure-live-api-signature"><?php _e( 'PayPal API Signature', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'At PayPal, see: Profile &rarr; My Selling Tools &rarr; API Access &rarr; Update &rarr; View API Signature (or Request API Credentials).', 'it-l10n-ithemes-exchange' ); ?>">i</span></label>
-				<?php $form->add_text_box( 'paypal-standard-secure-live-api-signature' ); ?>
+				<label for="live-api-signature"><?php _e( 'PayPal API Signature', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'At PayPal, see: Profile &rarr; My Selling Tools &rarr; API Access &rarr; Update &rarr; View API Signature (or Request API Credentials).', 'it-l10n-ithemes-exchange' ); ?>">i</span></label>
+				<?php
+				if ( ! empty( $_GET['page'] ) && 'it-exchange-setup' == $_GET['page'] )
+					$form->add_text_box( 'paypal-standard-secure-live-api-signature' );
+				else
+					$form->add_text_box( 'live-api-signature' );
+				?>
 			</p>
 			<h4><?php _e( 'Step 3. Setup PayPal Instant Payment Notifications (IPN)', 'it-l10n-ithemes-exchange' ); ?></h4>
 			<p><?php _e( 'PayPal IPN must be configured in Account Profile -› Instant Payment Notification Preferences in your PayPal Account', 'it-l10n-ithemes-exchange' ); ?></p>
@@ -1023,30 +1076,40 @@ class IT_Exchange_paypal_standard_secure_Add_On {
 			<p><?php _e( 'PayPal PDT must be turned <strong>ON</strong> in Account Profile -› Website Payment Preferences in your PayPal Account', 'it-l10n-ithemes-exchange' ); ?></p>
 			<h4><?php _e( 'Optional: Edit Paypal Button Label', 'it-l10n-ithemes-exchange' ); ?></h4>
 			<p>
-				<label for="paypal-standard-secure-purchase-button-label"><?php _e( 'Purchase Button Label', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'This is the text inside the button your customers will press to purchase with PayPal Standard (secure)', 'it-l10n-ithemes-exchange' ); ?>">i</span></label>
-				<?php $form->add_text_box( 'paypal-standard-secure-purchase-button-label' ); ?>
+				<label for="purchase-button-label"><?php _e( 'Purchase Button Label', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'This is the text inside the button your customers will press to purchase with PayPal Standard (secure)', 'it-l10n-ithemes-exchange' ); ?>">i</span></label>
+				<?php
+				if ( ! empty( $_GET['page'] ) && 'it-exchange-setup' == $_GET['page'] )
+					$form->add_text_box( 'paypal-standard-secure-purchase-button-label' );
+				else
+					$form->add_text_box( 'purchase-button-label' );
+				?>
 			</p>
 			<h4 class="hide-if-wizard"><?php _e( 'Optional: Enable Paypal Testing Mode', 'it-l10n-ithemes-exchange' ); ?></h4>
 			<p class="hide-if-wizard">
-				<?php $form->add_check_box( 'paypal-standard-secure-sandbox-mode', array( 'class' => 'show-test-mode-options' ) ); ?>
-				<label for="paypal-standard-secure-sandbox-mode"><?php _e( 'Enable PayPal Sandbox Mode?', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'Use this mode for testing your store. This mode will need to be disabled when the store is ready to process customer payments.', 'it-l10n-ithemes-exchange' ); ?>">i</span></label>
+				<?php $form->add_check_box( 'sandbox-mode', array( 'class' => 'show-test-mode-options' ) ); ?>
+				<label for="sandbox-mode"><?php _e( 'Enable PayPal Sandbox Mode?', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'Use this mode for testing your store. This mode will need to be disabled when the store is ready to process customer payments.', 'it-l10n-ithemes-exchange' ); ?>">i</span></label>
 			</p>
-			<?php $hidden_class = ( $settings['paypal-standard-secure-sandbox-mode'] ) ? '' : 'hide-if-live-mode'; ?>
+			<?php
+			if ( ! empty( $_GET['page'] ) && 'it-exchange-setup' == $_GET['page'] )
+				$hidden_class = ( $settings['paypal-standard-secure-sandbox-mode'] ) ? '' : 'hide-if-live-mode';
+			else
+				$hidden_class = ( $settings['sandbox-mode'] ) ? '' : 'hide-if-live-mode';
+			?>
 			<p class="test-mode-options hide-if-wizard <?php echo $hidden_class; ?>">
-				<label for="paypal-standard-secure-sandbox-email-address"><?php _e( 'PayPal Sandbox Email Address', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'We need this to tie payments to your account.', 'it-l10n-ithemes-exchange' ); ?>">i</span></label>
-				<?php $form->add_text_box( 'paypal-standard-secure-sandbox-email-address' ); ?>
-			</p>
-			<p class="test-mode-options hide-if-wizard <?php echo $hidden_class; ?>">
-				<label for="paypal-standard-secure-sandbox-api-username"><?php _e( 'PayPal Sandbox API Username', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'View tutorial: ', 'it-l10n-ithemes-exchange' ); ?>http://ithemes.com/tutorials/creating-a-paypal-sandbox-test-account">i</span></label>
-				<?php $form->add_text_box( 'paypal-standard-secure-sandbox-api-username' ); ?>
-			</p>
-			<p class="test-mode-options hide-if-wizard <?php echo $hidden_class; ?>">
-				<label for="paypal-standard-secure-sandbox-api-password"><?php _e( 'PayPal Sandbox API Password', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'View tutorial: ', 'it-l10n-ithemes-exchange' ); ?>http://ithemes.com/tutorials/creating-a-paypal-sandbox-test-account">i</span></label>
-				<?php $form->add_text_box( 'paypal-standard-secure-sandbox-api-password' ); ?>
+				<label for="sandbox-email-address"><?php _e( 'PayPal Sandbox Email Address', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'We need this to tie payments to your account.', 'it-l10n-ithemes-exchange' ); ?>">i</span></label>
+				<?php $form->add_text_box( 'sandbox-email-address' ); ?>
 			</p>
 			<p class="test-mode-options hide-if-wizard <?php echo $hidden_class; ?>">
-				<label for="paypal-standard-secure-sandbox-api-signature"><?php _e( 'PayPal Sandbox API Signature', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'View tutorial: ', 'it-l10n-ithemes-exchange' ); ?>http://ithemes.com/tutorials/creating-a-paypal-sandbox-test-account">i</span></label>
-				<?php $form->add_text_box( 'paypal-standard-secure-sandbox-api-signature' ); ?>
+				<label for="sandbox-api-username"><?php _e( 'PayPal Sandbox API Username', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'View tutorial: ', 'it-l10n-ithemes-exchange' ); ?>http://ithemes.com/tutorials/creating-a-paypal-sandbox-test-account">i</span></label>
+				<?php $form->add_text_box( 'sandbox-api-username' ); ?>
+			</p>
+			<p class="test-mode-options hide-if-wizard <?php echo $hidden_class; ?>">
+				<label for="sandbox-api-password"><?php _e( 'PayPal Sandbox API Password', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'View tutorial: ', 'it-l10n-ithemes-exchange' ); ?>http://ithemes.com/tutorials/creating-a-paypal-sandbox-test-account">i</span></label>
+				<?php $form->add_text_box( 'sandbox-api-password' ); ?>
+			</p>
+			<p class="test-mode-options hide-if-wizard <?php echo $hidden_class; ?>">
+				<label for="sandbox-api-signature"><?php _e( 'PayPal Sandbox API Signature', 'it-l10n-ithemes-exchange' ); ?> <span class="tip" title="<?php _e( 'View tutorial: ', 'it-l10n-ithemes-exchange' ); ?>http://ithemes.com/tutorials/creating-a-paypal-sandbox-test-account">i</span></label>
+				<?php $form->add_text_box( 'sandbox-api-signature' ); ?>
 			</p>
 		</div>
 		<?php
@@ -1089,23 +1152,23 @@ class IT_Exchange_paypal_standard_secure_Add_On {
 		$paypal_standard_secure_settings = array();
 
 		$fields = array(
-			'paypal-standard-secure-live-email-address',
-			'paypal-standard-secure-live-api-username',
-			'paypal-standard-secure-live-api-password',
-			'paypal-standard-secure-live-api-signature',
-			'paypal-standard-secure-sandbox-mode',
-			'paypal-standard-secure-sandbox-email-address',
-			'paypal-standard-secure-sandbox-api-username',
-			'paypal-standard-secure-sandbox-api-password',
-			'paypal-standard-secure-sandbox-api-signature',
-			'paypal-standard-secure-purchase-button-label',
+			'live-email-address',
+			'live-api-username',
+			'live-api-password',
+			'live-api-signature',
+			'sandbox-mode',
+			'sandbox-email-address',
+			'sandbox-api-username',
+			'sandbox-api-password',
+			'sandbox-api-signature',
+			'purchase-button-label',
 		);
 		$default_wizard_paypal_standard_secure_settings = apply_filters( 'default_wizard_paypal-standard-secure_settings', $fields );
 
 		foreach( (array) $default_wizard_paypal_standard_secure_settings as $var ) {
 
-			if ( isset( $_REQUEST['it_exchange_settings-' . $var] ) ) {
-				$paypal_standard_secure_settings[$var] = $_REQUEST['it_exchange_settings-' . $var];
+			if ( isset( $_REQUEST['it_exchange_settings-paypal-standard-secure-' . $var] ) ) {
+				$paypal_standard_secure_settings[$var] = $_REQUEST['it_exchange_settings-paypal-standard-secure-' . $var];
 			}
 
 		}
@@ -1136,23 +1199,23 @@ class IT_Exchange_paypal_standard_secure_Add_On {
 	function get_form_errors( $values ) {
 
 		$errors = array();
-		if ( empty( $values['paypal-standard-secure-live-email-address'] ) )
+		if ( empty( $values['live-email-address'] ) )
 			$errors[] = __( 'Please include your PayPal Email Address', 'it-l10n-ithemes-exchange' );
-		if ( empty( $values['paypal-standard-secure-live-api-username'] ) )
+		if ( empty( $values['live-api-username'] ) )
 			$errors[] = __( 'Please include your PayPal API Username', 'it-l10n-ithemes-exchange' );
-		if ( empty( $values['paypal-standard-secure-live-api-password'] ) )
+		if ( empty( $values['live-api-password'] ) )
 			$errors[] = __( 'Please include your PayPal API password', 'it-l10n-ithemes-exchange' );
-		if ( empty( $values['paypal-standard-secure-live-api-signature'] ) )
+		if ( empty( $values['live-api-signature'] ) )
 			$errors[] = __( 'Please include your PayPal API signature', 'it-l10n-ithemes-exchange' );
 
-		if ( !empty( $values['paypal-standard-secure-sandbox-mode' ] ) ) {
-			if ( empty( $values['paypal-standard-secure-sandbox-email-address'] ) )
+		if ( !empty( $values['sandbox-mode' ] ) ) {
+			if ( empty( $values['sandbox-email-address'] ) )
 				$errors[] = __( 'Please include your PayPal Sandbox Email Address', 'it-l10n-ithemes-exchange' );
-			if ( empty( $values['paypal-standard-secure-sandbox-api-username'] ) )
+			if ( empty( $values['sandbox-api-username'] ) )
 				$errors[] = __( 'Please include your PayPal Sandbox API Username', 'it-l10n-ithemes-exchange' );
-			if ( empty( $values['paypal-standard-secure-sandbox-api-password'] ) )
+			if ( empty( $values['sandbox-api-password'] ) )
 				$errors[] = __( 'Please include your PayPal Sandbox API password', 'it-l10n-ithemes-exchange' );
-			if ( empty( $values['paypal-standard-secure-sandbox-api-signature'] ) )
+			if ( empty( $values['sandbox-api-signature'] ) )
 				$errors[] = __( 'Please include your PayPal Sandbox API signature', 'it-l10n-ithemes-exchange' );
 		}
 
