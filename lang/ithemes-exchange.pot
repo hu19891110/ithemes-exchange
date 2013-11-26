@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/ithemes-exchange\n"
-"POT-Creation-Date: 2013-11-20 06:59-0600\n"
+"POT-Creation-Date: 2013-11-26 13:44-0600\n"
 "PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chris Jean <support@ithemes.com>\n"
 "Language: \n"
@@ -2431,7 +2431,7 @@ msgstr ""
 #: api/theme/registration.php:367 api/theme/shipping-method.php:160
 #: api/theme/shipping.php:419
 #: core-addons/admin/guest-checkout/lib/template-functions.php:210
-#: core-addons/coupons/basic-coupons/admin.php:302
+#: core-addons/coupons/basic-coupons/admin.php:330
 #: lib/deprecated/templates/super-widget-cart.php:76
 #: lib/products/class.products-post-type.php:336
 #: lib/products/class.products-post-type.php:365
@@ -2442,7 +2442,7 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: api/theme/cart-item.php:77 core-addons/coupons/basic-coupons/init.php:226
+#: api/theme/cart-item.php:77 core-addons/coupons/basic-coupons/init.php:234
 msgid "&times;"
 msgstr ""
 
@@ -2468,9 +2468,14 @@ msgstr ""
 msgid "Empty Cart"
 msgstr ""
 
-#: api/theme/coupons.php:181 core-addons/coupons/basic-coupons/admin.php:342
-#: core-addons/coupons/basic-coupons/init.php:108
+#: api/theme/coupons.php:181 core-addons/coupons/basic-coupons/admin.php:373
+#: core-addons/coupons/basic-coupons/init.php:110
 msgid "Coupon Code"
+msgstr ""
+
+#: api/theme/coupons.php:221
+msgctxt "LION"
+msgid "-"
 msgstr ""
 
 #: api/theme/customer.php:222
@@ -2504,7 +2509,7 @@ msgid "Thank you for your order. An email confirmation has been sent to %s."
 msgstr ""
 
 #: api/theme/download.php:127 api/theme/product.php:342
-#: core-addons/coupons/basic-coupons/admin.php:396
+#: core-addons/coupons/basic-coupons/admin.php:429
 #: lib/email-notifications/class.email-notifications.php:333
 #: lib/product-features/class.downloads.php:317
 msgid "Unlimited"
@@ -2527,7 +2532,7 @@ msgstr ""
 msgid "Remember Me"
 msgstr ""
 
-#: api/theme/login.php:215 lib/functions/functions.php:467
+#: api/theme/login.php:215 lib/functions/functions.php:478
 msgid "Log In"
 msgstr ""
 
@@ -2813,7 +2818,7 @@ msgstr ""
 #: lib/admin/views/admin-settings.php:131
 #: lib/deprecated/templates/content-registration.php:49
 #: lib/deprecated/templates/super-widget-registration.php:44
-#: lib/functions/functions.php:839
+#: lib/functions/functions.php:850
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/not-logged-in/links/login.php:21
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/registration/login.php:20
 #: lib/templates/content-registration/elements/login.php:20
@@ -2861,38 +2866,42 @@ msgstr ""
 msgid "You must have more than 1 product type enabled to make changes here."
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:121
+#: core-addons/coupons/basic-coupons/admin.php:125
 msgid "Coupon Name cannot be left empty"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:123
+#: core-addons/coupons/basic-coupons/admin.php:127
 msgid "Coupon Code cannot be left empty"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:125
+#: core-addons/coupons/basic-coupons/admin.php:129
 msgid "Coupon Discount cannot be left empty"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:127
+#: core-addons/coupons/basic-coupons/admin.php:131
 msgid "Coupon Discount must be a postive number"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:129
+#: core-addons/coupons/basic-coupons/admin.php:133
 msgid "Available Coupons must be a number"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:145
-#: core-addons/coupons/basic-coupons/admin.php:202
+#: core-addons/coupons/basic-coupons/admin.php:135
+msgid "Please select a product."
+msgstr ""
+
+#: core-addons/coupons/basic-coupons/admin.php:151
+#: core-addons/coupons/basic-coupons/admin.php:208
 msgid "Add Coupon"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:149
-#: core-addons/coupons/basic-coupons/admin.php:202
+#: core-addons/coupons/basic-coupons/admin.php:155
+#: core-addons/coupons/basic-coupons/admin.php:208
 #: lib/coupons/class.coupons-post-type.php:32
 msgid "Edit Coupon"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:152
+#: core-addons/coupons/basic-coupons/admin.php:158 core-addons/load.php:165
 #: lib/coupons/class.coupons-post-type.php:30
 #: lib/deprecated/templates/super-widget-checkout.php:74
 #: lib/templates/super-widget-checkout/elements/single-item-update-coupons.php:20
@@ -2900,108 +2909,138 @@ msgstr ""
 msgid "Coupons"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:230
+#: core-addons/coupons/basic-coupons/admin.php:238
 msgid "Coupon Added"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:232
+#: core-addons/coupons/basic-coupons/admin.php:240
 msgid "Coupon Updated"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:257
+#: core-addons/coupons/basic-coupons/admin.php:265
 #: lib/product-features/class.downloads.php:195
 #: lib/product-features/class.downloads.php:207
 #: lib/product-features/class.downloads.php:224
 msgid "Name"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:257
+#: core-addons/coupons/basic-coupons/admin.php:265
 msgid "What do you want to call this coupon? This is just for your reference."
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:261
+#: core-addons/coupons/basic-coupons/admin.php:269
 msgid "Code"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:261
+#: core-addons/coupons/basic-coupons/admin.php:269
 msgid ""
 "Try something cool like EXCHANGERULEZ5000! Or click the dice to generate a "
 "random code."
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:267
+#: core-addons/coupons/basic-coupons/admin.php:275
 #: lib/transactions/class.transactions-post-type.php:479
 msgid "Amount"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:274
+#: core-addons/coupons/basic-coupons/admin.php:282
 msgid "% Percent"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:277
+#: core-addons/coupons/basic-coupons/admin.php:285
 msgid "Please select an end date that is after the start date."
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:279
-#: core-addons/coupons/basic-coupons/admin.php:344
+#: core-addons/coupons/basic-coupons/admin.php:287
+#: core-addons/coupons/basic-coupons/admin.php:375
 #: lib/product-features/class.product-availability.php:138
 msgid "Start Date"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:283
-#: core-addons/coupons/basic-coupons/admin.php:345
+#: core-addons/coupons/basic-coupons/admin.php:291
+#: core-addons/coupons/basic-coupons/admin.php:376
 #: lib/product-features/class.product-availability.php:142
 msgid "End Date"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:291
-msgid "Limit Coupon"
+#: core-addons/coupons/basic-coupons/admin.php:299
+msgid "Limit number of coupons"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:292
+#: core-addons/coupons/basic-coupons/admin.php:300
 msgid "Check to limit the number of times this coupon can be used"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:298
+#: core-addons/coupons/basic-coupons/admin.php:306
 msgid "How many times can this coupon be used before it is disabled?"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:303
+#: core-addons/coupons/basic-coupons/admin.php:312
+msgid "Limit to a specific product"
+msgstr ""
+
+#: core-addons/coupons/basic-coupons/admin.php:313
+msgid ""
+"Check to limit the coupon discount to a specific product price, not the cart "
+"total"
+msgstr ""
+
+#: core-addons/coupons/basic-coupons/admin.php:319
+msgid "Select a product"
+msgstr ""
+
+#: core-addons/coupons/basic-coupons/admin.php:326
+msgid "Select a product to use with this coupon."
+msgstr ""
+
+#: core-addons/coupons/basic-coupons/admin.php:331
 #: lib/products/class.products-post-type.php:228
 msgid "Save"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:341
+#: core-addons/coupons/basic-coupons/admin.php:372
 #: core-addons/transaction-methods/offline-payments/init.php:396
 #: lib/product-features/class.title.php:96
 #: lib/products/class.products-post-type.php:583
 msgid "Title"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:343
+#: core-addons/coupons/basic-coupons/admin.php:374
 msgid "Discount"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:346
+#: core-addons/coupons/basic-coupons/admin.php:377
 msgid "Available Coupons"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/init.php:148
-#: core-addons/coupons/basic-coupons/init.php:162
-#: core-addons/coupons/basic-coupons/init.php:170
+#: core-addons/coupons/basic-coupons/admin.php:378
+#: lib/email-notifications/class.email-notifications.php:427
+#: lib/functions/functions.php:369
+#: lib/products/class.products-post-type.php:114
+msgid "Product"
+msgstr ""
+
+#: core-addons/coupons/basic-coupons/admin.php:433
+msgid "All Products"
+msgstr ""
+
+#: core-addons/coupons/basic-coupons/init.php:150
+#: core-addons/coupons/basic-coupons/init.php:164
+#: core-addons/coupons/basic-coupons/init.php:172
 #: core-addons/coupons/basic-coupons/init.php:178
+#: core-addons/coupons/basic-coupons/init.php:186
 msgid "Invalid coupon"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/init.php:197
+#: core-addons/coupons/basic-coupons/init.php:205
 msgid "Coupon applied"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/init.php:361
+#: core-addons/coupons/basic-coupons/init.php:387
 msgid "Coupon removed"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/init.php:412
+#: core-addons/coupons/basic-coupons/init.php:438
 msgid "View Coupon"
 msgstr ""
 
@@ -3129,14 +3168,10 @@ msgstr ""
 msgid "Adds a widget to the Admin dashboard to give basic sales statistics."
 msgstr ""
 
-#: core-addons/load.php:165
-msgid "Basic Coupons"
-msgstr ""
-
 #: core-addons/load.php:166
 msgid ""
-"This add-on allows you to generate basic coupons that apply to all products "
-"in your store."
+"This add-on allows you to generate coupons that apply to all products in "
+"your store."
 msgstr ""
 
 #: core-addons/load.php:177
@@ -4219,15 +4254,15 @@ msgid ""
 "Please make sure all WordPress page types have a WordPress page selected."
 msgstr ""
 
-#: lib/admin/class.admin.php:1719
+#: lib/admin/class.admin.php:1724
 msgid "Main Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1724
+#: lib/admin/class.admin.php:1729
 msgid "Side Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1794
+#: lib/admin/class.admin.php:1799
 msgid "Featured Image"
 msgstr ""
 
@@ -4747,7 +4782,7 @@ msgstr ""
 msgid "Customer Registration Settings"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:116 lib/functions/functions.php:401
+#: lib/admin/views/admin-settings.php:116 lib/functions/functions.php:412
 msgid "Customer Registration"
 msgstr ""
 
@@ -4770,7 +4805,7 @@ msgstr ""
 msgid "Default Checkout Form"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:130 lib/functions/functions.php:398
+#: lib/admin/views/admin-settings.php:130 lib/functions/functions.php:409
 msgid "Registration"
 msgstr ""
 
@@ -4871,7 +4906,7 @@ msgstr ""
 
 #: lib/admin/views/admin-user-products.php:11
 #: lib/deprecated/templates/content-downloads.php:34
-#: lib/functions/functions.php:385 lib/functions/functions.php:388
+#: lib/functions/functions.php:396 lib/functions/functions.php:399
 #: lib/templates/content-downloads/elements/confirmation-url.php:20
 msgid "Transaction"
 msgstr ""
@@ -4882,7 +4917,7 @@ msgid ""
 "\"details-toggle hide-if-no-js\">&#61;</span>"
 msgstr ""
 
-#: lib/admin/views/admin-user-products.php:71 lib/functions/functions.php:440
+#: lib/admin/views/admin-user-products.php:71 lib/functions/functions.php:451
 #: lib/templates/content-confirmation/elements/product.php:37
 msgid "Downloads"
 msgstr ""
@@ -5473,138 +5508,132 @@ msgstr ""
 msgid "Important Information"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:427
-#: lib/functions/functions.php:358
-#: lib/products/class.products-post-type.php:114
-msgid "Product"
-msgstr ""
-
 #: lib/email-notifications/class.email-notifications.php:429
 msgid "Total Price"
 msgstr ""
 
-#: lib/functions/functions.php:237
+#: lib/functions/functions.php:248
 msgid "Dangerous Settings"
 msgstr ""
 
-#: lib/functions/functions.php:241
+#: lib/functions/functions.php:252
 msgid "Reset Exchange"
 msgstr ""
 
-#: lib/functions/functions.php:244
+#: lib/functions/functions.php:255
 msgid "Reset ALL data"
 msgstr ""
 
-#: lib/functions/functions.php:245
+#: lib/functions/functions.php:256
 msgid "Checking this box will rest ALL settings and DELETE ALL DATA."
 msgstr ""
 
-#: lib/functions/functions.php:341
+#: lib/functions/functions.php:352
 msgid "Exchange has been reset. All data has been deleted."
 msgstr ""
 
-#: lib/functions/functions.php:361
+#: lib/functions/functions.php:372
 msgid "Product Base"
 msgstr ""
 
-#: lib/functions/functions.php:371
+#: lib/functions/functions.php:382
 msgid "Store"
 msgstr ""
 
-#: lib/functions/functions.php:374
+#: lib/functions/functions.php:385
 msgid "Store Page"
 msgstr ""
 
-#: lib/functions/functions.php:375
+#: lib/functions/functions.php:386
 msgid "Where all your products are shown in one place"
 msgstr ""
 
-#: lib/functions/functions.php:402
+#: lib/functions/functions.php:413
 msgid ""
 "Where customers register to login, download, etc.  You can turn off "
 "registration and allow guest checkouts in Exchange / Add-ons / Digital "
 "Downloads Settings."
 msgstr ""
 
-#: lib/functions/functions.php:412
+#: lib/functions/functions.php:423
 msgid "Account"
 msgstr ""
 
-#: lib/functions/functions.php:415
+#: lib/functions/functions.php:426
 msgid "Account Page"
 msgstr ""
 
-#: lib/functions/functions.php:416
+#: lib/functions/functions.php:427
 msgid ""
 "Customers get an account when they buy something, so they can login and "
 "download their purchases. This is the main landing page for customers after "
 "they log in."
 msgstr ""
 
-#: lib/functions/functions.php:426
+#: lib/functions/functions.php:437
 msgid "Profile"
 msgstr ""
 
-#: lib/functions/functions.php:429
+#: lib/functions/functions.php:440
 msgid "Profile Page"
 msgstr ""
 
-#: lib/functions/functions.php:430
+#: lib/functions/functions.php:441
 msgid "Private details about your customers that they can change."
 msgstr ""
 
-#: lib/functions/functions.php:443
+#: lib/functions/functions.php:454
 msgid "Customer Downloads"
 msgstr ""
 
-#: lib/functions/functions.php:444
+#: lib/functions/functions.php:455
 msgid "Page where the customer can find all of their available downloads."
 msgstr ""
 
-#: lib/functions/functions.php:454 lib/functions/functions.php:457
+#: lib/functions/functions.php:465 lib/functions/functions.php:468
 #: lib/products/class.products-post-type.php:587
 #: lib/templates/content-confirmation/elements/purchases-label.php:20
 msgid "Purchases"
 msgstr ""
 
-#: lib/functions/functions.php:470
+#: lib/functions/functions.php:481
 msgid "Customer Log In"
 msgstr ""
 
-#: lib/functions/functions.php:480
+#: lib/functions/functions.php:491
 msgid "Log Out"
 msgstr ""
 
-#: lib/functions/functions.php:483
+#: lib/functions/functions.php:494
 msgid "Customer Log Out"
 msgstr ""
 
-#: lib/functions/functions.php:493
+#: lib/functions/functions.php:504
 msgid "Thank you"
 msgstr ""
 
-#: lib/functions/functions.php:496
+#: lib/functions/functions.php:507
 msgid "Purchase Confirmation"
 msgstr ""
 
-#: lib/functions/functions.php:840
+#: lib/functions/functions.php:851
 msgid "register"
 msgstr ""
 
-#: lib/functions/functions.php:841
+#: lib/functions/functions.php:852
 msgid "edit your cart"
 msgstr ""
 
-#: lib/functions/functions.php:853
+#: lib/functions/functions.php:864
 #, php-format
 msgid "You must be logged in to complete your purchase. %s"
 msgstr ""
 
-#: lib/functions/functions.php:863
+#: lib/functions/functions.php:874
 msgid "We need a billing address before you can checkout"
 msgstr ""
 
-#: lib/functions/functions.php:1020
+#: lib/functions/functions.php:1031
 msgid ""
 "Coding Error: Please hook into the following action, print your field based "
 "on $_POST vars and die():<br /> \"it_exchange_admin_country_states_sync_for_"
@@ -6529,7 +6558,7 @@ msgstr ""
 msgid "Processing"
 msgstr ""
 
-#: lib/super-widget/class.super-widget.php:200
+#: lib/super-widget/class.super-widget.php:196
 msgid "There are no options for this widget."
 msgstr ""
 
