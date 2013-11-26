@@ -2,7 +2,7 @@
 
 /*
 Written by Chris Jean for iThemes.com
-Version 1.0.2
+Version 1.1.0
 
 Version History
 	1.0.0 - 2012-06-15 - Chris Jean
@@ -11,6 +11,12 @@ Version History
 		Fixed bug with 0's being printed as empty strings in _inspect_dive.
 	1.0.2 - 2013-06-25 - Chris Jean
 		Changed function declarations to "public static".
+	1.1.0 - 2013-11-25 - Chris Jean
+		Added styling for print_r() that integrates better with the 3.8 dashboard design.
+		Added the number of array entries to print_r() output when an array is compacted due to depth.
+		Added "boolean" descriptor in print_r() output.
+		Fixed array indexes with HTML special character from rendering poorly in print_r() output.
+		Fixed invalid recursive argument passing to print_r() in get_backtrace().
 */
 
 
@@ -38,7 +44,11 @@ if ( ! class_exists( 'ITDebug' ) ) {
 				$args['description'] .= "\n";
 			
 			
-			echo "<pre style='color:black;background:white;padding:15px;font-family:\"Courier New\",Courier,monospace;font-size:12px;white-space:pre-wrap;text-align:left;max-width:100%;'>";
+			if ( version_compare( $GLOBALS['wp_version'], '3.7.10', '>' ) ) {
+				echo "<style>.wp-admin .it-debug-print-r { margin-left: 170px; } .wp-admin #wpcontent .it-debug-print-r { margin-left: 0; }</style>\n";
+			}
+			
+			echo "<pre style='color:black;background:white;padding:15px;font-family:\"Courier New\",Courier,monospace;font-size:12px;white-space:pre-wrap;text-align:left;max-width:100%;' class='it-debug-print-r'>";
 			echo $args['description'];
 			ITDebug::inspect( $data, $args );
 			echo "</pre>\n";
@@ -93,7 +103,7 @@ if ( ! class_exists( 'ITDebug' ) ) {
 				if ( empty( $args ) )
 					return 'array()';
 				else
-					return 'array( ... )';
+					return 'array( ' . count( $args ) . ' )';
 			}
 			
 			
@@ -180,10 +190,13 @@ if ( ! class_exists( 'ITDebug' ) ) {
 			
 			$backtrace = ITDebug::get_backtrace( $args );
 			
-			if ( 'string' == $args['type'] )
+			if ( 'string' == $args['type'] ) {
 				echo $backtrace;
-			else
-				ITDebug::print_r( $backtrace, $args['description'], $args['expand_objects'], $args['max_depth'] + 1 );
+			}
+			else {
+				$args['max_depth']++;
+				ITDebug::print_r( $backtrace, $args );
+			}
 		}
 		
 		public static function inspect( $data, $args = array() ) {
@@ -225,7 +238,7 @@ if ( ! class_exists( 'ITDebug' ) ) {
 			}
 			
 			if ( is_bool( $data ) )
-				return ( $data ) ? '<strong>true</strong>' : '<strong>false</strong>';
+				return ( $data ) ? '<strong>[boolean] true</strong>' : '<strong>[boolean] false</strong>';
 			
 			if ( is_null( $data ) )
 				return '<strong>null</strong>';
@@ -255,7 +268,7 @@ if ( ! class_exists( 'ITDebug' ) ) {
 				if ( empty( $data ) )
 					return "$retval()";
 				if ( $depth == $max_depth )
-					return "$retval( ... )";
+					return "$retval( " . count( $data ) . " )";
 				
 				$max = 0;
 				
@@ -264,8 +277,10 @@ if ( ! class_exists( 'ITDebug' ) ) {
 						$max = strlen( $index );
 				}
 				
-				foreach ( $data as $index => $val )
-					$retval .= "\n$pad" . sprintf( "%-{$max}s", $index ) . "  <strong>=&gt;</strong> " . ITDebug::_inspect_dive( $val, $expand_objects, $max_depth, $depth + 1 );
+				foreach ( $data as $index => $val ) {
+					$spaces = ITUtility::pad( $max - strlen( $index ), ' ' );
+					$retval .= "\n$pad" . htmlspecialchars( $index ) . "$spaces  <strong>=&gt;</strong> " . ITDebug::_inspect_dive( $val, $expand_objects, $max_depth, $depth + 1 );
+				}
 				
 				return $retval;
 			}

@@ -2,7 +2,7 @@
 
 /*
 Written by Chris Jean for iThemes.com
-Version 2.5.1
+Version 2.6.0
 
 Version History
 	2.0.0 - 2011-02-22 - Chris Jean
@@ -29,6 +29,8 @@ Version History
 	2.5.1 - 2013-06-25 - Chris Jean
 		Changed static function declarations to "public static".
 		Rewrote $file calculation in start_form() in order to avoid strict standards warning in PHP 5.5.0.
+	2.6.0 - 2013-11-25 - Chris Jean
+		Added the option for drop downs to have dividers by using __optgroup_\d+ indexes in the options array.
 
 Notes:
 	Need to fix $this->_var support or handle used_inputs better
@@ -606,7 +608,6 @@ if ( ! class_exists( 'ITForm' ) ) {
 			if ( empty( $options['type'] ) )
 				return "<!-- _get_simple_input called without a type option set. -->\n";
 			
-			
 			$scrublist['textarea']['value'] = true;
 			$scrublist['file']['value'] = true;
 			$scrublist['dropdown']['value'] = true;
@@ -695,31 +696,34 @@ if ( ! class_exists( 'ITForm' ) ) {
 				
 				if ( isset( $options['value'] ) && is_array( $options['value'] ) ) {
 					foreach ( (array) $options['value'] as $val => $name ) {
-						$val = ITForm::esc_value_attr( $val );
-						
 						if ( is_array( $name ) ) {
 							$options = $name;
 							
-							$retval .= "<optgroup label='$val'>\n";
+							if ( preg_match( '/^__optgroup_\d+$/', $val ) ) {
+								$retval .= "<optgroup class='it-classes-optgroup-separator'>\n";
+							} else {
+								$retval .= "<optgroup label='" . esc_attr( $val ) . "'>\n";
+							}
 							
 							foreach ( (array) $options as $val => $name ) {
 								$selected = ( isset( $this->_options[$var] ) && ( (string) $this->_options[$var] === (string) $val ) ) ? ' selected="selected"' : '';
-								$retval .= "<option value=\"$val\"$selected>$name</option>\n";
+								$retval .= "<option value=\"" . ITForm::esc_value_attr( $val ) . "\"$selected>$name</option>\n";
 							}
 							
 							$retval .= "</optgroup>\n";
 						}
 						else {
 							$selected = ( isset( $this->_options[$var] ) && ( (string) $this->_options[$var] === (string) $val ) ) ? ' selected="selected"' : '';
-							$retval .= "<option value=\"$val\"$selected>$name</option>\n";
+							$retval .= "<option value=\"" . ITForm::esc_value_attr( $val ) . "\"$selected>$name</option>\n";
 						}
 					}
 				}
 				
 				$retval .= "</select>\n";
 			}
-			else
+			else {
 				$retval = '<input ' . $attributes . '/>';
+			}
 			
 			return $retval;
 		}

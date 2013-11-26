@@ -2,7 +2,7 @@
 
 /*
 Written by Chris Jean for iThemes.com
-Version 1.8.2
+Version 1.8.3
 
 Version History
 	1.5.0 - 2012-07-05 - Chris Jean
@@ -24,6 +24,8 @@ Version History
 		Added "public static" in front of function declarations to satisfy strict standards.
 	1.8.2 - 2013-06-28 - Chris Jean
 		Fixed issue with get_url_from_file when finding URL for a file in a multisite uploads directory on Windows servers.
+	1.8.3 - 2013-11-25 - Chris Jean
+		Simplified code for get_open_tag() while also fixing instances where some characters would not be properly escaped.
 */
 
 
@@ -161,12 +163,7 @@ if ( ! class_exists( 'ITUtility' ) ) {
 			$tag = "<$tag_name";
 			
 			foreach ( (array) $attributes as $attribute => $values ) {
-				$attr_value = '';
-				foreach ( (array) $values as $value ) {
-					if ( ! empty( $attr_value ) )
-						$attr_value .= ' ';
-					$attr_value .= str_replace( '"', '&quot;', $value );
-				}
+				$attr_value = esc_attr( implode( ' ', (array) $values ) );
 				$tag .= " $attribute=\"$attr_value\"";
 			}
 			

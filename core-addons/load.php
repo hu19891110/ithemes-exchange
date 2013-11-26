@@ -162,8 +162,8 @@ function it_exchange_register_core_addons() {
 		),
 		// Basic Coupons
 		'it-basic-coupons' => array(
-			'name'        => __( 'Basic Coupons', 'it-l10n-ithemes-exchange' ),
-			'description' => __( 'This add-on allows you to generate basic coupons that apply to all products in your store.', 'it-l10n-ithemes-exchange' ),
+			'name'        => __( 'Coupons', 'it-l10n-ithemes-exchange' ),
+			'description' => __( 'This add-on allows you to generate coupons that apply to all products in your store.', 'it-l10n-ithemes-exchange' ),
 			'author'      => 'iThemes',
 			'author_url'  => 'http://ithemes.com',
 			'file'        => dirname( __FILE__ ) . '/coupons/basic-coupons/init.php',

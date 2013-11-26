@@ -2,7 +2,7 @@
 
 /*
 Written by Chris Jean for iThemes.com
-Version 2.0.3
+Version 2.0.4
 
 Version History
 	2.0.0 - 2012-07-05 - Chris Jean
@@ -20,6 +20,8 @@ Version History
 		Removed assign by reference.
 	2.0.3 - 2013-06-25 - Chris Jean
 		Changed function declarations to "public static".
+	2.0.4 - 2013-11-25 - Chris Jean
+		Fixed the improper adding of "public static" in front of the Javascript functions.
 */
 
 
@@ -88,7 +90,7 @@ if ( ! class_exists( 'ITError' ) ) {
 		document.getElementById('it-fatal-error-message').style.display = '<?php echo $message_display_style; ?>';
 		document.getElementById('it-fatal-error-message-links').style.display = 'inline';
 		
-		public static function it_fatal_error_toggle_message() {
+		function it_fatal_error_toggle_message() {
 			var container = document.getElementById('it-fatal-error-message');
 			var link = document.getElementById('it-fatal-error-message-toggle-link');
 			
@@ -101,7 +103,7 @@ if ( ! class_exists( 'ITError' ) ) {
 				link.innerHTML = 'hide details';
 			}
 		}
-		public static function it_fatal_error_remove_message() {
+		function it_fatal_error_remove_message() {
 			document.getElementById('it-fatal-error-message-container').style.display = 'none';
 		}
 	</script>

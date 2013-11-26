@@ -341,3 +341,9 @@
 	
 	Updated:
 		it-file-utility.php
+2.4.0 - 2013-11-25 - Chris Jean
+	Enhancement: Improved output of ITUtility::print_r() in WordPress 3.8.
+	Enhancement: ITUtility::print_r() now indicates the number of array elements in collapsed arrays and identifies boolean values explicitly.
+	Enhancement: Added the ability for ITForm::add_drop_down() to show divided lists.
+	Bug Fix: Fixed depth cutoff of ITUtility::backtrace().
+	Bug Fix: Fixed broken javascript in error message output. This bug prevented the error message from being collapsed by default, causing the screen to show the message at all times.
