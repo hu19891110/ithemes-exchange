@@ -28,20 +28,21 @@
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><label for="company-tax-id"><?php _e( 'Company Tax ID', 'it-l10n-ithemes-exchange' ) ?> <span class="tip" title="<?php _e( 'In the U.S., this is your Federal Tax ID Number', 'it-l10n-ithemes-exchange' ); ?>">i</span></label></th>
+				<?php $tax_link = 'http://www.irs.gov/Businesses/Small-Businesses-&amp;-Self-Employed/Employer-ID-Numbers-(EINs)-"'; ?>
+				<th scope="row"><label for="company-tax-id"><?php _e( 'Company Tax ID', 'it-l10n-ithemes-exchange' ) ?> <?php it_exchange_admin_tooltip( sprintf( __( 'In the U.S., this is your Federal %sTax ID Number%s.', 'it-l10n-ithemes-exchange' ), '<a href="' . $tax_link . '" target="_blank">', '</a>' ) ); ?></label></th>
 				<td>
 					<?php $form->add_text_box( 'company-tax-id', array( 'class' => 'normal-text' ) ); ?>
-                    <p class="description"><a href="http://www.irs.gov/Businesses/Small-Businesses-&amp;-Self-Employed/Employer-ID-Numbers-(EINs)-" target="_blank"><?php _e( 'Click here for more info about obtaining a Tax ID in the US', 'it-l10n-ithemes-exchange' ); ?></a></p>
+					<p class="description"><a href="http://www.irs.gov/Businesses/Small-Businesses-&amp;-Self-Employed/Employer-ID-Numbers-(EINs)-" target="_blank"><?php _e( 'Click here for more info about obtaining a Tax ID in the US', 'it-l10n-ithemes-exchange' ); ?></a></p>
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><label for="company-email"><?php _e( 'Company Email', 'it-l10n-ithemes-exchange' ) ?> <span class="tip" title="<?php _e( 'Where do you want customer inquiries to go?', 'it-l10n-ithemes-exchange' ); ?>">i</span></label></th>
+				<th scope="row"><label for="company-email"><?php _e( 'Company Email', 'it-l10n-ithemes-exchange' ) ?> <?php it_exchange_admin_tooltip( __( 'Where do you want customer inquiries to go?', 'it-l10n-ithemes-exchange' ) ); ?></label></th>
 				<td>
 					<?php $form->add_text_box( 'company-email', array( 'class' => 'normal-text' ) ); ?>
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><label for="company-phone"><?php _e( 'Company Phone', 'it-l10n-ithemes-exchange' ) ?> <span class="tip" title="<?php _e( 'This is your main customer service line.', 'it-l10n-ithemes-exchange' ); ?>">i</span></label></th>
+				<th scope="row"><label for="company-phone"><?php _e( 'Company Phone', 'it-l10n-ithemes-exchange' ) ?> <?php it_exchange_admin_tooltip( __( 'This is your main customer service line.', 'it-l10n-ithemes-exchange' ) ); ?></label></th>
 				<td>
 					<?php $form->add_text_box( 'company-phone', array( 'class' => 'normal-text' ) ); ?>
 				</td>
@@ -53,13 +54,13 @@
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><label for="company-base-country"><?php _e( 'Base Country', 'it-l10n-ithemes-exchange' ) ?> <span class="tip" title="<?php esc_attr_e( __( 'This is the country where your business is located', 'it-l10n-ithemes-exchange' ) ); ?>">i</span></label></th>
+				<th scope="row"><label for="company-base-country"><?php _e( 'Base Country', 'it-l10n-ithemes-exchange' ) ?> <?php it_exchange_admin_tooltip( __( 'This is the country where your business is located', 'it-l10n-ithemes-exchange' ) ); ?></label></th>
 				<td>
 					<?php $form->add_drop_down( 'company-base-country', it_exchange_get_data_set( 'countries' ) ); ?>
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><label for="company-base-state"><?php _e( 'Base State / Province', 'it-l10n-ithemes-exchange' ) ?> <span class="tip" title="<?php esc_attr_e( __( 'This is the state / province where your business is located', 'it-l10n-ithemes-exchange' ) ); ?>">i</span></label></th>
+				<th scope="row"><label for="company-base-state"><?php _e( 'Base State / Province', 'it-l10n-ithemes-exchange' ) ?> <?php it_exchange_admin_tooltip( __( 'This is the state / province where your business is located', 'it-l10n-ithemes-exchange' ) ); ?></label></th>
 				<td class="company-base-state-field-td">
 					<?php
 					$country = $form->get_option( 'company-base-country' );
@@ -119,7 +120,7 @@
                 	<label for="site-registration-it"><?php _e( 'Use Exchange Registration Only', 'it-l10n-ithemes-exchange' ) ?></label>
                     <br />
 					<?php $form->add_radio( 'site-registration', array( 'value' => 'wp' ) ); ?>
-                	<label for="site-registration-wp"><?php _e( 'Use WordPress Registration Setting', 'it-l10n-ithemes-exchange' ) ?></label><span class="tip" title="<?php esc_attr_e( __( 'In order to use this setting, you will first need to check the "Anyone can register" checkbox from the WordPress General Settings page to allow site membership.', 'it-l10n-ithemes-exchange' ) ); ?>">i</span>
+                	<label for="site-registration-wp"><?php _e( 'Use WordPress Registration Setting', 'it-l10n-ithemes-exchange' ) ?></label><?php it_exchange_admin_tooltip( __( 'In order to use this setting, you will first need to check the "Anyone can register" checkbox from the WordPress General Settings page to allow site membership.', 'it-l10n-ithemes-exchange' ) ); ?>
 				</td>
 			</tr>
 			<tr valign="top">
@@ -165,7 +166,7 @@
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><label for="product-gallery-zoom"><?php _e( 'Enable Zoom', 'it-l10n-ithemes-exchange' ) ?><span class="tip" title="<?php _e( 'Zoom will only work properly when uploading large images.', 'it-l10n-ithemes-exchange' ); ?>">i</span></label></th>
+				<th scope="row"><label for="product-gallery-zoom"><?php _e( 'Enable Zoom', 'it-l10n-ithemes-exchange' ) ?><?php it_exchange_admin_tooltip( __( 'Zoom will only work properly when uploading large images.', 'it-l10n-ithemes-exchange' ) ); ?></label></th>
 				<td>
 					<?php $form->add_yes_no_drop_down( 'enable-gallery-zoom' ); ?>
 					<div class="product-gallery-zoom-actions <?php echo ( $form->_options['enable-gallery-zoom'] != 1 ) ? 'hidden' : ''; ?>">

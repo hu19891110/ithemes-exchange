@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/ithemes-exchange\n"
-"POT-Creation-Date: 2013-12-02 11:13-0600\n"
+"POT-Creation-Date: 2013-12-09 08:08-0600\n"
 "PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chris Jean <support@ithemes.com>\n"
 "Language: \n"
@@ -2573,34 +2573,34 @@ msgstr ""
 msgid "Free"
 msgstr ""
 
-#: api/theme/product.php:777 api/theme/product.php:901
+#: api/theme/product.php:776 api/theme/product.php:900
 #: lib/admin/views/admin-get-more-addons.php:66
 msgid "Buy Now"
 msgstr ""
 
-#: api/theme/product.php:784 api/theme/product.php:965
+#: api/theme/product.php:783 api/theme/product.php:964
 msgid "Add to Cart"
+msgstr ""
+
+#: api/theme/product.php:787 api/theme/product.php:903
+#: api/theme/product.php:967
+msgid "Out of stock."
 msgstr ""
 
 #: api/theme/product.php:788 api/theme/product.php:904
 #: api/theme/product.php:968
-msgid "Out of stock."
-msgstr ""
-
-#: api/theme/product.php:789 api/theme/product.php:905
-#: api/theme/product.php:969
 msgid "Product not available right now."
 msgstr ""
 
-#: api/theme/product.php:808
+#: api/theme/product.php:807
 msgid "Product is currently out of stock."
 msgstr ""
 
-#: api/theme/product.php:811
+#: api/theme/product.php:810
 msgid "Product is currently not available."
 msgstr ""
 
-#: api/theme/product.php:971
+#: api/theme/product.php:970
 msgid "Max Quantity Reached"
 msgstr ""
 
@@ -2663,7 +2663,7 @@ msgstr ""
 msgid "Status: <span class=\"%s\">%s</span>"
 msgstr ""
 
-#: api/theme/transaction.php:600 lib/admin/views/admin-user-products.php:88
+#: api/theme/transaction.php:600 lib/admin/views/admin-user-products.php:89
 msgid "Unlimited Downloads"
 msgstr ""
 
@@ -2730,7 +2730,7 @@ msgid "No Recent Sales"
 msgstr ""
 
 #: core-addons/admin/basic-reporting/init.php:19
-#: lib/pages/class.nav-menus.php:33
+#: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
 msgid "iThemes Exchange"
 msgstr ""
 
@@ -2815,7 +2815,7 @@ msgid "Check out as a guest"
 msgstr ""
 
 #: core-addons/admin/guest-checkout/lib/templates/super-widget-guest-checkout/elements/login.php:20
-#: lib/admin/views/admin-settings.php:131
+#: lib/admin/views/admin-settings.php:132
 #: lib/deprecated/templates/content-registration.php:49
 #: lib/deprecated/templates/super-widget-registration.php:44
 #: lib/functions/functions.php:850
@@ -3431,7 +3431,7 @@ msgstr ""
 #: lib/admin/class-settings-form.php:41
 #: lib/admin/views/admin-email-settings.php:160
 #: lib/admin/views/admin-page-settings.php:128
-#: lib/admin/views/admin-settings.php:219
+#: lib/admin/views/admin-settings.php:220
 msgid "Save Changes"
 msgstr ""
 
@@ -3692,14 +3692,14 @@ msgstr ""
 #: core-addons/transaction-methods/offline-payments/init.php:584
 #: core-addons/transaction-methods/paypal-standard/init.php:830
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:876
-#: core-addons/transaction-methods/zero-sum-checkout/init.php:198
+#: core-addons/transaction-methods/zero-sum-checkout/init.php:195
 msgid "Cancel Recurring Payment"
 msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/init.php:589
 #: core-addons/transaction-methods/paypal-standard/init.php:817
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:863
-#: core-addons/transaction-methods/zero-sum-checkout/init.php:203
+#: core-addons/transaction-methods/zero-sum-checkout/init.php:200
 msgid "Recurring payment has been deactivated"
 msgstr ""
 
@@ -4148,7 +4148,7 @@ msgstr ""
 msgid "Error: Add-on not disabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:996 lib/admin/views/admin-settings.php:71
+#: lib/admin/class.admin.php:996 lib/admin/views/admin-settings.php:72
 #, php-format
 msgid ""
 "Please use the 2-3 character %sISO abbreviation%s for country subdivisions"
@@ -4213,56 +4213,56 @@ msgstr ""
 msgid "Page settings cannot be left blank."
 msgstr ""
 
-#: lib/admin/class.admin.php:1469
+#: lib/admin/class.admin.php:1471
 msgid "Select Images"
 msgstr ""
 
-#: lib/admin/class.admin.php:1470
+#: lib/admin/class.admin.php:1472
 msgid "You must upload an image larger than 150x150."
 msgstr ""
 
-#: lib/admin/class.admin.php:1471
+#: lib/admin/class.admin.php:1473
 msgid "Edit Image"
 msgstr ""
 
-#: lib/admin/class.admin.php:1472
+#: lib/admin/class.admin.php:1474
 msgid "Upload Source"
 msgstr ""
 
-#: lib/admin/class.admin.php:1473
+#: lib/admin/class.admin.php:1475
 msgid "Insert"
 msgstr ""
 
-#: lib/admin/class.admin.php:1474
+#: lib/admin/class.admin.php:1476
 msgid "Advanced"
 msgstr ""
 
-#: lib/admin/class.admin.php:1475
+#: lib/admin/class.admin.php:1477
 msgid ""
 "We want to keep things simple for you, so we put the kitchen sink here. "
 "Click this button to add more info about your product."
 msgstr ""
 
-#: lib/admin/class.admin.php:1489
+#: lib/admin/class.admin.php:1491
 msgid ""
 "You have checked the option to \"Reset ALL data\". Are you should you want "
 "to delete all Exchange products, transactions, and settings?"
 msgstr ""
 
-#: lib/admin/class.admin.php:1496
+#: lib/admin/class.admin.php:1498
 msgid ""
 "Please make sure all WordPress page types have a WordPress page selected."
 msgstr ""
 
-#: lib/admin/class.admin.php:1724
+#: lib/admin/class.admin.php:1726
 msgid "Main Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1729
+#: lib/admin/class.admin.php:1731
 msgid "Side Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1799
+#: lib/admin/class.admin.php:1801
 msgid "Featured Image"
 msgstr ""
 
@@ -4375,7 +4375,7 @@ msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:71
 #: lib/admin/views/admin-email-settings.php:135
-#: lib/admin/views/admin-settings.php:203
+#: lib/admin/views/admin-settings.php:204
 #, php-format
 msgid "You call these shortcode functions like this: %s"
 msgstr ""
@@ -4431,7 +4431,7 @@ msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:83
 #: lib/admin/views/admin-email-settings.php:147
-#: lib/admin/views/admin-settings.php:210
+#: lib/admin/views/admin-settings.php:211
 msgid "Your site name"
 msgstr ""
 
@@ -4686,202 +4686,203 @@ msgstr ""
 msgid "The name used in customer receipts."
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:31
+#: lib/admin/views/admin-settings.php:32
 msgid "Company Tax ID"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:31
-msgid "In the U.S., this is your Federal Tax ID Number"
+#: lib/admin/views/admin-settings.php:32
+#, php-format
+msgid "In the U.S., this is your Federal %sTax ID Number%s."
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:34
+#: lib/admin/views/admin-settings.php:35
 msgid "Click here for more info about obtaining a Tax ID in the US"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:38
+#: lib/admin/views/admin-settings.php:39
 msgid "Company Email"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:38
+#: lib/admin/views/admin-settings.php:39
 msgid "Where do you want customer inquiries to go?"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:44
+#: lib/admin/views/admin-settings.php:45
 msgid "Company Phone"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:44
+#: lib/admin/views/admin-settings.php:45
 msgid "This is your main customer service line."
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:50
+#: lib/admin/views/admin-settings.php:51
 msgid "Company Address"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:56
+#: lib/admin/views/admin-settings.php:57
 msgid "Base Country"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:56
+#: lib/admin/views/admin-settings.php:57
 msgid "This is the country where your business is located"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:62
+#: lib/admin/views/admin-settings.php:63
 msgid "Base State / Province"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:62
+#: lib/admin/views/admin-settings.php:63
 msgid "This is the state / province where your business is located"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:78
+#: lib/admin/views/admin-settings.php:79
 msgid "Currency Settings"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:82
+#: lib/admin/views/admin-settings.php:83
 msgid "Default Currency"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:88
+#: lib/admin/views/admin-settings.php:89
 msgid "Symbol Position"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:91
+#: lib/admin/views/admin-settings.php:92
 msgid "Before: $10.00"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:91
+#: lib/admin/views/admin-settings.php:92
 msgid "After: 10.00$"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:93
+#: lib/admin/views/admin-settings.php:94
 msgid "Where should the currency symbol be placed in relation to the price?"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:97
+#: lib/admin/views/admin-settings.php:98
 msgid "Thousands Separator"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:100
+#: lib/admin/views/admin-settings.php:101
 msgid ""
 "What character would you like to use to separate thousands when displaying "
 "prices?"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:104
+#: lib/admin/views/admin-settings.php:105
 msgid "Decimals Separator"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:107
+#: lib/admin/views/admin-settings.php:108
 msgid ""
 "What character would you like to use to separate decimals when displaying "
 "prices?"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:112
+#: lib/admin/views/admin-settings.php:113
 msgid "Customer Registration Settings"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:116 lib/functions/functions.php:412
+#: lib/admin/views/admin-settings.php:117 lib/functions/functions.php:412
 msgid "Customer Registration"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:119
+#: lib/admin/views/admin-settings.php:120
 msgid "Use Exchange Registration Only"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:122
+#: lib/admin/views/admin-settings.php:123
 msgid "Use WordPress Registration Setting"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:122
+#: lib/admin/views/admin-settings.php:123
 msgid ""
 "In order to use this setting, you will first need to check the \"Anyone can "
 "register\" checkbox from the WordPress General Settings page to allow site "
 "membership."
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:126
+#: lib/admin/views/admin-settings.php:127
 msgid "Default Checkout Form"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:130 lib/functions/functions.php:409
+#: lib/admin/views/admin-settings.php:131 lib/functions/functions.php:409
 msgid "Registration"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:139
+#: lib/admin/views/admin-settings.php:140
 msgid "Stylesheet Settings"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:143
+#: lib/admin/views/admin-settings.php:144
 msgid "Custom Styles"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:145
+#: lib/admin/views/admin-settings.php:146
 msgid ""
 "If they exist, the following files will be loaded in order after core "
 "Exchange stylesheets:"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:158
+#: lib/admin/views/admin-settings.php:159
 msgid "Product Gallery"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:162
+#: lib/admin/views/admin-settings.php:163
 msgid "Enable Popup"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:168
+#: lib/admin/views/admin-settings.php:169
 msgid "Enable Zoom"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:168
+#: lib/admin/views/admin-settings.php:169
 msgid "Zoom will only work properly when uploading large images."
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:173
+#: lib/admin/views/admin-settings.php:174
 msgid "Click"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:176
+#: lib/admin/views/admin-settings.php:177
 msgid "Hover"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:178
+#: lib/admin/views/admin-settings.php:179
 msgid "Zoom will occur in the popup when popup is enabled."
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:184
+#: lib/admin/views/admin-settings.php:185
 msgid "Customer Messages"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:188
+#: lib/admin/views/admin-settings.php:189
 msgid "Customer Account Page"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:201
+#: lib/admin/views/admin-settings.php:202
 msgid ""
 "Enter your content for the Customer's account page. HTML is accepted. "
 "Available shortcode functions:"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:205
+#: lib/admin/views/admin-settings.php:206
 msgid "The customer's first name"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:206
+#: lib/admin/views/admin-settings.php:207
 msgid "The customer's last name"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:207
+#: lib/admin/views/admin-settings.php:208
 msgid "The customer's username on the site"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:208
+#: lib/admin/views/admin-settings.php:209
 msgid "The customer's email address"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:209
+#: lib/admin/views/admin-settings.php:210
 msgid ""
 "The customer's gravatar image. Use the avatar_size param for square size. "
 "Default is 128"
@@ -4917,27 +4918,23 @@ msgid ""
 "\"details-toggle hide-if-no-js\">&#61;</span>"
 msgstr ""
 
-#: lib/admin/views/admin-user-products.php:71 lib/functions/functions.php:451
+#: lib/admin/views/admin-user-products.php:72 lib/functions/functions.php:451
 #: lib/templates/content-confirmation/elements/product.php:37
 msgid "Downloads"
 msgstr ""
 
-#: lib/admin/views/admin-user-products.php:86
+#: lib/admin/views/admin-user-products.php:87
 #, php-format
 msgid "%s of %s downloads remaining"
 msgstr ""
 
-#: lib/admin/views/admin-user-products.php:92
+#: lib/admin/views/admin-user-products.php:93
 #, php-format
 msgid "Expires %s"
 msgstr ""
 
-#: lib/admin/views/admin-user-products.php:94
+#: lib/admin/views/admin-user-products.php:95
 msgid "Never Expires"
-msgstr ""
-
-#: lib/admin/views/admin-user-profile.php:22
-msgid "This user is an Exchange customer."
 msgstr ""
 
 #: lib/admin/views/admin-user-profile.php:24
@@ -6053,7 +6050,7 @@ msgstr ""
 msgid "Shipping has been disabled for this product."
 msgstr ""
 
-#: lib/product-features/class.title.php:107
+#: lib/product-features/class.title.php:106
 msgid "Product Title"
 msgstr ""
 
@@ -6063,7 +6060,7 @@ msgid ""
 "benefits."
 msgstr ""
 
-#: lib/product-features/class.title.php:108
+#: lib/product-features/class.title.php:110
 msgid "Enter title..."
 msgstr ""
 

@@ -2,19 +2,9 @@
 
 /*
 Written by Chris Jean for iThemes.com
-Version 1.8.3
+Version 1.9.0
 
 Version History
-	1.5.0 - 2012-07-05 - Chris Jean
-		Splintered off the debug-specific functions into the new ITDebug class
-		Legacy functions remain that simply call the new ITDebug functions
-	1.6.0 - 2012-07-26 - Chris Jean
-		Inherited the get_url_from_file and get_file_from_url functions from the
-			ITFileUtility class
-	1.6.1 - 2012-09-26 - Chris Jean
-		Updated get_url_from_file and get_file_from_url to account for the wp-content directory being moved.
-	1.6.2 - 2012-09-28 - Chris Jean
-		Updated get_url_from_file and get_file_from_url to account for specific Windows paths and URL's.
 	1.7.0 - 2013-02-13 - Chris Jean
 		Added get_cached_value function.
 		Updated get_url_from_file and get_file_from_url to use get_cached_value function.
@@ -26,6 +16,8 @@ Version History
 		Fixed issue with get_url_from_file when finding URL for a file in a multisite uploads directory on Windows servers.
 	1.8.3 - 2013-11-25 - Chris Jean
 		Simplified code for get_open_tag() while also fixing instances where some characters would not be properly escaped.
+	1.9.0 - 2013-12-02 - Chris Jean
+		Added the screen_option() function.
 */
 
 
@@ -500,6 +492,13 @@ if ( ! class_exists( 'ITUtility' ) ) {
 				$GLOBALS['it_classes_cached_values'][$key] = call_user_func_array( $function, $args );
 			
 			return $GLOBALS['it_classes_cached_values'][$key];
+		}
+		
+		// WordPress 3.8 deprecates the screen_icon function. Replacing all instances of screen_icon with ITUtility::screen_icon allows for easy backcompat while avoiding the deprecation notices.
+		public static function screen_icon() {
+			if ( version_compare( $GLOBALS['wp_version'], '3.7.10', '<=' ) ) {
+				screen_icon();
+			}
 		}
 		
 		

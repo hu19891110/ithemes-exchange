@@ -19,7 +19,7 @@ $user_object = get_userdata( $user_id );
 <table class="form-table">
 <tbody>
 <tr id="it_exchange_customer_data">
-    <th><?php _e( 'This user is an Exchange customer.', 'it-l10n-ithemes-exchange' ); ?></th>
+    <th><?php _e( 'iThemes Exchange', 'it-l10n-ithemes-exchange' ); ?></th>
     <td>
     <?php echo "<a class='it-exchange-cust-info' href='" . esc_url( add_query_arg( array( 'wp_http_referer' => urlencode( stripslashes_deep( $_SERVER['REQUEST_URI'] ) ), 'it_exchange_customer_data' => 1 ), get_edit_user_link( $user_object->ID ) ) ) . "'>" . __( 'View Customer Data', 'it-l10n-ithemes-exchange' ) . "</a>"; ?>
     </td>

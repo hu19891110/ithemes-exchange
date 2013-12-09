@@ -6,7 +6,7 @@ Version 2.4.0
 */
 
 
-$it_registration_list_version   = '2.4.0';
+$it_registration_list_version   = '2.4.1';
 $it_registration_list_library   = 'classes';
 $it_registration_list_init_file = dirname( __FILE__ ) . '/init.php';
 
