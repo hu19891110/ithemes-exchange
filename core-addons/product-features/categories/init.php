@@ -26,7 +26,7 @@ if ( !function_exists( 'create_it_exchange_categories' ) ) {
 			'edit_item'         => __( 'Edit Product Categories', 'it-l10n-ithemes-exchange' ),
 			'update_item'       => __( 'Update Product Categories', 'it-l10n-ithemes-exchange' ),
 			'add_new_item'      => __( 'Add New Product Categories', 'it-l10n-ithemes-exchange' ),
-			'new_item_name'     => __( 'New Product Category', 'it-l10n-ithemes-exchange' ),
+			'new_item_name'     => '', //leave blank
 		);
 
 		register_taxonomy(

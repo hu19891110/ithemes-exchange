@@ -10,7 +10,7 @@ $flat_rate_cost = empty( $flat_rate_cost['flat-rate-shipping-amount'] ) ? it_exc
 $form->set_option( 'simple-shipping-flat-rate-cost', $flat_rate_cost );
 ?>
 <div class="wrap">
-	<?php screen_icon( 'it-exchange' );  ?>
+	<?php ITUtility::screen_icon( 'it-exchange' );  ?>
 
 	<h2>iThemes Exchange <?php _e( 'Setup', 'it-l10n-ithemes-exchange' ); ?></h2>
 
@@ -23,7 +23,7 @@ $form->set_option( 'simple-shipping-flat-rate-cost', $flat_rate_cost );
 			</div>
 			<div class="fields">
 				<div class="field product-types">
-					<p class="section-lable"><?php _e( 'What are you going to sell?', 'it-l10n-ithemes-exchange' ); ?><span class="tip" title="<?php _e( "You can always add or remove these later on the Add-ons page.", 'it-l10n-ithemes-exchange' ); ?>">i</span></p>
+					<p class="section-label"><?php _e( 'What are you going to sell?', 'it-l10n-ithemes-exchange' ); ?><span class="tip" title="<?php _e( "You can always add or remove these later on the Add-ons page.", 'it-l10n-ithemes-exchange' ); ?>">i</span></p>
 					<ul class="clearfix">
 						<?php
 							$addons = it_exchange_get_addons( array( 'category' => 'product-type', 'show_required' => false ) );
@@ -95,7 +95,7 @@ $form->set_option( 'simple-shipping-flat-rate-cost', $flat_rate_cost );
 				?>
 
 				<div class="field shipping-types <?php esc_attr_e( $show_shipping ); ?>">
-					<p class="section-lable"><?php _e( 'How will you ship your products?', 'it-l10n-ithemes-exchange' ); ?><span class="tip" title="<?php _e( "You can always add or remove these later on the Shipping Settings page.", 'it-l10n-ithemes-exchange' ); ?>">i</span></p>
+					<p class="section-label"><?php _e( 'How will you ship your products?', 'it-l10n-ithemes-exchange' ); ?><span class="tip" title="<?php _e( "You can always add or remove these later on the Shipping Settings page.", 'it-l10n-ithemes-exchange' ); ?>">i</span></p>
 					<ul class="clearfix">
 						<?php
 							$addons = it_exchange_get_addons( array( 'category' => 'shipping', 'show_required' => false ) );
@@ -167,7 +167,7 @@ $form->set_option( 'simple-shipping-flat-rate-cost', $flat_rate_cost );
 				?>
 
 				<div class="field payments">
-					<p class="section-lable"><?php _e( 'How will you accept payments?', 'it-l10n-ithemes-exchange' ); ?><span class="tip" title="<?php _e( "Choose your preferred payment gateway for processing transactions. You can select more than one option but it's not recommended.", 'it-l10n-ithemes-exchange' ); ?>">i</span></p>
+					<p class="section-label"><?php _e( 'How will you accept payments?', 'it-l10n-ithemes-exchange' ); ?><span class="tip" title="<?php _e( "Choose your preferred payment gateway for processing transactions. You can select more than one option but it's not recommended.", 'it-l10n-ithemes-exchange' ); ?>">i</span></p>
 					<ul class="clearfix">
 						<?php
 							$addons = it_exchange_get_addons( array( 'category' => 'transaction-methods', 'show_required' => false ) );
