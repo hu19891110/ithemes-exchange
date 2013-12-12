@@ -120,11 +120,13 @@ class IT_Exchange_Product_Feature_Purchase_Quantity {
 				<input type="checkbox" id="it-exchange-enable-product-quantity" class="it-exchange-checkbox-enable" name="it-exchange-enable-product-quantity" <?php echo checked( 'yes', $product_feature_enable_value ); ?> value="yes" />
 				&nbsp;<label for="it-exchange-enable-product-quantity"><?php _e( 'Check this to allow customers to modify the quantity they want to purchase.', 'it-l10n-ithemes-exchange' ); ?></label>
 			</p>
-			<p class="it-exchange-enable-product-quantity<?php echo ( $product_feature_enable_value == 'no' ) ? ' hide-if-js' : '' ?>">
-				<?php _e( 'What is the maximum quantity a customer can set when purchasing this product?', 'it-l10n-ithemes-exchange' ); ?>
-			</p>
-            <input type="text" name="it-exchange-product-quantity" value="<?php esc_attr_e( $product_feature_value ); ?>" />
-            <p class="description"><?php _e( 'Leave blank for unlimited.', 'it-l10n-ithemes-exchange' ); ?></p>
+			<div class="it-exchange-enable-product-quantity<?php echo ( $product_feature_enable_value == 'no' ) ? ' hide-if-js' : '' ?>">
+				<p>
+					<?php _e( 'What is the maximum quantity a customer can set when purchasing this product?', 'it-l10n-ithemes-exchange' ); ?>
+				</p>
+	            <input class="" type="text" name="it-exchange-product-quantity" value="<?php esc_attr_e( $product_feature_value ); ?>" />
+                <p class="description"><?php _e( 'Leave blank for unlimited.', 'it-l10n-ithemes-exchange' ); ?></p>
+			</div>
 		<?php
 	}
 

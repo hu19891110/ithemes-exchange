@@ -7,7 +7,7 @@
 */
 ?>
 <div class="wrap">
-	<?php screen_icon( 'it-exchange' ); ?>
+	<?php ITUtility::screen_icon( 'it-exchange' ); ?>
 	<h2><?php _e( 'Offline Payments Settings', 'it-l10n-ithemes-exchange' ); ?></h2>
 
 	<?php do_action( 'it_exchange_offline-payments_settings_page_top' ); ?>

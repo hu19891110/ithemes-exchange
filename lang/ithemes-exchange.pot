@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/ithemes-exchange\n"
-"POT-Creation-Date: 2013-12-09 08:08-0600\n"
+"POT-Creation-Date: 2013-12-12 12:58-0600\n"
 "PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chris Jean <support@ithemes.com>\n"
 "Language: \n"
@@ -3321,19 +3321,19 @@ msgstr ""
 msgid "Select Product Category"
 msgstr ""
 
-#: core-addons/product-features/categories/class.category-widget.php:90
+#: core-addons/product-features/categories/class.category-widget.php:92
 msgid "Title:"
 msgstr ""
 
-#: core-addons/product-features/categories/class.category-widget.php:94
+#: core-addons/product-features/categories/class.category-widget.php:96
 msgid "Display as dropdown"
 msgstr ""
 
-#: core-addons/product-features/categories/class.category-widget.php:97
+#: core-addons/product-features/categories/class.category-widget.php:99
 msgid "Show product counts"
 msgstr ""
 
-#: core-addons/product-features/categories/class.category-widget.php:100
+#: core-addons/product-features/categories/class.category-widget.php:102
 msgid "Show hierarchy"
 msgstr ""
 
@@ -3363,10 +3363,6 @@ msgstr ""
 
 #: core-addons/product-features/categories/init.php:28
 msgid "Add New Product Categories"
-msgstr ""
-
-#: core-addons/product-features/categories/init.php:29
-msgid "New Product Category"
 msgstr ""
 
 #: core-addons/product-features/duplicate-products/init.php:38
@@ -4254,15 +4250,15 @@ msgid ""
 "Please make sure all WordPress page types have a WordPress page selected."
 msgstr ""
 
-#: lib/admin/class.admin.php:1726
+#: lib/admin/class.admin.php:1729
 msgid "Main Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1731
+#: lib/admin/class.admin.php:1734
 msgid "Side Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1801
+#: lib/admin/class.admin.php:1804
 msgid "Featured Image"
 msgstr ""
 
@@ -5792,18 +5788,18 @@ msgstr ""
 msgid "Price"
 msgstr ""
 
-#: lib/product-features/class.description.php:109
+#: lib/product-features/class.description.php:108
 msgid "Product Description"
 msgstr ""
 
-#: lib/product-features/class.description.php:110
+#: lib/product-features/class.description.php:109
 msgid ""
 "This is a quick, descriptive summary of what your product does and is "
 "usually 3-5 sentences long. To add additional info, use the Advanced button "
 "below to make an extended description."
 msgstr ""
 
-#: lib/product-features/class.description.php:111
+#: lib/product-features/class.description.php:112
 msgid "Enter description..."
 msgstr ""
 
@@ -5965,7 +5961,7 @@ msgid "Current Inventory"
 msgstr ""
 
 #: lib/product-features/class.inventory.php:145
-#: lib/product-features/class.purchase-quantity.php:127
+#: lib/product-features/class.purchase-quantity.php:128
 msgid "Leave blank for unlimited."
 msgstr ""
 
@@ -6024,7 +6020,7 @@ msgid ""
 "Check this to allow customers to modify the quantity they want to purchase."
 msgstr ""
 
-#: lib/product-features/class.purchase-quantity.php:124
+#: lib/product-features/class.purchase-quantity.php:125
 msgid ""
 "What is the maximum quantity a customer can set when purchasing this product?"
 msgstr ""

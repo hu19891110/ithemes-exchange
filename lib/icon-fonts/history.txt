@@ -1,4 +1,2 @@
-0.0.1 - 2013-09-16 - Justin Kopepasah
-	Initial Commit Version
-	Added Exchange Icon
-	Removed check for MP6 and added check for global WP verion 3.8 or greater.
+1.0.0 - 2013-12-11 - Justin Kopepasah
+	Initial Release Version
