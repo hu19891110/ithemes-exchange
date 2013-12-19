@@ -330,7 +330,7 @@ function it_exchange_serve_product_download( $hash_data ) {
 				die();
 
 			}
-			die( __( 'Download Error: Invalid response', 'it-l10n-ithemes-exchange' ) );
+			die( __( 'Download Error: Invalid response: ', 'it-l10n-ithemes-exchange' ) . wp_remote_retrieve_response_code( $response ) );
 		} else {
 			die( __( 'Download Error:', 'it-l10n-ithemes-exchange' ) . ' ' . $response->get_error_message() );
 		}
