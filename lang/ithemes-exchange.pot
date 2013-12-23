@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/ithemes-exchange\n"
-"POT-Creation-Date: 2013-12-19 08:50-0600\n"
+"POT-Creation-Date: 2013-12-23 08:45-0600\n"
 "PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chris Jean <support@ithemes.com>\n"
 "Language: \n"
@@ -2415,7 +2415,7 @@ msgstr ""
 
 #: api/theme/billing.php:415 api/theme/customer.php:265
 #: api/theme/registration.php:221 api/theme/shipping.php:360
-#: core-addons/load.php:302
+#: core-addons/load.php:314
 msgid "Email"
 msgstr ""
 
@@ -2510,7 +2510,7 @@ msgstr ""
 
 #: api/theme/download.php:127 api/theme/product.php:342
 #: core-addons/coupons/basic-coupons/admin.php:429
-#: lib/email-notifications/class.email-notifications.php:333
+#: lib/email-notifications/class.email-notifications.php:353
 #: lib/product-features/class.downloads.php:317
 msgid "Unlimited"
 msgstr ""
@@ -2848,7 +2848,7 @@ msgstr ""
 msgid "Customer Checkout"
 msgstr ""
 
-#: core-addons/admin/product-type-metabox/init.php:33 core-addons/load.php:256
+#: core-addons/admin/product-type-metabox/init.php:33 core-addons/load.php:268
 #: lib/products/class.products-post-type.php:590
 msgid "Product Type"
 msgstr ""
@@ -2901,7 +2901,7 @@ msgstr ""
 msgid "Edit Coupon"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:158 core-addons/load.php:165
+#: core-addons/coupons/basic-coupons/admin.php:158 core-addons/load.php:177
 #: lib/coupons/class.coupons-post-type.php:30
 #: lib/deprecated/templates/super-widget-checkout.php:74
 #: lib/templates/super-widget-checkout/elements/single-item-update-coupons.php:20
@@ -3014,7 +3014,7 @@ msgid "Available Coupons"
 msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:378
-#: lib/email-notifications/class.email-notifications.php:427
+#: lib/email-notifications/class.email-notifications.php:447
 #: lib/functions/functions.php:369
 #: lib/products/class.products-post-type.php:114
 msgid "Product"
@@ -3147,6 +3147,14 @@ msgid ""
 msgstr ""
 
 #: core-addons/load.php:143
+msgid "WordPress Page Templates"
+msgstr ""
+
+#: core-addons/load.php:144
+msgid "Enable the WordPress Page Templates meta box for products"
+msgstr ""
+
+#: core-addons/load.php:155
 #: lib/templates/content-checkout/elements/purchase-requirements/billing-address.php:24
 #: lib/templates/content-confirmation/elements/billing-address.php:21
 #: lib/templates/super-widget-billing-address.php:20
@@ -3154,27 +3162,27 @@ msgstr ""
 msgid "Billing Address"
 msgstr ""
 
-#: core-addons/load.php:144
+#: core-addons/load.php:156
 msgid ""
 "Enabling this add-on allows you to collect a billing address at checkout. "
 "There are no settings for this add-on."
 msgstr ""
 
-#: core-addons/load.php:153
+#: core-addons/load.php:165
 msgid "Basic Reporting Dashboard Widget"
 msgstr ""
 
-#: core-addons/load.php:154
+#: core-addons/load.php:166
 msgid "Adds a widget to the Admin dashboard to give basic sales statistics."
 msgstr ""
 
-#: core-addons/load.php:166
+#: core-addons/load.php:178
 msgid ""
 "This add-on allows you to generate coupons that apply to all products in "
 "your store."
 msgstr ""
 
-#: core-addons/load.php:177
+#: core-addons/load.php:189
 #: core-addons/product-features/categories/class.category-widget.php:18
 #: core-addons/product-features/categories/class.category-widget.php:24
 #: core-addons/product-features/categories/init.php:20
@@ -3182,134 +3190,134 @@ msgstr ""
 msgid "Product Categories"
 msgstr ""
 
-#: core-addons/load.php:178
+#: core-addons/load.php:190
 msgid "This adds a category taxonomy for all products in iThemes Exchange."
 msgstr ""
 
-#: core-addons/load.php:185
+#: core-addons/load.php:197
 #: core-addons/product-features/categories/init.php:21
 msgid "Product Category"
 msgstr ""
 
-#: core-addons/load.php:190 core-addons/product-features/tags/init.php:20
+#: core-addons/load.php:202 core-addons/product-features/tags/init.php:20
 #: core-addons/product-features/tags/init.php:60
 msgid "Product Tags"
 msgstr ""
 
-#: core-addons/load.php:191
+#: core-addons/load.php:203
 msgid "This adds a tag taxonomy for all products in iThemes Exchange."
 msgstr ""
 
-#: core-addons/load.php:198 core-addons/product-features/tags/init.php:21
+#: core-addons/load.php:210 core-addons/product-features/tags/init.php:21
 msgid "Product Tag"
 msgstr ""
 
-#: core-addons/load.php:203 core-addons/taxes/taxes-simple/init.php:42
+#: core-addons/load.php:215 core-addons/taxes/taxes-simple/init.php:42
 msgid "Simple Taxes"
 msgstr ""
 
-#: core-addons/load.php:204
+#: core-addons/load.php:216
 msgid "This gives the admin ability to apply a default tax rate to all sales."
 msgstr ""
 
-#: core-addons/load.php:214
+#: core-addons/load.php:226
 msgid "Duplicate Products"
 msgstr ""
 
-#: core-addons/load.php:215
+#: core-addons/load.php:227
 msgid "This gives the admin the ability to duplicate an existing product."
 msgstr ""
 
-#: core-addons/load.php:222
+#: core-addons/load.php:234
 msgid "Duplicate"
 msgstr ""
 
-#: core-addons/load.php:226
+#: core-addons/load.php:238
 #: core-addons/shipping/simple-shipping/lib/provider.php:11
 msgid "Simple Shipping"
 msgstr ""
 
-#: core-addons/load.php:227
+#: core-addons/load.php:239
 msgid "Flat rate and free shipping for your physcial products"
 msgstr ""
 
-#: core-addons/load.php:257
+#: core-addons/load.php:269
 msgid ""
 "Add-ons responsible for the differing types of products available in iThemes "
 "Exchange."
 msgstr ""
 
-#: core-addons/load.php:262
+#: core-addons/load.php:274
 msgid "Transaction Methods"
 msgstr ""
 
-#: core-addons/load.php:263
+#: core-addons/load.php:275
 msgid "Add-ons that create transactions. eg: Stripe, PayPal."
 msgstr ""
 
-#: core-addons/load.php:275
+#: core-addons/load.php:287
 #: core-addons/transaction-methods/offline-payments/init.php:25
 msgctxt "Transaction Status"
 msgid "Pending"
 msgstr ""
 
-#: core-addons/load.php:276
+#: core-addons/load.php:288
 msgctxt "Transaction Status"
 msgid "Authorized"
 msgstr ""
 
-#: core-addons/load.php:277
+#: core-addons/load.php:289
 #: core-addons/transaction-methods/offline-payments/init.php:26
 msgctxt "Transaction Status"
 msgid "Paid"
 msgstr ""
 
-#: core-addons/load.php:278
+#: core-addons/load.php:290
 #: core-addons/transaction-methods/offline-payments/init.php:27
 msgctxt "Transaction Status"
 msgid "Refunded"
 msgstr ""
 
-#: core-addons/load.php:279
+#: core-addons/load.php:291
 #: core-addons/transaction-methods/offline-payments/init.php:28
 msgctxt "Transaction Status"
 msgid "Voided"
 msgstr ""
 
-#: core-addons/load.php:287
+#: core-addons/load.php:299
 msgid "Admin Add-ons"
 msgstr ""
 
-#: core-addons/load.php:288
+#: core-addons/load.php:300
 msgid ""
 "Add-ons that create general purpose admin functionality. eg: Reports, Export."
 msgstr ""
 
-#: core-addons/load.php:292
+#: core-addons/load.php:304
 msgid "Coupon Add-ons"
 msgstr ""
 
-#: core-addons/load.php:293
+#: core-addons/load.php:305
 msgid "Add-ons that create coupons for your customers."
 msgstr ""
 
-#: core-addons/load.php:297
+#: core-addons/load.php:309
 msgid "Taxonomy Add-ons"
 msgstr ""
 
-#: core-addons/load.php:298
+#: core-addons/load.php:310
 msgid "Add-ons that create new taxonomies specifically for Exchange products."
 msgstr ""
 
-#: core-addons/load.php:303
+#: core-addons/load.php:315
 msgid "Add-ons that help store owners manage their email."
 msgstr ""
 
-#: core-addons/load.php:307
+#: core-addons/load.php:319
 msgid "Other"
 msgstr ""
 
-#: core-addons/load.php:308
+#: core-addons/load.php:320
 msgid "Add-ons that don't fit in any other add-on category."
 msgstr ""
 
@@ -3371,6 +3379,38 @@ msgstr ""
 
 #: core-addons/product-features/duplicate-products/init.php:87
 msgid "copy"
+msgstr ""
+
+#: core-addons/product-features/page-templates/init.php:101
+#: core-addons/product-features/page-templates/init.php:116
+msgid "Page Template"
+msgstr ""
+
+#: core-addons/product-features/page-templates/init.php:114
+msgid "Template"
+msgstr ""
+
+#: core-addons/product-features/page-templates/init.php:115
+msgid ""
+"This option will allow you to override the default WordPress template used "
+"for this product."
+msgstr ""
+
+#: core-addons/product-features/page-templates/init.php:115
+msgid ""
+"Exchange uses page.php as it's default when no custom Exchange Templates are "
+"available. Page templates for Exchange products need to include a call to "
+"the_content() or use Exchange Theme API functions to display correctly."
+msgstr ""
+
+#: core-addons/product-features/page-templates/init.php:118
+msgid " Default Template"
+msgstr ""
+
+#: core-addons/product-features/page-templates/init.php:120
+msgid ""
+"These options are generated from alternative page templates included with "
+"your current theme."
 msgstr ""
 
 #: core-addons/product-features/tags/init.php:22
@@ -4946,7 +4986,7 @@ msgstr ""
 #: lib/admin/views/admin-user-transactions.php:18
 #: lib/deprecated/templates/content-cart.php:89
 #: lib/deprecated/templates/content-checkout.php:88
-#: lib/email-notifications/class.email-notifications.php:457
+#: lib/email-notifications/class.email-notifications.php:477
 #: lib/templates/content-cart/elements/totals-total.php:22
 #: lib/templates/content-checkout/elements/totals-total.php:22
 #: lib/templates/content-confirmation/elements/totals-total.php:22
@@ -5392,7 +5432,7 @@ msgid "No transactions found."
 msgstr ""
 
 #: lib/deprecated/templates/content-downloads.php:41
-#: lib/email-notifications/class.email-notifications.php:314
+#: lib/email-notifications/class.email-notifications.php:334
 #: lib/templates/content-downloads/loops/download-data.php:19
 msgid ""
 "The status for this transaction does not grant access to downloadable files. "
@@ -5459,7 +5499,7 @@ msgid "No payment add-ons enabled."
 msgstr ""
 
 #: lib/deprecated/templates/super-widget-checkout.php:80
-#: lib/email-notifications/class.email-notifications.php:428
+#: lib/email-notifications/class.email-notifications.php:448
 #: lib/templates/super-widget-checkout/elements/single-item-update-quantity.php:20
 msgid "Quantity"
 msgstr ""
@@ -5480,12 +5520,12 @@ msgstr ""
 msgid "Confirmation email resent"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:299
-#: lib/email-notifications/class.email-notifications.php:316
+#: lib/email-notifications/class.email-notifications.php:319
+#: lib/email-notifications/class.email-notifications.php:336
 msgid "Available Downloads"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:323
+#: lib/email-notifications/class.email-notifications.php:343
 #, php-format
 msgid ""
 "You have purchased %d unique download link(s) for each file available with "
@@ -5493,15 +5533,15 @@ msgid ""
 "details on your %sdownloads%s page."
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:337
+#: lib/email-notifications/class.email-notifications.php:357
 msgid "Download link"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:415
+#: lib/email-notifications/class.email-notifications.php:435
 msgid "Important Information"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:429
+#: lib/email-notifications/class.email-notifications.php:449
 msgid "Total Price"
 msgstr ""
 
@@ -5929,15 +5969,6 @@ msgstr ""
 
 #: lib/product-features/class.downloads.php:654
 msgid "Download expiration reached. Unable to download this file."
-msgstr ""
-
-#: lib/product-features/class.duplicate-products.php:36
-msgid "Duplicates product as a new product to edit."
-msgstr ""
-
-#: lib/product-features/class.duplicate-products.php:94
-#: lib/product-features/class.duplicate-products.php:111
-msgid "Duplicate Product"
 msgstr ""
 
 #: lib/product-features/class.inventory.php:44
