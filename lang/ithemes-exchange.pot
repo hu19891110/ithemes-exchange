@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/ithemes-exchange\n"
-"POT-Creation-Date: 2013-12-23 08:45-0600\n"
+"POT-Creation-Date: 2013-12-30 07:57-0600\n"
 "PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chris Jean <support@ithemes.com>\n"
 "Language: \n"
@@ -2433,8 +2433,8 @@ msgstr ""
 #: core-addons/admin/guest-checkout/lib/template-functions.php:210
 #: core-addons/coupons/basic-coupons/admin.php:330
 #: lib/deprecated/templates/super-widget-cart.php:76
-#: lib/products/class.products-post-type.php:336
-#: lib/products/class.products-post-type.php:365
+#: lib/products/class.products-post-type.php:335
+#: lib/products/class.products-post-type.php:364
 #: lib/purchase-dialog/purchase-dialog.php:82
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/login/cancel.php:20
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/registration/cancel.php:20
@@ -2573,22 +2573,22 @@ msgstr ""
 msgid "Free"
 msgstr ""
 
-#: api/theme/product.php:776 api/theme/product.php:900
+#: api/theme/product.php:776 api/theme/product.php:904
 #: lib/admin/views/admin-get-more-addons.php:66
 msgid "Buy Now"
 msgstr ""
 
-#: api/theme/product.php:783 api/theme/product.php:964
+#: api/theme/product.php:783 api/theme/product.php:968
 msgid "Add to Cart"
 msgstr ""
 
-#: api/theme/product.php:787 api/theme/product.php:903
-#: api/theme/product.php:967
+#: api/theme/product.php:787 api/theme/product.php:907
+#: api/theme/product.php:971
 msgid "Out of stock."
 msgstr ""
 
-#: api/theme/product.php:788 api/theme/product.php:904
-#: api/theme/product.php:968
+#: api/theme/product.php:788 api/theme/product.php:908
+#: api/theme/product.php:972
 msgid "Product not available right now."
 msgstr ""
 
@@ -2600,7 +2600,7 @@ msgstr ""
 msgid "Product is currently not available."
 msgstr ""
 
-#: api/theme/product.php:970
+#: api/theme/product.php:974
 msgid "Max Quantity Reached"
 msgstr ""
 
@@ -2849,7 +2849,7 @@ msgid "Customer Checkout"
 msgstr ""
 
 #: core-addons/admin/product-type-metabox/init.php:33 core-addons/load.php:268
-#: lib/products/class.products-post-type.php:590
+#: lib/products/class.products-post-type.php:589
 msgid "Product Type"
 msgstr ""
 
@@ -2994,14 +2994,14 @@ msgid "Select a product to use with this coupon."
 msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:331
-#: lib/products/class.products-post-type.php:228
+#: lib/products/class.products-post-type.php:227
 msgid "Save"
 msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:372
 #: core-addons/transaction-methods/offline-payments/init.php:396
 #: lib/product-features/class.title.php:96
-#: lib/products/class.products-post-type.php:583
+#: lib/products/class.products-post-type.php:582
 msgid "Title"
 msgstr ""
 
@@ -3016,7 +3016,7 @@ msgstr ""
 #: core-addons/coupons/basic-coupons/admin.php:378
 #: lib/email-notifications/class.email-notifications.php:447
 #: lib/functions/functions.php:369
-#: lib/products/class.products-post-type.php:114
+#: lib/products/class.products-post-type.php:113
 msgid "Product"
 msgstr ""
 
@@ -4076,7 +4076,7 @@ msgid "Customer Data"
 msgstr ""
 
 #: lib/admin/class.admin.php:274 lib/admin/views/admin-user-products.php:10
-#: lib/products/class.products-post-type.php:113
+#: lib/products/class.products-post-type.php:112
 #: lib/transactions/class.transactions-post-type.php:486
 msgid "Products"
 msgstr ""
@@ -5624,7 +5624,7 @@ msgid "Page where the customer can find all of their available downloads."
 msgstr ""
 
 #: lib/functions/functions.php:465 lib/functions/functions.php:468
-#: lib/products/class.products-post-type.php:587
+#: lib/products/class.products-post-type.php:586
 #: lib/templates/content-confirmation/elements/purchases-label.php:20
 msgid "Purchases"
 msgstr ""
@@ -5824,7 +5824,7 @@ msgid "Base Price"
 msgstr ""
 
 #: lib/product-features/class.base-price.php:116
-#: lib/products/class.products-post-type.php:584
+#: lib/products/class.products-post-type.php:583
 msgid "Price"
 msgstr ""
 
@@ -6148,195 +6148,195 @@ msgid ""
 "constructor"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:115
+#: lib/products/class.products-post-type.php:114
 msgid "Edit Product"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:116
-#: lib/products/class.products-post-type.php:244
+#: lib/products/class.products-post-type.php:115
+#: lib/products/class.products-post-type.php:243
 msgid "View Product"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:120
+#: lib/products/class.products-post-type.php:119
 msgid "An iThemes Exchange Post Type for storing all Products in the system"
 msgstr ""
 
+#: lib/products/class.products-post-type.php:202
 #: lib/products/class.products-post-type.php:203
-#: lib/products/class.products-post-type.php:204
+#: lib/products/class.products-post-type.php:264
 #: lib/products/class.products-post-type.php:265
-#: lib/products/class.products-post-type.php:266
 msgid "Publish"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:233
+#: lib/products/class.products-post-type.php:232
 msgid "Save Draft"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:235
+#: lib/products/class.products-post-type.php:234
 msgid "Save as Pending"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:249
+#: lib/products/class.products-post-type.php:248
 msgid "Preview Product"
 msgstr ""
 
+#: lib/products/class.products-post-type.php:261
 #: lib/products/class.products-post-type.php:262
-#: lib/products/class.products-post-type.php:263
 msgid "Schedule"
 msgstr ""
 
+#: lib/products/class.products-post-type.php:268
 #: lib/products/class.products-post-type.php:269
-#: lib/products/class.products-post-type.php:270
 msgid "Submit for Review"
 msgstr ""
 
+#: lib/products/class.products-post-type.php:272
 #: lib/products/class.products-post-type.php:273
-#: lib/products/class.products-post-type.php:274
 msgid "Update"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:280
+#: lib/products/class.products-post-type.php:279
 msgid "Show Advanced"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:280
+#: lib/products/class.products-post-type.php:279
 msgid "Hide Advanced"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:286
+#: lib/products/class.products-post-type.php:285
 msgid "Delete Permanently"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:288
+#: lib/products/class.products-post-type.php:287
 msgid "Move to Trash"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:297
+#: lib/products/class.products-post-type.php:296
 msgid "Status:"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:302
+#: lib/products/class.products-post-type.php:301
 msgid "Privately Published"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:305
-#: lib/products/class.products-post-type.php:326
+#: lib/products/class.products-post-type.php:304
+#: lib/products/class.products-post-type.php:325
 msgid "Published"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:308
+#: lib/products/class.products-post-type.php:307
 msgid "Scheduled"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:311
-#: lib/products/class.products-post-type.php:328
+#: lib/products/class.products-post-type.php:310
+#: lib/products/class.products-post-type.php:327
 msgid "Pending Review"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:315
-#: lib/products/class.products-post-type.php:330
-#: lib/products/class.products-post-type.php:332
+#: lib/products/class.products-post-type.php:314
+#: lib/products/class.products-post-type.php:329
+#: lib/products/class.products-post-type.php:331
 msgid "Draft"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:321
-#: lib/products/class.products-post-type.php:357
+#: lib/products/class.products-post-type.php:320
+#: lib/products/class.products-post-type.php:356
 #: lib/templates/super-widget-checkout/loops/billing-address.php:19
 #: lib/templates/super-widget-checkout/loops/shipping-address.php:19
 #: lib/templates/super-widget-checkout/loops/shipping-method.php:21
 msgid "Edit"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:335
-#: lib/products/class.products-post-type.php:364
+#: lib/products/class.products-post-type.php:334
+#: lib/products/class.products-post-type.php:363
 msgid "OK"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:342
+#: lib/products/class.products-post-type.php:341
 msgid "Visibility:"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:347
-#: lib/products/class.products-post-type.php:362
+#: lib/products/class.products-post-type.php:346
+#: lib/products/class.products-post-type.php:361
 msgid "Hide from Store"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:351
-#: lib/products/class.products-post-type.php:361
-#: lib/products/class.products-post-type.php:585
+#: lib/products/class.products-post-type.php:350
+#: lib/products/class.products-post-type.php:360
+#: lib/products/class.products-post-type.php:584
 msgid "Show in Store"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:374
+#: lib/products/class.products-post-type.php:373
 msgid "Private"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:377
+#: lib/products/class.products-post-type.php:376
 msgid "Password protected"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:380
+#: lib/products/class.products-post-type.php:379
 msgid "Public, Sticky"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:383
+#: lib/products/class.products-post-type.php:382
 msgid "Public"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:404
+#: lib/products/class.products-post-type.php:403
 msgid "Add New Product"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:424
+#: lib/products/class.products-post-type.php:423
 msgid "Add New "
 msgstr ""
 
-#: lib/products/class.products-post-type.php:466
+#: lib/products/class.products-post-type.php:465
 msgid "Edit "
 msgstr ""
 
-#: lib/products/class.products-post-type.php:586
+#: lib/products/class.products-post-type.php:585
 msgid "Inventory"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:707
+#: lib/products/class.products-post-type.php:705
 #, php-format
 msgid "Product updated. <a href=\"%s\">View product</a>"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:708
+#: lib/products/class.products-post-type.php:706
 msgid "Custom field updated."
 msgstr ""
 
-#: lib/products/class.products-post-type.php:709
+#: lib/products/class.products-post-type.php:707
 msgid "Custom field deleted."
 msgstr ""
 
-#: lib/products/class.products-post-type.php:710
+#: lib/products/class.products-post-type.php:708
 msgid "Product updated."
 msgstr ""
 
 #. translators: %s: date and time of the revision
-#: lib/products/class.products-post-type.php:712
+#: lib/products/class.products-post-type.php:710
 #, php-format
 msgid "Product restored to revision from %s"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:713
+#: lib/products/class.products-post-type.php:711
 #, php-format
 msgid "Product published. <a href=\"%s\">View product</a>"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:714
+#: lib/products/class.products-post-type.php:712
 msgid "Product saved."
 msgstr ""
 
-#: lib/products/class.products-post-type.php:715
+#: lib/products/class.products-post-type.php:713
 #, php-format
 msgid "Product submitted. <a target=\"_blank\" href=\"%s\">Preview product</a>"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:716
+#: lib/products/class.products-post-type.php:714
 #, php-format
 msgid ""
 "Product scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
@@ -6344,32 +6344,32 @@ msgid ""
 msgstr ""
 
 #. translators: Publish box date format, see http://php.net/date
-#: lib/products/class.products-post-type.php:718
+#: lib/products/class.products-post-type.php:716
 msgid "M j, Y @ G:i"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:719
+#: lib/products/class.products-post-type.php:717
 #, php-format
 msgid ""
 "Product draft updated. <a target=\"_blank\" href=\"%s\">Preview product</a>"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:732
-#: lib/products/class.products-post-type.php:744
+#: lib/products/class.products-post-type.php:730
+#: lib/products/class.products-post-type.php:742
 msgid "Product Slug"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:744
+#: lib/products/class.products-post-type.php:742
 msgid ""
 "This is the final part of the product's URL. WordPress will auto-create it "
 "for you."
 msgstr ""
 
-#: lib/products/class.products-post-type.php:769
+#: lib/products/class.products-post-type.php:767
 msgid "My Sample Product"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:771
+#: lib/products/class.products-post-type.php:769
 msgid ""
 "A great product description includes the primary benefits, not just features "
 "or technical specs to your target market and core audience. It's probably "
@@ -6379,7 +6379,7 @@ msgid ""
 "products out there?"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:772
+#: lib/products/class.products-post-type.php:770
 msgid ""
 "\n"
 "\t\t\tThis is your extended description. Use this area for a variety of "
@@ -6408,15 +6408,15 @@ msgid ""
 "\t\t\tJPGs are typically best for photos. PNGs for other types of artwork."
 msgstr ""
 
-#: lib/products/class.products-post-type.php:801
+#: lib/products/class.products-post-type.php:799
 msgid "Sample Image One"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:802
+#: lib/products/class.products-post-type.php:800
 msgid "Sample Image Two"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:803
+#: lib/products/class.products-post-type.php:801
 msgid "Sample Image Three"
 msgstr ""
 
