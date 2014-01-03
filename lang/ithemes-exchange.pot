@@ -1,15 +1,15 @@
 # Translation of   by .
-# Copyright (C) 2013 
+# Copyright (C) 2014 
 # This file is distributed under the same license as the  package.
-# Chris Jean <support@ithemes.com>, 2013.
+# Chris Jean <support@ithemes.com>, 2014.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/ithemes-exchange\n"
-"POT-Creation-Date: 2013-12-30 07:57-0600\n"
-"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2014-01-03 07:36-0600\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chris Jean <support@ithemes.com>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -2510,7 +2510,7 @@ msgstr ""
 
 #: api/theme/download.php:127 api/theme/product.php:342
 #: core-addons/coupons/basic-coupons/admin.php:429
-#: lib/email-notifications/class.email-notifications.php:353
+#: lib/email-notifications/class.email-notifications.php:352
 #: lib/product-features/class.downloads.php:317
 msgid "Unlimited"
 msgstr ""
@@ -3014,7 +3014,7 @@ msgid "Available Coupons"
 msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:378
-#: lib/email-notifications/class.email-notifications.php:447
+#: lib/email-notifications/class.email-notifications.php:448
 #: lib/functions/functions.php:369
 #: lib/products/class.products-post-type.php:113
 msgid "Product"
@@ -4986,7 +4986,7 @@ msgstr ""
 #: lib/admin/views/admin-user-transactions.php:18
 #: lib/deprecated/templates/content-cart.php:89
 #: lib/deprecated/templates/content-checkout.php:88
-#: lib/email-notifications/class.email-notifications.php:477
+#: lib/email-notifications/class.email-notifications.php:478
 #: lib/templates/content-cart/elements/totals-total.php:22
 #: lib/templates/content-checkout/elements/totals-total.php:22
 #: lib/templates/content-confirmation/elements/totals-total.php:22
@@ -5499,7 +5499,7 @@ msgid "No payment add-ons enabled."
 msgstr ""
 
 #: lib/deprecated/templates/super-widget-checkout.php:80
-#: lib/email-notifications/class.email-notifications.php:448
+#: lib/email-notifications/class.email-notifications.php:449
 #: lib/templates/super-widget-checkout/elements/single-item-update-quantity.php:20
 msgid "Quantity"
 msgstr ""
@@ -5520,12 +5520,11 @@ msgstr ""
 msgid "Confirmation email resent"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:319
-#: lib/email-notifications/class.email-notifications.php:336
+#: lib/email-notifications/class.email-notifications.php:335
 msgid "Available Downloads"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:343
+#: lib/email-notifications/class.email-notifications.php:342
 #, php-format
 msgid ""
 "You have purchased %d unique download link(s) for each file available with "
@@ -5533,15 +5532,15 @@ msgid ""
 "details on your %sdownloads%s page."
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:357
+#: lib/email-notifications/class.email-notifications.php:356
 msgid "Download link"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:435
+#: lib/email-notifications/class.email-notifications.php:436
 msgid "Important Information"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:449
+#: lib/email-notifications/class.email-notifications.php:450
 msgid "Total Price"
 msgstr ""
 
@@ -6556,15 +6555,15 @@ msgstr ""
 msgid "cm"
 msgstr ""
 
-#: lib/super-widget/ajax.php:97
+#: lib/super-widget/ajax.php:98
 msgid "Logged in as "
 msgstr ""
 
-#: lib/super-widget/ajax.php:101
+#: lib/super-widget/ajax.php:102
 msgid "Error. Please try again."
 msgstr ""
 
-#: lib/super-widget/ajax.php:123
+#: lib/super-widget/ajax.php:124
 msgid "Registered and logged in as "
 msgstr ""
 
