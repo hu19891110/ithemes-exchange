@@ -228,8 +228,29 @@ class IT_Theme_API_Product implements IT_Theme_API {
 			return it_exchange_product_has_feature( $this->product->ID, 'description' );
 
 		if ( it_exchange_product_supports_feature( $this->product->ID, 'description' )
-				&& it_exchange_product_has_feature( $this->product->ID, 'description' ) )
-			return it_exchange_get_product_feature( $this->product->ID, 'description' );
+				&& it_exchange_product_has_feature( $this->product->ID, 'description' ) ) {
+
+			$result = '';
+			$description = it_exchange_get_product_feature( $this->product->ID, 'description' );
+
+			$defaults   = array(
+				'max-length' => false,
+				'ellipsis'   => '...',
+				'more-text'  => __( '(more info)', 'it-l10n-ithemes-exchange' )
+			);
+
+			$options = ITUtility::merge_defaults( $options, $defaults );
+
+			if ( ! empty( $options['max-length'] ) && is_numeric( $options['max-length'] ) && strlen( $description ) > $options['max-length'] ) {
+				$result = substr( $description, 0, $options['max-length'] );
+				$result .= $options['ellipsis'] . ' <a href="' . get_permalink( $this->product->ID ) . '">' . $options['more-text'] . '</a>';
+			} else {
+				$result = $description;
+			}
+
+			return $result;
+		}
+
 		return false;
 	}
 
