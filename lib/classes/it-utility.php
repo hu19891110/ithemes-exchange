@@ -2,7 +2,7 @@
 
 /*
 Written by Chris Jean for iThemes.com
-Version 1.9.0
+Version 1.9.1
 
 Version History
 	1.7.0 - 2013-02-13 - Chris Jean
@@ -18,6 +18,8 @@ Version History
 		Simplified code for get_open_tag() while also fixing instances where some characters would not be properly escaped.
 	1.9.0 - 2013-12-02 - Chris Jean
 		Added the screen_option() function.
+	1.9.1 - 2014-01-23 - Chris Jean
+		Updated fix_url() to change https to http when is_ssl() is false.
 */
 
 
@@ -336,12 +338,15 @@ if ( ! class_exists( 'ITUtility' ) ) {
 			echo ITUtility::get_tooltip( $message, $title, $class, $alt );
 		}
 		
-		/* Automatically changes http protocols to https when is_ssl is true */
+		/* Changes http protocols to https when is_ssl() is true and https protocols to http otherwise */
 		public static function fix_url( $url ) {
-			if ( ! is_ssl() )
-				return $url;
+			if ( is_ssl() ) {
+				$url = preg_replace( '|^http://|', 'https://', $url );
+			} else {
+				$url = preg_replace( '|^https://|', 'http://', $url );
+			}
 			
-			return preg_replace( '|^http://|', 'https://', $url );
+			return $url;
 		}
 		
 		public static function get_random_string( $length = 10, $use_sets = array( 'lower', 'upper', 'num' ) ) {
