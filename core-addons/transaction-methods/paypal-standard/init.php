@@ -721,32 +721,23 @@ function it_exchange_paypal_standard_addon_transaction_status_label( $status ) {
 		case 'canceled_reversal':
 		case 'processed' :
 			return __( 'Paid', 'it-l10n-ithemes-exchange' );
-			break;
 		case 'refunded':
 		case 'refund':
 			return __( 'Refund', 'it-l10n-ithemes-exchange' );
-			break;
 		case 'reversed':
 			return __( 'Reversed', 'it-l10n-ithemes-exchange' );
-			break;
 		case 'buyer_complaint':
 			return __( 'Buyer Complaint', 'it-l10n-ithemes-exchange' );
-			break;
 		case 'denied' :
 			return __( 'Denied', 'it-l10n-ithemes-exchange' );
-			break;
 		case 'expired' :
 			return __( 'Expired', 'it-l10n-ithemes-exchange' );
-			break;
 		case 'failed' :
 			return __( 'Failed', 'it-l10n-ithemes-exchange' );
-			break;
 		case 'pending' :
 			return __( 'Pending', 'it-l10n-ithemes-exchange' );
-			break;
 		case 'voided' :
 			return __( 'Voided', 'it-l10n-ithemes-exchange' );
-			break;
 		default:
 			return __( 'Unknown', 'it-l10n-ithemes-exchange' );
 	}

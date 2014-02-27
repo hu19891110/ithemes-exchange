@@ -13,9 +13,11 @@
 #toplevel_page_pb_backupbuddy_multisite_export div.wp-menu-image:before,
 #toplevel_page_it-exchange div.wp-menu-image:before,
 #toplevel_page_ithemes-builder-theme div.wp-menu-image:before,
+#toplevel_page_itsec div.wp-menu-image:before,
 .it-icon-exchange-e,
 .it-icon-builder,
-.it-icon-backupbuddy-drive {
+.it-icon-backupbuddy-drive,
+.it-icon-itsec {
 	font-family: 'ithemes-icons' !important;
 	speak: none;
 	font-style: normal;
@@ -29,30 +31,38 @@
 /** ----------------------------------------:[ reset icons ]:--- */
 #toplevel_page_ithemes-builder-theme div.wp-menu-image,
 #toplevel_page_pb_backupbuddy_multisite_export div.wp-menu-image,
-#toplevel_page_pb_backupbuddy_getting_started div.wp-menu-image {
+#toplevel_page_pb_backupbuddy_getting_started div.wp-menu-image,
+#toplevel_page_itsec div.wp-menu-image {
 	background: none !important;
 }
 #toplevel_page_ithemes-builder-theme div.wp-menu-image img,
 #toplevel_page_pb_backupbuddy_multisite_export div.wp-menu-image img,
-#toplevel_page_pb_backupbuddy_getting_started div.wp-menu-image img {
+#toplevel_page_pb_backupbuddy_getting_started div.wp-menu-image img,
+#toplevel_page_itsec div.wp-menu-image img {
 	display: none !important;
 }
 
 /** ----------------------------------------:[ exchange ]:--- */
 #toplevel_page_it-exchange div.wp-menu-image:before,
 .it-icon-exchange-e:before {
-	content: "\65" !important;
+	content: "\e602" !important;
 }
 
 /** ----------------------------------------:[ builder ]:--- */
 #toplevel_page_ithemes-builder-theme div.wp-menu-image:before,
 .it-icon-builder:before {
-	content: "\62" !important;
+	content: "\e600" !important;
 }
 
 /** ----------------------------------------:[ backupbuddy ]:--- */
 #toplevel_page_pb_backupbuddy_getting_started div.wp-menu-image:before,
 #toplevel_page_pb_backupbuddy_multisite_export div.wp-menu-image:before,
 .it-icon-backupbuddy-drive:before {
-	content: "\64" !important;
+	content: "\e601" !important;
+}
+
+/** ----------------------------------------:[ security ]:--- */
+#toplevel_page_itsec div.wp-menu-image:before,
+.it-icon-itsec:before {
+	content: "\e603" !important;
 }
