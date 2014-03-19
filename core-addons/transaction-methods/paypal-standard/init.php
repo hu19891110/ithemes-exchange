@@ -409,7 +409,8 @@ function it_exchange_paypal_standard_addon_get_payment_url( $temp_id ) {
 		);
 
 		$query = array_merge( $paypal_args, $query );
-
+		$query = apply_filters( 'it_exchange_paypal_standad_query', $query );
+		
 		$paypal_payment_url = PAYPAL_PAYMENT_URL . '?' .  http_build_query( $query );
 
 	} else {

@@ -621,6 +621,8 @@ function it_exchange_paypal_standard_secure_addon_get_payment_url() {
 		$L_BUTTONVARS[] = 'rm=2'; //Return  Method - https://developer.paypal.com/webapps/developer/docs/classic/button-manager/integration-guide/ButtonManagerHTMLVariables/
 		$L_BUTTONVARS[] = 'cancel_return=' . it_exchange_get_page_url( 'cart' );
 		$L_BUTTONVARS[] = 'custom=' . $nonce;
+		
+		$L_BUTTONVARS = apply_filters( 'it_exchange_paypal_standard_secure_button_vars', $L_BUTTONVARS );
 
 		$count = 0;
 		foreach( $L_BUTTONVARS as $L_BUTTONVAR ) {
@@ -629,6 +631,8 @@ function it_exchange_paypal_standard_secure_addon_get_payment_url() {
 			$count++;
 
 		}
+		
+		$button_request = apply_filters( 'it_exchange_paypal_standard_secure_button_request', $button_request );
 		
 		$response = wp_remote_post( $paypal_api_url, array( 'body' => $button_request ) );
 
