@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/ithemes-exchange\n"
-"POT-Creation-Date: 2014-03-21 10:02-0500\n"
+"POT-Creation-Date: 2014-03-25 15:21-0500\n"
 "PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chris Jean <support@ithemes.com>\n"
 "Language: \n"
@@ -2445,8 +2445,8 @@ msgstr ""
 #: core-addons/admin/guest-checkout/lib/template-functions.php:210
 #: core-addons/coupons/basic-coupons/admin.php:330
 #: lib/deprecated/templates/super-widget-cart.php:76
-#: lib/products/class.products-post-type.php:335
-#: lib/products/class.products-post-type.php:364
+#: lib/products/class.products-post-type.php:337
+#: lib/products/class.products-post-type.php:366
 #: lib/purchase-dialog/purchase-dialog.php:82
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/login/cancel.php:20
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/registration/cancel.php:20
@@ -2831,7 +2831,7 @@ msgid "Check out as a guest"
 msgstr ""
 
 #: core-addons/admin/guest-checkout/lib/templates/super-widget-guest-checkout/elements/login.php:20
-#: lib/admin/views/admin-settings.php:132
+#: lib/admin/views/admin-settings.php:165
 #: lib/deprecated/templates/content-registration.php:49
 #: lib/deprecated/templates/super-widget-registration.php:44
 #: lib/functions/functions.php:855
@@ -2865,7 +2865,7 @@ msgid "Customer Checkout"
 msgstr ""
 
 #: core-addons/admin/product-type-metabox/init.php:33 core-addons/load.php:268
-#: lib/products/class.products-post-type.php:589
+#: lib/products/class.products-post-type.php:591
 msgid "Product Type"
 msgstr ""
 
@@ -3010,14 +3010,14 @@ msgid "Select a product to use with this coupon."
 msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:331
-#: lib/products/class.products-post-type.php:227
+#: lib/products/class.products-post-type.php:229
 msgid "Save"
 msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:372
 #: core-addons/transaction-methods/offline-payments/init.php:395
 #: lib/product-features/class.title.php:96
-#: lib/products/class.products-post-type.php:582
+#: lib/products/class.products-post-type.php:584
 msgid "Title"
 msgstr ""
 
@@ -3201,7 +3201,6 @@ msgstr ""
 #: core-addons/load.php:189
 #: core-addons/product-features/categories/class.category-widget.php:18
 #: core-addons/product-features/categories/class.category-widget.php:24
-#: core-addons/product-features/categories/init.php:20
 #: core-addons/product-features/categories/init.php:80
 msgid "Product Categories"
 msgstr ""
@@ -3215,8 +3214,7 @@ msgstr ""
 msgid "Product Category"
 msgstr ""
 
-#: core-addons/load.php:202 core-addons/product-features/tags/init.php:20
-#: core-addons/product-features/tags/init.php:60
+#: core-addons/load.php:202 core-addons/product-features/tags/init.php:60
 msgid "Product Tags"
 msgstr ""
 
@@ -3361,6 +3359,10 @@ msgstr ""
 msgid "Show hierarchy"
 msgstr ""
 
+#: core-addons/product-features/categories/init.php:20
+msgid "Categories"
+msgstr ""
+
 #: core-addons/product-features/categories/init.php:22
 msgid "Search Product Categories"
 msgstr ""
@@ -3429,6 +3431,10 @@ msgid ""
 "your current theme."
 msgstr ""
 
+#: core-addons/product-features/tags/init.php:20
+msgid "Tags"
+msgstr ""
+
 #: core-addons/product-features/tags/init.php:22
 msgid "Search Product Tags"
 msgstr ""
@@ -3483,7 +3489,7 @@ msgstr ""
 #: lib/admin/class-settings-form.php:41
 #: lib/admin/views/admin-email-settings.php:160
 #: lib/admin/views/admin-page-settings.php:128
-#: lib/admin/views/admin-settings.php:220
+#: lib/admin/views/admin-settings.php:253
 msgid "Save Changes"
 msgstr ""
 
@@ -3492,8 +3498,8 @@ msgstr ""
 #: core-addons/transaction-methods/offline-payments/init.php:429
 #: core-addons/transaction-methods/paypal-standard/init.php:1010
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1308
-#: lib/admin/class.admin.php:1021 lib/admin/class.admin.php:1218
-#: lib/admin/class.admin.php:1308
+#: lib/admin/class.admin.php:1023 lib/admin/class.admin.php:1220
+#: lib/admin/class.admin.php:1310
 msgid "Error. Please try again"
 msgstr ""
 
@@ -3579,6 +3585,7 @@ msgid "Free Shipping (3-5 days)"
 msgstr ""
 
 #: core-addons/shipping/simple-shipping/lib/settings.php:19
+#: lib/product-features/class.shipping.php:114
 #: lib/product-features/class.shipping.php:131
 #: lib/shipping/class.shipping.php:139
 #: lib/templates/content-cart/elements/totals-shipping.php:22
@@ -3714,8 +3721,8 @@ msgstr ""
 #: core-addons/transaction-methods/offline-payments/init.php:468
 #: core-addons/transaction-methods/paypal-standard/init.php:1056
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1362
-#: lib/admin/class.admin.php:1030 lib/admin/class.admin.php:1229
-#: lib/admin/class.admin.php:1325
+#: lib/admin/class.admin.php:1032 lib/admin/class.admin.php:1231
+#: lib/admin/class.admin.php:1327
 msgid "Settings Saved."
 msgstr ""
 
@@ -4164,12 +4171,12 @@ msgstr ""
 msgid "Get More"
 msgstr ""
 
-#: lib/admin/class.admin.php:629
+#: lib/admin/class.admin.php:631
 #, php-format
 msgid "You made a sale! Yabba Dabba Doo! %s"
 msgstr ""
 
-#: lib/admin/class.admin.php:630
+#: lib/admin/class.admin.php:632
 #, php-format
 msgid ""
 "Your friend %s just bought all this awesomeness from your store!\n"
@@ -4179,12 +4186,12 @@ msgid ""
 "%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:637
+#: lib/admin/class.admin.php:639
 #, php-format
 msgid "Receipt for Purchase: %s"
 msgstr ""
 
-#: lib/admin/class.admin.php:638
+#: lib/admin/class.admin.php:640
 #, php-format
 msgid ""
 "Hello %s,\n"
@@ -4197,137 +4204,137 @@ msgid ""
 "%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:757
+#: lib/admin/class.admin.php:759
 msgid "Add-on enabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:759
+#: lib/admin/class.admin.php:761
 msgid "Add-on disabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:768
+#: lib/admin/class.admin.php:770
 msgid "Error: Add-on not enabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:770
+#: lib/admin/class.admin.php:772
 msgid "Error: Add-on not disabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:997 lib/admin/views/admin-settings.php:72
+#: lib/admin/class.admin.php:999 lib/admin/views/admin-settings.php:72
 #, php-format
 msgid ""
 "Please use the 2-3 character %sISO abbreviation%s for country subdivisions"
 msgstr ""
 
-#: lib/admin/class.admin.php:1050
+#: lib/admin/class.admin.php:1052
 msgid "You must select at least one Payment Method."
 msgstr ""
 
-#: lib/admin/class.admin.php:1151
+#: lib/admin/class.admin.php:1153
 msgid "Settings Saved. Congrats!"
 msgstr ""
 
-#: lib/admin/class.admin.php:1152
+#: lib/admin/class.admin.php:1154
 #, php-format
 msgid "%sAdd a Product%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:1153
+#: lib/admin/class.admin.php:1155
 #, php-format
 msgid "%sEnable Add-ons%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:1155
+#: lib/admin/class.admin.php:1157
 #, php-format
 msgid "%sView Sample Product%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:1191 lib/admin/class.admin.php:1244
+#: lib/admin/class.admin.php:1193 lib/admin/class.admin.php:1246
 msgid "Please provide a valid email address."
 msgstr ""
 
-#: lib/admin/class.admin.php:1193
+#: lib/admin/class.admin.php:1195
 msgid "Thousands Separator cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1195
+#: lib/admin/class.admin.php:1197
 msgid "Decimals Separator cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1246
+#: lib/admin/class.admin.php:1248
 msgid "Email Name cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1248
+#: lib/admin/class.admin.php:1250
 msgid "Email Subject cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1250
+#: lib/admin/class.admin.php:1252
 msgid "Email Template cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1259
+#: lib/admin/class.admin.php:1261
 msgid "Invalid email address in Sales Notification Email Address"
 msgstr ""
 
-#: lib/admin/class.admin.php:1398
+#: lib/admin/class.admin.php:1400
 msgid "Please make sure all your page slugs are unique."
 msgstr ""
 
-#: lib/admin/class.admin.php:1404
+#: lib/admin/class.admin.php:1406
 msgid "Page settings cannot be left blank."
 msgstr ""
 
-#: lib/admin/class.admin.php:1472
+#: lib/admin/class.admin.php:1474
 msgid "Select Images"
 msgstr ""
 
-#: lib/admin/class.admin.php:1473
+#: lib/admin/class.admin.php:1475
 msgid "You must upload an image larger than 150x150."
 msgstr ""
 
-#: lib/admin/class.admin.php:1474
+#: lib/admin/class.admin.php:1476
 msgid "Edit Image"
 msgstr ""
 
-#: lib/admin/class.admin.php:1475
+#: lib/admin/class.admin.php:1477
 msgid "Upload Source"
 msgstr ""
 
-#: lib/admin/class.admin.php:1476
+#: lib/admin/class.admin.php:1478
 msgid "Insert"
 msgstr ""
 
-#: lib/admin/class.admin.php:1477
+#: lib/admin/class.admin.php:1479
 msgid "Advanced"
 msgstr ""
 
-#: lib/admin/class.admin.php:1478
+#: lib/admin/class.admin.php:1480
 msgid ""
 "We want to keep things simple for you, so we put the kitchen sink here. "
 "Click this button to add more info about your product."
 msgstr ""
 
-#: lib/admin/class.admin.php:1492
+#: lib/admin/class.admin.php:1494
 msgid ""
 "You have checked the option to \"Reset ALL data\". Are you sure you want to "
 "delete all Exchange products, transactions, and settings?"
 msgstr ""
 
-#: lib/admin/class.admin.php:1499
+#: lib/admin/class.admin.php:1501
 msgid ""
 "Please make sure all WordPress page types have a WordPress page selected."
 msgstr ""
 
-#: lib/admin/class.admin.php:1730
+#: lib/admin/class.admin.php:1732
 msgid "Main Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1735
+#: lib/admin/class.admin.php:1737
 msgid "Side Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1805
+#: lib/admin/class.admin.php:1807
 msgid "Featured Image"
 msgstr ""
 
@@ -4440,7 +4447,7 @@ msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:71
 #: lib/admin/views/admin-email-settings.php:135
-#: lib/admin/views/admin-settings.php:204
+#: lib/admin/views/admin-settings.php:237
 #, php-format
 msgid "You call these shortcode functions like this: %s"
 msgstr ""
@@ -4496,7 +4503,7 @@ msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:83
 #: lib/admin/views/admin-email-settings.php:147
-#: lib/admin/views/admin-settings.php:211
+#: lib/admin/views/admin-settings.php:244
 msgid "Your site name"
 msgstr ""
 
@@ -4801,153 +4808,205 @@ msgid "This is the state / province where your business is located"
 msgstr ""
 
 #: lib/admin/views/admin-settings.php:79
-msgid "Currency Settings"
+msgid "Store Settings"
 msgstr ""
 
 #: lib/admin/views/admin-settings.php:83
-msgid "Default Currency"
+msgid "Order Products By"
+msgstr ""
+
+#: lib/admin/views/admin-settings.php:87
+msgid "Product ID"
+msgstr ""
+
+#: lib/admin/views/admin-settings.php:88
+#: lib/product-features/class.title.php:106
+msgid "Product Title"
 msgstr ""
 
 #: lib/admin/views/admin-settings.php:89
+#: lib/products/class.products-post-type.php:732
+#: lib/products/class.products-post-type.php:744
+msgid "Product Slug"
+msgstr ""
+
+#: lib/admin/views/admin-settings.php:90
+msgid "Product Published Date/Time"
+msgstr ""
+
+#: lib/admin/views/admin-settings.php:91
+msgid "Product Modified Date/Time"
+msgstr ""
+
+#: lib/admin/views/admin-settings.php:92
+msgid "Random"
+msgstr ""
+
+#: lib/admin/views/admin-settings.php:93
+msgid "Product Order #"
+msgstr ""
+
+#: lib/admin/views/admin-settings.php:99
+#: lib/product-features/class.product-order.php:116
+msgid "Order"
+msgstr ""
+
+#: lib/admin/views/admin-settings.php:103
+msgid "Ascending"
+msgstr ""
+
+#: lib/admin/views/admin-settings.php:104
+msgid "Descending"
+msgstr ""
+
+#: lib/admin/views/admin-settings.php:112
+msgid "Currency Settings"
+msgstr ""
+
+#: lib/admin/views/admin-settings.php:116
+msgid "Default Currency"
+msgstr ""
+
+#: lib/admin/views/admin-settings.php:122
 msgid "Symbol Position"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:92
+#: lib/admin/views/admin-settings.php:125
 msgid "Before: $10.00"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:92
+#: lib/admin/views/admin-settings.php:125
 msgid "After: 10.00$"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:94
+#: lib/admin/views/admin-settings.php:127
 msgid "Where should the currency symbol be placed in relation to the price?"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:98
+#: lib/admin/views/admin-settings.php:131
 msgid "Thousands Separator"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:101
+#: lib/admin/views/admin-settings.php:134
 msgid ""
 "What character would you like to use to separate thousands when displaying "
 "prices?"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:105
+#: lib/admin/views/admin-settings.php:138
 msgid "Decimals Separator"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:108
+#: lib/admin/views/admin-settings.php:141
 msgid ""
 "What character would you like to use to separate decimals when displaying "
 "prices?"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:113
+#: lib/admin/views/admin-settings.php:146
 msgid "Customer Registration Settings"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:117 lib/functions/functions.php:417
+#: lib/admin/views/admin-settings.php:150 lib/functions/functions.php:417
 msgid "Customer Registration"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:120
+#: lib/admin/views/admin-settings.php:153
 msgid "Use Exchange Registration Only"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:123
+#: lib/admin/views/admin-settings.php:156
 msgid "Use WordPress Registration Setting"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:123
+#: lib/admin/views/admin-settings.php:156
 msgid ""
 "In order to use this setting, you will first need to check the \"Anyone can "
 "register\" checkbox from the WordPress General Settings page to allow site "
 "membership."
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:127
+#: lib/admin/views/admin-settings.php:160
 msgid "Default Checkout Form"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:131 lib/functions/functions.php:414
+#: lib/admin/views/admin-settings.php:164 lib/functions/functions.php:414
 msgid "Registration"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:140
+#: lib/admin/views/admin-settings.php:173
 msgid "Stylesheet Settings"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:144
+#: lib/admin/views/admin-settings.php:177
 msgid "Custom Styles"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:146
+#: lib/admin/views/admin-settings.php:179
 msgid ""
 "If they exist, the following files will be loaded in order after core "
 "Exchange stylesheets:"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:159
+#: lib/admin/views/admin-settings.php:192
 msgid "Product Gallery"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:163
+#: lib/admin/views/admin-settings.php:196
 msgid "Enable Popup"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:169
+#: lib/admin/views/admin-settings.php:202
 msgid "Enable Zoom"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:169
+#: lib/admin/views/admin-settings.php:202
 msgid "Zoom will only work properly when uploading large images."
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:174
+#: lib/admin/views/admin-settings.php:207
 msgid "Click"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:177
+#: lib/admin/views/admin-settings.php:210
 msgid "Hover"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:179
+#: lib/admin/views/admin-settings.php:212
 msgid "Zoom will occur in the popup when popup is enabled."
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:185
+#: lib/admin/views/admin-settings.php:218
 msgid "Customer Messages"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:189
+#: lib/admin/views/admin-settings.php:222
 msgid "Customer Account Page"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:202
+#: lib/admin/views/admin-settings.php:235
 msgid ""
 "Enter your content for the Customer's account page. HTML is accepted. "
 "Available shortcode functions:"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:206
+#: lib/admin/views/admin-settings.php:239
 msgid "The customer's first name"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:207
+#: lib/admin/views/admin-settings.php:240
 msgid "The customer's last name"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:208
+#: lib/admin/views/admin-settings.php:241
 msgid "The customer's username on the site"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:209
+#: lib/admin/views/admin-settings.php:242
 msgid "The customer's email address"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:210
+#: lib/admin/views/admin-settings.php:243
 msgid ""
 "The customer's gravatar image. Use the avatar_size param for square size. "
 "Default is 128"
@@ -4984,6 +5043,7 @@ msgid ""
 msgstr ""
 
 #: lib/admin/views/admin-user-products.php:72 lib/functions/functions.php:456
+#: lib/product-features/class.downloads.php:168
 #: lib/templates/content-confirmation/elements/product.php:37
 msgid "Downloads"
 msgstr ""
@@ -5009,6 +5069,7 @@ msgstr ""
 
 #: lib/admin/views/admin-user-transactions.php:17
 #: lib/product-features/class.description.php:98
+#: lib/product-features/class.description.php:108
 msgid "Description"
 msgstr ""
 
@@ -5652,7 +5713,7 @@ msgid "Page where the customer can find all of their available downloads."
 msgstr ""
 
 #: lib/functions/functions.php:470 lib/functions/functions.php:473
-#: lib/products/class.products-post-type.php:586
+#: lib/products/class.products-post-type.php:588
 #: lib/templates/content-confirmation/elements/purchases-label.php:20
 msgid "Purchases"
 msgstr ""
@@ -5860,12 +5921,8 @@ msgid "Base Price"
 msgstr ""
 
 #: lib/product-features/class.base-price.php:116
-#: lib/products/class.products-post-type.php:583
+#: lib/products/class.products-post-type.php:585
 msgid "Price"
-msgstr ""
-
-#: lib/product-features/class.description.php:108
-msgid "Product Description"
 msgstr ""
 
 #: lib/product-features/class.description.php:109
@@ -5877,10 +5934,6 @@ msgstr ""
 
 #: lib/product-features/class.description.php:112
 msgid "Enter description..."
-msgstr ""
-
-#: lib/product-features/class.downloads.php:168
-msgid "Product Downloads"
 msgstr ""
 
 #: lib/product-features/class.downloads.php:169
@@ -6012,7 +6065,8 @@ msgid "The current inventory number"
 msgstr ""
 
 #: lib/product-features/class.inventory.php:114
-msgid "Product Inventory"
+#: lib/products/class.products-post-type.php:587
+msgid "Inventory"
 msgstr ""
 
 #: lib/product-features/class.inventory.php:132
@@ -6037,7 +6091,7 @@ msgid "Availability to purchase the product."
 msgstr ""
 
 #: lib/product-features/class.product-availability.php:99
-msgid "Product Availability"
+msgid "Availability"
 msgstr ""
 
 #: lib/product-features/class.product-availability.php:124
@@ -6061,6 +6115,21 @@ msgstr ""
 msgid ""
 "Uploading large images is best (1600px or greater). Exchange will resize the "
 "images to use in the store."
+msgstr ""
+
+#: lib/product-features/class.product-order.php:40
+msgid "Manually set Product's order on the store page"
+msgstr ""
+
+#: lib/product-features/class.product-order.php:98
+msgid "Store Order"
+msgstr ""
+
+#: lib/product-features/class.product-order.php:109
+msgid ""
+"Change the product's order on the store page by changing this number and "
+"setting 'Product Order #' as the Order By setting on the Exchange General "
+"Settings page."
 msgstr ""
 
 #: lib/product-features/class.purchase-message.php:98
@@ -6092,10 +6161,6 @@ msgid ""
 "What is the maximum quantity a customer can set when purchasing this product?"
 msgstr ""
 
-#: lib/product-features/class.shipping.php:114
-msgid "Product Shipping"
-msgstr ""
-
 #: lib/product-features/class.shipping.php:131
 msgid "Set shipping details for the product here."
 msgstr ""
@@ -6111,10 +6176,6 @@ msgstr ""
 
 #: lib/product-features/class.shipping.php:149
 msgid "Shipping has been disabled for this product."
-msgstr ""
-
-#: lib/product-features/class.title.php:106
-msgid "Product Title"
 msgstr ""
 
 #: lib/product-features/class.title.php:107
@@ -6189,7 +6250,7 @@ msgid "Edit Product"
 msgstr ""
 
 #: lib/products/class.products-post-type.php:115
-#: lib/products/class.products-post-type.php:243
+#: lib/products/class.products-post-type.php:245
 msgid "View Product"
 msgstr ""
 
@@ -6197,182 +6258,178 @@ msgstr ""
 msgid "An iThemes Exchange Post Type for storing all Products in the system"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:202
-#: lib/products/class.products-post-type.php:203
-#: lib/products/class.products-post-type.php:264
-#: lib/products/class.products-post-type.php:265
+#: lib/products/class.products-post-type.php:204
+#: lib/products/class.products-post-type.php:205
+#: lib/products/class.products-post-type.php:266
+#: lib/products/class.products-post-type.php:267
 msgid "Publish"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:232
+#: lib/products/class.products-post-type.php:234
 msgid "Save Draft"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:234
+#: lib/products/class.products-post-type.php:236
 msgid "Save as Pending"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:248
+#: lib/products/class.products-post-type.php:250
 msgid "Preview Product"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:261
-#: lib/products/class.products-post-type.php:262
+#: lib/products/class.products-post-type.php:263
+#: lib/products/class.products-post-type.php:264
 msgid "Schedule"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:268
-#: lib/products/class.products-post-type.php:269
+#: lib/products/class.products-post-type.php:270
+#: lib/products/class.products-post-type.php:271
 msgid "Submit for Review"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:272
-#: lib/products/class.products-post-type.php:273
+#: lib/products/class.products-post-type.php:274
+#: lib/products/class.products-post-type.php:275
 msgid "Update"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:279
+#: lib/products/class.products-post-type.php:281
 msgid "Show Advanced"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:279
+#: lib/products/class.products-post-type.php:281
 msgid "Hide Advanced"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:285
+#: lib/products/class.products-post-type.php:287
 msgid "Delete Permanently"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:287
+#: lib/products/class.products-post-type.php:289
 msgid "Move to Trash"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:296
+#: lib/products/class.products-post-type.php:298
 msgid "Status:"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:301
+#: lib/products/class.products-post-type.php:303
 msgid "Privately Published"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:304
-#: lib/products/class.products-post-type.php:325
+#: lib/products/class.products-post-type.php:306
+#: lib/products/class.products-post-type.php:327
 msgid "Published"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:307
+#: lib/products/class.products-post-type.php:309
 msgid "Scheduled"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:310
-#: lib/products/class.products-post-type.php:327
+#: lib/products/class.products-post-type.php:312
+#: lib/products/class.products-post-type.php:329
 msgid "Pending Review"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:314
-#: lib/products/class.products-post-type.php:329
+#: lib/products/class.products-post-type.php:316
 #: lib/products/class.products-post-type.php:331
+#: lib/products/class.products-post-type.php:333
 msgid "Draft"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:320
-#: lib/products/class.products-post-type.php:356
+#: lib/products/class.products-post-type.php:322
+#: lib/products/class.products-post-type.php:358
 #: lib/templates/super-widget-checkout/loops/billing-address.php:19
 #: lib/templates/super-widget-checkout/loops/shipping-address.php:19
 #: lib/templates/super-widget-checkout/loops/shipping-method.php:21
 msgid "Edit"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:334
-#: lib/products/class.products-post-type.php:363
+#: lib/products/class.products-post-type.php:336
+#: lib/products/class.products-post-type.php:365
 msgid "OK"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:341
+#: lib/products/class.products-post-type.php:343
 msgid "Visibility:"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:346
-#: lib/products/class.products-post-type.php:361
+#: lib/products/class.products-post-type.php:348
+#: lib/products/class.products-post-type.php:363
 msgid "Hide from Store"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:350
-#: lib/products/class.products-post-type.php:360
-#: lib/products/class.products-post-type.php:584
+#: lib/products/class.products-post-type.php:352
+#: lib/products/class.products-post-type.php:362
+#: lib/products/class.products-post-type.php:586
 msgid "Show in Store"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:373
+#: lib/products/class.products-post-type.php:375
 msgid "Private"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:376
+#: lib/products/class.products-post-type.php:378
 msgid "Password protected"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:379
+#: lib/products/class.products-post-type.php:381
 msgid "Public, Sticky"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:382
+#: lib/products/class.products-post-type.php:384
 msgid "Public"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:403
+#: lib/products/class.products-post-type.php:405
 msgid "Add New Product"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:423
+#: lib/products/class.products-post-type.php:425
 msgid "Add New "
 msgstr ""
 
-#: lib/products/class.products-post-type.php:465
+#: lib/products/class.products-post-type.php:467
 msgid "Edit "
 msgstr ""
 
-#: lib/products/class.products-post-type.php:585
-msgid "Inventory"
-msgstr ""
-
-#: lib/products/class.products-post-type.php:705
+#: lib/products/class.products-post-type.php:707
 #, php-format
 msgid "Product updated. <a href=\"%s\">View product</a>"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:706
+#: lib/products/class.products-post-type.php:708
 msgid "Custom field updated."
 msgstr ""
 
-#: lib/products/class.products-post-type.php:707
+#: lib/products/class.products-post-type.php:709
 msgid "Custom field deleted."
 msgstr ""
 
-#: lib/products/class.products-post-type.php:708
+#: lib/products/class.products-post-type.php:710
 msgid "Product updated."
 msgstr ""
 
 #. translators: %s: date and time of the revision
-#: lib/products/class.products-post-type.php:710
+#: lib/products/class.products-post-type.php:712
 #, php-format
 msgid "Product restored to revision from %s"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:711
+#: lib/products/class.products-post-type.php:713
 #, php-format
 msgid "Product published. <a href=\"%s\">View product</a>"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:712
+#: lib/products/class.products-post-type.php:714
 msgid "Product saved."
 msgstr ""
 
-#: lib/products/class.products-post-type.php:713
+#: lib/products/class.products-post-type.php:715
 #, php-format
 msgid "Product submitted. <a target=\"_blank\" href=\"%s\">Preview product</a>"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:714
+#: lib/products/class.products-post-type.php:716
 #, php-format
 msgid ""
 "Product scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
@@ -6380,32 +6437,27 @@ msgid ""
 msgstr ""
 
 #. translators: Publish box date format, see http://php.net/date
-#: lib/products/class.products-post-type.php:716
+#: lib/products/class.products-post-type.php:718
 msgid "M j, Y @ G:i"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:717
+#: lib/products/class.products-post-type.php:719
 #, php-format
 msgid ""
 "Product draft updated. <a target=\"_blank\" href=\"%s\">Preview product</a>"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:730
-#: lib/products/class.products-post-type.php:742
-msgid "Product Slug"
-msgstr ""
-
-#: lib/products/class.products-post-type.php:742
+#: lib/products/class.products-post-type.php:744
 msgid ""
 "This is the final part of the product's URL. WordPress will auto-create it "
 "for you."
 msgstr ""
 
-#: lib/products/class.products-post-type.php:767
+#: lib/products/class.products-post-type.php:769
 msgid "My Sample Product"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:769
+#: lib/products/class.products-post-type.php:771
 msgid ""
 "A great product description includes the primary benefits, not just features "
 "or technical specs to your target market and core audience. It's probably "
@@ -6415,7 +6467,7 @@ msgid ""
 "products out there?"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:770
+#: lib/products/class.products-post-type.php:772
 msgid ""
 "\n"
 "\t\t\tThis is your extended description. Use this area for a variety of "
@@ -6444,15 +6496,15 @@ msgid ""
 "\t\t\tJPGs are typically best for photos. PNGs for other types of artwork."
 msgstr ""
 
-#: lib/products/class.products-post-type.php:799
+#: lib/products/class.products-post-type.php:801
 msgid "Sample Image One"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:800
+#: lib/products/class.products-post-type.php:802
 msgid "Sample Image Two"
 msgstr ""
 
-#: lib/products/class.products-post-type.php:801
+#: lib/products/class.products-post-type.php:803
 msgid "Sample Image Three"
 msgstr ""
 

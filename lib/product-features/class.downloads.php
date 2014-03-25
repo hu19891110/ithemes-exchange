@@ -165,7 +165,7 @@ class IT_Exchange_Product_Feature_Downloads {
 	 * @return void
 	*/
 	function register_metabox() {
-		add_meta_box( 'it-exchange-product-downloads', __( 'Product Downloads', 'it-l10n-ithemes-exchange' ), array( $this, 'print_metabox' ), 'it_exchange_prod', 'it_exchange_normal', 'low' );
+		add_meta_box( 'it-exchange-product-downloads', __( 'Downloads', 'it-l10n-ithemes-exchange' ), array( $this, 'print_metabox' ), 'it_exchange_prod', 'it_exchange_normal', 'low' );
 		add_meta_box( 'it-exchange-product-downloads-expiration', __( 'Downloads Expiration', 'it-l10n-ithemes-exchange' ), array( $this, 'print_expirations_metabox' ), 'it_exchange_prod', 'it_exchange_advanced' );
 	}
 

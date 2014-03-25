@@ -1,13 +1,13 @@
 <?php
 /**
  * Load custom icon fonts submodule.
- * 
+ *
  * @package icon-fonts
- * @author Justin Kopepasah
+ * @author iThemes
  * @version 1.1.0
 */
 
-$it_registration_list_version   = '1.1.0';
+$it_registration_list_version   = '1.1.1';
 $it_registration_list_library   = 'icon-fonts';
 $it_registration_list_init_file = dirname( __FILE__ ) . '/init.php';
 

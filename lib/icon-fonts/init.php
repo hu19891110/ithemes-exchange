@@ -3,8 +3,8 @@
  * Custom Icons for iThemes Products
  *
  * @package icon-fonts
- * @author Justin Kopepasah
- * @version 1.1.0
+ * @author iThemes
+ * @version 1.1.1
 */
 
 if ( ! function_exists( 'it_icon_font_admin_enueue_scripts' ) ) {
@@ -33,6 +33,8 @@ if ( ! function_exists( 'it_icon_font_admin_enueue_scripts' ) ) {
 			
 			if ( is_ssl() ) {
 				$url = preg_replace( '|^http://|', 'https://', $url );
+			} else {
+				$url = preg_replace( '|^https://|', 'http://', $url );
 			}
 			
 			

@@ -74,6 +74,39 @@
 					?>
 				</td>
 			</tr>
+			<?php do_action( 'it_exchange_general_settings_before_settings_store', $form ); ?>
+			<tr valign="top">
+				<th scope="row"><strong><?php _e( 'Store Settings', 'it-l10n-ithemes-exchange' ); ?></strong></th>
+				<td></td>
+			</tr>
+			<tr valign="top">
+				<th scope="row"><label for="store-product-order-by"><?php _e( 'Order Products By', 'it-l10n-ithemes-exchange' ) ?></label></th>
+				<td>
+					<?php
+					$order_by = apply_filters( 'it_exchange_store_order_by_options', array(
+						'ID'         => __( 'Product ID', 'it-l10n-ithemes-exchange' ),
+						'title'      => __( 'Product Title', 'it-l10n-ithemes-exchange' ),
+						'name'       => __( 'Product Slug', 'it-l10n-ithemes-exchange' ),
+						'date'       => __( 'Product Published Date/Time', 'it-l10n-ithemes-exchange' ),
+						'modified'   => __( 'Product Modified Date/Time', 'it-l10n-ithemes-exchange' ),
+						'rand'       => __( 'Random', 'it-l10n-ithemes-exchange' ),
+						'menu_order' => __( 'Product Order #', 'it-l10n-ithemes-exchange' ),
+					) );
+					$form->add_drop_down( 'store-product-order-by', $order_by ); ?>
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row"><label for="store-product-order"><?php _e( 'Order', 'it-l10n-ithemes-exchange' ) ?></label></th>
+				<td>
+					<?php
+					$order_by = apply_filters( 'it_exchange_store_order_options', array(
+						'ASC'  => __( 'Ascending', 'it-l10n-ithemes-exchange' ),
+						'DESC' => __( 'Descending', 'it-l10n-ithemes-exchange' ),
+					) );
+					$form->add_drop_down( 'store-product-order', $order_by ); ?>
+				</td>
+			</tr>
+
 			<?php do_action( 'it_exchange_general_settings_before_settings_currency', $form ); ?>
 			<tr valign="top">
 				<th scope="row"><strong><?php _e( 'Currency Settings', 'it-l10n-ithemes-exchange' ); ?></strong></th>

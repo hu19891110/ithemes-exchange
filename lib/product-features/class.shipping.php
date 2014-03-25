@@ -111,7 +111,7 @@ class IT_Exchange_Product_Feature_Shipping {
 	function register_metabox() {
 		$shipping_features = it_exchange_get_registered_shipping_features();
 		if ( ! empty( $shipping_features ) )
-			add_meta_box( 'it-exchange-product-shipping', __( 'Product Shipping', 'it-l10n-ithemes-exchange' ), array( $this, 'print_metabox' ), 'it_exchange_prod', 'it_exchange_normal', 'low' );
+			add_meta_box( 'it-exchange-product-shipping', __( 'Shipping', 'it-l10n-ithemes-exchange' ), array( $this, 'print_metabox' ), 'it_exchange_prod', 'it_exchange_normal', 'low' );
 	}
 
 	/**
