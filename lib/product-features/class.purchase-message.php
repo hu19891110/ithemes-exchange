@@ -26,7 +26,7 @@ class IT_Exchange_Product_Feature_Purchase_Message {
 		add_action( 'it_exchange_update_product_feature_purchase-message', array( $this, 'save_feature' ), 9, 2 );
 		add_filter( 'it_exchange_get_product_feature_purchase-message', array( $this, 'get_feature' ), 9, 2 );
 		add_filter( 'it_exchange_product_has_feature_purchase-message', array( $this, 'product_has_feature') , 9, 2 );
-		add_filter( 'it_exchange_product_supports_feature_purhcase-message', array( $this, 'product_supports_feature') , 9, 2 );
+		add_filter( 'it_exchange_product_supports_feature_purchase-message', array( $this, 'product_supports_feature') , 9, 2 );
 	}
 
 	/**

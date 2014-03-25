@@ -17,7 +17,7 @@ if ( !function_exists( 'create_it_exchange_categories' ) ) {
 	function it_exchange_categories_addon_create() {
 
 		$labels = array(
-			'name'              => __( 'Product Categories', 'it-l10n-ithemes-exchange' ),
+			'name'              => __( 'Categories', 'it-l10n-ithemes-exchange' ),
 			'singular_name'     => __( 'Product Category', 'it-l10n-ithemes-exchange' ),
 			'search_items'      => __( 'Search Product Categories', 'it-l10n-ithemes-exchange' ),
 			'all_items'         => __( 'All Product Categories', 'it-l10n-ithemes-exchange' ),

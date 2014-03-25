@@ -17,7 +17,7 @@ if ( !function_exists( 'create_it_exchange_tags' ) ) {
 	function create_it_exchange_tags() {
 
 		$labels = array(
-			'name'              => __( 'Product Tags', 'it-l10n-ithemes-exchange' ),
+			'name'              => __( 'Tags', 'it-l10n-ithemes-exchange' ),
 			'singular_name'     => __( 'Product Tag', 'it-l10n-ithemes-exchange' ),
 			'search_items'      => __( 'Search Product Tags', 'it-l10n-ithemes-exchange' ),
 			'all_items'         => __( 'All Product Tags', 'it-l10n-ithemes-exchange' ),
