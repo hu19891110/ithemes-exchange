@@ -1,20 +1,17 @@
-# Translation of   by .
-# Copyright (C) 2014 
-# This file is distributed under the same license as the  package.
-# Chris Jean <support@ithemes.com>, 2014.
-#
-#, fuzzy
+# Copyright (C) 2014 iThemes Exchange
+# This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version:  \n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/ithemes-exchange\n"
-"POT-Creation-Date: 2014-03-26 15:32-0500\n"
+"Project-Id-Version: iThemes Exchange 1.7.25\n"
+"Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
+"POT-Creation-Date: 2014-04-02 16:28:25+00:00\n"
 "PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Chris Jean <support@ithemes.com>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 
 #: api/addons.php:39
 msgid "All iThemes Exchange Add-ons require a slug parameter."
@@ -2397,13 +2394,11 @@ msgstr ""
 
 #: api/theme/billing.php:160 api/theme/shipping.php:159
 #: lib/shipping/class.shipping.php:301
-#: lib/shipping/shipping-features/core-from-address.php:98
 msgid "Address 2"
 msgstr ""
 
 #: api/theme/billing.php:181 api/theme/shipping.php:180
 #: lib/shipping/class.shipping.php:311
-#: lib/shipping/shipping-features/core-from-address.php:99
 msgid "City"
 msgstr ""
 
@@ -2421,7 +2416,6 @@ msgstr ""
 
 #: api/theme/billing.php:345 api/theme/shipping.php:289
 #: lib/shipping/class.shipping.php:605
-#: lib/shipping/shipping-features/core-from-address.php:118
 msgid "State"
 msgstr ""
 
@@ -2439,7 +2433,7 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: api/theme/billing.php:476 api/theme/checkout.php:93 api/theme/login.php:326
+#: api/theme/billing.php:476 api/theme/checkout.php:93 api/theme/login.php:328
 #: api/theme/registration.php:367 api/theme/shipping-method.php:160
 #: api/theme/shipping.php:419
 #: core-addons/admin/guest-checkout/lib/template-functions.php:210
@@ -2498,7 +2492,7 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-#: api/theme/customer.php:347 api/theme/login.php:141
+#: api/theme/customer.php:347 api/theme/login.php:143
 #: api/theme/registration.php:258
 msgid "Password"
 msgstr ""
@@ -2516,7 +2510,6 @@ msgid "View your Account"
 msgstr ""
 
 #: api/theme/customer.php:569
-#, php-format
 msgid "Thank you for your order. An email confirmation has been sent to %s."
 msgstr ""
 
@@ -2532,53 +2525,28 @@ msgid "Never expires"
 msgstr ""
 
 #: api/theme/download.php:165
-#, php-format
 msgid "%d %s after purchase"
 msgstr ""
 
-#: api/theme/login.php:104 api/theme/registration.php:110
+#: api/theme/login.php:106 api/theme/registration.php:110
 msgid "Username"
 msgstr ""
 
-#: api/theme/login.php:178
+#: api/theme/login.php:180
 msgid "Remember Me"
 msgstr ""
 
-#: api/theme/login.php:215 lib/functions/functions.php:483
+#: api/theme/login.php:217 lib/functions/functions.php:483
 msgid "Log In"
 msgstr ""
 
-#: api/theme/login.php:251
+#: api/theme/login.php:253
 msgid "Lost your password?"
 msgstr ""
 
-#: api/theme/login.php:291 api/theme/registration.php:332
+#: api/theme/login.php:293 api/theme/registration.php:332
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/login/register.php:20
 msgid "Register"
-msgstr ""
-
-#: api/theme.php:59
-#, php-format
-msgid "Coding Error: Incorrect number of args passed to %s"
-msgstr ""
-
-#: api/theme.php:136
-#, php-format
-msgid "Coding Error: <em>%s</em> is not a valid Exchange theme API context"
-msgstr ""
-
-#: api/theme.php:146
-#, php-format
-msgid ""
-"Coding Error: <em>%s</em> in not a mapped method inside the <em>%s</em> "
-"Exchange theme API class"
-msgstr ""
-
-#: api/theme.php:154
-#, php-format
-msgid ""
-"Coding Error: <em>%s</em> in not a callable method inside the <em>%s</em> "
-"Exchange theme API class"
 msgstr ""
 
 #: api/theme/product.php:191
@@ -2670,17 +2638,35 @@ msgid "Next"
 msgstr ""
 
 #: api/theme/transaction.php:102
-#, php-format
 msgid "Order Number: %s"
 msgstr ""
 
 #: api/theme/transaction.php:120
-#, php-format
 msgid "Status: <span class=\"%s\">%s</span>"
 msgstr ""
 
 #: api/theme/transaction.php:600 lib/admin/views/admin-user-products.php:89
 msgid "Unlimited Downloads"
+msgstr ""
+
+#: api/theme.php:59
+msgid "Coding Error: Incorrect number of args passed to %s"
+msgstr ""
+
+#: api/theme.php:136
+msgid "Coding Error: <em>%s</em> is not a valid Exchange theme API context"
+msgstr ""
+
+#: api/theme.php:146
+msgid ""
+"Coding Error: <em>%s</em> in not a mapped method inside the <em>%s</em> "
+"Exchange theme API class"
+msgstr ""
+
+#: api/theme.php:154
+msgid ""
+"Coding Error: <em>%s</em> in not a callable method inside the <em>%s</em> "
+"Exchange theme API class"
 msgstr ""
 
 #: api/transactions.php:134
@@ -2696,7 +2682,6 @@ msgstr ""
 #: core-addons/transaction-methods/offline-payments/init.php:285
 #: core-addons/transaction-methods/paypal-standard/init.php:743
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:973
-#: lib/transactions/class.transactions-post-type.php:350
 msgid "Unknown"
 msgstr ""
 
@@ -2745,6 +2730,8 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.7.25)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:19
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
 msgid "iThemes Exchange"
@@ -2830,21 +2817,8 @@ msgstr ""
 msgid "Check out as a guest"
 msgstr ""
 
-#: core-addons/admin/guest-checkout/lib/templates/super-widget-guest-checkout/elements/login.php:20
-#: lib/admin/views/admin-settings.php:165
-#: lib/deprecated/templates/content-registration.php:49
-#: lib/deprecated/templates/super-widget-registration.php:44
-#: lib/functions/functions.php:855
-#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/not-logged-in/links/login.php:21
-#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/registration/login.php:20
-#: lib/templates/content-registration/elements/login.php:20
-#: lib/templates/super-widget-registration/elements/login.php:20
-msgid "Log in"
-msgstr ""
-
 #: core-addons/admin/guest-checkout/lib/templates/super-widget-guest-checkout/elements/register.php:20
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/not-logged-in/links/register.php:21
-#: lib/templates/super-widget-login/elements/register.php:20
 msgid "Create an account"
 msgstr ""
 
@@ -2935,8 +2909,6 @@ msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:265
 #: lib/product-features/class.downloads.php:195
-#: lib/product-features/class.downloads.php:207
-#: lib/product-features/class.downloads.php:224
 msgid "Name"
 msgstr ""
 
@@ -2983,22 +2955,12 @@ msgstr ""
 msgid "Limit number of coupons"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:300
-msgid "Check to limit the number of times this coupon can be used"
-msgstr ""
-
 #: core-addons/coupons/basic-coupons/admin.php:306
 msgid "How many times can this coupon be used before it is disabled?"
 msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:312
 msgid "Limit to a specific product"
-msgstr ""
-
-#: core-addons/coupons/basic-coupons/admin.php:313
-msgid ""
-"Check to limit the coupon discount to a specific product price, not the cart "
-"total"
 msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:319
@@ -3414,21 +3376,8 @@ msgid ""
 "for this product."
 msgstr ""
 
-#: core-addons/product-features/page-templates/init.php:115
-msgid ""
-"Exchange uses page.php as it's default when no custom Exchange Templates are "
-"available. Page templates for Exchange products need to include a call to "
-"the_content() or use Exchange Theme API functions to display correctly."
-msgstr ""
-
 #: core-addons/product-features/page-templates/init.php:118
 msgid " Default Template"
-msgstr ""
-
-#: core-addons/product-features/page-templates/init.php:120
-msgid ""
-"These options are generated from alternative page templates included with "
-"your current theme."
 msgstr ""
 
 #: core-addons/product-features/tags/init.php:20
@@ -3596,7 +3545,6 @@ msgid "Shipping"
 msgstr ""
 
 #: core-addons/shipping/simple-shipping/lib/settings.php:22
-#, php-format
 msgid ""
 "Settings are located in the %sShipping tab%s on the Exchange Settings page."
 msgstr ""
@@ -3895,12 +3843,10 @@ msgid "Please include your PayPal Email Address"
 msgstr ""
 
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:142
-#, php-format
 msgid "Error: Transaction IDs do not match! %s, %s"
 msgstr ""
 
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:145
-#, php-format
 msgid "Error: Amount charged is not the same as the cart total! %s | %s"
 msgstr ""
 
@@ -4087,6 +4033,24 @@ msgstr ""
 msgid "Please include your PayPal Sandbox API signature"
 msgstr ""
 
+#: lib/admin/class-settings-form.php:323
+msgid "Coding Error!"
+msgstr ""
+
+#: lib/admin/class-settings-form.php:324
+msgid ""
+"The setting for %s has an incorrect type argument. No such method exists in "
+"the ITForm class"
+msgstr ""
+
+#: lib/admin/class-settings-form.php:343
+msgid "Invalid security token. Please try again"
+msgstr ""
+
+#: lib/admin/class-settings-form.php:353
+msgid "Settings updated"
+msgstr ""
+
 #: lib/admin/class.admin.php:148
 msgid "Quick Setup"
 msgstr ""
@@ -4172,12 +4136,10 @@ msgid "Get More"
 msgstr ""
 
 #: lib/admin/class.admin.php:631
-#, php-format
 msgid "You made a sale! Yabba Dabba Doo! %s"
 msgstr ""
 
 #: lib/admin/class.admin.php:632
-#, php-format
 msgid ""
 "Your friend %s just bought all this awesomeness from your store!\n"
 "\n"
@@ -4187,12 +4149,10 @@ msgid ""
 msgstr ""
 
 #: lib/admin/class.admin.php:639
-#, php-format
 msgid "Receipt for Purchase: %s"
 msgstr ""
 
 #: lib/admin/class.admin.php:640
-#, php-format
 msgid ""
 "Hello %s,\n"
 "\n"
@@ -4221,7 +4181,6 @@ msgid "Error: Add-on not disabled."
 msgstr ""
 
 #: lib/admin/class.admin.php:999 lib/admin/views/admin-settings.php:72
-#, php-format
 msgid ""
 "Please use the 2-3 character %sISO abbreviation%s for country subdivisions"
 msgstr ""
@@ -4235,17 +4194,14 @@ msgid "Settings Saved. Congrats!"
 msgstr ""
 
 #: lib/admin/class.admin.php:1154
-#, php-format
 msgid "%sAdd a Product%s"
 msgstr ""
 
 #: lib/admin/class.admin.php:1155
-#, php-format
 msgid "%sEnable Add-ons%s"
 msgstr ""
 
 #: lib/admin/class.admin.php:1157
-#, php-format
 msgid "%sView Sample Product%s"
 msgstr ""
 
@@ -4334,27 +4290,8 @@ msgstr ""
 msgid "Side Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1807
+#: lib/admin/class.admin.php:1808
 msgid "Featured Image"
-msgstr ""
-
-#: lib/admin/class-settings-form.php:323
-msgid "Coding Error!"
-msgstr ""
-
-#: lib/admin/class-settings-form.php:324
-#, php-format
-msgid ""
-"The setting for %s has an incorrect type argument. No such method exists in "
-"the ITForm class"
-msgstr ""
-
-#: lib/admin/class-settings-form.php:343
-msgid "Invalid security token. Please try again"
-msgstr ""
-
-#: lib/admin/class-settings-form.php:353
-msgid "Settings updated"
 msgstr ""
 
 #: lib/admin/views/admin-add-ons.php:12
@@ -4389,7 +4326,6 @@ msgid "Go get more"
 msgstr ""
 
 #: lib/admin/views/admin-default-templates-updated-notice.php:10
-#, php-format
 msgid ""
 "iThemes Exchange default template parts have been updated. View %sour codex"
 "%s for more information."
@@ -4448,7 +4384,6 @@ msgstr ""
 #: lib/admin/views/admin-email-settings.php:71
 #: lib/admin/views/admin-email-settings.php:135
 #: lib/admin/views/admin-settings.php:237
-#, php-format
 msgid "You call these shortcode functions like this: %s"
 msgstr ""
 
@@ -4583,7 +4518,6 @@ msgid "Acquired all Exchange Add-ons"
 msgstr ""
 
 #: lib/admin/views/admin-get-more-addons.php:81
-#, php-format
 msgid "You have all %s currently has to offer!"
 msgstr ""
 
@@ -4601,7 +4535,6 @@ msgid ""
 msgstr ""
 
 #: lib/admin/views/admin-get-more-addons.php:104
-#, php-format
 msgid ""
 "Looks like there's a problem loading available add-ons. Go to %s to check "
 "out other available add-ons."
@@ -4612,7 +4545,6 @@ msgid "Help and Resources"
 msgstr ""
 
 #: lib/admin/views/admin-help.php:12
-#, php-format
 msgid ""
 "We've built %s to simplify ecommerce for WordPress. However, ecommerce is "
 "not always easy, so we've taken the time to create some resources to help "
@@ -4763,7 +4695,6 @@ msgid "Company Tax ID"
 msgstr ""
 
 #: lib/admin/views/admin-settings.php:32
-#, php-format
 msgid "In the U.S., this is your Federal %sTax ID Number%s."
 msgstr ""
 
@@ -4934,6 +4865,16 @@ msgstr ""
 msgid "Registration"
 msgstr ""
 
+#: lib/admin/views/admin-settings.php:165
+#: lib/deprecated/templates/content-registration.php:49
+#: lib/deprecated/templates/super-widget-registration.php:44
+#: lib/functions/functions.php:855
+#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/not-logged-in/links/login.php:21
+#: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/registration/login.php:20
+#: lib/templates/content-registration/elements/login.php:20
+msgid "Log in"
+msgstr ""
+
 #: lib/admin/views/admin-settings.php:173
 msgid "Stylesheet Settings"
 msgstr ""
@@ -5049,12 +4990,10 @@ msgid "Downloads"
 msgstr ""
 
 #: lib/admin/views/admin-user-products.php:87
-#, php-format
 msgid "%s of %s downloads remaining"
 msgstr ""
 
 #: lib/admin/views/admin-user-products.php:93
-#, php-format
 msgid "Expires %s"
 msgstr ""
 
@@ -5103,7 +5042,6 @@ msgid "Resend Confirmation Email"
 msgstr ""
 
 #: lib/admin/views/admin-user-transactions.php:47
-#, php-format
 msgid "Refund from %s"
 msgstr ""
 
@@ -5124,12 +5062,10 @@ msgid "Setup"
 msgstr ""
 
 #: lib/admin/views/admin-wizard.php:20
-#, php-format
 msgid "Welcome to %s"
 msgstr ""
 
 #: lib/admin/views/admin-wizard.php:22
-#, php-format
 msgid ""
 "You can customize your store features by filling out some information below. "
 "(Don't worry, you can always change these settings on the Add-ons page and "
@@ -5354,7 +5290,6 @@ msgid "Close"
 msgstr ""
 
 #: lib/classes/it-image-utility.php:64
-#, php-format
 msgid "File &#8220;%s&#8221; doesn&#8217;t exist?"
 msgstr ""
 
@@ -5363,7 +5298,6 @@ msgid "The GD image library is not installed."
 msgstr ""
 
 #: lib/classes/it-image-utility.php:74
-#, php-format
 msgid "File &#8220;%s&#8221; is not an image."
 msgstr ""
 
@@ -5378,55 +5312,46 @@ msgid "Add New"
 msgstr ""
 
 #: lib/classes/it-post-type.php:477
-#, php-format
 msgctxt "post"
 msgid "Add New %s"
 msgstr ""
 
 #: lib/classes/it-post-type.php:478
-#, php-format
 msgctxt "post"
 msgid "Edit %s"
 msgstr ""
 
 #: lib/classes/it-post-type.php:479
-#, php-format
 msgctxt "post"
 msgid "New %s"
 msgstr ""
 
 #: lib/classes/it-post-type.php:480
-#, php-format
 msgctxt "post"
 msgid "View %s"
 msgstr ""
 
 #: lib/classes/it-post-type.php:481
-#, php-format
 msgctxt "post"
 msgid "Search %s"
 msgstr ""
 
 #: lib/classes/it-post-type.php:482
-#, php-format
 msgctxt "post"
 msgid "No %s found"
 msgstr ""
 
 #: lib/classes/it-post-type.php:483
-#, php-format
 msgctxt "post"
 msgid "No %s found in trash"
 msgstr ""
 
 #: lib/classes/it-post-type.php:484
-#, php-format
 msgctxt "post"
 msgid "Parent %s:"
 msgstr ""
 
 #: lib/classes/it-post-type.php:485
-#, php-format
 msgctxt "post"
 msgid "All %s"
 msgstr ""
@@ -5533,7 +5458,6 @@ msgstr ""
 #: lib/deprecated/templates/content-registration.php:22
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/registration/user-logged-in.php:20
 #: lib/templates/content-registration/elements/user-logged-in.php:19
-#, php-format
 msgid ""
 "You already have an active account and are logged in. Visit your %sProfile%s"
 msgstr ""
@@ -5567,13 +5491,11 @@ msgstr ""
 
 #: lib/deprecated/templates/super-widget-cart.php:106
 #: lib/templates/super-widget-cart/elements/summary.php:22
-#, php-format
 msgid "You have 1 item in your <a href=\"%s\">%s</a>"
 msgstr ""
 
 #: lib/deprecated/templates/super-widget-cart.php:108
 #: lib/templates/super-widget-cart/elements/summary.php:24
-#, php-format
 msgid "You have %s items in your <a href=\"%s\">%s</a>"
 msgstr ""
 
@@ -5615,7 +5537,6 @@ msgid "Available Downloads"
 msgstr ""
 
 #: lib/email-notifications/class.email-notifications.php:342
-#, php-format
 msgid ""
 "You have purchased %d unique download link(s) for each file available with "
 "this product.%s%sEach link has its own download limits and you can view the "
@@ -5746,19 +5667,8 @@ msgstr ""
 msgid "edit your cart"
 msgstr ""
 
-#: lib/functions/functions.php:869
-#, php-format
-msgid "You must be logged in to complete your purchase. %s"
-msgstr ""
-
 #: lib/functions/functions.php:879
 msgid "We need a billing address before you can checkout"
-msgstr ""
-
-#: lib/functions/functions.php:1036
-msgid ""
-"Coding Error: Please hook into the following action, print your field based "
-"on $_POST vars and die():<br /> \"it_exchange_admin_country_states_sync_for_"
 msgstr ""
 
 #: lib/functions/functions.php:1195
@@ -5896,7 +5806,6 @@ msgid "The Exchange checkout page."
 msgstr ""
 
 #: lib/integrations/builder/functions.php:313
-#, php-format
 msgid "All %s product type single product views"
 msgstr ""
 
@@ -5906,10 +5815,6 @@ msgstr ""
 
 #: lib/pages/class.nav-menus.php:105
 msgid "Select All"
-msgstr ""
-
-#: lib/pages/class.nav-menus.php:109
-msgid "Add to Menu"
 msgstr ""
 
 #: lib/pages/class.nav-menus.php:109
@@ -5962,11 +5867,6 @@ msgstr ""
 msgid ""
 "Use the WordPress media library or paste in any accessible URL (from "
 "Dropbox, Amazon, etc.) and we'll hide the source for you."
-msgstr ""
-
-#: lib/product-features/class.downloads.php:210
-#: lib/product-features/class.downloads.php:227
-msgid "http://"
 msgstr ""
 
 #: lib/product-features/class.downloads.php:211
@@ -6197,17 +6097,14 @@ msgid "Extended Description"
 msgstr ""
 
 #: lib/product-features/class.wp-post-supports.php:141
-#, php-format
 msgid "Word count: %s"
 msgstr ""
 
 #: lib/product-features/class.wp-post-supports.php:149
-#, php-format
 msgid "Last edited by %1$s on %2$s at %3$s"
 msgstr ""
 
 #: lib/product-features/class.wp-post-supports.php:151
-#, php-format
 msgid "Last edited on %1$s at %2$s"
 msgstr ""
 
@@ -6393,7 +6290,6 @@ msgid "Edit "
 msgstr ""
 
 #: lib/products/class.products-post-type.php:707
-#, php-format
 msgid "Product updated. <a href=\"%s\">View product</a>"
 msgstr ""
 
@@ -6411,12 +6307,10 @@ msgstr ""
 
 #. translators: %s: date and time of the revision
 #: lib/products/class.products-post-type.php:712
-#, php-format
 msgid "Product restored to revision from %s"
 msgstr ""
 
 #: lib/products/class.products-post-type.php:713
-#, php-format
 msgid "Product published. <a href=\"%s\">View product</a>"
 msgstr ""
 
@@ -6425,24 +6319,21 @@ msgid "Product saved."
 msgstr ""
 
 #: lib/products/class.products-post-type.php:715
-#, php-format
 msgid "Product submitted. <a target=\"_blank\" href=\"%s\">Preview product</a>"
 msgstr ""
 
 #: lib/products/class.products-post-type.php:716
-#, php-format
 msgid ""
 "Product scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
 "\"%2$s\">Preview product</a>"
 msgstr ""
 
-#. translators: Publish box date format, see http://php.net/date
+#. translators: Publish box date format, see http:php.net/date
 #: lib/products/class.products-post-type.php:718
 msgid "M j, Y @ G:i"
 msgstr ""
 
 #: lib/products/class.products-post-type.php:719
-#, php-format
 msgid ""
 "Product draft updated. <a target=\"_blank\" href=\"%s\">Preview product</a>"
 msgstr ""
@@ -6545,12 +6436,10 @@ msgid "The default from address used when shipping your products."
 msgstr ""
 
 #: lib/shipping/class.shipping.php:291
-#: lib/shipping/shipping-features/core-from-address.php:97
 msgid "Address 1"
 msgstr ""
 
 #: lib/shipping/class.shipping.php:335
-#: lib/shipping/shipping-features/core-from-address.php:121
 msgid "Zip"
 msgstr ""
 
@@ -6586,7 +6475,6 @@ msgid "Shipping Address Updated"
 msgstr ""
 
 #: lib/shipping/class.shipping.php:607
-#, php-format
 msgid "Please use the 2-3 character %sISO 3166-2 Country Subdivision Code%s"
 msgstr ""
 
@@ -6679,7 +6567,6 @@ msgid "Edit Cart"
 msgstr ""
 
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/logged-in/logged-in-as.php:22
-#, php-format
 msgid "Checking out as: %s"
 msgstr ""
 
@@ -6812,7 +6699,6 @@ msgid "Transaction Details"
 msgstr ""
 
 #: lib/transactions/class.transactions-post-type.php:523
-#, php-format
 msgid "Ship this product with %s."
 msgstr ""
 
@@ -6834,10 +6720,6 @@ msgstr ""
 
 #: lib/transactions/class.transactions-post-type.php:596
 msgid "on"
-msgstr ""
-
-#: lib/transactions/class.transactions-post-type.php:609
-msgid "Unknown Shipping Method"
 msgstr ""
 
 #: lib/transactions/class.transactions-post-type.php:627
@@ -6864,4 +6746,22 @@ msgstr ""
 
 #: lib/transactions/class.transactions-post-type.php:680
 msgid "Saved!"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://ithemes.com/exchange/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Easily sell your digital goods with iThemes Exchange, simple ecommerce for "
+"WordPress"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "iThemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://ithemes.com"
 msgstr ""
