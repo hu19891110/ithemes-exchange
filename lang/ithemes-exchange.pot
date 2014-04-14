@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.7.25\n"
+"Project-Id-Version: iThemes Exchange 1.7.26\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2014-04-02 16:28:25+00:00\n"
+"POT-Creation-Date: 2014-04-14 12:54:03+00:00\n"
 "PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2730,7 +2730,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.7.25)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.7.26)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:19
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -5210,7 +5210,7 @@ msgstr ""
 msgid "Product not added to cart"
 msgstr ""
 
-#: lib/cart/class.cart.php:149 lib/cart/class.cart.php:487
+#: lib/cart/class.cart.php:149 lib/cart/class.cart.php:489
 msgid "Product added to cart"
 msgstr ""
 
@@ -5235,39 +5235,39 @@ msgstr ""
 msgid "Billing Address Saved"
 msgstr ""
 
-#: lib/cart/class.cart.php:469
+#: lib/cart/class.cart.php:471
 msgid "Unknown error. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:479
+#: lib/cart/class.cart.php:481
 msgid "Please select a payment method"
 msgstr ""
 
-#: lib/cart/class.cart.php:480
+#: lib/cart/class.cart.php:482
 msgid "There was an error processing your transaction. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:481
+#: lib/cart/class.cart.php:483
 msgid "Product not removed from cart. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:482
+#: lib/cart/class.cart.php:484
 msgid "There was an error emptying your cart. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:483
+#: lib/cart/class.cart.php:485
 msgid "There was an error updating your cart. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:484
+#: lib/cart/class.cart.php:486
 msgid "Cart Updated."
 msgstr ""
 
-#: lib/cart/class.cart.php:485
+#: lib/cart/class.cart.php:487
 msgid "Cart Emptied"
 msgstr ""
 
-#: lib/cart/class.cart.php:486
+#: lib/cart/class.cart.php:488
 msgid "Product removed from cart."
 msgstr ""
 
