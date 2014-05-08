@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.7.27.1\n"
+"Project-Id-Version: iThemes Exchange 1.8.0\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2014-04-18 16:58:15+00:00\n"
+"POT-Creation-Date: 2014-05-08 14:24:29+00:00\n"
 "PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2452,7 +2452,7 @@ msgstr ""
 msgid "&times;"
 msgstr ""
 
-#: api/theme/cart-item.php:278
+#: api/theme/cart-item.php:279
 msgid "Unregisterd image size."
 msgstr ""
 
@@ -2513,7 +2513,7 @@ msgstr ""
 msgid "Thank you for your order. An email confirmation has been sent to %s."
 msgstr ""
 
-#: api/theme/download.php:127 api/theme/product.php:363
+#: api/theme/download.php:127 api/theme/product.php:366
 #: core-addons/coupons/basic-coupons/admin.php:429
 #: lib/email-notifications/class.email-notifications.php:352
 #: lib/product-features/class.downloads.php:317
@@ -2553,38 +2553,37 @@ msgstr ""
 msgid "Free"
 msgstr ""
 
-#: api/theme/product.php:239
+#: api/theme/product.php:242
 msgid "(more info)"
 msgstr ""
 
-#: api/theme/product.php:800 api/theme/product.php:928
+#: api/theme/product.php:804 api/theme/product.php:934
 #: lib/admin/views/admin-get-more-addons.php:66
 msgid "Buy Now"
 msgstr ""
 
-#: api/theme/product.php:807 api/theme/product.php:992
+#: api/theme/product.php:811 api/theme/product.php:1000
 msgid "Add to Cart"
 msgstr ""
 
-#: api/theme/product.php:811 api/theme/product.php:931
-#: api/theme/product.php:995
-msgid "Out of stock."
-msgstr ""
-
-#: api/theme/product.php:812 api/theme/product.php:932
-#: api/theme/product.php:996
-msgid "Product not available right now."
-msgstr ""
-
-#: api/theme/product.php:831
+#: api/theme/product.php:815
 msgid "Product is currently out of stock."
 msgstr ""
 
-#: api/theme/product.php:834
+#: api/theme/product.php:816 api/theme/product.php:938
+#: api/theme/product.php:1004
+msgid "Product not available right now."
+msgstr ""
+
+#: api/theme/product.php:840
 msgid "Product is currently not available."
 msgstr ""
 
-#: api/theme/product.php:998
+#: api/theme/product.php:937 api/theme/product.php:1003
+msgid "Out of stock."
+msgstr ""
+
+#: api/theme/product.php:1006
 msgid "Max Quantity Reached"
 msgstr ""
 
@@ -2657,13 +2656,13 @@ msgstr ""
 msgid "Coding Error: <em>%s</em> is not a valid Exchange theme API context"
 msgstr ""
 
-#: api/theme.php:146
+#: api/theme.php:147
 msgid ""
 "Coding Error: <em>%s</em> in not a mapped method inside the <em>%s</em> "
 "Exchange theme API class"
 msgstr ""
 
-#: api/theme.php:154
+#: api/theme.php:158
 msgid ""
 "Coding Error: <em>%s</em> in not a callable method inside the <em>%s</em> "
 "Exchange theme API class"
@@ -2730,7 +2729,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.7.27.1)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.8.0)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:19
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -4301,27 +4300,45 @@ msgid ""
 "the Get More tab to see what else Exchange can do."
 msgstr ""
 
-#: lib/admin/views/admin-add-ons.php:83
+#: lib/admin/views/admin-add-ons.php:41
+msgid "Get the Exchange Pro Pack"
+msgstr ""
+
+#: lib/admin/views/admin-add-ons.php:42
+msgid ""
+"The Pro Pack gets you access to all the iThemes Exchange add-ons... like "
+"Membership, Invoices, Recurring Payments, Stripe, and MailChimp add-ons and "
+"coming soon &ndash; Variants and Advances U.S. Taxes. Add-ons unlock so much "
+"more that Exchange can do. And with the Pro Pack you get access to all our "
+"iThemes-built add-ons, plus any more we build in the next year (which will "
+"be a lot)."
+msgstr ""
+
+#: lib/admin/views/admin-add-ons.php:43
+msgid "Get all our add-ons for $197"
+msgstr ""
+
+#: lib/admin/views/admin-add-ons.php:92
 msgid "No add-ons installed. How'd you do that?"
 msgstr ""
 
-#: lib/admin/views/admin-add-ons.php:84
+#: lib/admin/views/admin-add-ons.php:93
 msgid "Go get some now"
 msgstr ""
 
-#: lib/admin/views/admin-add-ons.php:89
+#: lib/admin/views/admin-add-ons.php:98
 msgid "No add-ons are currently enabled"
 msgstr ""
 
-#: lib/admin/views/admin-add-ons.php:90
+#: lib/admin/views/admin-add-ons.php:99
 msgid "Go enable some now"
 msgstr ""
 
-#: lib/admin/views/admin-add-ons.php:95
+#: lib/admin/views/admin-add-ons.php:104
 msgid "All add-ons are currently enabled"
 msgstr ""
 
-#: lib/admin/views/admin-add-ons.php:96
+#: lib/admin/views/admin-add-ons.php:105
 msgid "Go get more"
 msgstr ""
 
@@ -6000,16 +6017,16 @@ msgstr ""
 msgid "Enable Inventory Tracking for this Product"
 msgstr ""
 
-#: lib/product-features/class.inventory.php:51
+#: lib/product-features/class.inventory.php:52
 msgid "Current Inventory"
 msgstr ""
 
-#: lib/product-features/class.inventory.php:53
+#: lib/product-features/class.inventory.php:54
 #: lib/product-features/class.purchase-quantity.php:128
 msgid "Leave blank for unlimited."
 msgstr ""
 
-#: lib/product-features/class.inventory.php:211
+#: lib/product-features/class.inventory.php:278
 msgid "The current inventory number"
 msgstr ""
 
@@ -6038,10 +6055,8 @@ msgstr ""
 msgid "Product Images"
 msgstr ""
 
-#: lib/product-features/class.product-images.php:114
-msgid ""
-"Uploading large images is best (1600px or greater). Exchange will resize the "
-"images to use in the store."
+#: lib/product-features/class.product-images.php:116
+msgid "Images"
 msgstr ""
 
 #: lib/product-features/class.product-order.php:40
