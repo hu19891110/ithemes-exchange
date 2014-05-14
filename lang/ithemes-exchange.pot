@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.8.0\n"
+"Project-Id-Version: iThemes Exchange 1.8.1\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2014-05-08 14:24:29+00:00\n"
+"POT-Creation-Date: 2014-05-14 13:37:11+00:00\n"
 "PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2369,7 +2369,7 @@ msgstr ""
 msgid "Download Error:"
 msgstr ""
 
-#: api/misc.php:317
+#: api/misc.php:318
 msgid "Please complete all purchase requirements before checkout out."
 msgstr ""
 
@@ -2421,7 +2421,7 @@ msgstr ""
 
 #: api/theme/billing.php:415 api/theme/customer.php:265
 #: api/theme/registration.php:221 api/theme/shipping.php:360
-#: core-addons/load.php:314
+#: core-addons/load.php:315
 msgid "Email"
 msgstr ""
 
@@ -2456,22 +2456,26 @@ msgstr ""
 msgid "Unregisterd image size."
 msgstr ""
 
-#: api/theme/cart.php:150
+#: api/theme/cart.php:151
 msgid "Update Cart"
 msgstr ""
 
-#: api/theme/cart.php:181 core-addons/admin/multi-item-cart/init.php:27
+#: api/theme/cart.php:182 core-addons/admin/multi-item-cart/init.php:27
 msgid "Checkout"
 msgstr ""
 
-#: api/theme/cart.php:234
+#: api/theme/cart.php:235
 #: lib/deprecated/templates/super-widget-checkout.php:66
 #: lib/templates/super-widget-checkout/elements/multi-item-cancel.php:19
 msgid "View Cart"
 msgstr ""
 
-#: api/theme/cart.php:280
+#: api/theme/cart.php:281
 msgid "Empty Cart"
+msgstr ""
+
+#: api/theme/cart.php:325 api/theme/cart.php:326
+msgid "Continue Shopping"
 msgstr ""
 
 #: api/theme/coupons.php:181 core-addons/coupons/basic-coupons/admin.php:373
@@ -2558,7 +2562,7 @@ msgid "(more info)"
 msgstr ""
 
 #: api/theme/product.php:804 api/theme/product.php:934
-#: lib/admin/views/admin-get-more-addons.php:66
+#: lib/admin/views/admin-get-more-addons.php:71
 msgid "Buy Now"
 msgstr ""
 
@@ -2677,26 +2681,26 @@ msgid ""
 "The cart total must be greater than 0 for you to checkout. Please try again."
 msgstr ""
 
-#: api/transactions.php:697 api/transactions.php:761
+#: api/transactions.php:710 api/transactions.php:774
 #: core-addons/transaction-methods/offline-payments/init.php:285
 #: core-addons/transaction-methods/paypal-standard/init.php:743
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:973
 msgid "Unknown"
 msgstr ""
 
-#: api/transactions.php:725
+#: api/transactions.php:738
 msgid "Deleted Customer"
 msgstr ""
 
-#: api/transactions.php:803
+#: api/transactions.php:816
 msgid "#"
 msgstr ""
 
-#: api/transactions.php:1143
+#: api/transactions.php:1156
 msgid "Multiple Shipping Methods"
 msgstr ""
 
-#: api/transactions.php:1167
+#: api/transactions.php:1180
 msgid "Unknown Method"
 msgstr ""
 
@@ -2729,7 +2733,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.8.0)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.8.1)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:19
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -2749,7 +2753,7 @@ msgstr ""
 #: core-addons/admin/guest-checkout/lib/settings.php:18
 #: core-addons/admin/guest-checkout/lib/template-functions.php:52
 #: core-addons/admin/guest-checkout/lib/templates/super-widget-registration/elements/guest.php:21
-#: core-addons/load.php:130
+#: core-addons/load.php:131
 msgid "Guest Checkout"
 msgstr ""
 
@@ -2837,7 +2841,32 @@ msgstr ""
 msgid "Customer Checkout"
 msgstr ""
 
-#: core-addons/admin/product-type-metabox/init.php:33 core-addons/load.php:268
+#: core-addons/admin/multi-item-cart/init.php:124
+msgid "Multi-Item Cart Settings"
+msgstr ""
+
+#: core-addons/admin/multi-item-cart/init.php:137
+msgid "Options Saved"
+msgstr ""
+
+#: core-addons/admin/multi-item-cart/init.php:143
+msgid "Show the Continue Shopping button on the cart page?"
+msgstr ""
+
+#: core-addons/admin/multi-item-cart/init.php:152
+#: core-addons/product-types/digital-downloads/init.php:159
+#: core-addons/taxes/taxes-simple/init.php:56
+#: core-addons/transaction-methods/offline-payments/view-add-on-settings.php:21
+#: core-addons/transaction-methods/paypal-standard/init.php:947
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1179
+#: lib/admin/class-settings-form.php:41
+#: lib/admin/views/admin-email-settings.php:160
+#: lib/admin/views/admin-page-settings.php:128
+#: lib/admin/views/admin-settings.php:289
+msgid "Save Changes"
+msgstr ""
+
+#: core-addons/admin/product-type-metabox/init.php:33 core-addons/load.php:269
 #: lib/products/class.products-post-type.php:591
 msgid "Product Type"
 msgstr ""
@@ -2890,7 +2919,7 @@ msgstr ""
 msgid "Edit Coupon"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:158 core-addons/load.php:177
+#: core-addons/coupons/basic-coupons/admin.php:158 core-addons/load.php:178
 #: lib/coupons/class.coupons-post-type.php:30
 #: lib/deprecated/templates/super-widget-checkout.php:74
 #: lib/templates/super-widget-checkout/elements/single-item-update-coupons.php:20
@@ -3117,21 +3146,21 @@ msgid ""
 "with one transaction. There are no settings for this add-on."
 msgstr ""
 
-#: core-addons/load.php:131
+#: core-addons/load.php:132
 msgid ""
 "Enabling this add-on gives customers the ability to checkout as a guest, "
 "without registering"
 msgstr ""
 
-#: core-addons/load.php:143
+#: core-addons/load.php:144
 msgid "WordPress Page Templates"
 msgstr ""
 
-#: core-addons/load.php:144
+#: core-addons/load.php:145
 msgid "Enable the WordPress Page Templates meta box for products"
 msgstr ""
 
-#: core-addons/load.php:155
+#: core-addons/load.php:156
 #: lib/templates/content-checkout/elements/purchase-requirements/billing-address.php:24
 #: lib/templates/content-confirmation/elements/billing-address.php:21
 #: lib/templates/super-widget-billing-address.php:20
@@ -3139,160 +3168,160 @@ msgstr ""
 msgid "Billing Address"
 msgstr ""
 
-#: core-addons/load.php:156
+#: core-addons/load.php:157
 msgid ""
 "Enabling this add-on allows you to collect a billing address at checkout. "
 "There are no settings for this add-on."
 msgstr ""
 
-#: core-addons/load.php:165
+#: core-addons/load.php:166
 msgid "Basic Reporting Dashboard Widget"
 msgstr ""
 
-#: core-addons/load.php:166
+#: core-addons/load.php:167
 msgid "Adds a widget to the Admin dashboard to give basic sales statistics."
 msgstr ""
 
-#: core-addons/load.php:178
+#: core-addons/load.php:179
 msgid ""
 "This add-on allows you to generate coupons that apply to all products in "
 "your store."
 msgstr ""
 
-#: core-addons/load.php:189
+#: core-addons/load.php:190
 #: core-addons/product-features/categories/class.category-widget.php:18
 #: core-addons/product-features/categories/class.category-widget.php:24
 #: core-addons/product-features/categories/init.php:80
 msgid "Product Categories"
 msgstr ""
 
-#: core-addons/load.php:190
+#: core-addons/load.php:191
 msgid "This adds a category taxonomy for all products in iThemes Exchange."
 msgstr ""
 
-#: core-addons/load.php:197
+#: core-addons/load.php:198
 #: core-addons/product-features/categories/init.php:21
 msgid "Product Category"
 msgstr ""
 
-#: core-addons/load.php:202 core-addons/product-features/tags/init.php:60
+#: core-addons/load.php:203 core-addons/product-features/tags/init.php:60
 msgid "Product Tags"
 msgstr ""
 
-#: core-addons/load.php:203
+#: core-addons/load.php:204
 msgid "This adds a tag taxonomy for all products in iThemes Exchange."
 msgstr ""
 
-#: core-addons/load.php:210 core-addons/product-features/tags/init.php:21
+#: core-addons/load.php:211 core-addons/product-features/tags/init.php:21
 msgid "Product Tag"
 msgstr ""
 
-#: core-addons/load.php:215 core-addons/taxes/taxes-simple/init.php:42
+#: core-addons/load.php:216 core-addons/taxes/taxes-simple/init.php:42
 msgid "Simple Taxes"
 msgstr ""
 
-#: core-addons/load.php:216
+#: core-addons/load.php:217
 msgid "This gives the admin ability to apply a default tax rate to all sales."
 msgstr ""
 
-#: core-addons/load.php:226
+#: core-addons/load.php:227
 msgid "Duplicate Products"
 msgstr ""
 
-#: core-addons/load.php:227
+#: core-addons/load.php:228
 msgid "This gives the admin the ability to duplicate an existing product."
 msgstr ""
 
-#: core-addons/load.php:234
+#: core-addons/load.php:235
 msgid "Duplicate"
 msgstr ""
 
-#: core-addons/load.php:238
+#: core-addons/load.php:239
 #: core-addons/shipping/simple-shipping/lib/provider.php:11
 msgid "Simple Shipping"
 msgstr ""
 
-#: core-addons/load.php:239
+#: core-addons/load.php:240
 msgid "Flat rate and free shipping for your physcial products"
 msgstr ""
 
-#: core-addons/load.php:269
+#: core-addons/load.php:270
 msgid ""
 "Add-ons responsible for the differing types of products available in iThemes "
 "Exchange."
 msgstr ""
 
-#: core-addons/load.php:274
+#: core-addons/load.php:275
 msgid "Transaction Methods"
 msgstr ""
 
-#: core-addons/load.php:275
+#: core-addons/load.php:276
 msgid "Add-ons that create transactions. eg: Stripe, PayPal."
 msgstr ""
 
-#: core-addons/load.php:287
+#: core-addons/load.php:288
 #: core-addons/transaction-methods/offline-payments/init.php:24
 msgctxt "Transaction Status"
 msgid "Pending"
 msgstr ""
 
-#: core-addons/load.php:288
+#: core-addons/load.php:289
 msgctxt "Transaction Status"
 msgid "Authorized"
 msgstr ""
 
-#: core-addons/load.php:289
+#: core-addons/load.php:290
 #: core-addons/transaction-methods/offline-payments/init.php:25
 msgctxt "Transaction Status"
 msgid "Paid"
 msgstr ""
 
-#: core-addons/load.php:290
+#: core-addons/load.php:291
 #: core-addons/transaction-methods/offline-payments/init.php:26
 msgctxt "Transaction Status"
 msgid "Refunded"
 msgstr ""
 
-#: core-addons/load.php:291
+#: core-addons/load.php:292
 #: core-addons/transaction-methods/offline-payments/init.php:27
 msgctxt "Transaction Status"
 msgid "Voided"
 msgstr ""
 
-#: core-addons/load.php:299
+#: core-addons/load.php:300
 msgid "Admin Add-ons"
 msgstr ""
 
-#: core-addons/load.php:300
+#: core-addons/load.php:301
 msgid ""
 "Add-ons that create general purpose admin functionality. eg: Reports, Export."
 msgstr ""
 
-#: core-addons/load.php:304
+#: core-addons/load.php:305
 msgid "Coupon Add-ons"
 msgstr ""
 
-#: core-addons/load.php:305
+#: core-addons/load.php:306
 msgid "Add-ons that create coupons for your customers."
 msgstr ""
 
-#: core-addons/load.php:309
+#: core-addons/load.php:310
 msgid "Taxonomy Add-ons"
 msgstr ""
 
-#: core-addons/load.php:310
+#: core-addons/load.php:311
 msgid "Add-ons that create new taxonomies specifically for Exchange products."
 msgstr ""
 
-#: core-addons/load.php:315
+#: core-addons/load.php:316
 msgid "Add-ons that help store owners manage their email."
 msgstr ""
 
-#: core-addons/load.php:319
+#: core-addons/load.php:320
 msgid "Other"
 msgstr ""
 
-#: core-addons/load.php:320
+#: core-addons/load.php:321
 msgid "Add-ons that don't fit in any other add-on category."
 msgstr ""
 
@@ -3427,18 +3456,6 @@ msgstr ""
 msgid ""
 "If unchecked, users can simply download their products using their download "
 "links"
-msgstr ""
-
-#: core-addons/product-types/digital-downloads/init.php:159
-#: core-addons/taxes/taxes-simple/init.php:56
-#: core-addons/transaction-methods/offline-payments/view-add-on-settings.php:21
-#: core-addons/transaction-methods/paypal-standard/init.php:947
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1179
-#: lib/admin/class-settings-form.php:41
-#: lib/admin/views/admin-email-settings.php:160
-#: lib/admin/views/admin-page-settings.php:128
-#: lib/admin/views/admin-settings.php:289
-msgid "Save Changes"
 msgstr ""
 
 #: core-addons/product-types/digital-downloads/init.php:180
@@ -4301,20 +4318,22 @@ msgid ""
 msgstr ""
 
 #: lib/admin/views/admin-add-ons.php:41
+#: lib/admin/views/admin-get-more-addons.php:29
 msgid "Get the Exchange Pro Pack"
 msgstr ""
 
 #: lib/admin/views/admin-add-ons.php:42
+#: lib/admin/views/admin-get-more-addons.php:30
 msgid ""
-"The Pro Pack gets you access to all the iThemes Exchange add-ons... like "
-"Membership, Invoices, Recurring Payments, Stripe, and MailChimp add-ons and "
-"coming soon &ndash; Variants and Advances U.S. Taxes. Add-ons unlock so much "
-"more that Exchange can do. And with the Pro Pack you get access to all our "
-"iThemes-built add-ons, plus any more we build in the next year (which will "
-"be a lot)."
+"The Pro Pack gets you access to iThemes Exchange add-ons that unlock so much "
+"more that Exchange can do … like Membership, Invoices, Variants, Easy U.S. "
+"Sales Taxes, Recurring Payments, Stripe and MailChimp. With the Pro Pack, "
+"you get access to all our iThemes-built Exchange Add-ons plus any more we "
+"build in the next year (which will be a lot)."
 msgstr ""
 
 #: lib/admin/views/admin-add-ons.php:43
+#: lib/admin/views/admin-get-more-addons.php:31
 msgid "Get all our add-ons for $197"
 msgstr ""
 
@@ -4518,40 +4537,40 @@ msgid ""
 "activate them through the WordPress plugins menu."
 msgstr ""
 
-#: lib/admin/views/admin-get-more-addons.php:52
+#: lib/admin/views/admin-get-more-addons.php:57
 msgid "by"
 msgstr ""
 
-#: lib/admin/views/admin-get-more-addons.php:57
+#: lib/admin/views/admin-get-more-addons.php:62
 msgid "Installed"
 msgstr ""
 
-#: lib/admin/views/admin-get-more-addons.php:78
+#: lib/admin/views/admin-get-more-addons.php:83
 msgid "ACHIEVEMENT UNLOCKED"
 msgstr ""
 
-#: lib/admin/views/admin-get-more-addons.php:79
+#: lib/admin/views/admin-get-more-addons.php:84
 msgid "Acquired all Exchange Add-ons"
 msgstr ""
 
-#: lib/admin/views/admin-get-more-addons.php:81
+#: lib/admin/views/admin-get-more-addons.php:86
 msgid "You have all %s currently has to offer!"
 msgstr ""
 
-#: lib/admin/views/admin-get-more-addons.php:82
+#: lib/admin/views/admin-get-more-addons.php:87
 msgid "Got an idea for an add-on that would make life easier?"
 msgstr ""
 
-#: lib/admin/views/admin-get-more-addons.php:83
+#: lib/admin/views/admin-get-more-addons.php:88
 msgid "Send us a message"
 msgstr ""
 
-#: lib/admin/views/admin-get-more-addons.php:94
+#: lib/admin/views/admin-get-more-addons.php:99
 msgid ""
 "Sign up to be notified via email when new Add-ons and updates are released."
 msgstr ""
 
-#: lib/admin/views/admin-get-more-addons.php:104
+#: lib/admin/views/admin-get-more-addons.php:109
 msgid ""
 "Looks like there's a problem loading available add-ons. Go to %s to check "
 "out other available add-ons."
@@ -5243,68 +5262,68 @@ msgstr ""
 msgid "Save Settings"
 msgstr ""
 
-#: lib/cart/class.cart.php:114
+#: lib/cart/class.cart.php:124
 msgid "Product not added to cart"
 msgstr ""
 
-#: lib/cart/class.cart.php:149 lib/cart/class.cart.php:489
+#: lib/cart/class.cart.php:159 lib/cart/class.cart.php:499
 msgid "Product added to cart"
 msgstr ""
 
-#: lib/cart/class.cart.php:291
+#: lib/cart/class.cart.php:301
 msgid "Error adding Shipping Address. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:300 lib/cart/class.cart.php:352
+#: lib/cart/class.cart.php:310 lib/cart/class.cart.php:362
 #: lib/shipping/class.shipping.php:483 lib/shipping/class.shipping.php:523
 msgid "Please fill out all required fields"
 msgstr ""
 
-#: lib/cart/class.cart.php:326
+#: lib/cart/class.cart.php:336
 msgid "Shipping Address Saved"
 msgstr ""
 
-#: lib/cart/class.cart.php:343
+#: lib/cart/class.cart.php:353
 msgid "Error adding Billing Address. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:378
+#: lib/cart/class.cart.php:388
 msgid "Billing Address Saved"
 msgstr ""
 
-#: lib/cart/class.cart.php:471
+#: lib/cart/class.cart.php:481
 msgid "Unknown error. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:481
+#: lib/cart/class.cart.php:491
 msgid "Please select a payment method"
 msgstr ""
 
-#: lib/cart/class.cart.php:482
+#: lib/cart/class.cart.php:492
 msgid "There was an error processing your transaction. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:483
+#: lib/cart/class.cart.php:493
 msgid "Product not removed from cart. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:484
+#: lib/cart/class.cart.php:494
 msgid "There was an error emptying your cart. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:485
+#: lib/cart/class.cart.php:495
 msgid "There was an error updating your cart. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:486
+#: lib/cart/class.cart.php:496
 msgid "Cart Updated."
 msgstr ""
 
-#: lib/cart/class.cart.php:487
+#: lib/cart/class.cart.php:497
 msgid "Cart Emptied"
 msgstr ""
 
-#: lib/cart/class.cart.php:488
+#: lib/cart/class.cart.php:498
 msgid "Product removed from cart."
 msgstr ""
 
@@ -5708,15 +5727,15 @@ msgstr ""
 msgid "We need a billing address before you can checkout"
 msgstr ""
 
-#: lib/functions/functions.php:1195
+#: lib/functions/functions.php:1232
 msgid "You do not have permission to view this file."
 msgstr ""
 
-#: lib/functions/functions.php:1195
+#: lib/functions/functions.php:1232
 msgid "Error"
 msgstr ""
 
-#: lib/functions/functions.php:1370
+#: lib/functions/functions.php:1407
 msgid "%s Product"
 msgid_plural "%s Products"
 msgstr[0] ""
