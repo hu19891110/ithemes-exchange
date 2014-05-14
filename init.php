@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: iThemes Exchange
- * Version: 1.8.0
+ * Version: 1.8.1
  * Text Domain: LION
  * Description: Easily sell your digital goods with iThemes Exchange, simple ecommerce for WordPress
  * Plugin URI: http://ithemes.com/exchange/
@@ -24,7 +24,7 @@
 */
 class IT_Exchange {
 
-	var $_version         = '1.8.0';
+	var $_version         = '1.8.1';
 	var $_wp_minimum      = '3.5';
 	var $_slug            = 'it-exchange';
 	var $_name            = 'iThemes Exchange';
@@ -185,10 +185,12 @@ register_activation_hook( __FILE__, 'it_exchange_activation_hook' );
  * @return void
 */
 function it_exchange_register_activation_hook() {
-	if ( false !== get_option( '_it-exchange-register-activation-hook', false ) ) {
-        delete_option('_it-exchange-register-activation-hook');
-		wp_safe_redirect('admin.php?page=it-exchange-setup' );
-    }
+	if ( ! is_network_admin() ) {
+		if ( false !== get_option( '_it-exchange-register-activation-hook', false ) ) {
+		    delete_option('_it-exchange-register-activation-hook');
+			wp_safe_redirect('admin.php?page=it-exchange-setup' );
+		}
+	}
 }
 add_action( 'admin_init', 'it_exchange_register_activation_hook' );
 
