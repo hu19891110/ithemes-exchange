@@ -1,5 +1,5 @@
 === iThemes Exchange: Simple Ecommerce ===
-Contributors: ithemes, blepoxp, layotte, Kopepasah, bradulrich, mattdanner
+Contributors: ithemes, blepoxp, layotte, bradulrich, mattdanner
 Tags: ecommerce
 Requires at least: 3.5
 Tested up to: 3.8
