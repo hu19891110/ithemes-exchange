@@ -167,6 +167,7 @@ class IT_Exchange_Admin {
 			$meta[] = '<a href="http://ithemes.com/codex/page/Exchange" target="_blank">' . __( 'Documentation', 'it-l10n-ithemes-exchange' ) . '</a>';
 			$meta[] = '<a href="http://ithemes.com/exchange/support" target="_blank">' . __( 'Support', 'it-l10n-ithemes-exchange' ) . '</a>';
 			$meta[] = '<a href="http://ithemes.com/exchange/add-ons" target="_blank">' . __( 'Add-ons', 'it-l10n-ithemes-exchange' ) . '</a>';
+			$meta[] = '<a href="http://ithemes.com/codex/page/Exchange_Changelog" target="_blank">' . __( 'Changelog', 'it-l10n-ithemes-exchange' ) . '</a>';
 		}
 		return $meta;
 	}

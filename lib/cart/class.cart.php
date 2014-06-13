@@ -17,6 +17,13 @@ class IT_Exchange_Shopping_Cart {
 	function IT_Exchange_Shopping_Cart() {
 		add_action( 'template_redirect', array( $this, 'handle_it_exchange_cart_function' ) );
 		add_filter( 'it_exchange_process_transaction', array( $this, 'handle_purchase_cart_request' ) );
+
+		// Filters to sync cart across devices
+		add_action( 'it_exchange_clear_session', array( $this, 'sync_customer_active_carts' ) );
+		add_action( 'it_exchange_clear_session_data', array( $this, 'sync_customer_active_carts' ) );
+		add_action( 'it_exchange_update_session_data', array( $this, 'sync_customer_active_carts' ) );
+		add_action( 'it_exchange_add_session_data', array( $this, 'sync_customer_active_carts' ) );
+		add_action( 'wp_login', 'it_exchange_merge_cached_customer_cart_into_current_session', 10, 2 );
 	}
 
 	/**
@@ -329,6 +336,12 @@ class IT_Exchange_Shopping_Cart {
 
 		// Validate required fields
 		$required_fields = apply_filters( 'it_exchange_required_shipping_address_fields', array( 'first-name', 'last-name', 'address1', 'state', 'country', 'zip' ) );
+
+		$states = it_exchange_get_data_set( 'states', array( 'country' => $_REQUEST['it-exchange-shipping-address-country'] ) );
+		if ( empty( $states ) && $key = array_search( 'state', $required_fields ) ) {
+			unset( $required_fields[$key] );
+		}	
+		
 		foreach( $required_fields as $field ) {
 			if ( empty( $_REQUEST['it-exchange-shipping-address-' . $field] ) ) {
 				it_exchange_add_message( 'error', __( 'Please fill out all required fields', 'it-l10n-ithemes-exchange' ) );
@@ -339,7 +352,7 @@ class IT_Exchange_Shopping_Cart {
 
 		/** @todo This is hardcoded for now. will be more flexible at some point **/
 		$shipping = array();
-		$fields = array(
+		$fields = apply_filters( 'it_exchange_shipping_address_fields', array(
 			'first-name',
 			'last-name',
 			'company-name',
@@ -351,7 +364,7 @@ class IT_Exchange_Shopping_Cart {
 			'country',
 			'email',
 			'phone',
-		);
+		) );
 		foreach( $fields as $field ) {
 			$shipping[$field] = empty( $_REQUEST['it-exchange-shipping-address-' . $field] ) ? '' : $_REQUEST['it-exchange-shipping-address-' . $field];
 		}
@@ -381,6 +394,12 @@ class IT_Exchange_Shopping_Cart {
 
 		// Validate required fields
 		$required_fields = apply_filters( 'it_exchange_required_billing_address_fields', array( 'first-name', 'last-name', 'address1', 'city', 'state', 'country', 'zip' ) );
+		
+		$states = it_exchange_get_data_set( 'states', array( 'country' => $_REQUEST['it-exchange-shipping-address-country'] ) );
+		if ( empty( $states ) && $key = array_search( 'state', $required_fields ) ) {
+			unset( $required_fields[$key] );
+		}			
+
 		foreach( $required_fields as $field ) {
 			if ( empty( $_REQUEST['it-exchange-billing-address-' . $field] ) ) {
 				it_exchange_add_message( 'error', __( 'Please fill out all required fields', 'it-l10n-ithemes-exchange' ) );
@@ -391,7 +410,7 @@ class IT_Exchange_Shopping_Cart {
 
 		/** @todo This is hardcoded for now. will be more flexible at some point **/
 		$billing = array();
-		$fields = array(
+		$fields = apply_filters( 'it_exchange_billing_address_fields', array(
 			'first-name',
 			'last-name',
 			'company-name',
@@ -403,7 +422,7 @@ class IT_Exchange_Shopping_Cart {
 			'country',
 			'email',
 			'phone',
-		);
+		) );
 		foreach( $fields as $field ) {
 			$billing[$field] = empty( $_REQUEST['it-exchange-billing-address-' . $field] ) ? '' : $_REQUEST['it-exchange-billing-address-' . $field];
 		}
@@ -523,6 +542,34 @@ class IT_Exchange_Shopping_Cart {
 		$messages['product-added-to-cart'] = __( 'Product added to cart', 'it-l10n-ithemes-exchange' );
 
 		return apply_filters( 'it_exchange_default_cart_messages', $messages );
+	}
+
+	/**
+	 * Makes calls to sync carts when customer modifies cart data
+	 *
+	 * @since 1.9.0 
+	 *
+	 * @return void
+	*/
+	function sync_customer_active_carts() {
+
+		// Don't do this if user is logging out
+		if ( ! empty( $GLOBALS['it_exchange']['logging_out_user'] ) )
+			return;
+
+		remove_action( 'it_exchange_clear_session', array( $this, 'sync_customer_active_carts' ) );
+		remove_action( 'it_exchange_clear_session_data', array( $this, 'sync_customer_active_carts' ) );
+		remove_action( 'it_exchange_update_session_data', array( $this, 'sync_customer_active_carts' ) );
+		remove_action( 'it_exchange_add_session_data', array( $this, 'sync_customer_active_carts' ) );
+
+		it_exchange_add_current_session_to_customer_active_carts();
+		it_exchange_cache_customer_cart();
+		it_exchange_sync_current_cart_with_all_active_customer_carts();
+
+		add_action( 'it_exchange_clear_session', array( $this, 'sync_customer_active_carts' ) );
+		add_action( 'it_exchange_clear_session_data', array( $this, 'sync_customer_active_carts' ) );
+		add_action( 'it_exchange_update_session_data', array( $this, 'sync_customer_active_carts' ) );
+		add_action( 'it_exchange_add_session_data', array( $this, 'sync_customer_active_carts' ) );
 	}
 }
 

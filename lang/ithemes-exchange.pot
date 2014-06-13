@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.8.2\n"
+"Project-Id-Version: iThemes Exchange 1.9.0\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2014-05-21 14:03:15+00:00\n"
+"POT-Creation-Date: 2014-06-13 13:52:40+00:00\n"
 "PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2369,7 +2369,7 @@ msgstr ""
 msgid "Download Error:"
 msgstr ""
 
-#: api/misc.php:318
+#: api/misc.php:321
 msgid "Please complete all purchase requirements before checkout out."
 msgstr ""
 
@@ -2415,7 +2415,7 @@ msgid "Country"
 msgstr ""
 
 #: api/theme/billing.php:345 api/theme/shipping.php:289
-#: lib/shipping/class.shipping.php:604
+#: lib/shipping/class.shipping.php:630
 msgid "State"
 msgstr ""
 
@@ -2433,7 +2433,7 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: api/theme/billing.php:476 api/theme/checkout.php:93 api/theme/login.php:328
+#: api/theme/billing.php:476 api/theme/checkout.php:93 api/theme/login.php:332
 #: api/theme/registration.php:367 api/theme/shipping-method.php:160
 #: api/theme/shipping.php:419
 #: core-addons/admin/guest-checkout/lib/template-functions.php:210
@@ -2460,7 +2460,7 @@ msgstr ""
 msgid "Update Cart"
 msgstr ""
 
-#: api/theme/cart.php:182 core-addons/admin/multi-item-cart/init.php:27
+#: api/theme/cart.php:182 core-addons/admin/multi-item-cart/init.php:26
 msgid "Checkout"
 msgstr ""
 
@@ -2496,7 +2496,7 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-#: api/theme/customer.php:347 api/theme/login.php:143
+#: api/theme/customer.php:347 api/theme/login.php:147
 #: api/theme/registration.php:258
 msgid "Password"
 msgstr ""
@@ -2532,23 +2532,23 @@ msgstr ""
 msgid "%d %s after purchase"
 msgstr ""
 
-#: api/theme/login.php:106 api/theme/registration.php:110
+#: api/theme/login.php:110 api/theme/registration.php:110
 msgid "Username"
 msgstr ""
 
-#: api/theme/login.php:180
+#: api/theme/login.php:184
 msgid "Remember Me"
 msgstr ""
 
-#: api/theme/login.php:217 lib/functions/functions.php:483
+#: api/theme/login.php:221 lib/functions/functions.php:483
 msgid "Log In"
 msgstr ""
 
-#: api/theme/login.php:253
+#: api/theme/login.php:257
 msgid "Lost your password?"
 msgstr ""
 
-#: api/theme/login.php:293 api/theme/registration.php:332
+#: api/theme/login.php:297 api/theme/registration.php:332
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/login/register.php:20
 msgid "Register"
 msgstr ""
@@ -2733,7 +2733,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.8.2)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.9.0)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:19
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -2829,31 +2829,31 @@ msgstr ""
 msgid "Checkout as a guest"
 msgstr ""
 
-#: core-addons/admin/multi-item-cart/init.php:14
+#: core-addons/admin/multi-item-cart/init.php:13
 msgid "Shopping Cart"
 msgstr ""
 
-#: core-addons/admin/multi-item-cart/init.php:17
+#: core-addons/admin/multi-item-cart/init.php:16
 msgid "Customer Shopping Cart"
 msgstr ""
 
-#: core-addons/admin/multi-item-cart/init.php:30
+#: core-addons/admin/multi-item-cart/init.php:29
 msgid "Customer Checkout"
 msgstr ""
 
-#: core-addons/admin/multi-item-cart/init.php:124
+#: core-addons/admin/multi-item-cart/init.php:123
 msgid "Multi-Item Cart Settings"
 msgstr ""
 
-#: core-addons/admin/multi-item-cart/init.php:137
+#: core-addons/admin/multi-item-cart/init.php:136
 msgid "Options Saved"
 msgstr ""
 
-#: core-addons/admin/multi-item-cart/init.php:143
+#: core-addons/admin/multi-item-cart/init.php:142
 msgid "Show the Continue Shopping button on the cart page?"
 msgstr ""
 
-#: core-addons/admin/multi-item-cart/init.php:152
+#: core-addons/admin/multi-item-cart/init.php:151
 #: core-addons/product-types/digital-downloads/init.php:159
 #: core-addons/taxes/taxes-simple/init.php:56
 #: core-addons/transaction-methods/offline-payments/view-add-on-settings.php:21
@@ -3143,7 +3143,7 @@ msgstr ""
 #: core-addons/load.php:119
 msgid ""
 "Enabling this add-on allows your customers to purchase multiple products "
-"with one transaction. There are no settings for this add-on."
+"with one transaction."
 msgstr ""
 
 #: core-addons/load.php:132
@@ -3468,8 +3468,8 @@ msgstr ""
 #: core-addons/transaction-methods/offline-payments/init.php:429
 #: core-addons/transaction-methods/paypal-standard/init.php:1010
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1308
-#: lib/admin/class.admin.php:1024 lib/admin/class.admin.php:1221
-#: lib/admin/class.admin.php:1311
+#: lib/admin/class.admin.php:1025 lib/admin/class.admin.php:1222
+#: lib/admin/class.admin.php:1312
 msgid "Error. Please try again"
 msgstr ""
 
@@ -3690,8 +3690,8 @@ msgstr ""
 #: core-addons/transaction-methods/offline-payments/init.php:468
 #: core-addons/transaction-methods/paypal-standard/init.php:1056
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1362
-#: lib/admin/class.admin.php:1033 lib/admin/class.admin.php:1232
-#: lib/admin/class.admin.php:1328
+#: lib/admin/class.admin.php:1034 lib/admin/class.admin.php:1233
+#: lib/admin/class.admin.php:1329
 msgid "Settings Saved."
 msgstr ""
 
@@ -4088,79 +4088,83 @@ msgstr ""
 msgid "Add-ons"
 msgstr ""
 
-#: lib/admin/class.admin.php:184
+#: lib/admin/class.admin.php:170
+msgid "Changelog"
+msgstr ""
+
+#: lib/admin/class.admin.php:185
 msgid "Back to Add-ons"
 msgstr ""
 
-#: lib/admin/class.admin.php:196
+#: lib/admin/class.admin.php:197
 msgid "Customer Data"
 msgstr ""
 
-#: lib/admin/class.admin.php:274 lib/admin/views/admin-user-products.php:10
+#: lib/admin/class.admin.php:275 lib/admin/views/admin-user-products.php:10
 #: lib/products/class.products-post-type.php:112
 #: lib/transactions/class.transactions-post-type.php:486
 msgid "Products"
 msgstr ""
 
-#: lib/admin/class.admin.php:285
+#: lib/admin/class.admin.php:286
 msgid "Transactions"
 msgstr ""
 
-#: lib/admin/class.admin.php:296
+#: lib/admin/class.admin.php:297
 msgid "Info"
 msgstr ""
 
-#: lib/admin/class.admin.php:347
+#: lib/admin/class.admin.php:348
 #: lib/transactions/class.transactions-post-type.php:46
 msgid "Payments"
 msgstr ""
 
-#: lib/admin/class.admin.php:380
+#: lib/admin/class.admin.php:381
 msgid "Help"
 msgstr ""
 
-#: lib/admin/class.admin.php:428
+#: lib/admin/class.admin.php:429
 msgid "Email Settings"
 msgstr ""
 
-#: lib/admin/class.admin.php:451
+#: lib/admin/class.admin.php:452
 msgid "Pages"
 msgstr ""
 
-#: lib/admin/class.admin.php:464 lib/admin/views/admin-wizard.php:248
+#: lib/admin/class.admin.php:465 lib/admin/views/admin-wizard.php:248
 #: lib/shipping/class.shipping.php:222
 msgid "General"
 msgstr ""
 
-#: lib/admin/class.admin.php:480
+#: lib/admin/class.admin.php:481
 msgid "All"
 msgstr ""
 
-#: lib/admin/class.admin.php:494
+#: lib/admin/class.admin.php:495
 msgid "Enabled"
 msgstr ""
 
-#: lib/admin/class.admin.php:505 lib/admin/views/admin-page-settings.php:79
+#: lib/admin/class.admin.php:506 lib/admin/views/admin-page-settings.php:79
 msgid "Disabled"
 msgstr ""
 
-#: lib/admin/class.admin.php:529
+#: lib/admin/class.admin.php:530
 msgid "Add-on installed."
 msgstr ""
 
-#: lib/admin/class.admin.php:533
+#: lib/admin/class.admin.php:534
 msgid "Error: Add-on not installed."
 msgstr ""
 
-#: lib/admin/class.admin.php:546
+#: lib/admin/class.admin.php:547
 msgid "Get More"
 msgstr ""
 
-#: lib/admin/class.admin.php:632
+#: lib/admin/class.admin.php:633
 msgid "You made a sale! Yabba Dabba Doo! %s"
 msgstr ""
 
-#: lib/admin/class.admin.php:633
+#: lib/admin/class.admin.php:634
 msgid ""
 "Your friend %s just bought all this awesomeness from your store!\n"
 "\n"
@@ -4169,11 +4173,11 @@ msgid ""
 "%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:640
+#: lib/admin/class.admin.php:641
 msgid "Receipt for Purchase: %s"
 msgstr ""
 
-#: lib/admin/class.admin.php:641
+#: lib/admin/class.admin.php:642
 msgid ""
 "Hello %s,\n"
 "\n"
@@ -4185,133 +4189,133 @@ msgid ""
 "%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:760
+#: lib/admin/class.admin.php:761
 msgid "Add-on enabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:762
+#: lib/admin/class.admin.php:763
 msgid "Add-on disabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:771
+#: lib/admin/class.admin.php:772
 msgid "Error: Add-on not enabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:773
+#: lib/admin/class.admin.php:774
 msgid "Error: Add-on not disabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:1000 lib/admin/views/admin-settings.php:108
+#: lib/admin/class.admin.php:1001 lib/admin/views/admin-settings.php:108
 msgid ""
 "Please use the 2-3 character %sISO abbreviation%s for country subdivisions"
 msgstr ""
 
-#: lib/admin/class.admin.php:1053
+#: lib/admin/class.admin.php:1054
 msgid "You must select at least one Payment Method."
 msgstr ""
 
-#: lib/admin/class.admin.php:1154
+#: lib/admin/class.admin.php:1155
 msgid "Settings Saved. Congrats!"
 msgstr ""
 
-#: lib/admin/class.admin.php:1155
+#: lib/admin/class.admin.php:1156
 msgid "%sAdd a Product%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:1156
+#: lib/admin/class.admin.php:1157
 msgid "%sEnable Add-ons%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:1158
+#: lib/admin/class.admin.php:1159
 msgid "%sView Sample Product%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:1194 lib/admin/class.admin.php:1247
+#: lib/admin/class.admin.php:1195 lib/admin/class.admin.php:1248
 msgid "Please provide a valid email address."
 msgstr ""
 
-#: lib/admin/class.admin.php:1196
+#: lib/admin/class.admin.php:1197
 msgid "Thousands Separator cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1198
+#: lib/admin/class.admin.php:1199
 msgid "Decimals Separator cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1249
+#: lib/admin/class.admin.php:1250
 msgid "Email Name cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1251
+#: lib/admin/class.admin.php:1252
 msgid "Email Subject cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1253
+#: lib/admin/class.admin.php:1254
 msgid "Email Template cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1262
+#: lib/admin/class.admin.php:1263
 msgid "Invalid email address in Sales Notification Email Address"
 msgstr ""
 
-#: lib/admin/class.admin.php:1401
+#: lib/admin/class.admin.php:1402
 msgid "Please make sure all your page slugs are unique."
 msgstr ""
 
-#: lib/admin/class.admin.php:1407
+#: lib/admin/class.admin.php:1408
 msgid "Page settings cannot be left blank."
 msgstr ""
 
-#: lib/admin/class.admin.php:1475
+#: lib/admin/class.admin.php:1476
 msgid "Select Images"
 msgstr ""
 
-#: lib/admin/class.admin.php:1476
+#: lib/admin/class.admin.php:1477
 msgid "You must upload an image larger than 150x150."
 msgstr ""
 
-#: lib/admin/class.admin.php:1477
+#: lib/admin/class.admin.php:1478
 msgid "Edit Image"
 msgstr ""
 
-#: lib/admin/class.admin.php:1478
+#: lib/admin/class.admin.php:1479
 msgid "Upload Source"
 msgstr ""
 
-#: lib/admin/class.admin.php:1479
+#: lib/admin/class.admin.php:1480
 msgid "Insert"
 msgstr ""
 
-#: lib/admin/class.admin.php:1480
+#: lib/admin/class.admin.php:1481
 msgid "Advanced"
 msgstr ""
 
-#: lib/admin/class.admin.php:1481
+#: lib/admin/class.admin.php:1482
 msgid ""
 "We want to keep things simple for you, so we put the kitchen sink here. "
 "Click this button to add more info about your product."
 msgstr ""
 
-#: lib/admin/class.admin.php:1495
+#: lib/admin/class.admin.php:1496
 msgid ""
 "You have checked the option to \"Reset ALL data\". Are you sure you want to "
 "delete all Exchange products, transactions, and settings?"
 msgstr ""
 
-#: lib/admin/class.admin.php:1502
+#: lib/admin/class.admin.php:1503
 msgid ""
 "Please make sure all WordPress page types have a WordPress page selected."
 msgstr ""
 
-#: lib/admin/class.admin.php:1733
+#: lib/admin/class.admin.php:1734
 msgid "Main Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1738
+#: lib/admin/class.admin.php:1739
 msgid "Side Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1809
+#: lib/admin/class.admin.php:1810
 msgid "Featured Image"
 msgstr ""
 
@@ -5279,68 +5283,68 @@ msgstr ""
 msgid "Save Settings"
 msgstr ""
 
-#: lib/cart/class.cart.php:130
+#: lib/cart/class.cart.php:137
 msgid "Product not added to cart"
 msgstr ""
 
-#: lib/cart/class.cart.php:164 lib/cart/class.cart.php:523
+#: lib/cart/class.cart.php:171 lib/cart/class.cart.php:542
 msgid "Product added to cart"
 msgstr ""
 
-#: lib/cart/class.cart.php:325
+#: lib/cart/class.cart.php:332
 msgid "Error adding Shipping Address. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:334 lib/cart/class.cart.php:386
-#: lib/shipping/class.shipping.php:482 lib/shipping/class.shipping.php:522
+#: lib/cart/class.cart.php:347 lib/cart/class.cart.php:405
+#: lib/shipping/class.shipping.php:495 lib/shipping/class.shipping.php:548
 msgid "Please fill out all required fields"
 msgstr ""
 
-#: lib/cart/class.cart.php:360
+#: lib/cart/class.cart.php:373
 msgid "Shipping Address Saved"
 msgstr ""
 
-#: lib/cart/class.cart.php:377
+#: lib/cart/class.cart.php:390
 msgid "Error adding Billing Address. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:412
+#: lib/cart/class.cart.php:431
 msgid "Billing Address Saved"
 msgstr ""
 
-#: lib/cart/class.cart.php:505
+#: lib/cart/class.cart.php:524
 msgid "Unknown error. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:515
+#: lib/cart/class.cart.php:534
 msgid "Please select a payment method"
 msgstr ""
 
-#: lib/cart/class.cart.php:516
+#: lib/cart/class.cart.php:535
 msgid "There was an error processing your transaction. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:517
+#: lib/cart/class.cart.php:536
 msgid "Product not removed from cart. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:518
+#: lib/cart/class.cart.php:537
 msgid "There was an error emptying your cart. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:519
+#: lib/cart/class.cart.php:538
 msgid "There was an error updating your cart. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:520
+#: lib/cart/class.cart.php:539
 msgid "Cart Updated."
 msgstr ""
 
-#: lib/cart/class.cart.php:521
+#: lib/cart/class.cart.php:540
 msgid "Cart Emptied"
 msgstr ""
 
-#: lib/cart/class.cart.php:522
+#: lib/cart/class.cart.php:541
 msgid "Product removed from cart."
 msgstr ""
 
@@ -6552,15 +6556,15 @@ msgstr ""
 msgid "Use standard for lbs and inches. Use metric for kg and cm."
 msgstr ""
 
-#: lib/shipping/class.shipping.php:525
+#: lib/shipping/class.shipping.php:551
 msgid "Shipping Address Updated"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:606
+#: lib/shipping/class.shipping.php:632
 msgid "Please use the 2-3 character %sISO 3166-2 Country Subdivision Code%s"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:638
+#: lib/shipping/class.shipping.php:664
 msgid "Shipping method updated"
 msgstr ""
 
@@ -6648,6 +6652,10 @@ msgstr ""
 msgid "Edit Cart"
 msgstr ""
 
+#: lib/templates/content-checkout/elements/purchase-requirements/billing-address.php:33
+msgid "Edit Billing Address"
+msgstr ""
+
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/logged-in/logged-in-as.php:22
 msgid "Checking out as: %s"
 msgstr ""
@@ -6661,6 +6669,10 @@ msgstr ""
 #: lib/templates/super-widget-shipping-address.php:20
 #: lib/transactions/class.transactions-post-type.php:465
 msgid "Shipping Address"
+msgstr ""
+
+#: lib/templates/content-checkout/elements/purchase-requirements/shipping-address.php:34
+msgid "Edit Shipping Address"
 msgstr ""
 
 #: lib/templates/content-checkout/elements/purchase-requirements/shipping-method.php:26

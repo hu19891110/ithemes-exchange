@@ -1,3 +1,21 @@
+1.9.0 - 2014-05-14 - Glenn Ansley, Lew Ayotte, Ty Carlson, Elise Alley
+	Added a bunch of filters for EUVAT modifications
+	Modified how shipping/billing addresses are handled for 'required' state fields when the country doesn't have any states (known by Exchange)
+	Updated description for multi-item cart core add-on
+	Styling updates for confirmation page table
+	Adding an action after customers cart is cached.
+	Add styling support for nested rows in it-exchange-table
+	Sync user carts across browsers and devices: - Caches state of cart anytime it has data added, updated, deleted - Logs session ID to list of active carts for user anytime they log-in - Removes session 
+	Sync user sessions across browsers if logged-in
+	i18n strings in purchase-requirements billing and shipping templates
+	Modifications to some filters
+	Fix bug in tooltip positioning
+	Whitespace in readme and history text files
+	Update tested up to
+	Fix readme
+	Add link to changelog in changelog section of the readme
+	Adding the Changelog link to the plugin meta links
+	Setup menu items filter to compare path of login/logout URLS, not the full URLs, in case of https/http conflict
 1.8.2 - 2014-05-14 - Glenn Ansley, Lew Ayotte, Ty Carlson, Brad Ulrich, Elise Alley
 	Wrapped most instances of wp_redirect() inside it_exchange_redirect() to standardize filters
 	Fixed same border bug in confirmation table
@@ -130,7 +148,7 @@
 	Pass prefix through transaction_number filter
 1.7.10 - 2013-12-23 - Glenn Ansley, Lew Ayotte
 	Add new WordPress Page Templates Core Add-on
-	Add ability to filter any returned shortcode replacement for an email confirmation. 
+	Add ability to filter any returned shortcode replacement for an email confirmation.
 	Include current transaction details, current shortcode being processed, and the object for the email notification class.
 	Add filters and attachments param to function that sends the confirmation email
 	Added pre_query_posts action to remove hidden produts from product taxonomy queries
@@ -749,7 +767,7 @@
 	Make Product Images and Product Descrition even on Add / Edit products page.
 	Added a tabindex to the normal sortable items
 	Removed some unneeded code from the add-edit-product.js file.
-    Add new API file: api/pages.php.
+	Add new API file: api/pages.php.
 	Add new function it_exchnage_get_pages()
 	Replace all instances of it_exchange_get_option( 'settings_pages') with it_exchange_get_pages()
 	Fixed Delete Download button not appearing properly for existing downloads

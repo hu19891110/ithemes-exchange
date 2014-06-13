@@ -95,9 +95,9 @@ function it_exchange_load_public_scripts( $current_view ) {
 	$purchase_requirements = array_keys( $purchase_requirements );
 
 	$settings = it_exchange_get_option( 'settings_general' );
-	
+
 	wp_register_style( 'it-exchange-icon-fonts', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/styles/exchange-fonts.css' ) );
-	
+
 	// Frontend Product JS
 	if ( is_singular( 'it_exchange_prod' ) ) {
 		$script_deps = array();
@@ -175,10 +175,10 @@ function it_exchange_register_scripts() {
 
 	// Detect CC Type
 	wp_register_script( 'detect-credit-card-type', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/detect-credit-card-type.js' ), array( 'jquery' ), false, true );
-	
+
 	// Detect CC Type
 	wp_register_script( 'it-exchange-event-manager', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/event-manager.js' ), array(), false, true );
-	
+
 	// Select to Autocomplete
 	wp_register_script( 'jquery-select-to-autocomplete', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/js/jquery.select-to-autocomplete.min.js' ), array( 'jquery', 'jquery-ui-autocomplete' ) );
 	wp_register_style( 'it-exchange-autocomplete-style', ITUtility::get_url_from_file( dirname( dirname( __FILE__ ) ) . '/assets/styles/autocomplete.css' ) );
@@ -1213,9 +1213,9 @@ function it_exchange_admin_tooltip( $text, $echo=true, $indicator='i' ) {
 function it_exchange_block_attachments() {
 	if ( ! is_attachment() )
 		return;
-		
+
 	$uri = wp_get_attachment_url( get_the_ID() );
-	
+
 	$args = array(
 		'post_type' => 'it_exchange_download',
 		'meta_query' => array(
@@ -1227,7 +1227,7 @@ function it_exchange_block_attachments() {
 		),
 	);
 	$results = get_posts( $args );
-	
+
 	if ( empty( $results ) )
 		return;
 
@@ -1333,66 +1333,66 @@ if ( !function_exists( 'it_exchange_dropdown_taxonomies' ) ) {
 	        'tab_index' => 0, 'taxonomy' => 'category',
 	        'hide_if_empty' => false
 	    );
-	
+
 	    $defaults['selected'] = ( is_tax() ) ? get_query_var( 'term' ) : 0;
-	
+
 	    $r = wp_parse_args( $args, $defaults );
-	
+
 	    if ( !isset( $r['pad_counts'] ) && $r['show_count'] && $r['hierarchical'] ) {
 	        $r['pad_counts'] = true;
 	    }
-	
+
 	    extract( $r );
-	
+
 	    $tab_index_attribute = '';
 	    if ( (int) $tab_index > 0 )
 	        $tab_index_attribute = " tabindex=\"$tab_index\"";
-	
+
 	    $terms = get_terms( $taxonomy, $r );
 	    $name = esc_attr( $name );
 	    $class = esc_attr( $class );
 	    $id = $id ? esc_attr( $id ) : $name;
-	
+
 	    if ( ! $r['hide_if_empty'] || ! empty($terms) )
 	        $output = "<select name='$name' id='$id' class='$class' $tab_index_attribute>\n";
 	    else
 	        $output = '';
-	
+
 	    if ( empty($terms) && ! $r['hide_if_empty'] && !empty($show_option_none) ) {
 	        $show_option_none = apply_filters( 'list_cats', $show_option_none );
 	        $output .= "\t<option value='-1' selected='selected'>$show_option_none</option>\n";
 	    }
-	
+
 	    if ( ! empty( $terms ) ) {
-	
+
 	        if ( $show_option_all ) {
 	            $show_option_all = apply_filters( 'list_cats', $show_option_all );
 	            $selected = ( '0' === strval($r['selected']) ) ? " selected='selected'" : '';
 	            $output .= "\t<option value='0'$selected>$show_option_all</option>\n";
 	        }
-	
+
 	        if ( $show_option_none ) {
 	            $show_option_none = apply_filters( 'list_cats', $show_option_none );
 	            $selected = ( '-1' === strval($r['selected']) ) ? " selected='selected'" : '';
 	            $output .= "\t<option value='-1'$selected>$show_option_none</option>\n";
 	        }
-	
+
 	        if ( $hierarchical )
 	            $depth = $r['depth'];  // Walk the full depth.
 	        else
 	            $depth = -1; // Flat.
-	
+
 	        $output .= it_exchange_walk_product_category_dropdown_tree( $terms, $depth, $r );
 	    }
-	
+
 	    if ( ! $r['hide_if_empty'] || ! empty($terms) )
 	        $output .= "</select>\n";
-	
+
 	    $output = apply_filters( 'wp_dropdown_cats', $output );
-	
+
 	    if ( $echo )
 	        echo $output;
-	
+
 	    return $output;
 	}
 
