@@ -3,7 +3,7 @@ Contributors: ithemes, blepoxp, layotte, bradulrich, mattdanner
 Tags: ecommerce
 Requires at least: 3.5
 Tested up to: 3.9
-Stable tag: 1.9.0
+Stable tag: 1.9.1
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -87,6 +87,9 @@ Upload the Exchange plugin to your blog, activate it and enable the Digital Down
 http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
+
+=== 1.9.1 ===
+* Fixed PHP error in older versions of PHP
 
 === 1.9.0 ===
 * Added a bunch of filters for EUVAT modifications
