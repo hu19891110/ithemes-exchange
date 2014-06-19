@@ -11,6 +11,31 @@ if ( !defined( 'PAYPAL_LIVE_URL' ) )
 
 if ( !defined( 'PAYPAL_PAYMENT_URL' ) )
 	define( 'PAYPAL_PAYMENT_URL', 'https://www.paypal.com/cgi-bin/webscr' );
+	
+/**
+ * Mark this transaction method as okay to manually change transactions
+ *
+ * @since 1.9.2
+*/
+add_filter( 'it_exchange_paypal-standard_transaction_status_can_be_manually_changed', '__return_true' );
+
+/**
+ * Returns status options
+ *
+ * @since 1.9.2
+ * @return array
+*/
+function it_exchange_paypal_standard_get_default_status_options() {
+	$options = array(
+		'Pending'   => _x( 'Pending', 'Transaction Status', 'it-l10n-ithemes-exchange' ),
+		'Completed' => _x( 'Paid', 'Transaction Status', 'it-l10n-ithemes-exchange' ),
+		'Reversed'  => _x( 'Reversed', 'Transaction Status', 'it-l10n-ithemes-exchange' ),
+		'Refunded'  => _x( 'Refunded', 'Transaction Status', 'it-l10n-ithemes-exchange' ),
+		'Voided'    => _x( 'Voided', 'Transaction Status', 'it-l10n-ithemes-exchange' ),
+	);
+	return $options;
+}
+add_filter( 'it_exchange_get_status_options_for_paypal-standard_transaction', 'it_exchange_paypal_standard_get_default_status_options' );
 
 /**
  * Outputs wizard settings for PayPal

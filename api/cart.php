@@ -355,8 +355,9 @@ function it_exchange_add_current_session_to_customer_active_carts( $customer_id=
 	
 	// Get the current customer's session ID
 	$current_session_string  = it_exchange_get_session_id();
-	$current_session_id      = explode( '||', $current_session_string, 2 )[0];
-	$current_session_expires = explode( '||', $current_session_string, 3 )[1];
+	$current_session_parts   = explode( '||', $current_session_string );
+	$current_session_id      = empty( $current_session_parts[0] ) ? false : $current_session_parts[0];
+	$current_session_expires = empty( $current_session_parts[1] ) ? false : $current_session_parts[1];
 
 	// Get all active carts for customer (across devices / browsers )
 	$active_carts = it_exchange_get_active_carts_for_customer( false, $customer->id );
@@ -406,9 +407,10 @@ function it_exchange_get_active_carts_for_customer( $include_current_cart=false,
 		return apply_filters( 'it_exchange_get_active_carts_for_customer', array(), $customer_id );
 
 	// Get current session ID
-	$current_session_string  = it_exchange_get_session_id();
-	$current_session_id      = explode( '||', $current_session_string, 2 )[0];
-	$current_session_exp     = explode( '||', $current_session_string, 3 )[1];
+	$current_session_string = it_exchange_get_session_id();
+	$current_session_parts  = explode( '||', $current_session_string );
+	$current_session_id     = empty( $current_session_parts[0] ) ? false : $current_session_parts[0];
+	$current_session_exp    = empty( $current_session_parts[1] ) ? false : $current_session_parts[1];
 
 	// Grab saved active sessions from user meta
 	$active_carts = get_user_meta( $customer->id, '_it_exchange_active_user_carts', true );
@@ -463,7 +465,7 @@ function it_exchange_merge_cached_customer_cart_into_current_session( $user_logi
 		if ( 'products' != $key || empty( $current_products ) ) {
 			it_exchange_update_cart_data( $key, $data );
 		} else {
-			foreach( $data as $product_id => $product_data ) {
+			foreach( (array) $data as $product_id => $product_data ) {
 				if ( ! empty( $current_products[$product_id]['count'] ) ) {
 					$data[$product_id]['count'] = $data[$product_id]['count'] + $current_products[$product_id]['count'];
 					unset( $current_products[$product_id] );

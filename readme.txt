@@ -1,9 +1,9 @@
 === iThemes Exchange: Simple Ecommerce ===
-Contributors: ithemes, blepoxp, layotte, bradulrich, mattdanner
+Contributors: ithemes, blepoxp, layotte, aaroncampbell, mattdanner
 Tags: ecommerce
 Requires at least: 3.5
-Tested up to: 3.9
-Stable tag: 1.9.0
+Tested up to: 3.9.1
+Stable tag: 1.9.2
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -88,7 +88,28 @@ http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
 
-=== 1.9.0 ===
+= 1.9.2 =
+* Fixed error preventing auto-login after user reg from SW
+* Fixed PHP Warning caused by attempt to loop through non-array.\n Fixed PHP Warning caused by undefined param
+* Add JS hook to super-widget.js when cart is cleared
+* Register correct query arg for confirmation hash when used as sub wp page
+* Fixed bug that caused all Menu items to display 'Log Out' if pretty permalinks were not enabled
+* Modifed rewrite rule for confirmation page to work with child pages.
+* Set flag to flush rewrites if Confirmation page is of WP type and that WP page is updated (in the event that post_parent was updated).
+* Fixed PHP warning when submiting billing address on checkout screen
+* Changed 'Recent Payments' heading to 'Recent Transactions' in dashboard widget.
+* Fixed Bug in transaction total for dashboard widget
+* Added ability to manually change paypal standard basic payment status
+* Added ability to manually change paypal standard secure payment status
+* Sync integration, adding the it-exchange-get-overview verb to handle the dashboard widget
+* Added ability to limit coupons frequency per customer
+* Fixed bug preventing discount when product ID remains set for coupon but checkbox to limit by product was unchecked"
+* Fixed notice when ['wp_query']->queried_object is not an object
+
+= 1.9.1 =
+* Fixed PHP error in older versions of PHP
+
+= 1.9.0 =
 * Added a bunch of filters for EUVAT modifications
 * Modified how shipping/billing addresses are handled for 'required' state fields when the country doesn't have any states (known by Exchange)
 * Updated description for multi-item cart core add-on
@@ -107,7 +128,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Adding the Changelog link to the plugin meta links
 * Setup menu items filter to compare path of login/logout URLS, not the full URLs, in case of https/http conflict
 
-=== 1.8.2 ===
+= 1.8.2 =
 * Wrapped most instances of wp_redirect() inside it_exchange_redirect() to standardize filters
 * Fixed same border bug in confirmation table
 * Fixed bug where border would break in checkout table when amount is more than one line
@@ -118,7 +139,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fixed line-height for it-exchange-remove-item so the x is in the vertical center
 * Add product quantity to Payment Details
 
-=== 1.8.1 ===
+= 1.8.1 =
 * Fixed bug preventing nav menu from showing up on Product Category and Product Tag archive pages
 * Added Continue Shopping button to cart with setting to deactivate in Multi-Item Cart settings
 * Add pro-pack block back to addons screen, make it collapsible
@@ -126,7 +147,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fixed but causing multiple it_exchange_add_transaction_success actions to fire with each transaction.
 * Do not redirect to the wizard when Exchange is activated if its a network activate
 
-=== 1.8.0 ===
+= 1.8.0 =
 * Zeroed out padding by default on super widget notice messages
 * Add tooltip script to add-product page.
 * Change jQuery 'on' event to work with dynamicly created nodes in tooltip script
@@ -144,48 +165,48 @@ http://ithemes.com/codex/page/Exchange_Installation
 1.7.27.1 - 2014-04-18 - Glenn Ansley, Lew Ayotte, Ty Carlson, Elise Alley
 * Adding missing image not included with last commit
 
-=== 1.7.27 ===
+= 1.7.27 =
 * Add pro-pack info to setup wizard
 * Add 'At a Glance' for products
 * Introduced abstract class for product featuress and implemented in inventory
 
-=== 1.7.26 ===
+= 1.7.26 =
 * Fixed issue with tracking membership cancelationg for PayPal Standard (Secure)
 * Verify billing address saved before outputting that it saved
 * Add styles to .it-exchange-visual-cc to help it look more like a card
 * Fix subtotal mis-alignment in content-cart elements and correct hook names in same template
 * Fix for Wizard opening two tabs when clicking link for Membership addon and Stripe addon
 
-=== 1.7.25 ===
+= 1.7.25 =
 * Added ability to get true product count from it_exchange_get_cart_products_count()
 * Added fix for WP-Engine login requirements
 * Remove image thumbnail div from products
 * Remove extra space from bottom of advanced tabs on add/edit product screen
 
-=== 1.7.24 ===
+= 1.7.24 =
 * Fixed issue with admin menu icons not functioning properly on sites that have an ABSPATH or WP_CONTENT_DIR of "/".
 
-=== 1.7.23 ===
+= 1.7.23 =
 * Fix registration call for Cart and Checkout pages	
 * Fixed for Pages tab not showing Page Types set to WordPress or Disabled
 
-=== 1.7.22 ===
+= 1.7.22 =
 * Removed extraneous 'Product' labels
 * Added Text Domain to plugin Header block
 * Added Order By product feature to Product's Advanced options and General Settings
 * Fixed typo in Purchase Messages has_feature hook
 
-=== 1.7.21 ===
+= 1.7.21 =
 * Fixed issue with admin menu icons not loading on sites set to use SSL while accessed via a non-SSL URL.
 
-=== 1.7.20 ===
+= 1.7.20 =
 * Fixed typos in Cancel/Login Super Widget registration elements
 * Fixed get_pages globals to work properly with Membership pages (and other add-ons)
 * Fixed bug that caused slow product saves
 * Setting email notifications class variables to public for developer add-ons
 * Only init core shipping features if we have the shipping addon enabled
 
-=== 1.7.19 ===
+= 1.7.19 =
 * Cache Casper Pages in GLOBALS to reduce load
 * Create dummy post if none exist
 * Replaced a join() with implode()
@@ -196,7 +217,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Changed how the view, refund, and transaction URLs are built on the admin user transaction view
 * Adding a couple of filters to modify paypal button request and query request
 
-=== 1.7.18 ===
+= 1.7.18 =
 * Added functionality to enable upgrades and downgrades with Membership add-on
 * Blocking attachment pages for Exchange Downloads addons
 * Break transient cache when a transaction is made
@@ -214,20 +235,20 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Added small top margin to transaction methods on the checkout page.
 * Fixing the dice on the coupon add/edit screen. See: https://trello.com/c/XEbHEMen/896-coupons-coupon-dice-style-broken-in-3-8
 
-=== 1.7.17 ===
+= 1.7.17 =
 * Edited ithemes shared resource
 
-=== 1.7.16 ===
+= 1.7.16 =
 * Adding an JS hook API for exchange. Based on https://github.com/carldanley/WP-JS-Hooks
 * Fixed products loop template action copy/paste error -- Thanks Ronald!
 * Show all products in coupon dropdown
 * Added a max-length option to the product description.
 * Added some style mods for the colorbox popup.
 
-=== 1.7.15 ===
+= 1.7.15 =
 * Bug Fix: Prior versions would fix non-https URL's for local content when the site was accessed via SSL so that the URL would become an https URL; however, it would not reverse the process and change https URL's to http when accessed without SSL. This caused problems on sites that use self-signed certificates and would sometimes have local content URL's that referred to the https location. This update makes the https URL's convert to http when the site is accessed via SSL.
 
-=== 1.7.14 ===
+= 1.7.14 =
 * Added new action to protected pages method
 * Fixed confirmation page bug caused when setting confirmation page as a WP page
 * Fix bug where login link isn't switching to 'Log out' after login occurs
@@ -236,20 +257,20 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fix for placeholder/value when adding new products
 * Added icon fonts as a registered stylesheet.
 
-=== 1.7.13 ===
+= 1.7.13 =
 * Apply number_format to it_exchange_convert_from_database_number to get properly formatted prices that have decimals ending in 0 (which get trimmed)
 * Edit Product page now remembers which advanced option you last selected
 * Give rounding for coupons a higher precision
 * Don't use theme API in lowerlevel product availability API
 * Temp fix for vidembed plugin conflict.
 
-=== 1.7.12 ===
+= 1.7.12 =
 * Disabled AJAX caching to deal with a bug in IE's aggressive AJAX caching
 * Add filter to guest checkout to replace email address
 * Don't print 'Available Downlowads' twice in confirmation email.
 * Don't assume we have a WP User in email notification shortcodes
 
-=== 1.7.11 ===
+= 1.7.11 =
 * Fixed bug that broke 3rd party calls to new WP_Query on product pages
 * Added filter to disable the Buy Now button
 * Fixed Product Type search meta key
@@ -257,14 +278,14 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Removed Product Purchases from sortable column list
 * Pass prefix through transaction_number filter
 
-=== 1.7.10 ===
+= 1.7.10 =
 * Add new WordPress Page Templates Core Add-on
 * Add ability to filter any returned shortcode replacement for an email confirmation.
 * Include current transaction details, current shortcode being processed, and the object for the email notification class.
 * Add filters and attachments param to function that sends the confirmation email
 * Added pre_query_posts action to remove hidden produts from product taxonomy queries
 
-=== 1.7.9 ===
+= 1.7.9 =
 * Added Response Code to 'Invalid Response' message on downloads
 * Added rounding function to discount to ensure it always rounds the same way
 * Fixed bug causing error when removing all digital downloads from a product
@@ -282,13 +303,13 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Added class in Wizard to distinguish between core and external product types.
 * Removing blank localization string in categories so that packaging bot doesn't complain
 
-=== 1.7.8 ===
+= 1.7.8 =
 * Fixing some internal submodules. WordPress.org version of Exchange jumpped from 1.7.3 to 1.7.8
 
-=== 1.7.7 ===
+= 1.7.7 =
 * Initial Release Version
 
-=== 1.7.6 ===
+= 1.7.6 =
 * Fix line height on remove download button.
 * Fixing purchase quantity advance tab show/hide functionality
 * Updating all screen_icon() functions to use ITUtility
@@ -301,13 +322,13 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fixed label misspelling on the wizard.
 * Added Open Sans to the font stack.
 
-=== 1.7.5 ===
+= 1.7.5 =
 * Initial Release Version
 
-=== 1.7.4 ===
+= 1.7.4 =
 * Initial Release Version
 
-=== 1.7.3 ===
+= 1.7.3 =
 * Pass current product to ajax script when checkout is clicked
 * Refactor the tooltip
 * Standardize the transaction details page styles.
@@ -320,15 +341,15 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Added some actions for manual purchases to user products view
 * Updated lib/classes
 
-=== 1.7.2 ===
+= 1.7.2 =
 * Enhancement: Added ITUtility::screen_icon() to allow for easily preparing code for the WordPress 3.8 release. It only runs the screen_icon() function when WordPress is older than 3.8, thus avoiding the deprecation notice.
 * Bug Fix: Removed Javascript notices created by the tooltips.
 * Bug Fix: Removed Javascript notices created by ITDialog thickboxes.
 
-=== 1.7.1 ===
+= 1.7.1 =
 * Add transaction object to admin_email filters
 
-=== 1.7.0 ===
+= 1.7.0 =
 * Updated lib/icon-fonts
 * Introduce MP6 changes for 3.8
 * Add filter to store visibility value on add/edit product screen
@@ -339,14 +360,14 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Allow Coupons to be limited to a specific product.
 * Added filter to create_posts capability in transation post type
 
-=== 1.6.3 ===
+= 1.6.3 =
 * Enhancement: Improved output of ITUtility::print_r() in WordPress 3.8.
 * Enhancement: ITUtility::print_r() now indicates the number of array elements in collapsed arrays and identifies boolean values explicitly.
 * Enhancement: Added the ability for ITForm::add_drop_down() to show divided lists.
 * Bug Fix: Fixed depth cutoff of ITUtility::backtrace().
 * Bug Fix: Fixed broken javascript in error message output. This bug prevented the error message from being collapsed by default, causing the screen to show the message at all times.
 
-=== 1.6.2 ===
+= 1.6.2 =
 * Don't show shipping address in Payment Details if transaction doesn't include shipping
 * Convert Paypl Standard setting keys to be shorter - This was Chris's fault
 * Don't hardcode sample product to digital downloads. Make sample product one of the product-types setup in the wizard
@@ -354,7 +375,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Replace preg_match with strpos in Builder Views integration
 * Add action to rewrite rules method in pages class
 
-=== 1.6.1 ===
+= 1.6.1 =
 * Update readme.txt
 * Make buy-now theme API options filterable.
 * Replace all instances of tertiary session_id logic with calls to it_exchange_get_session_id()
@@ -364,7 +385,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Add functionality to it_exchange_is_page() to retrun the current page if $page param was passed empty.
 * Remove call to non-existant property in shipping-method Theme API class
 
-=== 1.6.0 ===
+= 1.6.0 =
 * Introducing Guest Checkout
 * Redirect back to Exchange Log in Page, not WP login page on failed log in
 * Fix typo in customer confirmation email
@@ -388,7 +409,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Removed margin and padding from images inside the product image popup.
 * A couple product gallery fixes.
 
-=== 1.5.0 ===
+= 1.5.0 =
 * Fixed some priority bugs
 * Added additional IDs and classes to admin settings
 * Added a general remove button style
@@ -406,7 +427,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Added a couple is_object checks before get_class calls
 * Introducing New Gallery
 
-=== 1.4.2 ===
+= 1.4.2 =
 * Fixed typo in email notifications
 * Fixed wizard styling for Stripe
 * Added quick fix to margins
@@ -415,21 +436,21 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Report 'Deleted Customer' when customer is missing
 * Changed the class for the customer menu wrapper in the confirmation page
 
-=== 1.4.1 ===
+= 1.4.1 =
 * Adding missing images
 
-=== 1.4.0 ===
+= 1.4.0 =
 * Introducing Memberships
 * Introducing Physical Products
 * Introducing Simple Shipping
 * Introducing Free Products
 
-=== 1.3.2 ===
+= 1.3.2 =
 * Fix bug preventing Product details from showing if apply_filters was previously called
 * Added some hooks to the customer API, fixed some typos
 * Updated get-images to allow users to specify an specific image of a specific size.
 
-=== 1.3.1 ===
+= 1.3.1 =
 * Fixed some i18n issues
 * Added cancel links from the Paypal add-ons
 * Fixed bug in Offline Payments for recurring, not keeping totals from parent transaction
@@ -440,13 +461,13 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fixed negative total and negative taxes
 * Fixed bug with failed payments when multicart is deactivated
 
-=== 1.3.0 ===
+= 1.3.0 =
 * Groundwork for upcoming Recurring Payments add-on
 * Introduced Purchase Dialog API to allow transaction-method add-ons to invoke CC fields.
 * Added optional Billing Address purchase requirement and associated core add-on.
 * Added core add-on that enables store owner to switch product types.
 
-=== 1.2.1 ===
+= 1.2.1 =
 * Introducing our Simple Product Type
 * Add address-formats and measurement-formats data sets
 * Tweak stripe upsell language now that it's free
@@ -458,7 +479,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Change default cancel link on cart from 'Cancel' to 'Edit Cart' on checkout page
 * Add login, registration and cart links to login notification on checkout page
 
-=== 1.2.0 ===
+= 1.2.0 =
 * Added base country and base state to settings page
 * Added States data-set for US, AU, CA, ES, FR, NL, ZA
 * Added countries data set
@@ -480,10 +501,10 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Added transaction status to reporting widget
 * Add more fonts to the add-edt product page font-family
 
-=== 1.1.3 ===
+= 1.1.3 =
 * Updated lib/classes to version 2.3.5
 
-=== 1.1.2 ===
+= 1.1.2 =
 * Added Duplicate Products core-addon
 * Fixed but that redirected user to profile rather than back to checkout when asked to register before checkout out
 * Fixed bug where activating Product Categories disables core Categories widget
@@ -492,10 +513,10 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fixed bug causing 0.00$ cost products to not display their price on the product details
 * Fix bug preventing large files from being downloaded
 
-=== 1.1.1 ===
+= 1.1.1 =
 * Updated lib/classes to version 2.3.4
 
-=== 1.1.0 ===
+= 1.1.0 =
 * Fix broken confirmation page when set as a WP page type
 * Simplifying versioning notification logic since we have a gazillion template-parts now
 * Add a little more feedback to paypal error message
@@ -509,7 +530,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fixed bug that made downloads not show on the downloads page.
 * Add theme_support option for deprecated-template-parts
 
-=== 1.0.3 ===
+= 1.0.3 =
     Add slash to itExchangeSWAjaxURL to fix login/registration bug.
 * Add default error message to login SW Ajax when WP_Error returns an empty message.
 * Reordered addon_init to prevent 3rd party addons from being included twice
@@ -519,7 +540,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fixed theme api filters
 * Added email category type for add-ons
 
-=== 1.0.2 ===
+= 1.0.2 =
 * Fix typos in content-downloads.php and email confirmation.
 * Changed Video links to target _blank
 * Various readme.txt typo fixes
@@ -536,7 +557,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fix bug preventing subpages of store and account from working correctly
 * Remove Log Out page from showing up in WP's Appearance --> Menus
 
-=== 1.0.1 ===
+= 1.0.1 =
 * Fix some spelling errors in api/addons.php
 * Fix bug that allowed users to create transactions manually in WPMS
 * Whitelist additional file types for upload on the Exchange Add/Edit Product page
@@ -544,13 +565,13 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fixed an issue where the Replace featured image text is hidden.
 * Fixed a bug in the add/edit product page that cause the advanced inner panel height to not coincide with the height of the tabs
 
-=== 1.0.0 ===
+= 1.0.0 =
 * Initial commit at wordpress.org
 
-=== 0.4.22 ===
+= 0.4.22 =
 * Remove ithemes licensing, updater code. BETA testers won't receive another update until we push 1.0.0 to wordpress.org SVN
 
-=== 0.4.21 ===
+= 0.4.21 =
 * General cleanup of the Super Widget styles.
 * Updated copy for PayPal Standard Basic and Secure
 * Updates some styles for the Wizard.
@@ -561,7 +582,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fixed typos on confirmation template.
 * Updated PayPal add-on names used on add-on page. Also updated description of Secure add-on
 
-=== 0.4.20 ===
+= 0.4.20 =
 * Fix bug that didn't delete posts with stati set to not return in searches when reseting Exchange
 * Added custom PayPal Standard (insecure/secure) button functionality
 * Fix autop in extended description
@@ -573,7 +594,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fix bug that showed customers other's transactions / downloads
 * Escape bloginfo( 'name' ) calls better.
 
-=== 0.4.19 ===
+= 0.4.19 =
 * Set with_front to false for product rewrites
 * Remove extra slash from View All link in reporting dashboard widget
 * Add Purchase Message to confirmation emails
@@ -591,7 +612,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Removed rogue HTML link (displayed as plain text) to iThemes.com in a tooltip in the setup wizard.
 * Cleaned up formatting of the payoption buttons in the setup wizard.
 
-=== 0.4.18 ===
+= 0.4.18 =
 * Add stripe image to uninstalled stripe select box in wizard
 * Add H3s back to wizard for paypal and offline payments
 * Cleaned up the wizard styles.
@@ -619,7 +640,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Disable unchosen transaction methods in wizard
 * Added some filters and changed some function names in the transaction methods
 
-=== 0.4.17 ===
+= 0.4.17 =
 * Typo Updates: 1-13 of 39
 * Wizard selects transactions methods that are already enabled now (step 1)
 * Add it-exchange-admin to body class of all admin pages that are exchange related
@@ -644,7 +665,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fix bug causing product end availabilty request in theme API to return the start date
 * Apply autop to extended-description
 
-=== 0.4.16 ===
+= 0.4.16 =
 * Add tooltip to Product File source to explain that they can paste URLs from other sources
 * Fixed bug where download API was passing wrong param to function
 * Fixed bug found by glenn in availability
@@ -658,7 +679,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Add .org readme.txt
 * Add sample product when wizard is saved.
 
-=== 0.4.15 ===
+= 0.4.15 =
 * Wizard-addon.png option now allowed and working...
 * Add register addons action. Switch core addons to use this action
 * Fixed bug allowing wizard saving successfully when stripe is selected (but the addon isn't activated)
@@ -694,7 +715,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Force registration page type to 'disable' if using WP registration settings and WP registration is off, Added tooltip to explain this.
 * Finished cleaning up the templates.
 
-=== 0.4.14 ===
+= 0.4.14 =
 * Add descrption to postslug div
 * Fix broken div in inventory metabox
 * Changed markup and styling of Single Product page template
@@ -725,10 +746,10 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Added max value to the item quantity to prevent the iterator from exceeding the max quantity for that item.
 * Styled up the dashboard widget.
 
-=== 0.4.13 ===
+= 0.4.13 =
 * Updated lib/classes to version 2.3.3
 
-=== 0.4.12 ===
+= 0.4.12 =
 * Remove stylesheet settings from Main settings. Add filters for not enqueuing stylesheet: it_exchange_disable_frontend_stylesheet, it_exchange_disable_super_widget_stylesheet
 * Applied CSS to coupons section of Super Widget.
 * Added registration styles to the super widget.
@@ -765,7 +786,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Get purchase quantity when on edit screen even if not enabled to preserve setting
 * Add hook that gets called after our product screen layout is setup
 
-=== 0.4.11 ===
+= 0.4.11 =
 * Fixed Dashboard menu Add Product entry so that it is highlighted when on that page.
 * Fixed Dashboard menu Product Categories and Product Tags entries so that the Exchange menu expands when on those pages.
 * Fixed Upload link position on the Download Source on the Add/Edit Product Screen.
@@ -816,7 +837,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Hide test/sandbox mode fields on wizard
 * Remove static call to non-static method in Stripe add-on
 
-=== 0.4.10 ===
+= 0.4.10 =
 * Don't print download links on Confirmation page or Downloads page if transaction is not cleared for delivery fixed default state issue
 * Added it_exchange_is_current_product_in_cart() to check if current product being viewed is in the cart already
 * Added view_cart() to output a View Cart button on the SW (or anywhere else)
@@ -824,7 +845,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Don't include file links in email if the transaction hasn't been cleared for delivery.
 * Reformatted the pages settings page to work with the workflow and styles of @brad's mockup.
 
-=== 0.4.9 ===
+= 0.4.9 =
 * Updated lib/classes to version 2.3.2
 * Set defaults before asking for download setting in the event that admin hasn't visited settings page.
 * Auto-enable Basic Reporting when Wizard is saved
@@ -835,7 +856,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fix bug where template parts were not loading correctly from directories outside of exchange/lib/templates
 * Create new template part for store-product
 
-=== 0.4.8 ===
+= 0.4.8 =
 * Remove transaction from page settings tab
 * Missing space? What missing space?
 * Changed the product images output and fixed the product feature-image call.
@@ -861,10 +882,10 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Working on registration cancel button
 * Tweaks to the version var and history after packaging bot did its thing.
 
-=== 0.4.7 ===
+= 0.4.7 =
 * Updated lib/updater to version 1.0.2
 
-=== 0.4.6 ===
+= 0.4.6 =
 * Fix spelling of acquired in get more add-ons blank view.
 * Get more add-ons view: make contact form button open in new window.
 * More transaction details tweeks.
@@ -894,7 +915,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Removing my browsing state from the SuperWidget
 * Fixed coupons styles and javascript bug.
 
-=== 0.4.5 ===
+= 0.4.5 =
 * Adjusted line height on product description.
 * Added some styles to the messages on the super widget.
 * Adjust add-ons activate buttons style.
@@ -915,7 +936,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Activate transaction methods on wizard save
 * Style Get More Addons tab when empty
 
-=== 0.4.4 ===
+= 0.4.4 =
 * Removed lib/api/class.api.php
 * Renamed it_exchange_is_view() to it_exchange_is_page()
 * Added it_exchange_get_page_slug()
@@ -941,7 +962,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Added stripslashes to PayPal button output.
 * Dont't redirect non-admins to /store after checkout
 
-=== 0.4.3 ===
+= 0.4.3 =
 * Fix bug where first post humbnail showing up on random pages
 * Differentiate between live-mode and test-mode for Stripe IDs, to prevent 'No such customer' errors when switching between the two
 * Removed uneeded customer data description text
@@ -963,7 +984,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * * it_exchange_theme_api_{tag}
 * * it_exchange_theme_api_{tag}_{method}
 
-=== 0.4.2 ===
+= 0.4.2 =
 * Add ablity to customize Stripe 'Purchase' button text
 * Add ability to close Wizard nag
 * Add feedback when coupon is applied (or isn't applied)
@@ -985,35 +1006,35 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Removed admin.php, not being used/called
 * Add loads of filters and actions in api/ functions
 
-=== 0.4.1 ===
+= 0.4.1 =
 * Remove zero-sum transaction from wizard
 * Admin icons
 
-=== 0.4.0 ===
+= 0.4.0 =
 * All the things since 0.3.10
 * Excluding Packging Bot updates
 * Private Beta
 
-=== 0.3.12 ===
+= 0.3.12 =
 * Updated lib/classes to version 2.3.1
 
-=== 0.3.11 ===
+= 0.3.11 =
 * Updated lib/classes to version 2.3.0
 
-=== 0.3.10 ===
+= 0.3.10 =
 * Standardized all form fields with hyphens and WP hooks with underscores
 
-=== 0.3.9 ===
+= 0.3.9 =
 * All your CartBuddy are belong to Exchange
 
-=== 0.3.8 ===
+= 0.3.8 =
 * Customer Class / API
 * Folded cart into Core
 * Folded WP post supports into core
 * Restricted Content / Membership Add-ons
 * Updated lib/classes to version 2.2.0
 
-=== 0.3.7 ===
+= 0.3.7 =
 * Use ITStorage2 for settings
 * Use ITForm for admin forms
 * Form validation / feeback for admin settings
@@ -1029,28 +1050,28 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Messaging / Errors API
 * EVERYTHING IS STILL VERY MUCH IN PROGRESS AT THIS POINT
 
-=== 0.3.6 ===
+= 0.3.6 =
 * Updated lib/classes to version 2.1.9
 
-=== 0.3.5 ===
+= 0.3.5 =
 * Admin General Settings
 * Admin Email Settings
 
-=== 0.3.4 ===
+= 0.3.4 =
 * Updated lib/classes to version 2.1.8
 
-=== 0.3.3 ===
+= 0.3.3 =
 * Hooks for Product, Transaction create, update
 * Add-on Supports API
 * Transaction API
 * Add-on: Transaction Status Metabox
 
-=== 0.3.2 ===
+= 0.3.2 =
 * Introduced Product class
 * Refactored enable / disable add-ons functionality
 * Introduced required / default meta_data to addon categories, add-ons, and product post_types
 
-=== 0.3.1 ===
+= 0.3.1 =
 * Item Type bug fixes. DocBlock @since fixes
 * Remove class_exists from it-exchange.php
 * Change admin addon param to product-type
@@ -1061,10 +1082,10 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Modify Edit Post label to reflect Product Type being Edited
 * Make sidebar admin menu open to Exhange on Edit Product screen
 
-=== 0.2.0 ===
+= 0.2.0 =
 * API Revamp
 
-=== 0.1.0 ===
+= 0.1.0 =
 * Proof of Concept
 
 == Upgrade Notice ==
