@@ -1,9 +1,9 @@
 === iThemes Exchange: Simple Ecommerce ===
-Contributors: ithemes, blepoxp, layotte, bradulrich, mattdanner
+Contributors: ithemes, blepoxp, layotte, aaroncampbell, mattdanner
 Tags: ecommerce
 Requires at least: 3.5
-Tested up to: 3.9
-Stable tag: 1.9.1
+Tested up to: 3.9.1
+Stable tag: 1.9.2
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -87,6 +87,24 @@ Upload the Exchange plugin to your blog, activate it and enable the Digital Down
 http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
+
+= 1.9.2 =
+* Fixed error preventing auto-login after user reg from SW
+* Fixed PHP Warning caused by attempt to loop through non-array.\n Fixed PHP Warning caused by undefined param
+* Add JS hook to super-widget.js when cart is cleared
+* Register correct query arg for confirmation hash when used as sub wp page
+* Fixed bug that caused all Menu items to display 'Log Out' if pretty permalinks were not enabled
+* Modifed rewrite rule for confirmation page to work with child pages.
+* Set flag to flush rewrites if Confirmation page is of WP type and that WP page is updated (in the event that post_parent was updated).
+* Fixed PHP warning when submiting billing address on checkout screen
+* Changed 'Recent Payments' heading to 'Recent Transactions' in dashboard widget.
+* Fixed Bug in transaction total for dashboard widget
+* Added ability to manually change paypal standard basic payment status
+* Added ability to manually change paypal standard secure payment status
+* Sync integration, adding the it-exchange-get-overview verb to handle the dashboard widget
+* Added ability to limit coupons frequency per customer
+* Fixed bug preventing discount when product ID remains set for coupon but checkbox to limit by product was unchecked"
+* Fixed notice when ['wp_query']->queried_object is not an object
 
 = 1.9.1 =
 * Fixed PHP error in older versions of PHP

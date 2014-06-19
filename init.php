@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: iThemes Exchange
- * Version: 1.9.1
+ * Version: 1.9.2
  * Text Domain: LION
  * Description: Easily sell your digital goods with iThemes Exchange, simple ecommerce for WordPress
  * Plugin URI: http://ithemes.com/exchange/
@@ -24,7 +24,7 @@
 */
 class IT_Exchange {
 
-	var $_version         = '1.9.1';
+	var $_version         = '1.9.2';
 	var $_wp_minimum      = '3.5';
 	var $_slug            = 'it-exchange';
 	var $_name            = 'iThemes Exchange';
@@ -212,3 +212,22 @@ add_action( 'admin_init', 'it_exchange_flush_rewrite_rules', 99 );
 
 // Init DB sessions
 require( plugin_dir_path( __FILE__ ) . 'lib/sessions/class.session.php' );
+
+/**
+ * Register all sync verbs
+ *
+ * @param Ithemes_Sync_API $api An instnance of the iThemes Sync API
+ *
+ * @since 1.9.2
+ *
+ * @return void
+ */
+function it_exchange_register_sync_verbs( $api ) {
+	$verbs = array(
+		'it-exchange-get-overview' => 'Ithemes_Sync_Verb_Ithemes_Exchange_Get_Overview',
+	);
+	foreach( $verbs as $name => $class ) {
+		$api->register( $name, $class, plugin_dir_path( __FILE__ ) . "lib/integrations/ithemes-sync/$name.php" );
+	}
+}
+add_action( 'ithemes_sync_register_verbs', 'it_exchange_register_sync_verbs' );
