@@ -3,7 +3,7 @@ Contributors: ithemes, blepoxp, layotte, aaroncampbell, mattdanner
 Tags: ecommerce
 Requires at least: 3.5
 Tested up to: 3.9.1
-Stable tag: 1.9.2
+Stable tag: 1.9.3
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -87,6 +87,12 @@ Upload the Exchange plugin to your blog, activate it and enable the Digital Down
 http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
+
+= 1.9.3 =
+* Decode HTML entities when converting prices to database numbers, otherwise the British Pound &#163; adds 163 to the front of a price!
+* Add strip_tags to cart description before appending to paypal standard payment URL
+* Allow shortcodes in product description with the_content filter
+* Run product description through wp_strip_all_tags when max-length is set
 
 = 1.9.2 =
 * Fixed error preventing auto-login after user reg from SW

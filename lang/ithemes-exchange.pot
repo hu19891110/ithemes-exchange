@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.9.2\n"
+"Project-Id-Version: iThemes Exchange 1.9.3\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2014-06-19 16:33:57+00:00\n"
+"POT-Creation-Date: 2014-06-21 22:18:21+00:00\n"
 "PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2517,7 +2517,7 @@ msgstr ""
 msgid "Thank you for your order. An email confirmation has been sent to %s."
 msgstr ""
 
-#: api/theme/download.php:127 api/theme/product.php:366
+#: api/theme/download.php:127 api/theme/product.php:382
 #: core-addons/coupons/basic-coupons/admin.php:469
 #: lib/email-notifications/class.email-notifications.php:352
 #: lib/product-features/class.downloads.php:317
@@ -2561,33 +2561,33 @@ msgstr ""
 msgid "(more info)"
 msgstr ""
 
-#: api/theme/product.php:804 api/theme/product.php:934
+#: api/theme/product.php:820 api/theme/product.php:950
 #: lib/admin/views/admin-get-more-addons.php:71
 msgid "Buy Now"
 msgstr ""
 
-#: api/theme/product.php:811 api/theme/product.php:1000
+#: api/theme/product.php:827 api/theme/product.php:1016
 msgid "Add to Cart"
 msgstr ""
 
-#: api/theme/product.php:815
+#: api/theme/product.php:831
 msgid "Product is currently out of stock."
 msgstr ""
 
-#: api/theme/product.php:816 api/theme/product.php:938
-#: api/theme/product.php:1004
+#: api/theme/product.php:832 api/theme/product.php:954
+#: api/theme/product.php:1020
 msgid "Product not available right now."
 msgstr ""
 
-#: api/theme/product.php:840
+#: api/theme/product.php:856
 msgid "Product is currently not available."
 msgstr ""
 
-#: api/theme/product.php:937 api/theme/product.php:1003
+#: api/theme/product.php:953 api/theme/product.php:1019
 msgid "Out of stock."
 msgstr ""
 
-#: api/theme/product.php:1006
+#: api/theme/product.php:1022
 msgid "Max Quantity Reached"
 msgstr ""
 
@@ -2733,7 +2733,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.9.2)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.9.3)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:19
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
