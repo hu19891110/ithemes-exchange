@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.9.3\n"
+"Project-Id-Version: iThemes Exchange 1.9.4\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2014-06-21 22:18:21+00:00\n"
+"POT-Creation-Date: 2014-06-30 16:07:27+00:00\n"
 "PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2733,7 +2733,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.9.3)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.9.4)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:19
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -4309,56 +4309,56 @@ msgstr ""
 msgid "Page settings cannot be left blank."
 msgstr ""
 
-#: lib/admin/class.admin.php:1476
+#: lib/admin/class.admin.php:1477
 msgid "Select Images"
 msgstr ""
 
-#: lib/admin/class.admin.php:1477
+#: lib/admin/class.admin.php:1478
 msgid "You must upload an image larger than 150x150."
 msgstr ""
 
-#: lib/admin/class.admin.php:1478
+#: lib/admin/class.admin.php:1479
 msgid "Edit Image"
 msgstr ""
 
-#: lib/admin/class.admin.php:1479
+#: lib/admin/class.admin.php:1480
 msgid "Upload Source"
 msgstr ""
 
-#: lib/admin/class.admin.php:1480
+#: lib/admin/class.admin.php:1481
 msgid "Insert"
 msgstr ""
 
-#: lib/admin/class.admin.php:1481
+#: lib/admin/class.admin.php:1482
 msgid "Advanced"
 msgstr ""
 
-#: lib/admin/class.admin.php:1482
+#: lib/admin/class.admin.php:1483
 msgid ""
 "We want to keep things simple for you, so we put the kitchen sink here. "
 "Click this button to add more info about your product."
 msgstr ""
 
-#: lib/admin/class.admin.php:1496
+#: lib/admin/class.admin.php:1497
 msgid ""
 "You have checked the option to \"Reset ALL data\". Are you sure you want to "
 "delete all Exchange products, transactions, and settings?"
 msgstr ""
 
-#: lib/admin/class.admin.php:1503
+#: lib/admin/class.admin.php:1504
 msgid ""
 "Please make sure all WordPress page types have a WordPress page selected."
 msgstr ""
 
-#: lib/admin/class.admin.php:1734
+#: lib/admin/class.admin.php:1735
 msgid "Main Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1739
+#: lib/admin/class.admin.php:1740
 msgid "Side Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1810
+#: lib/admin/class.admin.php:1811
 msgid "Featured Image"
 msgstr ""
 
