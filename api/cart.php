@@ -12,11 +12,22 @@
  * Returns an array of all data in the cart
  *
  * @since 0.3.7
+ *
+ * @param  string $key the identifying string for the data being requested
+ * @param  array  $options {
+ *      An array of possible options passed to the function
+ *
+ *      @type mixed $use_cached_customer_cart If contains a customer ID, we grab cart
+ *                                            data from the cached cart
+ * }
  * @return array
 */
-function it_exchange_get_cart_data( $key = false ) {
-	$data = it_exchange_get_session_data( $key );
-	return apply_filters( 'it_exchange_get_cart_data', $data );
+function it_exchange_get_cart_data( $key = false, $options=array() ) {
+	// Grab cart data from the session or from the cached cart based on options
+	$data = empty( $options['use_cached_customer_cart'] ) ? it_exchange_get_session_data( $key ) : it_exchange_get_cached_customer_cart( $options['use_cached_customer_cart'] );
+
+	// Pass through filter and return
+	return apply_filters( 'it_exchange_get_cart_data', $data, $key, $options );
 }
 
 /**
@@ -44,10 +55,23 @@ function it_exchange_remove_cart_data( $key ) {
  * Returns an array of all products in the cart
  *
  * @since 0.3.7
+ *
+ * @param  array $options {
+ *      An array of possible options passed to the function
+ *
+ *      @type mixed $use_cached_customer_cart If contains a customer ID, we grab cart
+ *                                            products from the cached cart
+ * }
  * @return array
 */
-function it_exchange_get_cart_products() {
-	$products = it_exchange_get_session_data( 'products' );
+function it_exchange_get_cart_products( $options=array() ) {
+	if ( empty( $options['use_cached_customer_cart'] ) ) {
+		$products = it_exchange_get_session_data( 'products' );
+	} else {
+		$cart = it_exchange_get_cached_customer_cart( $options['use_cached_customer_cart'] );
+		$products = empty( $cart['products'] ) ? array() : $cart['products'];
+	}
+
 	return ( empty( $products ) || ! array( $products ) ) ? array() : $products;
 }
 
@@ -100,17 +124,24 @@ function it_exchange_delete_cart_product( $cart_product_id ) {
  * The returned data is not an iThemes Exchange Product object. It is a cart-product
  *
  * @since 0.3.7
+ *
  * @param mixed $id id for the cart's product data
+ * @param  array $options {
+ *      An array of possible options passed to the function
+ *
+ *      @type mixed $use_cached_customer_cart If contains a customer ID, we grab cart
+ *                                            products from the cached cart
+ * }
  * @return mixed
 */
-function it_exchange_get_cart_product( $id ) {
-	if ( ! $products = it_exchange_get_cart_products() )
+function it_exchange_get_cart_product( $id, $options=array() ) {
+	if ( ! $products = it_exchange_get_cart_products( $opitons ) )
 		return false;
 
 	if ( empty( $products[$id] ) )
 		return false;
 
-	return apply_filters( 'it_exchange_get_cart_product', $products[$id], $id );
+	return apply_filters( 'it_exchange_get_cart_product', $products[$id], $id, $options );
 }
 
 /**
@@ -174,8 +205,11 @@ function it_exchange_add_product_to_shopping_cart( $product_id, $quantity=1 ) {
 	if ( ! is_serialized( $additional_data ) )
 		$additional_data = maybe_serialize( $additional_data );
 
-	// Doe we have anything in the cart already?
+	// Grab existing session products
 	$session_products = it_exchange_get_cart_products();
+
+	// Grab the cart ID or set it to false if no products exist
+	$existing_cart_id = empty( $session_products ) ? false : it_exchange_get_cart_id();
 
 	/**
 	 * If multi-item carts are allowed, don't do antying here.
@@ -228,7 +262,12 @@ function it_exchange_add_product_to_shopping_cart( $product_id, $quantity=1 ) {
 			'count'           => $count,
 		);
 
+		// Actually add product to the cart
 		it_exchange_add_cart_product( $product_id . '-' . $itemized_hash, $product );
+
+		// If no unique cart ID exists, create one.
+		it_exchange_update_cart_id( $existing_cart_id );
+
 		do_action( 'it_exchange_product_added_to_cart', $product_id );
 		return true;
 	}
@@ -288,6 +327,7 @@ function it_exchange_update_cart_product_quantity( $cart_product_id, $quantity, 
  * @return boolean
 */
 function it_exchange_empty_shopping_cart() {
+	do_action( 'it_exchange_before_empty_shopping_cart', it_exchange_get_session_data() );
 	it_exchange_clear_session_data( 'products' );
 	do_action( 'it_exchange_empty_shopping_cart' );
 }
@@ -319,11 +359,12 @@ function it_exchange_cache_customer_cart( $customer_id=false ) {
  *
  * @since 1.9.0
  *
- * @return void
+ * @param  integer $customer_id the id of an exchange customer
+ * @return array
 */
-function it_exchange_get_cached_customer_cart( $id=false ) {
+function it_exchange_get_cached_customer_cart( $customer_id=false ) {
 	// Grab the current customer
-	$customer = empty( $id ) ? it_exchange_get_current_customer() : new IT_Exchange_Customer( $id );
+	$customer = empty( $customer_id ) ? it_exchange_get_current_customer() : new IT_Exchange_Customer( $customer_id );
 
 	// Abort if we don't have a logged in customer
 	if ( empty( $customer->id ) )
@@ -389,7 +430,7 @@ function it_exchange_remove_current_session_from_customer_active_carts() {
 	update_user_meta( it_exchange_get_current_customer_id(), '_it_exchange_active_user_carts', $active_carts );
 }
 
-/** 
+/**
  * Grabs current active Users carts
  *
  * @since @1.9.0
@@ -506,7 +547,7 @@ function it_exchange_sync_current_cart_with_all_active_customer_carts() {
 	// Sync across browsers and devices
     foreach( (array) $active_carts as $session_id => $expiration ) {
         update_option( '_it_exchange_db_session_' . $session_id, $current_cart_data );
-    }  
+    }
 }
 
 /**
@@ -581,7 +622,7 @@ function it_exchange_get_cart_product_quantity_by_product_id( $product_id ) {
 }
 
 /**
- * Returns the number of items in the cart 
+ * Returns the number of items in the cart
  * Now including quantity for individual items w/ true_count flag
  *
  * @since 0.4.0
@@ -646,17 +687,25 @@ function it_exchange_get_cart_product_subtotal( $product, $format=true ) {
  * Returns the cart subtotal
  *
  * @since 0.3.7
+
+ * @param boolean $format should we format the price
+ * @param  array  $options {
+ *      An array of possible options passed to the function
+ *
+ *      @type mixed $use_cached_customer_cart If contains a customer ID, we grab cart
+ *                                            data from the cached cart
+ * }
  * @return mixed subtotal of cart
 */
-function it_exchange_get_cart_subtotal( $format=true ) {
+function it_exchange_get_cart_subtotal( $format=true, $options=array() ) {
 	$subtotal = 0;
-	if ( ! $products = it_exchange_get_cart_products() )
+	if ( ! $products = it_exchange_get_cart_products( $options ) )
 		return 0;
 
 	foreach( (array) $products as $product ) {
 		$subtotal += it_exchange_get_cart_product_subtotal( $product, false );
 	}
-	$subtotal = apply_filters( 'it_exchange_get_cart_subtotal', $subtotal );
+	$subtotal = apply_filters( 'it_exchange_get_cart_subtotal', $subtotal, $options );
 
 	if ( $format )
 		$subtotal = it_exchange_format_price( $subtotal );
@@ -671,10 +720,18 @@ function it_exchange_get_cart_subtotal( $format=true ) {
  * eg: taxes, shipping, discounts, etc.
  *
  * @since 0.3.7
+ *
+ * @param boolean $format should we format the price
+ * @param  array  $options {
+ *      An array of possible options passed to the function
+ *
+ *      @type mixed $use_cached_customer_cart If contains a customer ID, we grab cart
+ *                                            data from the cached cart
+ * }
  * @return mixed total of cart
 */
-function it_exchange_get_cart_total( $format=true ) {
-	$total = apply_filters( 'it_exchange_get_cart_total', it_exchange_get_cart_subtotal( false ) );
+function it_exchange_get_cart_total( $format=true, $options=array() ) {
+	$total = apply_filters( 'it_exchange_get_cart_total', it_exchange_get_cart_subtotal( false, $options ) );
 
 	if ( 0 > $total )
 		$total = 0;
@@ -691,11 +748,18 @@ function it_exchange_get_cart_total( $format=true ) {
  * The cart description is essentailly going to be a list of all products being purchased
  *
  * @since 0.4.0
+ *
+ * @param  array  $options {
+ *      An array of possible options passed to the function
+ *
+ *      @type mixed $use_cached_customer_cart If contains a customer ID, we grab cart
+ *                                            data from the cached cart
+ * }
  * @return mixed total of cart
 */
-function it_exchange_get_cart_description() {
+function it_exchange_get_cart_description( $options=array() ) {
 	$description = array();
-	if ( ! $products = it_exchange_get_cart_products() )
+	if ( ! $products = it_exchange_get_cart_products( $options ) )
 		return 0;
 
 	foreach( (array) $products as $product ) {
@@ -704,7 +768,7 @@ function it_exchange_get_cart_description() {
 			$string .= ' (' . $count . ')';
 		$description[] = $string;
 	}
-	$description = apply_filters( 'it_exchange_get_cart_description', implode( ', ', $description ), $description );
+	$description = apply_filters( 'it_exchange_get_cart_description', implode( ', ', $description ), $description, $options );
 
 	return $description;
 }
@@ -836,4 +900,63 @@ function it_exchange_get_cart_billing_address() {
 	}
 
 	return apply_filters( 'it_exchange_get_cart_billing_address', $cart_billing );
+}
+
+/**
+ * Generates and returns a unique Cart ID to share across sessions
+ *
+ * Wrapper to it_exchange_get_unique_hash but allows filter for cart id
+ *
+ * @since 1.10.0
+ *
+ * @return string
+*/
+function it_exchange_create_cart_id() {
+	$cart_id = it_exchange_create_unique_hash();
+	$cart_id = apply_filters( 'it_exchange_create_cart_id', $cart_id );
+	return $cart_id;
+}
+
+/**
+ * Add a cart id to a cart
+ *
+ * Called by core whenever a product is added to an empty cart
+ *
+ * @since 1.10.0
+ *
+ * @param string $id the id you want to set. false by default.
+ * @return string returns the ID
+*/
+function it_exchange_update_cart_id( $id=false ) {
+	if ( empty( $id ) ) {
+		$id = it_exchange_create_cart_id();
+		it_exchange_update_cart_data( 'cart_id', $id );
+	}
+	return $id;
+}
+
+/**
+ * Get a cart id from the session
+ *
+ * @since 1.10.0
+ *
+ * @return string returns the ID
+*/
+function it_exchange_get_cart_id() {
+	$id = it_exchange_get_cart_data( 'cart_id' );
+
+	// Expects ID to be a single item array
+	$id = empty( $id[0] ) ? false : $id[0];
+	return $id;
+}
+
+/**
+ * Delete a cart id from the session
+ *
+ * @since 1.10.0
+ *
+ * @return void
+*/
+function it_exchange_remove_cart_id() {
+	it_exchange_remove_cart_data( 'cart_id' );
 }
