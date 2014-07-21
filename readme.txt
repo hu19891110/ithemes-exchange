@@ -1,9 +1,9 @@
 === iThemes Exchange: Simple Ecommerce ===
 Contributors: ithemes, blepoxp, layotte, aaroncampbell, mattdanner
 Tags: ecommerce
-Requires at least: 3.5
-Tested up to: 3.9.1
-Stable tag: 1.9.3
+Requires at least: 3.7
+Tested up to: 4.0
+Stable tag: 1.10.0
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -87,6 +87,36 @@ Upload the Exchange plugin to your blog, activate it and enable the Digital Down
 http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
+
+= 1.10.0 =
+* Added support for IPN only transactions, fixes bug with users paying without PayPal accounts via PayPal and not clicking to return to the site.
+* Added for coupons as add-on
+* Added billing_address as a shortcode option to emails
+* Added shipping_address as a shortcode option to emails
+* Added Builder views for Product Categories and Product Tags when add-ons are enabled.
+* Added 'View Store' link after 'View Product' link on product creation / update.
+* Fixed auto-return bug, caused by work I'm doing to get the IPN to create transactions if they don't exists
+* Fixed typo in PayPal standard payment Url
+* Removed 'Edit' from bulk actions option list for Payments
+* Fixed bug that limited query for downlodable files to retrieving only 5.
+* Sort product downloads by ID
+* Fixed typo in PayPal standard payment URL
+* Changed 'activate_plugins' to 'manage_options' in admin menu permision params so that Exchange menu shows up in WPMS site with plugins management turned off for site admins
+* Added cart_id to transaction object cart details
+* Added 'it_exchange_before_empty_shopping_cart' action to it_exchange_empty_shopping_cart()
+* Added requirement for WP 3.7 in readme.txt
+* Added a cart id to cart data that can be used to identify a single shopping event.
+* Fixed error causing it_exchange_get_session_data() to return no data instead of all the data
+* Added options param to read function in cart API.
+* Added ability to request information from cached user cart rather than current session via cart API
+* Fixed product not available theme API text
+* Added Sync Integration Notice to Admin
+* Fixed bug in offline payments cancel URL function
+* Wrap get_admin_url in wp_login_url for sync integration
+
+= 1.9.4 =
+* Empty arrays passed through json_encode result in a string that causes json_decode to output an array, but an object is expected by get_object_vars, which outputs a warning on some PHP installs. Checking for empty arrays in session for Cart Sync.
+* Register chartjs in exchange for other addons... but don't enqueue it.
 
 = 1.9.3 =
 * Decode HTML entities when converting prices to database numbers, otherwise the British Pound &#163; adds 163 to the front of a price!
