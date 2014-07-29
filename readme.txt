@@ -3,7 +3,7 @@ Contributors: ithemes, blepoxp, layotte, aaroncampbell, mattdanner
 Tags: ecommerce
 Requires at least: 3.7
 Tested up to: 4.0
-Stable tag: 1.10.0
+Stable tag: 1.10.1
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -88,6 +88,11 @@ http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
 
+= 1.10.1 =
+* Fixed bug where we were casting rather than checking for a conditional.
+* Allow product-type add-ons to modify admin menu_title for clarity
+* Fixing Guest Checkouts for addons using transient transactions.
+
 = 1.10.0 =
 * Added support for IPN only transactions, fixes bug with users paying without PayPal accounts via PayPal and not clicking to return to the site.
 * Added for coupons as add-on
@@ -152,7 +157,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Styling updates for confirmation page table
 * Adding an action after customers cart is cached.
 * Add styling support for nested rows in it-exchange-table
-* Sync user carts across browsers and devices: - Caches state of cart anytime it has data added, updated, deleted - Logs session ID to list of active carts for user anytime they log-in - Removes session 
+* Sync user carts across browsers and devices: - Caches state of cart anytime it has data added, updated, deleted - Logs session ID to list of active carts for user anytime they log-in - Removes session
 * Sync user sessions across browsers if logged-in
 * i18n strings in purchase-requirements billing and shipping templates
 * Modifications to some filters
