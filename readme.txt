@@ -3,7 +3,7 @@ Contributors: ithemes, blepoxp, layotte, aaroncampbell, mattdanner
 Tags: ecommerce
 Requires at least: 3.7
 Tested up to: 4.0
-Stable tag: 1.10.1
+Stable tag: 1.10.2
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -87,6 +87,13 @@ Upload the Exchange plugin to your blog, activate it and enable the Digital Down
 http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
+
+= 1.10.2 =
+* Fixed non-object PHP warnings
+* Changed subtitle in readme to 'iThemes Exchange: Simple WP Ecommerce'
+* Adding new filter and global to IT_Exchange_Shipping, using for Table Rate development
+* Execute code on next upgrade to clear all bad data from cached user carts
+* Fix bug where we are checking for empty on a JSON string rather than on a PHP decoded version
 
 = 1.10.1 =
 * Fixed bug where we were casting rather than checking for a conditional.
