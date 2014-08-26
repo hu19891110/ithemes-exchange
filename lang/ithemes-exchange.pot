@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.10.3\n"
+"Project-Id-Version: iThemes Exchange 1.10.4\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2014-08-12 19:25:09+00:00\n"
+"POT-Creation-Date: 2014-08-26 14:41:33+00:00\n"
 "PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,31 +13,31 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: api/addons.php:39
+#: api/addons.php:41
 msgid "All iThemes Exchange Add-ons require a slug parameter."
 msgstr ""
 
-#: api/addons.php:42
+#: api/addons.php:44
 msgid "All iThemes Exchange Add-ons require a name parameter."
 msgstr ""
 
-#: api/addons.php:45
+#: api/addons.php:47
 msgid "All iThemes Exchange Add-ons require a file parameter."
 msgstr ""
 
-#: api/addons.php:90
+#: api/addons.php:94
 msgid "All iThemes Exchange Add-on categories require a slug parameter."
 msgstr ""
 
-#: api/addons.php:93
+#: api/addons.php:97
 msgid "All iThemes Exchange Add-ons categories require a name parameter."
 msgstr ""
 
-#: api/coupons.php:315
+#: api/coupons.php:332
 msgid "Coupon Data not found:"
 msgstr ""
 
-#: api/customers.php:175
+#: api/customers.php:183
 msgid "Successfully saved profile!"
 msgstr ""
 
@@ -2357,19 +2357,19 @@ msgstr ""
 msgid "Western Cape"
 msgstr ""
 
-#: api/downloads.php:249
+#: api/downloads.php:260
 msgid "Download doesn't expire"
 msgstr ""
 
-#: api/downloads.php:333
+#: api/downloads.php:344
 msgid "Download Error: Invalid response: "
 msgstr ""
 
-#: api/downloads.php:335
+#: api/downloads.php:346
 msgid "Download Error:"
 msgstr ""
 
-#: api/misc.php:330
+#: api/misc.php:344
 msgid "Please complete all purchase requirements before checkout out."
 msgstr ""
 
@@ -2540,7 +2540,7 @@ msgstr ""
 msgid "Remember Me"
 msgstr ""
 
-#: api/theme/login.php:221 lib/functions/functions.php:483
+#: api/theme/login.php:221 lib/functions/functions.php:488
 msgid "Log In"
 msgstr ""
 
@@ -2651,55 +2651,55 @@ msgstr ""
 msgid "Unlimited Downloads"
 msgstr ""
 
-#: api/theme.php:59
+#: api/theme.php:66
 msgid "Coding Error: Incorrect number of args passed to %s"
 msgstr ""
 
-#: api/theme.php:136
+#: api/theme.php:143
 msgid "Coding Error: <em>%s</em> is not a valid Exchange theme API context"
 msgstr ""
 
-#: api/theme.php:147
+#: api/theme.php:154
 msgid ""
 "Coding Error: <em>%s</em> in not a mapped method inside the <em>%s</em> "
 "Exchange theme API class"
 msgstr ""
 
-#: api/theme.php:158
+#: api/theme.php:165
 msgid ""
 "Coding Error: <em>%s</em> in not a callable method inside the <em>%s</em> "
 "Exchange theme API class"
 msgstr ""
 
-#: api/transactions.php:134
+#: api/transactions.php:140
 msgid "You cannot checkout without any items in your cart."
 msgstr ""
 
-#: api/transactions.php:142
+#: api/transactions.php:148
 msgid ""
 "The cart total must be greater than 0 for you to checkout. Please try again."
 msgstr ""
 
-#: api/transactions.php:715 api/transactions.php:779
+#: api/transactions.php:748 api/transactions.php:816
 #: core-addons/transaction-methods/offline-payments/init.php:285
 #: core-addons/transaction-methods/paypal-standard/init.php:783
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1034
 msgid "Unknown"
 msgstr ""
 
-#: api/transactions.php:743
+#: api/transactions.php:778
 msgid "Deleted Customer"
 msgstr ""
 
-#: api/transactions.php:821
+#: api/transactions.php:862
 msgid "#"
 msgstr ""
 
-#: api/transactions.php:1161
+#: api/transactions.php:1231
 msgid "Multiple Shipping Methods"
 msgstr ""
 
-#: api/transactions.php:1185
+#: api/transactions.php:1257
 msgid "Unknown Method"
 msgstr ""
 
@@ -2732,7 +2732,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.10.3)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.10.4)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:19
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -3048,7 +3048,7 @@ msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:418
 #: lib/email-notifications/class.email-notifications.php:453
-#: lib/functions/functions.php:374
+#: lib/functions/functions.php:379
 #: lib/products/class.products-post-type.php:113
 msgid "Product"
 msgstr ""
@@ -4932,7 +4932,7 @@ msgstr ""
 msgid "Customer Registration Settings"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:186 lib/functions/functions.php:417
+#: lib/admin/views/admin-settings.php:186 lib/functions/functions.php:422
 msgid "Customer Registration"
 msgstr ""
 
@@ -4955,14 +4955,14 @@ msgstr ""
 msgid "Default Checkout Form"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:200 lib/functions/functions.php:414
+#: lib/admin/views/admin-settings.php:200 lib/functions/functions.php:419
 msgid "Registration"
 msgstr ""
 
 #: lib/admin/views/admin-settings.php:201
 #: lib/deprecated/templates/content-registration.php:49
 #: lib/deprecated/templates/super-widget-registration.php:44
-#: lib/functions/functions.php:855
+#: lib/functions/functions.php:866
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/not-logged-in/links/login.php:21
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/registration/login.php:20
 #: lib/templates/content-registration/elements/login.php:20
@@ -5078,7 +5078,7 @@ msgstr ""
 
 #: lib/admin/views/admin-user-products.php:11
 #: lib/deprecated/templates/content-downloads.php:34
-#: lib/functions/functions.php:401 lib/functions/functions.php:404
+#: lib/functions/functions.php:406 lib/functions/functions.php:409
 #: lib/templates/content-downloads/elements/confirmation-url.php:20
 msgid "Transaction"
 msgstr ""
@@ -5089,7 +5089,7 @@ msgid ""
 "\"details-toggle hide-if-no-js\">&#61;</span>"
 msgstr ""
 
-#: lib/admin/views/admin-user-products.php:72 lib/functions/functions.php:456
+#: lib/admin/views/admin-user-products.php:72 lib/functions/functions.php:461
 #: lib/product-features/class.downloads.php:168
 #: lib/templates/content-confirmation/elements/product.php:37
 msgid "Downloads"
@@ -5681,131 +5681,131 @@ msgstr ""
 msgid "Total Price"
 msgstr ""
 
-#: lib/functions/functions.php:253
+#: lib/functions/functions.php:258
 msgid "Dangerous Settings"
 msgstr ""
 
-#: lib/functions/functions.php:257
+#: lib/functions/functions.php:262
 msgid "Reset Exchange"
 msgstr ""
 
-#: lib/functions/functions.php:260
+#: lib/functions/functions.php:265
 msgid "Reset ALL data"
 msgstr ""
 
-#: lib/functions/functions.php:261
+#: lib/functions/functions.php:266
 msgid "Checking this box will rest ALL settings and DELETE ALL DATA."
 msgstr ""
 
-#: lib/functions/functions.php:357
+#: lib/functions/functions.php:362
 msgid "Exchange has been reset. All data has been deleted."
 msgstr ""
 
-#: lib/functions/functions.php:377
+#: lib/functions/functions.php:382
 msgid "Product Base"
 msgstr ""
 
-#: lib/functions/functions.php:387
+#: lib/functions/functions.php:392
 msgid "Store"
 msgstr ""
 
-#: lib/functions/functions.php:390
+#: lib/functions/functions.php:395
 msgid "Store Page"
 msgstr ""
 
-#: lib/functions/functions.php:391
+#: lib/functions/functions.php:396
 msgid "Where all your products are shown in one place"
 msgstr ""
 
-#: lib/functions/functions.php:418
+#: lib/functions/functions.php:423
 msgid ""
 "Where customers register to login, download, etc.  You can turn off "
 "registration and allow guest checkouts in Exchange / Add-ons / Digital "
 "Downloads Settings."
 msgstr ""
 
-#: lib/functions/functions.php:428
+#: lib/functions/functions.php:433
 msgid "Account"
 msgstr ""
 
-#: lib/functions/functions.php:431
+#: lib/functions/functions.php:436
 msgid "Account Page"
 msgstr ""
 
-#: lib/functions/functions.php:432
+#: lib/functions/functions.php:437
 msgid ""
 "Customers get an account when they buy something, so they can login and "
 "download their purchases. This is the main landing page for customers after "
 "they log in."
 msgstr ""
 
-#: lib/functions/functions.php:442
+#: lib/functions/functions.php:447
 msgid "Profile"
 msgstr ""
 
-#: lib/functions/functions.php:445
+#: lib/functions/functions.php:450
 msgid "Profile Page"
 msgstr ""
 
-#: lib/functions/functions.php:446
+#: lib/functions/functions.php:451
 msgid "Private details about your customers that they can change."
 msgstr ""
 
-#: lib/functions/functions.php:459
+#: lib/functions/functions.php:464
 msgid "Customer Downloads"
 msgstr ""
 
-#: lib/functions/functions.php:460
+#: lib/functions/functions.php:465
 msgid "Page where the customer can find all of their available downloads."
 msgstr ""
 
-#: lib/functions/functions.php:470 lib/functions/functions.php:473
+#: lib/functions/functions.php:475 lib/functions/functions.php:478
 #: lib/products/class.products-post-type.php:588
 #: lib/templates/content-confirmation/elements/purchases-label.php:20
 msgid "Purchases"
 msgstr ""
 
-#: lib/functions/functions.php:486
+#: lib/functions/functions.php:491
 msgid "Customer Log In"
 msgstr ""
 
-#: lib/functions/functions.php:496
+#: lib/functions/functions.php:501
 msgid "Log Out"
 msgstr ""
 
-#: lib/functions/functions.php:499
+#: lib/functions/functions.php:504
 msgid "Customer Log Out"
 msgstr ""
 
-#: lib/functions/functions.php:509
+#: lib/functions/functions.php:514
 msgid "Thank you"
 msgstr ""
 
-#: lib/functions/functions.php:512
+#: lib/functions/functions.php:517
 msgid "Purchase Confirmation"
 msgstr ""
 
-#: lib/functions/functions.php:856
+#: lib/functions/functions.php:867
 msgid "register"
 msgstr ""
 
-#: lib/functions/functions.php:857
+#: lib/functions/functions.php:868
 msgid "edit your cart"
 msgstr ""
 
-#: lib/functions/functions.php:879
+#: lib/functions/functions.php:890
 msgid "We need a billing address before you can checkout"
 msgstr ""
 
-#: lib/functions/functions.php:1234
+#: lib/functions/functions.php:1251
 msgid "You do not have permission to view this file."
 msgstr ""
 
-#: lib/functions/functions.php:1234
+#: lib/functions/functions.php:1251
 msgid "Error"
 msgstr ""
 
-#: lib/functions/functions.php:1409
+#: lib/functions/functions.php:1430
 msgid "%s Product"
 msgid_plural "%s Products"
 msgstr[0] ""
