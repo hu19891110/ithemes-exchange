@@ -158,7 +158,8 @@
 					<th scope="row"><label for="currency-symbol-position"><?php _e( 'Symbol Position', 'it-l10n-ithemes-exchange' ) ?></label></th>
 					<td>
 						<?php
-						$symbol_positions = array( 'before' => __( 'Before: $10.00', 'it-l10n-ithemes-exchange' ), 'after' => __( 'After: 10.00$', 'it-l10n-ithemes-exchange' ) );
+						$currency_symbol  = empty( $settings['default-currency'] ) ? '$' : it_exchange_get_currency_symbol( $settings['default-currency'] );
+						$symbol_positions = array( 'before' => sprintf( __( 'Before: %s10.00', 'it-l10n-ithemes-exchange' ), $currency_symbol ), 'after' => sprintf( __( 'After: 10.00%s', 'it-l10n-ithemes-exchange' ), $currency_symbol ) );
 						$form->add_drop_down( 'currency-symbol-position', $symbol_positions ); ?>
 						<br /><span class="description"><?php _e( 'Where should the currency symbol be placed in relation to the price?', 'it-l10n-ithemes-exchange' ); ?></span>
 					</td>

@@ -19,7 +19,7 @@ class IT_Theme_API_Customer implements IT_Theme_API {
 	 * @var string $_customer
 	 * @since 0.4.0
 	*/
-	private $_customer = '';
+	protected $_customer = '';
 
 	/**
 	 * Maps api tags to methods
@@ -78,6 +78,7 @@ class IT_Theme_API_Customer implements IT_Theme_API {
 	function form_open( $options=array() ) {
 		$output = '<form action="" method="post" >';
 		$output .= '<input type="hidden" name="user_id" value="' . $this->_customer->data->ID . '" >';
+		$output .= wp_nonce_field( 'it-exchange-update-profile-' . $this->_customer->data->ID, '_profile_nonce', true, false );
 		return $output;
 	}
 

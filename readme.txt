@@ -3,7 +3,7 @@ Contributors: ithemes, blepoxp, layotte, aaroncampbell, mattdanner
 Tags: ecommerce
 Requires at least: 3.7
 Tested up to: 4.0
-Stable tag: 1.10.4
+Stable tag: 1.10.6
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -87,6 +87,36 @@ Upload the Exchange plugin to your blog, activate it and enable the Digital Down
 http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
+
+= 1.10.6 =
+* Added function that logs guest user out once they hit the confirmation page.
+* Add DOING_AJAX checks to is_admin conditional in guest checkout
+* Check for non-empty product ID and product arrays before adding/updating session data
+* Add basename param to registered addons if it was added as a param in it_exchange_register_addon()
+* Added $params var to the filter for add_details in it_exchange_register_addon();
+* Change $_REQUEST to $_POST in it_exchange_register_user
+* Multiple modifications to Coupons API to make it more extendable. props Timothy Jacobs <http://ironbounddesigns.com/>
+* Added multiple js hooks to to superwidget js
+* Add nonce to exchange registration template parts and processing function
+* Add nonce to edit profile form
+* Change customer var from private to protected so that class can be extended
+* Change var holding the last version of exchange where template parts were updated to trigger notice in admin.
+* Moved css for Add-ons menu styling to global admin stylesheet from sheet for exchange pages only.
+* Changed Swiss Frank symbol from 'Fr.' to 'CHF'
+* Core changes to support a unified checkout page in the future:
+* - Moved conditional logic to determine if purchase requirement template parts are included out of template part files.
+* - Added filters to hide the purchase requirements notification
+* - Added new function to unregister purchase requirements
+* Changed 'Premuim' to 'Premium' and 'physcial' to 'physical' on Help page
+* Added shipping-address as a valid super-widget state when simple shipping is enabled
+* Added filter to surpress add-to-cart buttons
+* Fixed hook typos in SW template parts
+* Fixed JS error in lib/assets/js/edit-product.js when itExchange was not defined
+* Sort the Default Currency options by alpha
+* Make options in Settings dropdown for symbol position use the selected symbol
+
+= 1.10.5 =
+* Added support for ContactBuddy
 
 = 1.10.4 =
 * Fixed bug causing Template Updates nag to appear on every upgrade
