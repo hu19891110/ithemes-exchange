@@ -171,6 +171,18 @@ function handle_it_exchange_save_profile_action() {
 
 	// Grab action and process it.
 	if ( isset( $_REQUEST['it-exchange-save-profile'] ) ) {
+		
+		if ( ! $customer_id = it_exchange_get_current_customer_id() ) {
+			return false;
+		}
+
+		if ( empty( $_POST['_profile_nonce'] ) ) {
+			return false;
+		}
+
+		if ( ! wp_verify_nonce( $_POST['_profile_nonce'], 'it-exchange-update-profile-' . $customer_id ) ) {
+			return false;
+		}
 
 		//WordPress builtin
 		require_once(ABSPATH . 'wp-admin/includes/user.php');
@@ -199,6 +211,14 @@ add_action( 'template_redirect', 'handle_it_exchange_save_profile_action', 5 );
  * @return WP_User|WP_Error
 */
 function it_exchange_register_user( $user_data=array() ) {
+
+	if ( empty( $_POST['_exchange_register_nonce'] ) ) {
+		return new WP_Error( 'not-allowed', __( 'Action not allowed', 'it-l10n-ithemes-exchange' ) );;
+	}
+
+	if ( ! wp_verify_nonce( $_POST['_exchange_register_nonce'], 'it-exchange-register-customer' ) ) {
+		return new WP_Error( 'not-allowed', __( 'Action not allowed', 'it-l10n-ithemes-exchange' ) );
+	}
 
 	// Include WP file
 	require_once( ABSPATH . 'wp-admin/includes/user.php' );

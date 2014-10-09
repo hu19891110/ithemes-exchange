@@ -238,7 +238,7 @@ function it_exchange_register_core_addons() {
 		),
 		'simple-shipping'        => array(
 			'name'              => __( 'Simple Shipping', 'it-l10n-ithemes-exchange' ),
-			'description'       => __( 'Flat rate and free shipping for your physcial products', 'it-l10n-ithemes-exchange' ),
+			'description'       => __( 'Flat rate and free shipping for your physical products', 'it-l10n-ithemes-exchange' ),
 			'author'            => 'iThemes',
 			'author_url'        => 'http://ithemes.com',
 			'file'              => dirname( __FILE__ ) . '/shipping/simple-shipping/init.php',

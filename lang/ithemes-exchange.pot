@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.10.4\n"
+"Project-Id-Version: iThemes Exchange 1.10.6\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2014-08-26 14:41:33+00:00\n"
+"POT-Creation-Date: 2014-10-09 12:43:00+00:00\n"
 "PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,23 +13,23 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: api/addons.php:41
+#: api/addons.php:42
 msgid "All iThemes Exchange Add-ons require a slug parameter."
 msgstr ""
 
-#: api/addons.php:44
+#: api/addons.php:45
 msgid "All iThemes Exchange Add-ons require a name parameter."
 msgstr ""
 
-#: api/addons.php:47
+#: api/addons.php:48
 msgid "All iThemes Exchange Add-ons require a file parameter."
 msgstr ""
 
-#: api/addons.php:94
+#: api/addons.php:96
 msgid "All iThemes Exchange Add-on categories require a slug parameter."
 msgstr ""
 
-#: api/addons.php:97
+#: api/addons.php:99
 msgid "All iThemes Exchange Add-ons categories require a name parameter."
 msgstr ""
 
@@ -37,8 +37,12 @@ msgstr ""
 msgid "Coupon Data not found:"
 msgstr ""
 
-#: api/customers.php:183
+#: api/customers.php:195
 msgid "Successfully saved profile!"
+msgstr ""
+
+#: api/customers.php:216 api/customers.php:220
+msgid "Action not allowed"
 msgstr ""
 
 #: api/data-sets/countries.php:25
@@ -2373,13 +2377,13 @@ msgstr ""
 msgid "Please complete all purchase requirements before checkout out."
 msgstr ""
 
-#: api/theme/billing.php:76 api/theme/customer.php:140
-#: api/theme/registration.php:147 api/theme/shipping.php:75
+#: api/theme/billing.php:76 api/theme/customer.php:141
+#: api/theme/registration.php:148 api/theme/shipping.php:75
 msgid "First Name"
 msgstr ""
 
-#: api/theme/billing.php:97 api/theme/customer.php:181
-#: api/theme/registration.php:184 api/theme/shipping.php:96
+#: api/theme/billing.php:97 api/theme/customer.php:182
+#: api/theme/registration.php:185 api/theme/shipping.php:96
 msgid "Last Name"
 msgstr ""
 
@@ -2419,8 +2423,8 @@ msgstr ""
 msgid "State"
 msgstr ""
 
-#: api/theme/billing.php:415 api/theme/customer.php:265
-#: api/theme/registration.php:221 api/theme/shipping.php:360
+#: api/theme/billing.php:415 api/theme/customer.php:266
+#: api/theme/registration.php:222 api/theme/shipping.php:360
 #: core-addons/load.php:316
 msgid "Email"
 msgstr ""
@@ -2434,10 +2438,10 @@ msgid "Submit"
 msgstr ""
 
 #: api/theme/billing.php:476 api/theme/checkout.php:93 api/theme/login.php:332
-#: api/theme/registration.php:367 api/theme/shipping-method.php:160
+#: api/theme/registration.php:368 api/theme/shipping-method.php:160
 #: api/theme/shipping.php:419
 #: core-addons/admin/guest-checkout/lib/template-functions.php:210
-#: core-addons/coupons/basic-coupons/admin.php:370
+#: core-addons/coupons/basic-coupons/admin.php:390
 #: lib/deprecated/templates/super-widget-cart.php:76
 #: lib/products/class.products-post-type.php:337
 #: lib/products/class.products-post-type.php:366
@@ -2448,7 +2452,7 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: api/theme/cart-item.php:77 core-addons/coupons/basic-coupons/init.php:345
+#: api/theme/cart-item.php:77 core-addons/coupons/basic-coupons/init.php:364
 msgid "&times;"
 msgstr ""
 
@@ -2478,7 +2482,7 @@ msgstr ""
 msgid "Continue Shopping"
 msgstr ""
 
-#: api/theme/coupons.php:181 core-addons/coupons/basic-coupons/admin.php:413
+#: api/theme/coupons.php:181 core-addons/coupons/basic-coupons/admin.php:433
 #: core-addons/coupons/basic-coupons/init.php:114
 msgid "Coupon Code"
 msgstr ""
@@ -2488,37 +2492,37 @@ msgctxt "LION"
 msgid "-"
 msgstr ""
 
-#: api/theme/customer.php:222
+#: api/theme/customer.php:223
 msgid "Display Name"
 msgstr ""
 
-#: api/theme/customer.php:306
+#: api/theme/customer.php:307
 msgid "Website"
 msgstr ""
 
-#: api/theme/customer.php:347 api/theme/login.php:147
-#: api/theme/registration.php:258
+#: api/theme/customer.php:348 api/theme/login.php:147
+#: api/theme/registration.php:259
 msgid "Password"
 msgstr ""
 
-#: api/theme/customer.php:384 api/theme/registration.php:295
+#: api/theme/customer.php:385 api/theme/registration.php:296
 msgid "Confirm Password"
 msgstr ""
 
-#: api/theme/customer.php:421
+#: api/theme/customer.php:422
 msgid "Save Profile"
 msgstr ""
 
-#: api/theme/customer.php:534
+#: api/theme/customer.php:535
 msgid "View your Account"
 msgstr ""
 
-#: api/theme/customer.php:569
+#: api/theme/customer.php:570
 msgid "Thank you for your order. An email confirmation has been sent to %s."
 msgstr ""
 
 #: api/theme/download.php:127 api/theme/product.php:382
-#: core-addons/coupons/basic-coupons/admin.php:469
+#: core-addons/coupons/basic-coupons/admin.php:489
 #: lib/email-notifications/class.email-notifications.php:354
 #: lib/product-features/class.downloads.php:317
 msgid "Unlimited"
@@ -2532,7 +2536,7 @@ msgstr ""
 msgid "%d %s after purchase"
 msgstr ""
 
-#: api/theme/login.php:110 api/theme/registration.php:110
+#: api/theme/login.php:110 api/theme/registration.php:111
 msgid "Username"
 msgstr ""
 
@@ -2548,7 +2552,7 @@ msgstr ""
 msgid "Lost your password?"
 msgstr ""
 
-#: api/theme/login.php:297 api/theme/registration.php:332
+#: api/theme/login.php:297 api/theme/registration.php:333
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/login/register.php:20
 msgid "Register"
 msgstr ""
@@ -2566,7 +2570,7 @@ msgstr ""
 msgid "Buy Now"
 msgstr ""
 
-#: api/theme/product.php:827 api/theme/product.php:1016
+#: api/theme/product.php:827 api/theme/product.php:1020
 msgid "Add to Cart"
 msgstr ""
 
@@ -2578,15 +2582,15 @@ msgstr ""
 msgid "Product is currently not available."
 msgstr ""
 
-#: api/theme/product.php:953 api/theme/product.php:1019
+#: api/theme/product.php:953 api/theme/product.php:1023
 msgid "Out of stock."
 msgstr ""
 
-#: api/theme/product.php:954 api/theme/product.php:1020
+#: api/theme/product.php:954 api/theme/product.php:1024
 msgid "Product not available right now."
 msgstr ""
 
-#: api/theme/product.php:1022
+#: api/theme/product.php:1026
 msgid "Max Quantity Reached"
 msgstr ""
 
@@ -2623,7 +2627,7 @@ msgstr ""
 msgid "Fields"
 msgstr ""
 
-#: api/theme/registration.php:411
+#: api/theme/registration.php:412
 msgid "Registration Disabled"
 msgstr ""
 
@@ -2732,7 +2736,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.10.4)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.10.6)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:19
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -2740,8 +2744,8 @@ msgid "iThemes Exchange"
 msgstr ""
 
 #: core-addons/admin/guest-checkout/lib/filters.php:44
-#: core-addons/admin/guest-checkout/lib/filters.php:506
-#: core-addons/admin/guest-checkout/lib/filters.php:512
+#: core-addons/admin/guest-checkout/lib/filters.php:520
+#: core-addons/admin/guest-checkout/lib/filters.php:526
 msgid "Please use a properly formatted email address."
 msgstr ""
 
@@ -2861,7 +2865,7 @@ msgstr ""
 #: lib/admin/class-settings-form.php:41
 #: lib/admin/views/admin-email-settings.php:164
 #: lib/admin/views/admin-page-settings.php:128
-#: lib/admin/views/admin-settings.php:302
+#: lib/admin/views/admin-settings.php:303
 msgid "Save Changes"
 msgstr ""
 
@@ -2883,46 +2887,46 @@ msgstr ""
 msgid "You must have more than 1 product type enabled to make changes here."
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:133
+#: core-addons/coupons/basic-coupons/admin.php:147
 msgid "Coupon Name cannot be left empty"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:135
+#: core-addons/coupons/basic-coupons/admin.php:149
 msgid "Coupon Code cannot be left empty"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:137
+#: core-addons/coupons/basic-coupons/admin.php:151
 msgid "Coupon Discount cannot be left empty"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:139
+#: core-addons/coupons/basic-coupons/admin.php:153
 msgid "Coupon Discount must be a postive number"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:141
+#: core-addons/coupons/basic-coupons/admin.php:155
 msgid "Available Coupons must be a number"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:143
+#: core-addons/coupons/basic-coupons/admin.php:157
 msgid "Please select a product."
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:145
+#: core-addons/coupons/basic-coupons/admin.php:159
 msgid "Please select a frequency limitation"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:161
-#: core-addons/coupons/basic-coupons/admin.php:218
+#: core-addons/coupons/basic-coupons/admin.php:177
+#: core-addons/coupons/basic-coupons/admin.php:234
 msgid "Add Coupon"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:165
-#: core-addons/coupons/basic-coupons/admin.php:218
+#: core-addons/coupons/basic-coupons/admin.php:181
+#: core-addons/coupons/basic-coupons/admin.php:234
 #: lib/coupons/class.coupons-post-type.php:32
 msgid "Edit Coupon"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:168 core-addons/load.php:178
+#: core-addons/coupons/basic-coupons/admin.php:184 core-addons/load.php:178
 #: lib/coupons/class.coupons-post-type.php:30
 #: lib/deprecated/templates/super-widget-checkout.php:74
 #: lib/templates/super-widget-checkout/elements/single-item-update-coupons.php:20
@@ -2930,130 +2934,130 @@ msgstr ""
 msgid "Coupons"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:252
+#: core-addons/coupons/basic-coupons/admin.php:268
 msgid "Coupon Added"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:254
+#: core-addons/coupons/basic-coupons/admin.php:270
 msgid "Coupon Updated"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:279
+#: core-addons/coupons/basic-coupons/admin.php:298
 #: lib/product-features/class.downloads.php:195
 msgid "Name"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:279
+#: core-addons/coupons/basic-coupons/admin.php:298
 msgid "What do you want to call this coupon? This is just for your reference."
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:283
+#: core-addons/coupons/basic-coupons/admin.php:302
 msgid "Code"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:283
+#: core-addons/coupons/basic-coupons/admin.php:302
 msgid ""
 "Try something cool like EXCHANGERULEZ5000! Or click the dice to generate a "
 "random code."
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:289
+#: core-addons/coupons/basic-coupons/admin.php:308
 #: lib/transactions/class.transactions-post-type.php:488
 msgid "Amount"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:296
+#: core-addons/coupons/basic-coupons/admin.php:315
 msgid "% Percent"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:299
+#: core-addons/coupons/basic-coupons/admin.php:318
 msgid "Please select an end date that is after the start date."
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:301
-#: core-addons/coupons/basic-coupons/admin.php:415
+#: core-addons/coupons/basic-coupons/admin.php:320
+#: core-addons/coupons/basic-coupons/admin.php:435
 #: lib/product-features/class.product-availability.php:138
 msgid "Start Date"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:305
-#: core-addons/coupons/basic-coupons/admin.php:416
+#: core-addons/coupons/basic-coupons/admin.php:324
+#: core-addons/coupons/basic-coupons/admin.php:436
 #: lib/product-features/class.product-availability.php:142
 msgid "End Date"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:313
+#: core-addons/coupons/basic-coupons/admin.php:332
 msgid "Limit number of coupons"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:320
+#: core-addons/coupons/basic-coupons/admin.php:339
 msgid "How many times can this coupon be used before it is disabled?"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:326
+#: core-addons/coupons/basic-coupons/admin.php:345
 msgid "Limit to a specific product"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:333
+#: core-addons/coupons/basic-coupons/admin.php:352
 msgid "Select a product"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:340
+#: core-addons/coupons/basic-coupons/admin.php:359
 msgid "Select a product to use with this coupon."
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:346
+#: core-addons/coupons/basic-coupons/admin.php:365
 msgid "Limit frequency of use per customer"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:359
+#: core-addons/coupons/basic-coupons/admin.php:378
 msgid "Day(s)"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:359
+#: core-addons/coupons/basic-coupons/admin.php:378
 msgid "Week(s)"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:359
+#: core-addons/coupons/basic-coupons/admin.php:378
 msgid "Year(s)"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:360
+#: core-addons/coupons/basic-coupons/admin.php:379
 msgid "Limit this coupon to "
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:362
+#: core-addons/coupons/basic-coupons/admin.php:381
 msgid " use(s) per customer for every "
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:371
+#: core-addons/coupons/basic-coupons/admin.php:391
 #: lib/products/class.products-post-type.php:229
 msgid "Save"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:412
+#: core-addons/coupons/basic-coupons/admin.php:432
 #: core-addons/transaction-methods/offline-payments/init.php:395
 #: lib/product-features/class.title.php:96
 #: lib/products/class.products-post-type.php:584
 msgid "Title"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:414
+#: core-addons/coupons/basic-coupons/admin.php:434
 msgid "Discount"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:417
+#: core-addons/coupons/basic-coupons/admin.php:437
 msgid "Available Coupons"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:418
+#: core-addons/coupons/basic-coupons/admin.php:438
 #: lib/email-notifications/class.email-notifications.php:453
 #: lib/functions/functions.php:379
 #: lib/products/class.products-post-type.php:113
 msgid "Product"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/admin.php:473
+#: core-addons/coupons/basic-coupons/admin.php:493
 msgid "All Products"
 msgstr ""
 
@@ -3066,15 +3070,15 @@ msgstr ""
 msgid "Invalid coupon"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/init.php:215
+#: core-addons/coupons/basic-coupons/init.php:234
 msgid "Coupon applied"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/init.php:528
+#: core-addons/coupons/basic-coupons/init.php:577
 msgid "Coupon removed"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/init.php:579
+#: core-addons/coupons/basic-coupons/init.php:628
 msgid "View Coupon"
 msgstr ""
 
@@ -3189,7 +3193,7 @@ msgid "Enable the WordPress Page Templates meta box for products"
 msgstr ""
 
 #: core-addons/load.php:156
-#: lib/templates/content-checkout/elements/purchase-requirements/billing-address.php:24
+#: lib/templates/content-checkout/elements/purchase-requirements/billing-address.php:20
 #: lib/templates/content-confirmation/elements/billing-address.php:21
 #: lib/templates/super-widget-billing-address.php:20
 #: lib/transactions/class.transactions-post-type.php:474
@@ -3271,7 +3275,7 @@ msgid "Simple Shipping"
 msgstr ""
 
 #: core-addons/load.php:241
-msgid "Flat rate and free shipping for your physcial products"
+msgid "Flat rate and free shipping for your physical products"
 msgstr ""
 
 #: core-addons/load.php:271
@@ -3504,8 +3508,8 @@ msgstr ""
 #: core-addons/transaction-methods/offline-payments/init.php:429
 #: core-addons/transaction-methods/paypal-standard/init.php:1050
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1365
-#: lib/admin/class.admin.php:1030 lib/admin/class.admin.php:1227
-#: lib/admin/class.admin.php:1317
+#: lib/admin/class.admin.php:1031 lib/admin/class.admin.php:1228
+#: lib/admin/class.admin.php:1318
 msgid "Error. Please try again"
 msgstr ""
 
@@ -3726,8 +3730,8 @@ msgstr ""
 #: core-addons/transaction-methods/offline-payments/init.php:468
 #: core-addons/transaction-methods/paypal-standard/init.php:1096
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1419
-#: lib/admin/class.admin.php:1039 lib/admin/class.admin.php:1238
-#: lib/admin/class.admin.php:1334
+#: lib/admin/class.admin.php:1040 lib/admin/class.admin.php:1239
+#: lib/admin/class.admin.php:1335
 msgid "Settings Saved."
 msgstr ""
 
@@ -4232,121 +4236,121 @@ msgstr ""
 msgid "Error: Add-on not disabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:1006 lib/admin/views/admin-settings.php:108
+#: lib/admin/class.admin.php:1007 lib/admin/views/admin-settings.php:108
 msgid ""
 "Please use the 2-3 character %sISO abbreviation%s for country subdivisions"
 msgstr ""
 
-#: lib/admin/class.admin.php:1059
+#: lib/admin/class.admin.php:1060
 msgid "You must select at least one Payment Method."
 msgstr ""
 
-#: lib/admin/class.admin.php:1160
+#: lib/admin/class.admin.php:1161
 msgid "Settings Saved. Congrats!"
 msgstr ""
 
-#: lib/admin/class.admin.php:1161
+#: lib/admin/class.admin.php:1162
 msgid "%sAdd a Product%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:1162
+#: lib/admin/class.admin.php:1163
 msgid "%sEnable Add-ons%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:1164
+#: lib/admin/class.admin.php:1165
 msgid "%sView Sample Product%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:1200 lib/admin/class.admin.php:1253
+#: lib/admin/class.admin.php:1201 lib/admin/class.admin.php:1254
 msgid "Please provide a valid email address."
 msgstr ""
 
-#: lib/admin/class.admin.php:1202
+#: lib/admin/class.admin.php:1203
 msgid "Thousands Separator cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1204
+#: lib/admin/class.admin.php:1205
 msgid "Decimals Separator cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1255
+#: lib/admin/class.admin.php:1256
 msgid "Email Name cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1257
+#: lib/admin/class.admin.php:1258
 msgid "Email Subject cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1259
+#: lib/admin/class.admin.php:1260
 msgid "Email Template cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1268
+#: lib/admin/class.admin.php:1269
 msgid "Invalid email address in Sales Notification Email Address"
 msgstr ""
 
-#: lib/admin/class.admin.php:1407
+#: lib/admin/class.admin.php:1408
 msgid "Please make sure all your page slugs are unique."
 msgstr ""
 
-#: lib/admin/class.admin.php:1413
+#: lib/admin/class.admin.php:1414
 msgid "Page settings cannot be left blank."
 msgstr ""
 
-#: lib/admin/class.admin.php:1482
+#: lib/admin/class.admin.php:1483
 msgid "Select Images"
 msgstr ""
 
-#: lib/admin/class.admin.php:1483
+#: lib/admin/class.admin.php:1484
 msgid "You must upload an image larger than 150x150."
 msgstr ""
 
-#: lib/admin/class.admin.php:1484
+#: lib/admin/class.admin.php:1485
 msgid "Edit Image"
 msgstr ""
 
-#: lib/admin/class.admin.php:1485
+#: lib/admin/class.admin.php:1486
 msgid "Upload Source"
 msgstr ""
 
-#: lib/admin/class.admin.php:1486
+#: lib/admin/class.admin.php:1487
 msgid "Insert"
 msgstr ""
 
-#: lib/admin/class.admin.php:1487
+#: lib/admin/class.admin.php:1488
 msgid "Advanced"
 msgstr ""
 
-#: lib/admin/class.admin.php:1488
+#: lib/admin/class.admin.php:1489
 msgid ""
 "We want to keep things simple for you, so we put the kitchen sink here. "
 "Click this button to add more info about your product."
 msgstr ""
 
-#: lib/admin/class.admin.php:1502
+#: lib/admin/class.admin.php:1503
 msgid ""
 "You have checked the option to \"Reset ALL data\". Are you sure you want to "
 "delete all Exchange products, transactions, and settings?"
 msgstr ""
 
-#: lib/admin/class.admin.php:1509
+#: lib/admin/class.admin.php:1510
 msgid ""
 "Please make sure all WordPress page types have a WordPress page selected."
 msgstr ""
 
-#: lib/admin/class.admin.php:1606
+#: lib/admin/class.admin.php:1607
 msgid "View store"
 msgstr ""
 
-#: lib/admin/class.admin.php:1759
+#: lib/admin/class.admin.php:1760
 msgid "Main Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1764
+#: lib/admin/class.admin.php:1765
 msgid "Side Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1835
+#: lib/admin/class.admin.php:1836
 msgid "Featured Image"
 msgstr ""
 
@@ -4459,7 +4463,7 @@ msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:71
 #: lib/admin/views/admin-email-settings.php:137
-#: lib/admin/views/admin-settings.php:286
+#: lib/admin/views/admin-settings.php:287
 msgid "You call these shortcode functions like this: %s"
 msgstr ""
 
@@ -4528,7 +4532,7 @@ msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:85
 #: lib/admin/views/admin-email-settings.php:151
-#: lib/admin/views/admin-settings.php:293
+#: lib/admin/views/admin-settings.php:294
 msgid "Your site name"
 msgstr ""
 
@@ -4693,7 +4697,7 @@ msgid "Get premium and priority support for Exchange."
 msgstr ""
 
 #: lib/admin/views/admin-help.php:47
-msgid "Get Premuim Support"
+msgid "Get Premium Support"
 msgstr ""
 
 #: lib/admin/views/admin-help.php:52
@@ -4896,70 +4900,70 @@ msgstr ""
 msgid "Symbol Position"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:161
-msgid "Before: $10.00"
+#: lib/admin/views/admin-settings.php:162
+msgid "Before: %s10.00"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:161
-msgid "After: 10.00$"
+#: lib/admin/views/admin-settings.php:162
+msgid "After: 10.00%s"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:163
+#: lib/admin/views/admin-settings.php:164
 msgid "Where should the currency symbol be placed in relation to the price?"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:167
+#: lib/admin/views/admin-settings.php:168
 msgid "Thousands Separator"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:170
+#: lib/admin/views/admin-settings.php:171
 msgid ""
 "What character would you like to use to separate thousands when displaying "
 "prices?"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:174
+#: lib/admin/views/admin-settings.php:175
 msgid "Decimals Separator"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:177
+#: lib/admin/views/admin-settings.php:178
 msgid ""
 "What character would you like to use to separate decimals when displaying "
 "prices?"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:182
+#: lib/admin/views/admin-settings.php:183
 msgid "Customer Registration Settings"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:186 lib/functions/functions.php:422
+#: lib/admin/views/admin-settings.php:187 lib/functions/functions.php:422
 msgid "Customer Registration"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:189
+#: lib/admin/views/admin-settings.php:190
 msgid "Use Exchange Registration Only"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:192
+#: lib/admin/views/admin-settings.php:193
 msgid "Use WordPress Registration Setting"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:192
+#: lib/admin/views/admin-settings.php:193
 msgid ""
 "In order to use this setting, you will first need to check the \"Anyone can "
 "register\" checkbox from the WordPress General Settings page to allow site "
 "membership."
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:196
+#: lib/admin/views/admin-settings.php:197
 msgid "Default Checkout Form"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:200 lib/functions/functions.php:419
+#: lib/admin/views/admin-settings.php:201 lib/functions/functions.php:419
 msgid "Registration"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:201
+#: lib/admin/views/admin-settings.php:202
 #: lib/deprecated/templates/content-registration.php:49
 #: lib/deprecated/templates/super-widget-registration.php:44
 #: lib/functions/functions.php:866
@@ -4969,91 +4973,91 @@ msgstr ""
 msgid "Log in"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:209
+#: lib/admin/views/admin-settings.php:210
 msgid "Stylesheet Settings"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:213
+#: lib/admin/views/admin-settings.php:214
 msgid "Custom Styles"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:215
+#: lib/admin/views/admin-settings.php:216
 msgid ""
 "If they exist, the following files will be loaded in order after core "
 "Exchange stylesheets:"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:229
+#: lib/admin/views/admin-settings.php:230
 msgid "Admin Settings"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:233
+#: lib/admin/views/admin-settings.php:234
 msgid "Visual Editor for Product Description"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:236
+#: lib/admin/views/admin-settings.php:237
 msgid "Enable Visual Editor for Product Descriptions?"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:241
+#: lib/admin/views/admin-settings.php:242
 msgid "Product Gallery"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:245
+#: lib/admin/views/admin-settings.php:246
 msgid "Enable Popup"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:251
+#: lib/admin/views/admin-settings.php:252
 msgid "Enable Zoom"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:251
+#: lib/admin/views/admin-settings.php:252
 msgid "Zoom will only work properly when uploading large images."
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:256
+#: lib/admin/views/admin-settings.php:257
 msgid "Click"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:259
+#: lib/admin/views/admin-settings.php:260
 msgid "Hover"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:261
+#: lib/admin/views/admin-settings.php:262
 msgid "Zoom will occur in the popup when popup is enabled."
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:267
+#: lib/admin/views/admin-settings.php:268
 msgid "Customer Messages"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:271
+#: lib/admin/views/admin-settings.php:272
 msgid "Customer Account Page"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:284
+#: lib/admin/views/admin-settings.php:285
 msgid ""
 "Enter your content for the Customer's account page. HTML is accepted. "
 "Available shortcode functions:"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:288
+#: lib/admin/views/admin-settings.php:289
 msgid "The customer's first name"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:289
+#: lib/admin/views/admin-settings.php:290
 msgid "The customer's last name"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:290
+#: lib/admin/views/admin-settings.php:291
 msgid "The customer's username on the site"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:291
+#: lib/admin/views/admin-settings.php:292
 msgid "The customer's email address"
 msgstr ""
 
-#: lib/admin/views/admin-settings.php:292
+#: lib/admin/views/admin-settings.php:293
 msgid ""
 "The customer's gravatar image. Use the avatar_size param for square size. "
 "Default is 128"
@@ -5520,7 +5524,7 @@ msgstr ""
 
 #: lib/deprecated/templates/content-cart.php:116
 #: lib/deprecated/templates/content-checkout.php:113
-#: lib/templates/content-cart.php:41 lib/templates/content-checkout.php:39
+#: lib/templates/content-cart.php:41 lib/templates/content-checkout.php:42
 msgid "There are no items in your cart"
 msgstr ""
 
@@ -6719,7 +6723,7 @@ msgstr ""
 msgid "Edit Cart"
 msgstr ""
 
-#: lib/templates/content-checkout/elements/purchase-requirements/billing-address.php:33
+#: lib/templates/content-checkout/elements/purchase-requirements/billing-address.php:29
 msgid "Edit Billing Address"
 msgstr ""
 
@@ -6731,18 +6735,18 @@ msgstr ""
 msgid "Select an option to continue"
 msgstr ""
 
-#: lib/templates/content-checkout/elements/purchase-requirements/shipping-address.php:25
+#: lib/templates/content-checkout/elements/purchase-requirements/shipping-address.php:21
 #: lib/templates/content-confirmation/elements/shipping-address.php:21
 #: lib/templates/super-widget-shipping-address.php:20
 #: lib/transactions/class.transactions-post-type.php:466
 msgid "Shipping Address"
 msgstr ""
 
-#: lib/templates/content-checkout/elements/purchase-requirements/shipping-address.php:34
+#: lib/templates/content-checkout/elements/purchase-requirements/shipping-address.php:30
 msgid "Edit Shipping Address"
 msgstr ""
 
-#: lib/templates/content-checkout/elements/purchase-requirements/shipping-method.php:26
+#: lib/templates/content-checkout/elements/purchase-requirements/shipping-method.php:21
 #: lib/templates/super-widget-shipping-method.php:25
 #: lib/transactions/class.transactions-post-type.php:607
 msgid "Shipping Method"
