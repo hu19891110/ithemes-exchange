@@ -3,7 +3,7 @@ Contributors: ithemes, blepoxp, layotte, aaroncampbell, mattdanner
 Tags: ecommerce
 Requires at least: 3.7
 Tested up to: 4.0
-Stable tag: 1.10.6
+Stable tag: 1.10.7
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -87,6 +87,13 @@ Upload the Exchange plugin to your blog, activate it and enable the Digital Down
 http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
+
+= 1.10.7 =
+* Updated select-to-autocomplete JS from 1.0.5 to 1.0.9
+* Replaced update_plugins with manage_options to fix missing coupons and taxonomy menu items from WPMS installs.
+* Fixed bug breaking the ability to save billing as shipping when using Guest Checkout
+* Fixed bug in it_exchange_db_delete_all_sessions with miscalculated substring
+* Added title template part for content-product elements
 
 = 1.10.6 =
 * Added function that logs guest user out once they hit the confirmation page.
