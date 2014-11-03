@@ -88,6 +88,21 @@ http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
 
+= 1.11.0 =
+* Added filter to transaction object generator to allow cart taxes to be added
+* Broke out weight and dimensions shipping features
+* Revamp of it_exchange_process_webhooks to be more secure
+* Replaced __() with _x() to provide translation context to '&times;' in multiple files
+* Fixed bad strings in Currency data-set
+* ChangeMod on translation files
+* Add Dutch Translations for Exchange
+* Add lang directory and es_MX po/mo files
+* Add actions for applying/removing basic coupons to/from cart
+* Adding new filters and setting new global for add-ons
+* Adding some filters for Table Rate Shipping 
+* Add Mexican states to states.php dataset. Props: Darryl Clark
+* Fixed bug causing JS error when Image Gallery Settings turn zoom off
+
 = 1.10.7 =
 * Updated select-to-autocomplete JS from 1.0.5 to 1.0.9
 * Replaced update_plugins with manage_options to fix missing coupons and taxonomy menu items from WPMS installs.

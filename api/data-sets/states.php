@@ -26,6 +26,7 @@ function it_exchange_get_country_states( $options=array() ) {
 		'CA' => 'it_exchange_get_country_states_for_ca',
 		'DE' => 'it_exchange_get_country_states_for_de',
 		'ES' => 'it_exchange_get_country_states_for_es',
+		'MX' => 'it_exchange_get_country_states_for_mx',
 		'FR' => 'it_exchange_get_country_states_for_fr',
 		'NL' => 'it_exchange_get_country_states_for_nl',
 		'US' => 'it_exchange_get_country_states_for_us',
@@ -278,6 +279,56 @@ function it_exchange_get_country_states_for_es( $options=array() ) {
 	);
 
 	$states = apply_filters( 'it_exchange_get_country_states_for_es', $states, $options );
+	return $states;
+}
+
+/**
+* Returns an array of states for Mexico
+*
+* Props: Darryl Clark
+*
+* @since 1.11.0 
+*
+* @return array
+*/
+function it_exchange_get_country_states_for_mx( $options=array() ) {
+	// States
+	$states = array(
+		'AGU' => __( 'Aguascalientes', 'it-l10n-ithemes-exchange' ),
+		'BCN' => __( 'Baja California', 'it-l10n-ithemes-exchange' ),
+		'BCS' => __( 'Baja California Sur', 'it-l10n-ithemes-exchange' ),
+		'CAM' => __( 'Campeche', 'it-l10n-ithemes-exchange' ),
+		'CHP' => __( 'Chiapas', 'it-l10n-ithemes-exchange' ),
+		'CHH' => __( 'Chihuahua', 'it-l10n-ithemes-exchange' ),
+		'COA' => __( 'Coahuila', 'it-l10n-ithemes-exchange' ),
+		'COL' => __( 'Colima', 'it-l10n-ithemes-exchange' ),
+		'DIF' => __( 'Distrito Federal', 'it-l10n-ithemes-exchange' ),
+		'DUR' => __( 'Durango', 'it-l10n-ithemes-exchange' ),
+		'GUA' => __( 'Guanajuato', 'it-l10n-ithemes-exchange' ),
+		'GRO' => __( 'Guerrero', 'it-l10n-ithemes-exchange' ),
+		'HID' => __( 'Hidalgo', 'it-l10n-ithemes-exchange' ),
+		'JAL' => __( 'Jalisco', 'it-l10n-ithemes-exchange' ),
+		'MEX' => __( 'Estado de México', 'it-l10n-ithemes-exchange' ),
+		'MIC' => __( 'Michoacán', 'it-l10n-ithemes-exchange' ),
+		'MOR' => __( 'Morelos', 'it-l10n-ithemes-exchange' ),
+		'NAY' => __( 'Nayarit', 'it-l10n-ithemes-exchange' ),
+		'NLE' => __( 'Nuevo León', 'it-l10n-ithemes-exchange' ),
+		'OAX' => __( 'Oaxaca', 'it-l10n-ithemes-exchange' ),
+		'PUE' => __( 'Puebla', 'it-l10n-ithemes-exchange' ),
+		'QRO' => __( 'Querétaro', 'it-l10n-ithemes-exchange' ),
+		'ROO' => __( 'Quintana Roo', 'it-l10n-ithemes-exchange' ),
+		'SLP' => __( 'San Luis Potosí', 'it-l10n-ithemes-exchange' ),
+		'SIN' => __( 'Sinaloa', 'it-l10n-ithemes-exchange' ),
+		'SON' => __( 'Sonora', 'it-l10n-ithemes-exchange' ),
+		'TAB' => __( 'Tabasco', 'it-l10n-ithemes-exchange' ),
+		'TAM' => __( 'Tamaulipas', 'it-l10n-ithemes-exchange' ),
+		'TLA' => __( 'Tlaxcala', 'it-l10n-ithemes-exchange' ),
+		'VER' => __( 'Veracruz', 'it-l10n-ithemes-exchange' ),
+		'YUC' => __( 'Yucatán', 'it-l10n-ithemes-exchange' ),
+		'ZAC' => __( 'Zacatecas', 'it-l10n-ithemes-exchange' ),
+	);
+
+	$states = apply_filters( 'it_exchange_get_country_states_for_mx', $states, $options );
 	return $states;
 }
 
