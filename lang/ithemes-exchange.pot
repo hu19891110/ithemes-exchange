@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.11.0\n"
+"Project-Id-Version: iThemes Exchange 1.11.1\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2014-11-03 16:59:32+00:00\n"
+"POT-Creation-Date: 2014-11-05 16:36:12+00:00\n"
 "PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1621,11 +1621,11 @@ msgstr ""
 msgid "Zimbabwean dollar"
 msgstr ""
 
-#: api/data-sets/data-formats.php:40 lib/shipping/class.shipping.php:368
+#: api/data-sets/data-formats.php:40 lib/shipping/class.shipping.php:369
 msgid "Standard"
 msgstr ""
 
-#: api/data-sets/data-formats.php:41 lib/shipping/class.shipping.php:369
+#: api/data-sets/data-formats.php:41 lib/shipping/class.shipping.php:370
 msgid "Metric"
 msgstr ""
 
@@ -2525,12 +2525,12 @@ msgid "Address"
 msgstr ""
 
 #: api/theme/billing.php:160 api/theme/shipping.php:159
-#: lib/shipping/class.shipping.php:300
+#: lib/shipping/class.shipping.php:301
 msgid "Address 2"
 msgstr ""
 
 #: api/theme/billing.php:181 api/theme/shipping.php:180
-#: lib/shipping/class.shipping.php:310
+#: lib/shipping/class.shipping.php:311
 msgid "City"
 msgstr ""
 
@@ -2547,7 +2547,7 @@ msgid "Country"
 msgstr ""
 
 #: api/theme/billing.php:345 api/theme/shipping.php:289
-#: lib/shipping/class.shipping.php:630
+#: lib/shipping/class.shipping.php:631
 msgid "State"
 msgstr ""
 
@@ -2866,7 +2866,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.11.0)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.11.1)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:19
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -3727,7 +3727,7 @@ msgstr ""
 #: core-addons/shipping/simple-shipping/lib/settings.php:19
 #: lib/product-features/class.shipping.php:114
 #: lib/product-features/class.shipping.php:131
-#: lib/shipping/class.shipping.php:138
+#: lib/shipping/class.shipping.php:139
 #: lib/templates/content-cart/elements/totals-shipping.php:22
 #: lib/templates/content-checkout/elements/totals-shipping.php:22
 #: lib/templates/content-confirmation/elements/totals-shipping.php:23
@@ -4293,7 +4293,7 @@ msgid "Pages"
 msgstr ""
 
 #: lib/admin/class.admin.php:470 lib/admin/views/admin-wizard.php:248
-#: lib/shipping/class.shipping.php:222
+#: lib/shipping/class.shipping.php:223
 msgid "General"
 msgstr ""
 
@@ -5479,7 +5479,7 @@ msgid "Error adding Shipping Address. Please try again."
 msgstr ""
 
 #: lib/cart/class.cart.php:347 lib/cart/class.cart.php:405
-#: lib/shipping/class.shipping.php:495 lib/shipping/class.shipping.php:548
+#: lib/shipping/class.shipping.php:496 lib/shipping/class.shipping.php:549
 msgid "Please fill out all required fields"
 msgstr ""
 
@@ -6719,70 +6719,70 @@ msgstr ""
 msgid "Please make sure all fields are formatted properly."
 msgstr ""
 
-#: lib/shipping/class.shipping.php:98
+#: lib/shipping/class.shipping.php:99
 msgid "You must enter a shipping address before you can checkout"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:121
+#: lib/shipping/class.shipping.php:122
 msgid "You must select a shipping method before you can checkout"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:264
+#: lib/shipping/class.shipping.php:265
 msgid "General Shipping Settings"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:284
+#: lib/shipping/class.shipping.php:285
 msgid "Products Ship From"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:286
+#: lib/shipping/class.shipping.php:287
 msgid "The default from address used when shipping your products."
 msgstr ""
 
-#: lib/shipping/class.shipping.php:290
+#: lib/shipping/class.shipping.php:291
 msgid "Address 1"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:334
+#: lib/shipping/class.shipping.php:335
 msgid "Zip"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:339
+#: lib/shipping/class.shipping.php:340
 msgid "Can individual products override the default Ships From Address?"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:341
+#: lib/shipping/class.shipping.php:342
 msgid ""
 "Selecting \"yes\" will place these fields on the Add/Edit product screen."
 msgstr ""
 
-#: lib/shipping/class.shipping.php:351
+#: lib/shipping/class.shipping.php:352
 msgid "Can individual products override the global Shipping Methods setting?"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:353
+#: lib/shipping/class.shipping.php:354
 msgid ""
 "Selecting \"yes\" will allow you to set available Shipping Methods for a "
 "product from it's Add/Edit product screen."
 msgstr ""
 
-#: lib/shipping/class.shipping.php:363
+#: lib/shipping/class.shipping.php:364
 msgid "Measurements Format"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:365
+#: lib/shipping/class.shipping.php:366
 msgid "Use standard for lbs and inches. Use metric for kg and cm."
 msgstr ""
 
-#: lib/shipping/class.shipping.php:551
+#: lib/shipping/class.shipping.php:552
 msgid "Shipping Address Updated"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:632
+#: lib/shipping/class.shipping.php:633
 msgid "Please use the 2-3 character %sISO 3166-2 Country Subdivision Code%s"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:664
+#: lib/shipping/class.shipping.php:665
 msgid "Shipping method updated"
 msgstr ""
 
