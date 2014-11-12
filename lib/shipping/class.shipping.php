@@ -363,7 +363,7 @@ class IT_Exchange_Shipping {
 					'type'    => 'drop_down',
 					'label'   => __( 'Measurements Format', 'it-l10n-ithemes-exchange' ),
 					'slug'    => 'measurements-format',
-					'tooltip' => __( 'Use standard for lbs and inches. Use metric for kg and cm.', 'it-l10n-ithemes-exchange' ),
+					'tooltip' => __( 'Use standard for pounds and inches. Use metric for kilograms and centimeters.', 'it-l10n-ithemes-exchange' ),
 					'default' => 'standard',
 					'options' => array(
 						'standard' => __( 'Standard', 'it-l10n-ithemes-exchange' ),
