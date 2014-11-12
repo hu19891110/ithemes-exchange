@@ -3,7 +3,7 @@ Contributors: ithemes, blepoxp, layotte, aaroncampbell, mattdanner
 Tags: ecommerce
 Requires at least: 3.7
 Tested up to: 4.0
-Stable tag: 1.11.1
+Stable tag: 1.11.2
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -87,6 +87,14 @@ Upload the Exchange plugin to your blog, activate it and enable the Digital Down
 http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
+
+= 1.11.2 =
+* Fixed typo in filter in lib/templates/content-store.php
+* Fix bug caused when the shipping methods available to an invidial product is less than that available to the whole cart
+* Redux it_exchange_get_cart_products_count() to include option 'feature' arg, to only get counts for products with a certain feature
+* Updating tooltip for measurement format in shipping
+* Check for a processed transaction before rejecting the transaction for having an empty cart -- a partial fix for a bug in PayPal when clicking the 'click here' link after th
+* Just some code formatting updates
 
 = 1.11.1 =
 * Clear shipping method on cart product update
