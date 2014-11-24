@@ -87,7 +87,15 @@ Upload the Exchange plugin to your blog, activate it and enable the Digital Down
 http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
-1.11.2.1 - 2014-11-12 - Glenn Ansley, Lew Ayotte, Elise Alley
+
+= 1.11.3 =
+* Fixed bad translation string in order details template part
+* Added filters for country and state alternatives in text2select API
+* Added loading gif during SW AJAX calls to Register / Login
+* Fixed bug causing Stripe webhooks not to reach Exchange in some setups
+* Fixed notice when no cart object is returned in zero sum checkout
+
+= 1.11.2.1 - 2014-11-12 - Glenn Ansley, Lew Ayotte, Elise Alley =
 * Fixing call to weight meta for product
 
 = 1.11.2 =
