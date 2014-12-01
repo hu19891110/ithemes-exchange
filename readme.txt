@@ -3,7 +3,7 @@ Contributors: ithemes, blepoxp, layotte, aaroncampbell, mattdanner
 Tags: ecommerce
 Requires at least: 3.7
 Tested up to: 4.0
-Stable tag: 1.11.3
+Stable tag: 1.11.4
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -88,6 +88,12 @@ http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
 
+= 1.11.4 =
+* Fixed instances where webhooks wouldn't work if ['http_scheme'] wasn't set
+* Updated es_MX mo file
+* Updated the es_MX po file
+* Fixed bad language string in template
+
 = 1.11.3 =
 * Fixed bad translation string in order details template part
 * Added filters for country and state alternatives in text2select API
@@ -95,7 +101,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fixed bug causing Stripe webhooks not to reach Exchange in some setups
 * Fixed notice when no cart object is returned in zero sum checkout
 
-= 1.11.2.1 - 2014-11-12 - Glenn Ansley, Lew Ayotte, Elise Alley =
+= 1.11.2.1 =
 * Fixing call to weight meta for product
 
 = 1.11.2 =
