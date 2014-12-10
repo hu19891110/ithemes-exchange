@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.11.4\n"
+"Project-Id-Version: iThemes Exchange 1.11.5\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2014-12-01 13:42:59+00:00\n"
+"POT-Creation-Date: 2014-12-10 19:07:50+00:00\n"
 "PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2566,7 +2566,7 @@ msgid "Submit"
 msgstr ""
 
 #: api/theme/billing.php:479 api/theme/checkout.php:93 api/theme/login.php:332
-#: api/theme/registration.php:368 api/theme/shipping-method.php:163
+#: api/theme/registration.php:368 api/theme/shipping-method.php:165
 #: api/theme/shipping.php:422
 #: core-addons/admin/guest-checkout/lib/template-functions.php:210
 #: core-addons/coupons/basic-coupons/admin.php:390
@@ -2765,11 +2765,11 @@ msgstr ""
 msgid "Select a shipping method"
 msgstr ""
 
-#: api/theme/shipping-method.php:94
+#: api/theme/shipping-method.php:95
 msgid "Use multiple shipping methods"
 msgstr ""
 
-#: api/theme/shipping-method.php:189
+#: api/theme/shipping-method.php:191
 msgid "Next"
 msgstr ""
 
@@ -2814,26 +2814,30 @@ msgid ""
 "The cart total must be greater than 0 for you to checkout. Please try again."
 msgstr ""
 
-#: api/transactions.php:754 api/transactions.php:822
+#: api/transactions.php:755 api/transactions.php:823 api/transactions.php:846
 #: core-addons/transaction-methods/offline-payments/init.php:285
 #: core-addons/transaction-methods/paypal-standard/init.php:825
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1075
 msgid "Unknown"
 msgstr ""
 
-#: api/transactions.php:784
+#: api/transactions.php:785
 msgid "Deleted Customer"
 msgstr ""
 
-#: api/transactions.php:868
+#: api/transactions.php:841
+msgid "IP Address: %s"
+msgstr ""
+
+#: api/transactions.php:887
 msgid "#"
 msgstr ""
 
-#: api/transactions.php:1237
+#: api/transactions.php:1256
 msgid "Multiple Shipping Methods"
 msgstr ""
 
-#: api/transactions.php:1263
+#: api/transactions.php:1282
 msgid "Unknown Method"
 msgstr ""
 
@@ -2866,7 +2870,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.11.4)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.11.5)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:19
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -3060,7 +3064,7 @@ msgstr ""
 #: lib/coupons/class.coupons-post-type.php:30
 #: lib/deprecated/templates/super-widget-checkout.php:74
 #: lib/templates/super-widget-checkout/elements/single-item-update-coupons.php:20
-#: lib/transactions/class.transactions-post-type.php:568
+#: lib/transactions/class.transactions-post-type.php:571
 msgid "Coupons"
 msgstr ""
 
@@ -3092,7 +3096,7 @@ msgid ""
 msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:308
-#: lib/transactions/class.transactions-post-type.php:488
+#: lib/transactions/class.transactions-post-type.php:491
 msgid "Amount"
 msgstr ""
 
@@ -3326,7 +3330,7 @@ msgstr ""
 #: lib/templates/content-checkout/elements/purchase-requirements/billing-address.php:20
 #: lib/templates/content-confirmation/elements/billing-address.php:21
 #: lib/templates/super-widget-billing-address.php:20
-#: lib/transactions/class.transactions-post-type.php:474
+#: lib/transactions/class.transactions-post-type.php:477
 msgid "Billing Address"
 msgstr ""
 
@@ -3731,7 +3735,7 @@ msgstr ""
 #: lib/templates/content-cart/elements/totals-shipping.php:22
 #: lib/templates/content-checkout/elements/totals-shipping.php:22
 #: lib/templates/content-confirmation/elements/totals-shipping.php:23
-#: lib/transactions/class.transactions-post-type.php:616
+#: lib/transactions/class.transactions-post-type.php:619
 msgid "Shipping"
 msgstr ""
 
@@ -4259,7 +4263,7 @@ msgstr ""
 
 #: lib/admin/class.admin.php:277 lib/admin/views/admin-user-products.php:10
 #: lib/products/class.products-post-type.php:112
-#: lib/transactions/class.transactions-post-type.php:487
+#: lib/transactions/class.transactions-post-type.php:490
 msgid "Products"
 msgstr ""
 
@@ -5242,7 +5246,7 @@ msgid "Never Expires"
 msgstr ""
 
 #: lib/admin/views/admin-user-profile.php:24
-#: lib/transactions/class.transactions-post-type.php:443
+#: lib/transactions/class.transactions-post-type.php:446
 msgid "View Customer Data"
 msgstr ""
 
@@ -5260,7 +5264,7 @@ msgstr ""
 #: lib/templates/content-checkout/elements/totals-total.php:22
 #: lib/templates/content-confirmation/elements/totals-total.php:22
 #: lib/transactions/class.transactions-post-type.php:287
-#: lib/transactions/class.transactions-post-type.php:636
+#: lib/transactions/class.transactions-post-type.php:639
 msgid "Total"
 msgstr ""
 
@@ -5635,7 +5639,7 @@ msgstr ""
 #: lib/templates/content-cart/elements/totals-subtotal.php:22
 #: lib/templates/content-checkout/elements/totals-subtotal.php:22
 #: lib/templates/content-confirmation/elements/totals-subtotal.php:22
-#: lib/transactions/class.transactions-post-type.php:551
+#: lib/transactions/class.transactions-post-type.php:554
 msgid "Subtotal"
 msgstr ""
 
@@ -6890,7 +6894,7 @@ msgstr ""
 #: lib/templates/content-checkout/elements/purchase-requirements/shipping-address.php:21
 #: lib/templates/content-confirmation/elements/shipping-address.php:21
 #: lib/templates/super-widget-shipping-address.php:20
-#: lib/transactions/class.transactions-post-type.php:466
+#: lib/transactions/class.transactions-post-type.php:469
 msgid "Shipping Address"
 msgstr ""
 
@@ -6900,7 +6904,7 @@ msgstr ""
 
 #: lib/templates/content-checkout/elements/purchase-requirements/shipping-method.php:21
 #: lib/templates/super-widget-shipping-method.php:25
-#: lib/transactions/class.transactions-post-type.php:607
+#: lib/transactions/class.transactions-post-type.php:610
 msgid "Shipping Method"
 msgstr ""
 
@@ -7015,53 +7019,53 @@ msgstr ""
 msgid "Transaction Details"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:524
+#: lib/transactions/class.transactions-post-type.php:527
 msgid "Ship this product with %s."
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:533
+#: lib/transactions/class.transactions-post-type.php:536
 msgid "Download:"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:561
+#: lib/transactions/class.transactions-post-type.php:564
 msgid "Total Discount"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:585
+#: lib/transactions/class.transactions-post-type.php:588
 msgid "Total Refund"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:594
+#: lib/transactions/class.transactions-post-type.php:597
 msgid "Refunds"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:597
+#: lib/transactions/class.transactions-post-type.php:600
 msgid "on"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:628
+#: lib/transactions/class.transactions-post-type.php:631
 msgid "Payment Method"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:644
+#: lib/transactions/class.transactions-post-type.php:647
 msgid "Total before refunds"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:658
+#: lib/transactions/class.transactions-post-type.php:661
 msgid "Change Status"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:659
+#: lib/transactions/class.transactions-post-type.php:662
 msgid ""
 "The customer will receive an email When this is changed from a status that "
 "is not cleared for delivery to a status that is cleared for delivery"
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:680
+#: lib/transactions/class.transactions-post-type.php:683
 msgid "Not Saved."
 msgstr ""
 
-#: lib/transactions/class.transactions-post-type.php:681
+#: lib/transactions/class.transactions-post-type.php:684
 msgid "Saved!"
 msgstr ""
 
