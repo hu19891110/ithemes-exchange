@@ -2,8 +2,8 @@
 Contributors: ithemes, blepoxp, layotte, aaroncampbell, mattdanner
 Tags: ecommerce
 Requires at least: 3.7
-Tested up to: 4.0
-Stable tag: 1.11.4
+Tested up to: 4.1
+Stable tag: 1.11.5
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -88,6 +88,12 @@ http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
 
+= 1.11.5 =
+* Adding IP address of customer to Transaction meta and on the Transaction page
+* Define settings var in IT_Theme_API_Store::products before count since new filter added
+* Adding it_exchange_store_get_products_args to count() call in IT_Theme_API_Store::products (to prevent memory leaks when count() doesn't match the next call)
+* Adding filter/functionality to disable multiple shipping methods, even when multiple methods are available
+
 = 1.11.4 =
 * Fixed instances where webhooks wouldn't work if ['http_scheme'] wasn't set
 * Updated es_MX mo file
@@ -100,8 +106,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Added loading gif during SW AJAX calls to Register / Login
 * Fixed bug causing Stripe webhooks not to reach Exchange in some setups
 * Fixed notice when no cart object is returned in zero sum checkout
-
-= 1.11.2.1 =
+1.11.2.1 - 2014-11-12 - Glenn Ansley, Lew Ayotte, Elise Alley
 * Fixing call to weight meta for product
 
 = 1.11.2 =
