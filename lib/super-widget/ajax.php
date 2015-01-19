@@ -89,9 +89,9 @@ if ( 'update-quantity' == $action && $quantity && $cart_product ) {
 
 // Login
 if ( 'login' == $action ) {
-	$creds['user_login']    = empty( $_POST['log'] ) ? '' : esc_attr( $_POST['log'] );
-	$creds['user_password'] = empty( $_POST['pwd'] ) ? '' : esc_attr( $_POST['pwd'] );
-	$creds['remember']      = empty( $_POST['rememberme'] ) ? '' : esc_attr( $_POST['rememberme'] );
+	$creds['user_login']    = empty( $_POST['log'] ) ? '' : urldecode( $_POST['log'] );
+	$creds['user_password'] = empty( $_POST['pwd'] ) ? '' : urldecode( $_POST['pwd'] );
+	$creds['remember']      = empty( $_POST['rememberme'] ) ? '' : urldecode( $_POST['rememberme'] );
 
 	$user = wp_signon( $creds, false );
 	if ( ! is_wp_error( $user ) ) {
@@ -112,7 +112,7 @@ if ( 'register' == $action ) {
 
 		// Clearing the user pass will prevent the user email from being sent
 		$email_pw = apply_filters( 'it_exchange_send_customer_registration_email', true ) ? $_POST['pass1'] : '';
-        wp_new_user_notification( $user_id, $email_pass );
+        wp_new_user_notification( $user_id, $email_pw );
 
 		$creds = array(
             'user_login'    => urldecode($_POST['user_login'] ),
@@ -120,13 +120,33 @@ if ( 'register' == $action ) {
         );
 
         $user = wp_signon( $creds );
-		if ( ! is_wp_error( $user ) )
+		if ( ! is_wp_error( $user ) ) {
 			it_exchange_add_message( 'notice', __( 'Registered and logged in as ', 'it-l10n-ithemes-exchange' ) . $user->user_login );
-		else
+		} else {
             it_exchange_add_message( 'error', $result->get_error_message() );
+		}
+
+		// Clear form values we saved in case of error
+		it_exchange_clear_session_data( 'sw-registration' );
+
 		die('1');
 	} else {
 		it_exchange_add_message( 'error', $user_id->get_error_message() );
+
+		// clear out the passwords before we save the data to the session
+		unset( $_POST['pass1'] );
+		unset( $_POST['pass2'] );
+
+		if ( $user_id->get_error_message( 'user_login' ) ) {
+			unset( $_POST['user_login'] );
+		}
+
+		if ( $user_id->get_error_message( 'invalid_email' ) || $user_id->get_error_message( 'email_exists' ) ) {
+			unset( $_POST['email'] );
+		}
+
+		it_exchange_update_session_data( 'sw-registration',  $_POST );
+
 		die('0');
 	}
 }
@@ -134,13 +154,31 @@ if ( 'register' == $action ) {
 // Edit Shipping
 if ( 'update-shipping' == $action ) {
 	// This function will either updated the value or create an error and return 1 or 0
-	die( $GLOBALS['IT_Exchange_Shopping_Cart']->handle_update_shipping_address_request() );
+
+	$shipping_result = $GLOBALS['IT_Exchange_Shopping_Cart']->handle_update_shipping_address_request();
+
+	if ( ! $shipping_result ) {
+		it_exchange_update_session_data( "sw-shipping", $_POST );
+	} else {
+		it_exchange_clear_session_data( "sw-shipping" );
+	}
+
+	die( $shipping_result );
 }
 
 // Edit Billing
 if ( 'update-billing' == $action ) {
 	// This function will either updated the value or create an error and return 1 or 0
-	die( $GLOBALS['IT_Exchange_Shopping_Cart']->handle_update_billing_address_request() );
+
+	$billing_result =  $GLOBALS['IT_Exchange_Shopping_Cart']->handle_update_billing_address_request();
+
+	if ( ! $billing_result ) {
+		it_exchange_update_session_data( "sw-billing", $_POST );
+	} else {
+		it_exchange_clear_session_data( "sw-billing" );
+	}
+
+	die( $billing_result );
 }
 
 // Submit Purchase Dialog
