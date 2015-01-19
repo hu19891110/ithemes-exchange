@@ -89,11 +89,11 @@ http://ithemes.com/codex/page/Exchange_Installation
 == Changelog ==
 
 = 1.11.6 =
-* Fix bug preventing users with '&' in their username from logging in via SW. props Timothy Jacobs <http://ironbounddesigns.com/>
-* Remember the shipping address when errors are present on SW form. props Timothy Jacobs <http://ironbounddesigns.com/>
-* Remember the billing address when errors are present on SW form. props Timothy Jacobs <http://ironbounddesigns.com/>
-* Remember the registration fields when errors are present on SW form. props Timothy Jacobs <http://ironbounddesigns.com/>
-* Fixed bug that tries to display disabled Exchange profile pages on the user's profile page. props Timothy Jacobs <http://ironbounddesigns.com/>
+* Fix bug preventing users with '&' in their username from logging in via SW. props Timothy Jacobs
+* Remember the shipping address when errors are present on SW form. props Timothy Jacobs
+* Remember the billing address when errors are present on SW form. props Timothy Jacobs
+* Remember the registration fields when errors are present on SW form. props Timothy Jacobs
+* Fixed bug that tries to display disabled Exchange profile pages on the user's profile page. props Timothy Jacobs
 * Fix bug causing menu item titles to not display when user_is_logged_in and Exchagne login/logout pages are set to 'disabled' in Settings
 * Properly escape in values in the event that poorly-formatted option names were previously inserted into the options table
 * Fixed improper order of args in call to _x()
@@ -163,7 +163,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Add basename param to registered addons if it was added as a param in it_exchange_register_addon()
 * Added $params var to the filter for add_details in it_exchange_register_addon();
 * Change $_REQUEST to $_POST in it_exchange_register_user
-* Multiple modifications to Coupons API to make it more extendable. props Timothy Jacobs <http://ironbounddesigns.com/>
+* Multiple modifications to Coupons API to make it more extendable. props Timothy Jacobs
 * Added multiple js hooks to to superwidget js
 * Add nonce to exchange registration template parts and processing function
 * Add nonce to edit profile form
