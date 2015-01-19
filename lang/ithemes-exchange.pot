@@ -1,11 +1,11 @@
-# Copyright (C) 2014 iThemes Exchange
+# Copyright (C) 2015 iThemes Exchange
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.11.5\n"
+"Project-Id-Version: iThemes Exchange 1.11.6\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2014-12-10 19:07:50+00:00\n"
-"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2015-01-19 20:51:55+00:00\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2505,69 +2505,69 @@ msgstr ""
 msgid "Please complete all purchase requirements before checkout out."
 msgstr ""
 
-#: api/theme/billing.php:76 api/theme/customer.php:141
-#: api/theme/registration.php:148 api/theme/shipping.php:75
+#: api/theme/billing.php:92 api/theme/customer.php:141
+#: api/theme/registration.php:170 api/theme/shipping.php:91
 msgid "First Name"
 msgstr ""
 
-#: api/theme/billing.php:97 api/theme/customer.php:182
-#: api/theme/registration.php:185 api/theme/shipping.php:96
+#: api/theme/billing.php:117 api/theme/customer.php:182
+#: api/theme/registration.php:213 api/theme/shipping.php:116
 msgid "Last Name"
 msgstr ""
 
-#: api/theme/billing.php:118 api/theme/shipping.php:117
+#: api/theme/billing.php:142 api/theme/shipping.php:141
 #: lib/admin/views/admin-settings.php:60
 msgid "Company Name"
 msgstr ""
 
-#: api/theme/billing.php:139 api/theme/shipping.php:138
+#: api/theme/billing.php:167 api/theme/shipping.php:166
 msgid "Address"
 msgstr ""
 
-#: api/theme/billing.php:160 api/theme/shipping.php:159
+#: api/theme/billing.php:192 api/theme/shipping.php:191
 #: lib/shipping/class.shipping.php:301
 msgid "Address 2"
 msgstr ""
 
-#: api/theme/billing.php:181 api/theme/shipping.php:180
+#: api/theme/billing.php:217 api/theme/shipping.php:216
 #: lib/shipping/class.shipping.php:311
 msgid "City"
 msgstr ""
 
-#: api/theme/billing.php:202 api/theme/shipping.php:201
+#: api/theme/billing.php:242 api/theme/shipping.php:241
 msgid "Zip Code"
 msgstr ""
 
-#: api/theme/billing.php:230
+#: api/theme/billing.php:274
 msgid "Ship to billing address?"
 msgstr ""
 
-#: api/theme/billing.php:278 api/theme/shipping.php:222
+#: api/theme/billing.php:322 api/theme/shipping.php:266
 msgid "Country"
 msgstr ""
 
-#: api/theme/billing.php:347 api/theme/shipping.php:291
+#: api/theme/billing.php:395 api/theme/shipping.php:339
 #: lib/shipping/class.shipping.php:631
 msgid "State"
 msgstr ""
 
-#: api/theme/billing.php:418 api/theme/customer.php:266
-#: api/theme/registration.php:222 api/theme/shipping.php:363
+#: api/theme/billing.php:470 api/theme/customer.php:266
+#: api/theme/registration.php:256 api/theme/shipping.php:415
 #: core-addons/load.php:316
 msgid "Email"
 msgstr ""
 
-#: api/theme/billing.php:439 api/theme/shipping.php:383
+#: api/theme/billing.php:491 api/theme/shipping.php:439
 msgid "Phone"
 msgstr ""
 
-#: api/theme/billing.php:460 api/theme/shipping.php:403
+#: api/theme/billing.php:512 api/theme/shipping.php:463
 msgid "Submit"
 msgstr ""
 
-#: api/theme/billing.php:479 api/theme/checkout.php:93 api/theme/login.php:332
-#: api/theme/registration.php:368 api/theme/shipping-method.php:165
-#: api/theme/shipping.php:422
+#: api/theme/billing.php:531 api/theme/checkout.php:93 api/theme/login.php:332
+#: api/theme/registration.php:408 api/theme/shipping-method.php:165
+#: api/theme/shipping.php:482
 #: core-addons/admin/guest-checkout/lib/template-functions.php:210
 #: core-addons/coupons/basic-coupons/admin.php:390
 #: lib/deprecated/templates/super-widget-cart.php:76
@@ -2618,7 +2618,7 @@ msgid "Coupon Code"
 msgstr ""
 
 #: api/theme/coupons.php:221
-msgctxt "LION"
+msgctxt "negative character for amount of money in coupons"
 msgid "-"
 msgstr ""
 
@@ -2631,11 +2631,11 @@ msgid "Website"
 msgstr ""
 
 #: api/theme/customer.php:348 api/theme/login.php:147
-#: api/theme/registration.php:259
+#: api/theme/registration.php:299
 msgid "Password"
 msgstr ""
 
-#: api/theme/customer.php:385 api/theme/registration.php:296
+#: api/theme/customer.php:385 api/theme/registration.php:336
 msgid "Confirm Password"
 msgstr ""
 
@@ -2643,11 +2643,11 @@ msgstr ""
 msgid "Save Profile"
 msgstr ""
 
-#: api/theme/customer.php:535
+#: api/theme/customer.php:540
 msgid "View your Account"
 msgstr ""
 
-#: api/theme/customer.php:570
+#: api/theme/customer.php:575
 msgid "Thank you for your order. An email confirmation has been sent to %s."
 msgstr ""
 
@@ -2666,7 +2666,7 @@ msgstr ""
 msgid "%d %s after purchase"
 msgstr ""
 
-#: api/theme/login.php:110 api/theme/registration.php:111
+#: api/theme/login.php:110 api/theme/registration.php:127
 msgid "Username"
 msgstr ""
 
@@ -2682,7 +2682,7 @@ msgstr ""
 msgid "Lost your password?"
 msgstr ""
 
-#: api/theme/login.php:297 api/theme/registration.php:333
+#: api/theme/login.php:297 api/theme/registration.php:373
 #: lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/login/register.php:20
 msgid "Register"
 msgstr ""
@@ -2757,7 +2757,7 @@ msgstr ""
 msgid "Fields"
 msgstr ""
 
-#: api/theme/registration.php:412
+#: api/theme/registration.php:452
 msgid "Registration Disabled"
 msgstr ""
 
@@ -2870,7 +2870,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.11.5)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.11.6)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:19
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -5474,7 +5474,7 @@ msgstr ""
 msgid "Product not added to cart"
 msgstr ""
 
-#: lib/cart/class.cart.php:171 lib/cart/class.cart.php:548
+#: lib/cart/class.cart.php:171 lib/cart/class.cart.php:553
 msgid "Product added to cart"
 msgstr ""
 
@@ -5495,43 +5495,43 @@ msgstr ""
 msgid "Error adding Billing Address. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:431
+#: lib/cart/class.cart.php:436
 msgid "Billing Address Saved"
 msgstr ""
 
-#: lib/cart/class.cart.php:530
+#: lib/cart/class.cart.php:535
 msgid "Unknown error. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:540
+#: lib/cart/class.cart.php:545
 msgid "Please select a payment method"
 msgstr ""
 
-#: lib/cart/class.cart.php:541
+#: lib/cart/class.cart.php:546
 msgid "There was an error processing your transaction. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:542
+#: lib/cart/class.cart.php:547
 msgid "Product not removed from cart. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:543
+#: lib/cart/class.cart.php:548
 msgid "There was an error emptying your cart. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:544
+#: lib/cart/class.cart.php:549
 msgid "There was an error updating your cart. Please try again."
 msgstr ""
 
-#: lib/cart/class.cart.php:545
+#: lib/cart/class.cart.php:550
 msgid "Cart Updated."
 msgstr ""
 
-#: lib/cart/class.cart.php:546
+#: lib/cart/class.cart.php:551
 msgid "Cart Emptied"
 msgstr ""
 
-#: lib/cart/class.cart.php:547
+#: lib/cart/class.cart.php:552
 msgid "Product removed from cart."
 msgstr ""
 
