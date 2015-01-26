@@ -3,7 +3,7 @@ Contributors: ithemes, blepoxp, layotte, aaroncampbell, mattdanner
 Tags: ecommerce
 Requires at least: 3.7
 Tested up to: 4.1
-Stable tag: 1.11.6
+Stable tag: 1.11.7
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -88,12 +88,19 @@ http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
 
+= 1.11.7 =
+* Don't pre-check box to mailchimp subscription in Exchange Startup Wizard
+* Fix for DB Session Cleanup 
+* Add a filter to the individual product description when generated for the cart description
+* Add product-[ID] and product-[product-type] class names to store product li elementes by default. Make filterable as well.
+
+
 = 1.11.6 =
-* Fix bug preventing users with '&' in their username from logging in via SW. props Timothy Jacobs
-* Remember the shipping address when errors are present on SW form. props Timothy Jacobs
-* Remember the billing address when errors are present on SW form. props Timothy Jacobs
-* Remember the registration fields when errors are present on SW form. props Timothy Jacobs
-* Fixed bug that tries to display disabled Exchange profile pages on the user's profile page. props Timothy Jacobs
+* Fix bug preventing users with '&' in their username from logging in via SW. props Timothy Jacobs <http://ironbounddesigns.com/>
+* Remember the shipping address when errors are present on SW form. props Timothy Jacobs <http://ironbounddesigns.com/>
+* Remember the billing address when errors are present on SW form. props Timothy Jacobs <http://ironbounddesigns.com/>
+* Remember the registration fields when errors are present on SW form. props Timothy Jacobs <http://ironbounddesigns.com/>
+* Fixed bug that tries to display disabled Exchange profile pages on the user's profile page. props Timothy Jacobs <http://ironbounddesigns.com/>
 * Fix bug causing menu item titles to not display when user_is_logged_in and Exchagne login/logout pages are set to 'disabled' in Settings
 * Properly escape in values in the event that poorly-formatted option names were previously inserted into the options table
 * Fixed improper order of args in call to _x()
@@ -163,7 +170,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Add basename param to registered addons if it was added as a param in it_exchange_register_addon()
 * Added $params var to the filter for add_details in it_exchange_register_addon();
 * Change $_REQUEST to $_POST in it_exchange_register_user
-* Multiple modifications to Coupons API to make it more extendable. props Timothy Jacobs
+* Multiple modifications to Coupons API to make it more extendable. props Timothy Jacobs <http://ironbounddesigns.com/>
 * Added multiple js hooks to to superwidget js
 * Add nonce to exchange registration template parts and processing function
 * Add nonce to edit profile form
