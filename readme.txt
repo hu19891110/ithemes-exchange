@@ -3,7 +3,7 @@ Contributors: ithemes, blepoxp, layotte, aaroncampbell, mattdanner
 Tags: ecommerce
 Requires at least: 3.7
 Tested up to: 4.1
-Stable tag: 1.11.7
+Stable tag: 1.11.8
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -88,12 +88,16 @@ http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
 
+= 1.11.8 =
+* Added feature to always populate current product in GLOBAL
+* If cart is not available, use site URL for cancel_return in PayPal add-ons
+* Upating PayPal add-ons to work with latest Recurring Payments options
+
 = 1.11.7 =
 * Don't pre-check box to mailchimp subscription in Exchange Startup Wizard
 * Fix for DB Session Cleanup 
 * Add a filter to the individual product description when generated for the cart description
 * Add product-[ID] and product-[product-type] class names to store product li elementes by default. Make filterable as well.
-
 
 = 1.11.6 =
 * Fix bug preventing users with '&' in their username from logging in via SW. props Timothy Jacobs <http://ironbounddesigns.com/>
