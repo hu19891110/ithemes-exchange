@@ -88,6 +88,11 @@ http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
 
+= 1.11.10 =
+* Fixed function reference in PayPal Standard (basic).
+* Verify quantity functionality in one more place to prevent bug of adding multiples of an item when multiples shouldn't be allowed.
+* Restricted Super-Widget JS calls to only the Super-Widget HTML.
+
 = 1.11.9 =
 * Sort the advanced metaboxes alphabeticallyi. props Timothy Jacobs <http://ironbounddesigns.com/>
 * Adding post vars to actions in print_transaction_details_metabox()
