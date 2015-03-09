@@ -3,7 +3,7 @@ Contributors: ithemes, blepoxp, layotte, aaroncampbell, mattdanner
 Tags: ecommerce
 Requires at least: 3.7
 Tested up to: 4.1
-Stable tag: 1.11.11
+Stable tag: 1.11.12
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -87,6 +87,13 @@ Upload the Exchange plugin to your blog, activate it and enable the Digital Down
 http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
+
+= 1.11.12 =
+* Auto-Height for admin advanced area text fields
+* Spell reset with two e's
+* Allow 3rd parties to tweak the state of the SW
+* Change unlimited inventory message
+* Don't delete transactions when customer's WP user is deleted
 
 = 1.11.11 =
 * Fix bug causing it_exchange_is_page(  ) to always return true when called from SW and  != 'product'
