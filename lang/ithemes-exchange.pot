@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.11.12\n"
+"Project-Id-Version: iThemes Exchange 1.11.13\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2015-03-09 14:20:49+00:00\n"
+"POT-Creation-Date: 2015-03-12 15:25:36+00:00\n"
 "PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2815,7 +2815,7 @@ msgid ""
 msgstr ""
 
 #: api/transactions.php:755 api/transactions.php:823 api/transactions.php:846
-#: core-addons/transaction-methods/offline-payments/init.php:285
+#: core-addons/transaction-methods/offline-payments/init.php:286
 #: core-addons/transaction-methods/paypal-standard/init.php:916
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1156
 msgid "Unknown"
@@ -2870,7 +2870,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.11.12)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.11.13)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:19
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -3170,7 +3170,7 @@ msgid "Save"
 msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:432
-#: core-addons/transaction-methods/offline-payments/init.php:395
+#: core-addons/transaction-methods/offline-payments/init.php:396
 #: lib/product-features/class.title.php:96
 #: lib/products/class.products-post-type.php:584
 msgid "Title"
@@ -3217,7 +3217,7 @@ msgid "View Coupon"
 msgstr ""
 
 #: core-addons/load.php:16
-#: core-addons/transaction-methods/offline-payments/init.php:387
+#: core-addons/transaction-methods/offline-payments/init.php:388
 msgid "Offline Payments"
 msgstr ""
 
@@ -3560,7 +3560,7 @@ msgstr ""
 msgid "Duplicate Exchange Products"
 msgstr ""
 
-#: core-addons/product-features/duplicate-products/init.php:75
+#: core-addons/product-features/duplicate-products/init.php:76
 msgid "copy"
 msgstr ""
 
@@ -3639,7 +3639,7 @@ msgstr ""
 
 #: core-addons/product-types/digital-downloads/init.php:180
 #: core-addons/taxes/taxes-simple/init.php:95
-#: core-addons/transaction-methods/offline-payments/init.php:429
+#: core-addons/transaction-methods/offline-payments/init.php:430
 #: core-addons/transaction-methods/paypal-standard/init.php:1183
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1487
 #: lib/admin/class.admin.php:1031 lib/admin/class.admin.php:1228
@@ -3648,14 +3648,14 @@ msgid "Error. Please try again"
 msgstr ""
 
 #: core-addons/product-types/digital-downloads/init.php:186
-#: core-addons/transaction-methods/offline-payments/init.php:435
+#: core-addons/transaction-methods/offline-payments/init.php:436
 #: core-addons/transaction-methods/paypal-standard/init.php:1189
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1493
 msgid "Settings saved."
 msgstr ""
 
 #: core-addons/product-types/digital-downloads/init.php:191
-#: core-addons/transaction-methods/offline-payments/init.php:440
+#: core-addons/transaction-methods/offline-payments/init.php:441
 #: core-addons/transaction-methods/paypal-standard/init.php:1194
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1498
 msgid "Settings not saved."
@@ -3795,73 +3795,73 @@ msgstr ""
 msgid "Transaction Failed, unable to verify security token."
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:273
+#: core-addons/transaction-methods/offline-payments/init.php:274
 #: core-addons/transaction-methods/paypal-standard/init.php:897
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1135
 msgid "Paid"
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:276
+#: core-addons/transaction-methods/offline-payments/init.php:277
 msgid "Refunded"
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:279
+#: core-addons/transaction-methods/offline-payments/init.php:280
 #: core-addons/transaction-methods/paypal-standard/init.php:912
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1150
 msgid "Pending"
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:282
+#: core-addons/transaction-methods/offline-payments/init.php:283
 #: core-addons/transaction-methods/paypal-standard/init.php:914
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1152
 msgid "Voided"
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:389
+#: core-addons/transaction-methods/offline-payments/init.php:390
 msgid ""
 "Offline payments allow customers to purchase products from your site using "
 "check or cash. Transactions can be set as pending until you receive payment."
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:390
+#: core-addons/transaction-methods/offline-payments/init.php:391
 #: core-addons/transaction-methods/paypal-standard/init.php:1145
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1387
 msgid "Video:"
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:390
+#: core-addons/transaction-methods/offline-payments/init.php:391
 msgid "Setting Up Offline Payments in Exchange"
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:391
+#: core-addons/transaction-methods/offline-payments/init.php:392
 msgid "To process payments offline, complete the settings below."
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:395
+#: core-addons/transaction-methods/offline-payments/init.php:396
 msgid "What would you like to title this payment option? eg: Check"
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:400
+#: core-addons/transaction-methods/offline-payments/init.php:401
 msgid "Instructions after purchase"
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:400
+#: core-addons/transaction-methods/offline-payments/init.php:401
 msgid ""
 "This will be the notification customers see after using this method of "
 "payment."
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:406
+#: core-addons/transaction-methods/offline-payments/init.php:407
 msgid "Default Payment Status"
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:406
+#: core-addons/transaction-methods/offline-payments/init.php:407
 msgid ""
 "This is the default payment status applied to all offline payment "
 "transactions."
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:468
+#: core-addons/transaction-methods/offline-payments/init.php:469
 #: core-addons/transaction-methods/paypal-standard/init.php:1229
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1541
 #: lib/admin/class.admin.php:1040 lib/admin/class.admin.php:1239
@@ -3869,36 +3869,36 @@ msgstr ""
 msgid "Settings Saved."
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:486
+#: core-addons/transaction-methods/offline-payments/init.php:487
 msgid "The Title field cannot be left blank"
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:488
+#: core-addons/transaction-methods/offline-payments/init.php:489
 msgid ""
 "Please leave some instructions for customers checking out with this "
 "transaction method"
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:492
+#: core-addons/transaction-methods/offline-payments/init.php:493
 msgid "Please select a valid default transaction status."
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:504
+#: core-addons/transaction-methods/offline-payments/init.php:505
 msgid "Pay with check"
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:505
+#: core-addons/transaction-methods/offline-payments/init.php:506
 msgid "Thank you for your order. We will contact you shortly for payment."
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:584
+#: core-addons/transaction-methods/offline-payments/init.php:585
 #: core-addons/transaction-methods/paypal-standard/init.php:995
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1237
 #: core-addons/transaction-methods/zero-sum-checkout/init.php:196
 msgid "Cancel Recurring Payment"
 msgstr ""
 
-#: core-addons/transaction-methods/offline-payments/init.php:589
+#: core-addons/transaction-methods/offline-payments/init.php:590
 #: core-addons/transaction-methods/paypal-standard/init.php:982
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1224
 #: core-addons/transaction-methods/zero-sum-checkout/init.php:201
