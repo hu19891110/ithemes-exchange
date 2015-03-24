@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.11.13\n"
+"Project-Id-Version: iThemes Exchange 1.11.14\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2015-03-12 15:25:36+00:00\n"
+"POT-Creation-Date: 2015-03-24 12:08:39+00:00\n"
 "PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2501,7 +2501,7 @@ msgstr ""
 msgid "Download Error:"
 msgstr ""
 
-#: api/misc.php:344
+#: api/misc.php:350
 msgid "Please complete all purchase requirements before checkout out."
 msgstr ""
 
@@ -2568,7 +2568,7 @@ msgstr ""
 #: api/theme/billing.php:531 api/theme/checkout.php:93 api/theme/login.php:332
 #: api/theme/registration.php:408 api/theme/shipping-method.php:165
 #: api/theme/shipping.php:482
-#: core-addons/admin/guest-checkout/lib/template-functions.php:210
+#: core-addons/admin/guest-checkout/lib/template-functions.php:234
 #: core-addons/coupons/basic-coupons/admin.php:390
 #: lib/deprecated/templates/super-widget-cart.php:76
 #: lib/products/class.products-post-type.php:337
@@ -2870,7 +2870,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.11.13)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.11.14)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:19
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -2888,7 +2888,8 @@ msgid "Guest Customer"
 msgstr ""
 
 #: core-addons/admin/guest-checkout/lib/settings.php:18
-#: core-addons/admin/guest-checkout/lib/template-functions.php:52
+#: core-addons/admin/guest-checkout/lib/settings.php:55
+#: core-addons/admin/guest-checkout/lib/template-functions.php:61
 #: core-addons/admin/guest-checkout/lib/templates/super-widget-registration/elements/guest.php:21
 #: core-addons/load.php:131
 msgid "Guest Checkout"
@@ -2922,34 +2923,53 @@ msgid ""
 "Checkout forms."
 msgstr ""
 
-#: core-addons/admin/guest-checkout/lib/settings.php:50
+#: core-addons/admin/guest-checkout/lib/settings.php:47
+msgid "Heading Label on Checkout Page"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:49
+#: core-addons/admin/guest-checkout/lib/template-functions.php:63
+msgid "Checkout as a guest?"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:53
+msgid "Heading Label in the SuperWidget"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:59
+msgid "Button Text on Checkout Page"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:61
+#: core-addons/admin/guest-checkout/lib/template-functions.php:177
+msgid "Continue as guest"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:65
+msgid "Button Text in SuperWidget"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:67
+#: core-addons/admin/guest-checkout/lib/template-functions.php:220
+msgid "Continue"
+msgstr ""
+
+#: core-addons/admin/guest-checkout/lib/settings.php:74
 msgid "Cart Expiration"
 msgstr ""
 
-#: core-addons/admin/guest-checkout/lib/settings.php:52
+#: core-addons/admin/guest-checkout/lib/settings.php:76
 msgid ""
 "Cart will expire and be cleared after a guest customer is inactive for set "
 "number of minutes."
 msgstr ""
 
-#: core-addons/admin/guest-checkout/lib/settings.php:53
+#: core-addons/admin/guest-checkout/lib/settings.php:77
 msgid "minutes"
 msgstr ""
 
-#: core-addons/admin/guest-checkout/lib/template-functions.php:157
-msgid "Continue as guest"
-msgstr ""
-
-#: core-addons/admin/guest-checkout/lib/template-functions.php:184
+#: core-addons/admin/guest-checkout/lib/template-functions.php:206
 msgid "Email address"
-msgstr ""
-
-#: core-addons/admin/guest-checkout/lib/template-functions.php:197
-msgid "Continue"
-msgstr ""
-
-#: core-addons/admin/guest-checkout/lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/not-logged-in/guest-checkout.php:22
-msgid "Check out as guest"
 msgstr ""
 
 #: core-addons/admin/guest-checkout/lib/templates/content-checkout/elements/purchase-requirements/logged-in/elements/not-logged-in/links/guest-checkout.php:21
@@ -4495,12 +4515,12 @@ msgid ""
 "the Get More tab to see what else Exchange can do."
 msgstr ""
 
-#: lib/admin/views/admin-add-ons.php:41
+#: lib/admin/views/admin-add-ons.php:52
 #: lib/admin/views/admin-get-more-addons.php:29
 msgid "Get the Exchange Pro Pack"
 msgstr ""
 
-#: lib/admin/views/admin-add-ons.php:42
+#: lib/admin/views/admin-add-ons.php:53
 #: lib/admin/views/admin-get-more-addons.php:30
 msgid ""
 "The Pro Pack gets you access to iThemes Exchange add-ons that unlock so much "
@@ -4510,32 +4530,32 @@ msgid ""
 "build in the next year (which will be a lot)."
 msgstr ""
 
-#: lib/admin/views/admin-add-ons.php:43
+#: lib/admin/views/admin-add-ons.php:54
 #: lib/admin/views/admin-get-more-addons.php:31
 msgid "Get all our add-ons for $197"
 msgstr ""
 
-#: lib/admin/views/admin-add-ons.php:92
+#: lib/admin/views/admin-add-ons.php:103
 msgid "No add-ons installed. How'd you do that?"
 msgstr ""
 
-#: lib/admin/views/admin-add-ons.php:93
+#: lib/admin/views/admin-add-ons.php:104
 msgid "Go get some now"
 msgstr ""
 
-#: lib/admin/views/admin-add-ons.php:98
+#: lib/admin/views/admin-add-ons.php:109
 msgid "No add-ons are currently enabled"
 msgstr ""
 
-#: lib/admin/views/admin-add-ons.php:99
+#: lib/admin/views/admin-add-ons.php:110
 msgid "Go enable some now"
 msgstr ""
 
-#: lib/admin/views/admin-add-ons.php:104
+#: lib/admin/views/admin-add-ons.php:115
 msgid "All add-ons are currently enabled"
 msgstr ""
 
-#: lib/admin/views/admin-add-ons.php:105
+#: lib/admin/views/admin-add-ons.php:116
 msgid "Go get more"
 msgstr ""
 
@@ -5960,7 +5980,7 @@ msgstr ""
 msgid "Error"
 msgstr ""
 
-#: lib/functions/functions.php:1445
+#: lib/functions/functions.php:1451
 msgid "%s Product"
 msgid_plural "%s Products"
 msgstr[0] ""
