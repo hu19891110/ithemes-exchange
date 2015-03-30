@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.11.14\n"
+"Project-Id-Version: iThemes Exchange 1.11.15\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2015-03-24 12:08:39+00:00\n"
+"POT-Creation-Date: 2015-03-30 19:47:38+00:00\n"
 "PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2816,8 +2816,8 @@ msgstr ""
 
 #: api/transactions.php:755 api/transactions.php:823 api/transactions.php:846
 #: core-addons/transaction-methods/offline-payments/init.php:286
-#: core-addons/transaction-methods/paypal-standard/init.php:916
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1156
+#: core-addons/transaction-methods/paypal-standard/init.php:934
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1173
 msgid "Unknown"
 msgstr ""
 
@@ -2870,7 +2870,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.11.14)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.11.15)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:19
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -3014,8 +3014,8 @@ msgstr ""
 #: core-addons/product-types/digital-downloads/init.php:159
 #: core-addons/taxes/taxes-simple/init.php:56
 #: core-addons/transaction-methods/offline-payments/view-add-on-settings.php:21
-#: core-addons/transaction-methods/paypal-standard/init.php:1120
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1362
+#: core-addons/transaction-methods/paypal-standard/init.php:1138
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1379
 #: lib/admin/class-settings-form.php:41
 #: lib/admin/views/admin-email-settings.php:164
 #: lib/admin/views/admin-page-settings.php:128
@@ -3448,8 +3448,8 @@ msgstr ""
 
 #: core-addons/load.php:289
 #: core-addons/transaction-methods/offline-payments/init.php:24
-#: core-addons/transaction-methods/paypal-standard/init.php:30
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:38
+#: core-addons/transaction-methods/paypal-standard/init.php:32
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:39
 msgctxt "Transaction Status"
 msgid "Pending"
 msgstr ""
@@ -3461,24 +3461,24 @@ msgstr ""
 
 #: core-addons/load.php:291
 #: core-addons/transaction-methods/offline-payments/init.php:25
-#: core-addons/transaction-methods/paypal-standard/init.php:31
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:39
+#: core-addons/transaction-methods/paypal-standard/init.php:33
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:40
 msgctxt "Transaction Status"
 msgid "Paid"
 msgstr ""
 
 #: core-addons/load.php:292
 #: core-addons/transaction-methods/offline-payments/init.php:26
-#: core-addons/transaction-methods/paypal-standard/init.php:33
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:41
+#: core-addons/transaction-methods/paypal-standard/init.php:35
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:42
 msgctxt "Transaction Status"
 msgid "Refunded"
 msgstr ""
 
 #: core-addons/load.php:293
 #: core-addons/transaction-methods/offline-payments/init.php:27
-#: core-addons/transaction-methods/paypal-standard/init.php:34
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:42
+#: core-addons/transaction-methods/paypal-standard/init.php:36
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:43
 msgctxt "Transaction Status"
 msgid "Voided"
 msgstr ""
@@ -3660,24 +3660,24 @@ msgstr ""
 #: core-addons/product-types/digital-downloads/init.php:180
 #: core-addons/taxes/taxes-simple/init.php:95
 #: core-addons/transaction-methods/offline-payments/init.php:430
-#: core-addons/transaction-methods/paypal-standard/init.php:1183
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1487
-#: lib/admin/class.admin.php:1031 lib/admin/class.admin.php:1228
-#: lib/admin/class.admin.php:1318
+#: core-addons/transaction-methods/paypal-standard/init.php:1201
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1504
+#: lib/admin/class.admin.php:1045 lib/admin/class.admin.php:1242
+#: lib/admin/class.admin.php:1332
 msgid "Error. Please try again"
 msgstr ""
 
 #: core-addons/product-types/digital-downloads/init.php:186
 #: core-addons/transaction-methods/offline-payments/init.php:436
-#: core-addons/transaction-methods/paypal-standard/init.php:1189
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1493
+#: core-addons/transaction-methods/paypal-standard/init.php:1207
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1510
 msgid "Settings saved."
 msgstr ""
 
 #: core-addons/product-types/digital-downloads/init.php:191
 #: core-addons/transaction-methods/offline-payments/init.php:441
-#: core-addons/transaction-methods/paypal-standard/init.php:1194
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1498
+#: core-addons/transaction-methods/paypal-standard/init.php:1212
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1515
 msgid "Settings not saved."
 msgstr ""
 
@@ -3816,8 +3816,8 @@ msgid "Transaction Failed, unable to verify security token."
 msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/init.php:274
-#: core-addons/transaction-methods/paypal-standard/init.php:897
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1135
+#: core-addons/transaction-methods/paypal-standard/init.php:915
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1152
 msgid "Paid"
 msgstr ""
 
@@ -3826,14 +3826,14 @@ msgid "Refunded"
 msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/init.php:280
-#: core-addons/transaction-methods/paypal-standard/init.php:912
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1150
+#: core-addons/transaction-methods/paypal-standard/init.php:930
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1167
 msgid "Pending"
 msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/init.php:283
-#: core-addons/transaction-methods/paypal-standard/init.php:914
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1152
+#: core-addons/transaction-methods/paypal-standard/init.php:932
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1169
 msgid "Voided"
 msgstr ""
 
@@ -3844,8 +3844,8 @@ msgid ""
 msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/init.php:391
-#: core-addons/transaction-methods/paypal-standard/init.php:1145
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1387
+#: core-addons/transaction-methods/paypal-standard/init.php:1163
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1404
 msgid "Video:"
 msgstr ""
 
@@ -3882,10 +3882,10 @@ msgid ""
 msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/init.php:469
-#: core-addons/transaction-methods/paypal-standard/init.php:1229
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1541
-#: lib/admin/class.admin.php:1040 lib/admin/class.admin.php:1239
-#: lib/admin/class.admin.php:1335
+#: core-addons/transaction-methods/paypal-standard/init.php:1247
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1558
+#: lib/admin/class.admin.php:1054 lib/admin/class.admin.php:1253
+#: lib/admin/class.admin.php:1349
 msgid "Settings Saved."
 msgstr ""
 
@@ -3912,15 +3912,15 @@ msgid "Thank you for your order. We will contact you shortly for payment."
 msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/init.php:585
-#: core-addons/transaction-methods/paypal-standard/init.php:995
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1237
+#: core-addons/transaction-methods/paypal-standard/init.php:1013
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1254
 #: core-addons/transaction-methods/zero-sum-checkout/init.php:196
 msgid "Cancel Recurring Payment"
 msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/init.php:590
-#: core-addons/transaction-methods/paypal-standard/init.php:982
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1224
+#: core-addons/transaction-methods/paypal-standard/init.php:1000
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1241
 #: core-addons/transaction-methods/zero-sum-checkout/init.php:201
 msgid "Recurring payment has been deactivated"
 msgstr ""
@@ -3929,88 +3929,93 @@ msgstr ""
 msgid "Offline Payments Settings"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:32
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:40
+#: core-addons/transaction-methods/paypal-standard/init.php:34
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:41
 msgctxt "Transaction Status"
 msgid "Reversed"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:182
+#: core-addons/transaction-methods/paypal-standard/init.php:184
 msgid "Error: Amount charged is not the same as the cart total!"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:229
+#: core-addons/transaction-methods/paypal-standard/init.php:231
 msgid "Unknown error while processing with PayPal. Please try again later."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:343
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:451
+#: core-addons/transaction-methods/paypal-standard/init.php:345
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:452
 msgid "Pay with PayPal"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:409
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:513
+#: core-addons/transaction-methods/paypal-standard/init.php:411
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:514
 msgid "Error processing PayPal form. Missing valid PayPal information."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:579
+#: core-addons/transaction-methods/paypal-standard/init.php:581
 msgid "ERROR: Invalid PayPal Setup"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:900
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1138
+#: core-addons/transaction-methods/paypal-standard/init.php:719
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:955
+msgid "Invalid IPN sent from PayPal: %s"
+msgstr ""
+
+#: core-addons/transaction-methods/paypal-standard/init.php:918
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1155
 msgid "Refund"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:902
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1140
+#: core-addons/transaction-methods/paypal-standard/init.php:920
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1157
 msgid "Reversed"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:904
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1142
+#: core-addons/transaction-methods/paypal-standard/init.php:922
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1159
 msgid "Buyer Complaint"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:906
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1144
+#: core-addons/transaction-methods/paypal-standard/init.php:924
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1161
 msgid "Denied"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:908
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1146
+#: core-addons/transaction-methods/paypal-standard/init.php:926
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1163
 msgid "Expired"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:910
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1148
+#: core-addons/transaction-methods/paypal-standard/init.php:928
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1165
 msgid "Failed"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:986
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1228
+#: core-addons/transaction-methods/paypal-standard/init.php:1004
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1245
 msgid "Recurring payment has been cancelled"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:990
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1232
+#: core-addons/transaction-methods/paypal-standard/init.php:1008
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1249
 msgid "Recurring payment has been suspended"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:995
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1237
+#: core-addons/transaction-methods/paypal-standard/init.php:1013
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1254
 msgid "Profile ID"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:1110
+#: core-addons/transaction-methods/paypal-standard/init.php:1128
 msgid "PayPal Standard Settings - Basic"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:1134
+#: core-addons/transaction-methods/paypal-standard/init.php:1152
 msgid "PayPal Standard - Basic (Fastest Setup)"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:1144
+#: core-addons/transaction-methods/paypal-standard/init.php:1162
 msgid ""
 "This is the simple and fast version to get PayPal setup for your store. You "
 "might use this version just to get your store going, but we highly suggest "
@@ -4019,82 +4024,82 @@ msgid ""
 "PayPal account."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:1145
+#: core-addons/transaction-methods/paypal-standard/init.php:1163
 msgid "Setting Up PayPal Standard Basic"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:1147
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1389
+#: core-addons/transaction-methods/paypal-standard/init.php:1165
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1406
 msgid "Don't have a PayPal account yet?"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:1147
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1389
+#: core-addons/transaction-methods/paypal-standard/init.php:1165
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1406
 msgid "Go set one up here"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:1148
+#: core-addons/transaction-methods/paypal-standard/init.php:1166
 msgid "What is your PayPal email address?"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:1150
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1392
+#: core-addons/transaction-methods/paypal-standard/init.php:1168
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1409
 msgid "PayPal Email Address"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:1150
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1392
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1456
+#: core-addons/transaction-methods/paypal-standard/init.php:1168
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1409
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1473
 msgid "We need this to tie payments to your account."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:1159
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1436
+#: core-addons/transaction-methods/paypal-standard/init.php:1177
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1453
 msgid "Purchase Button Label"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:1159
+#: core-addons/transaction-methods/paypal-standard/init.php:1177
 msgid ""
 "This is the text inside the button your customers will press to purchase "
 "with PayPal Standard"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard/init.php:1248
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1560
+#: core-addons/transaction-methods/paypal-standard/init.php:1266
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1577
 msgid "Please include your PayPal Email Address"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:215
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:216
 msgid "Error: Transaction IDs do not match! %s, %s"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:218
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:219
 msgid "Error: Amount charged is not the same as the cart total! %s | %s"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:273
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:274
 msgid ""
 "Unknown error while processing with PayPal. Please check your PayPal account "
 "for any charges and try again later."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:316
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:317
 msgid "Canceled during Upgrade/Downgrade Process"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1154
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1171
 msgid "Cancelled"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1352
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1369
 msgid "PayPal Standard Settings - Secure"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1376
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1393
 msgid "PayPal Standard - Secure (Highly Recommended)"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1386
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1403
 msgid ""
 "Although this PayPal version for iThemes Exchange takes more effort and "
 "time, it is well worth it for the security options for your store. To get "
@@ -4102,136 +4107,136 @@ msgid ""
 "information from your PayPal account."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1387
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1404
 msgid "Setting Up PayPal Standard Secure"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1390
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1407
 msgid "Step 1. Fill out your PayPal email address"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1400
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1417
 msgid "Step 2. Fill out your PayPal API credentials"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1402
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1419
 msgid "PayPal API Username"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1402
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1411
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1420
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1419
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1428
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1437
 msgid ""
 "At PayPal, see: Profile &rarr; My Selling Tools &rarr; API Access &rarr; "
 "Update &rarr; View API Signature (or Request API Credentials)."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1411
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1428
 msgid "PayPal API Password"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1420
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1437
 msgid "PayPal API Signature"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1428
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1445
 msgid "Step 3. Setup PayPal Auto Return"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1429
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1446
 msgid ""
 "PayPal Auto Return must be configured in Account Profile -› Website Payment "
 "Preferences in your PayPal Account"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1430
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1447
 msgid ""
 "Please log into your account, set Auto Return to ON and add this URL to your "
 "Return URL Settings so your customers are redirected to your site to "
 "complete the transactions."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1432
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1449
 msgid "Step 4. Setup PayPal Payment Data Transfer (PDT)"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1433
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1450
 msgid ""
 "PayPal PDT must be turned <strong>ON</strong> in Account Profile -› Website "
 "Payment Preferences in your PayPal Account"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1434
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1451
 msgid "Optional: Edit Paypal Button Label"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1436
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1453
 msgid ""
 "This is the text inside the button your customers will press to purchase "
 "with PayPal Standard (secure)"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1444
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1461
 msgid "Optional: Enable Paypal Testing Mode"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1447
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1464
 msgid "Enable PayPal Sandbox Mode?"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1447
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1464
 msgid ""
 "Use this mode for testing your store. This mode will need to be disabled "
 "when the store is ready to process customer payments."
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1456
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1473
 msgid "PayPal Sandbox Email Address"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1460
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1477
 msgid "PayPal Sandbox API Username"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1460
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1464
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1468
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1477
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1481
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1485
 msgid "View tutorial: "
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1464
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1481
 msgid "PayPal Sandbox API Password"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1468
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1485
 msgid "PayPal Sandbox API Signature"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1562
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1579
 msgid "Please include your PayPal API Username"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1564
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1581
 msgid "Please include your PayPal API password"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1566
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1583
 msgid "Please include your PayPal API signature"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1570
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1587
 msgid "Please include your PayPal Sandbox Email Address"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1572
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1589
 msgid "Please include your PayPal Sandbox API Username"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1574
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1591
 msgid "Please include your PayPal Sandbox API password"
 msgstr ""
 
-#: core-addons/transaction-methods/paypal-standard-secure/init.php:1576
+#: core-addons/transaction-methods/paypal-standard-secure/init.php:1593
 msgid "Please include your PayPal Sandbox API signature"
 msgstr ""
 
@@ -4253,103 +4258,103 @@ msgstr ""
 msgid "Settings updated"
 msgstr ""
 
-#: lib/admin/class.admin.php:150
+#: lib/admin/class.admin.php:164
 msgid "Quick Setup"
 msgstr ""
 
-#: lib/admin/class.admin.php:169
+#: lib/admin/class.admin.php:183
 msgid "Documentation"
 msgstr ""
 
-#: lib/admin/class.admin.php:170 lib/admin/views/admin-help.php:38
+#: lib/admin/class.admin.php:184 lib/admin/views/admin-help.php:38
 msgid "Support"
 msgstr ""
 
-#: lib/admin/class.admin.php:171
+#: lib/admin/class.admin.php:185
 msgid "Add-ons"
 msgstr ""
 
-#: lib/admin/class.admin.php:172
+#: lib/admin/class.admin.php:186
 msgid "Changelog"
 msgstr ""
 
-#: lib/admin/class.admin.php:187
+#: lib/admin/class.admin.php:201
 msgid "Back to Add-ons"
 msgstr ""
 
-#: lib/admin/class.admin.php:199
+#: lib/admin/class.admin.php:213
 msgid "Customer Data"
 msgstr ""
 
-#: lib/admin/class.admin.php:277 lib/admin/views/admin-user-products.php:10
+#: lib/admin/class.admin.php:291 lib/admin/views/admin-user-products.php:10
 #: lib/products/class.products-post-type.php:112
 #: lib/transactions/class.transactions-post-type.php:491
 msgid "Products"
 msgstr ""
 
-#: lib/admin/class.admin.php:288
+#: lib/admin/class.admin.php:302
 msgid "Transactions"
 msgstr ""
 
-#: lib/admin/class.admin.php:299
+#: lib/admin/class.admin.php:313
 msgid "Info"
 msgstr ""
 
-#: lib/admin/class.admin.php:350
+#: lib/admin/class.admin.php:364
 #: lib/transactions/class.transactions-post-type.php:47
 msgid "Payments"
 msgstr ""
 
-#: lib/admin/class.admin.php:383
+#: lib/admin/class.admin.php:397
 msgid "Help"
 msgstr ""
 
-#: lib/admin/class.admin.php:402 lib/admin/class.admin.php:403
+#: lib/admin/class.admin.php:416 lib/admin/class.admin.php:417
 msgid "Add Product"
 msgstr ""
 
-#: lib/admin/class.admin.php:434
+#: lib/admin/class.admin.php:448
 msgid "Email Settings"
 msgstr ""
 
-#: lib/admin/class.admin.php:457
+#: lib/admin/class.admin.php:471
 msgid "Pages"
 msgstr ""
 
-#: lib/admin/class.admin.php:470 lib/admin/views/admin-wizard.php:248
+#: lib/admin/class.admin.php:484 lib/admin/views/admin-wizard.php:248
 #: lib/shipping/class.shipping.php:223
 msgid "General"
 msgstr ""
 
-#: lib/admin/class.admin.php:486
+#: lib/admin/class.admin.php:500
 msgid "All"
 msgstr ""
 
-#: lib/admin/class.admin.php:500
+#: lib/admin/class.admin.php:514
 msgid "Enabled"
 msgstr ""
 
-#: lib/admin/class.admin.php:511 lib/admin/views/admin-page-settings.php:79
+#: lib/admin/class.admin.php:525 lib/admin/views/admin-page-settings.php:79
 msgid "Disabled"
 msgstr ""
 
-#: lib/admin/class.admin.php:535
+#: lib/admin/class.admin.php:549
 msgid "Add-on installed."
 msgstr ""
 
-#: lib/admin/class.admin.php:539
+#: lib/admin/class.admin.php:553
 msgid "Error: Add-on not installed."
 msgstr ""
 
-#: lib/admin/class.admin.php:552
+#: lib/admin/class.admin.php:566
 msgid "Get More"
 msgstr ""
 
-#: lib/admin/class.admin.php:638
+#: lib/admin/class.admin.php:652
 msgid "You made a sale! Yabba Dabba Doo! %s"
 msgstr ""
 
-#: lib/admin/class.admin.php:639
+#: lib/admin/class.admin.php:653
 msgid ""
 "Your friend %s just bought all this awesomeness from your store!\n"
 "\n"
@@ -4358,11 +4363,11 @@ msgid ""
 "%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:646
+#: lib/admin/class.admin.php:660
 msgid "Receipt for Purchase: %s"
 msgstr ""
 
-#: lib/admin/class.admin.php:647
+#: lib/admin/class.admin.php:661
 msgid ""
 "Hello %s,\n"
 "\n"
@@ -4374,137 +4379,137 @@ msgid ""
 "%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:766
+#: lib/admin/class.admin.php:780
 msgid "Add-on enabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:768
+#: lib/admin/class.admin.php:782
 msgid "Add-on disabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:777
+#: lib/admin/class.admin.php:791
 msgid "Error: Add-on not enabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:779
+#: lib/admin/class.admin.php:793
 msgid "Error: Add-on not disabled."
 msgstr ""
 
-#: lib/admin/class.admin.php:1007 lib/admin/views/admin-settings.php:108
+#: lib/admin/class.admin.php:1021 lib/admin/views/admin-settings.php:108
 msgid ""
 "Please use the 2-3 character %sISO abbreviation%s for country subdivisions"
 msgstr ""
 
-#: lib/admin/class.admin.php:1060
+#: lib/admin/class.admin.php:1074
 msgid "You must select at least one Payment Method."
 msgstr ""
 
-#: lib/admin/class.admin.php:1161
+#: lib/admin/class.admin.php:1175
 msgid "Settings Saved. Congrats!"
 msgstr ""
 
-#: lib/admin/class.admin.php:1162
+#: lib/admin/class.admin.php:1176
 msgid "%sAdd a Product%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:1163
+#: lib/admin/class.admin.php:1177
 msgid "%sEnable Add-ons%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:1165
+#: lib/admin/class.admin.php:1179
 msgid "%sView Sample Product%s"
 msgstr ""
 
-#: lib/admin/class.admin.php:1201 lib/admin/class.admin.php:1254
+#: lib/admin/class.admin.php:1215 lib/admin/class.admin.php:1268
 msgid "Please provide a valid email address."
 msgstr ""
 
-#: lib/admin/class.admin.php:1203
+#: lib/admin/class.admin.php:1217
 msgid "Thousands Separator cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1205
+#: lib/admin/class.admin.php:1219
 msgid "Decimals Separator cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1256
+#: lib/admin/class.admin.php:1270
 msgid "Email Name cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1258
+#: lib/admin/class.admin.php:1272
 msgid "Email Subject cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1260
+#: lib/admin/class.admin.php:1274
 msgid "Email Template cannot be empty"
 msgstr ""
 
-#: lib/admin/class.admin.php:1269
+#: lib/admin/class.admin.php:1283
 msgid "Invalid email address in Sales Notification Email Address"
 msgstr ""
 
-#: lib/admin/class.admin.php:1408
+#: lib/admin/class.admin.php:1422
 msgid "Please make sure all your page slugs are unique."
 msgstr ""
 
-#: lib/admin/class.admin.php:1414
+#: lib/admin/class.admin.php:1428
 msgid "Page settings cannot be left blank."
 msgstr ""
 
-#: lib/admin/class.admin.php:1483
+#: lib/admin/class.admin.php:1497
 msgid "Select Images"
 msgstr ""
 
-#: lib/admin/class.admin.php:1484
+#: lib/admin/class.admin.php:1498
 msgid "You must upload an image larger than 150x150."
 msgstr ""
 
-#: lib/admin/class.admin.php:1485
+#: lib/admin/class.admin.php:1499
 msgid "Edit Image"
 msgstr ""
 
-#: lib/admin/class.admin.php:1486
+#: lib/admin/class.admin.php:1500
 msgid "Upload Source"
 msgstr ""
 
-#: lib/admin/class.admin.php:1487
+#: lib/admin/class.admin.php:1501
 msgid "Insert"
 msgstr ""
 
-#: lib/admin/class.admin.php:1488
+#: lib/admin/class.admin.php:1502
 msgid "Advanced"
 msgstr ""
 
-#: lib/admin/class.admin.php:1489
+#: lib/admin/class.admin.php:1503
 msgid ""
 "We want to keep things simple for you, so we put the kitchen sink here. "
 "Click this button to add more info about your product."
 msgstr ""
 
-#: lib/admin/class.admin.php:1503
+#: lib/admin/class.admin.php:1517
 msgid ""
 "You have checked the option to \"Reset ALL data\". Are you sure you want to "
 "delete all Exchange products, transactions, and settings?"
 msgstr ""
 
-#: lib/admin/class.admin.php:1510
+#: lib/admin/class.admin.php:1524
 msgid ""
 "Please make sure all WordPress page types have a WordPress page selected."
 msgstr ""
 
-#: lib/admin/class.admin.php:1607
+#: lib/admin/class.admin.php:1621
 msgid "View store"
 msgstr ""
 
-#: lib/admin/class.admin.php:1760
+#: lib/admin/class.admin.php:1774
 msgid "Main Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1765
+#: lib/admin/class.admin.php:1779
 msgid "Side Product Interface"
 msgstr ""
 
-#: lib/admin/class.admin.php:1836
+#: lib/admin/class.admin.php:1850
 msgid "Featured Image"
 msgstr ""
 
@@ -5972,15 +5977,19 @@ msgstr ""
 msgid "We need a billing address before you can checkout"
 msgstr ""
 
-#: lib/functions/functions.php:1266
+#: lib/functions/functions.php:1208
+msgid "Please provide a username and password"
+msgstr ""
+
+#: lib/functions/functions.php:1270
 msgid "You do not have permission to view this file."
 msgstr ""
 
-#: lib/functions/functions.php:1266
+#: lib/functions/functions.php:1270
 msgid "Error"
 msgstr ""
 
-#: lib/functions/functions.php:1451
+#: lib/functions/functions.php:1455
 msgid "%s Product"
 msgid_plural "%s Products"
 msgstr[0] ""

@@ -88,6 +88,12 @@ http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
 
+= 1.11.15 =
+* Deprecate the admin_menu_capability property in IT_Exchange_Admin and replace with a method so that themes can filter it.
+* If no username or password is provided on submit from exchange Login page, don't redirect to wp-login.php
+* Fix bug in purchase-requirement template part's filter name created by first param. Maintain back_compat.
+* Adding IPN Verification to PayPal non-Secure option
+
 = 1.11.14 =
 * Strip any non-separator/non-digit character out of price before converting to database number
 * Fix for converting to DB number for numbers with unexpected number of decimals places
