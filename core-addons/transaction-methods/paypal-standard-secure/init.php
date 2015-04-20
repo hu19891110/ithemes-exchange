@@ -781,9 +781,10 @@ function it_exchange_paypal_standard_secure_addon_get_payment_url( $temp_id ) {
 		$L_BUTTONVARS[] = 'cancel_return=' . ( it_exchange_is_multi_item_cart_allowed() ? it_exchange_get_page_url( 'cart' ) : get_site_url() );
 		$L_BUTTONVARS[] = 'custom=' . $temp_id;
 		
-		$shipping_address = it_exchange_get_cart_shipping_address();
-		// If we have the shipping info, we may as well include it in the fields sent to Authorize.Net
-		if ( !empty( $shipping_address ) ) {
+		$purchase_requirements = it_exchange_get_purchase_requirements();
+		// If we have the shipping info, we may as well include it in the fields sent to PayPal
+		if ( !empty( $purchase_requirements['shipping-address'] ) ) {
+			$shipping_address = it_exchange_get_cart_shipping_address();
 			$L_BUTTONVARS[] = 'address_override=1';
 			$L_BUTTONVARS[] = 'no_shipping=2';
 			$L_BUTTONVARS[] = 'first_name=' . ( !empty( $shipping_address['first-name'] ) ? $shipping_address['first-name'] : '' );
