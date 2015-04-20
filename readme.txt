@@ -3,7 +3,7 @@ Contributors: ithemes, blepoxp, layotte, aaroncampbell, mattdanner
 Tags: ecommerce
 Requires at least: 3.7
 Tested up to: 4.2
-Stable tag: 1.11.18
+Stable tag: 1.12.0
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -87,6 +87,11 @@ Upload the Exchange plugin to your blog, activate it and enable the Digital Down
 http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
+
+= 1.12.0 =
+* Multiple updates involving add_query_arg and remove_query_arg to esc_url()
+* Introduce it_exchange_get_admin_menu_capability( $context, $capability )
+* Adding filter to shipping address and method requirement, for that rare case when the shipping requirement should be enabled, but isn't
 
 = 1.11.18 =
 * Pass shipping to PayPal when available
