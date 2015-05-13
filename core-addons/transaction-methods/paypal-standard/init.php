@@ -676,6 +676,7 @@ function it_exchange_paypal_standard_addon_process_webhook( $request ) {
 							}
 							if ( !it_exchange_paypal_standard_addon_update_transaction_status( $request['txn_id'], $request['payment_status'] ) ) {
 								//If the transaction isn't found, we've got a new payment
+								$GLOBALS['it_exchange']['child_transaction'] = true;
 								it_exchange_paypal_standard_addon_add_child_transaction( $request['txn_id'], $request['payment_status'], $subscriber_id, $request['mc_gross'] );
 							} else {
 								//If it is found, make sure the subscriber ID is attached to it
@@ -689,8 +690,10 @@ function it_exchange_paypal_standard_addon_process_webhook( $request ) {
 				case 'subscr_signup':
 					if ( isset( $request['amount1'] ) && '0.00' == $request['amount1'] ) { //this is a free trial
 						/* We need to do some free trial magic! */
-						if ( $temp_txn_id = it_exchange_paypal_standard_addon_get_ite_transaction_id( $request['custom'] ) ) {
-							it_exchange_paypal_standard_addon_update_subscriber_id( $temp_txn_id, $subscriber_id );
+						if ( it_exchange_paypal_standard_secure_addon_get_ite_transaction_id( $request['custom'] ) ) {
+							it_exchange_paypal_standard_secure_addon_update_subscriber_id( $request['custom'], $subscriber_id );
+						} else if ( it_exchange_paypal_standard_secure_addon_get_ite_transaction_id( $request['txn_id'] ) ) {
+							it_exchange_paypal_standard_secure_addon_update_subscriber_id( $request['txn_id'], $subscriber_id );
 						}
 					}
 					it_exchange_paypal_standard_addon_update_subscriber_status( $subscriber_id, 'active' );
