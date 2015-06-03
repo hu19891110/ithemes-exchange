@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.13.0\n"
+"Project-Id-Version: iThemes Exchange 1.14.0\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2015-05-13 16:11:56+00:00\n"
+"POT-Creation-Date: 2015-06-03 16:17:29+00:00\n"
 "PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2653,7 +2653,7 @@ msgstr ""
 
 #: api/theme/download.php:127 api/theme/product.php:382
 #: core-addons/coupons/basic-coupons/admin.php:489
-#: lib/email-notifications/class.email-notifications.php:354
+#: lib/email-notifications/class.email-notifications.php:355
 #: lib/product-features/class.downloads.php:317
 msgid "Unlimited"
 msgstr ""
@@ -2870,7 +2870,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.13.0)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.14.0)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:21
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -3017,7 +3017,7 @@ msgstr ""
 #: core-addons/transaction-methods/paypal-standard/init.php:1159
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1398
 #: lib/admin/class-settings-form.php:41
-#: lib/admin/views/admin-email-settings.php:164
+#: lib/admin/views/admin-email-settings.php:166
 #: lib/admin/views/admin-page-settings.php:128
 #: lib/admin/views/admin-settings.php:303
 msgid "Save Changes"
@@ -3205,7 +3205,7 @@ msgid "Available Coupons"
 msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:438
-#: lib/email-notifications/class.email-notifications.php:453
+#: lib/email-notifications/class.email-notifications.php:472
 #: lib/functions/functions.php:412
 #: lib/products/class.products-post-type.php:113
 msgid "Product"
@@ -4587,7 +4587,7 @@ msgid ""
 msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:34
-#: lib/admin/views/admin-email-settings.php:100
+#: lib/admin/views/admin-email-settings.php:101
 msgid "Email Address"
 msgstr ""
 
@@ -4596,7 +4596,7 @@ msgid "Email address used for admin notification emails."
 msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:41
-#: lib/admin/views/admin-email-settings.php:107
+#: lib/admin/views/admin-email-settings.php:108
 msgid "Email Name"
 msgstr ""
 
@@ -4623,128 +4623,133 @@ msgid ""
 msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:71
-#: lib/admin/views/admin-email-settings.php:137
+#: lib/admin/views/admin-email-settings.php:138
 #: lib/admin/views/admin-settings.php:287
 msgid "You call these shortcode functions like this: %s"
 msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:73
-#: lib/admin/views/admin-email-settings.php:139
+#: lib/admin/views/admin-email-settings.php:140
 msgid "A list of download links for each download purchased"
 msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:74
-#: lib/admin/views/admin-email-settings.php:140
+#: lib/admin/views/admin-email-settings.php:141
 msgid "The buyer's first name"
 msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:75
-#: lib/admin/views/admin-email-settings.php:141
+#: lib/admin/views/admin-email-settings.php:142
 msgid "The buyer's full name, first and last"
 msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:76
-#: lib/admin/views/admin-email-settings.php:142
+#: lib/admin/views/admin-email-settings.php:143
 msgid "The buyer's username on the site, if they registered an account"
 msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:77
-msgid "A table of the order details. Accepts \"purchase_message\" option."
+#: lib/admin/views/admin-email-settings.php:144
+msgid "The buyer's email on the site"
 msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:78
-#: lib/admin/views/admin-email-settings.php:144
-msgid "The date of the purchase"
+msgid "A table of the order details. Accepts \"purchase_message\" option."
 msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:79
-#: lib/admin/views/admin-email-settings.php:145
-msgid "The total price of the purchase"
+#: lib/admin/views/admin-email-settings.php:146
+msgid "The date of the purchase"
 msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:80
-#: lib/admin/views/admin-email-settings.php:146
-msgid "The unique ID number for this purchase"
+#: lib/admin/views/admin-email-settings.php:147
+msgid "The total price of the purchase"
 msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:81
-#: lib/admin/views/admin-email-settings.php:147
-msgid "The unique ID number for this transaction"
+#: lib/admin/views/admin-email-settings.php:148
+msgid "The unique ID number for this purchase"
 msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:82
-#: lib/admin/views/admin-email-settings.php:148
-msgid "The method of payment used for this purchase"
+#: lib/admin/views/admin-email-settings.php:149
+msgid "The unique ID number for this transaction"
 msgstr ""
 
 #: lib/admin/views/admin-email-settings.php:83
-#: lib/admin/views/admin-email-settings.php:149
+#: lib/admin/views/admin-email-settings.php:150
+msgid "The method of payment used for this purchase"
+msgstr ""
+
+#: lib/admin/views/admin-email-settings.php:84
+#: lib/admin/views/admin-email-settings.php:151
 msgid ""
 "The shipping address for this product. Blank if shipping is not required. "
 "Also accepts \"before\" and \"after\" arguments."
 msgstr ""
 
-#: lib/admin/views/admin-email-settings.php:84
-#: lib/admin/views/admin-email-settings.php:150
+#: lib/admin/views/admin-email-settings.php:85
+#: lib/admin/views/admin-email-settings.php:152
 msgid ""
 "The billing address for this product. Blank if shipping is not required. "
 "Also accepts \"before\" and \"after\" arguments."
 msgstr ""
 
-#: lib/admin/views/admin-email-settings.php:85
-#: lib/admin/views/admin-email-settings.php:151
+#: lib/admin/views/admin-email-settings.php:86
+#: lib/admin/views/admin-email-settings.php:153
 #: lib/admin/views/admin-settings.php:294
 msgid "Your site name"
 msgstr ""
 
-#: lib/admin/views/admin-email-settings.php:86
-#: lib/admin/views/admin-email-settings.php:152
+#: lib/admin/views/admin-email-settings.php:87
+#: lib/admin/views/admin-email-settings.php:154
 msgid ""
 "Adds a link so users can view their receipt directly on your website if they "
 "are unable to view it in the email correctly."
 msgstr ""
 
-#: lib/admin/views/admin-email-settings.php:87
-#: lib/admin/views/admin-email-settings.php:153
+#: lib/admin/views/admin-email-settings.php:88
+#: lib/admin/views/admin-email-settings.php:155
 msgid "Adds a link to the login page on your website."
 msgstr ""
 
-#: lib/admin/views/admin-email-settings.php:88
-#: lib/admin/views/admin-email-settings.php:154
+#: lib/admin/views/admin-email-settings.php:89
+#: lib/admin/views/admin-email-settings.php:156
 msgid "Adds a link to the customer's account page on your website."
 msgstr ""
 
-#: lib/admin/views/admin-email-settings.php:96
+#: lib/admin/views/admin-email-settings.php:97
 msgid "Customer Receipt Emails"
 msgstr ""
 
-#: lib/admin/views/admin-email-settings.php:103
+#: lib/admin/views/admin-email-settings.php:104
 msgid "Email address used for customer receipt emails."
 msgstr ""
 
-#: lib/admin/views/admin-email-settings.php:110
+#: lib/admin/views/admin-email-settings.php:111
 msgid "Name used for account that sends customer receipt emails."
 msgstr ""
 
-#: lib/admin/views/admin-email-settings.php:114
+#: lib/admin/views/admin-email-settings.php:115
 msgid "Subject Line"
 msgstr ""
 
-#: lib/admin/views/admin-email-settings.php:117
+#: lib/admin/views/admin-email-settings.php:118
 msgid "Subject line used for customer receipt emails."
 msgstr ""
 
-#: lib/admin/views/admin-email-settings.php:121
+#: lib/admin/views/admin-email-settings.php:122
 msgid "Email Template"
 msgstr ""
 
-#: lib/admin/views/admin-email-settings.php:135
+#: lib/admin/views/admin-email-settings.php:136
 msgid ""
 "Enter the email that is sent to users after completing a successful "
 "purchase. HTML is accepted. Available shortcode functions:"
 msgstr ""
 
-#: lib/admin/views/admin-email-settings.php:143
+#: lib/admin/views/admin-email-settings.php:145
 msgid "A table of the order details. Accept \"purchase_message\" option."
 msgstr ""
 
@@ -5286,7 +5291,7 @@ msgstr ""
 #: lib/admin/views/admin-user-transactions.php:18
 #: lib/deprecated/templates/content-cart.php:89
 #: lib/deprecated/templates/content-checkout.php:88
-#: lib/email-notifications/class.email-notifications.php:483
+#: lib/email-notifications/class.email-notifications.php:502
 #: lib/templates/content-cart/elements/totals-total.php:22
 #: lib/templates/content-checkout/elements/totals-total.php:22
 #: lib/templates/content-confirmation/elements/totals-total.php:22
@@ -5738,7 +5743,7 @@ msgid "No transactions found."
 msgstr ""
 
 #: lib/deprecated/templates/content-downloads.php:41
-#: lib/email-notifications/class.email-notifications.php:336
+#: lib/email-notifications/class.email-notifications.php:337
 #: lib/templates/content-downloads/loops/download-data.php:19
 msgid ""
 "The status for this transaction does not grant access to downloadable files. "
@@ -5802,7 +5807,7 @@ msgid "No payment add-ons enabled."
 msgstr ""
 
 #: lib/deprecated/templates/super-widget-checkout.php:80
-#: lib/email-notifications/class.email-notifications.php:454
+#: lib/email-notifications/class.email-notifications.php:473
 #: lib/templates/super-widget-checkout/elements/single-item-update-quantity.php:20
 msgid "Quantity"
 msgstr ""
@@ -5823,26 +5828,26 @@ msgstr ""
 msgid "Confirmation email resent"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:337
+#: lib/email-notifications/class.email-notifications.php:338
 msgid "Available Downloads"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:344
+#: lib/email-notifications/class.email-notifications.php:345
 msgid ""
 "You have purchased %d unique download link(s) for each file available with "
 "this product.%s%sEach link has its own download limits and you can view the "
 "details on your %sdownloads%s page."
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:358
+#: lib/email-notifications/class.email-notifications.php:359
 msgid "Download link"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:441
+#: lib/email-notifications/class.email-notifications.php:460
 msgid "Important Information"
 msgstr ""
 
-#: lib/email-notifications/class.email-notifications.php:455
+#: lib/email-notifications/class.email-notifications.php:474
 msgid "Total Price"
 msgstr ""
 
