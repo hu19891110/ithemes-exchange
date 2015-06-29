@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.14.0\n"
+"Project-Id-Version: iThemes Exchange 1.15.0\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2015-06-03 16:17:29+00:00\n"
+"POT-Creation-Date: 2015-06-29 17:27:25+00:00\n"
 "PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2586,7 +2586,7 @@ msgctxt "html representation for multiplication symbol (x)"
 msgid "&times;"
 msgstr ""
 
-#: api/theme/cart-item.php:279
+#: api/theme/cart-item.php:286
 msgid "Unregisterd image size."
 msgstr ""
 
@@ -2870,7 +2870,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.14.0)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.15.0)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:21
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -5585,20 +5585,20 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: lib/classes/it-image-utility.php:64
+#: lib/classes/it-image-utility.php:67
 msgid "File &#8220;%s&#8221; doesn&#8217;t exist?"
 msgstr ""
 
-#: lib/classes/it-image-utility.php:67
+#: lib/classes/it-image-utility.php:70
 msgid "The GD image library is not installed."
 msgstr ""
 
-#: lib/classes/it-image-utility.php:74
+#: lib/classes/it-image-utility.php:77
 msgid "File &#8220;%s&#8221; is not an image."
 msgstr ""
 
-#: lib/classes/it-image-utility.php:151 lib/classes/it-image-utility.php:155
-#: lib/classes/it-image-utility.php:161
+#: lib/classes/it-image-utility.php:168 lib/classes/it-image-utility.php:172
+#: lib/classes/it-image-utility.php:178
 msgid "Resize path invalid"
 msgstr ""
 
@@ -6001,6 +6001,25 @@ msgid "%s Product"
 msgid_plural "%s Products"
 msgstr[0] ""
 msgstr[1] ""
+
+#: lib/functions/functions.php:1631
+msgid "Payment Gateway Warning"
+msgstr ""
+
+#: lib/functions/functions.php:1632
+msgid "Yes"
+msgstr ""
+
+#: lib/functions/functions.php:1633
+msgid "No"
+msgstr ""
+
+#: lib/functions/functions.php:1634
+msgid ""
+"Deactivating a payment gateway can cause customers to lose access to any "
+"membership products they have purchased using this payment gateway. Are you "
+"sure you want to proceed? %s | %s"
+msgstr ""
 
 #: lib/integrations/builder/functions.php:245
 msgctxt "view"
