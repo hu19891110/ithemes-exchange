@@ -87,16 +87,15 @@ Upload the Exchange plugin to your blog, activate it and enable the Digital Down
 http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
-
 = 1.15.0 =
-* Updated lib/classes to 2.4.3
+* Updated lib/classes to 2.4.3 - Fixed a potential Remote Code Execution (RCE) security hole caused by unsanitized inputs for resizing certain kinds of images and generating zip files. Exploiting this flaw would require third-party code or a privileged WordPress user. Thanks to Ryan Satterfield (http://planetzuda.com) for helping to identify this issue.
 * Remove quanity input box if multi-item product is not allowed
 * Adding secure/httponly flags to setcookie, taken from original DB Sessions on github
 * Adding deactivation warning to paypal addons
 * Fix illegal offset error in cart API when admin deletes product that a customer has in the cart
 
-= 1.14.0 =
-    Adding 'email' option to it_exchange_email email notification shortcode
+= 1.14. =
+* Adding 'email' option to it_exchange_email email notification shortcode
 
 = 1.13.0 =
 * Add JS hook to SW after state is updated
@@ -119,7 +118,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 
 = 1.11.17 =
 * Added filter to shipping address and method requirement
-* Added cart object verification to PayPal processing
+* Added cart object verification to PayPal processing 
 
 = 1.11.16 =
 * Fix for DB Session bloat bug
@@ -138,7 +137,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fix bug causing all categories in product dropdown widget to have 'selected' attribute
 * Update custom dropdown_category function to reflect WP Core changeset https://core.trac.wordpress.org/changeset/31024.
 * Sort addons by display name rather than addon-slug
-* Preserve logged in Guest when updating shipping method on Cart page
+* Preserve logged in Guest when updating shipping method on Cart page 
 * Add ability for store owners to change Guest Checkout heading text and button labels
 
 = 1.11.13 =
@@ -159,7 +158,8 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fix bug causing it_exchange_is_page(  ) to always return true when called from SW and  != 'product'
 * Fix bug preventing query args from loading correct SW state. Also, prevent cart state on product page if no items are in cart
 * Enable translation mo file to be overridden in wp-content/languages/plugins/it-exchange
-1.11.10.1 - Lew Ayotte, Glenn Ansley, Elise Alley
+
+= 1.11.10.1 =
 * Fixed function reference in PayPal Standard (basic).
 
 = 1.11.10 =
@@ -172,7 +172,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Adding post vars to actions in print_transaction_details_metabox()
 
 = 1.11.8 =
-* Added feature to always populate current product in GLOBAL
+* Fixed feature to always populate current product in GLOBAL. props Timothy Jacobs <http://ironbounddesigns.com/>
 * If cart is not available, use site URL for cancel_return in PayPal add-ons
 * Upating PayPal add-ons to work with latest Recurring Payments options
 
@@ -195,6 +195,9 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fixed bug that was preventing default WP welcome email from being sent when new users register
 * Extend inline-docs a bit for saving custom billing address fields
 
+= 1.11.5.1 =
+* Fix missing font-icons
+
 = 1.11.5 =
 * Adding IP address of customer to Transaction meta and on the Transaction page
 * Define settings var in IT_Theme_API_Store::products before count since new filter added
@@ -213,7 +216,8 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Added loading gif during SW AJAX calls to Register / Login
 * Fixed bug causing Stripe webhooks not to reach Exchange in some setups
 * Fixed notice when no cart object is returned in zero sum checkout
-1.11.2.1 - 2014-11-12 - Glenn Ansley, Lew Ayotte, Elise Alley
+
+= 1.11.2 =
 * Fixing call to weight meta for product
 
 = 1.11.2 =
@@ -1040,7 +1044,7 @@ http://ithemes.com/codex/page/Exchange_Installation
 * Fixed Dashboard menu Product Categories and Product Tags entries so that the Exchange menu expands when on those pages.
 * Fixed Upload link position on the Download Source on the Add/Edit Product Screen.
 * Fixed bug where super widget error/notice messages were inheriting styles not intended for them
-* Fixed bug where advanced section item’s inner height was not getting set correctly.
+* Fixed bug where advanced section item's inner height was not getting set correctly.
 * Fixed a bug with the checkboxes on the add/edit product screen.
 * Fixed function name typo: changed it_exchange_basic_coupons_remove_submeu_links to it_exchange_basic_coupons_remove_submenu_links.
 * Added some styles to the empty cart state.
