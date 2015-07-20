@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.16.0\n"
-"Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
-"POT-Creation-Date: 2015-07-15 19:00:35+00:00\n"
+"Project-Id-Version: iThemes Exchange 1.17.0\n"
+"Report-Msgid-Bugs-To: http://ithemes.com/support/\n"
+"POT-Creation-Date: 2015-07-20 17:24:57+00:00\n"
 "PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2870,7 +2870,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.16.0)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.17.0)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:21
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -4463,7 +4463,9 @@ msgid "Select Images"
 msgstr ""
 
 #: lib/admin/class.admin.php:1499
-msgid "You must upload an image larger than 150x150."
+msgid ""
+"Your photo must have a thumbnail created for it that is larger than "
+"150x150px."
 msgstr ""
 
 #: lib/admin/class.admin.php:1500
@@ -5700,7 +5702,6 @@ msgid "No Payment add-ons enabled."
 msgstr ""
 
 #: lib/deprecated/templates/content-confirmation.php:36
-#: lib/templates/content-confirmation/elements/product.php:39
 msgid ""
 "The status for this transaction does not grant access to downloadable files. "
 "Once the transaction is updated to an appoved status, you will receive a "
@@ -6969,6 +6970,13 @@ msgstr ""
 #: lib/templates/content-checkout/loops/items.php:18
 #: lib/templates/content-confirmation/elements/order-details-label.php:20
 msgid "Order Details"
+msgstr ""
+
+#: lib/templates/content-confirmation/elements/product.php:39
+msgid ""
+"The status for this transaction does not grant access to downloadable files. "
+"Once the transaction is updated to an approved status, you will receive a "
+"followup email with your download links."
 msgstr ""
 
 #: lib/templates/content-confirmation/elements/total.php:20
