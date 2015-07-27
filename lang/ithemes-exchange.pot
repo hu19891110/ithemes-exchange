@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.17.0\n"
+"Project-Id-Version: iThemes Exchange 1.18.0\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/support/\n"
-"POT-Creation-Date: 2015-07-20 17:24:57+00:00\n"
+"POT-Creation-Date: 2015-07-27 20:34:43+00:00\n"
 "PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1621,11 +1621,11 @@ msgstr ""
 msgid "Zimbabwean dollar"
 msgstr ""
 
-#: api/data-sets/data-formats.php:40 lib/shipping/class.shipping.php:370
+#: api/data-sets/data-formats.php:40 lib/shipping/class.shipping.php:372
 msgid "Standard"
 msgstr ""
 
-#: api/data-sets/data-formats.php:41 lib/shipping/class.shipping.php:371
+#: api/data-sets/data-formats.php:41 lib/shipping/class.shipping.php:373
 msgid "Metric"
 msgstr ""
 
@@ -2493,11 +2493,11 @@ msgstr ""
 msgid "Download doesn't expire"
 msgstr ""
 
-#: api/downloads.php:344
+#: api/downloads.php:346
 msgid "Download Error: Invalid response: "
 msgstr ""
 
-#: api/downloads.php:346
+#: api/downloads.php:348
 msgid "Download Error:"
 msgstr ""
 
@@ -2525,12 +2525,12 @@ msgid "Address"
 msgstr ""
 
 #: api/theme/billing.php:192 api/theme/shipping.php:191
-#: lib/shipping/class.shipping.php:302
+#: lib/shipping/class.shipping.php:304
 msgid "Address 2"
 msgstr ""
 
 #: api/theme/billing.php:217 api/theme/shipping.php:216
-#: lib/shipping/class.shipping.php:312
+#: lib/shipping/class.shipping.php:314
 msgid "City"
 msgstr ""
 
@@ -2547,7 +2547,7 @@ msgid "Country"
 msgstr ""
 
 #: api/theme/billing.php:395 api/theme/shipping.php:339
-#: lib/shipping/class.shipping.php:632
+#: lib/shipping/class.shipping.php:634
 msgid "State"
 msgstr ""
 
@@ -2581,7 +2581,7 @@ msgid "Cancel"
 msgstr ""
 
 #: api/theme/cart-item.php:77 api/theme/coupons.php:267
-#: core-addons/coupons/basic-coupons/init.php:365
+#: core-addons/coupons/basic-coupons/init.php:376
 msgctxt "html representation for multiplication symbol (x)"
 msgid "&times;"
 msgstr ""
@@ -2695,32 +2695,32 @@ msgstr ""
 msgid "(more info)"
 msgstr ""
 
-#: api/theme/product.php:820 api/theme/product.php:950
+#: api/theme/product.php:823 api/theme/product.php:953
 #: lib/admin/views/admin-get-more-addons.php:71
 msgid "Buy Now"
 msgstr ""
 
-#: api/theme/product.php:827 api/theme/product.php:1020
+#: api/theme/product.php:830 api/theme/product.php:1023
 msgid "Add to Cart"
 msgstr ""
 
-#: api/theme/product.php:831
+#: api/theme/product.php:834
 msgid "Product is currently out of stock."
 msgstr ""
 
-#: api/theme/product.php:832
+#: api/theme/product.php:835
 msgid "Product is currently not available."
 msgstr ""
 
-#: api/theme/product.php:953 api/theme/product.php:1023
+#: api/theme/product.php:956 api/theme/product.php:1026
 msgid "Out of stock."
 msgstr ""
 
-#: api/theme/product.php:954 api/theme/product.php:1024
+#: api/theme/product.php:957 api/theme/product.php:1027
 msgid "Product not available right now."
 msgstr ""
 
-#: api/theme/product.php:1026
+#: api/theme/product.php:1029
 msgid "Max Quantity Reached"
 msgstr ""
 
@@ -2870,7 +2870,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.17.0)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.18.0)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:21
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -3228,12 +3228,21 @@ msgstr ""
 msgid "Coupon applied"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/init.php:578
+#: core-addons/coupons/basic-coupons/init.php:590
 msgid "Coupon removed"
 msgstr ""
 
-#: core-addons/coupons/basic-coupons/init.php:630
+#: core-addons/coupons/basic-coupons/init.php:642
 msgid "View Coupon"
+msgstr ""
+
+#: core-addons/coupons/basic-coupons/init.php:679
+#: lib/deprecated/templates/content-cart.php:87
+#: lib/deprecated/templates/content-checkout.php:86
+#: lib/templates/content-cart/elements/totals-savings.php:23
+#: lib/templates/content-checkout/elements/totals-savings.php:23
+#: lib/templates/content-confirmation/elements/totals-savings.php:23
+msgid "Savings"
 msgstr ""
 
 #: core-addons/load.php:16
@@ -3753,7 +3762,7 @@ msgstr ""
 #: core-addons/shipping/simple-shipping/lib/settings.php:19
 #: lib/product-features/class.shipping.php:114
 #: lib/product-features/class.shipping.php:131
-#: lib/shipping/class.shipping.php:141
+#: lib/shipping/class.shipping.php:143 lib/shipping/class.shipping.php:725
 #: lib/templates/content-cart/elements/totals-shipping.php:22
 #: lib/templates/content-checkout/elements/totals-shipping.php:22
 #: lib/templates/content-confirmation/elements/totals-shipping.php:23
@@ -3787,6 +3796,8 @@ msgid "Taxes:"
 msgstr ""
 
 #: core-addons/taxes/taxes-simple/init.php:72
+#: core-addons/taxes/taxes-simple/init.php:243
+#: core-addons/taxes/taxes-simple/templates/content-confirmation/elements/totals-taxes-simple.php:22
 msgid "Tax"
 msgstr ""
 
@@ -3925,6 +3936,12 @@ msgstr ""
 #: core-addons/transaction-methods/paypal-standard-secure/init.php:1259
 #: core-addons/transaction-methods/zero-sum-checkout/init.php:201
 msgid "Recurring payment has been deactivated"
+msgstr ""
+
+#: core-addons/transaction-methods/offline-payments/init.php:626
+msgid ""
+"Adds the instructions after purchase message from the Offline Payments "
+"gateway settings."
 msgstr ""
 
 #: core-addons/transaction-methods/offline-payments/view-add-on-settings.php:11
@@ -4324,7 +4341,7 @@ msgid "Pages"
 msgstr ""
 
 #: lib/admin/class.admin.php:484 lib/admin/views/admin-wizard.php:248
-#: lib/shipping/class.shipping.php:225
+#: lib/shipping/class.shipping.php:227
 msgid "General"
 msgstr ""
 
@@ -5293,8 +5310,7 @@ msgstr ""
 #: lib/admin/views/admin-user-transactions.php:18
 #: lib/deprecated/templates/content-cart.php:89
 #: lib/deprecated/templates/content-checkout.php:88
-#: lib/email-notifications/class.email-notifications.php:502
-#: lib/templates/content-cart/elements/totals-total.php:22
+#: lib/email-notifications/class.email-notifications.php:503
 #: lib/templates/content-checkout/elements/totals-total.php:22
 #: lib/templates/content-confirmation/elements/totals-total.php:22
 #: lib/transactions/class.transactions-post-type.php:288
@@ -5517,7 +5533,7 @@ msgid "Error adding Shipping Address. Please try again."
 msgstr ""
 
 #: lib/cart/class.cart.php:346 lib/cart/class.cart.php:404
-#: lib/shipping/class.shipping.php:497 lib/shipping/class.shipping.php:550
+#: lib/shipping/class.shipping.php:499 lib/shipping/class.shipping.php:552
 msgid "Please fill out all required fields"
 msgstr ""
 
@@ -5675,14 +5691,6 @@ msgstr ""
 #: lib/templates/content-confirmation/elements/totals-subtotal.php:22
 #: lib/transactions/class.transactions-post-type.php:555
 msgid "Subtotal"
-msgstr ""
-
-#: lib/deprecated/templates/content-cart.php:87
-#: lib/deprecated/templates/content-checkout.php:86
-#: lib/templates/content-cart/elements/totals-savings.php:23
-#: lib/templates/content-checkout/elements/totals-savings.php:23
-#: lib/templates/content-confirmation/elements/totals-savings.php:23
-msgid "Savings"
 msgstr ""
 
 #: lib/deprecated/templates/content-cart.php:104
@@ -6782,71 +6790,71 @@ msgstr ""
 msgid "Please make sure all fields are formatted properly."
 msgstr ""
 
-#: lib/shipping/class.shipping.php:99
+#: lib/shipping/class.shipping.php:101
 msgid "You must enter a shipping address before you can checkout"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:123
+#: lib/shipping/class.shipping.php:125
 msgid "You must select a shipping method before you can checkout"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:266
+#: lib/shipping/class.shipping.php:268
 msgid "General Shipping Settings"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:286
+#: lib/shipping/class.shipping.php:288
 msgid "Products Ship From"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:288
+#: lib/shipping/class.shipping.php:290
 msgid "The default from address used when shipping your products."
 msgstr ""
 
-#: lib/shipping/class.shipping.php:292
+#: lib/shipping/class.shipping.php:294
 msgid "Address 1"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:336
+#: lib/shipping/class.shipping.php:338
 msgid "Zip"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:341
+#: lib/shipping/class.shipping.php:343
 msgid "Can individual products override the default Ships From Address?"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:343
+#: lib/shipping/class.shipping.php:345
 msgid ""
 "Selecting \"yes\" will place these fields on the Add/Edit product screen."
 msgstr ""
 
-#: lib/shipping/class.shipping.php:353
+#: lib/shipping/class.shipping.php:355
 msgid "Can individual products override the global Shipping Methods setting?"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:355
+#: lib/shipping/class.shipping.php:357
 msgid ""
 "Selecting \"yes\" will allow you to set available Shipping Methods for a "
 "product from it's Add/Edit product screen."
 msgstr ""
 
-#: lib/shipping/class.shipping.php:365
+#: lib/shipping/class.shipping.php:367
 msgid "Measurements Format"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:367
+#: lib/shipping/class.shipping.php:369
 msgid ""
 "Use standard for pounds and inches. Use metric for kilograms and centimeters."
 msgstr ""
 
-#: lib/shipping/class.shipping.php:553
+#: lib/shipping/class.shipping.php:555
 msgid "Shipping Address Updated"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:634
+#: lib/shipping/class.shipping.php:636
 msgid "Please use the 2-3 character %sISO 3166-2 Country Subdivision Code%s"
 msgstr ""
 
-#: lib/shipping/class.shipping.php:666
+#: lib/shipping/class.shipping.php:668
 msgid "Shipping method updated"
 msgstr ""
 
@@ -6985,8 +6993,11 @@ msgstr ""
 msgid "Total:"
 msgstr ""
 
-#: lib/templates/content-downloads/loops/transaction.php:27
-#: lib/templates/content-downloads/loops/transaction.php:30
+#: lib/templates/content-downloads/loops/transaction.php:28
+msgid "No downloadable files available."
+msgstr ""
+
+#: lib/templates/content-downloads/loops/transaction.php:31
 msgid "No downloads found."
 msgstr ""
 

@@ -290,6 +290,8 @@ function it_exchange_serve_product_download( $hash_data ) {
 		if ( ! is_wp_error( $response ) ) {
 			$valid_response_codes = array(
 				200,
+				301,
+				302,
 			);
 			$valid_response_codes = apply_filters( 'it_exchange_valid_response_codes_for_downloadable_files', $valid_response_codes, $download_info );
 			if ( in_array( wp_remote_retrieve_response_code( $response ), (array) $valid_response_codes ) ) {
@@ -316,7 +318,7 @@ function it_exchange_serve_product_download( $hash_data ) {
 
 				// Set headers to force download
 				header( 'Content-Description: File Transfer' );
-				header( 'Content-Disposition: attachment; filename=' . basename( $url ) );
+				header( 'Content-Disposition: attachment; filename=' . basename( parse_url( $url, PHP_URL_PATH ) ) );
 				header( 'Content-Transfer-Encoding: binary' );
 				header( 'Expires: 0' );
 				header( 'Cache-Control: must-revalidate' );
