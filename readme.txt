@@ -2,8 +2,8 @@
 Contributors: ithemes, blepoxp, layotte, aaroncampbell, mattdanner
 Tags: ecommerce
 Requires at least: 3.7
-Tested up to: 4.4
-Stable tag: 1.19.0
+Tested up to: 4.5
+Stable tag: 1.25.0
 License: GPLv2 or later
 
 Easily sell your digital and physical products with iThemes Exchange, simple ecommerce for WordPress
@@ -87,10 +87,37 @@ Upload the Exchange plugin to your blog, activate it and enable the Digital Down
 http://ithemes.com/codex/page/Exchange_Installation
 
 == Changelog ==
+
+= 1.25.0 =
+* Better Output Buffer Cleaning for Plugins/Themes that have created multiple levels of Output Buffer that we need to escape
+* Change how DB sessions initialize
+
+= 1.24.1 =
+* Adding another check for product_id in cart products
+
+= 1.24.0 =
+* Adding extra checks for product_id and count in product array... in case the cart is corrupted and causes isues
+
+= 1.23.0 =
+* End and clean the buffer before attempting to readfile/download...
+* Remove wp_new_user_notification calls, because this is handled by edit_user now
+
+= 1.22.0 =
+* Let it_exchange_shipping_address_purchase_requirement_enabled filter enable save to shipping address on billing form
+* Lazy loading the ITE session - Timothy B. Jacobs
+* Admin AJAX session fix - Nikola Nikolov
+
+= 1.21.0 =
+* Favor home_url over site_url
+
+= 1.20.0 =
+* Don't escape email notification URLs with &amp; because &#308; breaks in the browser
+* Fix for adding new downloadable files to previous purchases
+* Change how we determine if an addon is core
+
 = 1.19.0 =
 * Adding email address to Guest Customer label in transaction table
 * Changing itExchangeSWAjaxURL to use get_site_url() to help with potential SSL conflicts
-
 
 = 1.18.0 =
 * Better serve filenames when downloading w/ query args
