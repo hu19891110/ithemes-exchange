@@ -648,8 +648,9 @@ function it_exchange_get_cart_product_quantity_by_product_id( $product_id ) {
 	$products = it_exchange_get_cart_products();
 
 	foreach ( $products as $product ) {
-		if ( $product['product_id'] == $product_id )
+		if ( !empty( $product['product_id'] ) && $product['product_id'] == $product_id ) {
 			return $product['count'];
+		}
 	}
 
 	return 0;
@@ -670,7 +671,7 @@ function it_exchange_get_cart_products_count( $true_count=false, $feature=false 
 	$count = 0;
 	if ( $true_count ) {
 		foreach( $products as $product ) {
-			if ( !empty( $feature ) && !it_exchange_product_has_feature( $product['product_id'], $feature ) ) {
+			if ( empty( $product['product_id'] ) || empty( $product['count'] ) || ( !empty( $feature ) && !it_exchange_product_has_feature( $product['product_id'], $feature ) )  ) {
 				continue;
 			}
 			$count += $product['count'];
@@ -719,7 +720,7 @@ function it_exchange_get_cart_weight() {
  * @return integer|string price
 */
 function it_exchange_get_cart_product_base_price( $product, $format=true ) {
-	if ( ! $db_product = it_exchange_get_product( $product['product_id'] ) )
+	if ( empty( $product['product_id'] ) || ! ( $db_product = it_exchange_get_product( $product['product_id'] ) ) )
 		return false;
 
 	// Get the price from the DB
@@ -743,8 +744,12 @@ function it_exchange_get_cart_product_base_price( $product, $format=true ) {
  * @return int|string subtotal
 */
 function it_exchange_get_cart_product_subtotal( $product, $format=true ) {
-	$base_price = it_exchange_get_cart_product_base_price( $product, false );
-	$subtotal_price = apply_filters( 'it_exchange_get_cart_product_subtotal', $base_price * $product['count'], $product );
+	if ( empty( $product['count'] ) ) {
+		$subtotal_price = 0;
+	} else {
+		$base_price = it_exchange_get_cart_product_base_price( $product, false );
+		$subtotal_price = apply_filters( 'it_exchange_get_cart_product_subtotal', $base_price * $product['count'], $product );
+	}	
 
 	if ( $format )
 		$subtotal_price = it_exchange_format_price( $subtotal_price );

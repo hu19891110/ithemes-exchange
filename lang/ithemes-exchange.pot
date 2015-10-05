@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the iThemes Exchange package.
 msgid ""
 msgstr ""
-"Project-Id-Version: iThemes Exchange 1.19.0\n"
+"Project-Id-Version: iThemes Exchange 1.25.0\n"
 "Report-Msgid-Bugs-To: http://ithemes.com/support/\n"
-"POT-Creation-Date: 2015-08-10 12:37:17+00:00\n"
+"POT-Creation-Date: 2015-10-05 12:30:39+00:00\n"
 "PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2489,15 +2489,15 @@ msgstr ""
 msgid "Western Cape"
 msgstr ""
 
-#: api/downloads.php:260
+#: api/downloads.php:302
 msgid "Download doesn't expire"
 msgstr ""
 
-#: api/downloads.php:346
+#: api/downloads.php:391
 msgid "Download Error: Invalid response: "
 msgstr ""
 
-#: api/downloads.php:348
+#: api/downloads.php:393
 msgid "Download Error:"
 msgstr ""
 
@@ -2654,7 +2654,7 @@ msgstr ""
 #: api/theme/download.php:127 api/theme/product.php:382
 #: core-addons/coupons/basic-coupons/admin.php:489
 #: lib/email-notifications/class.email-notifications.php:355
-#: lib/product-features/class.downloads.php:317
+#: lib/product-features/class.downloads.php:291
 msgid "Unlimited"
 msgstr ""
 
@@ -2870,7 +2870,7 @@ msgstr ""
 msgid "No Recent Sales"
 msgstr ""
 
-#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.19.0)  #-#-#-#-#
+#. #-#-#-#-#  ithemes-exchange.pot (iThemes Exchange 1.25.0)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: core-addons/admin/basic-reporting/init.php:21
 #: lib/admin/views/admin-user-profile.php:22 lib/pages/class.nav-menus.php:33
@@ -3097,7 +3097,7 @@ msgid "Coupon Updated"
 msgstr ""
 
 #: core-addons/coupons/basic-coupons/admin.php:298
-#: lib/product-features/class.downloads.php:195
+#: lib/product-features/class.downloads.php:169
 msgid "Name"
 msgstr ""
 
@@ -5279,7 +5279,7 @@ msgid ""
 msgstr ""
 
 #: lib/admin/views/admin-user-products.php:72 lib/functions/functions.php:494
-#: lib/product-features/class.downloads.php:168
+#: lib/product-features/class.downloads.php:142
 #: lib/templates/content-confirmation/elements/product.php:37
 msgid "Downloads"
 msgstr ""
@@ -6216,122 +6216,122 @@ msgstr ""
 msgid "Enter description..."
 msgstr ""
 
-#: lib/product-features/class.downloads.php:169
+#: lib/product-features/class.downloads.php:143
 msgid "Downloads Expiration"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:186
+#: lib/product-features/class.downloads.php:160
 msgid "Product Files"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:186
+#: lib/product-features/class.downloads.php:160
 msgid ""
 "If you are selling digital products (like music or ebooks), upload those "
 "here."
 msgstr ""
 
-#: lib/product-features/class.downloads.php:188
+#: lib/product-features/class.downloads.php:162
 msgid "Add New Download"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:198
+#: lib/product-features/class.downloads.php:172
 msgid "Source"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:199
+#: lib/product-features/class.downloads.php:173
 msgid ""
 "Use the WordPress media library or paste in any accessible URL (from "
 "Dropbox, Amazon, etc.) and we'll hide the source for you."
 msgstr ""
 
-#: lib/product-features/class.downloads.php:211
-#: lib/product-features/class.downloads.php:228
-#: lib/product-features/class.downloads.php:246
+#: lib/product-features/class.downloads.php:185
+#: lib/product-features/class.downloads.php:202
+#: lib/product-features/class.downloads.php:220
 msgid "Upload"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:280
+#: lib/product-features/class.downloads.php:254
 msgid "Hours"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:281
+#: lib/product-features/class.downloads.php:255
 msgid "Days"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:282
+#: lib/product-features/class.downloads.php:256
 msgid "Weeks"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:283
+#: lib/product-features/class.downloads.php:257
 msgid "Months"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:284
+#: lib/product-features/class.downloads.php:258
 msgid "Years"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:292
+#: lib/product-features/class.downloads.php:266
 msgid "Download Expiration"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:293
+#: lib/product-features/class.downloads.php:267
 msgid "Changing this value only applies to future purchases"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:295
+#: lib/product-features/class.downloads.php:269
 msgid "Download links"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:297
+#: lib/product-features/class.downloads.php:271
 msgid "do not expire"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:298
+#: lib/product-features/class.downloads.php:272
 msgid "expire"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:300
+#: lib/product-features/class.downloads.php:274
 msgid "after"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:311
+#: lib/product-features/class.downloads.php:285
 msgid "Download Limit"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:312
+#: lib/product-features/class.downloads.php:286
 msgid "How many times customers can download the file(s)."
 msgstr ""
 
-#: lib/product-features/class.downloads.php:563
+#: lib/product-features/class.downloads.php:537
 msgid "Exchange Downloads"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:564
+#: lib/product-features/class.downloads.php:538
 #: lib/templates/content-confirmation/elements/product.php:52
 msgid "Download"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:568
+#: lib/product-features/class.downloads.php:542
 msgid "An iThemes Exchange Post Type for storing all Downloads in the system"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:603
+#: lib/product-features/class.downloads.php:577
 msgid "Download not found"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:633
+#: lib/product-features/class.downloads.php:607
 msgid "The transaction this download is attached to is not valid for download"
 msgstr ""
 
-#: lib/product-features/class.downloads.php:645
+#: lib/product-features/class.downloads.php:619
 msgid "You are not allowed to download this file."
 msgstr ""
 
-#: lib/product-features/class.downloads.php:655
+#: lib/product-features/class.downloads.php:629
 msgid "Download limit reached. Unable to download this file."
 msgstr ""
 
-#: lib/product-features/class.downloads.php:664
+#: lib/product-features/class.downloads.php:638
 msgid "Download expiration reached. Unable to download this file."
 msgstr ""
 
@@ -6916,7 +6916,7 @@ msgstr ""
 msgid "Error. Please try again."
 msgstr ""
 
-#: lib/super-widget/ajax.php:128
+#: lib/super-widget/ajax.php:124
 msgid "Registered and logged in as "
 msgstr ""
 
